@@ -31,4 +31,5 @@
 - 2026-11-04 15:08 UTC · M0：合同落盘（AGENT_CONTRACT.md，逐字节复制自用户粘贴原文）、legacy 四件归档（SHA-256 基线见 tools/legacy_hashes.txt）、状态层与脚手架初始化、GitHub Device Flow 授权发起。
 - 2026-11-04 15:33 UTC · M0 完成：OAuth Device Flow 授权成功（用户 zly060709，scope=repo,workflow,read:user）；建仓 kaoyan-lab（public）；绕过全局 ghproxy 重写直推 main（183 对象 14.89MiB）；开启 GitHub Pages（legacy/main）。
 - 2026-11-04 15:35 UTC · M1 里程碑：**首个可访问网址 https://zly060709.github.io/kaoyan-lab/**（四科入口 + 政治/408 全量数据 + PWA 离线 + KaTeX）。政治 456/456、408 376/376 通过题量门禁；数学/英语迁移进行中。
+- 2026-11-05 · **20 科扩展启动（用户指令 + 用户资料库 96 PDF）**：①数学抽象概念图形化——D043 图形 DSL + Canvas 引擎上线，随转录管线逐题产出（origin=derived）；②数学 PDF 保真管线——34 卷逐页影像 + SHA-256 清单（D044），英语二/数学二 2009-2011 子 Agent 转录中；③首页改版——20 科注册表驱动（7 科在库/迁移、13 科待资料）、跨科搜索库（按年分片索引 1862 条）；④GitHub Actions 处于 partial_outage，部署排队中，恢复即自动上线。
 - 2026-11-04 15:2x UTC · M2 部分完成：入口壳（hash 路由/自测/收藏/随机一题/媒体回填）、404 回退、diag 自诊断页、sw.js 离线缓存与版本更新提示、KaTeX 0.16.11 vendor 化。
