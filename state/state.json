@@ -1,75 +1,76 @@
 {
-  "schema_version": "1.0.0",
-  "phase": "M2+",
-  "status": "RUNNING",
-  "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-04T23:05:15Z",
-  "done_set": [
-    "m0:auth_initiated",
-    "m0:contract_archive",
-    "m0:scaffold",
-    "m1:first-url",
-    "m1:migrate_cs408",
-    "m1:migrate_english",
-    "m1:migrate_math",
-    "m1:migrate_politics",
-    "math2-2018-done",
-    "math2-2019-done"
+ "schema_version": "1.0.0",
+ "phase": "M2+",
+ "status": "RUNNING",
+ "started_at": "2026-11-04T15:08:05Z",
+ "updated_at": "2026-11-04T23:05:28Z",
+ "done_set": [
+  "m0:auth_initiated",
+  "m0:contract_archive",
+  "m0:scaffold",
+  "m1:first-url",
+  "m1:migrate_cs408",
+  "m1:migrate_english",
+  "m1:migrate_math",
+  "m1:migrate_politics",
+  "math2-2018-done",
+  "math2-2019-done",
+  "math2-2020-done"
+ ],
+ "failed_set": [],
+ "current_task": "math2-2021-transcribe",
+ "in_flight": {},
+ "auth": "authorized (zly060709)",
+ "metrics": {
+  "questions": {
+   "politics": 456,
+   "math": 250,
+   "english": 675,
+   "cs408": 376
+  },
+  "expected": {
+   "politics": 456,
+   "math": 250,
+   "english_objective": 675,
+   "cs408": 376
+  }
+ },
+ "budget": {
+  "token_kill_line": 95000000,
+  "time_cap_h": 96,
+  "elapsed_h": 0
+ },
+ "deploy": {
+  "url": "https://zly060709.github.io/kaoyan-lab/",
+  "repo": "zly060709/kaoyan-lab",
+  "pages": "legacy/main"
+ },
+ "expansion": {
+  "target": "20科统考",
+  "sources": "用户资料 学科历年真题(96 PDF)",
+  "in_flight": [
+   "english2 (agent)",
+   "math2 2009-2011 (agent)"
   ],
-  "failed_set": [],
-  "current_task": "math2-2020-transcribe",
-  "in_flight": {},
-  "auth": "authorized (zly060709)",
-  "metrics": {
-    "questions": {
-      "politics": 456,
-      "math": 250,
-      "english": 675,
-      "cs408": 376
-    },
-    "expected": {
-      "politics": 456,
-      "math": 250,
-      "english_objective": 675,
-      "cs408": 376
-    }
-  },
-  "budget": {
-    "token_kill_line": 95000000,
-    "time_cap_h": 96,
-    "elapsed_h": 0
-  },
-  "deploy": {
-    "url": "https://zly060709.github.io/kaoyan-lab/",
-    "repo": "zly060709/kaoyan-lab",
-    "pages": "legacy/main"
-  },
-  "expansion": {
-    "target": "20科统考",
-    "sources": "用户资料 学科历年真题(96 PDF)",
-    "in_flight": [
-      "english2 (agent)",
-      "math2 2009-2011 (agent)"
-    ],
-    "math1_figures": "82幅/2013-2023全11年，已上线并浏览器验收",
-    "math2_progress": "253/345 (2009-2019 done)"
-  },
-  "agent_queue": {
-    "running": [
-      "english2(2010-2025)",
-      "math2(2009-2011)"
-    ],
-    "retry_queue": [
-      "math2(2012-2015) 并发超限",
-      "math1 figures(2013-2023) 并发超限"
-    ],
-    "pending": [
-      "math2(2016-2023)",
-      "math3×15",
-      "math1 pages(2009-2012)",
-      "english1(2005-2009+2025)"
-    ],
-    "concurrency_limit": 2
-  },
-  "mode": "single-agent-sequential (D090, 用户指令)"
+  "math1_figures": "82幅/2013-2023全11年，已上线并浏览器验收",
+  "math2_progress": "276/345 (2009-2020 done)"
+ },
+ "agent_queue": {
+  "running": [
+   "english2(2010-2025)",
+   "math2(2009-2011)"
+  ],
+  "retry_queue": [
+   "math2(2012-2015) 并发超限",
+   "math1 figures(2013-2023) 并发超限"
+  ],
+  "pending": [
+   "math2(2016-2023)",
+   "math3×15",
+   "math1 pages(2009-2012)",
+   "english1(2005-2009+2025)"
+  ],
+  "concurrency_limit": 2
+ },
+ "mode": "single-agent-sequential (D090, 用户指令)"
 }
