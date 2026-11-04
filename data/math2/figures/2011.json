@@ -1,0 +1,67 @@
+[
+  {
+    "qid": "math2-2011-1", "origin": "derived",
+    "title": "第1题 3sinx−sin3x 与 4x³ 的贴合",
+    "xlim": [-0.65, 0.65], "ylim": [-0.45, 0.45],
+    "items": [
+      { "kind": "graph", "f": "3*sin(x)-sin(3*x)", "domain": [-0.62, 0.62], "color": "#1D4ED8", "label": "3sinx−sin3x" },
+      { "kind": "graph", "f": "4*x*x*x", "domain": [-0.62, 0.62], "color": "#B8324A", "label": "4x³" }
+    ],
+    "caption": "两曲线在原点附近几乎重合（三阶贴合）→ 等价无穷小 3sinx−sin3x ~ 4x³，k=3, c=4。"
+  },
+  {
+    "qid": "math2-2011-6", "origin": "derived",
+    "title": "第6题 三被积函数在 (0,π/4) 的排序",
+    "xlim": [0.02, 0.83], "ylim": [0, 4.2],
+    "items": [
+      { "kind": "graph", "f": "sin(x)", "domain": [0.02, 0.7854], "color": "#1D4ED8", "label": "sinx" },
+      { "kind": "graph", "f": "cos(x)", "domain": [0.02, 0.7854], "color": "#1F7A6D", "label": "cosx" },
+      { "kind": "graph", "f": "cos(x)/sin(x)", "domain": [0.02, 0.7854], "color": "#B8324A", "label": "cotx" }
+    ],
+    "caption": "同区间上 sinx < cosx < cotx → 取对数保持序 → I<K<J，选 B。"
+  },
+  {
+    "qid": "math2-2011-11", "origin": "derived",
+    "title": "第11题 曲线 y=∫₀ˣ tan t dt 的弧长",
+    "xlim": [0, 0.85], "ylim": [0, 1],
+    "items": [
+      { "kind": "graph", "f": "tan(x)", "domain": [0, 0.7854], "color": "#1D4ED8" },
+      { "kind": "point", "x": 0.7854, "y": 1, "label": "(π/4, 1)" }
+    ],
+    "caption": "y′=tanx，弧长 = ∫sec x dx = ln(√2+1)——即从 (0,0) 到 (π/4,1) 的曲线长度。"
+  },
+  {
+    "qid": "math2-2011-13", "origin": "derived",
+    "title": "第13题 区域 D（圆、直线与 y 轴）",
+    "xlim": [-0.15, 1.35], "ylim": [-0.15, 2.25],
+    "items": [
+      { "kind": "polygon", "pts": [[0, 0], [1, 1], [0.866, 1.5], [0.5, 1.866], [0, 2]], "color": "rgba(201,169,97,.4)" },
+      { "kind": "parametric", "fx": "cos(t)", "fy": "1+sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "x²+y²=2y" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 1, "y2": 1, "color": "#B8324A", "label": "y=x" }
+    ],
+    "caption": "D：直线 y=x 与 y 轴之间、圆内部分（θ∈[π/4, π/2], r≤2sinθ）；∬xy dσ=7/12。"
+  },
+  {
+    "qid": "math2-2011-16", "origin": "derived",
+    "title": "第16题 参数曲线的极值与拐点",
+    "xlim": [-3.2, 4.2], "ylim": [-2.6, 2.6],
+    "items": [
+      { "kind": "parametric", "fx": "(t*t*t)/3+t+0.3333", "fy": "(t*t*t)/3-t+0.3333", "tmin": -2.4, "tmax": 2.4, "color": "#1D4ED8" },
+      { "kind": "point", "x": -1, "y": 1, "label": "极大 (−1,1)" },
+      { "kind": "point", "x": 1.6667, "y": -0.3333, "label": "极小 (5/3,−1/3)" },
+      { "kind": "point", "x": 0.3333, "y": 0.3333, "label": "拐点 (1/3,1/3)" }
+    ],
+    "caption": "y′_x=(t²−1)/(t²+1)、y″_x=4t/(t²+1)³：t=−1 极大、t=1 极小；t=0（x=1/3）处 y″ 变号 → 拐点。"
+  },
+  {
+    "qid": "math2-2011-20", "origin": "derived",
+    "title": "第20题 容器轮廓（两段圆弧绕 y 轴）",
+    "xlim": [-1.4, 1.4], "ylim": [-1.3, 2.4],
+    "items": [
+      { "kind": "parametric", "fx": "cos(t)", "fy": "1+sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "x²+y²=2y（上段）" },
+      { "kind": "parametric", "fx": "cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1F7A6D", "label": "x²+y²=1（下段）" },
+      { "kind": "hline", "y": 0.5, "style": "dashed", "label": "y=1/2 接口" }
+    ],
+    "caption": "容器 = 下半球缺 + 上球冠：V=9π/4；抽水功按两层半径分别积分，W=27πρg/8。"
+  }
+]

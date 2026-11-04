@@ -1,14 +1,15 @@
 {
  "subject": "math2",
  "expected_total": 23,
- "actual_total": 46,
+ "actual_total": 69,
  "per_year": {
   "2009": 23,
-  "2010": 23
+  "2010": 23,
+  "2011": 23
  },
  "pages_transcribed": 12,
  "source": "视觉转录（用户PDF逐页影像）",
- "updated_at": "2026-11-04T17:06:54Z",
+ "updated_at": "2026-11-04T17:12:30Z",
  "partial": true,
  "ok": true
 }
