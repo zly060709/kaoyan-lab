@@ -1,0 +1,35 @@
+[
+  {
+    "qid": "math-2022-11", "origin": "derived",
+    "title": "第11题 f=x²+2y² 在 (0,1) 的梯度方向",
+    "xlim": [-2.5, 2.5], "ylim": [-1.8, 1.8],
+    "items": [
+      { "kind": "parametric", "fx": "1.4142*cos(t)", "fy": "cos(t)", "tmin": 0, "tmax": 6.2832, "color": "#94A3B8", "label": "x²+2y²=2" },
+      { "kind": "parametric", "fx": "2*cos(t)", "fy": "1.4142*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "x²+2y²=4" },
+      { "kind": "point", "x": 0, "y": 1, "label": "(0,1)" }
+    ],
+    "caption": "等值线 x²+2y²=C 为椭圆族；∇f(0,1)=(0,4)，最大方向导数 = |∇f| = 4，方向沿 y 轴正向（短轴方向）。"
+  },
+  {
+    "qid": "math-2022-12", "origin": "derived",
+    "title": "第12题 ∫₁^{e²} ln x/√x dx",
+    "xlim": [0.8, 8.5], "ylim": [0, 2.3],
+    "items": [
+      { "kind": "shade_under", "f": "ln(x)/sqrt(x)", "domain": [1, 8.5], "color": "rgba(29,78,216,.22)" },
+      { "kind": "graph", "f": "ln(x)/sqrt(x)", "domain": [0.9, 8.5], "color": "#1D4ED8" }
+    ],
+    "caption": "换元 t=√x：原式 = ∫₁^e 4ln t dt = 4（阴影面积）。"
+  },
+  {
+    "qid": "math-2022-18", "origin": "derived",
+    "title": "第18题 二重积分区域 D（直线与四分之一圆之间）",
+    "xlim": [-2.4, 2.4], "ylim": [-0.18, 2.35],
+    "items": [
+      { "kind": "shade_between", "f1": "x+2", "f2": "0", "domain": [-2, 0], "color": "rgba(201,169,97,.4)" },
+      { "kind": "shade_between", "f1": "sqrt(4-x*x)", "f2": "0", "domain": [0, 2], "color": "rgba(201,169,97,.4)" },
+      { "kind": "segment", "x1": -2, "y1": 0, "x2": 0, "y2": 2, "color": "#B8324A", "label": "x=y−2" },
+      { "kind": "parametric", "fx": "2*cos(t)", "fy": "2*sin(t)", "tmin": 0, "tmax": 1.5708, "color": "#1D4ED8", "label": "x²+y²=4" }
+    ],
+    "caption": "D 由直线 x=y−2、x 轴与四分之一圆弧围成；极坐标在 θ=π/4 处分割，(x−y)²/(x²+y²) 化简后 I=2(π−1)。"
+  }
+]

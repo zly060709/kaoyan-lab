@@ -1,0 +1,44 @@
+[
+  {
+    "qid": "math-2023-1", "origin": "derived",
+    "title": "第1题 曲线 y=x·ln(e+1/(x−1)) 的斜渐近线",
+    "xlim": [1.1, 7], "ylim": [0, 15],
+    "items": [
+      { "kind": "graph", "f": "x*ln(e+1/(x-1))", "domain": [1.3, 7], "color": "#1D4ED8" },
+      { "kind": "graph", "f": "x+0.3679", "domain": [1.1, 7], "color": "#B8324A", "label": "y=x+1/e（渐近线）" }
+    ],
+    "caption": "x→+∞ 时 ln(e+1/(x−1)) → 1 + 1/(e(x−1))，故 y ≈ x + 1/e，选 B。"
+  },
+  {
+    "qid": "math-2023-3", "origin": "derived",
+    "title": "第3题 参数曲线 x=2t+|t|, y=|t|sin t（分段）",
+    "xlim": [-3.4, 9.4], "ylim": [-3.2, 2.2],
+    "items": [
+      { "kind": "parametric", "fx": "3*t", "fy": "t*sin(t)", "tmin": 0, "tmax": 3.1, "color": "#1D4ED8", "label": "t≥0: x=3t" },
+      { "kind": "parametric", "fx": "t", "fy": "-t*sin(t)", "tmin": -3.1, "tmax": 0, "color": "#B8324A", "label": "t<0: x=t" },
+      { "kind": "point", "x": 0, "y": 0, "label": "(0,0)" }
+    ],
+    "caption": "左支斜率 0、右支斜率 0 → f′ 连续；但二阶在 0 处左右不匹配 → f″(0) 不存在，选 C。"
+  },
+  {
+    "qid": "math-2023-11", "origin": "derived",
+    "title": "第11题 f 与 g 的等价无穷小贴合",
+    "xlim": [-0.85, 0.85], "ylim": [-0.75, 0.85],
+    "items": [
+      { "kind": "graph", "f": "-x+2*x*x+ln(1+x)", "domain": [-0.8, 0.8], "color": "#1D4ED8", "label": "f(x)" },
+      { "kind": "graph", "f": "exp(x*x)-cos(x)", "domain": [-0.8, 0.8], "color": "#B8324A", "label": "g(x)" }
+    ],
+    "caption": "泰勒展开：g=3x²/2+…；令 f 的线性项消失（a=−1）、二次项系数同为 3/2（b=2）→ ab=−2，两曲线在原点附近贴合。"
+  },
+  {
+    "qid": "math-2023-13", "origin": "derived",
+    "title": "第13题 周期 2 的偶延拓 f(x)=1−|x|·?",
+    "xlim": [-2.2, 2.2], "ylim": [-0.35, 1.45],
+    "items": [
+      { "kind": "graph", "f": "1-x", "domain": [0, 1], "color": "#1D4ED8", "label": "f(x)=1−x (0≤x≤1)" },
+      { "kind": "graph", "f": "1+x", "domain": [-1, 0], "color": "#1F7A6D", "label": "偶延拓" },
+      { "kind": "vline", "x": 0, "style": "dashed" }
+    ],
+    "caption": "余弦级数对应偶延拓（周期 2）：在 x=0（连续点）与 x=1（间断点）代入可得 ∑a_{2n}=0。"
+  }
+]

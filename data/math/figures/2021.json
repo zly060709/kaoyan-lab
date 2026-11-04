@@ -1,0 +1,74 @@
+[
+  {
+    "qid": "math-2021-1", "origin": "derived",
+    "title": "第1题 f(x)=(eˣ−1)/x 在 x=0 的补值",
+    "xlim": [-1.6, 1.6], "ylim": [0, 1.65],
+    "items": [
+      { "kind": "graph", "f": "(exp(x)-1)/x", "domain": [-1.55, 1.55], "color": "#1D4ED8" },
+      { "kind": "point", "x": 0, "y": 1, "label": "f(0)=1" },
+      { "kind": "hline", "y": 1, "style": "dashed" }
+    ],
+    "caption": "f 连续；f′(0)=lim(eˣ−1−x)/x²=1/2≠0 且 f(0)=1 为局部最小 → 可导且导数不为零，选 D。"
+  },
+  {
+    "qid": "math-2021-10", "origin": "derived",
+    "title": "第10题 两类错误的几何示意（X̄ 的分布）",
+    "xlim": [8.3, 12.7], "ylim": [0, 0.88],
+    "items": [
+      { "kind": "graph", "f": "exp(-(x-10)*(x-10)/0.5)/(0.5*sqrt(2*pi))", "domain": [8.3, 12.7], "color": "#1D4ED8", "label": "H₀: X̄~N(10, 1/4)" },
+      { "kind": "graph", "f": "exp(-(x-11)*(x-11)/0.5)/(0.5*sqrt(2*pi))", "domain": [8.3, 12.7], "color": "#B8324A", "label": "X̄~N(11, 1/4)" },
+      { "kind": "vline", "x": 11, "style": "dashed", "label": "拒绝域 X̄≥11" }
+    ],
+    "caption": "σ_X̄=√(4/16)=1/2；H₀ 下 X̄≥11 的右尾是第一类错误，真实均值右移后左尾是第二类错误（β 型）。"
+  },
+  {
+    "qid": "math-2021-11", "origin": "derived",
+    "title": "第11题 反常积分 ∫₀^∞ dx/(x²+2x+2)",
+    "xlim": [0, 8.5], "ylim": [0, 1.1],
+    "items": [
+      { "kind": "shade_under", "f": "1/((x+1)*(x+1)+1)", "domain": [0, 8.5], "color": "rgba(201,169,97,.4)" },
+      { "kind": "graph", "f": "1/((x+1)*(x+1)+1)", "domain": [0, 8.5], "color": "#1D4ED8" }
+    ],
+    "caption": "配方 (x+1)²+1 → 原式 = arctan(x+1)|₀^∞ = π/2 − π/4 = π/4（阴影面积）。"
+  },
+  {
+    "qid": "math-2021-13", "origin": "derived",
+    "title": "第13题 欧拉方程的解 y=x²",
+    "xlim": [-2.2, 2.2], "ylim": [-0.4, 4.8],
+    "items": [
+      { "kind": "graph", "f": "x*x", "domain": [-2.2, 2.2], "color": "#1F7A6D" },
+      { "kind": "point", "x": 1, "y": 1, "label": "y(1)=1" }
+    ],
+    "caption": "令 x=e^t 化为常系数方程 y″_t −y′_t? 特征 λ=2 → y=C₁x²+C₂x^{−2}；初值定 C₂=0 → y=x²。"
+  },
+  {
+    "qid": "math-2021-14", "origin": "derived",
+    "title": "第14题 椭圆柱体 Ω 的横截面",
+    "xlim": [-2.6, 2.6], "ylim": [-1.4, 1.4],
+    "items": [
+      { "kind": "parametric", "fx": "2*cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "x²+4y²=4" },
+      { "kind": "label", "x": -1.1, "y": 0.28, "text": "底面区域" }
+    ],
+    "caption": "Ω：椭圆柱 x²+4y²≤4、高 0≤z≤2，闭合曲面外侧 → 高斯公式 ∭(2x+2y+1)dV = 4π（对称性消去一次项）。"
+  },
+  {
+    "qid": "math-2021-18", "origin": "derived",
+    "title": "第18题 函数项级数和函数 S(x)",
+    "xlim": [0, 1], "ylim": [0, 4.2],
+    "items": [
+      { "kind": "graph", "f": "exp(-x)/(1-exp(-x))+(1-x)*ln(1-x)+x", "domain": [0.02, 0.88], "color": "#7C3AED" },
+      { "kind": "point", "x": 1, "y": 1.582, "label": "S(1)=e/(e−1)" }
+    ],
+    "caption": "Σe^{−nx} 为等比、Σx^{n+1}/(n(n+1)) 逐项积分；S(x) 在 (0,1) 如图，x→1⁺ 处值 e/(e−1)。"
+  },
+  {
+    "qid": "math-2021-19", "origin": "derived",
+    "title": "第19题 空间曲线 C 在 xOy 面的投影",
+    "xlim": [-9, 5], "ylim": [-5.5, 4.5],
+    "items": [
+      { "kind": "parametric", "fx": "-2+6.364*cos(t)", "fy": "-0.5+4.5*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "投影椭圆" },
+      { "kind": "point", "x": 4, "y": -0.5, "label": "z 最大处" }
+    ],
+    "caption": "C：x²+2y²−z=6 与 4x+2y+z=30 联立，投影 (x+2)²+2(y+½)²=40.5；z=4x+2y+30 沿椭圆的最大值为 66。"
+  }
+]
