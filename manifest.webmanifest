@@ -1,0 +1,13 @@
+{
+  "name": "考研全栈学习平台",
+  "short_name": "考研Lab",
+  "description": "考研政治/数学一/英语一/408 真题逐题精讲，纯静态离线可用",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FAF8F4",
+  "theme_color": "#0F2540",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

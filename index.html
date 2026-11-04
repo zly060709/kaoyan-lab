@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>考研全栈学习平台 · 政治/数学/英语/408 真题逐题精讲</title>
 <meta name="description" content="考研政治、数学一、英语一、408 计算机真题逐题精讲统一学习平台：逐题解析、自测模式、错题收藏、学习进度本地保存。">
+<meta name="theme-color" content="#0F2540">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
 <style>
 :root{
   --navy:#0F2540; --navy-mid:#1a3a5c; --gold:#C9A961; --gold-l:#e8d5a3;
@@ -139,7 +143,17 @@ async function fetchJSON(url){
   finally{clearTimeout(tid)}
 }
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
-function renderMath(el){ /* KaTeX vendor 化后接入；v0 直接显示原文 $...$ */ }
+let _katexTries=0;
+function renderMath(el){
+  try{
+    if(!window.renderMathInElement){
+      if(_katexTries++<20)setTimeout(()=>renderMath(el),300); // vendor 脚本 defer 加载中
+      return;
+    }
+    renderMathInElement(el,{delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
+      throwOnError:false,ignoredTags:["script","noscript","style","textarea","pre","code"]});
+  }catch(e){/* 渲染失败保留原文 LaTeX，不影响阅读 */}
+}
 function yearRange(a,b){const r=[];for(let i=a;i<=b;i++)r.push(i);return r}
 
 /* ---------- 路由 ---------- */
@@ -297,6 +311,19 @@ $("#selftest").onclick=function(){this.classList.toggle("on");document.body.clas
 if(ls("selftest")==="1"){$("#selftest").classList.add("on");document.body.classList.add("selftest")}
 function view404(){app.innerHTML=`<h2 class="sec">404</h2><div class="qcard">页面不存在。<a href="#/">回到首页</a></div>`}
 route();
+</script>
+<script defer src="vendor/katex/katex.min.js"></script>
+<script defer src="vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+if("serviceWorker" in navigator){
+  addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+  let _rf=false;
+  navigator.serviceWorker.addEventListener("controllerchange",()=>{
+    if(_rf)return;_rf=true;
+    toast("发现新版本，正在刷新…");
+    setTimeout(()=>location.reload(),900);
+  });
+}
 </script>
 </body>
 </html>
