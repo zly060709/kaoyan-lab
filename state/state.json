@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "M1",
+  "status": "RUNNING",
+  "started_at": "2026-11-04T15:08:05Z",
+  "updated_at": "2026-11-04T15:08:05Z",
+  "done_set": ["m0:contract_archive", "m0:scaffold", "m0:auth_initiated"],
+  "failed_set": [],
+  "current_task": "m1:migrate_data",
+  "in_flight": {
+    "english": "background-agent",
+    "math": "background-agent"
+  },
+  "auth": "device-flow-pending",
+  "metrics": {
+    "questions": { "politics": 0, "math": 0, "english": 0, "cs408": 0 },
+    "expected": { "politics": 456, "math": 250, "english_objective": 675, "cs408": 376 }
+  },
+  "budget": { "token_kill_line": 95000000, "time_cap_h": 96, "elapsed_h": 0 }
+}

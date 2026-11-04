@@ -1,0 +1,9 @@
+* text=auto
+legacy/** -text
+*.woff2 -text
+*.woff -text
+*.ttf -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text

@@ -1,0 +1,18 @@
+{
+  "heartbeat_interval_s": 30,
+  "outer_timeout_min": 15,
+  "task_hard_timeout_min": 12,
+  "retry_max": 3,
+  "retry_backoff": "2^n*5s + jitter",
+  "global_token_kill": 95000000,
+  "max_parallel_agent": 6,
+  "max_file_size_mb": 8,
+  "data_shard_max_kb": 500,
+  "commit_every": "atomic_task",
+  "pages_deploy_debounce_min": 20,
+  "total_time_cap_h": 96,
+  "converge_at_pct": 80,
+  "dag_acyclic_check": true,
+  "keep_green_tags": 5,
+  "created_at": "2026-11-04T15:08:05Z"
+}
