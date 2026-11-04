@@ -1,0 +1,73 @@
+[
+  {
+    "qid": "math2-2009-1", "origin": "derived",
+    "title": "第1题 f(x)=(x−x³)/sinπx 的可去间断点",
+    "xlim": [-1.65, 1.65], "ylim": [-0.2, 1.3],
+    "items": [
+      { "kind": "graph", "f": "(x-x*x*x)/sin(pi*x)", "domain": [-1.6, 1.6], "color": "#1D4ED8" },
+      { "kind": "point", "x": 0, "y": 0.3183, "label": "lim=1/π" },
+      { "kind": "point", "x": 1, "y": 0.6366, "label": "2/π" },
+      { "kind": "point", "x": -1, "y": 0.6366, "label": "2/π" }
+    ],
+    "caption": "x=0,±1 处分子分母同时为零（曲线上的空心点），左右极限存在 → 可去间断点共 3 个；其余整数点为无穷间断（图外）。"
+  },
+  {
+    "qid": "math2-2009-6", "origin": "derived",
+    "title": "第6题 f 的分段示意（依解析文字重构）",
+    "xlim": [-1.3, 3.3], "ylim": [-1.3, 1.5],
+    "items": [
+      { "kind": "graph", "f": "0*x+1", "domain": [-1, 0], "color": "#1D4ED8", "label": "f>0 常数" },
+      { "kind": "graph", "f": "-sin(pi*x)", "domain": [0, 1], "color": "#1D4ED8", "label": "f<0" },
+      { "kind": "graph", "f": "1-(x-2)*(x-2)", "domain": [1, 2], "color": "#1D4ED8", "label": "f>0" },
+      { "kind": "hline", "y": 0, "style": "dashed" },
+      { "kind": "vline", "x": 0, "style": "dashed" },
+      { "kind": "label", "x": 2.15, "y": 0.32, "text": "f=0 (2,3)" }
+    ],
+    "caption": "示意图（符号区间与原卷一致，具体曲线形状为示意）：f 的符号决定 F=∫₀ˣ 的增减——(−1,0) 直线升、(0,1) 降到负值、(1,2) 回升、(2,3) 水平，对应选项 D。"
+  },
+  {
+    "qid": "math2-2009-13", "origin": "derived",
+    "title": "第13题 y=x^{2x} 的最小值",
+    "xlim": [0, 1.1], "ylim": [0.4, 1.15],
+    "items": [
+      { "kind": "graph", "f": "exp(2*x*ln(x))", "domain": [0.02, 1.05], "color": "#1F7A6D" },
+      { "kind": "point", "x": 0.3679, "y": 0.4791, "label": "min e^{−2/e}≈0.479" },
+      { "kind": "point", "x": 1, "y": 1, "label": "y(1)=1" }
+    ],
+    "caption": "驻点 x=1/e 处取最小值 e^{−2/e}；两端极限 y(0⁺)=1、y(1)=1 均大于最小值。"
+  },
+  {
+    "qid": "math2-2009-18", "origin": "derived",
+    "title": "第18题 曲线 y=2x+3x² 与旋转体",
+    "xlim": [0, 1.1], "ylim": [0, 5.6],
+    "items": [
+      { "kind": "graph", "f": "2*x+3*x*x", "domain": [0, 1], "color": "#1D4ED8", "label": "y=2x+3x²" },
+      { "kind": "shade_under", "f": "2*x+3*x*x", "domain": [0, 1], "color": "rgba(201,169,97,.35)" },
+      { "kind": "segment", "x1": 1, "y1": 0, "x2": 1, "y2": 5, "color": "#B8324A", "label": "x=1" },
+      { "kind": "point", "x": 0, "y": 0, "label": "原点" }
+    ],
+    "caption": "阴影区域（面积=2）绕 y 轴旋转：补集法 V=5π−V₁=17π/6；也可用柱壳法 V=2π∫₀¹x(2x+3x²)dx 验算。"
+  },
+  {
+    "qid": "math2-2009-19", "origin": "derived",
+    "title": "第19题 半圆盘区域 D（y≥x）",
+    "xlim": [-0.85, 2.75], "ylim": [-0.5, 2.75],
+    "items": [
+      { "kind": "polygon", "pts": [[0, 0], [-0.31, 0.47], [-0.41, 1], [-0.3, 1.55], [0, 2], [0.47, 2.31], [1, 2.41], [1.55, 2.3], [2, 2]], "color": "rgba(201,169,97,.4)" },
+      { "kind": "parametric", "fx": "1+1.4142*cos(t)", "fy": "1+1.4142*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "(x−1)²+(y−1)²=2" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 2, "y2": 2, "color": "#B8324A", "label": "y=x" }
+    ],
+    "caption": "圆心 (1,1)、r=√2，直线 y=x 恰过圆心 → D 为上半圆盘。极坐标 r≤2(sinθ+cosθ)，θ∈[π/4, 3π/4]，∬(x−y)dσ=−8/3。"
+  },
+  {
+    "qid": "math2-2009-20", "origin": "derived",
+    "title": "第20题 分段拼接的光滑曲线",
+    "xlim": [-3.4, 3.4], "ylim": [-3.6, 3.8],
+    "items": [
+      { "kind": "parametric", "fx": "pi*cos(t)", "fy": "pi*sin(t)", "tmin": 1.5708, "tmax": 3.1416, "color": "#1D4ED8", "label": "y=√(π²−x²)（圆弧）" },
+      { "kind": "graph", "f": "pi*cos(x)+sin(x)-x", "domain": [0, 3.1416], "color": "#B8324A", "label": "y=πcosx+sinx−x" },
+      { "kind": "point", "x": 0, "y": 3.1416, "label": "(0,π) 光滑衔接" }
+    ],
+    "caption": "左段：法线过原点 → 圆弧 x²+y²=π²；右段：y″+y=−x 的解；在 x=0 处函数值与导数值（均为 0）衔接 → 光滑。"
+  }
+]
