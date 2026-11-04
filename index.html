@@ -3,30 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>考研全栈学习平台 · 政治/数学/英语/408 真题逐题精讲</title>
-<meta name="description" content="考研政治、数学一、英语一、408 计算机真题逐题精讲统一学习平台：逐题解析、自测模式、错题收藏、学习进度本地保存。">
-<meta name="theme-color" content="#0F2540">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<title>考研全栈学习平台 · 20 科统考真题逐题精讲</title>
+<meta name="description" content="考研全国统考真题逐题精讲统一学习平台：政治/数学/英语/408 等科目，逐题解析、抽象概念图形化、自测模式、错题收藏、跨科搜索、进度本地保存。">
 <style>
 :root{
   --navy:#0F2540; --navy-mid:#1a3a5c; --gold:#C9A961; --gold-l:#e8d5a3;
   --cream:#FAF8F4; --paper:#fff; --text:#1e293b; --muted:#64748b; --line:#e2e8f0;
-  --teal:#1F7A6D; --teal-bg:#e6f4f1; --rose-bg:#fde8ec; --rose:#b8324a;
+  --teal:#1F7A6D; --teal-bg:#e6f4f1; --rose:#b8324a; --rose-bg:#fde8ec;
   --blue-bg:#e8f0fe; --amber-bg:#fef3d6; --amber:#92600a;
-  --politics:#EF5350; --math:#1D4ED8; --english:#1F7A6D; --cs408:#7C3AED;
   --radius:14px; --shadow:0 2px 12px rgba(15,37,64,.08);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:"Noto Serif SC",Georgia,"Songti SC","Microsoft YaHei",serif;background:var(--cream);color:var(--text);line-height:1.9;font-size:16px;-webkit-text-size-adjust:100%}
-.wrap{max-width:900px;margin:0 auto;padding:0 20px 80px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px 80px}
 header.top{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:#fff;box-shadow:0 2px 14px rgba(15,37,64,.3)}
-header.top .bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:10px 20px}
+header.top .bar{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:10px 20px}
 header.top .logo{width:34px;height:34px;border-radius:9px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
-header.top .t{font-weight:800;font-size:16px;letter-spacing:1px}
-header.top .right{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:13px}
+header.top .t{font-weight:800;font-size:16px;letter-spacing:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+header.top .right{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:13px;flex-shrink:0}
 .switch{width:44px;height:24px;border-radius:12px;background:rgba(255,255,255,.25);position:relative;cursor:pointer;transition:.2s;flex-shrink:0}
 .switch.on{background:var(--gold)}
 .switch::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.2s}
@@ -34,35 +29,47 @@ header.top .right{margin-left:auto;display:flex;align-items:center;gap:10px;font
 .crumb{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13.5px;color:var(--muted);padding:14px 0 0}
 .crumb a{color:var(--navy);text-decoration:none}
 .crumb a:hover{text-decoration:underline}
-.hero{position:relative;background:linear-gradient(160deg,#0F2540 0%,#1a3a5c 55%,#2c5282 100%);color:#fff;padding:56px 32px 64px;text-align:center;overflow:hidden}
+.hero{position:relative;background:linear-gradient(160deg,#0F2540 0%,#1a3a5c 55%,#2c5282 100%);color:#fff;padding:48px 32px 64px;text-align:center;overflow:hidden}
 .hero::before{content:"";position:absolute;top:-50%;right:-20%;width:520px;height:520px;background:radial-gradient(circle,rgba(201,169,97,.18) 0%,transparent 70%);border-radius:50%}
-.hero h1{font-size:30px;font-weight:900;letter-spacing:3px;position:relative}
-.hero .sub{opacity:.85;letter-spacing:5px;font-size:14px;margin-top:8px;position:relative}
-.hero .gold{width:60px;height:3px;background:var(--gold);margin:20px auto;position:relative}
-.hero .cd{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(201,169,97,.5);border-radius:12px;padding:10px 22px;font-size:14px;position:relative;cursor:pointer}
-.hero .cd b{font-size:22px;color:var(--gold-l);font-family:Georgia,serif}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:-32px;position:relative;z-index:5}
-.card{background:var(--paper);border-radius:var(--radius);padding:22px;box-shadow:0 8px 26px rgba(15,37,64,.14);border-top:4px solid var(--acc,#0F2540);text-decoration:none;color:var(--text);display:block;transition:transform .15s}
+.hero h1{font-size:28px;font-weight:900;letter-spacing:3px;position:relative}
+.hero .sub{opacity:.85;letter-spacing:4px;font-size:13.5px;margin-top:8px;position:relative}
+.hero .gold{width:60px;height:3px;background:var(--gold);margin:18px auto;position:relative}
+.hero .cd{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(201,169,97,.5);border-radius:12px;padding:8px 20px;font-size:14px;position:relative;cursor:pointer;margin-bottom:14px}
+.hero .cd b{font-size:20px;color:var(--gold-l);font-family:Georgia,serif}
+.searchbar{position:relative;z-index:5;max-width:640px;margin:0 auto;display:flex;gap:8px}
+.searchbar input{flex:1;border:none;border-radius:12px;padding:13px 18px;font-size:15px;font-family:inherit;outline:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.searchbar button{border:none;border-radius:12px;padding:0 22px;background:var(--gold);color:#0F2540;font-weight:800;font-size:15px;cursor:pointer;font-family:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:14px;margin-top:-30px;position:relative;z-index:5}
+.card{background:var(--paper);border-radius:var(--radius);padding:18px;box-shadow:0 8px 26px rgba(15,37,64,.14);border-top:4px solid var(--acc,#0F2540);text-decoration:none;color:var(--text);display:block;transition:transform .15s;position:relative}
 .card:hover{transform:translateY(-3px)}
-.card h3{color:var(--navy);font-size:18px;margin-bottom:4px}
-.card .meta{font-size:12.5px;color:var(--muted)}
-.card .cnt{margin-top:10px;font-size:13px}
-.card .cnt b{color:var(--acc);font-size:16px}
-.bar2{height:6px;border-radius:3px;background:var(--blue-bg);overflow:hidden;margin-top:8px}
+.card .icode{position:absolute;right:14px;top:12px;font-size:20px;opacity:.9;font-family:Georgia,serif}
+.card h3{color:var(--navy);font-size:16.5px;margin-bottom:2px;padding-right:26px}
+.card .code{font-size:11.5px;color:var(--muted)}
+.card .cnt{margin-top:8px;font-size:13px}
+.card .cnt b{color:var(--acc);font-size:15px}
+.bar2{height:5px;border-radius:3px;background:var(--blue-bg);overflow:hidden;margin-top:7px}
 .bar2 i{display:block;height:100%;background:var(--acc);border-radius:3px}
-h2.sec{font-size:20px;color:var(--navy);margin:34px 0 14px;display:flex;align-items:center;gap:10px}
+.card.pending{opacity:.62;border-top-color:#cbd5e1;cursor:default}
+.card.pending h3{color:var(--muted)}
+.card .need{font-size:12px;color:var(--muted);margin-top:6px}
+.badge-st{font-size:10.5px;padding:1px 7px;border-radius:8px;vertical-align:middle;margin-left:6px}
+.st-active{background:var(--teal-bg);color:var(--teal)}
+.st-migrating{background:var(--amber-bg);color:var(--amber)}
+.st-pending{background:#f1f5f9;color:var(--muted)}
+h2.sec{font-size:19px;color:var(--navy);margin:32px 0 14px;display:flex;align-items:center;gap:10px}
 h2.sec::before{content:"✦";color:var(--gold)}
-.ygrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
-.ycard{background:var(--paper);border-radius:12px;padding:14px 10px;text-align:center;box-shadow:var(--shadow);text-decoration:none;color:var(--text);border:1px solid var(--line);transition:transform .15s}
+.ygrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px}
+.ycard{background:var(--paper);border-radius:12px;padding:13px 8px;text-align:center;box-shadow:var(--shadow);text-decoration:none;color:var(--text);border:1px solid var(--line);transition:transform .15s}
 .ycard:hover{transform:scale(1.04)}
-.ycard b{font-size:18px;color:var(--navy);display:block}
-.ycard span{font-size:12px;color:var(--muted)}
+.ycard b{font-size:17px;color:var(--navy);display:block}
+.ycard span{font-size:11.5px;color:var(--muted)}
+.ycard.dim{opacity:.55}
 .qlist{display:flex;flex-direction:column;gap:10px}
-.qrow{background:var(--paper);border-radius:12px;padding:14px 18px;box-shadow:var(--shadow);text-decoration:none;color:var(--text);display:flex;gap:12px;align-items:baseline;border-left:3px solid var(--acc,#0F2540)}
+.qrow{background:var(--paper);border-radius:12px;padding:13px 18px;box-shadow:var(--shadow);text-decoration:none;color:var(--text);display:flex;gap:12px;align-items:baseline;border-left:3px solid var(--acc,#0F2540)}
 .qrow .n{font-weight:800;color:var(--acc);min-width:34px;font-family:Georgia,serif}
 .qrow .s{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .qrow .tag{font-size:11px;color:var(--muted);border:1px solid var(--line);padding:1px 8px;border-radius:10px;flex-shrink:0}
-.qcard{background:var(--paper);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow);margin:16px 0;border-top:3px solid var(--acc,#0F2540)}
+.qcard{background:var(--paper);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow);margin:16px 0;border-top:3px solid var(--acc,#0F2540)}
 .qhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 .qhead .qn{background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
 .qhead .tt{font-weight:700;color:var(--navy);font-size:15px}
@@ -71,8 +78,9 @@ h2.sec::before{content:"✦";color:var(--gold)}
 .opts{margin:8px 0 14px 6px}
 .opt{padding:4px 8px;border-radius:8px;font-size:14.5px;line-height:1.8}
 .opt.correct{color:var(--teal);font-weight:700;background:var(--teal-bg)}
-.blk{border-radius:10px;padding:14px 18px;margin:12px 0;font-size:14.5px;line-height:1.95;white-space:pre-wrap;word-break:break-word}
+.blk{border-radius:10px;padding:13px 17px;margin:12px 0;font-size:14.5px;line-height:1.95;white-space:pre-wrap;word-break:break-word;position:relative}
 .blk .lab{display:block;font-weight:800;font-size:12.5px;letter-spacing:1px;margin-bottom:6px}
+.blk .org{position:absolute;right:10px;top:10px;font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:0 6px}
 .blk[data-role="stem"],.blk[data-role="material"]{background:#eceff1;border-left:3px solid #90a4ae}
 .blk[data-role="answer"]{background:#e8f5e9;border-left:3px solid #2e7d32}.blk[data-role="answer"] .lab{color:#2e7d32}
 .blk[data-role="approach"],.blk[data-role="think"]{background:var(--amber-bg);border-left:3px solid var(--amber)}.blk[data-role="approach"] .lab,.blk[data-role="think"] .lab{color:var(--amber)}
@@ -80,27 +88,39 @@ h2.sec::before{content:"✦";color:var(--gold)}
 .blk[data-role="background"]{background:#f3e5f5;border-left:3px solid #8e24aa}
 .blk[data-role="qa"]{background:#fafafa;border-left:3px solid #546e7a}
 .blk[data-role="warn"],.blk[data-role="vocab"]{background:var(--rose-bg);border-left:3px solid var(--rose)}.blk[data-role="warn"] .lab{color:var(--rose)}
-.blk[data-role="nodes"],.blk[data-role="desc"],.blk[data-role="solution"],.blk[data-role="other"],.blk[data-role="frame"]{background:#f8fafc;border:1px solid var(--line)}
+.blk[data-role="nodes"],.blk[data-role="desc"],.blk[data-role="solution"],.blk[data-role="other"],.blk[data-role="frame"],.blk[data-role="kaodian"],.blk[data-role="silu"],.blk[data-role="jiefa"],.blk[data-role="biaozhun"],.blk[data-role="yicuo"],.blk[data-role="guina"],.blk[data-role="qita"]{background:#f8fafc;border:1px solid var(--line)}
 .blk img{max-width:100%;border-radius:8px;margin:8px 0}
+.figbox{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+.figbox h4{font-size:14px;color:var(--navy);margin-bottom:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.figbox h4 .derv{font-size:10.5px;color:var(--amber);background:var(--amber-bg);border-radius:8px;padding:1px 8px;font-weight:600}
+.figbox canvas{display:block;margin:0 auto;max-width:100%}
+.figbox .cap{font-size:12.5px;color:var(--muted);margin-top:6px}
 .reveal-btn{display:block;margin:14px auto 4px;padding:9px 26px;border-radius:20px;border:1px solid var(--acc,#0F2540);background:#fff;color:var(--acc);font-size:14px;cursor:pointer;font-weight:700}
 .reveal-btn:hover{background:var(--acc);color:#fff}
-.qnav{display:flex;gap:10px;justify-content:center;margin:18px 0}
+.qnav{display:flex;gap:10px;justify-content:center;margin:18px 0;flex-wrap:wrap}
 .qnav button{padding:8px 22px;border-radius:20px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:14px}
 .qnav button:hover{border-color:var(--acc);color:var(--acc)}
 details.passage{background:var(--paper);border-radius:12px;box-shadow:var(--shadow);margin:10px 0;padding:14px 20px}
 details.passage summary{cursor:pointer;font-weight:700;color:var(--navy)}
 details.passage .en{font-family:Georgia,serif;text-indent:2em;margin:6px 0}
 details.passage .zh{font-size:14px;color:var(--muted);background:#f8fafc;border-left:3px solid var(--gold-l);padding:6px 12px;text-indent:2em;border-radius:0 6px 6px 0}
+.sr{background:var(--paper);border-radius:12px;padding:12px 16px;box-shadow:var(--shadow);margin:8px 0;display:block;color:var(--text);text-decoration:none;border-left:3px solid var(--acc,#0F2540)}
+.sr:hover{background:#fcfcfa}
+.sr .h{font-size:14px;font-weight:700;color:var(--navy)}
+.sr .m{font-size:13px;color:var(--muted);margin-top:2px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.sr mark{background:var(--gold-l);border-radius:3px;padding:0 1px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.chip{padding:5px 14px;border-radius:16px;border:1px solid var(--line);background:#fff;font-size:13px;cursor:pointer;color:var(--muted)}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
 footer{margin-top:56px;padding:28px 20px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:12.5px;line-height:2}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:rgba(15,37,64,.92);color:#fff;padding:9px 20px;border-radius:18px;font-size:13px;z-index:999;display:none}
 .errbar{position:fixed;top:0;left:0;right:0;background:var(--rose);color:#fff;font-size:12px;padding:4px 12px;z-index:1000;display:none}
 #backtop{position:fixed;right:16px;bottom:20px;width:42px;height:42px;border-radius:50%;border:none;background:var(--navy);color:#fff;font-size:18px;cursor:pointer;box-shadow:0 4px 14px rgba(15,37,64,.35);opacity:0;pointer-events:none;transition:.25s;z-index:90}
 #backtop.show{opacity:.92;pointer-events:auto}
-/* 自测模式 */
-body.selftest .blk[data-role="answer"],body.selftest .blk[data-role="analysis"],body.selftest .blk[data-role="nodes"],body.selftest .blk[data-role="desc"],body.selftest .opt.correct{display:none}
+body.selftest .blk[data-role="answer"],body.selftest .blk[data-role="analysis"],body.selftest .blk[data-role="nodes"],body.selftest .blk[data-role="desc"],body.selftest .blk[data-role="solution"],body.selftest .opt.correct{display:none}
 body.selftest article.revealed .blk,body.selftest article.revealed .opt{display:block}
 body.selftest article.revealed .opt.correct{display:block}
-@media(max-width:640px){.hero{padding:40px 18px 54px}.hero h1{font-size:22px}.qcard{padding:18px}}
+@media(max-width:640px){.hero{padding:36px 16px 54px}.hero h1{font-size:21px}.qcard{padding:16px}.grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -116,182 +136,264 @@ body.selftest article.revealed .opt.correct{display:block}
 <div id="backtop">↑</div>
 <div class="toast" id="toast"></div>
 <footer>
-  内容包含第三方版权考研真题与解析（408 部分原始资料为新东方在线《408 真题集（2009–2025）》）· 仅限个人学习使用，禁止二次分发与商用<br>
+  内容包含第三方版权考研真题与解析（408 部分原始资料为新东方在线《408 真题集（2009–2025）》；数学/英语部分源自用户提供的《学科历年真题》资料）· 仅限个人学习使用，禁止二次分发与商用<br>
   kaoyan-lab · 纯静态离线可用 · 学习数据仅存于本浏览器 · <a href="/diag.html" style="color:var(--muted)">自诊断</a>
 </footer>
 <script>
 "use strict";
-const SUBJECTS={
-  politics:{name:"考研政治",acc:"var(--politics)",years:[2013,2024],tag:"政治"},
-  math:{name:"数学一",acc:"var(--math)",years:[2013,2023],tag:"数学"},
-  english:{name:"英语一",acc:"var(--english)",years:[2010,2024],tag:"英语"},
-  cs408:{name:"408 计算机",acc:"var(--cs408)",years:[2018,2025],tag:"408"}
-};
-const EXPECT={politics:456,math:250,english:675,cs408:376};
-const ROLE_LABEL={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",other:"原文区块"};
-const app=document.getElementById("app");
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-let cache={},toastTimer=null;
+let REG=null,CACHE={},toastTimer=null,keyHandler=null;
+const app=$("#app");
 function toast(m){const t=$("#toast");t.textContent=m;t.style.display="block";clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display="none",2600)}
-window.onerror=function(m,s,l){const e=$("#errbar");e.style.display="block";e.textContent="⚠ 脚本错误："+m+"（不影响其他模块，可到 /diag.html 查看）";setTimeout(()=>e.style.display="none",6000)};
+window.onerror=function(m){const e=$("#errbar");e.style.display="block";e.textContent="⚠ 脚本错误："+m+"（其他模块不受影响，详见 /diag.html）";setTimeout(()=>e.style.display="none",6000)};
 async function fetchJSON(url){
-  if(cache[url])return cache[url];
+  if(CACHE[url])return CACHE[url];
   const ac=new AbortController();const tid=setTimeout(()=>ac.abort(),8000);
-  try{const r=await fetch(url,{signal:ac.signal});if(!r.ok)throw new Error("HTTP "+r.status);
-    const j=await r.json();cache[url]=j;return j}
+  try{const r=await fetch(url,{signal:ac.signal});if(!r.ok)throw new Error("HTTP "+r.status);const j=await r.json();CACHE[url]=j;return j}
   finally{clearTimeout(tid)}
 }
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
-let _katexTries=0;
+function subjById(id){return (REG&&REG.subjects||[]).find(s=>s.id===id)}
+function dirOf(id){const s=subjById(id);return (s&&s.dataDir)||id}
+let _kt=0;
 function renderMath(el){
   try{
-    if(!window.renderMathInElement){
-      if(_katexTries++<20)setTimeout(()=>renderMath(el),300); // vendor 脚本 defer 加载中
-      return;
-    }
+    if(!window.renderMathInElement){if(_kt++<20)setTimeout(()=>renderMath(el),300);return}
     renderMathInElement(el,{delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],
       throwOnError:false,ignoredTags:["script","noscript","style","textarea","pre","code"]});
-  }catch(e){/* 渲染失败保留原文 LaTeX，不影响阅读 */}
+  }catch(e){}
 }
-function yearRange(a,b){const r=[];for(let i=a;i<=b;i++)r.push(i);return r}
 
-/* ---------- 路由 ---------- */
+/* ============ 数学图形引擎（D043 DSL，白名单表达式，禁外部输入拼接） ============ */
+function compileExpr(src){
+  const cleaned=String(src||"").replace(/\s+/g,"");
+  if(!cleaned)throw new Error("空表达式");
+  if(!/^[0-9a-zA-Z_+\-*/^(),.]+$/.test(cleaned))throw new Error("表达式含非法字符");
+  const FN={sin:"Math.sin",cos:"Math.cos",tan:"Math.tan",asin:"Math.asin",acos:"Math.acos",atan:"Math.atan",
+    sinh:"Math.sinh",cosh:"Math.cosh",tanh:"Math.tanh",ln:"Math.log",log:"Math.log",log10:"Math.log10",
+    exp:"Math.exp",sqrt:"Math.sqrt",abs:"Math.abs",floor:"Math.floor",ceil:"Math.ceil",min:"Math.min",max:"Math.max",
+    pi:"Math.PI",e:"Math.E"};
+  let js=cleaned.replace(/[a-zA-Z_]+/g,m=>{const k=m.toLowerCase();if(k in FN)return FN[k];if(k==="x"||k==="t")return k;throw new Error("未知符号:"+m)});
+  js=js.replace(/\^/g,"**");
+  const v=cleaned.toLowerCase().includes("t")?"t":"x";
+  const f=new Function(v,"\"use strict\";try{return ("+js+")}catch(_){return NaN}");
+  return x=>{let r;try{r=f(x)}catch(_){return NaN}return typeof r==="number"?r:NaN};
+}
+function renderFigure(host,spec){
+  const W=Math.min(680,(host.clientWidth||600)-36),H=340,dpr=window.devicePixelRatio||1;
+  const cv=document.createElement("canvas");cv.width=W*dpr;cv.height=H*dpr;cv.style.width=W+"px";cv.style.height=H+"px";
+  const ctx=cv.getContext("2d");ctx.scale(dpr,dpr);
+  const xlim=spec.xlim||[-6,6],ylim=spec.ylim||[-6,6];
+  const px=x=>44+(x-xlim[0])/(xlim[1]-xlim[0])*(W-60);
+  const py=y=>H-26-(y-ylim[0])/(ylim[1]-ylim[0])*(H-48);
+  ctx.fillStyle="#fff";ctx.fillRect(0,0,W,H);
+  ctx.strokeStyle="#eef1f5";ctx.lineWidth=1;
+  const gx=(xlim[1]-xlim[0])/10,gy=(ylim[1]-ylim[0])/8;
+  ctx.beginPath();
+  for(let i=0;i<=10;i++){const x=xlim[0]+gx*i;ctx.moveTo(px(x),6);ctx.lineTo(px(x),H-26);}
+  for(let i=0;i<=8;i++){const y=ylim[0]+gy*i;ctx.moveTo(44,py(y));ctx.lineTo(W-16,py(y));}
+  ctx.stroke();
+  ctx.strokeStyle="#94a3b8";ctx.lineWidth=1.2;
+  if(ylim[0]<=0&&ylim[1]>=0){ctx.beginPath();ctx.moveTo(px(xlim[0]),py(0));ctx.lineTo(px(xlim[1]),py(0));ctx.stroke();}
+  if(xlim[0]<=0&&xlim[1]>=0){ctx.beginPath();ctx.moveTo(px(0),py(ylim[0]));ctx.lineTo(px(0),py(ylim[1]));ctx.stroke();}
+  ctx.fillStyle="#94a3b8";ctx.font="10px sans-serif";ctx.textAlign="center";
+  for(let i=0;i<=10;i+=2){const x=xlim[0]+gx*i;if(Math.abs(x)>1e-9)ctx.fillText(String(+x.toFixed(2)),px(x),H-12);}
+  ctx.textAlign="right";
+  for(let i=0;i<=8;i+=2){const y=ylim[0]+gy*i;if(Math.abs(y)>1e-9)ctx.fillText(String(+y.toFixed(2)),38,py(y)+3);}
+  const PALETTE=["#1D4ED8","#B8324A","#1F7A6D","#7C3AED","#C9A961","#0F2540"];
+  let ci=0;
+  const safe=(f)=>{try{return compileExpr(f)}catch(e){return null}};
+  const curve=(f,x0,x1,color,w)=>{const fn=safe(f);if(!fn)return;ctx.strokeStyle=color;ctx.lineWidth=w||2;ctx.beginPath();let pen=false;
+    const N=700,span=xlim[1]-xlim[0];
+    for(let i=0;i<=N;i++){const x=x0+(x1-x0)*i/N;const y=fn(x);
+      if(!isFinite(y)||y<ylim[0]-span*2||y>ylim[1]+span*2){pen=false;continue}
+      const X=px(x),Y=py(y);if(!pen){ctx.moveTo(X,Y);pen=true}else ctx.lineTo(X,Y);}
+    ctx.stroke();};
+  const fillBetween=(f1,f2,x0,x1,color)=>{const A=safe(f1),B=safe(f2);if(!A||!B)return;
+    ctx.fillStyle=color;ctx.beginPath();let first=true;const N=400;
+    for(let i=0;i<=N;i++){const x=x0+(x1-x0)*i/N;const y=A(x);if(!isFinite(y))continue;const X=px(x),Y=py(y);first?ctx.moveTo(X,Y):ctx.lineTo(X,Y);first=false;}
+    for(let i=N;i>=0;i--){const x=x0+(x1-x0)*i/N;const y=B(x);if(!isFinite(y))continue;ctx.lineTo(px(x),py(y));}
+    ctx.closePath();ctx.fill();};
+  (spec.items||[]).forEach(it=>{
+    const col=it.color||PALETTE[(ci++)%PALETTE.length];
+    switch(it.kind){
+      case "graph":curve(it.f,+(it.domain?it.domain[0]:xlim[0]),+(it.domain?it.domain[1]:xlim[1]),col);break;
+      case "shade_between":fillBetween(it.f1,it.f2,+(it.domain?it.domain[0]:xlim[0]),+(it.domain?it.domain[1]:xlim[1]),it.color||"rgba(29,78,216,.18)");break;
+      case "shade_under":fillBetween(it.f,"0",+(it.domain?it.domain[0]:xlim[0]),+(it.domain?it.domain[1]:xlim[1]),it.color||"rgba(29,78,216,.18)");break;
+      case "point":{ctx.fillStyle=col;ctx.beginPath();ctx.arc(px(+it.x),py(+it.y),3.6,0,7);ctx.fill();
+        if(it.label){ctx.fillStyle="#334155";ctx.font="12px sans-serif";ctx.textAlign="left";ctx.fillText(it.label,px(+it.x)+6,py(+it.y)-6)}break}
+      case "vline":{ctx.strokeStyle=col||"#94a3b8";ctx.setLineDash(it.style==="dashed"?[5,4]:[]);ctx.beginPath();
+        ctx.moveTo(px(+it.x),py(ylim[0]));ctx.lineTo(px(+it.x),py(ylim[1]));ctx.stroke();ctx.setLineDash([]);
+        if(it.label){ctx.fillStyle="#334155";ctx.font="12px sans-serif";ctx.textAlign="left";ctx.fillText(it.label,px(+it.x)+4,py(ylim[1])+12)}break}
+      case "hline":{ctx.strokeStyle=col||"#94a3b8";ctx.setLineDash(it.style==="dashed"?[5,4]:[]);ctx.beginPath();
+        ctx.moveTo(px(xlim[0]),py(+it.y));ctx.lineTo(px(xlim[1]),py(+it.y));ctx.stroke();ctx.setLineDash([]);break}
+      case "circle":curve("("+it.r+"*cos(t))",0,2*Math.PI,col);curve("("+it.r+"*sin(t))",0,2*Math.PI,col);break;
+      case "segment":{ctx.strokeStyle=col;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(px(+it.x1),py(+it.y1));ctx.lineTo(px(+it.x2),py(+it.y2));ctx.stroke();break}
+      case "polygon":{if(!it.pts||!it.pts.length)break;ctx.fillStyle=it.color||"rgba(201,169,97,.2)";ctx.strokeStyle=col;ctx.lineWidth=2;
+        ctx.beginPath();it.pts.forEach((p,i)=>{i?ctx.lineTo(px(+p[0]),py(+p[1])):ctx.moveTo(px(+p[0]),py(+p[1]))});ctx.closePath();ctx.fill();ctx.stroke();break}
+      case "parametric":{const FX=safe(it.fx),FY=safe(it.fy);if(!FX||!FY)break;ctx.strokeStyle=col;ctx.lineWidth=2;ctx.beginPath();let pen=false;const N=600;
+        for(let i=0;i<=N;i++){const t=+(it.tmin||0)+((+(it.tmax??6.2832))-(+(it.tmin||0)))*i/N;const x=FX(t),y=FY(t);
+          if(!isFinite(x)||!isFinite(y)){pen=false;continue}const X=px(x),Y=py(y);if(!pen){ctx.moveTo(X,Y);pen=true}else ctx.lineTo(X,Y);}ctx.stroke();break}
+      case "polar":{const R=safe(it.r);if(!R)break;ctx.strokeStyle=col;ctx.lineWidth=2;ctx.beginPath();let pen=false;const N=600,t0=+(it.tmin||0),t1=+(it.tmax??6.2832);
+        for(let i=0;i<=N;i++){const t=t0+(t1-t0)*i/N;const r=R(t),x=r*Math.cos(t),y=r*Math.sin(t);
+          if(!isFinite(x)||!isFinite(y)){pen=false;continue}const X=px(x),Y=py(y);if(!pen){ctx.moveTo(X,Y);pen=true}else ctx.lineTo(X,Y);}ctx.stroke();break}
+      case "label":{ctx.fillStyle="#334155";ctx.font="12.5px sans-serif";ctx.textAlign="left";ctx.fillText(it.text||"",px(+it.x),py(+it.y));break}
+    }
+  });
+  host.appendChild(cv);
+  if(spec.caption){const c=document.createElement("div");c.className="cap";c.textContent=spec.caption;host.appendChild(c)}
+}
+async function loadFigures(sid,year,qid){
+  try{
+    const figs=await fetchJSON(`data/${dirOf(sid)}/figures/${year}.json`);
+    return (figs||[]).filter(f=>f.qid===qid);
+  }catch(e){return []}
+}
+
+/* ============ 路由 ============ */
 function route(){
-  const h=location.hash.replace(/^#\/?/,"");
-  const p=h.split("/").filter(Boolean);
-  window.scrollTo(0,0);
+  const p=location.hash.replace(/^#\/?/,"").split("/").filter(Boolean);
+  window.scrollTo(0,0);keyHandler=null;
+  if(!REG){app.innerHTML="<div class='qcard'>加载科目注册表…</div>";return}
   if(p.length===0)return viewHome();
-  const subj=p[0];
-  if(!SUBJECTS[subj])return view404();
-  if(p.length===1)return viewSubject(subj);
+  if(p[0]==="search")return viewSearch(decodeURIComponent(p[1]||""));
+  const s=subjById(p[0]);
+  if(!s||s.status==="pending")return view404();
+  if(p.length===1)return viewSubject(s);
   const year=parseInt(p[1],10);
   if(!year)return view404();
-  if(p[2]==="q")return viewQuestion(subj,year,parseInt(p[3]||"1",10));
-  return viewYear(subj,year);
+  if(p[2]==="q")return viewQuestion(s,year,parseInt(p[3]||"1",10));
+  return viewYear(s,year);
 }
 addEventListener("hashchange",route);
 
-/* ---------- 首页 ---------- */
+/* ============ 首页 ============ */
 async function viewHome(){
   const days=(()=>{const d=ls("examDate")||"2026-12-19";const ms=new Date(d+"T09:00:00")-Date.now();return ms>0?Math.ceil(ms/864e5):0})();
-  let total=0,done={};
-  await Promise.all(Object.keys(EXPECT).map(async s=>{
-    try{const m=await fetchJSON("data/meta/migration_"+s+".json");done[s]=m.actual_total??m.actual_objective??0}catch(e){done[s]=0}
-    total+=done[s];
+  const subs=REG.subjects;
+  const counts={};
+  await Promise.all(subs.filter(s=>s.status!=="pending").map(async s=>{
+    try{const m=await fetchJSON(`data/meta/migration_${dirOf(s.id)}.json`);counts[s.id]=m.actual_total??m.actual_objective??0}catch(e){counts[s.id]=0}
   }));
-  const cards=Object.entries(SUBJECTS).map(([s,c])=>{
-    const n=done[s]||0,e=EXPECT[s],pct=Math.min(100,Math.round(n/e*100));
-    return `<a class="card" style="--acc:${c.acc}" href="#/${s}">
-      <h3>${c.name}</h3><div class="meta">${c.years[0]}–${c.years[1]} · 真题逐题精讲</div>
-      <div class="cnt">已迁移 <b>${n}</b> / 基准 ${e}</div>
-      <div class="bar2"><i style="width:${pct}%"></i></div></a>`;
+  const cards=subs.map(s=>{
+    const st={active:["active","已上线"],migrating:["migrating","迁移中"],pending:["pending","待资料"]}[s.status];
+    if(s.status==="pending"){
+      return `<div class="card pending"><span class="icode">${s.icon||"·"}</span><h3>${esc(s.name)}<span class="badge-st st-pending">待资料</span></h3>
+        <div class="code">课程代码 ${esc(s.code)}</div><div class="need">${esc(s.need||"提供真题资料后按同一精讲管线开工")}</div></div>`;
+    }
+    const n=counts[s.id]||0;
+    return `<a class="card" style="--acc:${s.color}" href="#/${s.id}"><span class="icode">${s.icon||"·"}</span>
+      <h3>${esc(s.short||s.name)}<span class="badge-st st-${st[0]}">${st[1]}</span></h3>
+      <div class="code">${esc(s.name)} · ${esc(s.code)}</div>
+      <div class="cnt">已收录 <b>${n}</b> 题 · ${s.years?s.years[0]+"–"+s.years[1]:""}</div></a>`;
   }).join("");
+  const totalQ=Object.values(counts).reduce((a,b)=>a+b,0);
   app.innerHTML=`
   <div class="hero">
     <h1>考研全栈学习平台</h1>
-    <div class="sub">政 治 · 数 学 · 英 语 · 408</div>
+    <div class="sub">全 国 统 考 · 真 题 逐 题 精 讲 · 抽 象 概 念 图 形 化</div>
     <div class="gold"></div>
     <div class="cd" id="cd" title="点击修改考试日期">距初试 <b>${days}</b> 天 <span style="opacity:.6;font-size:12px">（${esc(ls("examDate")||"2026-12-19")}，点此修改）</span></div>
+    <div class="searchbar"><input id="q" placeholder="跨科搜索题干 / 解析 / 考点…（按 / 聚焦）" aria-label="搜索"><button id="go">搜索</button></div>
   </div>
   <div class="grid">${cards}</div>
-  <h2 class="sec">总览</h2>
-  <div class="card" style="--acc:var(--gold);margin:0"><div class="cnt">四科合计已迁移 <b style="color:var(--navy)">${total}</b> / ${Object.values(EXPECT).reduce((a,b)=>a+b,0)} 题 · 学习进度自动保存在本浏览器</div></div>
   <h2 class="sec">使用说明</h2>
   <div class="card" style="--acc:var(--teal);margin:0;font-size:14.5px">
-    · 顶部「自测」开关：隐藏答案与解析，先做后对<br>
-    · 题目页键盘：<b>j/k</b> 上一题下一题，<b>空格</b> 揭示答案<br>
-    · 数据按科按年懒加载，全部内容离线可用；进度/收藏仅存本地
+    · 已收录 ${totalQ} 题（7 科在库，其余统考科目等你提供资料后按同一管线开工，绝不编造真题）<br>
+    · 数学题的函数图像、积分区域、曲线关系等抽象概念已图形化（题卡下方「立体看这题」图形面板，标注为扩展图形）<br>
+    · 顶部「自测」开关：隐藏答案与解析，先做后对；题目页 <b>j/k</b> 翻题、<b>空格</b> 揭示、<b>/</b> 搜索<br>
+    · 数据按科按年懒加载，PWA 离线可用；学习进度仅存本地浏览器
   </div>`;
+  $("#go").onclick=()=>{const v=$("#q").value.trim();if(v)location.hash="#/search/"+encodeURIComponent(v)};
+  $("#q").onkeydown=e=>{if(e.key==="Enter")$("#go").click()};
   $("#cd").onclick=()=>{const d=prompt("考试日期（YYYY-MM-DD）：",ls("examDate")||"2026-12-19");if(d&&/^\d{4}-\d{2}-\d{2}$/.test(d)){ls("examDate",d);route()}};
+  onkeys(e=>{if(e.key==="/"&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();$("#q")&&$("#q").focus()}});
 }
 
-/* ---------- 科目页 ---------- */
+/* ============ 科目页 ============ */
 async function viewSubject(s){
-  const c=SUBJECTS[s];let counts={};
-  try{const m=await fetchJSON(`data/meta/migration_${s}.json`);counts=m.per_year_objective||m.per_year||{}}catch(e){}
-  const cards=yearRange(c.years[0],c.years[1]).map(y=>{
-    const n=counts[y];
-    return `<a class="ycard" href="#/${s}/${y}"><b>${y}</b><span>${n!=null?n+" 题":"进入"}</span></a>`;
+  let counts={};
+  try{const m=await fetchJSON(`data/meta/migration_${dirOf(s.id)}.json`);counts=m.per_year_objective||m.per_year||{}}catch(e){}
+  let yrs=[];if(s.years){for(let y=s.years[0];y<=s.years[1];y++)yrs.push(y)}
+  const cards=yrs.map(y=>{
+    const n=counts[y];const has=n!=null&&n>0;
+    return `<a class="ycard${has?"":" dim"}" href="#/${s.id}/${y}"><b>${y}</b><span>${has?n+" 题":(s.status==="migrating"?"迁移中":"进入")}</span></a>`;
   }).join("");
-  app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › ${c.name}</div>
-  <h2 class="sec">${c.name} · 选择年份</h2><div class="ygrid">${cards}</div>`;
+  app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › ${esc(s.short||s.name)}</div>
+  <h2 class="sec">${esc(s.name)} · 选择年份（课程代码 ${esc(s.code)}）</h2><div class="ygrid">${cards}</div>`;
 }
 
-/* ---------- 年份页 ---------- */
+/* ============ 年份页 ============ */
 async function viewYear(s,y){
-  const c=SUBJECTS[s];
   let d;
-  try{d=await fetchJSON(`data/${s}/${y}.json`)}
-  catch(e){app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s}">${c.name}</a> › ${y}</div>
-    <h2 class="sec">${y} 年数据未就绪</h2><div class="qcard">该年份数据仍在迁移中，请稍后刷新。（${esc(e.message)}）</div>`;return}
+  try{d=await fetchJSON(`data/${dirOf(s.id)}/${y}.json`)}
+  catch(e){app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s.id}">${esc(s.short||s.name)}</a> › ${y}</div>
+    <h2 class="sec">${y} 年数据未就绪</h2><div class="qcard">该年份数据仍在迁移中（不编造，等真实资料完成提取）。（${esc(e.message)}）</div>`;return}
   const qs=d.questions||[];
-  const rows=qs.map(q=>`<a class="qrow" style="--acc:${c.acc}" href="#/${s}/${y}/q/${q.num}">
+  const rows=qs.map(q=>`<a class="qrow" style="--acc:${s.color}" href="#/${s.id}/${y}/q/${q.num}">
     <span class="n">${q.num}</span><span class="s">${esc(String(q.stem||q.title||"").replace(/\s+/g," ").slice(0,80))}</span>
-    <span class="tag">${esc(ROLE_LABEL[q.type]||q.type||"")}</span></a>`).join("");
+    <span class="tag">${esc(TYPE_LABEL[q.type]||q.type||"")}</span></a>`).join("");
   let passages="";
   if(Array.isArray(d.passages)&&d.passages.length){
     passages=`<h2 class="sec">原文双语精读</h2>`+d.passages.map((p,i)=>`<details class="passage"><summary>${esc(p.title||("篇章 "+(i+1)))}</summary>
       ${(p.blocks||[]).map(b=>b.role==="en"?`<div class="en">${b.html}</div>`:b.role==="zh"?`<div class="zh">${b.html}</div>`:"").join("")}</details>`).join("");
   }
-  app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s}">${c.name}</a> › ${y}</div>
-  <h2 class="sec">${y} 年 ${c.name}（${d.question_count||qs.length} 题）</h2>
+  let paperLink="";
+  const mp=(CACHE["data/meta/source_pdfs.json"]||null);
+  app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s.id}">${esc(s.short||s.name)}</a> › ${y}</div>
+  <h2 class="sec">${y} 年 ${esc(s.short||s.name)}（${d.question_count||qs.length} 题）</h2>
   <div class="qlist">${rows||"<div class='qcard'>暂无题目数据</div>"}</div>${passages}`;
 }
+const TYPE_LABEL={single:"单选",multi:"多选",fill:"填空",essay:"解答",reading:"阅读",cloze:"完形",partb:"新题型",translation:"翻译",writing:"写作",code:"代码",big:"大题",other:"题"};
 
-/* ---------- 题目页 ---------- */
-function optLetter(o){
-  const m=String(o).match(/^\s*(?:\[?([A-D])\]?|[A-D])[\.、\s]/);return m?m[1]:null;
-}
+/* ============ 题目页 ============ */
+function optLetter(o){const m=String(o).match(/^\s*(?:\[?([A-H])\]?|[A-H])[\.、\s]/);return m?m[1]:null}
 async function viewQuestion(s,y,num){
-  const c=SUBJECTS[s];
-  let d;try{d=await fetchJSON(`data/${s}/${y}.json`)}catch(e){app.innerHTML=`<div class="qcard">加载失败：${esc(e.message)}</div>`;return}
-  const qs=d.questions||[];
-  const idx=qs.findIndex(q=>q.num===num);
-  if(idx<0){app.innerHTML=`<div class="qcard">未找到第 ${num} 题。<a href="#/${s}/${y}">返回列表</a></div>`;return}
+  let d;try{d=await fetchJSON(`data/${dirOf(s.id)}/${y}.json`)}catch(e){app.innerHTML=`<div class="qcard">加载失败：${esc(e.message)}</div>`;return}
+  const qs=d.questions||[];const idx=qs.findIndex(q=>q.num===num);
+  if(idx<0){app.innerHTML=`<div class="qcard">未找到第 ${num} 题。<a href="#/${s.id}/${y}">返回列表</a></div>`;return}
   const q=qs[idx];
   let mediaMap=null;
-  if(/@@M:/.test(JSON.stringify(q))||((q.media||[]).some(x=>/@@M:/.test(String(x))))){
-    try{const mm=await fetchJSON(`data/${s}/${y}.media.json`);mediaMap=mm.items||{}}catch(e){}
-  }
+  const raw=JSON.stringify(q);
+  if(raw.includes("@@M:")){try{mediaMap=(await fetchJSON(`data/${dirOf(s.id)}/${y}.media.json`)).items||{}}catch(e){}}
   const fill=t=>String(t??"").replace(/@@M:([-\w]+):(\d+)@@/g,(m0,id,i)=>{
     const uri=mediaMap&&mediaMap[id]&&mediaMap[id][i];
-    return uri?`<img src="${uri}" alt="题目图片" loading="lazy">`:m0;
-  });
-  const ans=q.answer;
-  const ansStr=(ans==null)?"":(typeof ans==="object"?JSON.stringify(ans):String(ans));
-  const correctLetters=new Set((ansStr.match(/[A-D]/g)||[]));
+    return uri?`<img src="${uri}" alt="题目图片" loading="lazy">`:m0;});
+  const ansStr=q.answer==null?"":(typeof q.answer==="object"?JSON.stringify(q.answer):String(q.answer));
+  const correct=new Set((ansStr.match(/[A-H]/g)||[]));
   const opts=(q.options||[]).map(o=>{
     const obj=typeof o==="object"?JSON.stringify(o):String(o);
     const L=optLetter(obj);
-    return `<div class="opt${L&&correctLetters.has(L)?" correct":""}" data-l="${L||""}">${esc(obj)}</div>`;
-  }).join("");
+    return `<div class="opt${L&&correct.has(L)?" correct":""}">${esc(obj)}</div>`;}).join("");
   const blocks=(q.source_blocks||[]).map(b=>{
-    const role=ROLE_LABEL[b.role]?b.role:"other";
-    const html=b.html?fill(b.html):esc(fill(b.text||""));
-    return `<div class="blk" data-role="${role}"><span class="lab">${ROLE_LABEL[role]||"原文区块"}</span>${html}</div>`;
-  }).join("");
+    const role=ROLE_L[b.role]?b.role:"other";
+    const body=b.html?fill(b.html):esc(fill(b.text||""));
+    const org=b.origin&&b.origin!=="source"?`<span class="org">${b.origin==="extended"?"扩展精讲":"变式"}</span>`:"";
+    return `<div class="blk" data-role="${role}"><span class="lab">${ROLE_L[role]}</span>${org}${body}</div>`;}).join("");
   const mark=ls("bm:"+q.id)==="1";
-  app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s}">${c.name}</a> › <a href="#/${s}/${y}">${y}</a> › 第 ${q.num} 题</div>
-  <article id="qart"><div class="qcard" style="--acc:${c.acc}">
+  app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s.id}">${esc(s.short||s.name)}</a> › <a href="#/${s.id}/${y}">${y}</a> › 第 ${q.num} 题</div>
+  <article id="qart"><div class="qcard" style="--acc:${s.color}">
     <div class="qhead"><div class="qn">${q.num}</div>
-      <div class="tt">${esc(q.title||c.name+" "+y)}</div>
-      ${(q.tags||[]).map(t=>`<span class="tag" style="font-size:11px;color:var(--muted);border:1px solid var(--line);padding:1px 8px;border-radius:10px">${esc(t)}</span>`).join("")}
+      <div class="tt">${esc(q.title||(s.short+" "+y+" 第 "+q.num+" 题"))}</div>
+      ${(q.tags||[]).map(t=>`<span style="font-size:11px;color:var(--muted);border:1px solid var(--line);padding:1px 8px;border-radius:10px">${esc(t)}</span>`).join("")}
+      ${q.difficulty?`<span style="font-size:11px;color:var(--amber)">难度 ${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span>`:""}
       ${ansStr?`<div class="ans">答案 <b>${esc(ansStr)}</b></div>`:""}
       <button class="reveal-btn" id="rv" style="margin:0 0 0 8px;padding:4px 14px;font-size:12.5px">👁 揭示</button>
       <button class="reveal-btn" id="bm" style="margin:0;padding:4px 14px;font-size:12.5px">${mark?"★ 已收藏":"☆ 收藏"}</button>
     </div>
     ${q.stem?`<div class="stem">${esc(fill(q.stem))}</div>`:""}
     ${opts?`<div class="opts">${opts}</div>`:""}
-    ${blocks||'<div class="blk" data-role="other">（本题暂无解析区块）</div>'}
-    <div style="font-size:12px;color:var(--muted)">来源：${esc((q.source_ref&&q.source_ref.file)||"legacy")} · ${esc((q.source_ref&&q.source_ref.anchor)||"")} · hash ${esc(String(q.source_hash||"").slice(0,19))}…</div>
+    <div id="figs"></div>
+    ${blocks||'<div class="blk" data-role="other">（本题解析迁移中）</div>'}
+    <div style="font-size:12px;color:var(--muted)">来源：${esc((q.source_ref&&q.source_ref.pdf)||q.source_ref&&q.source_ref.file||"legacy")} · ${esc((q.source_ref&&q.source_ref.anchor)||"")} · ${esc(String(q.source_hash||"").slice(0,24))}…</div>
   </div></article>
   <div class="qnav">
     <button id="prev">‹ 上一题 (j)</button><button id="rand">🎲 随机一题</button><button id="next">下一题 (k) ›</button>
   </div>`;
-  $("#rv").onclick=()=>{$("#qart").classList.toggle("revealed")};
+  $("#rv").onclick=()=>$("#qart").classList.toggle("revealed");
   $("#bm").onclick=e=>{const k="bm:"+q.id;const v=ls(k)==="1"?"0":"1";ls(k,v);e.target.textContent=v==="1"?"★ 已收藏":"☆ 收藏"};
-  const go=n=>{location.hash=`#/${s}/${y}/q/${n}`};
+  const go=n=>{location.hash=`#/${s.id}/${y}/q/${n}`};
   $("#prev").onclick=()=>idx>0&&go(qs[idx-1].num);
   $("#next").onclick=()=>idx<qs.length-1&&go(qs[idx+1].num);
   $("#rand").onclick=()=>go(qs[Math.floor(Math.random()*qs.length)].num);
@@ -301,16 +403,72 @@ async function viewQuestion(s,y,num){
     if(e.key===" "){e.preventDefault();$("#qart").classList.toggle("revealed")}
   });
   renderMath(app);
+  // 图形面板（D043）
+  loadFigures(s.id,y,q.id).then(figs=>{
+    if(!figs.length)return;
+    const box=document.createElement("div");
+    box.innerHTML=figs.map((f,i)=>`<div class="figbox" id="fig${i}"><h4>📐 ${esc(f.title||"题目图形")}<span class="derv">扩展图形 · 非原卷</span></h4></div>`).join("");
+    $("#figs").appendChild(box);
+    figs.forEach((f,i)=>renderFigure($("#fig"+i),f));
+  });
 }
-let keyHandler=null;
+const ROLE_L={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",kaodian:"考点定位",silu:"思路引导",jiefa:"解法构建",biaozhun:"标准解答",yicuo:"易错深挖",guina:"方法归纳",qita:"其他解法",other:"原文区块"};
+
+/* ============ 搜索 ============ */
+async function viewSearch(q){
+  const act=REG.subjects.filter(s=>s.status!=="pending");
+  let sel=(ls("searchSids")||"").split(",").filter(x=>subjById(x)&&subjById(x).status!=="pending");
+  if(!sel.length)sel=act.map(s=>s.id);
+  app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › 搜索</div>
+  <div class="searchbar" style="margin:10px 0 4px"><input id="q2" value="${esc(q)}" placeholder="输入关键词…（题干/解析/考点）"><button id="go2">搜索</button></div>
+  <div class="chips">${act.map(s=>`<button class="chip${sel.includes(s.id)?" on":""}" data-sid="${s.id}" style="--acc:${s.color}">${esc(s.short||s.name)}</button>`).join("")}</div>
+  <div id="res"><div class="qcard">输入关键词开始搜索…</div></div>`;
+  $("#go2").onclick=()=>{const v=$("#q2").value.trim();location.hash="#/search/"+encodeURIComponent(v)};
+  $("#q2").onkeydown=e=>{if(e.key==="Enter")$("#go2").click()};
+  app.querySelectorAll(".chip").forEach(ch=>ch.onclick=()=>{
+    const id=ch.dataset.sid;sel=sel.includes(id)?sel.filter(x=>x!==id):sel.concat(id);
+    ls("searchSids",sel.join(","));ch.classList.toggle("on");if(q)run();
+  });
+  async function run(){
+    const res=$("#res");res.innerHTML="<div class='qcard'>检索中…</div>";
+    const kw=q.toLowerCase();const out=[];
+    for(const sid of sel){
+      try{
+        const mf=await fetchJSON(`data/index/${sid}.manifest.json`);
+        const years=Object.keys(mf.shards||{});
+        const parts=await Promise.all(years.map(y=>fetchJSON(`data/index/${sid}/${y}.json`).catch(()=>null)));
+        parts.forEach(p=>p&&p.entries&&out.push(...p.entries));
+      }catch(e){}
+    }
+    const hits=out.filter(e=>!kw||(e.title||"").toLowerCase().includes(kw)||(e.text||"").toLowerCase().includes(kw)).slice(0,80);
+    if(!hits.length){res.innerHTML="<div class='qcard'>无结果。换个关键词试试。</div>";return}
+    const hl=t=>{const i=(t||"").toLowerCase().indexOf(kw);
+      if(kw&&i>=0){const a=Math.max(0,i-40);return esc(t.slice(a,i))+"<mark>"+esc(t.slice(i,i+kw.length))+"</mark>"+esc(t.slice(i+kw.length,i+kw.length+90))}return esc((t||"").slice(0,130))};
+    res.innerHTML=hits.map(e=>{
+      const s=subjById(e.sid);const snippet=hl(e.text||e.title);
+      return `<a class="sr" style="--acc:${s?s.color:"#999"}" href="#/${e.sid}/${e.year}/q/${e.num}">
+        <div class="h">${esc(s?s.short:e.sid)} ${e.year} 第 ${e.num} 题 <span style="font-weight:400;font-size:12px;color:var(--muted)">${esc(TYPE_LABEL[e.type]||"")}</span></div>
+        <div class="m">${snippet}</div></a>`;}).join("");
+  }
+  if(q)run();
+}
 function onkeys(fn){keyHandler=fn}
 addEventListener("keydown",e=>{if(keyHandler&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName))keyHandler(e)});
 addEventListener("scroll",()=>{$("#backtop").classList.toggle("show",scrollY>600)},{passive:true});
 $("#backtop").onclick=()=>scrollTo({top:0,behavior:"smooth"});
 $("#selftest").onclick=function(){this.classList.toggle("on");document.body.classList.toggle("selftest",this.classList.contains("on"));ls("selftest",this.classList.contains("on")?"1":"0")};
 if(ls("selftest")==="1"){$("#selftest").classList.add("on");document.body.classList.add("selftest")}
-function view404(){app.innerHTML=`<h2 class="sec">404</h2><div class="qcard">页面不存在。<a href="#/">回到首页</a></div>`}
-route();
+function view404(){app.innerHTML=`<h2 class="sec">404</h2><div class="qcard">页面或科目不存在（未上线科目需先提供资料）。<a href="#/">回到首页</a></div>`}
+(async function boot(){
+  try{REG=await fetchJSON("data/meta/subjects.json")}
+  catch(e){REG={subjects:[
+    {id:"politics",code:"101",name:"思想政治理论",short:"政治",color:"#EF5350",icon:"🚩",status:"active",dataDir:"politics",years:[2013,2024]},
+    {id:"english",code:"201",name:"英语（一）",short:"英语一",color:"#1F7A6D",icon:"Ⅰ",status:"active",dataDir:"english",years:[2010,2024]},
+    {id:"math1",code:"301",name:"数学（一）",short:"数学一",color:"#1D4ED8",icon:"∑",status:"active",dataDir:"math",years:[2013,2023]},
+    {id:"cs408",code:"408",name:"计算机学科专业基础",short:"408",color:"#7C3AED",icon:"⌨",status:"active",dataDir:"cs408",years:[2018,2025]}]};
+    toast("科目注册表加载失败，使用内置清单")}
+  route();
+})();
 </script>
 <script defer src="vendor/katex/katex.min.js"></script>
 <script defer src="vendor/katex/contrib/auto-render.min.js"></script>
@@ -319,9 +477,7 @@ if("serviceWorker" in navigator){
   addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
   let _rf=false;
   navigator.serviceWorker.addEventListener("controllerchange",()=>{
-    if(_rf)return;_rf=true;
-    toast("发现新版本，正在刷新…");
-    setTimeout(()=>location.reload(),900);
+    if(_rf)return;_rf=true;toast("发现新版本，正在刷新…");setTimeout(()=>location.reload(),900);
   });
 }
 </script>

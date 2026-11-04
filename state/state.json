@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "phase": "M2",
+  "phase": "M2+",
   "status": "RUNNING",
   "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-04T15:58:08Z",
+  "updated_at": "2026-11-04T16:24:12Z",
   "done_set": [
     "m0:auth_initiated",
     "m0:contract_archive",
@@ -41,5 +41,13 @@
     "url": "https://zly060709.github.io/kaoyan-lab/",
     "repo": "zly060709/kaoyan-lab",
     "pages": "legacy/main"
+  },
+  "expansion": {
+    "target": "20科统考",
+    "sources": "用户资料 学科历年真题(96 PDF)",
+    "in_flight": [
+      "english2 (agent)",
+      "math2 2009-2011 (agent)"
+    ]
   }
 }

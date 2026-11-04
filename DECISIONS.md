@@ -2,6 +2,23 @@
 
 本文件由 Orchestrator 维护：所有模糊处的默认决策记录于此（AGENT_CONTRACT.md 第 0/5/6 章要求）。新条目倒序追加。用户已明确：不提问、自行决策并记录。
 
+## D045 · 2026-11-05 · 20 科统考扩展：以用户真实资料为唯一真题来源
+用户 2026-11-05 提供《学科历年真题》资料库（D:\桌面\学科历年真题，96 个 PDF）并要求扩展为 20 科统考资料库。实测资料覆盖 6 科：政治 2013–2024、数学一/二/三 2009–2023、英语一 2005–2025、英语二 2010–2025。处置：①已有四科保留；②新开工 数一 2009–2012 补缺、数二、数三（全新）、英一 2005–2009+2025 补缺、英二（全新）；③其余统考科目（英二以外未提供的法硕/306 西医/307 中医/311 教育/312 心理/313 历史/199 管理/396 经济/314/315/414/415 等）**无资料不编造**，写入 PENDING_YEARS.md 待用户提供资料后按同一管线开工。首页以 data/meta/subjects.json 注册表驱动，20 科框架全部展示，未开工科目显示「待资料」。
+
+## D044 · 2026-11-05 · 数学 PDF 保真管线：逐页影像 + 视觉转录
+数学 PDF 公式在文本层严重乱序（不可靠），直接文本提取会违反保真。管线：PyMuPDF 将每份试卷逐页渲染为灰度 PNG（DPI≈130）入仓 data/{math2|math3|math1.pages}/pages/{year}/，Agent 逐页视觉转录题干/选项/答案/解析为 LaTeX，每题 source_ref 记 PDF 页码；source_hash=sha256(页面 PNG)。PDF 原件不入库（本地留存），SHA-256 与页数记入 data/meta/source_pdfs.json。英语/政治 PDF 文本层干净：直接文本提取，PDF 亦作为政治既有 456 题的交叉核对源。
+
+## D043 · 2026-11-05 · 数学抽象概念图形化（图形规格 DSL + 前端引擎）
+用户要求「数学题目抽象化的东西都具体做出变成图」。实现：Agent 为可图形化的题目产出 figure spec（JSON DSL：graph/shade/point/vline/hline/circle/segment/polygon/parametric/polar/text），存 data/{subject}/figures/{year}.json，origin=derived（不改原题内容，标注对应题号）；前端 Canvas 引擎按 spec 渲染（白名单表达式求值，禁 eval 拼接用户输入）。3D 曲面场景（Three.js）列入 M5，2D 覆盖函数/区域/几何/极坐标/参数曲线。
+
+## D042 · 2026-11-05 · 部署通道：legacy 构建失败 → 切换 Actions 部署
+GitHub Pages legacy 构建 1 次失败 + 1 次卡死 20 分钟；切换 build_type=workflow（PUT 204）+ .github/workflows/deploy-pages.yml（upload/deploy-pages）。当前 GitHub Actions 处于 partial_outage（官方状态页），运行排队中，恢复后自动部署；看护自动化每小时跟踪。
+
+## D041 · 2026-11-05 · 英语/政治 PDF 交叉核对
+政治 PDF（新东方在线版，含答案）与既有 456 题逐题交叉核对列为 M8 抽检任务；英一 2010–2024 PDF 与既有 675 题同样可交叉核对。核对只增「存疑标注」，不改答案（合同第 2 章第 3 条）。
+
+## D040 · 2026-11-04 · 远端推送绕过 ghproxy 镜像（不改全局配置）
+
 ## D040 · 2026-11-04 · 远端推送绕过 ghproxy 镜像（不改全局配置）
 宿主全局 git 配置存在 `url.https://ghproxy.net/https://github.com/.insteadOf`（只读加速镜像，不支持 push），导致推送无限挂起。处置：不修改用户全局配置，仅将本仓库 origin 设为 `https://github.com:443/zly060709/kaoyan-lab.git`（不匹配 insteadOf 前缀，直连 github.com），实测推送 183 对象/14.89MiB 成功。后续推送均用此 remote。
 

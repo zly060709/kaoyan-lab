@@ -1,0 +1,668 @@
+{
+ "math1.pages:2009": {
+  "pdf": "2009数学一真题及解析.pdf",
+  "sha256": "acc45ed338df7cc70e2451b59ef6b67be7ddc837388c3b89eb74a3170f2f2fd9",
+  "pages": 13,
+  "page_files": [
+   "data/math1.pages/pages/2009/p1.png",
+   "data/math1.pages/pages/2009/p2.png",
+   "data/math1.pages/pages/2009/p3.png",
+   "data/math1.pages/pages/2009/p4.png",
+   "data/math1.pages/pages/2009/p5.png",
+   "data/math1.pages/pages/2009/p6.png",
+   "data/math1.pages/pages/2009/p7.png",
+   "data/math1.pages/pages/2009/p8.png",
+   "data/math1.pages/pages/2009/p9.png",
+   "data/math1.pages/pages/2009/p10.png",
+   "data/math1.pages/pages/2009/p11.png",
+   "data/math1.pages/pages/2009/p12.png",
+   "data/math1.pages/pages/2009/p13.png"
+  ]
+ },
+ "math1.pages:2010": {
+  "pdf": "2010数学一真题及解析.pdf",
+  "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+  "pages": 12,
+  "page_files": [
+   "data/math1.pages/pages/2010/p1.png",
+   "data/math1.pages/pages/2010/p2.png",
+   "data/math1.pages/pages/2010/p3.png",
+   "data/math1.pages/pages/2010/p4.png",
+   "data/math1.pages/pages/2010/p5.png",
+   "data/math1.pages/pages/2010/p6.png",
+   "data/math1.pages/pages/2010/p7.png",
+   "data/math1.pages/pages/2010/p8.png",
+   "data/math1.pages/pages/2010/p9.png",
+   "data/math1.pages/pages/2010/p10.png",
+   "data/math1.pages/pages/2010/p11.png",
+   "data/math1.pages/pages/2010/p12.png"
+  ]
+ },
+ "math1.pages:2011": {
+  "pdf": "2011数学一真题及解析.pdf",
+  "sha256": "da5f10a2df2846bbd28a2002caeee5c86079cb0845c404727a713a040c2e24dd",
+  "pages": 13,
+  "page_files": [
+   "data/math1.pages/pages/2011/p1.png",
+   "data/math1.pages/pages/2011/p2.png",
+   "data/math1.pages/pages/2011/p3.png",
+   "data/math1.pages/pages/2011/p4.png",
+   "data/math1.pages/pages/2011/p5.png",
+   "data/math1.pages/pages/2011/p6.png",
+   "data/math1.pages/pages/2011/p7.png",
+   "data/math1.pages/pages/2011/p8.png",
+   "data/math1.pages/pages/2011/p9.png",
+   "data/math1.pages/pages/2011/p10.png",
+   "data/math1.pages/pages/2011/p11.png",
+   "data/math1.pages/pages/2011/p12.png",
+   "data/math1.pages/pages/2011/p13.png"
+  ]
+ },
+ "math1.pages:2012": {
+  "pdf": "2012数学一真题及解析.pdf",
+  "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+  "pages": 13,
+  "page_files": [
+   "data/math1.pages/pages/2012/p1.png",
+   "data/math1.pages/pages/2012/p2.png",
+   "data/math1.pages/pages/2012/p3.png",
+   "data/math1.pages/pages/2012/p4.png",
+   "data/math1.pages/pages/2012/p5.png",
+   "data/math1.pages/pages/2012/p6.png",
+   "data/math1.pages/pages/2012/p7.png",
+   "data/math1.pages/pages/2012/p8.png",
+   "data/math1.pages/pages/2012/p9.png",
+   "data/math1.pages/pages/2012/p10.png",
+   "data/math1.pages/pages/2012/p11.png",
+   "data/math1.pages/pages/2012/p12.png",
+   "data/math1.pages/pages/2012/p13.png"
+  ]
+ },
+ "math2:2009": {
+  "pdf": "2009数学二真题及解析.pdf",
+  "sha256": "bc5d235bdc2f37b21690ec934a43012e267ee642ecf1ec711d81a1efd52a3501",
+  "pages": 12,
+  "page_files": [
+   "data/math2/pages/2009/p1.png",
+   "data/math2/pages/2009/p2.png",
+   "data/math2/pages/2009/p3.png",
+   "data/math2/pages/2009/p4.png",
+   "data/math2/pages/2009/p5.png",
+   "data/math2/pages/2009/p6.png",
+   "data/math2/pages/2009/p7.png",
+   "data/math2/pages/2009/p8.png",
+   "data/math2/pages/2009/p9.png",
+   "data/math2/pages/2009/p10.png",
+   "data/math2/pages/2009/p11.png",
+   "data/math2/pages/2009/p12.png"
+  ]
+ },
+ "math2:2010": {
+  "pdf": "2010数学二真题及解析.pdf",
+  "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+  "pages": 12,
+  "page_files": [
+   "data/math2/pages/2010/p1.png",
+   "data/math2/pages/2010/p2.png",
+   "data/math2/pages/2010/p3.png",
+   "data/math2/pages/2010/p4.png",
+   "data/math2/pages/2010/p5.png",
+   "data/math2/pages/2010/p6.png",
+   "data/math2/pages/2010/p7.png",
+   "data/math2/pages/2010/p8.png",
+   "data/math2/pages/2010/p9.png",
+   "data/math2/pages/2010/p10.png",
+   "data/math2/pages/2010/p11.png",
+   "data/math2/pages/2010/p12.png"
+  ]
+ },
+ "math2:2011": {
+  "pdf": "2011数学二真题及解析.pdf",
+  "sha256": "fe849a4b0eb1943e370ce49aed1c2d67ab71f1188ffeb180e9ce546b50f49d14",
+  "pages": 13,
+  "page_files": [
+   "data/math2/pages/2011/p1.png",
+   "data/math2/pages/2011/p2.png",
+   "data/math2/pages/2011/p3.png",
+   "data/math2/pages/2011/p4.png",
+   "data/math2/pages/2011/p5.png",
+   "data/math2/pages/2011/p6.png",
+   "data/math2/pages/2011/p7.png",
+   "data/math2/pages/2011/p8.png",
+   "data/math2/pages/2011/p9.png",
+   "data/math2/pages/2011/p10.png",
+   "data/math2/pages/2011/p11.png",
+   "data/math2/pages/2011/p12.png",
+   "data/math2/pages/2011/p13.png"
+  ]
+ },
+ "math2:2012": {
+  "pdf": "2012数学二真题及解析.pdf",
+  "sha256": "fafd2fc3a429ffed5b23ec744e351951e90e95241b7e6194a3995401a7b3bce3",
+  "pages": 11,
+  "page_files": [
+   "data/math2/pages/2012/p1.png",
+   "data/math2/pages/2012/p2.png",
+   "data/math2/pages/2012/p3.png",
+   "data/math2/pages/2012/p4.png",
+   "data/math2/pages/2012/p5.png",
+   "data/math2/pages/2012/p6.png",
+   "data/math2/pages/2012/p7.png",
+   "data/math2/pages/2012/p8.png",
+   "data/math2/pages/2012/p9.png",
+   "data/math2/pages/2012/p10.png",
+   "data/math2/pages/2012/p11.png"
+  ]
+ },
+ "math2:2013": {
+  "pdf": "2013数学二真题及解析.pdf",
+  "sha256": "5cd86fbe7d5eeccd3a8c836e756e4be5b3a60bab69ee97be9e997bf040dd7673",
+  "pages": 11,
+  "page_files": [
+   "data/math2/pages/2013/p1.png",
+   "data/math2/pages/2013/p2.png",
+   "data/math2/pages/2013/p3.png",
+   "data/math2/pages/2013/p4.png",
+   "data/math2/pages/2013/p5.png",
+   "data/math2/pages/2013/p6.png",
+   "data/math2/pages/2013/p7.png",
+   "data/math2/pages/2013/p8.png",
+   "data/math2/pages/2013/p9.png",
+   "data/math2/pages/2013/p10.png",
+   "data/math2/pages/2013/p11.png"
+  ]
+ },
+ "math2:2014": {
+  "pdf": "2014数学二真题及解析.pdf",
+  "sha256": "038ab6857b09f0bb4cede1be10383546940d3dee0e473a0d00954dfee99b69e9",
+  "pages": 13,
+  "page_files": [
+   "data/math2/pages/2014/p1.png",
+   "data/math2/pages/2014/p2.png",
+   "data/math2/pages/2014/p3.png",
+   "data/math2/pages/2014/p4.png",
+   "data/math2/pages/2014/p5.png",
+   "data/math2/pages/2014/p6.png",
+   "data/math2/pages/2014/p7.png",
+   "data/math2/pages/2014/p8.png",
+   "data/math2/pages/2014/p9.png",
+   "data/math2/pages/2014/p10.png",
+   "data/math2/pages/2014/p11.png",
+   "data/math2/pages/2014/p12.png",
+   "data/math2/pages/2014/p13.png"
+  ]
+ },
+ "math2:2015": {
+  "pdf": "2015数学二真题及解析.pdf",
+  "sha256": "3900bc89ea223fedd3ceb2267cc595cee1e0d54418053742ca001c694c2e2bac",
+  "pages": 12,
+  "page_files": [
+   "data/math2/pages/2015/p1.png",
+   "data/math2/pages/2015/p2.png",
+   "data/math2/pages/2015/p3.png",
+   "data/math2/pages/2015/p4.png",
+   "data/math2/pages/2015/p5.png",
+   "data/math2/pages/2015/p6.png",
+   "data/math2/pages/2015/p7.png",
+   "data/math2/pages/2015/p8.png",
+   "data/math2/pages/2015/p9.png",
+   "data/math2/pages/2015/p10.png",
+   "data/math2/pages/2015/p11.png",
+   "data/math2/pages/2015/p12.png"
+  ]
+ },
+ "math2:2016": {
+  "pdf": "2016数学二真题及解析.pdf",
+  "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+  "pages": 14,
+  "page_files": [
+   "data/math2/pages/2016/p1.png",
+   "data/math2/pages/2016/p2.png",
+   "data/math2/pages/2016/p3.png",
+   "data/math2/pages/2016/p4.png",
+   "data/math2/pages/2016/p5.png",
+   "data/math2/pages/2016/p6.png",
+   "data/math2/pages/2016/p7.png",
+   "data/math2/pages/2016/p8.png",
+   "data/math2/pages/2016/p9.png",
+   "data/math2/pages/2016/p10.png",
+   "data/math2/pages/2016/p11.png",
+   "data/math2/pages/2016/p12.png",
+   "data/math2/pages/2016/p13.png",
+   "data/math2/pages/2016/p14.png"
+  ]
+ },
+ "math2:2017": {
+  "pdf": "2017数学二真题及解析.pdf",
+  "sha256": "9628df0a7467a4370a418183afec510a760a48e862a6a7d4e69cbaa92cdeef5d",
+  "pages": 11,
+  "page_files": [
+   "data/math2/pages/2017/p1.png",
+   "data/math2/pages/2017/p2.png",
+   "data/math2/pages/2017/p3.png",
+   "data/math2/pages/2017/p4.png",
+   "data/math2/pages/2017/p5.png",
+   "data/math2/pages/2017/p6.png",
+   "data/math2/pages/2017/p7.png",
+   "data/math2/pages/2017/p8.png",
+   "data/math2/pages/2017/p9.png",
+   "data/math2/pages/2017/p10.png",
+   "data/math2/pages/2017/p11.png"
+  ]
+ },
+ "math2:2018": {
+  "pdf": "2018数学二真题及解析.pdf",
+  "sha256": "7f5ee98df1e3060ff2d82603c5b1c68d60d813e38eea12421978170e9433d681",
+  "pages": 15,
+  "page_files": [
+   "data/math2/pages/2018/p1.png",
+   "data/math2/pages/2018/p2.png",
+   "data/math2/pages/2018/p3.png",
+   "data/math2/pages/2018/p4.png",
+   "data/math2/pages/2018/p5.png",
+   "data/math2/pages/2018/p6.png",
+   "data/math2/pages/2018/p7.png",
+   "data/math2/pages/2018/p8.png",
+   "data/math2/pages/2018/p9.png",
+   "data/math2/pages/2018/p10.png",
+   "data/math2/pages/2018/p11.png",
+   "data/math2/pages/2018/p12.png",
+   "data/math2/pages/2018/p13.png",
+   "data/math2/pages/2018/p14.png",
+   "data/math2/pages/2018/p15.png"
+  ]
+ },
+ "math2:2019": {
+  "pdf": "2019数学二真题及解析.pdf",
+  "sha256": "3c59fc81a833da4c34843bf252e5d6334be455dcfc55e46b875df54112b9aad5",
+  "pages": 11,
+  "page_files": [
+   "data/math2/pages/2019/p1.png",
+   "data/math2/pages/2019/p2.png",
+   "data/math2/pages/2019/p3.png",
+   "data/math2/pages/2019/p4.png",
+   "data/math2/pages/2019/p5.png",
+   "data/math2/pages/2019/p6.png",
+   "data/math2/pages/2019/p7.png",
+   "data/math2/pages/2019/p8.png",
+   "data/math2/pages/2019/p9.png",
+   "data/math2/pages/2019/p10.png",
+   "data/math2/pages/2019/p11.png"
+  ]
+ },
+ "math2:2020": {
+  "pdf": "2020数学二真题及解析.pdf",
+  "sha256": "d530704902db759df234b33a6f0ba6a754463931e052117f1249ebf8919fcb82",
+  "pages": 14,
+  "page_files": [
+   "data/math2/pages/2020/p1.png",
+   "data/math2/pages/2020/p2.png",
+   "data/math2/pages/2020/p3.png",
+   "data/math2/pages/2020/p4.png",
+   "data/math2/pages/2020/p5.png",
+   "data/math2/pages/2020/p6.png",
+   "data/math2/pages/2020/p7.png",
+   "data/math2/pages/2020/p8.png",
+   "data/math2/pages/2020/p9.png",
+   "data/math2/pages/2020/p10.png",
+   "data/math2/pages/2020/p11.png",
+   "data/math2/pages/2020/p12.png",
+   "data/math2/pages/2020/p13.png",
+   "data/math2/pages/2020/p14.png"
+  ]
+ },
+ "math2:2021": {
+  "pdf": "2021数学二真题及解析.pdf",
+  "sha256": "13527de61a48c52f3b5ad802be54f1a3f246fe340594fcae4235e24398e21a8c",
+  "pages": 10,
+  "page_files": [
+   "data/math2/pages/2021/p1.png",
+   "data/math2/pages/2021/p2.png",
+   "data/math2/pages/2021/p3.png",
+   "data/math2/pages/2021/p4.png",
+   "data/math2/pages/2021/p5.png",
+   "data/math2/pages/2021/p6.png",
+   "data/math2/pages/2021/p7.png",
+   "data/math2/pages/2021/p8.png",
+   "data/math2/pages/2021/p9.png",
+   "data/math2/pages/2021/p10.png"
+  ]
+ },
+ "math2:2022": {
+  "pdf": "2022数学二真题及解析.pdf",
+  "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+  "pages": 11,
+  "page_files": [
+   "data/math2/pages/2022/p1.png",
+   "data/math2/pages/2022/p2.png",
+   "data/math2/pages/2022/p3.png",
+   "data/math2/pages/2022/p4.png",
+   "data/math2/pages/2022/p5.png",
+   "data/math2/pages/2022/p6.png",
+   "data/math2/pages/2022/p7.png",
+   "data/math2/pages/2022/p8.png",
+   "data/math2/pages/2022/p9.png",
+   "data/math2/pages/2022/p10.png",
+   "data/math2/pages/2022/p11.png"
+  ]
+ },
+ "math2:2023": {
+  "pdf": "2023数学二真题及解析.pdf",
+  "sha256": "4e7dc8a080d2a6ac5c2b6623f4ee451f84f2edcf510d841d6a125142b71cccae",
+  "pages": 13,
+  "page_files": [
+   "data/math2/pages/2023/p1.png",
+   "data/math2/pages/2023/p2.png",
+   "data/math2/pages/2023/p3.png",
+   "data/math2/pages/2023/p4.png",
+   "data/math2/pages/2023/p5.png",
+   "data/math2/pages/2023/p6.png",
+   "data/math2/pages/2023/p7.png",
+   "data/math2/pages/2023/p8.png",
+   "data/math2/pages/2023/p9.png",
+   "data/math2/pages/2023/p10.png",
+   "data/math2/pages/2023/p11.png",
+   "data/math2/pages/2023/p12.png",
+   "data/math2/pages/2023/p13.png"
+  ]
+ },
+ "math3:2009": {
+  "pdf": "2009数学三真题及解析.pdf",
+  "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+  "pages": 12,
+  "page_files": [
+   "data/math3/pages/2009/p1.png",
+   "data/math3/pages/2009/p2.png",
+   "data/math3/pages/2009/p3.png",
+   "data/math3/pages/2009/p4.png",
+   "data/math3/pages/2009/p5.png",
+   "data/math3/pages/2009/p6.png",
+   "data/math3/pages/2009/p7.png",
+   "data/math3/pages/2009/p8.png",
+   "data/math3/pages/2009/p9.png",
+   "data/math3/pages/2009/p10.png",
+   "data/math3/pages/2009/p11.png",
+   "data/math3/pages/2009/p12.png"
+  ]
+ },
+ "math3:2010": {
+  "pdf": "2010数学三真题及解析.pdf",
+  "sha256": "503b4f97e87e294b422350f26408516a4a32f98a7c7269f311f8f8f0123d4f98",
+  "pages": 12,
+  "page_files": [
+   "data/math3/pages/2010/p1.png",
+   "data/math3/pages/2010/p2.png",
+   "data/math3/pages/2010/p3.png",
+   "data/math3/pages/2010/p4.png",
+   "data/math3/pages/2010/p5.png",
+   "data/math3/pages/2010/p6.png",
+   "data/math3/pages/2010/p7.png",
+   "data/math3/pages/2010/p8.png",
+   "data/math3/pages/2010/p9.png",
+   "data/math3/pages/2010/p10.png",
+   "data/math3/pages/2010/p11.png",
+   "data/math3/pages/2010/p12.png"
+  ]
+ },
+ "math3:2011": {
+  "pdf": "2011数学三真题及解析.pdf",
+  "sha256": "713fce4bb4fba941e7152a364cc50cb3fe57508bf3ec196cd757750a378ed06a",
+  "pages": 13,
+  "page_files": [
+   "data/math3/pages/2011/p1.png",
+   "data/math3/pages/2011/p2.png",
+   "data/math3/pages/2011/p3.png",
+   "data/math3/pages/2011/p4.png",
+   "data/math3/pages/2011/p5.png",
+   "data/math3/pages/2011/p6.png",
+   "data/math3/pages/2011/p7.png",
+   "data/math3/pages/2011/p8.png",
+   "data/math3/pages/2011/p9.png",
+   "data/math3/pages/2011/p10.png",
+   "data/math3/pages/2011/p11.png",
+   "data/math3/pages/2011/p12.png",
+   "data/math3/pages/2011/p13.png"
+  ]
+ },
+ "math3:2012": {
+  "pdf": "2012数学三真题及解析.pdf",
+  "sha256": "d4b350016a2c122d1d4730e1b00ec18f45ba45b003f6324926478bdfc91a1542",
+  "pages": 13,
+  "page_files": [
+   "data/math3/pages/2012/p1.png",
+   "data/math3/pages/2012/p2.png",
+   "data/math3/pages/2012/p3.png",
+   "data/math3/pages/2012/p4.png",
+   "data/math3/pages/2012/p5.png",
+   "data/math3/pages/2012/p6.png",
+   "data/math3/pages/2012/p7.png",
+   "data/math3/pages/2012/p8.png",
+   "data/math3/pages/2012/p9.png",
+   "data/math3/pages/2012/p10.png",
+   "data/math3/pages/2012/p11.png",
+   "data/math3/pages/2012/p12.png",
+   "data/math3/pages/2012/p13.png"
+  ]
+ },
+ "math3:2013": {
+  "pdf": "2013数学三真题及解析.pdf",
+  "sha256": "52adfa6946938643b4555e29777ddfb5ba99caa4665faa55b73375cc835508dc",
+  "pages": 12,
+  "page_files": [
+   "data/math3/pages/2013/p1.png",
+   "data/math3/pages/2013/p2.png",
+   "data/math3/pages/2013/p3.png",
+   "data/math3/pages/2013/p4.png",
+   "data/math3/pages/2013/p5.png",
+   "data/math3/pages/2013/p6.png",
+   "data/math3/pages/2013/p7.png",
+   "data/math3/pages/2013/p8.png",
+   "data/math3/pages/2013/p9.png",
+   "data/math3/pages/2013/p10.png",
+   "data/math3/pages/2013/p11.png",
+   "data/math3/pages/2013/p12.png"
+  ]
+ },
+ "math3:2014": {
+  "pdf": "2014数学三真题及解析.pdf",
+  "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+  "pages": 13,
+  "page_files": [
+   "data/math3/pages/2014/p1.png",
+   "data/math3/pages/2014/p2.png",
+   "data/math3/pages/2014/p3.png",
+   "data/math3/pages/2014/p4.png",
+   "data/math3/pages/2014/p5.png",
+   "data/math3/pages/2014/p6.png",
+   "data/math3/pages/2014/p7.png",
+   "data/math3/pages/2014/p8.png",
+   "data/math3/pages/2014/p9.png",
+   "data/math3/pages/2014/p10.png",
+   "data/math3/pages/2014/p11.png",
+   "data/math3/pages/2014/p12.png",
+   "data/math3/pages/2014/p13.png"
+  ]
+ },
+ "math3:2015": {
+  "pdf": "2015数学三真题及解析.pdf",
+  "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+  "pages": 12,
+  "page_files": [
+   "data/math3/pages/2015/p1.png",
+   "data/math3/pages/2015/p2.png",
+   "data/math3/pages/2015/p3.png",
+   "data/math3/pages/2015/p4.png",
+   "data/math3/pages/2015/p5.png",
+   "data/math3/pages/2015/p6.png",
+   "data/math3/pages/2015/p7.png",
+   "data/math3/pages/2015/p8.png",
+   "data/math3/pages/2015/p9.png",
+   "data/math3/pages/2015/p10.png",
+   "data/math3/pages/2015/p11.png",
+   "data/math3/pages/2015/p12.png"
+  ]
+ },
+ "math3:2016": {
+  "pdf": "2016数学三真题及解析.pdf",
+  "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+  "pages": 14,
+  "page_files": [
+   "data/math3/pages/2016/p1.png",
+   "data/math3/pages/2016/p2.png",
+   "data/math3/pages/2016/p3.png",
+   "data/math3/pages/2016/p4.png",
+   "data/math3/pages/2016/p5.png",
+   "data/math3/pages/2016/p6.png",
+   "data/math3/pages/2016/p7.png",
+   "data/math3/pages/2016/p8.png",
+   "data/math3/pages/2016/p9.png",
+   "data/math3/pages/2016/p10.png",
+   "data/math3/pages/2016/p11.png",
+   "data/math3/pages/2016/p12.png",
+   "data/math3/pages/2016/p13.png",
+   "data/math3/pages/2016/p14.png"
+  ]
+ },
+ "math3:2017": {
+  "pdf": "2017数学三真题及解析.pdf",
+  "sha256": "2da067c7b2a1ca8aec7ad7d0b7af2c05efbe47d4268b35cc3d18d5d8b8cadaf6",
+  "pages": 13,
+  "page_files": [
+   "data/math3/pages/2017/p1.png",
+   "data/math3/pages/2017/p2.png",
+   "data/math3/pages/2017/p3.png",
+   "data/math3/pages/2017/p4.png",
+   "data/math3/pages/2017/p5.png",
+   "data/math3/pages/2017/p6.png",
+   "data/math3/pages/2017/p7.png",
+   "data/math3/pages/2017/p8.png",
+   "data/math3/pages/2017/p9.png",
+   "data/math3/pages/2017/p10.png",
+   "data/math3/pages/2017/p11.png",
+   "data/math3/pages/2017/p12.png",
+   "data/math3/pages/2017/p13.png"
+  ]
+ },
+ "math3:2018": {
+  "pdf": "2018数学三真题及解析.pdf",
+  "sha256": "2ce0eb25e7f837cc9d9a6185757acfa61149f2c8d9b70c31ac8a0e0620f96286",
+  "pages": 15,
+  "page_files": [
+   "data/math3/pages/2018/p1.png",
+   "data/math3/pages/2018/p2.png",
+   "data/math3/pages/2018/p3.png",
+   "data/math3/pages/2018/p4.png",
+   "data/math3/pages/2018/p5.png",
+   "data/math3/pages/2018/p6.png",
+   "data/math3/pages/2018/p7.png",
+   "data/math3/pages/2018/p8.png",
+   "data/math3/pages/2018/p9.png",
+   "data/math3/pages/2018/p10.png",
+   "data/math3/pages/2018/p11.png",
+   "data/math3/pages/2018/p12.png",
+   "data/math3/pages/2018/p13.png",
+   "data/math3/pages/2018/p14.png",
+   "data/math3/pages/2018/p15.png"
+  ]
+ },
+ "math3:2019": {
+  "pdf": "2019数学三真题及解析.pdf",
+  "sha256": "c4eae69551f6aadafac0b5d902d195a3864b05ec85e09dde823ad99de4644394",
+  "pages": 12,
+  "page_files": [
+   "data/math3/pages/2019/p1.png",
+   "data/math3/pages/2019/p2.png",
+   "data/math3/pages/2019/p3.png",
+   "data/math3/pages/2019/p4.png",
+   "data/math3/pages/2019/p5.png",
+   "data/math3/pages/2019/p6.png",
+   "data/math3/pages/2019/p7.png",
+   "data/math3/pages/2019/p8.png",
+   "data/math3/pages/2019/p9.png",
+   "data/math3/pages/2019/p10.png",
+   "data/math3/pages/2019/p11.png",
+   "data/math3/pages/2019/p12.png"
+  ]
+ },
+ "math3:2020": {
+  "pdf": "2020数学三真题及解析.pdf",
+  "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+  "pages": 13,
+  "page_files": [
+   "data/math3/pages/2020/p1.png",
+   "data/math3/pages/2020/p2.png",
+   "data/math3/pages/2020/p3.png",
+   "data/math3/pages/2020/p4.png",
+   "data/math3/pages/2020/p5.png",
+   "data/math3/pages/2020/p6.png",
+   "data/math3/pages/2020/p7.png",
+   "data/math3/pages/2020/p8.png",
+   "data/math3/pages/2020/p9.png",
+   "data/math3/pages/2020/p10.png",
+   "data/math3/pages/2020/p11.png",
+   "data/math3/pages/2020/p12.png",
+   "data/math3/pages/2020/p13.png"
+  ]
+ },
+ "math3:2021": {
+  "pdf": "2021数学三真题及解析.pdf",
+  "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+  "pages": 12,
+  "page_files": [
+   "data/math3/pages/2021/p1.png",
+   "data/math3/pages/2021/p2.png",
+   "data/math3/pages/2021/p3.png",
+   "data/math3/pages/2021/p4.png",
+   "data/math3/pages/2021/p5.png",
+   "data/math3/pages/2021/p6.png",
+   "data/math3/pages/2021/p7.png",
+   "data/math3/pages/2021/p8.png",
+   "data/math3/pages/2021/p9.png",
+   "data/math3/pages/2021/p10.png",
+   "data/math3/pages/2021/p11.png",
+   "data/math3/pages/2021/p12.png"
+  ]
+ },
+ "math3:2022": {
+  "pdf": "2022数学三真题及解析.pdf",
+  "sha256": "2a68a5b59597fe58a6667db3f45243c6d4f65e4b5cda5a458454976335aa32ad",
+  "pages": 15,
+  "page_files": [
+   "data/math3/pages/2022/p1.png",
+   "data/math3/pages/2022/p2.png",
+   "data/math3/pages/2022/p3.png",
+   "data/math3/pages/2022/p4.png",
+   "data/math3/pages/2022/p5.png",
+   "data/math3/pages/2022/p6.png",
+   "data/math3/pages/2022/p7.png",
+   "data/math3/pages/2022/p8.png",
+   "data/math3/pages/2022/p9.png",
+   "data/math3/pages/2022/p10.png",
+   "data/math3/pages/2022/p11.png",
+   "data/math3/pages/2022/p12.png",
+   "data/math3/pages/2022/p13.png",
+   "data/math3/pages/2022/p14.png",
+   "data/math3/pages/2022/p15.png"
+  ]
+ },
+ "math3:2023": {
+  "pdf": "2023数学三真题及解析.pdf",
+  "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+  "pages": 13,
+  "page_files": [
+   "data/math3/pages/2023/p1.png",
+   "data/math3/pages/2023/p2.png",
+   "data/math3/pages/2023/p3.png",
+   "data/math3/pages/2023/p4.png",
+   "data/math3/pages/2023/p5.png",
+   "data/math3/pages/2023/p6.png",
+   "data/math3/pages/2023/p7.png",
+   "data/math3/pages/2023/p8.png",
+   "data/math3/pages/2023/p9.png",
+   "data/math3/pages/2023/p10.png",
+   "data/math3/pages/2023/p11.png",
+   "data/math3/pages/2023/p12.png",
+   "data/math3/pages/2023/p13.png"
+  ]
+ }
+}
