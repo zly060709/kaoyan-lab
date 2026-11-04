@@ -1,0 +1,71 @@
+[
+  {
+    "qid": "math2-2021-2", "origin": "derived",
+    "title": "第2题 f(x)=(e^x−1)/x 的图像",
+    "xlim": [-2.2, 2.2], "ylim": [-0.6, 3.4],
+    "items": [
+      { "kind": "graph", "f": "(exp(x)-1)/x", "domain": [0.02, 2.2], "color": "#1D4ED8" },
+      { "kind": "graph", "f": "(exp(x)-1)/x", "domain": [-2.2, -0.02], "color": "#1D4ED8" },
+      { "kind": "point", "x": 0, "y": 1, "label": "f(0)=1" }
+    ],
+    "caption": "f(0)=1 连续；f′(0)=½≠0；x<0 时 f<1、x>0 时 f>1，穿过 1 无极值 → 选 D。"
+  },
+  {
+    "qid": "math2-2021-4", "origin": "derived",
+    "title": "第4题 f(x)=ax−blnx 的两个零点（取 a=1,b=4）",
+    "xlim": [0, 15], "ylim": [-3, 8],
+    "items": [
+      { "kind": "graph", "f": "x-4*ln(x)", "domain": [0.05, 15], "color": "#1D4ED8", "label": "f(x)=x−4lnx" },
+      { "kind": "hline", "y": 0, "style": "dashed" },
+      { "kind": "point", "x": 4, "y": -1.545, "label": "最小值 b(1−ln(b/a))<0" }
+    ],
+    "caption": "单谷 + 两端 →+∞：有 2 零点 ⟺ 谷值 <0 ⟺ ln(b/a)>1 ⟺ b/a>e，选 A。"
+  },
+  {
+    "qid": "math2-2021-18", "origin": "derived",
+    "title": "第18题 f(x)=x|x|/(1+x) 的凹凸与渐近线",
+    "xlim": [-4.6, 4.6], "ylim": [-4.6, 5.2],
+    "items": [
+      { "kind": "graph", "f": "x*x/(1+x)", "domain": [0, 4.4], "color": "#1D4ED8" },
+      { "kind": "graph", "f": "-x*x/(1+x)", "domain": [-0.9, 0], "color": "#1D4ED8" },
+      { "kind": "graph", "f": "-x*x/(1+x)", "domain": [-4.4, -1.15], "color": "#1D4ED8" },
+      { "kind": "graph", "f": "x-1", "domain": [0.3, 4.4], "color": "#B8324A", "label": "y=x−1" },
+      { "kind": "graph", "f": "-x+1", "domain": [-4.4, 0.3], "color": "#1F7A6D", "label": "y=−x+1" },
+      { "kind": "vline", "x": -1, "style": "dashed", "label": "x=−1" }
+    ],
+    "caption": "凹区间 (−∞,−1)∪(0,+∞)，凸区间 (−1,0)；垂直渐近线 x=−1，斜渐近线 y=x−1（x→+∞）、y=−x+1（x→−∞）。"
+  },
+  {
+    "qid": "math2-2021-19", "origin": "derived",
+    "title": "第19题 曲线 y=√x(x/3−1) 在 [4,9]",
+    "xlim": [3.5, 9.5], "ylim": [0.4, 6.6],
+    "items": [
+      { "kind": "graph", "f": "(1/3)*x^(3/2)-x^(1/2)", "domain": [3.9, 9.2], "color": "#1D4ED8", "label": "y=(x−3)√x/3" },
+      { "kind": "point", "x": 4, "y": 0.6667, "label": "(4, 2/3)" },
+      { "kind": "point", "x": 9, "y": 6, "label": "(9,6)" }
+    ],
+    "caption": "1+y′²=(½√x+½/√x)² 完全平方 → s=22/3；旋转面 A=2π∫y√(1+y′²)dx=425π/9。"
+  },
+  {
+    "qid": "math2-2021-20", "origin": "derived",
+    "title": "第20题 y=x⁶/3+1 与最小截距法线",
+    "xlim": [-0.15, 1.45], "ylim": [0.8, 2.1],
+    "items": [
+      { "kind": "graph", "f": "x^6/3+1", "domain": [0, 1.15], "color": "#1D4ED8", "label": "y=x⁶/3+1" },
+      { "kind": "point", "x": 1, "y": 1.3333, "label": "p(1,4/3)" },
+      { "kind": "segment", "x1": 0, "y1": 1.8333, "x2": 1.3, "y2": 1.1833, "color": "#B8324A", "label": "法线（斜率−½）" },
+      { "kind": "point", "x": 0, "y": 1.8333, "label": "I_p=11/6" }
+    ],
+    "caption": "法线截距 I_p=1/(2x⁴)+x⁶/3+1，I′_p=2x⁵−2/x⁵=0 → x=1，p=(1,4/3)。"
+  },
+  {
+    "qid": "math2-2021-21", "origin": "derived",
+    "title": "第21题 双纽线 r²=cos2θ（第一象限部分）",
+    "xlim": [-0.08, 1.12], "ylim": [-0.08, 0.62],
+    "items": [
+      { "kind": "polar", "r": "sqrt(cos(2*t))", "tmin": 0, "tmax": 0.7854, "color": "#1D4ED8", "label": "r=√(cos2θ)" },
+      { "kind": "polygon", "pts": [[0, 0], [1, 0], [0.7769, 0.3218], [0.6124, 0.3536], [0.4495, 0.3267], [0.3158, 0.2654], [0, 0]], "color": "rgba(201,169,97,.4)" }
+    ],
+    "caption": "θ∈[0,π/4]，r∈[0,√cos2θ]：∬xy dσ=⅛∫sin2θcos²2θdθ=1/48。"
+  }
+]
