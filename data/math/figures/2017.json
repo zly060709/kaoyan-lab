@@ -1,0 +1,86 @@
+[
+  {
+    "qid": "math-2017-2", "origin": "derived",
+    "title": "第2题 f·f′>0 的示例 f(x)=eˣ",
+    "xlim": [-1.9, 1.9], "ylim": [0, 3.4],
+    "items": [
+      { "kind": "graph", "f": "exp(x)", "domain": [-1.9, 1.9], "color": "#1D4ED8" },
+      { "kind": "point", "x": -1, "y": 0.3679, "label": "f(−1)" },
+      { "kind": "point", "x": 1, "y": 2.718, "label": "f(1)" }
+    ],
+    "caption": "构造 F(x)=f²(x)：F′=2ff′>0 → F 递增 → F(1)>F(−1)，即 |f(1)|>|f(−1)|，选 C。图示 f=eˣ（ff′=e²ˣ>0）。"
+  },
+  {
+    "qid": "math-2017-9", "origin": "derived",
+    "title": "第9题 f(x)=1/(1+x²) 的偶函数性",
+    "xlim": [-3.2, 3.2], "ylim": [0, 1.15],
+    "items": [
+      { "kind": "graph", "f": "1/(1+x*x)", "domain": [-3.2, 3.2], "color": "#1D4ED8" },
+      { "kind": "vline", "x": 0, "style": "dashed" }
+    ],
+    "caption": "f 为偶函数 → 展开式只含偶次幂 → f‴(0)=0。"
+  },
+  {
+    "qid": "math-2017-10", "origin": "derived",
+    "title": "第10题 y″+2y′+3y=0 的衰减振荡解",
+    "xlim": [0, 6.5], "ylim": [-0.55, 1.1],
+    "items": [
+      { "kind": "graph", "f": "exp(-x)*cos(1.4142*x)", "domain": [0, 6.5], "color": "#1F7A6D", "label": "e⁻ˣcos√2x (C₁=1,C₂=0)" },
+      { "kind": "hline", "y": 0, "style": "dashed" }
+    ],
+    "caption": "特征根 −1±√2i → 通解 y=e⁻ˣ(C₁cos√2x+C₂sin√2x)，呈衰减振荡。"
+  },
+  {
+    "qid": "math-2017-11", "origin": "derived",
+    "title": "第11题 单连通区域 D（单位圆盘）",
+    "xlim": [-1.4, 1.4], "ylim": [-1.4, 1.4],
+    "items": [
+      { "kind": "polygon", "pts": [[0.96, 0], [0.887, 0.334], [0.679, 0.679], [0.334, 0.887], [0, 0.96], [-0.334, 0.887], [-0.679, 0.679], [-0.887, 0.334], [-0.96, 0], [-0.887, -0.334], [-0.679, -0.679], [-0.334, -0.887], [0, -0.96], [0.334, -0.887], [0.679, -0.679], [0.887, -0.334]], "color": "rgba(29,78,216,.18)" },
+      { "kind": "parametric", "fx": "cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "x²+y²=1" }
+    ],
+    "caption": "D 为不含奇线的单连通域：∂P/∂y=(a·2y)/(x²+y²−1)² 与 ∂Q/∂x 相等 ⇒ a=−1 时路径无关。"
+  },
+  {
+    "qid": "math-2017-12", "origin": "derived",
+    "title": "第12题 和函数 S(x)=1/(1+x)²",
+    "xlim": [-0.88, 0.88], "ylim": [0, 30],
+    "items": [
+      { "kind": "graph", "f": "1/((1+x)*(1+x))", "domain": [-0.88, 0.88], "color": "#7C3AED" },
+      { "kind": "point", "x": 0, "y": 1, "label": "S(0)=1" }
+    ],
+    "caption": "Σ(−1)^{n−1} n x^{n−1} = (1/(1+x))′ = 1/(1+x)²（|x|<1）。"
+  },
+  {
+    "qid": "math-2017-16", "origin": "derived",
+    "title": "第16题 和式极限对应的定积分",
+    "xlim": [0, 1.05], "ylim": [0, 0.75],
+    "items": [
+      { "kind": "shade_under", "f": "x*ln(1+x)", "domain": [0, 1], "color": "rgba(201,169,97,.4)" },
+      { "kind": "graph", "f": "x*ln(1+x)", "domain": [0, 1.05], "color": "#1D4ED8" }
+    ],
+    "caption": "(1/n)Σ(k/n)ln(1+k/n) → ∫₀¹ x ln(1+x) dx = 1/4：阴影面积即和式极限。"
+  },
+  {
+    "qid": "math-2017-19", "origin": "derived",
+    "title": "第19题 交线 C 的 xOy 投影",
+    "xlim": [-0.5, 2.7], "ylim": [-1.6, 1.6],
+    "items": [
+      { "kind": "parametric", "fx": "1+cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "(x−1)²+y²=1" },
+      { "kind": "point", "x": 0, "y": 0, "label": "O" },
+      { "kind": "point", "x": 2, "y": 0, "label": "(2,0)" }
+    ],
+    "caption": "锥面 z=√(x²+y²) 与柱面 z²=2x 联立消 z：x²+y²=2x，投影为过原点的圆 (x−1)²+y²=1。"
+  },
+  {
+    "qid": "math-2017-19", "origin": "derived",
+    "title": "第19题（其二）xz 截面：锥面与抛物柱面",
+    "xlim": [-0.2, 2.6], "ylim": [-0.2, 2.7],
+    "items": [
+      { "kind": "graph", "f": "x", "domain": [0, 2.4], "color": "#1D4ED8", "label": "锥面截面 z=x" },
+      { "kind": "graph", "f": "sqrt(2*x)", "domain": [0, 2.4], "color": "#B8324A", "label": "柱面截面 z=√(2x)" },
+      { "kind": "point", "x": 0, "y": 0, "label": "(0,0)" },
+      { "kind": "point", "x": 2, "y": 2, "label": "(2,2)" }
+    ],
+    "caption": "沿 y=0 截开：两曲面交于 (0,0) 与 (2,2)（对应投影圆的左右端点），S 是锥面在这两条截线之间的部分。"
+  }
+]

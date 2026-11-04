@@ -1,0 +1,89 @@
+[
+  {
+    "qid": "math-2018-1", "origin": "derived",
+    "title": "第1题 四个候选函数在 x=0 附近（A 与 D 对比）",
+    "xlim": [-0.65, 0.65], "ylim": [-0.45, 1.2],
+    "items": [
+      { "kind": "graph", "f": "abs(x)*sin(abs(x))", "domain": [-0.65, 0.65], "color": "#1D4ED8", "label": "(A) |x|sin|x|" },
+      { "kind": "graph", "f": "cos(sqrt(abs(x)))", "domain": [-0.65, 0.65], "color": "#B8324A", "label": "(D) cos√|x|" }
+    ],
+    "caption": "(A)(B) 是 |x|×小量 → f′(0)=0 存在；(C) cos|x|=cos x 处处可导；(D) 在 x=0 左右导数 →∓∞（尖点），不可导，选 D。"
+  },
+  {
+    "qid": "math-2018-2", "origin": "derived",
+    "title": "第2题 抛物面与切平面（xz 截面）",
+    "xlim": [-0.4, 2.3], "ylim": [-1.3, 2.6],
+    "items": [
+      { "kind": "graph", "f": "x*x", "domain": [-0.35, 2.3], "color": "#1D4ED8", "label": "z=x²+y² 截面 z=x²" },
+      { "kind": "graph", "f": "2*x-2", "domain": [-0.35, 2.3], "color": "#B8324A", "label": "z=2x+2y−2 截面" },
+      { "kind": "point", "x": 1, "y": 1, "label": "切点 (1,1,2)" }
+    ],
+    "caption": "平面 2x+2y−z=2 过 (1,0,0)、(0,1,0)，与抛物面切于 (1,1,2)（代入 (x−1)²+(y−1)²=0）；z=0 切于原点。选 B。"
+  },
+  {
+    "qid": "math-2018-7", "origin": "derived",
+    "title": "第7题 关于 x=1 对称的密度（示意，同构原卷图）",
+    "xlim": [-0.9, 3.4], "ylim": [0, 1.05],
+    "items": [
+      { "kind": "graph", "f": "exp(-(x-1)*(x-1)/0.72)", "domain": [-0.9, 3.4], "color": "#1D4ED8", "label": "f(x) 关于 x=1 对称" },
+      { "kind": "shade_under", "f": "exp(-(x-1)*(x-1)/0.72)", "domain": [0, 2], "color": "rgba(31,122,109,.3)" },
+      { "kind": "shade_under", "f": "exp(-(x-1)*(x-1)/0.72)", "domain": [2, 3.4], "color": "rgba(184,50,74,.4)" },
+      { "kind": "vline", "x": 0, "style": "dashed" },
+      { "kind": "vline", "x": 2, "style": "dashed" }
+    ],
+    "caption": "示意图形（与原卷图同构）：∫₀²f=0.6，对称性给出两端尾部各 (1−0.6)/2=0.2，即 P{X<0}=P{X>2}=0.2，选 A。"
+  },
+  {
+    "qid": "math-2018-8", "origin": "derived",
+    "title": "第8题 显著性水平与拒绝域宽度",
+    "xlim": [-3.4, 3.4], "ylim": [0, 0.44],
+    "items": [
+      { "kind": "graph", "f": "exp(-x*x/2)/sqrt(2*pi)", "domain": [-3.4, 3.4], "color": "#1D4ED8" },
+      { "kind": "vline", "x": 1.645, "style": "dashed", "label": "z₀.₀₅=1.645" },
+      { "kind": "vline", "x": 1.96, "style": "dashed", "label": "z₀.₀₂₅=1.96" }
+    ],
+    "caption": "双侧拒绝域 |z|>z_{α/2}：α 越大拒绝域越宽。0.05 拒绝（|z|>1.96）⇒ 0.1（|z|>1.645）必拒绝，选 A。"
+  },
+  {
+    "qid": "math-2018-12", "origin": "derived",
+    "title": "第12题 球面与过原点平面的大圆 l",
+    "xlim": [-1.35, 1.35], "ylim": [-1.35, 1.35],
+    "items": [
+      { "kind": "parametric", "fx": "cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "l（半径 1 的大圆）" }
+    ],
+    "caption": "x²+y²+z²=1 与 x+y+z=0 交线是半径 1 的大圆；轮换对称 ∮xy ds = (1/3)∮(xy+yz+zx)ds = (1/3)·((x+y+z)²−1)/2·2π = −π/3。"
+  },
+  {
+    "qid": "math-2018-16", "origin": "derived",
+    "title": "第16题 周长 2m 分成圆、正方形、正三角形",
+    "xlim": [0, 8.4], "ylim": [-0.15, 2.85],
+    "items": [
+      { "kind": "parametric", "fx": "1.2+1.2*cos(t)", "fy": "1.2+1.2*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "圆" },
+      { "kind": "polygon", "pts": [[3.2, 0], [5.2, 0], [5.2, 2], [3.2, 2]], "color": "rgba(31,122,109,.25)" },
+      { "kind": "polygon", "pts": [[5.9, 0], [7.9, 0], [6.9, 1.732]], "color": "rgba(201,169,97,.35)" }
+    ],
+    "caption": "S(x,y,z)=x²/4π+y²/16+√3z²/36 在 x+y+z=2 下用拉格朗日乘数法求最小：S_min=1/(π+3√3+4)。"
+  },
+  {
+    "qid": "math-2018-22", "origin": "derived",
+    "title": "第22题 卷积密度 f_Z(z)（X=0/2 各半）",
+    "xlim": [0, 3.3], "ylim": [-0.12, 1.15],
+    "items": [
+      { "kind": "graph", "f": "x", "domain": [0, 1], "color": "#1F7A6D", "label": "z" },
+      { "kind": "graph", "f": "0*x", "domain": [1, 2], "color": "#1F7A6D" },
+      { "kind": "graph", "f": "x-2", "domain": [2, 3], "color": "#1F7A6D", "label": "z−2" },
+      { "kind": "point", "x": 1, "y": 1, "label": "(1,1)" },
+      { "kind": "point", "x": 2, "y": 0, "label": "(2,0)" }
+    ],
+    "caption": "Z=X+Y：X=0 贡献 f_Y(z)=2z（限 [0,1]），X=2 贡献 f_Y(z−2)（限 [2,3]），各乘 1/2 后叠加。"
+  },
+  {
+    "qid": "math-2018-23", "origin": "derived",
+    "title": "第23题 绝对误差 Z=|X| 的半正态密度",
+    "xlim": [0, 3.6], "ylim": [0, 0.85],
+    "items": [
+      { "kind": "graph", "f": "sqrt(2/pi)*exp(-x*x/2)", "domain": [0, 3.6], "color": "#7C3AED", "label": "σ=1：√(2/π)e^{−z²/2}" }
+    ],
+    "caption": "Z=|X|，X~N(μ,σ²)：f(z)=√(2/(πσ²))·e^{−z²/2σ²} (z≥0)；EZ=√(2/π)σ → 矩估计 σ̂=√(π/2)·Z̄。"
+  }
+]
