@@ -3,7 +3,7 @@
   "phase": "M2+",
   "status": "RUNNING",
   "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-04T16:42:48Z",
+  "updated_at": "2026-11-04T16:57:10Z",
   "done_set": [
     "m0:auth_initiated",
     "m0:contract_archive",
@@ -48,7 +48,8 @@
     "in_flight": [
       "english2 (agent)",
       "math2 2009-2011 (agent)"
-    ]
+    ],
+    "math1_figures": "82幅/2013-2023全11年，已上线并浏览器验收"
   },
   "agent_queue": {
     "running": [
@@ -66,5 +67,6 @@
       "english1(2005-2009+2025)"
     ],
     "concurrency_limit": 2
-  }
+  },
+  "mode": "single-agent-sequential (D090, 用户指令)"
 }
