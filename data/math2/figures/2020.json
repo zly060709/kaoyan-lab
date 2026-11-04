@@ -1,0 +1,72 @@
+[
+  {
+    "qid": "math2-2020-10", "origin": "derived",
+    "title": "第10题 交换积分次序的区域 D",
+    "xlim": [-0.08, 1.15], "ylim": [-0.08, 1.15],
+    "items": [
+      { "kind": "polygon", "pts": [[0, 0], [0.25, 0.0625], [0.5, 0.25], [0.75, 0.5625], [1, 1], [1, 0]], "color": "rgba(201,169,97,.4)" },
+      { "kind": "graph", "f": "x*x", "domain": [0, 1], "color": "#1D4ED8", "label": "y=x²" },
+      { "kind": "vline", "x": 1, "style": "dashed", "label": "x=1" }
+    ],
+    "caption": "原序：y∈[0,1]，x∈[√y,1]；交换后 x∈[0,1]，y∈[0,x²] → ∫₀¹x²√(x³+1)dx=(4√2−2)/9。"
+  },
+  {
+    "qid": "math2-2020-12", "origin": "derived",
+    "title": "第12题 斜边贴水面的等腰直角三角形平板",
+    "xlim": [-1.3, 1.3], "ylim": [-1.15, 0.25],
+    "items": [
+      { "kind": "polygon", "pts": [[-1, 0], [1, 0], [0, -1]], "color": "rgba(31,122,109,.35)" },
+      { "kind": "hline", "y": 0, "style": "dashed", "label": "水面" },
+      { "kind": "point", "x": 0, "y": -1, "label": "顶点（深 a）" }
+    ],
+    "caption": "深度 y 处宽度 2(a−y)：F=∫₀ᵃ ρg·y·2(a−y)dy = ⅓ρga³。"
+  },
+  {
+    "qid": "math2-2020-15", "origin": "derived",
+    "title": "第15题 曲线与其斜渐近线 y=x/e+1/(2e)",
+    "xlim": [-0.3, 12.5], "ylim": [-0.3, 5.2],
+    "items": [
+      { "kind": "graph", "f": "exp((1+x)*ln(x)-x*ln(1+x))", "domain": [0.4, 12], "color": "#1D4ED8", "label": "y=x^{1+x}/(1+x)^x" },
+      { "kind": "graph", "f": "x/2.71828+0.18394", "domain": [0.4, 12], "color": "#B8324A", "label": "y=x/e+1/(2e)" }
+    ],
+    "caption": "k=lim y/x=(1+1/x)^{−x}→1/e；b 需展开 ln(1+t)=t−t²/2 → b=1/(2e)。"
+  },
+  {
+    "qid": "math2-2020-18", "origin": "derived",
+    "title": "第18题 曲线、y=1/2、y=√3/2 与 y 轴围成的区域",
+    "xlim": [-0.15, 2.1], "ylim": [0.38, 0.95],
+    "items": [
+      { "kind": "polygon", "pts": [[0, 0.5], [0.577, 0.5], [0.8, 0.6247], [1, 0.7071], [1.3, 0.7926], [1.6, 0.848], [1.732, 0.866], [0, 0.866]], "color": "rgba(201,169,97,.4)" },
+      { "kind": "graph", "f": "x/sqrt(1+x*x)", "domain": [0, 2], "color": "#1D4ED8", "label": "y=x/√(1+x²)" },
+      { "kind": "hline", "y": 0.5, "style": "dashed", "label": "y=1/2" },
+      { "kind": "hline", "y": 0.866, "style": "dashed", "label": "y=√3/2" }
+    ],
+    "caption": "绕 x 轴旋转（柱壳法）V=2π∫_{1/2}^{√3/2} y²/√(1−y²)dy = π²/6。"
+  },
+  {
+    "qid": "math2-2020-19", "origin": "derived",
+    "title": "第19题 区域 D（x=1, x=2, y=x 与 x 轴）",
+    "xlim": [-0.15, 2.35], "ylim": [-0.15, 2.35],
+    "items": [
+      { "kind": "polygon", "pts": [[1, 0], [2, 0], [2, 2], [1, 1]], "color": "rgba(201,169,97,.4)" },
+      { "kind": "segment", "x1": 1, "y1": 0, "x2": 1, "y2": 1, "color": "#B8324A", "label": "x=1" },
+      { "kind": "segment", "x1": 2, "y1": 0, "x2": 2, "y2": 2, "color": "#B8324A", "label": "x=2" },
+      { "kind": "segment", "x1": 1, "y1": 1, "x2": 2, "y2": 2, "color": "#1D4ED8", "label": "y=x" }
+    ],
+    "caption": "极坐标：θ∈[0,π/4]，r∈[secθ,2secθ] → (3/2)∫sec³θdθ = ¾[√2+ln(1+√2)]。"
+  },
+  {
+    "qid": "math2-2020-21", "origin": "derived",
+    "title": "第21题 y=Cx³ 的切线、T、P 与面积关系",
+    "xlim": [-0.08, 1.4], "ylim": [-0.12, 1.5],
+    "items": [
+      { "kind": "graph", "f": "x^3", "domain": [0, 1.14], "color": "#1D4ED8", "label": "y=Cx³" },
+      { "kind": "polygon", "pts": [[0, 0], [0.2, 0.008], [0.4, 0.064], [0.6, 0.216], [0.8, 0.512], [1, 1], [1, 0]], "color": "rgba(201,169,97,.35)" },
+      { "kind": "point", "x": 1, "y": 1, "label": "M" },
+      { "kind": "segment", "x1": 0.7, "y1": 0.1, "x2": 1.2, "y2": 1.6, "color": "#B8324A", "label": "切线 y=3x−2" },
+      { "kind": "point", "x": 0.6667, "y": 0, "label": "T" },
+      { "kind": "point", "x": 1, "y": 0, "label": "P" }
+    ],
+    "caption": "S△MTP=f²/(2f′)=Cx⁴/6，曲边面积 ∫₀ˣf=Cx⁴/4，比值恒 3:2 → 方程解为 y=Cx³(C>0)。"
+  }
+]
