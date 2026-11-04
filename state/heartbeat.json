@@ -1,1 +1,5 @@
-{"updated_at":"2026-11-04T15:25:18Z","task":"auth-retry","by":"orchestrator"}
+{
+  "updated_at": "2026-11-04T15:58:08Z",
+  "task": "m1:all-subjects-migrated",
+  "by": "orchestrator"
+}

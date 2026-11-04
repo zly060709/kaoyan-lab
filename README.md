@@ -3,7 +3,7 @@
 考研政治 / 数学一 / 英语一 / 408 计算机 真题「逐题精讲」统一学习平台。
 纯静态：无后端、无登录、无构建步骤；学习数据全部保存在浏览器本地（IndexedDB/localStorage）。
 
-- 在线地址：部署后回填
+- 在线地址：**https://zly060709.github.io/kaoyan-lab/** （点开即用，手机/桌面浏览器均可，离线可用）
 - 结构与功能全集、保真机制：见 [AGENT_CONTRACT.md](AGENT_CONTRACT.md)
 - 决策记录 [DECISIONS.md](DECISIONS.md) · 降级记录 [DEGRADED.md](DEGRADED.md) · 待补年份 [PENDING_YEARS.md](PENDING_YEARS.md) · 质量报告 [QUALITY_REPORT.md](QUALITY_REPORT.md)
 

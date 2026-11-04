@@ -1,0 +1,2283 @@
+{
+  "subject": "math",
+  "year": 2013,
+  "paper": "数学（一）真题精讲",
+  "question_count": 23,
+  "questions": [
+    {
+      "id": "math-2013-1",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 1,
+      "type": "single",
+      "stem": "已知\n$$\\lim_{x \\rightarrow 0}\\frac{x - \\arctan x}{x^{k}} = c$$\n求 $k,c$。\n（A）$k = 2,\\, c = - 1$\n（B）$k = 2,\\, c = \\frac{1}{2}$\n（C）$k = 3,\\, c = - \\frac{1}{3}$\n（D）$k = 3,\\, c = \\frac{1}{3}$",
+      "options": [
+        "（A）$k = 2,\\, c = - 1$",
+        "（B）$k = 2,\\, c = \\frac{1}{2}$",
+        "（C）$k = 3,\\, c = - \\frac{1}{3}$",
+        "（D）$k = 3,\\, c = \\frac{1}{3}$"
+      ],
+      "answer": "选（D），$k = 3,\\ c = \\frac{1}{3}$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>已知</p>\n<p>$$\\lim_{x \\rightarrow 0}\\frac{x - \\arctan x}{x^{k}} = c$$</p>\n<p>求 $k,c$。</p>\n<div class=\"opts\"><div class=\"opt\"><span class=\"opt-key\">（A）</span><span class=\"opt-txt\">$k = 2,\\, c = - 1$</span></div><div class=\"opt\"><span class=\"opt-key\">（B）</span><span class=\"opt-txt\">$k = 2,\\, c = \\frac{1}{2}$</span></div><div class=\"opt\"><span class=\"opt-key\">（C）</span><span class=\"opt-txt\">$k = 3,\\, c = - \\frac{1}{3}$</span></div><div class=\"opt\"><span class=\"opt-key\">（D）</span><span class=\"opt-txt\">$k = 3,\\, c = \\frac{1}{3}$</span></div></div>",
+          "text": "已知\n$$\\lim_{x \\rightarrow 0}\\frac{x - \\arctan x}{x^{k}} = c$$\n求 $k,c$。\n（A）$k = 2,\\, c = - 1$\n（B）$k = 2,\\, c = \\frac{1}{2}$\n（C）$k = 3,\\, c = - \\frac{1}{3}$\n（D）$k = 3,\\, c = \\frac{1}{3}$"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>选（D），$k = 3,\\ c = \\frac{1}{3}$。</p>",
+          "text": "选（D），$k = 3,\\ c = \\frac{1}{3}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查等价无穷小与泰勒公式求极限，属于高等数学\"函数、极限、连续\"模块的高频考点。它与\n2014 年第（1）题、2016\n年第（1）题同属\"利用泰勒展开确定无穷小的阶\"这一经典题型，几乎年年换着外壳考。</p>",
+          "text": "本题考查等价无穷小与泰勒公式求极限，属于高等数学\"函数、极限、连续\"模块的高频考点。它与 2014 年第（1）题、2016 年第（1）题同属\"利用泰勒展开确定无穷小的阶\"这一经典题型，几乎年年换着外壳考。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到分子是 $x - \\arctan x$、分母是 $x$ 的某次方\n$x^{k}$，并且整体极限等于一个非零常数\n$c$，应该立刻想到一句话：<strong>分子与分母是同阶无穷小</strong>。也就是说，分子\n$x - \\arctan x$ 到底是 $x$ 的几阶无穷小，$k$ 就取几；而那个非零常数 $c$\n就是这两个同阶无穷小之比。考场上第一步要做的，是把 $\\arctan x$ 在\n$x = 0$ 处的泰勒展开写出来。为什么不用洛必达法则？因为这里 $k$\n未知，洛必达要用三次才能消掉分子，每用一次都要重新判断阶数，绕路；而泰勒公式一步就能看清分子的最低次项，最稳。</p>",
+          "text": "看到分子是 $x - \\arctan x$、分母是 $x$ 的某次方 $x^{k}$，并且整体极限等于一个非零常数 $c$，应该立刻想到一句话：分子与分母是同阶无穷小。也就是说，分子 $x - \\arctan x$ 到底是 $x$ 的几阶无穷小，$k$ 就取几；而那个非零常数 $c$ 就是这两个同阶无穷小之比。考场上第一步要做的，是把 $\\arctan x$ 在 $x = 0$ 处的泰勒展开写出来。为什么不用洛必达法则？因为这里 $k$ 未知，洛必达要用三次才能消掉分子，每用一次都要重新判断阶数，绕路；而泰勒公式一步就能看清分子的最低次项，最稳。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>我们熟悉 $\\arctan x$\n的麦克劳林展开：$\\arctan x = x - \\frac{1}{3}x^{3} + o\\left( x^{3} \\right)$。于是</p>\n<p>$$x - \\arctan x = x - \\left( x - \\frac{1}{3}x^{3} + o\\left( x^{3} \\right) \\right) = \\frac{1}{3}x^{3} - o\\left( x^{3} \\right).$$</p>\n<p>这说明分子 $x - \\arctan x$ 中，常数项、一次项全部抵消了，第一个非零项是\n$x^{3}$ 的那一项，系数为 $\\frac{1}{3}$。换句话说，$x - \\arctan x$ 是 $x$\n的三阶无穷小。要使 $\\frac{x - \\arctan x}{x^{k}}$ 的极限为非零常数\n$c$，分母 $x^{k}$ 必须和分子同阶，即 $k = 3$；此时</p>\n<p>$$c = \\lim_{x \\rightarrow 0}\\frac{\\frac{1}{3}x^{3} - o\\left( x^{3} \\right)}{x^{3}} = \\frac{1}{3}.$$</p>\n<p>为什么不是 $k = 2$？因为分子里根本没有 $x^{2}$ 项，若\n$k = 2$，</p>\n<p>$$\\frac{\\frac{1}{3}x^{3}}{x^{2}} = \\frac{1}{3}x \\rightarrow 0$$</p>\n<p>极限等于\n$0$，与题设 $c$ 为非零常数矛盾。</p>",
+          "text": "我们熟悉 $\\arctan x$ 的麦克劳林展开：$\\arctan x = x - \\frac{1}{3}x^{3} + o\\left( x^{3} \\right)$。于是\n$$x - \\arctan x = x - \\left( x - \\frac{1}{3}x^{3} + o\\left( x^{3} \\right) \\right) = \\frac{1}{3}x^{3} - o\\left( x^{3} \\right).$$\n这说明分子 $x - \\arctan x$ 中，常数项、一次项全部抵消了，第一个非零项是 $x^{3}$ 的那一项，系数为 $\\frac{1}{3}$。换句话说，$x - \\arctan x$ 是 $x$ 的三阶无穷小。要使 $\\frac{x - \\arctan x}{x^{k}}$ 的极限为非零常数 $c$，分母 $x^{k}$ 必须和分子同阶，即 $k = 3$；此时\n$$c = \\lim_{x \\rightarrow 0}\\frac{\\frac{1}{3}x^{3} - o\\left( x^{3} \\right)}{x^{3}} = \\frac{1}{3}.$$\n为什么不是 $k = 2$？因为分子里根本没有 $x^{2}$ 项，若 $k = 2$，\n$$\\frac{\\frac{1}{3}x^{3}}{x^{2}} = \\frac{1}{3}x \\rightarrow 0$$\n极限等于 $0$，与题设 $c$ 为非零常数矛盾。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>将 $\\arctan x$ 在 $x = 0$ 处展开到三阶：</p>\n<p>$$\\arctan x = x - \\frac{1}{3}x^{3} + o\\left( x^{3} \\right).$$</p>\n<p>代入分子：</p>\n<p>$$\\lim_{x \\rightarrow 0}\\frac{x - \\arctan x}{x^{k}} = \\lim_{x \\rightarrow 0}\\frac{\\frac{1}{3}x^{3} - o\\left( x^{3} \\right)}{x^{k}} = c.$$</p>\n<p>要使极限为非零常数，必须 $k = 3$，此时 $c = \\frac{1}{3}$。故选（D）。</p>",
+          "text": "将 $\\arctan x$ 在 $x = 0$ 处展开到三阶：\n$$\\arctan x = x - \\frac{1}{3}x^{3} + o\\left( x^{3} \\right).$$\n代入分子：\n$$\\lim_{x \\rightarrow 0}\\frac{x - \\arctan x}{x^{k}} = \\lim_{x \\rightarrow 0}\\frac{\\frac{1}{3}x^{3} - o\\left( x^{3} \\right)}{x^{k}} = c.$$\n要使极限为非零常数，必须 $k = 3$，此时 $c = \\frac{1}{3}$。故选（D）。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>也可以用洛必达法则验证：连续三次求导，</p>\n<p>$$\\lim_{x \\rightarrow 0}\\frac{x - \\arctan x}{x^{3}} = \\lim_{x \\rightarrow 0}\\frac{1 - \\frac{1}{1 + x^{2}}}{3x^{2}} = \\lim_{x \\rightarrow 0}\\frac{x^{2}}{3x^{2}\\left( 1 + x^{2} \\right)} = \\frac{1}{3}.$$</p>\n<p>两种方法结果一致。逐个分析错误选项：（A）$k = 2$ 时极限实际为 $0$，且\n$c = - 1$ 符号也错；（B）$k = 2$ 时极限为 $0$ 而非\n$\\frac{1}{2}$；（C）$k = 3$ 对了，但 $c = - \\frac{1}{3}$\n符号错------分子 $x - \\arctan x$ 在 $x > 0$ 时为正，$c$\n必为正。变式：若把 $\\arctan x$ 换成 $\\sin x$，即求\n$\\frac{x - \\sin x}{x^{k}}$，同理由\n$\\sin x = x - \\frac{x^{3}}{6} + o\\left( x^{3} \\right)$ 得\n$k = 3,\\ c = \\frac{1}{6}$。</p>",
+          "text": "也可以用洛必达法则验证：连续三次求导，\n$$\\lim_{x \\rightarrow 0}\\frac{x - \\arctan x}{x^{3}} = \\lim_{x \\rightarrow 0}\\frac{1 - \\frac{1}{1 + x^{2}}}{3x^{2}} = \\lim_{x \\rightarrow 0}\\frac{x^{2}}{3x^{2}\\left( 1 + x^{2} \\right)} = \\frac{1}{3}.$$\n两种方法结果一致。逐个分析错误选项：（A）$k = 2$ 时极限实际为 $0$，且 $c = - 1$ 符号也错；（B）$k = 2$ 时极限为 $0$ 而非 $\\frac{1}{2}$；（C）$k = 3$ 对了，但 $c = - \\frac{1}{3}$ 符号错------分子 $x - \\arctan x$ 在 $x > 0$ 时为正，$c$ 必为正。变式：若把 $\\arctan x$ 换成 $\\sin x$，即求 $\\frac{x - \\sin x}{x^{k}}$，同理由 $\\sin x = x - \\frac{x^{3}}{6} + o\\left( x^{3} \\right)$ 得 $k = 3,\\ c = \\frac{1}{6}$。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是把 $\\arctan x$ 的展开系数记错成\n$+ \\frac{1}{3}x^{3}$，导致 $c$ 符号取反；二是误以为只要\"分子趋近\n0\"就能用洛必达，却忘了洛必达后仍要判断阶数；三是忽略了题设中 $c$\n是非零常数这一关键信息，错把 $k$ 取成比 $3$ 大的数（那样极限为 $0$）。</p>",
+          "text": "一是把 $\\arctan x$ 的展开系数记错成 $+ \\frac{1}{3}x^{3}$，导致 $c$ 符号取反；二是误以为只要\"分子趋近 0\"就能用洛必达，却忘了洛必达后仍要判断阶数；三是忽略了题设中 $c$ 是非零常数这一关键信息，错把 $k$ 取成比 $3$ 大的数（那样极限为 $0$）。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>处理\"$x \\rightarrow 0$ 时，某函数 $-$\n某基本初等函数，除以 $x^{k}$\n极限为非零常数\"这类题，固定步骤为：①把做差的两个函数在 $0$\n点泰勒展开到足够高阶；②找出做差后第一个非零项的次数 $m$，即为\n$k$；③该非零项的系数即为 $c$。熟记\n$\\sin x,\\ \\tan x,\\ \\arctan x,\\ e^{x},\\ \\ln(1 + x)$\n的三阶展开式是拿分的前提。</p>",
+          "text": "处理\"$x \\rightarrow 0$ 时，某函数 $-$ 某基本初等函数，除以 $x^{k}$ 极限为非零常数\"这类题，固定步骤为：①把做差的两个函数在 $0$ 点泰勒展开到足够高阶；②找出做差后第一个非零项的次数 $m$，即为 $k$；③该非零项的系数即为 $c$。熟记 $\\sin x,\\ \\tan x,\\ \\arctan x,\\ e^{x},\\ \\ln(1 + x)$ 的三阶展开式是拿分的前提。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查等价无穷小与泰勒公式求极限，属于高等数学\"函数、极限、连续\"模块的高频考点。它与 2014 年第（1）题、2016 年第（1）题同属\"利用泰勒展开确定无穷小的阶\"这一经典题型，几乎年年换着外壳考。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "35d3001fd67a6a4d2da62ec2de7bfa5b54328f7e5114b541d92e4847a8b90e11",
+      "schema_version": "1.0.0",
+      "source_hash": "d0b9d0ef9444888b5d640d20f9d3214da6ed8a27c1bd48623087b4a548cfb8d4",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-1",
+        "year": 2013,
+        "num": 1
+      }
+    },
+    {
+      "id": "math-2013-2",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 2,
+      "type": "single",
+      "stem": "曲面 $x^{2} + \\cos(xy) + yz + x = 0$ 在点 $(0,1, - 1)$ 的切平面方程为\n（A）$x - y + z = - 2$\n（B）$x + y + z = 0$\n（C）$x - 2y + z = - 3$\n（D）$x - y - z = 0$",
+      "options": [
+        "（A）$x - y + z = - 2$",
+        "（B）$x + y + z = 0$",
+        "（C）$x - 2y + z = - 3$",
+        "（D）$x - y - z = 0$"
+      ],
+      "answer": "选（A），切平面为 $x - y + z = - 2$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>曲面 $x^{2} + \\cos(xy) + yz + x = 0$ 在点 $(0,1, - 1)$\n的切平面方程为</p>\n<div class=\"opts\"><div class=\"opt\"><span class=\"opt-key\">（A）</span><span class=\"opt-txt\">$x - y + z = - 2$</span></div><div class=\"opt\"><span class=\"opt-key\">（B）</span><span class=\"opt-txt\">$x + y + z = 0$</span></div><div class=\"opt\"><span class=\"opt-key\">（C）</span><span class=\"opt-txt\">$x - 2y + z = - 3$</span></div><div class=\"opt\"><span class=\"opt-key\">（D）</span><span class=\"opt-txt\">$x - y - z = 0$</span></div></div>",
+          "text": "曲面 $x^{2} + \\cos(xy) + yz + x = 0$ 在点 $(0,1, - 1)$ 的切平面方程为\n（A）$x - y + z = - 2$\n（B）$x + y + z = 0$\n（C）$x - 2y + z = - 3$\n（D）$x - y - z = 0$"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>选（A），切平面为 $x - y + z = - 2$。</p>",
+          "text": "选（A），切平面为 $x - y + z = - 2$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查隐式曲面的切平面方程，属于高等数学\"多元函数微分学的几何应用\"考点，与\n2018 年第（2）题的曲面法向量问题同源。</p>",
+          "text": "本题考查隐式曲面的切平面方程，属于高等数学\"多元函数微分学的几何应用\"考点，与 2018 年第（2）题的曲面法向量问题同源。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到\"曲面 $F(x,y,z) = 0$\n在某点的切平面\"，应该立刻回忆公式：若曲面由 $F(x,y,z) = 0$ 给出，则在点\n$\\left( x_{0},y_{0},z_{0} \\right)$ 处的法向量是梯度\n$\\mathbf{n} = \\left( F_{x},F_{y},F_{z} \\right)$ 在该点的值，切平面方程为</p>\n<p>$$F_{x}\\left( x_{0},y_{0},z_{0} \\right)\\left( x - x_{0} \\right) + F_{y}\\left( x_{0},y_{0},z_{0} \\right)\\left( y - y_{0} \\right) + F_{z}\\left( x_{0},y_{0},z_{0} \\right)\\left( z - z_{0} \\right) = 0.$$</p>\n<p>为什么先对 $F$ 求偏导而不是先解出 $z$？因为曲面方程里 $z$ 只出现在 $yz$\n这一项，解出 $z = - \\frac{x^{2} + \\cos(xy) + x}{y}$\n反而要做商的求导，更繁；直接把整个左端当作 $F(x,y,z)$ 求三个偏导最干净。</p>",
+          "text": "看到\"曲面 $F(x,y,z) = 0$ 在某点的切平面\"，应该立刻回忆公式：若曲面由 $F(x,y,z) = 0$ 给出，则在点 $\\left( x_{0},y_{0},z_{0} \\right)$ 处的法向量是梯度 $\\mathbf{n} = \\left( F_{x},F_{y},F_{z} \\right)$ 在该点的值，切平面方程为\n$$F_{x}\\left( x_{0},y_{0},z_{0} \\right)\\left( x - x_{0} \\right) + F_{y}\\left( x_{0},y_{0},z_{0} \\right)\\left( y - y_{0} \\right) + F_{z}\\left( x_{0},y_{0},z_{0} \\right)\\left( z - z_{0} \\right) = 0.$$\n为什么先对 $F$ 求偏导而不是先解出 $z$？因为曲面方程里 $z$ 只出现在 $yz$ 这一项，解出 $z = - \\frac{x^{2} + \\cos(xy) + x}{y}$ 反而要做商的求导，更繁；直接把整个左端当作 $F(x,y,z)$ 求三个偏导最干净。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>令 $F(x,y,z) = x^{2} + \\cos(xy) + yz + x$。分别求偏导：</p>\n<p>$$F_{x} = 2x - y\\sin(xy) + 1,\\quad\\quad F_{y} = - x\\sin(xy) + z,\\quad\\quad F_{z} = y.$$</p>\n<p>代入点 $(0,1, - 1)$：注意 $\\sin(xy) = \\sin 0 = 0$，所以</p>\n<p>$$F_{x}(0,1, - 1) = 0 - 1 \\cdot 0 + 1 = 1,\\quad\\quad F_{y}(0,1, - 1) = 0 + ( - 1) = - 1,\\quad\\quad F_{z}(0,1, - 1) = 1.$$</p>\n<p>法向量为 $(1, - 1,1)$。切平面方程为</p>\n<p>$$1 \\cdot (x - 0) - 1 \\cdot (y - 1) + 1 \\cdot (z + 1) = 0,$$</p>\n<p>展开：$x - y + 1 + z + 1 = 0$，即 $x - y + z = - 2$。</p>",
+          "text": "令 $F(x,y,z) = x^{2} + \\cos(xy) + yz + x$。分别求偏导：\n$$F_{x} = 2x - y\\sin(xy) + 1,\\quad\\quad F_{y} = - x\\sin(xy) + z,\\quad\\quad F_{z} = y.$$\n代入点 $(0,1, - 1)$：注意 $\\sin(xy) = \\sin 0 = 0$，所以\n$$F_{x}(0,1, - 1) = 0 - 1 \\cdot 0 + 1 = 1,\\quad\\quad F_{y}(0,1, - 1) = 0 + ( - 1) = - 1,\\quad\\quad F_{z}(0,1, - 1) = 1.$$\n法向量为 $(1, - 1,1)$。切平面方程为\n$$1 \\cdot (x - 0) - 1 \\cdot (y - 1) + 1 \\cdot (z + 1) = 0,$$\n展开：$x - y + 1 + z + 1 = 0$，即 $x - y + z = - 2$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>设 $F(x,y,z) = x^{2} + \\cos(xy) + yz + x$，则</p>\n<p>$$F_{x} = 2x - y\\sin(xy) + 1,\\quad F_{y} = - x\\sin(xy) + z,\\quad F_{z} = y.$$</p>\n<p>在 $(0,1, - 1)$ 处 $F_{x} = 1,\\ F_{y} = - 1,\\ F_{z} = 1$，故切平面为</p>\n<p>$$x - (y - 1) + (z + 1) = 0,\\quad\\text{即}\\quad x - y + z = - 2.$$</p>\n<p>选（A）。</p>",
+          "text": "设 $F(x,y,z) = x^{2} + \\cos(xy) + yz + x$，则\n$$F_{x} = 2x - y\\sin(xy) + 1,\\quad F_{y} = - x\\sin(xy) + z,\\quad F_{z} = y.$$\n在 $(0,1, - 1)$ 处 $F_{x} = 1,\\ F_{y} = - 1,\\ F_{z} = 1$，故切平面为\n$$x - (y - 1) + (z + 1) = 0,\\quad\\text{即}\\quad x - y + z = - 2.$$\n选（A）。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>逐个排除错误选项：四个选项的法向量分别为（A）$(1, - 1,1)$、（B）$(1,1,1)$、（C）$(1, - 2,1)$、（D）$(1, - 1, - 1)$。我们算得法向量\n$(1, - 1,1)$ 与（A）一致。（B）错在 $F_{y}$ 符号（把 $z = - 1$ 误代成\n$+ 1$）；（C）错在 $F_{y}$ 系数写成 $- 2$；（D）错在 $F_{z}$ 符号（把\n$F_{z} = y = 1$ 误写为 $- 1$）。另外可把点 $(0,1, - 1)$\n代回各选项验证：（A）左边代入得\n$0 - 1 + ( - 1) = - 2$，成立；其余代入均不成立，也可锁定答案。</p>",
+          "text": "逐个排除错误选项：四个选项的法向量分别为（A）$(1, - 1,1)$、（B）$(1,1,1)$、（C）$(1, - 2,1)$、（D）$(1, - 1, - 1)$。我们算得法向量 $(1, - 1,1)$ 与（A）一致。（B）错在 $F_{y}$ 符号（把 $z = - 1$ 误代成 $+ 1$）；（C）错在 $F_{y}$ 系数写成 $- 2$；（D）错在 $F_{z}$ 符号（把 $F_{z} = y = 1$ 误写为 $- 1$）。另外可把点 $(0,1, - 1)$ 代回各选项验证：（A）左边代入得 $0 - 1 + ( - 1) = - 2$，成立；其余代入均不成立，也可锁定答案。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是求 $F_{y}$ 时漏掉 $\\cos(xy)$ 对 $y$ 的导数里的\n$- x\\sin(xy)$，或漏掉 $yz$ 对 $y$ 的导数 $z$；二是切平面公式里要写\n$\\left( y - y_{0} \\right)$、$\\left( z - z_{0} \\right)$，展开时常数项算错（本题\n$+ 1$ 和 $+ 1$ 相加得 $+ 2$，移项后为\n$- 2$）；三是把法向量与切平面方程的系数顺序弄混。</p>",
+          "text": "一是求 $F_{y}$ 时漏掉 $\\cos(xy)$ 对 $y$ 的导数里的 $- x\\sin(xy)$，或漏掉 $yz$ 对 $y$ 的导数 $z$；二是切平面公式里要写 $\\left( y - y_{0} \\right)$、$\\left( z - z_{0} \\right)$，展开时常数项算错（本题 $+ 1$ 和 $+ 1$ 相加得 $+ 2$，移项后为 $- 2$）；三是把法向量与切平面方程的系数顺序弄混。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>隐式曲面切平面三步法：①设 $F$ 为左端整体；②求\n$F_{x},F_{y},F_{z}$\n并代入定点；③用点法式写方程再展开。若题目给的是参数曲面或显式曲面\n$z = f(x,y)$，法向量相应换成 $\\left( - f_{x}, - f_{y},1 \\right)$。</p>",
+          "text": "隐式曲面切平面三步法：①设 $F$ 为左端整体；②求 $F_{x},F_{y},F_{z}$ 并代入定点；③用点法式写方程再展开。若题目给的是参数曲面或显式曲面 $z = f(x,y)$，法向量相应换成 $\\left( - f_{x}, - f_{y},1 \\right)$。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查隐式曲面的切平面方程，属于高等数学\"多元函数微分学的几何应用\"考点，与 2018 年第（2）题的曲面法向量问题同源。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "5c1198e58ff78e5ff053cdfb149f573e4375c11f0f7248eea10be62f52507567",
+      "schema_version": "1.0.0",
+      "source_hash": "a6a4b43ac4b86bd8e1f7cac8e0ab9f14ecad737d16bb1e7a7f8b9755432d8a1a",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-2",
+        "year": 2013,
+        "num": 2
+      }
+    },
+    {
+      "id": "math-2013-3",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 3,
+      "type": "single",
+      "stem": "设\n$$f(x) = \\left| x - \\frac{1}{2} \\right|,\\ b_{n} = 2\\int_{0}^{1}f(x)\\sin n\\pi x\\, dx\\ (n = 1,2,\\cdots)\\quad \\text{，令}\\quad s(x) = \\sum_{n = 1}^{\\infty}b_{n}\\sin n\\pi x$$\n。则 $s\\left( - \\frac{9}{4} \\right)$ =\n（A）$\\frac{3}{4}$\n（B）$\\frac{1}{4}$\n（C）$- \\frac{1}{4}$\n（D）$- \\frac{3}{4}$",
+      "options": [
+        "（A）$\\frac{3}{4}$",
+        "（B）$\\frac{1}{4}$",
+        "（C）$- \\frac{1}{4}$",
+        "（D）$- \\frac{3}{4}$"
+      ],
+      "answer": "选（C），$s\\left( - \\frac{9}{4} \\right) = - \\frac{1}{4}$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设</p>\n<p>$$f(x) = \\left| x - \\frac{1}{2} \\right|,\\ b_{n} = 2\\int_{0}^{1}f(x)\\sin n\\pi x\\, dx\\ (n = 1,2,\\cdots)\\quad \\text{，令}\\quad s(x) = \\sum_{n = 1}^{\\infty}b_{n}\\sin n\\pi x$$</p>\n<p>。则\n$s\\left( - \\frac{9}{4} \\right)$ =</p>\n<div class=\"opts\"><div class=\"opt\"><span class=\"opt-key\">（A）</span><span class=\"opt-txt\">$\\frac{3}{4}$</span></div><div class=\"opt\"><span class=\"opt-key\">（B）</span><span class=\"opt-txt\">$\\frac{1}{4}$</span></div><div class=\"opt\"><span class=\"opt-key\">（C）</span><span class=\"opt-txt\">$- \\frac{1}{4}$</span></div><div class=\"opt\"><span class=\"opt-key\">（D）</span><span class=\"opt-txt\">$- \\frac{3}{4}$</span></div></div>",
+          "text": "设\n$$f(x) = \\left| x - \\frac{1}{2} \\right|,\\ b_{n} = 2\\int_{0}^{1}f(x)\\sin n\\pi x\\, dx\\ (n = 1,2,\\cdots)\\quad \\text{，令}\\quad s(x) = \\sum_{n = 1}^{\\infty}b_{n}\\sin n\\pi x$$\n。则 $s\\left( - \\frac{9}{4} \\right)$ =\n（A）$\\frac{3}{4}$\n（B）$\\frac{1}{4}$\n（C）$- \\frac{1}{4}$\n（D）$- \\frac{3}{4}$"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>选（C），$s\\left( - \\frac{9}{4} \\right) = - \\frac{1}{4}$。</p>",
+          "text": "选（C），$s\\left( - \\frac{9}{4} \\right) = - \\frac{1}{4}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查傅里叶正弦级数、奇延拓与狄利克雷收敛定理，属于高等数学\"无穷级数\"模块中较冷门但套路固定的考点，与\n2008 年、2015 年的傅里叶级数题一脉相承。</p>",
+          "text": "本题考查傅里叶正弦级数、奇延拓与狄利克雷收敛定理，属于高等数学\"无穷级数\"模块中较冷门但套路固定的考点，与 2008 年、2015 年的傅里叶级数题一脉相承。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到</p>\n<p>$$b_{n} = 2\\int_{0}^{1}f(x)\\sin n\\pi x\\, dx$$</p>\n<p>而级数只含正弦项，应该立刻明白：这是把定义在 $\\lbrack 0,1\\rbrack$\n上的函数 $f(x)$ 做了<strong>奇延拓</strong>，再展开成周期为 $2l = 2$（即\n$l = 1$）的正弦级数。正弦级数对应的和函数 $s(x)$，是延拓后的<strong>奇函数</strong>\n$F(x)$ 的傅里叶级数的和。于是求\n$s( - 9/4)$，本质就是求延拓奇函数在该点的收敛值。怎么把 $- 9/4$ 折回\n$\\lbrack 0,1\\rbrack$？靠两步：先用奇函数性质把负号翻到外面，再用周期性减去周期。</p>",
+          "text": "看到\n$$b_{n} = 2\\int_{0}^{1}f(x)\\sin n\\pi x\\, dx$$\n而级数只含正弦项，应该立刻明白：这是把定义在 $\\lbrack 0,1\\rbrack$ 上的函数 $f(x)$ 做了奇延拓，再展开成周期为 $2l = 2$（即 $l = 1$）的正弦级数。正弦级数对应的和函数 $s(x)$，是延拓后的奇函数 $F(x)$ 的傅里叶级数的和。于是求 $s( - 9/4)$，本质就是求延拓奇函数在该点的收敛值。怎么把 $- 9/4$ 折回 $\\lbrack 0,1\\rbrack$？靠两步：先用奇函数性质把负号翻到外面，再用周期性减去周期。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>第一步，正弦级数 $s(x)$ 是奇函数，所以</p>\n<p>$$s\\left( - \\frac{9}{4} \\right) = - s\\left( \\frac{9}{4} \\right).$$</p>\n<p>第二步，延拓后函数周期为 $2$，即 $s(x + 2) = s(x)$。把 $9/4$\n减去两个周期（即减去 $2$）：</p>\n<p>$$s\\left( \\frac{9}{4} \\right) = s\\left( \\frac{9}{4} - 2 \\right) = s\\left( \\frac{1}{4} \\right).$$</p>\n<p>为什么 $9/4$ 减 $2$ 而不是减 $4$？因为 $9/4 = 2.25$，减去一个周期 $2$ 得\n$0.25 = 1/4$，正好落在 $\\lbrack 0,1\\rbrack$ 内，且 $x = 1/4$ 不是函数\n$f(x) = |x - 1/2|$ 的间断点（$f$\n在全实轴延拓后连续）。由狄利克雷定理，在连续点处和函数等于函数值，故</p>\n<p>$$s\\left( \\frac{1}{4} \\right) = f\\left( \\frac{1}{4} \\right) = \\left| \\frac{1}{4} - \\frac{1}{2} \\right| = \\frac{1}{4}.$$</p>\n<p>所以 $s( - 9/4) = - 1/4$。</p>",
+          "text": "第一步，正弦级数 $s(x)$ 是奇函数，所以\n$$s\\left( - \\frac{9}{4} \\right) = - s\\left( \\frac{9}{4} \\right).$$\n第二步，延拓后函数周期为 $2$，即 $s(x + 2) = s(x)$。把 $9/4$ 减去两个周期（即减去 $2$）：\n$$s\\left( \\frac{9}{4} \\right) = s\\left( \\frac{9}{4} - 2 \\right) = s\\left( \\frac{1}{4} \\right).$$\n为什么 $9/4$ 减 $2$ 而不是减 $4$？因为 $9/4 = 2.25$，减去一个周期 $2$ 得 $0.25 = 1/4$，正好落在 $\\lbrack 0,1\\rbrack$ 内，且 $x = 1/4$ 不是函数 $f(x) = |x - 1/2|$ 的间断点（$f$ 在全实轴延拓后连续）。由狄利克雷定理，在连续点处和函数等于函数值，故\n$$s\\left( \\frac{1}{4} \\right) = f\\left( \\frac{1}{4} \\right) = \\left| \\frac{1}{4} - \\frac{1}{2} \\right| = \\frac{1}{4}.$$\n所以 $s( - 9/4) = - 1/4$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>$$b_{n} = 2\\int_{0}^{1}f(x)\\sin n\\pi x\\, dx$$</p>\n<p>是\n$\\lbrack 0,1\\rbrack$ 上函数的正弦级数，对应奇延拓后周期为 $2$ 的奇函数\n$F(x)$。由奇函数性与周期性：</p>\n<p>$$s\\left( - \\frac{9}{4} \\right) = - s\\left( \\frac{9}{4} \\right) = - s\\left( \\frac{9}{4} - 2 \\right) = - s\\left( \\frac{1}{4} \\right).$$</p>\n<p>$x = 1/4$ 为连续点，$s(1/4) = f(1/4) = |1/4 - 1/2| = 1/4$，故\n$s( - 9/4) = - 1/4$。选（C）。</p>",
+          "text": "$$b_{n} = 2\\int_{0}^{1}f(x)\\sin n\\pi x\\, dx$$\n是 $\\lbrack 0,1\\rbrack$ 上函数的正弦级数，对应奇延拓后周期为 $2$ 的奇函数 $F(x)$。由奇函数性与周期性：\n$$s\\left( - \\frac{9}{4} \\right) = - s\\left( \\frac{9}{4} \\right) = - s\\left( \\frac{9}{4} - 2 \\right) = - s\\left( \\frac{1}{4} \\right).$$\n$x = 1/4$ 为连续点，$s(1/4) = f(1/4) = |1/4 - 1/2| = 1/4$，故 $s( - 9/4) = - 1/4$。选（C）。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>逐个分析错误选项：（A）$3/4$ 是把 $- 9/4$\n直接当 $f( - 9/4)$ 绝对值算、又忘奇延拓所致；（B）$1/4$\n忘了奇函数的负号；（D）$- 3/4$ 是把折回后的点算成 $3/4$（即误把\n$9/4 - 2 = 1/4$\n算成别处）。关键提醒：若折回点恰好落在延拓函数的间断点（如 $0, \\pm 1$\n处），和函数收敛于左右极限的算术平均，而不是函数本身------这是狄利克雷定理的另一半，本题\n$1/4$ 是连续点，直接取函数值。</p>",
+          "text": "逐个分析错误选项：（A）$3/4$ 是把 $- 9/4$ 直接当 $f( - 9/4)$ 绝对值算、又忘奇延拓所致；（B）$1/4$ 忘了奇函数的负号；（D）$- 3/4$ 是把折回后的点算成 $3/4$（即误把 $9/4 - 2 = 1/4$ 算成别处）。关键提醒：若折回点恰好落在延拓函数的间断点（如 $0, \\pm 1$ 处），和函数收敛于左右极限的算术平均，而不是函数本身------这是狄利克雷定理的另一半，本题 $1/4$ 是连续点，直接取函数值。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是忘了正弦级数对应的是<strong>奇延拓</strong>，把负号漏掉；二是周期判断错，误认为周期是\n$1$（实际正弦项 $\\sin n\\pi x$ 的周期是\n$2$）；三是在间断点处仍直接取函数值，忽略了收敛于平均值的情形。</p>",
+          "text": "一是忘了正弦级数对应的是奇延拓，把负号漏掉；二是周期判断错，误认为周期是 $1$（实际正弦项 $\\sin n\\pi x$ 的周期是 $2$）；三是在间断点处仍直接取函数值，忽略了收敛于平均值的情形。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>给定 $\\lbrack 0,l\\rbrack$\n上函数的正弦/余弦级数求某点和函数值，固定流程：①正弦级数对应奇延拓（负号往外提），余弦级数对应偶延拓；②用周期\n$2l$ 把自变量折回 $\\lbrack 0,l\\rbrack$\n内的等价点；③判断该点连续与否，连续取函数值，间断取左右极限平均。</p>",
+          "text": "给定 $\\lbrack 0,l\\rbrack$ 上函数的正弦/余弦级数求某点和函数值，固定流程：①正弦级数对应奇延拓（负号往外提），余弦级数对应偶延拓；②用周期 $2l$ 把自变量折回 $\\lbrack 0,l\\rbrack$ 内的等价点；③判断该点连续与否，连续取函数值，间断取左右极限平均。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查傅里叶正弦级数、奇延拓与狄利克雷收敛定理，属于高等数学\"无穷级数\"模块中较冷门但套路固定的考点，与 2008 年、2015 年的傅里叶级数题一脉相承。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "137b70a9b270cb1a5638c7cb0335aa704eedd59b078222f46b850a2cdd89b8df",
+      "schema_version": "1.0.0",
+      "source_hash": "3d7175cf5d4758644be1f48527a5ff093073df75089b3b848f3c3f50c17c32e9",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-3",
+        "year": 2013,
+        "num": 3
+      }
+    },
+    {
+      "id": "math-2013-4",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 4,
+      "type": "single",
+      "stem": "设\n$$L_{1}:x^{2} + y^{2} = 1,\\ L_{2}:x^{2} + y^{2} = 2,\\ L_{3}:x^{2} + 2y^{2} = 2,\\ L_{4}:2x^{2} + y^{2} = 2$$\n为四条逆时针方向的平面曲线，记\n$$I_{i} = \\oint_{L_{i}}^{}\\left( y + \\frac{y^{3}}{6} \\right)dx + \\left( 2x - \\frac{x^{3}}{3} \\right)dy\\ (i = 1,2,3,4)$$\n。则 $\\max\\left\\{ I_{1},I_{2},I_{3},I_{4} \\right\\}$ =\n（A）$I_{1}$\n（B）$I_{2}$\n（C）$I_{3}$\n（D）$I_{4}$\n图2013-4 四条闭曲线 $L_{1},L_{2},L_{3},L_{4}$ 的相对位置\n图：四条闭合曲线（$L_4$ 为外侧正向边界，$g>0$ 区域已填色）",
+      "options": [
+        "（A）$I_{1}$",
+        "（B）$I_{2}$",
+        "（C）$I_{3}$",
+        "（D）$I_{4}$"
+      ],
+      "answer": "选（D），最大者为 $I_{4}$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设</p>\n<p>$$L_{1}:x^{2} + y^{2} = 1,\\ L_{2}:x^{2} + y^{2} = 2,\\ L_{3}:x^{2} + 2y^{2} = 2,\\ L_{4}:2x^{2} + y^{2} = 2$$</p>\n<p>为四条逆时针方向的平面曲线，记</p>\n<p>$$I_{i} = \\oint_{L_{i}}^{}\\left( y + \\frac{y^{3}}{6} \\right)dx + \\left( 2x - \\frac{x^{3}}{3} \\right)dy\\ (i = 1,2,3,4)$$</p>\n<p>。则\n$\\max\\left\\{ I_{1},I_{2},I_{3},I_{4} \\right\\}$ =</p>\n<div class=\"opts\"><div class=\"opt\"><span class=\"opt-key\">（A）</span><span class=\"opt-txt\">$I_{1}$</span></div><div class=\"opt\"><span class=\"opt-key\">（B）</span><span class=\"opt-txt\">$I_{2}$</span></div><div class=\"opt\"><span class=\"opt-key\">（C）</span><span class=\"opt-txt\">$I_{3}$</span></div><div class=\"opt\"><span class=\"opt-key\">（D）</span><span class=\"opt-txt\">$I_{4}$</span></div></div>\n<p>图2013-4 四条闭曲线 $L_{1},L_{2},L_{3},L_{4}$ 的相对位置</p><figure class=\"fig\"><img src=\"data/math/media/img-224072d3702a.png\" alt=\"题目配图\" loading=\"lazy\" data-action=\"zoom\"><figcaption>图：四条闭合曲线（$L_4$ 为外侧正向边界，$g>0$ 区域已填色）</figcaption></figure>",
+          "text": "设\n$$L_{1}:x^{2} + y^{2} = 1,\\ L_{2}:x^{2} + y^{2} = 2,\\ L_{3}:x^{2} + 2y^{2} = 2,\\ L_{4}:2x^{2} + y^{2} = 2$$\n为四条逆时针方向的平面曲线，记\n$$I_{i} = \\oint_{L_{i}}^{}\\left( y + \\frac{y^{3}}{6} \\right)dx + \\left( 2x - \\frac{x^{3}}{3} \\right)dy\\ (i = 1,2,3,4)$$\n。则 $\\max\\left\\{ I_{1},I_{2},I_{3},I_{4} \\right\\}$ =\n（A）$I_{1}$\n（B）$I_{2}$\n（C）$I_{3}$\n（D）$I_{4}$\n图2013-4 四条闭曲线 $L_{1},L_{2},L_{3},L_{4}$ 的相对位置\n图：四条闭合曲线（$L_4$ 为外侧正向边界，$g>0$ 区域已填色）"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>选（D），最大者为 $I_{4}$。</p>",
+          "text": "选（D），最大者为 $I_{4}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查格林公式把第二型曲线积分化为二重积分、再比较积分大小，属于高等数学\"曲线积分与曲面积分\"模块的综合题，难度中等偏上。</p>",
+          "text": "本题考查格林公式把第二型曲线积分化为二重积分、再比较积分大小，属于高等数学\"曲线积分与曲面积分\"模块的综合题，难度中等偏上。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到沿四条不同闭曲线 $L_{i}$\n求同形式的第二型曲线积分、再比大小，应该立刻想到：<strong>不要硬算四条曲线的积分</strong>，而是用格林公式把它们统统变成\"在各自围成的区域\n$D_{i}$\n上对同一个被积函数做二重积分\"。这样四条积分的差别就只来自积分区域\n$D_{i}$ 的大小和位置，而被积函数是同一个，比大小就容易了。</p>",
+          "text": "看到沿四条不同闭曲线 $L_{i}$ 求同形式的第二型曲线积分、再比大小，应该立刻想到：不要硬算四条曲线的积分，而是用格林公式把它们统统变成\"在各自围成的区域 $D_{i}$ 上对同一个被积函数做二重积分\"。这样四条积分的差别就只来自积分区域 $D_{i}$ 的大小和位置，而被积函数是同一个，比大小就容易了。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>记\n$P = y + \\frac{y^{3}}{6},\\ Q = 2x - \\frac{x^{3}}{3}$。由格林公式（曲线取逆时针正向）：</p>\n<p>$$I_{i} = \\iint_{D_{i}}^{}\\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right)dxdy = \\iint_{D_{i}}^{}\\left\\lbrack \\left( 2 - x^{2} \\right) - \\left( 1 + \\frac{y^{2}}{2} \\right) \\right\\rbrack dxdy = \\iint_{D_{i}}^{}\\left( 1 - x^{2} - \\frac{y^{2}}{2} \\right)dxdy.$$</p>\n<p>于是四个积分都变成同一个被积函数 $g(x,y) = 1 - x^{2} - \\frac{y^{2}}{2}$\n在四个区域上的二重积分。关键观察：$g(x,y) > 0$ 的区域正好是椭圆\n$x^{2} + \\frac{y^{2}}{2} < 1$ 内部；$g(x,y) < 0$\n的区域在它外面。要让积分最大，就应该让区域 $D_{i}$ 尽量多地覆盖 $g > 0$\n的地方、尽量少地卷入 $g < 0$ 的地方。</p>\n<p>对比四条曲线围成的区域：$D_{1}$ 是单位圆（太小，没装下全部 $g > 0$\n区）；$D_{2}$ 是半径 $\\sqrt{2}$ 的大圆（太大，卷进了大片 $g < 0$\n的外圈）；$D_{3}:x^{2} + 2y^{2} \\leq 2$ 即\n$\\frac{x^{2}}{2} + y^{2} \\leq 1$（横向扁）；$D_{4}:2x^{2} + y^{2} \\leq 2$\n即 $x^{2} + \\frac{y^{2}}{2} \\leq 1$（纵向扁）。注意 $g > 0$ 的边界正是\n$x^{2} + \\frac{y^{2}}{2} = 1$，也就是 $D_{4}$ 的边界！所以 $D_{4}$\n恰好把 $g > 0$ 的区域完整包围，又完全不卷入 $g < 0$ 的部分。而 $D_{3}$\n向 $y$ 方向压、向 $x$ 方向扩，会漏掉一部分 $g > 0$ 区又带进 $g < 0$\n区。逐项作差（详见官方解析）可得\n$I_{4} > I_{1},\\ I_{4} > I_{2},\\ I_{4} > I_{3}$，故 $I_{4}$ 最大。</p>",
+          "text": "记 $P = y + \\frac{y^{3}}{6},\\ Q = 2x - \\frac{x^{3}}{3}$。由格林公式（曲线取逆时针正向）：\n$$I_{i} = \\iint_{D_{i}}^{}\\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right)dxdy = \\iint_{D_{i}}^{}\\left\\lbrack \\left( 2 - x^{2} \\right) - \\left( 1 + \\frac{y^{2}}{2} \\right) \\right\\rbrack dxdy = \\iint_{D_{i}}^{}\\left( 1 - x^{2} - \\frac{y^{2}}{2} \\right)dxdy.$$\n于是四个积分都变成同一个被积函数 $g(x,y) = 1 - x^{2} - \\frac{y^{2}}{2}$ 在四个区域上的二重积分。关键观察：$g(x,y) > 0$ 的区域正好是椭圆 $x^{2} + \\frac{y^{2}}{2} < 1$ 内部；$g(x,y) < 0$ 的区域在它外面。要让积分最大，就应该让区域 $D_{i}$ 尽量多地覆盖 $g > 0$ 的地方、尽量少地卷入 $g < 0$ 的地方。\n对比四条曲线围成的区域：$D_{1}$ 是单位圆（太小，没装下全部 $g > 0$ 区）；$D_{2}$ 是半径 $\\sqrt{2}$ 的大圆（太大，卷进了大片 $g < 0$ 的外圈）；$D_{3}:x^{2} + 2y^{2} \\leq 2$ 即 $\\frac{x^{2}}{2} + y^{2} \\leq 1$（横向扁）；$D_{4}:2x^{2} + y^{2} \\leq 2$ 即 $x^{2} + \\frac{y^{2}}{2} \\leq 1$（纵向扁）。注意 $g > 0$ 的边界正是 $x^{2} + \\frac{y^{2}}{2} = 1$，也就是 $D_{4}$ 的边界！所以 $D_{4}$ 恰好把 $g > 0$ 的区域完整包围，又完全不卷入 $g < 0$ 的部分。而 $D_{3}$ 向 $y$ 方向压、向 $x$ 方向扩，会漏掉一部分 $g > 0$ 区又带进 $g < 0$ 区。逐项作差（详见官方解析）可得 $I_{4} > I_{1},\\ I_{4} > I_{2},\\ I_{4} > I_{3}$，故 $I_{4}$ 最大。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>由格林公式，</p>\n<p>$$I_{i} = \\iint_{D_{i}}^{}\\left( 1 - x^{2} - \\frac{y^{2}}{2} \\right)dxdy,\\quad\\quad i = 1,2,3,4.$$</p>\n<p>被积函数 $g = 1 - x^{2} - \\frac{y^{2}}{2}$ 正区为\n$x^{2} + \\frac{y^{2}}{2} < 1$。由于 $D_{4}:2x^{2} + y^{2} \\leq 2$ 即\n$x^{2} + \\frac{y^{2}}{2} \\leq 1$，$D_{4}$ 正好等于 $g \\geq 0$\n的区域，积分只累加正数；其余区域或偏小、或卷入负区，作差均得\n$I_{4} > I_{i}\\ (i = 1,2,3)$。故选（D）。</p>",
+          "text": "由格林公式，\n$$I_{i} = \\iint_{D_{i}}^{}\\left( 1 - x^{2} - \\frac{y^{2}}{2} \\right)dxdy,\\quad\\quad i = 1,2,3,4.$$\n被积函数 $g = 1 - x^{2} - \\frac{y^{2}}{2}$ 正区为 $x^{2} + \\frac{y^{2}}{2} < 1$。由于 $D_{4}:2x^{2} + y^{2} \\leq 2$ 即 $x^{2} + \\frac{y^{2}}{2} \\leq 1$，$D_{4}$ 正好等于 $g \\geq 0$ 的区域，积分只累加正数；其余区域或偏小、或卷入负区，作差均得 $I_{4} > I_{i}\\ (i = 1,2,3)$。故选（D）。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>官方解析采用作差法：例如</p>\n<p>$$I_{4} - I_{1} = \\iint_{D_{4} - D_{1}}^{}\\left( 1 - x^{2} - \\frac{y^{2}}{2} \\right)dxdy$$</p>\n<p>在\n$D_{4} - D_{1}$ 上被积函数恒正，故 $I_{4} > I_{1}$；同理\n$I_{4} > I_{2}$、$I_{4} > I_{3}$。逐个排除：（A）$I_{1}$\n最小；（B）$I_{2}$ 因区域过大反而小；（C）$I_{3}$ 横向扁，不如纵向扁的\n$D_{4}$ 贴合 $g > 0$ 区。变式：若把被积函数改成\n$1 - 2x^{2} - y^{2}$，则最优区域会换成\n$D_{3}$，道理相同------永远让区域边界贴合被积函数的零等值线。</p>",
+          "text": "官方解析采用作差法：例如\n$$I_{4} - I_{1} = \\iint_{D_{4} - D_{1}}^{}\\left( 1 - x^{2} - \\frac{y^{2}}{2} \\right)dxdy$$\n在 $D_{4} - D_{1}$ 上被积函数恒正，故 $I_{4} > I_{1}$；同理 $I_{4} > I_{2}$、$I_{4} > I_{3}$。逐个排除：（A）$I_{1}$ 最小；（B）$I_{2}$ 因区域过大反而小；（C）$I_{3}$ 横向扁，不如纵向扁的 $D_{4}$ 贴合 $g > 0$ 区。变式：若把被积函数改成 $1 - 2x^{2} - y^{2}$，则最优区域会换成 $D_{3}$，道理相同------永远让区域边界贴合被积函数的零等值线。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是格林公式里 $Q_{x} - P_{y}$\n算错符号或漏项；二是忘了曲线是逆时针（正向），若为顺时针要整体加负号；三是不会转化思想，硬把四条曲线参数化积分，费时且易错。</p>",
+          "text": "一是格林公式里 $Q_{x} - P_{y}$ 算错符号或漏项；二是忘了曲线是逆时针（正向），若为顺时针要整体加负号；三是不会转化思想，硬把四条曲线参数化积分，费时且易错。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>多条闭曲线积分比大小的通法：①格林公式化为同一被积函数在不同区域上的二重积分；②画出被积函数的正负等值线；③选择\"恰好包住正区、不卷负区\"的那个区域，它对应的积分最大。</p>",
+          "text": "多条闭曲线积分比大小的通法：①格林公式化为同一被积函数在不同区域上的二重积分；②画出被积函数的正负等值线；③选择\"恰好包住正区、不卷负区\"的那个区域，它对应的积分最大。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查格林公式把第二型曲线积分化为二重积分、再比较积分大小，属于高等数学\"曲线积分与曲面积分\"模块的综合题，难度中等偏上。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [
+        "data/math/media/img-224072d3702a.png"
+      ],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "2db853560fcced15a68e98188f50f7c278a2fe2bdad08968538a9bcf5b4ca06f",
+      "schema_version": "1.0.0",
+      "source_hash": "25d9b682cd2881c9bb55dfac4c45e6caab7f1571b7e10b01113795fda961f71d",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-4",
+        "year": 2013,
+        "num": 4
+      }
+    },
+    {
+      "id": "math-2013-5",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 5,
+      "type": "single",
+      "stem": "设 $\\mathbf{A},\\mathbf{B},\\mathbf{C}$ 均为 $n$ 阶矩阵，若 $\\mathbf{A}\\mathbf{B} = \\mathbf{C}$，且 $\\mathbf{B}$ 可逆，则\n（A）矩阵 $\\mathbf{C}$ 行向量组与 $\\mathbf{A}$ 的行向量组等价\n（B）矩阵 $\\mathbf{C}$ 列向量组与 $\\mathbf{A}$ 的列向量组等价\n（C）矩阵 $\\mathbf{C}$ 行向量组与 $\\mathbf{B}$ 的行向量组等价\n（D）矩阵 $\\mathbf{C}$ 列向量组与 $\\mathbf{B}$ 的列向量组等价",
+      "options": [
+        "（A）矩阵 $\\mathbf{C}$ 行向量组与 $\\mathbf{A}$ 的行向量组等价",
+        "（B）矩阵 $\\mathbf{C}$ 列向量组与 $\\mathbf{A}$ 的列向量组等价",
+        "（C）矩阵 $\\mathbf{C}$ 行向量组与 $\\mathbf{B}$ 的行向量组等价",
+        "（D）矩阵 $\\mathbf{C}$ 列向量组与 $\\mathbf{B}$ 的列向量组等价"
+      ],
+      "answer": "选（B），$\\mathbf{C}$ 的列向量组与 $\\mathbf{A}$ 的列向量组等价。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设 $\\mathbf{A},\\mathbf{B},\\mathbf{C}$ 均为 $n$ 阶矩阵，若\n$\\mathbf{A}\\mathbf{B} = \\mathbf{C}$，且 $\\mathbf{B}$ 可逆，则</p>\n<div class=\"opts\"><div class=\"opt\"><span class=\"opt-key\">（A）</span><span class=\"opt-txt\">矩阵 $\\mathbf{C}$ 行向量组与 $\\mathbf{A}$ 的行向量组等价</span></div><div class=\"opt\"><span class=\"opt-key\">（B）</span><span class=\"opt-txt\">矩阵\n$\\mathbf{C}$ 列向量组与 $\\mathbf{A}$ 的列向量组等价</span></div><div class=\"opt\"><span class=\"opt-key\">（C）</span><span class=\"opt-txt\">矩阵\n$\\mathbf{C}$ 行向量组与 $\\mathbf{B}$ 的行向量组等价</span></div><div class=\"opt\"><span class=\"opt-key\">（D）</span><span class=\"opt-txt\">矩阵\n$\\mathbf{C}$ 列向量组与 $\\mathbf{B}$ 的列向量组等价</span></div></div>",
+          "text": "设 $\\mathbf{A},\\mathbf{B},\\mathbf{C}$ 均为 $n$ 阶矩阵，若 $\\mathbf{A}\\mathbf{B} = \\mathbf{C}$，且 $\\mathbf{B}$ 可逆，则\n（A）矩阵 $\\mathbf{C}$ 行向量组与 $\\mathbf{A}$ 的行向量组等价\n（B）矩阵 $\\mathbf{C}$ 列向量组与 $\\mathbf{A}$ 的列向量组等价\n（C）矩阵 $\\mathbf{C}$ 行向量组与 $\\mathbf{B}$ 的行向量组等价\n（D）矩阵 $\\mathbf{C}$ 列向量组与 $\\mathbf{B}$ 的列向量组等价"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>选（B），$\\mathbf{C}$ 的列向量组与 $\\mathbf{A}$\n的列向量组等价。</p>",
+          "text": "选（B），$\\mathbf{C}$ 的列向量组与 $\\mathbf{A}$ 的列向量组等价。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查矩阵乘积对列（行）向量组的线性表示、可逆矩阵的作用，属于线性代数\"向量组的线性相关性与矩阵的秩\"考点，是\n2012、2019 年同类题的变形。</p>",
+          "text": "本题考查矩阵乘积对列（行）向量组的线性表示、可逆矩阵的作用，属于线性代数\"向量组的线性相关性与矩阵的秩\"考点，是 2012、2019 年同类题的变形。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到\n$\\mathbf{A}\\mathbf{B} = \\mathbf{C}$，脑子里要立刻把矩阵按列分块：把\n$\\mathbf{B}$ 写成列向量 $\\mathbf{b}_{1},\\cdots,\\mathbf{b}_{n}$，则</p>\n<p>$$\\mathbf{A}\\mathbf{B} = \\mathbf{A}\\left( \\mathbf{b}_{1},\\cdots,\\mathbf{b}_{n} \\right) = \\left( \\mathbf{A}\\mathbf{b}_{1},\\cdots,\\mathbf{A}\\mathbf{b}_{n} \\right) = \\left( \\mathbf{c}_{1},\\cdots,\\mathbf{c}_{n} \\right) = \\mathbf{C}.$$</p>\n<p>也就是说，$\\mathbf{C}$ 的第 $j$ 列\n$\\mathbf{c}_{j} = \\mathbf{A}\\mathbf{b}_{j}$，它是 $\\mathbf{A}$\n的列向量的线性组合（系数来自 $\\mathbf{b}_{j}$）。所以$\\mathbf{C}$\n<strong>的列可由</strong> $\\mathbf{A}$ <strong>的列表示</strong>。又因为 $\\mathbf{B}$\n可逆，两边右乘 $\\mathbf{B}^{- 1}$ 得\n$\\mathbf{A} = \\mathbf{C}\\mathbf{B}^{- 1}$，同理 $\\mathbf{A}$ 的列可由\n$\\mathbf{C}$ 的列表示。双向都能表示，列向量组等价。这就是答案（B）。</p>",
+          "text": "看到 $\\mathbf{A}\\mathbf{B} = \\mathbf{C}$，脑子里要立刻把矩阵按列分块：把 $\\mathbf{B}$ 写成列向量 $\\mathbf{b}_{1},\\cdots,\\mathbf{b}_{n}$，则\n$$\\mathbf{A}\\mathbf{B} = \\mathbf{A}\\left( \\mathbf{b}_{1},\\cdots,\\mathbf{b}_{n} \\right) = \\left( \\mathbf{A}\\mathbf{b}_{1},\\cdots,\\mathbf{A}\\mathbf{b}_{n} \\right) = \\left( \\mathbf{c}_{1},\\cdots,\\mathbf{c}_{n} \\right) = \\mathbf{C}.$$\n也就是说，$\\mathbf{C}$ 的第 $j$ 列 $\\mathbf{c}_{j} = \\mathbf{A}\\mathbf{b}_{j}$，它是 $\\mathbf{A}$ 的列向量的线性组合（系数来自 $\\mathbf{b}_{j}$）。所以$\\mathbf{C}$ 的列可由 $\\mathbf{A}$ 的列表示。又因为 $\\mathbf{B}$ 可逆，两边右乘 $\\mathbf{B}^{- 1}$ 得 $\\mathbf{A} = \\mathbf{C}\\mathbf{B}^{- 1}$，同理 $\\mathbf{A}$ 的列可由 $\\mathbf{C}$ 的列表示。双向都能表示，列向量组等价。这就是答案（B）。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>正向：$\\mathbf{C} = \\mathbf{A}\\mathbf{B}$ 的每一列是\n$\\mathbf{A}$ 列向量的线性组合，故\n$r\\left( \\mathbf{C} \\right) \\leq r\\left( \\mathbf{A} \\right)$ 且\n$\\mathbf{C}$ 列可由 $\\mathbf{A}$ 列表出。反向：$\\mathbf{B}$\n可逆，$\\mathbf{A} = \\mathbf{C}\\mathbf{B}^{- 1}$，故 $\\mathbf{A}$ 列可由\n$\\mathbf{C}$\n列表出。两个向量组能互相线性表示，由定义知它们等价。注意题目给的是<strong>列</strong>向量组关系，不是行。为什么不是行？行向量组的关系要看\n$\\mathbf{A} = \\mathbf{C}\\mathbf{B}^{- 1}$ 里行的组合，但\n$\\mathbf{A}\\mathbf{B} = \\mathbf{C}$ 直接给出的是列的关系。</p>",
+          "text": "正向：$\\mathbf{C} = \\mathbf{A}\\mathbf{B}$ 的每一列是 $\\mathbf{A}$ 列向量的线性组合，故 $r\\left( \\mathbf{C} \\right) \\leq r\\left( \\mathbf{A} \\right)$ 且 $\\mathbf{C}$ 列可由 $\\mathbf{A}$ 列表出。反向：$\\mathbf{B}$ 可逆，$\\mathbf{A} = \\mathbf{C}\\mathbf{B}^{- 1}$，故 $\\mathbf{A}$ 列可由 $\\mathbf{C}$ 列表出。两个向量组能互相线性表示，由定义知它们等价。注意题目给的是列向量组关系，不是行。为什么不是行？行向量组的关系要看 $\\mathbf{A} = \\mathbf{C}\\mathbf{B}^{- 1}$ 里行的组合，但 $\\mathbf{A}\\mathbf{B} = \\mathbf{C}$ 直接给出的是列的关系。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>由 $\\mathbf{A}\\mathbf{B} = \\mathbf{C}$，按列分块知\n$\\mathbf{C}$ 的每列可由 $\\mathbf{A}$ 的列向量组线性表示；因 $\\mathbf{B}$\n可逆，$\\mathbf{A} = \\mathbf{C}\\mathbf{B}^{- 1}$，故 $\\mathbf{A}$\n的每列也可由 $\\mathbf{C}$\n的列向量组线性表示。两者可互相线性表示，即列向量组等价。选（B）。</p>",
+          "text": "由 $\\mathbf{A}\\mathbf{B} = \\mathbf{C}$，按列分块知 $\\mathbf{C}$ 的每列可由 $\\mathbf{A}$ 的列向量组线性表示；因 $\\mathbf{B}$ 可逆，$\\mathbf{A} = \\mathbf{C}\\mathbf{B}^{- 1}$，故 $\\mathbf{A}$ 的每列也可由 $\\mathbf{C}$ 的列向量组线性表示。两者可互相线性表示，即列向量组等价。选（B）。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>用秩来验证：$\\mathbf{B}$ 可逆则</p>\n<p>$$r\\left( \\mathbf{C} \\right) = r\\left( \\mathbf{A}\\mathbf{B} \\right) = r\\left( \\mathbf{A} \\right)$$</p>\n<p>且列空间相同，故等价。逐个排除：（A）说的是行向量组，$\\mathbf{A}\\mathbf{B} = \\mathbf{C}$\n给不出 $\\mathbf{C}$ 行与 $\\mathbf{A}$ 行的关系；（C）（D）把\n$\\mathbf{C}$ 与 $\\mathbf{B}$ 比较，但\n$\\mathbf{C} = \\mathbf{A}\\mathbf{B}$ 中 $\\mathbf{B}$\n只是\"系数矩阵\"，$\\mathbf{C}$ 的列是 $\\mathbf{A}$ 列的组合，与\n$\\mathbf{B}$ 的列向量组没有等价关系。变式：若改为\n$\\mathbf{B}\\mathbf{A} = \\mathbf{C}$ 且 $\\mathbf{A}$\n可逆，则应选\"$\\mathbf{C}$ 的行向量组与 $\\mathbf{B}$\n的行向量组等价\"------左乘可逆矩阵改行，右乘可逆矩阵改列。</p>",
+          "text": "用秩来验证：$\\mathbf{B}$ 可逆则\n$$r\\left( \\mathbf{C} \\right) = r\\left( \\mathbf{A}\\mathbf{B} \\right) = r\\left( \\mathbf{A} \\right)$$\n且列空间相同，故等价。逐个排除：（A）说的是行向量组，$\\mathbf{A}\\mathbf{B} = \\mathbf{C}$ 给不出 $\\mathbf{C}$ 行与 $\\mathbf{A}$ 行的关系；（C）（D）把 $\\mathbf{C}$ 与 $\\mathbf{B}$ 比较，但 $\\mathbf{C} = \\mathbf{A}\\mathbf{B}$ 中 $\\mathbf{B}$ 只是\"系数矩阵\"，$\\mathbf{C}$ 的列是 $\\mathbf{A}$ 列的组合，与 $\\mathbf{B}$ 的列向量组没有等价关系。变式：若改为 $\\mathbf{B}\\mathbf{A} = \\mathbf{C}$ 且 $\\mathbf{A}$ 可逆，则应选\"$\\mathbf{C}$ 的行向量组与 $\\mathbf{B}$ 的行向量组等价\"------左乘可逆矩阵改行，右乘可逆矩阵改列。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>最常见错误是分不清\"行\"还是\"列\"：右乘可逆矩阵做的是列变换，得到列向量组等价；左乘可逆矩阵做的是行变换。本题\n$\\mathbf{C} = \\mathbf{A}\\mathbf{B}$ 是在 $\\mathbf{A}$ 右边乘\n$\\mathbf{B}$，所以是列的故事。</p>",
+          "text": "最常见错误是分不清\"行\"还是\"列\"：右乘可逆矩阵做的是列变换，得到列向量组等价；左乘可逆矩阵做的是行变换。本题 $\\mathbf{C} = \\mathbf{A}\\mathbf{B}$ 是在 $\\mathbf{A}$ 右边乘 $\\mathbf{B}$，所以是列的故事。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>记口诀：<strong>左乘变行、右乘变列</strong>。$\\mathbf{A}\\mathbf{B} = \\mathbf{C}$ 且\n$\\mathbf{B}$ 可逆 ⇒ $\\mathbf{C}$ 列 $\\leftrightarrow \\mathbf{A}$\n列等价；$\\mathbf{B}\\mathbf{A} = \\mathbf{C}$ 且 $\\mathbf{A}$ 可逆 ⇒\n$\\mathbf{C}$ 行 $\\leftrightarrow \\mathbf{B}$ 行等价。</p>",
+          "text": "记口诀：左乘变行、右乘变列。$\\mathbf{A}\\mathbf{B} = \\mathbf{C}$ 且 $\\mathbf{B}$ 可逆 ⇒ $\\mathbf{C}$ 列 $\\leftrightarrow \\mathbf{A}$ 列等价；$\\mathbf{B}\\mathbf{A} = \\mathbf{C}$ 且 $\\mathbf{A}$ 可逆 ⇒ $\\mathbf{C}$ 行 $\\leftrightarrow \\mathbf{B}$ 行等价。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查矩阵乘积对列（行）向量组的线性表示、可逆矩阵的作用，属于线性代数\"向量组的线性相关性与矩阵的秩\"考点，是 2012、2019 年同类题的变形。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "xiandai",
+        "label": "线性代数"
+      },
+      "origin": "source",
+      "content_hash": "a6e777760c98af988dded394f5d2daa1d60bb9c055e27f99b07d89c983cd385d",
+      "schema_version": "1.0.0",
+      "source_hash": "7e5315ccf6f99deec41db7ef8729a9966551d0a4ccc2d23f907d32dbf62baff4",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-5",
+        "year": 2013,
+        "num": 5
+      }
+    },
+    {
+      "id": "math-2013-6",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 6,
+      "type": "single",
+      "stem": "矩阵\n$$\\begin{pmatrix} 1 & a & 1 \\\\ a & b & a \\\\ 1 & a & 1 \\end{pmatrix}\\quad \\text{与}\\quad \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & b & 0 \\\\ 0 & 0 & 0 \\end{pmatrix}$$\n相似的充要条件为\n（A）$a = 0,\\ b = 2$\n（B）$a = 0,\\ b$ 任意常数\n（C）$a = 2,\\ b = 0$\n（D）$a = 2,\\ b$ 任意常数",
+      "options": [
+        "（A）$a = 0,\\ b = 2$",
+        "（B）$a = 0,\\ b$ 任意常数",
+        "（C）$a = 2,\\ b = 0$",
+        "（D）$a = 2,\\ b$ 任意常数"
+      ],
+      "answer": "选（B），$a = 0,\\ b$ 为任意常数。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>矩阵</p>\n<p>$$\\begin{pmatrix}\n1 & a & 1 \\\\\na & b & a \\\\\n1 & a & 1\n\\end{pmatrix}\\quad \\text{与}\\quad \\begin{pmatrix}\n2 & 0 & 0 \\\\\n0 & b & 0 \\\\\n0 & 0 & 0\n\\end{pmatrix}$$</p>\n<p>相似的充要条件为</p>\n<div class=\"opts\"><div class=\"opt\"><span class=\"opt-key\">（A）</span><span class=\"opt-txt\">$a = 0,\\ b = 2$</span></div><div class=\"opt\"><span class=\"opt-key\">（B）</span><span class=\"opt-txt\">$a = 0,\\ b$\n任意常数</span></div><div class=\"opt\"><span class=\"opt-key\">（C）</span><span class=\"opt-txt\">$a = 2,\\ b = 0$</span></div><div class=\"opt\"><span class=\"opt-key\">（D）</span><span class=\"opt-txt\">$a = 2,\\ b$ 任意常数</span></div></div>",
+          "text": "矩阵\n$$\\begin{pmatrix} 1 & a & 1 \\\\ a & b & a \\\\ 1 & a & 1 \\end{pmatrix}\\quad \\text{与}\\quad \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & b & 0 \\\\ 0 & 0 & 0 \\end{pmatrix}$$\n相似的充要条件为\n（A）$a = 0,\\ b = 2$\n（B）$a = 0,\\ b$ 任意常数\n（C）$a = 2,\\ b = 0$\n（D）$a = 2,\\ b$ 任意常数"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>选（B），$a = 0,\\ b$ 为任意常数。</p>",
+          "text": "选（B），$a = 0,\\ b$ 为任意常数。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查实对称矩阵相似于对角矩阵的充要条件（特征值相同），属于线性代数\"矩阵的特征值与特征向量、相似对角化\"考点。</p>",
+          "text": "本题考查实对称矩阵相似于对角矩阵的充要条件（特征值相同），属于线性代数\"矩阵的特征值与特征向量、相似对角化\"考点。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>左边矩阵是实对称矩阵，右边是对角矩阵\n$diag(2,b,0)$。两个实对称矩阵相似的充要条件是<strong>特征值完全相同</strong>。右边矩阵的特征值已经写死为\n$2,b,0$。所以问题变成：让左边矩阵的特征多项式展开后，三个特征根正好是\n$2,b,0$。我们注意左边矩阵第一行和第三行完全一样（都是\n$1,a,1$），所以行列式 $\\det$ 必有零根 $\\lambda = 0$，这正好对上右边的\n$0$。剩下只要保证另两个特征根是 $2$ 和 $b$ 即可。</p>",
+          "text": "左边矩阵是实对称矩阵，右边是对角矩阵 $diag(2,b,0)$。两个实对称矩阵相似的充要条件是特征值完全相同。右边矩阵的特征值已经写死为 $2,b,0$。所以问题变成：让左边矩阵的特征多项式展开后，三个特征根正好是 $2,b,0$。我们注意左边矩阵第一行和第三行完全一样（都是 $1,a,1$），所以行列式 $\\det$ 必有零根 $\\lambda = 0$，这正好对上右边的 $0$。剩下只要保证另两个特征根是 $2$ 和 $b$ 即可。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>左边矩阵记为 $\\mathbf{A}$。它的特征多项式为</p>\n<p>$$\\left| \\lambda\\mathbf{E} - \\mathbf{A} \\right| = \\begin{vmatrix}\n\\lambda - 1 & - a & - 1 \\\\\n - a & \\lambda - b & - a \\\\\n - 1 & - a & \\lambda - 1\n\\end{vmatrix} = \\lambda\\left\\lbrack 2a^{2} - (\\lambda - 2)(\\lambda - b) \\right\\rbrack = 0.$$</p>\n<p>（展开时利用第一、三行对称的结构。）要让特征根为 $0,2,b$，把\n$\\lambda = 2$ 代入括号：$2a^{2} - (0)(2 - b) = 2a^{2} = 0$，故必须\n$a = 0$。当 $a = 0$ 时，括号变成\n$- (\\lambda - 2)(\\lambda - b)$，特征根恰好为 $2$ 和\n$b$，与对角矩阵完全一致。所以充要条件是 $a = 0$，而 $b$\n可以任意（反正对角线上第二个数就是 $b$）。</p>",
+          "text": "左边矩阵记为 $\\mathbf{A}$。它的特征多项式为\n$$\\left| \\lambda\\mathbf{E} - \\mathbf{A} \\right| = \\begin{vmatrix} \\lambda - 1 & - a & - 1 \\\\ - a & \\lambda - b & - a \\\\ - 1 & - a & \\lambda - 1 \\end{vmatrix} = \\lambda\\left\\lbrack 2a^{2} - (\\lambda - 2)(\\lambda - b) \\right\\rbrack = 0.$$\n（展开时利用第一、三行对称的结构。）要让特征根为 $0,2,b$，把 $\\lambda = 2$ 代入括号：$2a^{2} - (0)(2 - b) = 2a^{2} = 0$，故必须 $a = 0$。当 $a = 0$ 时，括号变成 $- (\\lambda - 2)(\\lambda - b)$，特征根恰好为 $2$ 和 $b$，与对角矩阵完全一致。所以充要条件是 $a = 0$，而 $b$ 可以任意（反正对角线上第二个数就是 $b$）。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>$\\mathbf{A}$ 为实对称矩阵，与对角矩阵 $diag(2,b,0)$\n相似当且仅当特征值相同。由</p>\n<p>$$\\left| \\lambda\\mathbf{E} - \\mathbf{A} \\right| = \\lambda\\left\\lbrack 2a^{2} - (\\lambda - 2)(\\lambda - b) \\right\\rbrack = 0$$</p>\n<p>要使\n$\\lambda = 2$ 为根，须 $2a^{2} = 0$ 即 $a = 0$；此时特征根恰为\n$0,2,b$，与 $b$ 的具体值无关。故 $a = 0,\\ b$ 任意。选（B）。</p>",
+          "text": "$\\mathbf{A}$ 为实对称矩阵，与对角矩阵 $diag(2,b,0)$ 相似当且仅当特征值相同。由\n$$\\left| \\lambda\\mathbf{E} - \\mathbf{A} \\right| = \\lambda\\left\\lbrack 2a^{2} - (\\lambda - 2)(\\lambda - b) \\right\\rbrack = 0$$\n要使 $\\lambda = 2$ 为根，须 $2a^{2} = 0$ 即 $a = 0$；此时特征根恰为 $0,2,b$，与 $b$ 的具体值无关。故 $a = 0,\\ b$ 任意。选（B）。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>逐个排除：（A）把 $b$ 也钉成\n$2$，但题目右边对角元本身就是 $b$，$b$\n取什么都和右边一致，不必限定；（C）（D）取\n$a = 2$，代入特征多项式括号不为零，$\\lambda = 2$\n不是根，不相似。另一个视角：实对称矩阵必可对角化，相似于对角阵的关键是特征值一致，不必额外看线性无关特征向量个数。变式：若右边对角阵改成\n$diag(1,b,1)$，则要重新令 $\\lambda = 1$ 代入求 $a$。</p>",
+          "text": "逐个排除：（A）把 $b$ 也钉成 $2$，但题目右边对角元本身就是 $b$，$b$ 取什么都和右边一致，不必限定；（C）（D）取 $a = 2$，代入特征多项式括号不为零，$\\lambda = 2$ 不是根，不相似。另一个视角：实对称矩阵必可对角化，相似于对角阵的关键是特征值一致，不必额外看线性无关特征向量个数。变式：若右边对角阵改成 $diag(1,b,1)$，则要重新令 $\\lambda = 1$ 代入求 $a$。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是误以为相似还要看\"能否对角化\"，忘记实对称矩阵天然可对角化；二是把 $b$\n也当成待定条件强行求解，其实 $b$ 本来就是对角元；三是展开行列式算错\n$2a^{2}$ 这一项的符号。</p>",
+          "text": "一是误以为相似还要看\"能否对角化\"，忘记实对称矩阵天然可对角化；二是把 $b$ 也当成待定条件强行求解，其实 $b$ 本来就是对角元；三是展开行列式算错 $2a^{2}$ 这一项的符号。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>实对称矩阵与对角矩阵相似 ⇔\n特征值对应相等。操作：写出左边特征多项式，令其根与右边对角元逐个匹配，解出待定参数；对角线上已有的自由参数无需额外约束。</p>",
+          "text": "实对称矩阵与对角矩阵相似 ⇔ 特征值对应相等。操作：写出左边特征多项式，令其根与右边对角元逐个匹配，解出待定参数；对角线上已有的自由参数无需额外约束。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查实对称矩阵相似于对角矩阵的充要条件（特征值相同），属于线性代数\"矩阵的特征值与特征向量、相似对角化\"考点。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "xiandai",
+        "label": "线性代数"
+      },
+      "origin": "source",
+      "content_hash": "6c51a8cde0b497411a763edfa9c50fb2b2cbebd754c83695b7f4390a320f6f13",
+      "schema_version": "1.0.0",
+      "source_hash": "6349542555df056e7628cd4b387eaf7a3c49c69dba9b1cd98c5ca27c9f5119da",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-6",
+        "year": 2013,
+        "num": 6
+      }
+    },
+    {
+      "id": "math-2013-7",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 7,
+      "type": "single",
+      "stem": "设 $X_{1},X_{2},X_{3}$ 是随机变量，且\n$$X_{1} \\sim N(0,1),\\ X_{2} \\sim N\\left( 0,2^{2} \\right),\\ X_{3} \\sim N\\left( 5,3^{2} \\right)$$\n$p_{i} = P\\left\\{ - 2 \\leq X_{i} \\leq 2 \\right\\}\\ (i = 1,2,3)$，则\n（A）$p_{1} > p_{2} > p_{3}$\n（B）$p_{2} > p_{1} > p_{3}$\n（C）$p_{3} > p_{1} > p_{2}$\n（D）$p_{1} > p_{3} > p_{2}$",
+      "options": [
+        "（A）$p_{1} > p_{2} > p_{3}$",
+        "（B）$p_{2} > p_{1} > p_{3}$",
+        "（C）$p_{3} > p_{1} > p_{2}$",
+        "（D）$p_{1} > p_{3} > p_{2}$"
+      ],
+      "answer": "选（A），$p_{1} > p_{2} > p_{3}$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设 $X_{1},X_{2},X_{3}$ 是随机变量，且</p>\n<p>$$X_{1} \\sim N(0,1),\\ X_{2} \\sim N\\left( 0,2^{2} \\right),\\ X_{3} \\sim N\\left( 5,3^{2} \\right)$$</p>\n<p>$p_{i} = P\\left\\{ - 2 \\leq X_{i} \\leq 2 \\right\\}\\ (i = 1,2,3)$，则</p>\n<div class=\"opts\"><div class=\"opt\"><span class=\"opt-key\">（A）</span><span class=\"opt-txt\">$p_{1} > p_{2} > p_{3}$</span></div><div class=\"opt\"><span class=\"opt-key\">（B）</span><span class=\"opt-txt\">$p_{2} > p_{1} > p_{3}$</span></div><div class=\"opt\"><span class=\"opt-key\">（C）</span><span class=\"opt-txt\">$p_{3} > p_{1} > p_{2}$</span></div><div class=\"opt\"><span class=\"opt-key\">（D）</span><span class=\"opt-txt\">$p_{1} > p_{3} > p_{2}$</span></div></div>",
+          "text": "设 $X_{1},X_{2},X_{3}$ 是随机变量，且\n$$X_{1} \\sim N(0,1),\\ X_{2} \\sim N\\left( 0,2^{2} \\right),\\ X_{3} \\sim N\\left( 5,3^{2} \\right)$$\n$p_{i} = P\\left\\{ - 2 \\leq X_{i} \\leq 2 \\right\\}\\ (i = 1,2,3)$，则\n（A）$p_{1} > p_{2} > p_{3}$\n（B）$p_{2} > p_{1} > p_{3}$\n（C）$p_{3} > p_{1} > p_{2}$\n（D）$p_{1} > p_{3} > p_{2}$"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>选（A），$p_{1} > p_{2} > p_{3}$。</p>",
+          "text": "选（A），$p_{1} > p_{2} > p_{3}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查正态分布的标准化与区间概率比较，属于概率论\"随机变量及其分布\"的基础高频题，与\n2016 年第（7）题几乎同款。</p>",
+          "text": "本题考查正态分布的标准化与区间概率比较，属于概率论\"随机变量及其分布\"的基础高频题，与 2016 年第（7）题几乎同款。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到 $X \\sim N\\left( \\mu,\\sigma^{2} \\right)$\n求落在某区间的概率，唯一的套路是标准化：$Z = \\frac{X - \\mu}{\\sigma} \\sim N(0,1)$，然后用标准正态分布函数\n$\\Phi$ 表示。区间都是 $\\lbrack - 2,2\\rbrack$，但三个分布的 $\\mu,\\sigma$\n不同，要分别把区间端点标准化，再看\n$P\\left\\{ - 2 \\leq X_{i} \\leq 2 \\right\\}$\n对应标准正态里的哪一段，段越靠近 $0$、越宽，概率越大。</p>",
+          "text": "看到 $X \\sim N\\left( \\mu,\\sigma^{2} \\right)$ 求落在某区间的概率，唯一的套路是标准化：$Z = \\frac{X - \\mu}{\\sigma} \\sim N(0,1)$，然后用标准正态分布函数 $\\Phi$ 表示。区间都是 $\\lbrack - 2,2\\rbrack$，但三个分布的 $\\mu,\\sigma$ 不同，要分别把区间端点标准化，再看 $P\\left\\{ - 2 \\leq X_{i} \\leq 2 \\right\\}$ 对应标准正态里的哪一段，段越靠近 $0$、越宽，概率越大。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>$$p_{1} = P\\left\\{ - 2 \\leq X_{1} \\leq 2 \\right\\} = P\\left\\{ - 2 \\leq Z \\leq 2 \\right\\} = 2\\Phi(2) - 1.$$</p>\n<p>$$p_{2} = P\\left\\{ - 2 \\leq X_{2} \\leq 2 \\right\\} = P\\left\\{ - 1 \\leq \\frac{X_{2} - 0}{2} \\leq 1 \\right\\} = 2\\Phi(1) - 1.$$</p>\n<p>因为 $\\Phi$ 递增，$\\Phi(2) > \\Phi(1)$，所以 $p_{1} > p_{2}$。</p>\n<p>$$p_{3} = P\\left\\{ - 2 \\leq X_{3} \\leq 2 \\right\\} = P\\left\\{ \\frac{- 2 - 5}{3} \\leq \\frac{X_{3} - 5}{3} \\leq \\frac{2 - 5}{3} \\right\\} = P\\left\\{ - \\frac{7}{3} \\leq Z \\leq - 1 \\right\\} = \\Phi( - 1) - \\Phi\\left( - \\frac{7}{3} \\right).$$</p>\n<p>$p_{3}$ 是标准正态在 $\\lbrack - 7/3, - 1\\rbrack$\n这一段的面积------既远离中心 $0$（密度小），又比 $p_{2}$ 的区间窄，故\n$p_{3}$ 最小。综上 $p_{1} > p_{2} > p_{3}$。</p>",
+          "text": "$$p_{1} = P\\left\\{ - 2 \\leq X_{1} \\leq 2 \\right\\} = P\\left\\{ - 2 \\leq Z \\leq 2 \\right\\} = 2\\Phi(2) - 1.$$\n$$p_{2} = P\\left\\{ - 2 \\leq X_{2} \\leq 2 \\right\\} = P\\left\\{ - 1 \\leq \\frac{X_{2} - 0}{2} \\leq 1 \\right\\} = 2\\Phi(1) - 1.$$\n因为 $\\Phi$ 递增，$\\Phi(2) > \\Phi(1)$，所以 $p_{1} > p_{2}$。\n$$p_{3} = P\\left\\{ - 2 \\leq X_{3} \\leq 2 \\right\\} = P\\left\\{ \\frac{- 2 - 5}{3} \\leq \\frac{X_{3} - 5}{3} \\leq \\frac{2 - 5}{3} \\right\\} = P\\left\\{ - \\frac{7}{3} \\leq Z \\leq - 1 \\right\\} = \\Phi( - 1) - \\Phi\\left( - \\frac{7}{3} \\right).$$\n$p_{3}$ 是标准正态在 $\\lbrack - 7/3, - 1\\rbrack$ 这一段的面积------既远离中心 $0$（密度小），又比 $p_{2}$ 的区间窄，故 $p_{3}$ 最小。综上 $p_{1} > p_{2} > p_{3}$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>标准化得\n$p_{1} = 2\\Phi(2) - 1$，$p_{2} = 2\\Phi(1) - 1$，$p_{3} = \\Phi( - 1) - \\Phi( - 7/3)$。由\n$\\Phi$ 单调递增及标准正态密度在 $0$ 处最大，知\n$p_{1} > p_{2} > p_{3}$。选（A）。</p>",
+          "text": "标准化得 $p_{1} = 2\\Phi(2) - 1$，$p_{2} = 2\\Phi(1) - 1$，$p_{3} = \\Phi( - 1) - \\Phi( - 7/3)$。由 $\\Phi$ 单调递增及标准正态密度在 $0$ 处最大，知 $p_{1} > p_{2} > p_{3}$。选（A）。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>直观理解：标准差越小，数据越集中在均值附近。$X_{1}$ 标准差 $1$、均值\n$0$，区间 $\\lbrack - 2,2\\rbrack$ 正好是中心两侧各 $2$\n个标准差，覆盖最饱满；$X_{2}$ 标准差 $2$，同样的 $\\lbrack - 2,2\\rbrack$\n只覆盖中心两侧各 $1$ 个标准差，较窄；$X_{3}$ 均值 $5$\n已偏离区间中心，区间 $\\lbrack - 2,2\\rbrack$\n落在它左尾，概率最小。逐个排除：（B）把 $p_{2}$ 放到 $p_{1}$\n前面，忽略了标准差越小概率越大；（C）（D）错排了 $p_{3}$ 的位置。</p>",
+          "text": "直观理解：标准差越小，数据越集中在均值附近。$X_{1}$ 标准差 $1$、均值 $0$，区间 $\\lbrack - 2,2\\rbrack$ 正好是中心两侧各 $2$ 个标准差，覆盖最饱满；$X_{2}$ 标准差 $2$，同样的 $\\lbrack - 2,2\\rbrack$ 只覆盖中心两侧各 $1$ 个标准差，较窄；$X_{3}$ 均值 $5$ 已偏离区间中心，区间 $\\lbrack - 2,2\\rbrack$ 落在它左尾，概率最小。逐个排除：（B）把 $p_{2}$ 放到 $p_{1}$ 前面，忽略了标准差越小概率越大；（C）（D）错排了 $p_{3}$ 的位置。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是标准化时忘减均值\n$5$（$X_{3}$）；二是把区间端点直接除以标准差而忘记减\n$\\mu$；三是凭直觉认为\"$X_{3}$ 区间宽\"而错排。</p>",
+          "text": "一是标准化时忘减均值 $5$（$X_{3}$）；二是把区间端点直接除以标准差而忘记减 $\\mu$；三是凭直觉认为\"$X_{3}$ 区间宽\"而错排。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>正态区间概率比较题：一律标准化成\n$Z \\sim N(0,1)$，比较区间 $\\lbrack a,b\\rbrack$\n在标准正态中的位置------越贴近 $0$、$\\Phi(b) - \\Phi(a)$ 越大。</p>",
+          "text": "正态区间概率比较题：一律标准化成 $Z \\sim N(0,1)$，比较区间 $\\lbrack a,b\\rbrack$ 在标准正态中的位置------越贴近 $0$、$\\Phi(b) - \\Phi(a)$ 越大。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查正态分布的标准化与区间概率比较，属于概率论\"随机变量及其分布\"的基础高频题，与 2016 年第（7）题几乎同款。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gailv",
+        "label": "概率论"
+      },
+      "origin": "source",
+      "content_hash": "e56b87ca809e2da8518bf14714a8fa96653d367489e43f4b58b3f27581355e2e",
+      "schema_version": "1.0.0",
+      "source_hash": "32c6f85e9af326459ac496c9407546294d591586d2220e59d8b8a4f0bd5d05ad",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-7",
+        "year": 2013,
+        "num": 7
+      }
+    },
+    {
+      "id": "math-2013-8",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 8,
+      "type": "single",
+      "stem": "设随机变量 $X \\sim t(n)$，$Y \\sim F(1,n)$，给定 $(0 < \\alpha < 0.5)$，常数 $c$ 满足 $P(X > c) = \\alpha$，则 $P\\left( Y > c^{2} \\right)$ =\n（A）$\\alpha$\n（B）$1 - \\alpha$\n（C）$2\\alpha$\n（D）$1 - 2\\alpha$",
+      "options": [
+        "（A）$\\alpha$",
+        "（B）$1 - \\alpha$",
+        "（C）$2\\alpha$",
+        "（D）$1 - 2\\alpha$"
+      ],
+      "answer": "选（C），$P\\left( Y > c^{2} \\right) = 2\\alpha$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设随机变量 $X \\sim t(n)$，$Y \\sim F(1,n)$，给定\n$(0 < \\alpha < 0.5)$，常数 $c$ 满足 $P(X > c) = \\alpha$，则\n$P\\left( Y > c^{2} \\right)$ =</p>\n<div class=\"opts\"><div class=\"opt\"><span class=\"opt-key\">（A）</span><span class=\"opt-txt\">$\\alpha$</span></div><div class=\"opt\"><span class=\"opt-key\">（B）</span><span class=\"opt-txt\">$1 - \\alpha$</span></div><div class=\"opt\"><span class=\"opt-key\">（C）</span><span class=\"opt-txt\">$2\\alpha$</span></div><div class=\"opt\"><span class=\"opt-key\">（D）</span><span class=\"opt-txt\">$1 - 2\\alpha$</span></div></div>",
+          "text": "设随机变量 $X \\sim t(n)$，$Y \\sim F(1,n)$，给定 $(0 < \\alpha < 0.5)$，常数 $c$ 满足 $P(X > c) = \\alpha$，则 $P\\left( Y > c^{2} \\right)$ =\n（A）$\\alpha$\n（B）$1 - \\alpha$\n（C）$2\\alpha$\n（D）$1 - 2\\alpha$"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>选（C），$P\\left( Y > c^{2} \\right) = 2\\alpha$。</p>",
+          "text": "选（C），$P\\left( Y > c^{2} \\right) = 2\\alpha$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查 $t$ 分布与 $F$\n分布的关系、上分位点，属于概率论\"数理统计的基本概念\"考点。</p>",
+          "text": "本题考查 $t$ 分布与 $F$ 分布的关系、上分位点，属于概率论\"数理统计的基本概念\"考点。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到 $X \\sim t(n)$ 和 $Y \\sim F(1,n)$\n同时出现，要立刻想起一条重要结论：<strong>若</strong> $X \\sim t(n)$<strong>，则</strong>\n$X^{2} \\sim F(1,n)$。因为 $t(n) = \\frac{Z}{\\sqrt{V/n}}$，平方后\n$\\frac{Z^{2}/1}{V/n} \\sim F(1,n)$。所以 $Y$ 与 $X^{2}$ 同分布。于是</p>\n<p>$$P\\left( Y > c^{2} \\right) = P\\left( X^{2} > c^{2} \\right) = P\\left( |X| > c \\right)$$</p>\n<p>。</p>",
+          "text": "看到 $X \\sim t(n)$ 和 $Y \\sim F(1,n)$ 同时出现，要立刻想起一条重要结论：若 $X \\sim t(n)$，则 $X^{2} \\sim F(1,n)$。因为 $t(n) = \\frac{Z}{\\sqrt{V/n}}$，平方后 $\\frac{Z^{2}/1}{V/n} \\sim F(1,n)$。所以 $Y$ 与 $X^{2}$ 同分布。于是\n$$P\\left( Y > c^{2} \\right) = P\\left( X^{2} > c^{2} \\right) = P\\left( |X| > c \\right)$$\n。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>$t$ 分布关于 $0$ 对称。已知\n$P(X > c) = \\alpha$，由对称性 $P(X < - c) = \\alpha$。而</p>\n<p>$$P\\left( X^{2} > c^{2} \\right) = P\\left( |X| > c \\right) = P(X > c) + P(X < - c) = \\alpha + \\alpha = 2\\alpha.$$</p>\n<p>这里 $c > 0$（因为 $\\alpha < 0.5$，上分位点 $c$ 取正值）。</p>",
+          "text": "$t$ 分布关于 $0$ 对称。已知 $P(X > c) = \\alpha$，由对称性 $P(X < - c) = \\alpha$。而\n$$P\\left( X^{2} > c^{2} \\right) = P\\left( |X| > c \\right) = P(X > c) + P(X < - c) = \\alpha + \\alpha = 2\\alpha.$$\n这里 $c > 0$（因为 $\\alpha < 0.5$，上分位点 $c$ 取正值）。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>由 $X \\sim t(n)$ 知 $X^{2} \\sim F(1,n)$，与 $Y$\n同分布。故</p>\n<p>$$P\\left( Y > c^{2} \\right) = P\\left( X^{2} > c^{2} \\right) = P\\left( |X| > c \\right) = P(X > c) + P(X < - c) = \\alpha + \\alpha = 2\\alpha.$$</p>\n<p>选（C）。</p>",
+          "text": "由 $X \\sim t(n)$ 知 $X^{2} \\sim F(1,n)$，与 $Y$ 同分布。故\n$$P\\left( Y > c^{2} \\right) = P\\left( X^{2} > c^{2} \\right) = P\\left( |X| > c \\right) = P(X > c) + P(X < - c) = \\alpha + \\alpha = 2\\alpha.$$\n选（C）。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>逐个排除：（A）$\\alpha$\n只算了右侧尾巴，忘了左侧；（B）$1 - \\alpha$、（D）$1 - 2\\alpha$\n方向都反了。关键记忆点：$t$ 分布平方即\n$F(1,n)$；双侧尾部概率是单侧的两倍。变式：若题给\n$P\\left( |X| > c \\right) = \\alpha$，则\n$P\\left( Y > c^{2} \\right) = \\alpha$，因为已经是双侧了。</p>",
+          "text": "逐个排除：（A）$\\alpha$ 只算了右侧尾巴，忘了左侧；（B）$1 - \\alpha$、（D）$1 - 2\\alpha$ 方向都反了。关键记忆点：$t$ 分布平方即 $F(1,n)$；双侧尾部概率是单侧的两倍。变式：若题给 $P\\left( |X| > c \\right) = \\alpha$，则 $P\\left( Y > c^{2} \\right) = \\alpha$，因为已经是双侧了。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是不知道 $t^{2} = F(1,n)$\n这条关系而无从下手；二是忘了 $t$ 分布对称性，只加了一个 $\\alpha$；三是把\n$c^{2}$ 当成新分位点重新查表。</p>",
+          "text": "一是不知道 $t^{2} = F(1,n)$ 这条关系而无从下手；二是忘了 $t$ 分布对称性，只加了一个 $\\alpha$；三是把 $c^{2}$ 当成新分位点重新查表。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>数理统计分布关系速记：$X \\sim t(n) \\Rightarrow X^{2} \\sim F(1,n)$；$X \\sim \\chi^{2}(m),Y \\sim \\chi^{2}(n)$\n独立 ⇒ $\\frac{X/m}{Y/n} \\sim F(m,n)$。涉及双侧尾部时记得乘以 $2$。</p>\n<h1>二、填空题</h1>",
+          "text": "数理统计分布关系速记：$X \\sim t(n) \\Rightarrow X^{2} \\sim F(1,n)$；$X \\sim \\chi^{2}(m),Y \\sim \\chi^{2}(n)$ 独立 ⇒ $\\frac{X/m}{Y/n} \\sim F(m,n)$。涉及双侧尾部时记得乘以 $2$。\n二、填空题"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查 $t$ 分布与 $F$ 分布的关系、上分位点，属于概率论\"数理统计的基本概念\"考点。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gailv",
+        "label": "概率论"
+      },
+      "origin": "source",
+      "content_hash": "9c0c875a13fd57652d42271908fb1be7414f10658a6b71481f55258a5bb1065e",
+      "schema_version": "1.0.0",
+      "source_hash": "35f9ac3b8510cef46e4441602c75903424ab59a9676a7ab3b87f0e11823111a5",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-8",
+        "year": 2013,
+        "num": 8
+      }
+    },
+    {
+      "id": "math-2013-9",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 9,
+      "type": "fill",
+      "stem": "设函数 $y = f(x)$ 由方程 $y - x = e^{x(1 - y)}$ 确定，则\n$$\\lim_{n \\rightarrow \\infty}n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right)$$\n= ______。",
+      "options": [],
+      "answer": "答案为 $1$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设函数 $y = f(x)$ 由方程 $y - x = e^{x(1 - y)}$ 确定，则</p>\n<p>$$\\lim_{n \\rightarrow \\infty}n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right)$$</p>\n<p>= ______。</p>",
+          "text": "设函数 $y = f(x)$ 由方程 $y - x = e^{x(1 - y)}$ 确定，则\n$$\\lim_{n \\rightarrow \\infty}n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right)$$\n= ______。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>答案为 $1$。</p>",
+          "text": "答案为 $1$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查隐函数求导与用导数定义求数列极限，是高等数学\"一元函数微分学\"的小综合题，与\n2011 年第（9）题思路一致。</p>",
+          "text": "本题考查隐函数求导与用导数定义求数列极限，是高等数学\"一元函数微分学\"的小综合题，与 2011 年第（9）题思路一致。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到极限形如</p>\n<p>$$\\lim_{n \\rightarrow \\infty}n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right)$$</p>\n<p>要立刻认出这是<strong>导数定义</strong>：令\n$h = \\frac{1}{n} \\rightarrow 0$，则</p>\n<p>$$n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right) = \\frac{f(1/n) - 1}{1/n}.$$</p>\n<p>若能先定出 $f(0) = 1$，这个极限就是\n$f\\prime(0)$。所以任务拆成两步：①由方程定出 $x = 0$ 时的函数值\n$f(0)$；②隐函数求导算出 $f\\prime(0)$。</p>",
+          "text": "看到极限形如\n$$\\lim_{n \\rightarrow \\infty}n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right)$$\n要立刻认出这是导数定义：令 $h = \\frac{1}{n} \\rightarrow 0$，则\n$$n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right) = \\frac{f(1/n) - 1}{1/n}.$$\n若能先定出 $f(0) = 1$，这个极限就是 $f\\prime(0)$。所以任务拆成两步：①由方程定出 $x = 0$ 时的函数值 $f(0)$；②隐函数求导算出 $f\\prime(0)$。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>第一步求 $f(0)$：把 $x = 0$ 代入\n$y - x = e^{x(1 - y)}$，得 $y = e^{0} = 1$，即 $f(0) = 1$。于是</p>\n<p>$$\\lim_{n \\rightarrow \\infty}n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right) = \\lim_{n \\rightarrow \\infty}\\frac{f(1/n) - f(0)}{1/n} = f\\prime(0).$$</p>\n<p>第二步隐函数求导：两边对 $x$ 求导，注意 $y$ 是 $x$ 的函数：</p>\n<p>$$y\\prime - 1 = e^{x(1 - y)} \\cdot (1 - y - xy\\prime).$$</p>\n<p>由原方程 $e^{x(1 - y)} = y - x$，代入并把 $(0,1)$ 代入：左边\n$y\\prime(0) - 1$；右边 $(1 - 0) \\cdot (1 - 1 - 0) = 0$。更直接地，在\n$(0,1)$ 处 $e^{0} = 1$，$1 - y = 0$，故\n$y\\prime - 1 = 1 \\cdot (1 - y - xy\\prime) = 1 \\cdot (0 - 0) = 0$，得\n$y\\prime(0) = 1$。故 $f\\prime(0) = 1$，原式极限为 $1$。</p>",
+          "text": "第一步求 $f(0)$：把 $x = 0$ 代入 $y - x = e^{x(1 - y)}$，得 $y = e^{0} = 1$，即 $f(0) = 1$。于是\n$$\\lim_{n \\rightarrow \\infty}n\\left( f\\left( \\frac{1}{n} \\right) - 1 \\right) = \\lim_{n \\rightarrow \\infty}\\frac{f(1/n) - f(0)}{1/n} = f\\prime(0).$$\n第二步隐函数求导：两边对 $x$ 求导，注意 $y$ 是 $x$ 的函数：\n$$y\\prime - 1 = e^{x(1 - y)} \\cdot (1 - y - xy\\prime).$$\n由原方程 $e^{x(1 - y)} = y - x$，代入并把 $(0,1)$ 代入：左边 $y\\prime(0) - 1$；右边 $(1 - 0) \\cdot (1 - 1 - 0) = 0$。更直接地，在 $(0,1)$ 处 $e^{0} = 1$，$1 - y = 0$，故 $y\\prime - 1 = 1 \\cdot (1 - y - xy\\prime) = 1 \\cdot (0 - 0) = 0$，得 $y\\prime(0) = 1$。故 $f\\prime(0) = 1$，原式极限为 $1$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>令 $x = 0$ 得 $f(0) = 1$，故原式等于导数定义式</p>\n<p>$$\\lim_{n \\rightarrow \\infty}\\frac{f(1/n) - f(0)}{1/n} = f\\prime(0)$$</p>\n<p>。方程两边对\n$x$ 求导：$y\\prime - 1 = e^{x(1 - y)}(1 - y - xy\\prime)$，代入 $(0,1)$\n得 $y\\prime(0) - 1 = 0$，即 $f\\prime(0) = 1$。所以答案为 $1$。</p>",
+          "text": "令 $x = 0$ 得 $f(0) = 1$，故原式等于导数定义式\n$$\\lim_{n \\rightarrow \\infty}\\frac{f(1/n) - f(0)}{1/n} = f\\prime(0)$$\n。方程两边对 $x$ 求导：$y\\prime - 1 = e^{x(1 - y)}(1 - y - xy\\prime)$，代入 $(0,1)$ 得 $y\\prime(0) - 1 = 0$，即 $f\\prime(0) = 1$。所以答案为 $1$。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>常见错误答案及成因：若忘了先求\n$f(0) = 1$，直接对 $n$\n取极限会得到\"$0 \\cdot \\infty$\"型不定式而无法下手；若隐函数求导时漏乘\n$e^{x(1 - y)}$ 的指数导数 $(1 - y - xy\\prime)$，会算成 $y\\prime = 1$\n之外的错值。变式：若把方程换成 $y - x = e^{y - x}$\n之类，同样先定点再求导。</p>",
+          "text": "常见错误答案及成因：若忘了先求 $f(0) = 1$，直接对 $n$ 取极限会得到\"$0 \\cdot \\infty$\"型不定式而无法下手；若隐函数求导时漏乘 $e^{x(1 - y)}$ 的指数导数 $(1 - y - xy\\prime)$，会算成 $y\\prime = 1$ 之外的错值。变式：若把方程换成 $y - x = e^{y - x}$ 之类，同样先定点再求导。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是识别不出这是导数定义，硬用洛必达对离散 $n$\n求导；二是隐函数求导忘记 $y$ 是 $x$ 的函数、漏写 $y\\prime$；三是代值时把\n$e^{x(1 - y)}$ 在 $(0,1)$ 处的值算错（应为 $1$）。</p>",
+          "text": "一是识别不出这是导数定义，硬用洛必达对离散 $n$ 求导；二是隐函数求导忘记 $y$ 是 $x$ 的函数、漏写 $y\\prime$；三是代值时把 $e^{x(1 - y)}$ 在 $(0,1)$ 处的值算错（应为 $1$）。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>见</p>\n<p>$$\\lim_{n \\rightarrow \\infty}n\\left\\lbrack f(1/n) - a \\right\\rbrack$$</p>\n<p>立即识别为 $f\\prime(0)$（若\n$f(0) = a$）；隐函数题先定点、再两边求导后代点。</p>",
+          "text": "见\n$$\\lim_{n \\rightarrow \\infty}n\\left\\lbrack f(1/n) - a \\right\\rbrack$$\n立即识别为 $f\\prime(0)$（若 $f(0) = a$）；隐函数题先定点、再两边求导后代点。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查隐函数求导与用导数定义求数列极限，是高等数学\"一元函数微分学\"的小综合题，与 2011 年第（9）题思路一致。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "6285f18f8ea18c77aab8816839896cd0121f479801ec9d2d2a3b34eee268e0d2",
+      "schema_version": "1.0.0",
+      "source_hash": "3474a88a4d26709db5b2d10691db5201af3fa3cde091bc77f3b79134bac9f0ae",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-9",
+        "year": 2013,
+        "num": 9
+      }
+    },
+    {
+      "id": "math-2013-10",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 10,
+      "type": "fill",
+      "stem": "已知\n$$y_{1} = e^{3x} - xe^{2x},\\ y_{2} = e^{x} - xe^{2x},\\ y_{3} = - xe^{2x}$$\n是某二阶常系数非齐次线性微分方程的 3 个解，则该方程的通解为 $y$ = ______。",
+      "options": [],
+      "answer": "通解为 $y = C_{1}e^{3x} + C_{2}e^{x} - xe^{2x}$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>已知</p>\n<p>$$y_{1} = e^{3x} - xe^{2x},\\ y_{2} = e^{x} - xe^{2x},\\ y_{3} = - xe^{2x}$$</p>\n<p>是某二阶常系数非齐次线性微分方程的 3 个解，则该方程的通解为 $y$ =\n______。</p>",
+          "text": "已知\n$$y_{1} = e^{3x} - xe^{2x},\\ y_{2} = e^{x} - xe^{2x},\\ y_{3} = - xe^{2x}$$\n是某二阶常系数非齐次线性微分方程的 3 个解，则该方程的通解为 $y$ = ______。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>通解为 $y = C_{1}e^{3x} + C_{2}e^{x} - xe^{2x}$。</p>",
+          "text": "通解为 $y = C_{1}e^{3x} + C_{2}e^{x} - xe^{2x}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查线性微分方程解的结构（齐次解与特解的关系），属于高等数学\"常微分方程\"考点，是\n2010、2015 年同类题的经典考法。</p>",
+          "text": "本题考查线性微分方程解的结构（齐次解与特解的关系），属于高等数学\"常微分方程\"考点，是 2010、2015 年同类题的经典考法。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>线性非齐次方程有三条解的性质：①任意两个解之差是对应齐次方程的解；②齐次方程的两个线性无关解的线性组合是齐次通解；③齐次通解 +\n一个非齐次特解 =\n非齐次通解。题目给了三个解，就要两两作差，从中挑出两个线性无关的齐次解，再挑一个当特解。</p>",
+          "text": "线性非齐次方程有三条解的性质：①任意两个解之差是对应齐次方程的解；②齐次方程的两个线性无关解的线性组合是齐次通解；③齐次通解 + 一个非齐次特解 = 非齐次通解。题目给了三个解，就要两两作差，从中挑出两个线性无关的齐次解，再挑一个当特解。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>作差：</p>\n<p>$$y_{1} - y_{2} = \\left( e^{3x} - xe^{2x} \\right) - \\left( e^{x} - xe^{2x} \\right) = e^{3x} - e^{x}.$$</p>\n<p>但更聪明的做法是直接观察：$y_{1} - y_{3} = e^{3x}$，$y_{2} - y_{3} = e^{x}$。这两个\n$e^{3x}$ 和 $e^{x}$ 正好是对应齐次方程的两个线性无关解（指数 $3$ 和 $1$\n不同，故线性无关）。而 $y_{3} = - xe^{2x}$\n本身就是一个非齐次特解。于是通解为</p>\n<p>$$y = C_{1}e^{3x} + C_{2}e^{x} + y_{3} = C_{1}e^{3x} + C_{2}e^{x} - xe^{2x}.$$</p>",
+          "text": "作差：\n$$y_{1} - y_{2} = \\left( e^{3x} - xe^{2x} \\right) - \\left( e^{x} - xe^{2x} \\right) = e^{3x} - e^{x}.$$\n但更聪明的做法是直接观察：$y_{1} - y_{3} = e^{3x}$，$y_{2} - y_{3} = e^{x}$。这两个 $e^{3x}$ 和 $e^{x}$ 正好是对应齐次方程的两个线性无关解（指数 $3$ 和 $1$ 不同，故线性无关）。而 $y_{3} = - xe^{2x}$ 本身就是一个非齐次特解。于是通解为\n$$y = C_{1}e^{3x} + C_{2}e^{x} + y_{3} = C_{1}e^{3x} + C_{2}e^{x} - xe^{2x}.$$"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>由解的结构，$y_{1} - y_{3} = e^{3x}$、$y_{2} - y_{3} = e^{x}$\n为对应齐次方程两个线性无关解，$y_{3} = - xe^{2x}$ 为非齐次特解。故通解\n$y = C_{1}e^{3x} + C_{2}e^{x} - xe^{2x}$。</p>",
+          "text": "由解的结构，$y_{1} - y_{3} = e^{3x}$、$y_{2} - y_{3} = e^{x}$ 为对应齐次方程两个线性无关解，$y_{3} = - xe^{2x}$ 为非齐次特解。故通解 $y = C_{1}e^{3x} + C_{2}e^{x} - xe^{2x}$。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>常见错误：把 $y_{1}$ 整体当特解，得到\n$C_{1}e^{3x} + C_{2}e^{x} + e^{3x} - xe^{2x}$，这其实是同一个解（$e^{3x}$\n可并入 $C_{1}e^{3x}$），但不如直接用 $y_{3}$ 简洁。注意\n$e^{3x}$、$e^{x}$ 对应特征根 $3,1$，反推特征方程\n$r^{2} - 4r + 3 = 0$，说明这是一个\"送特征根\"的题。变式：若给的解里出现\n$e^{2x}$ 与 $xe^{2x}$，则说明 $2$ 是二重根。</p>",
+          "text": "常见错误：把 $y_{1}$ 整体当特解，得到 $C_{1}e^{3x} + C_{2}e^{x} + e^{3x} - xe^{2x}$，这其实是同一个解（$e^{3x}$ 可并入 $C_{1}e^{3x}$），但不如直接用 $y_{3}$ 简洁。注意 $e^{3x}$、$e^{x}$ 对应特征根 $3,1$，反推特征方程 $r^{2} - 4r + 3 = 0$，说明这是一个\"送特征根\"的题。变式：若给的解里出现 $e^{2x}$ 与 $xe^{2x}$，则说明 $2$ 是二重根。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是不会用\"两解之差为齐次解\"，硬去反推方程右端；二是把特解选错导致重复项；三是判断线性无关时忘记\"指数不同即无关\"。</p>",
+          "text": "一是不会用\"两解之差为齐次解\"，硬去反推方程右端；二是把特解选错导致重复项；三是判断线性无关时忘记\"指数不同即无关\"。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>给多个解求通解：两两作差挑出线性无关的齐次解（数个数要等于阶数），再任选一个解当特解，拼成通解。</p>",
+          "text": "给多个解求通解：两两作差挑出线性无关的齐次解（数个数要等于阶数），再任选一个解当特解，拼成通解。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查线性微分方程解的结构（齐次解与特解的关系），属于高等数学\"常微分方程\"考点，是 2010、2015 年同类题的经典考法。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "3cd62fac7dc5af233c9714bf4553531f91ccf58047459719c301040550697600",
+      "schema_version": "1.0.0",
+      "source_hash": "331bb63bd145d52377ba1f0c77eeb80e1e854048f98a0fc16c911834da562c3b",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-10",
+        "year": 2013,
+        "num": 10
+      }
+    },
+    {
+      "id": "math-2013-11",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 11,
+      "type": "fill",
+      "stem": "设\n$$\\left\\{ \\begin{matrix} x = \\sin t \\\\ y = t\\sin t + \\cos t \\end{matrix} \\right.\\ $$\n（$t$ 为常数），则\n$$\\left. \\ \\frac{d^{2}y}{dx^{2}} \\right|_{t = \\frac{\\pi}{4}}$$\n= ______。",
+      "options": [],
+      "answer": "答案为 $\\sqrt{2}$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设</p>\n<p>$$\\left\\{ \\begin{matrix}\nx = \\sin t \\\\\ny = t\\sin t + \\cos t\n\\end{matrix} \\right.\\ $$</p>\n<p>（$t$ 为常数），则</p>\n<p>$$\\left. \\ \\frac{d^{2}y}{dx^{2}} \\right|_{t = \\frac{\\pi}{4}}$$</p>\n<p>=\n______。</p>",
+          "text": "设\n$$\\left\\{ \\begin{matrix} x = \\sin t \\\\ y = t\\sin t + \\cos t \\end{matrix} \\right.\\ $$\n（$t$ 为常数），则\n$$\\left. \\ \\frac{d^{2}y}{dx^{2}} \\right|_{t = \\frac{\\pi}{4}}$$\n= ______。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>答案为 $\\sqrt{2}$。</p>",
+          "text": "答案为 $\\sqrt{2}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查参数方程所确定函数的二阶导数，属于高等数学\"一元函数微分学\"的常规计算题。</p>",
+          "text": "本题考查参数方程所确定函数的二阶导数，属于高等数学\"一元函数微分学\"的常规计算题。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>参数方程求导固定公式：$\\frac{dy}{dx} = \\frac{y\\prime(t)}{x\\prime(t)}$，二阶导数</p>\n<p>$$\\frac{d^{2}y}{dx^{2}} = \\frac{d}{dt}\\left( \\frac{dy}{dx} \\right) \\cdot \\frac{1}{x\\prime(t)}$$</p>\n<p>。关键是第二步------对\n$t$ 求导后还要再除以 $x\\prime(t)$，很多人忘这一步。</p>",
+          "text": "参数方程求导固定公式：$\\frac{dy}{dx} = \\frac{y\\prime(t)}{x\\prime(t)}$，二阶导数\n$$\\frac{d^{2}y}{dx^{2}} = \\frac{d}{dt}\\left( \\frac{dy}{dx} \\right) \\cdot \\frac{1}{x\\prime(t)}$$\n。关键是第二步------对 $t$ 求导后还要再除以 $x\\prime(t)$，很多人忘这一步。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>$$\\frac{dx}{dt} = \\cos t,\\quad\\quad\\frac{dy}{dt} = \\sin t + t\\cos t - \\sin t = t\\cos t.$$</p>\n<p>所以</p>\n<p>$$\\frac{dy}{dx} = \\frac{t\\cos t}{\\cos t} = t.$$</p>\n<p>再对 $x$ 求导：</p>\n<p>$$\\frac{d^{2}y}{dx^{2}} = \\frac{d}{dt}(t) \\cdot \\frac{1}{dx/dt} = \\frac{1}{\\cos t}.$$</p>\n<p>代入\n$t = \\pi/4$：$\\frac{1}{\\cos(\\pi/4)} = \\frac{1}{1/\\sqrt{2}} = \\sqrt{2}$。</p>",
+          "text": "$$\\frac{dx}{dt} = \\cos t,\\quad\\quad\\frac{dy}{dt} = \\sin t + t\\cos t - \\sin t = t\\cos t.$$\n所以\n$$\\frac{dy}{dx} = \\frac{t\\cos t}{\\cos t} = t.$$\n再对 $x$ 求导：\n$$\\frac{d^{2}y}{dx^{2}} = \\frac{d}{dt}(t) \\cdot \\frac{1}{dx/dt} = \\frac{1}{\\cos t}.$$\n代入 $t = \\pi/4$：$\\frac{1}{\\cos(\\pi/4)} = \\frac{1}{1/\\sqrt{2}} = \\sqrt{2}$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>$x\\prime = \\cos t,\\ y\\prime = t\\cos t$，故\n$y_{x}\\prime = t$；</p>\n<p>$$y_{xx}'' = \\frac{\\left( y_{x}\\prime \\right)_{t}\\prime}{x\\prime} = \\frac{1}{\\cos t}$$</p>\n<p>。代入\n$t = \\pi/4$ 得 $\\sqrt{2}$。</p>",
+          "text": "$x\\prime = \\cos t,\\ y\\prime = t\\cos t$，故 $y_{x}\\prime = t$；\n$$y_{xx}'' = \\frac{\\left( y_{x}\\prime \\right)_{t}\\prime}{x\\prime} = \\frac{1}{\\cos t}$$\n。代入 $t = \\pi/4$ 得 $\\sqrt{2}$。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>常见错误答案：若忘了最后除以\n$x\\prime(t)$，会得到 $1$；若把 $y\\prime$ 算成\n$\\sin t + t\\cos t + \\sin t$（$\\cos t$ 导数符号错），结果会偏。变式：若\n$x = t - \\sin t$，则 $x\\prime = 1 - \\cos t$，第二步仍要除以它。</p>",
+          "text": "常见错误答案：若忘了最后除以 $x\\prime(t)$，会得到 $1$；若把 $y\\prime$ 算成 $\\sin t + t\\cos t + \\sin t$（$\\cos t$ 导数符号错），结果会偏。变式：若 $x = t - \\sin t$，则 $x\\prime = 1 - \\cos t$，第二步仍要除以它。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>二阶导数最常见错误是\n$\\frac{d^{2}y}{dx^{2}} = \\frac{y''(t)}{x''(t)}$\n这种错误公式；正确的是对一阶导再按链式除以 $x\\prime(t)$。</p>",
+          "text": "二阶导数最常见错误是 $\\frac{d^{2}y}{dx^{2}} = \\frac{y''(t)}{x''(t)}$ 这种错误公式；正确的是对一阶导再按链式除以 $x\\prime(t)$。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>参数方程求二阶导：一阶\n$\\frac{y_{t}\\prime}{x_{t}\\prime}$；二阶</p>\n<p>$$\\frac{\\left( \\frac{y_{t}\\prime}{x_{t}\\prime} \\right)_{t}\\prime}{x_{t}\\prime}$$</p>\n<p>。牢记\"再除一次\n$x_{t}\\prime$\"。</p>",
+          "text": "参数方程求二阶导：一阶 $\\frac{y_{t}\\prime}{x_{t}\\prime}$；二阶\n$$\\frac{\\left( \\frac{y_{t}\\prime}{x_{t}\\prime} \\right)_{t}\\prime}{x_{t}\\prime}$$\n。牢记\"再除一次 $x_{t}\\prime$\"。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查参数方程所确定函数的二阶导数，属于高等数学\"一元函数微分学\"的常规计算题。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "836f0ab5a2f128fab3f4bfc73918e8554802c96d87a2bd650b754f5d0c4ec721",
+      "schema_version": "1.0.0",
+      "source_hash": "ecd3f04ff2019a40d906b83eefad19eb78e0a07a40ecdc6cfc659e4c492c4556",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-11",
+        "year": 2013,
+        "num": 11
+      }
+    },
+    {
+      "id": "math-2013-12",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 12,
+      "type": "fill",
+      "stem": "$$\\int_{1}^{+ \\infty}\\frac{\\ln x}{(1 + x)^{2}}dx$$\n= ______。",
+      "options": [],
+      "answer": "答案为 $\\ln 2$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>$$\\int_{1}^{+ \\infty}\\frac{\\ln x}{(1 + x)^{2}}dx$$</p>\n<p>=\n______。</p>",
+          "text": "$$\\int_{1}^{+ \\infty}\\frac{\\ln x}{(1 + x)^{2}}dx$$\n= ______。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>答案为 $\\ln 2$。</p>",
+          "text": "答案为 $\\ln 2$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查无穷限反常积分的分部积分计算，属于高等数学\"一元函数积分学\"考点。</p>",
+          "text": "本题考查无穷限反常积分的分部积分计算，属于高等数学\"一元函数积分学\"考点。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>被积函数 $\\frac{\\ln x}{(1 + x)^{2}}$ 里有\n$\\ln x$，看到 $\\ln x$ 就想到分部积分：把 $\\ln x$ 当\n$u$（求导变简单），把 $\\frac{1}{(1 + x)^{2}}dx$ 凑成\n$d\\left( \\frac{- 1}{1 + x} \\right)$（即 $dv$）。反常积分先算定积分\n$\\int_{1}^{t}\\text{ }$ 再取 $t \\rightarrow + \\infty$ 的极限。</p>",
+          "text": "被积函数 $\\frac{\\ln x}{(1 + x)^{2}}$ 里有 $\\ln x$，看到 $\\ln x$ 就想到分部积分：把 $\\ln x$ 当 $u$（求导变简单），把 $\\frac{1}{(1 + x)^{2}}dx$ 凑成 $d\\left( \\frac{- 1}{1 + x} \\right)$（即 $dv$）。反常积分先算定积分 $\\int_{1}^{t}\\text{ }$ 再取 $t \\rightarrow + \\infty$ 的极限。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>$$\\int_{1}^{t}\\frac{\\ln x}{(1 + x)^{2}}dx = - \\int_{1}^{t}\\ln x\\, d\\left( \\frac{1}{1 + x} \\right) = - \\left. \\ \\frac{\\ln x}{1 + x} \\right|_{1}^{t} + \\int_{1}^{t}\\frac{1}{1 + x} \\cdot \\frac{1}{x}dx.$$</p>\n<p>第一项：</p>\n<p>$$- \\left( \\frac{\\ln t}{1 + t} - 0 \\right) = - \\frac{\\ln t}{1 + t} \\rightarrow 0$$</p>\n<p>（$t \\rightarrow + \\infty$）。第二项被积函数裂项：</p>\n<p>$$\\frac{1}{x(1 + x)} = \\frac{1}{x} - \\frac{1}{1 + x}.$$</p>\n<p>所以</p>\n<p>$$\\int_{1}^{t}\\left( \\frac{1}{x} - \\frac{1}{1 + x} \\right)dx = \\ln\\left. \\ \\frac{x}{1 + x} \\right|_{1}^{t} = \\ln\\frac{t}{1 + t} - \\ln\\frac{1}{2} \\rightarrow 0 + \\ln 2.$$</p>\n<p>合起来极限为 $\\ln 2$。</p>",
+          "text": "$$\\int_{1}^{t}\\frac{\\ln x}{(1 + x)^{2}}dx = - \\int_{1}^{t}\\ln x\\, d\\left( \\frac{1}{1 + x} \\right) = - \\left. \\ \\frac{\\ln x}{1 + x} \\right|_{1}^{t} + \\int_{1}^{t}\\frac{1}{1 + x} \\cdot \\frac{1}{x}dx.$$\n第一项：\n$$- \\left( \\frac{\\ln t}{1 + t} - 0 \\right) = - \\frac{\\ln t}{1 + t} \\rightarrow 0$$\n（$t \\rightarrow + \\infty$）。第二项被积函数裂项：\n$$\\frac{1}{x(1 + x)} = \\frac{1}{x} - \\frac{1}{1 + x}.$$\n所以\n$$\\int_{1}^{t}\\left( \\frac{1}{x} - \\frac{1}{1 + x} \\right)dx = \\ln\\left. \\ \\frac{x}{1 + x} \\right|_{1}^{t} = \\ln\\frac{t}{1 + t} - \\ln\\frac{1}{2} \\rightarrow 0 + \\ln 2.$$\n合起来极限为 $\\ln 2$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>分部积分并取极限：</p>\n<p>$$\\int_{1}^{+ \\infty}\\frac{\\ln x}{(1 + x)^{2}}dx = \\lim_{t \\rightarrow + \\infty}\\left( - \\frac{\\ln t}{1 + t} + \\ln\\frac{t}{1 + t} + \\ln 2 \\right) = \\ln 2.$$</p>",
+          "text": "分部积分并取极限：\n$$\\int_{1}^{+ \\infty}\\frac{\\ln x}{(1 + x)^{2}}dx = \\lim_{t \\rightarrow + \\infty}\\left( - \\frac{\\ln t}{1 + t} + \\ln\\frac{t}{1 + t} + \\ln 2 \\right) = \\ln 2.$$"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>常见错误：分部积分时 $u,v$ 选反（把 $\\ln x$ 当\n$v$），越积越繁；或裂项 $\\frac{1}{x(1 + x)}$\n符号写错。变式：</p>\n<p>$$\\int_{0}^{1}\\frac{\\ln x}{1 + x}dx$$</p>\n<p>是另一道著名题（结果\n$- \\pi^{2}/12$），思路类似。</p>",
+          "text": "常见错误：分部积分时 $u,v$ 选反（把 $\\ln x$ 当 $v$），越积越繁；或裂项 $\\frac{1}{x(1 + x)}$ 符号写错。变式：\n$$\\int_{0}^{1}\\frac{\\ln x}{1 + x}dx$$\n是另一道著名题（结果 $- \\pi^{2}/12$），思路类似。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是忘记反常积分要先算有限区间再取极限；二是\n$\\frac{\\ln t}{1 + t}$ 的极限误判为 $1$（实际为\n$0$，因为对数增长慢于线性）；三是裂项常数项 $\\ln\\frac{1}{2}$ 的符号。</p>",
+          "text": "一是忘记反常积分要先算有限区间再取极限；二是 $\\frac{\\ln t}{1 + t}$ 的极限误判为 $1$（实际为 $0$，因为对数增长慢于线性）；三是裂项常数项 $\\ln\\frac{1}{2}$ 的符号。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>含 $\\ln x$ 的积分优先分部积分令\n$u = \\ln x$；反常积分一律写成有限区间积分 + 极限；$\\frac{1}{x(1 + x)}$\n必裂项。</p>",
+          "text": "含 $\\ln x$ 的积分优先分部积分令 $u = \\ln x$；反常积分一律写成有限区间积分 + 极限；$\\frac{1}{x(1 + x)}$ 必裂项。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查无穷限反常积分的分部积分计算，属于高等数学\"一元函数积分学\"考点。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "5ad5985722fce2a1927ddb21e0227bed5d38bde260983e737ed1f8af021bfbea",
+      "schema_version": "1.0.0",
+      "source_hash": "1f41ef05c7f0ba5280dc8f0c597e89382cf4aa83449aaf235126ba846123dc64",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-12",
+        "year": 2013,
+        "num": 12
+      }
+    },
+    {
+      "id": "math-2013-13",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 13,
+      "type": "fill",
+      "stem": "设 $\\mathbf{A} = \\left( a_{ij} \\right)$ 是 3 阶非零矩阵，$\\left| \\mathbf{A} \\right|$ 为 $\\mathbf{A}$ 的行列式，$\\mathbf{A}_{ij}$ 为 $a_{ij}$ 的代数余子式，若 $a_{ij} + \\mathbf{A}_{ij} = 0\\ (i,j = 1,2,3)$，则 $\\left| \\mathbf{A} \\right|$ = ______。",
+      "options": [],
+      "answer": "答案为 $- 1$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设 $\\mathbf{A} = \\left( a_{ij} \\right)$ 是 3\n阶非零矩阵，$\\left| \\mathbf{A} \\right|$ 为 $\\mathbf{A}$\n的行列式，$\\mathbf{A}_{ij}$ 为 $a_{ij}$ 的代数余子式，若\n$a_{ij} + \\mathbf{A}_{ij} = 0\\ (i,j = 1,2,3)$，则\n$\\left| \\mathbf{A} \\right|$ = ______。</p>",
+          "text": "设 $\\mathbf{A} = \\left( a_{ij} \\right)$ 是 3 阶非零矩阵，$\\left| \\mathbf{A} \\right|$ 为 $\\mathbf{A}$ 的行列式，$\\mathbf{A}_{ij}$ 为 $a_{ij}$ 的代数余子式，若 $a_{ij} + \\mathbf{A}_{ij} = 0\\ (i,j = 1,2,3)$，则 $\\left| \\mathbf{A} \\right|$ = ______。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>答案为 $- 1$。</p>",
+          "text": "答案为 $- 1$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查伴随矩阵、代数余子式与行列式的关系，属于线性代数\"矩阵\"模块的抽象证明型计算题。</p>",
+          "text": "本题考查伴随矩阵、代数余子式与行列式的关系，属于线性代数\"矩阵\"模块的抽象证明型计算题。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>条件 $a_{ij} + \\mathbf{A}_{ij} = 0$ 即\n$\\mathbf{A}_{ij} = - a_{ij}$，写成矩阵就是\n$\\mathbf{A}^{\\text{*}} = - \\mathbf{A}^{T}$（伴随矩阵等于负的转置）。接下来用两条伴随矩阵公式：</p>\n<p>$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{n - 1}$$</p>\n<p>（$n = 3$\n时为 $\\left| \\mathbf{A} \\right|^{2}$），以及</p>\n<p>$$\\mathbf{A}^{\\text{*}} = \\left| \\mathbf{A} \\right|\\mathbf{A}^{- 1}$$</p>\n<p>。</p>",
+          "text": "条件 $a_{ij} + \\mathbf{A}_{ij} = 0$ 即 $\\mathbf{A}_{ij} = - a_{ij}$，写成矩阵就是 $\\mathbf{A}^{\\text{*}} = - \\mathbf{A}^{T}$（伴随矩阵等于负的转置）。接下来用两条伴随矩阵公式：\n$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{n - 1}$$\n（$n = 3$ 时为 $\\left| \\mathbf{A} \\right|^{2}$），以及\n$$\\mathbf{A}^{\\text{*}} = \\left| \\mathbf{A} \\right|\\mathbf{A}^{- 1}$$\n。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>由\n$\\mathbf{A}^{\\text{*}} = - \\mathbf{A}^{T}$，两边取行列式：</p>\n<p>$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| - \\mathbf{A}^{T} \\right| = ( - 1)^{3}\\left| \\mathbf{A} \\right| = - \\left| \\mathbf{A} \\right|.$$</p>\n<p>另一方面</p>\n<p>$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{3 - 1} = \\left| \\mathbf{A} \\right|^{2}$$</p>\n<p>。故\n$\\left| \\mathbf{A} \\right|^{2} = - \\left| \\mathbf{A} \\right|$，即</p>\n<p>$$\\left| \\mathbf{A} \\right|\\left( \\left| \\mathbf{A} \\right| + 1 \\right) = 0$$</p>\n<p>得\n$\\left| \\mathbf{A} \\right| = 0$ 或 $\\left| \\mathbf{A} \\right| = - 1$。</p>\n<p>再排除 $\\left| \\mathbf{A} \\right| = 0$：由\n$\\mathbf{A}^{\\text{*}} = - \\mathbf{A}^{T}$ 得\n$\\mathbf{A}^{T} = - \\mathbf{A}^{\\text{*}}$。若\n$\\left| \\mathbf{A} \\right| = 0$，则对 3 阶非零矩阵\n$\\mathbf{A}$，$\\mathbf{A}^{\\text{*}} = \\mathbf{O}$（当\n$r\\left( \\mathbf{A} \\right) < n - 1 = 2$）或秩为 1；进一步由</p>\n<p>$$\\mathbf{A}^{T}\\mathbf{A} = - \\left| \\mathbf{A} \\right|\\mathbf{E}$$</p>\n<p>若\n$\\left| \\mathbf{A} \\right| = 0$ 则\n$\\mathbf{A}^{T}\\mathbf{A} = \\mathbf{O}$，从而\n$\\mathbf{A} = \\mathbf{O}$，与\"非零矩阵\"矛盾。故\n$\\left| \\mathbf{A} \\right| = - 1$。</p>",
+          "text": "由 $\\mathbf{A}^{\\text{*}} = - \\mathbf{A}^{T}$，两边取行列式：\n$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| - \\mathbf{A}^{T} \\right| = ( - 1)^{3}\\left| \\mathbf{A} \\right| = - \\left| \\mathbf{A} \\right|.$$\n另一方面\n$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{3 - 1} = \\left| \\mathbf{A} \\right|^{2}$$\n。故 $\\left| \\mathbf{A} \\right|^{2} = - \\left| \\mathbf{A} \\right|$，即\n$$\\left| \\mathbf{A} \\right|\\left( \\left| \\mathbf{A} \\right| + 1 \\right) = 0$$\n得 $\\left| \\mathbf{A} \\right| = 0$ 或 $\\left| \\mathbf{A} \\right| = - 1$。\n再排除 $\\left| \\mathbf{A} \\right| = 0$：由 $\\mathbf{A}^{\\text{*}} = - \\mathbf{A}^{T}$ 得 $\\mathbf{A}^{T} = - \\mathbf{A}^{\\text{*}}$。若 $\\left| \\mathbf{A} \\right| = 0$，则对 3 阶非零矩阵 $\\mathbf{A}$，$\\mathbf{A}^{\\text{*}} = \\mathbf{O}$（当 $r\\left( \\mathbf{A} \\right) < n - 1 = 2$）或秩为 1；进一步由\n$$\\mathbf{A}^{T}\\mathbf{A} = - \\left| \\mathbf{A} \\right|\\mathbf{E}$$\n若 $\\left| \\mathbf{A} \\right| = 0$ 则 $\\mathbf{A}^{T}\\mathbf{A} = \\mathbf{O}$，从而 $\\mathbf{A} = \\mathbf{O}$，与\"非零矩阵\"矛盾。故 $\\left| \\mathbf{A} \\right| = - 1$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>由 $\\mathbf{A}_{ij} = - a_{ij}$ 得\n$\\mathbf{A}^{\\text{*}} = - \\mathbf{A}^{T}$。取行列式：</p>\n<p>$$\\left| \\mathbf{A}^{\\text{*}} \\right| = - \\left| \\mathbf{A} \\right|\\quad \\text{，又}\\quad \\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{2}$$</p>\n<p>故\n$\\left| \\mathbf{A} \\right|^{2} = - \\left| \\mathbf{A} \\right|$，得\n$\\left| \\mathbf{A} \\right| = 0$ 或 $- 1$。若\n$\\left| \\mathbf{A} \\right| = 0$，则\n$\\mathbf{A}^{T}\\mathbf{A} = \\mathbf{O}$ 推出\n$\\mathbf{A} = \\mathbf{O}$，矛盾。故 $\\left| \\mathbf{A} \\right| = - 1$。</p>",
+          "text": "由 $\\mathbf{A}_{ij} = - a_{ij}$ 得 $\\mathbf{A}^{\\text{*}} = - \\mathbf{A}^{T}$。取行列式：\n$$\\left| \\mathbf{A}^{\\text{*}} \\right| = - \\left| \\mathbf{A} \\right|\\quad \\text{，又}\\quad \\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{2}$$\n故 $\\left| \\mathbf{A} \\right|^{2} = - \\left| \\mathbf{A} \\right|$，得 $\\left| \\mathbf{A} \\right| = 0$ 或 $- 1$。若 $\\left| \\mathbf{A} \\right| = 0$，则 $\\mathbf{A}^{T}\\mathbf{A} = \\mathbf{O}$ 推出 $\\mathbf{A} = \\mathbf{O}$，矛盾。故 $\\left| \\mathbf{A} \\right| = - 1$。"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>常见错误答案\n$0$：忽略了\"非零矩阵\"这个排除条件。变式：若条件改为\n$a_{ij} = \\mathbf{A}_{ij}$（即\n$\\mathbf{A}^{\\text{*}} = \\mathbf{A}^{T}$），则同理可得\n$\\left| \\mathbf{A} \\right|^{2} = \\left| \\mathbf{A} \\right|$，结合非零条件得\n$\\left| \\mathbf{A} \\right| = 1$。</p>",
+          "text": "常见错误答案 $0$：忽略了\"非零矩阵\"这个排除条件。变式：若条件改为 $a_{ij} = \\mathbf{A}_{ij}$（即 $\\mathbf{A}^{\\text{*}} = \\mathbf{A}^{T}$），则同理可得 $\\left| \\mathbf{A} \\right|^{2} = \\left| \\mathbf{A} \\right|$，结合非零条件得 $\\left| \\mathbf{A} \\right| = 1$。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是忘记 $n$ 阶伴随行列式公式</p>\n<p>$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{n - 1}$$</p>\n<p>；二是取\n$\\left| - \\mathbf{A}^{T} \\right|$ 时漏掉 $( - 1)^{n} = ( - 1)^{3}$\n的负号；三是求出两个根后不会用\"非零\"条件排除 $0$。</p>",
+          "text": "一是忘记 $n$ 阶伴随行列式公式\n$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{n - 1}$$\n；二是取 $\\left| - \\mathbf{A}^{T} \\right|$ 时漏掉 $( - 1)^{n} = ( - 1)^{3}$ 的负号；三是求出两个根后不会用\"非零\"条件排除 $0$。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>见到 $\\mathbf{A}_{ij}$ 条件立即翻译成\n$\\mathbf{A}^{\\text{*}}$ 与 $\\mathbf{A}^{T}$ 的等式；再用</p>\n<p>$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{n - 1}$$</p>\n<p>列方程；多根时用可逆性/非零性排除。</p>",
+          "text": "见到 $\\mathbf{A}_{ij}$ 条件立即翻译成 $\\mathbf{A}^{\\text{*}}$ 与 $\\mathbf{A}^{T}$ 的等式；再用\n$$\\left| \\mathbf{A}^{\\text{*}} \\right| = \\left| \\mathbf{A} \\right|^{n - 1}$$\n列方程；多根时用可逆性/非零性排除。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查伴随矩阵、代数余子式与行列式的关系，属于线性代数\"矩阵\"模块的抽象证明型计算题。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "xiandai",
+        "label": "线性代数"
+      },
+      "origin": "source",
+      "content_hash": "35d1e26fb151a9d2df6009a39f80e7fe1d0871558d3aae2833c39d542747348d",
+      "schema_version": "1.0.0",
+      "source_hash": "fd18bd17a45e537416cb2c1e752434fed48297dbf681f2239512d1645916fb04",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-13",
+        "year": 2013,
+        "num": 13
+      }
+    },
+    {
+      "id": "math-2013-14",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 14,
+      "type": "fill",
+      "stem": "设随机变量 $Y$ 服从参数为 1 的指数分布，$a$ 为常数且大于零，则 $P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\}$ = ______。",
+      "options": [],
+      "answer": "答案为 $1 - e^{- 1}$。",
+      "score": null,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>设随机变量 $Y$ 服从参数为 1 的指数分布，$a$\n为常数且大于零，则 $P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\}$ =\n______。</p>",
+          "text": "设随机变量 $Y$ 服从参数为 1 的指数分布，$a$ 为常数且大于零，则 $P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\}$ = ______。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>答案为 $1 - e^{- 1}$。</p>",
+          "text": "答案为 $1 - e^{- 1}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查指数分布的无记忆性与条件概率，属于概率论\"随机变量及其分布\"考点，与\n2012、2019 年同类题同源。</p>",
+          "text": "本题考查指数分布的无记忆性与条件概率，属于概率论\"随机变量及其分布\"考点，与 2012、2019 年同类题同源。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>条件概率公式</p>\n<p>$$P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\} = \\frac{P\\left\\{ a < Y \\leq a + 1 \\right\\}}{P\\left\\{ Y > a \\right\\}}$$</p>\n<p>。$Y \\sim E(1)$，分布函数\n$F(y) = 1 - e^{- y}\\ (y > 0)$。直接套分布函数即可，这里正好体现指数分布的\"无记忆性\"------结果与\n$a$ 无关。</p>",
+          "text": "条件概率公式\n$$P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\} = \\frac{P\\left\\{ a < Y \\leq a + 1 \\right\\}}{P\\left\\{ Y > a \\right\\}}$$\n。$Y \\sim E(1)$，分布函数 $F(y) = 1 - e^{- y}\\ (y > 0)$。直接套分布函数即可，这里正好体现指数分布的\"无记忆性\"------结果与 $a$ 无关。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>$$P\\left\\{ a < Y \\leq a + 1 \\right\\} = F(a + 1) - F(a) = \\left( 1 - e^{- (a + 1)} \\right) - \\left( 1 - e^{- a} \\right) = e^{- a} - e^{- (a + 1)}.$$</p>\n<p>$$P\\left\\{ Y > a \\right\\} = 1 - F(a) = e^{- a}.$$</p>\n<p>相除：</p>\n<p>$$P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\} = \\frac{e^{- a} - e^{- (a + 1)}}{e^{- a}} = 1 - e^{- 1}.$$</p>",
+          "text": "$$P\\left\\{ a < Y \\leq a + 1 \\right\\} = F(a + 1) - F(a) = \\left( 1 - e^{- (a + 1)} \\right) - \\left( 1 - e^{- a} \\right) = e^{- a} - e^{- (a + 1)}.$$\n$$P\\left\\{ Y > a \\right\\} = 1 - F(a) = e^{- a}.$$\n相除：\n$$P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\} = \\frac{e^{- a} - e^{- (a + 1)}}{e^{- a}} = 1 - e^{- 1}.$$"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>由指数分布分布函数 $F(y) = 1 - e^{- y}$，</p>\n<p>$$P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\} = \\frac{F(a + 1) - F(a)}{1 - F(a)} = \\frac{e^{- a} - e^{- (a + 1)}}{e^{- a}} = 1 - e^{- 1}.$$</p>",
+          "text": "由指数分布分布函数 $F(y) = 1 - e^{- y}$，\n$$P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\} = \\frac{F(a + 1) - F(a)}{1 - F(a)} = \\frac{e^{- a} - e^{- (a + 1)}}{e^{- a}} = 1 - e^{- 1}.$$"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>用无记忆性直接写：</p>\n<p>$$P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\} = P\\left\\{ Y \\leq 1 \\right\\} = F(1) = 1 - e^{- 1}$$</p>\n<p>一步到位。常见错误答案：把参数当成\n$\\lambda = 1$ 的密度 $\\lambda e^{- \\lambda y}$\n写错积分限；或忘记条件概率分母。变式：若问\n$P\\left\\{ Y > a + 1 \\mid Y > a \\right\\}$，由无记忆性即 $e^{- 1}$。</p>",
+          "text": "用无记忆性直接写：\n$$P\\left\\{ Y \\leq a + 1 \\mid Y > a \\right\\} = P\\left\\{ Y \\leq 1 \\right\\} = F(1) = 1 - e^{- 1}$$\n一步到位。常见错误答案：把参数当成 $\\lambda = 1$ 的密度 $\\lambda e^{- \\lambda y}$ 写错积分限；或忘记条件概率分母。变式：若问 $P\\left\\{ Y > a + 1 \\mid Y > a \\right\\}$，由无记忆性即 $e^{- 1}$。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是混淆指数分布参数（有的教材密度写\n$\\lambda e^{- \\lambda y}$，本题参数 $1$ 即\n$\\lambda = 1$）；二是忘记条件概率要除以分母；三是没看出结果与 $a$\n无关，还在表达式里留 $a$。</p>",
+          "text": "一是混淆指数分布参数（有的教材密度写 $\\lambda e^{- \\lambda y}$，本题参数 $1$ 即 $\\lambda = 1$）；二是忘记条件概率要除以分母；三是没看出结果与 $a$ 无关，还在表达式里留 $a$。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>指数分布条件概率题直接用无记忆性\n$P\\left\\{ Y > s + t \\mid Y > s \\right\\} = P\\left\\{ Y > t \\right\\}$，一步出答案。</p>\n<h1>三、解答题</h1>",
+          "text": "指数分布条件概率题直接用无记忆性 $P\\left\\{ Y > s + t \\mid Y > s \\right\\} = P\\left\\{ Y > t \\right\\}$，一步出答案。\n三、解答题"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查指数分布的无记忆性与条件概率，属于概率论\"随机变量及其分布\"考点，与 2012、2019 年同类题同源。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gailv",
+        "label": "概率论"
+      },
+      "origin": "source",
+      "content_hash": "22376f82d9d3e6a0c4dc69d95dddac7e4f2dcf205e546f39fe2c7b312991feda",
+      "schema_version": "1.0.0",
+      "source_hash": "7ae80a4422dfc5567418826381b05d21f644363472a30cd54f1065f1ec61bd5f",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-14",
+        "year": 2013,
+        "num": 14
+      }
+    },
+    {
+      "id": "math-2013-15",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 15,
+      "type": "essay",
+      "stem": "（本题满分 10 分）计算\n$$\\int_{0}^{1}\\frac{f(x)}{\\sqrt{x}}dx\\quad \\text{，其中}\\quad f(x) = \\int_{1}^{x}\\frac{\\ln(t + 1)}{t}dt$$\n。",
+      "options": [],
+      "answer": "最终结果为 $- 4\\ln 2 + 8 - 2\\pi$。",
+      "score": 10,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 10 分）计算</p>\n<p>$$\\int_{0}^{1}\\frac{f(x)}{\\sqrt{x}}dx\\quad \\text{，其中}\\quad f(x) = \\int_{1}^{x}\\frac{\\ln(t + 1)}{t}dt$$</p>\n<p>。</p>",
+          "text": "（本题满分 10 分）计算\n$$\\int_{0}^{1}\\frac{f(x)}{\\sqrt{x}}dx\\quad \\text{，其中}\\quad f(x) = \\int_{1}^{x}\\frac{\\ln(t + 1)}{t}dt$$\n。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>最终结果为 $- 4\\ln 2 + 8 - 2\\pi$。</p>",
+          "text": "最终结果为 $- 4\\ln 2 + 8 - 2\\pi$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查含变限积分函数的定积分计算，综合分部积分、换元法，属于高等数学\"一元函数积分学\"的中高档解答题，与\n2014 年第（15）题计算思路相通。</p>",
+          "text": "本题考查含变限积分函数的定积分计算，综合分部积分、换元法，属于高等数学\"一元函数积分学\"的中高档解答题，与 2014 年第（15）题计算思路相通。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>看到 $f(x)$ 本身是一个变上限积分，而外层还要对\n$f(x)$ 再积分，应该立刻想到两条路：①分部积分------把\n$\\frac{f(x)}{\\sqrt{x}}dx$ 里的 $\\frac{1}{\\sqrt{x}}dx$ 凑成\n$d\\left( 2\\sqrt{x} \\right)$，这样分部后 $f(x)$ 被求导，正好把\n$f\\prime(x) = \\frac{\\ln(x + 1)}{x}$\n显式写出来；②交换积分次序（二重积分观点）。两条路里分部积分更直接，因为题目已经把\n$f\\prime(x)$ 做成了好处理的形式。</p>",
+          "text": "看到 $f(x)$ 本身是一个变上限积分，而外层还要对 $f(x)$ 再积分，应该立刻想到两条路：①分部积分------把 $\\frac{f(x)}{\\sqrt{x}}dx$ 里的 $\\frac{1}{\\sqrt{x}}dx$ 凑成 $d\\left( 2\\sqrt{x} \\right)$，这样分部后 $f(x)$ 被求导，正好把 $f\\prime(x) = \\frac{\\ln(x + 1)}{x}$ 显式写出来；②交换积分次序（二重积分观点）。两条路里分部积分更直接，因为题目已经把 $f\\prime(x)$ 做成了好处理的形式。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>第一步：分部积分。注意到\n$\\frac{1}{\\sqrt{x}}dx = 2\\, d\\sqrt{x}$，于是</p>\n<p>$$\\int_{0}^{1}\\frac{f(x)}{\\sqrt{x}}dx = 2\\int_{0}^{1}f(x)\\, d\\sqrt{x} = 2\\left. \\ \\sqrt{x}\\, f(x) \\right|_{0}^{1} - 2\\int_{0}^{1}\\sqrt{x}\\, f\\prime(x)dx.$$</p>\n<p>边界项：</p>\n<p>$$f(1) = \\int_{1}^{1}\\frac{\\ln(t + 1)}{t}dt = 0$$</p>\n<p>而\n$\\sqrt{x}f(x)$ 在 $x = 0$ 处为 $0$，故边界项整体为 $0$。又\n$f\\prime(x) = \\frac{\\ln(x + 1)}{x}$，所以</p>\n<p>$$\\text{原式} = - 2\\int_{0}^{1}\\sqrt{x} \\cdot \\frac{\\ln(x + 1)}{x}dx = - 2\\int_{0}^{1}\\frac{\\ln(x + 1)}{\\sqrt{x}}dx.$$</p>\n<p>第二步：换元去根号。令 $t = \\sqrt{x}$，则\n$x = t^{2},\\ dx = 2t\\, dt$，$\\sqrt{x} = t$，当 $x:0 \\rightarrow 1$ 时\n$t:0 \\rightarrow 1$：</p>\n<p>$$- 2\\int_{0}^{1}\\frac{\\ln\\left( 1 + t^{2} \\right)}{t} \\cdot 2t\\, dt = - 4\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)\\, dt.$$</p>\n<p>第三步：对 $\\ln\\left( 1 + t^{2} \\right)$ 再分部积分，令\n$u = \\ln\\left( 1 + t^{2} \\right),\\ dv = dt$：</p>\n<p>$$\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)\\, dt = \\left. \\ t\\ln\\left( 1 + t^{2} \\right) \\right|_{0}^{1} - \\int_{0}^{1}t \\cdot \\frac{2t}{1 + t^{2}}dt = \\ln 2 - 2\\int_{0}^{1}\\frac{t^{2}}{1 + t^{2}}dt.$$</p>\n<p>而 $\\frac{t^{2}}{1 + t^{2}} = 1 - \\frac{1}{1 + t^{2}}$，所以</p>\n<p>$$\\int_{0}^{1}\\frac{t^{2}}{1 + t^{2}}dt = \\int_{0}^{1}\\left( 1 - \\frac{1}{1 + t^{2}} \\right)dt = \\left. \\ \\left( t - \\arctan t \\right) \\right|_{0}^{1} = 1 - \\frac{\\pi}{4}.$$</p>\n<p>代回：</p>\n<p>$$\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)dt = \\ln 2 - 2\\left( 1 - \\frac{\\pi}{4} \\right) = \\ln 2 - 2 + \\frac{\\pi}{2}.$$</p>\n<p>所以原式等于\n$- 4\\left( \\ln 2 - 2 + \\frac{\\pi}{2} \\right) = - 4\\ln 2 + 8 - 2\\pi$。</p>",
+          "text": "第一步：分部积分。注意到 $\\frac{1}{\\sqrt{x}}dx = 2\\, d\\sqrt{x}$，于是\n$$\\int_{0}^{1}\\frac{f(x)}{\\sqrt{x}}dx = 2\\int_{0}^{1}f(x)\\, d\\sqrt{x} = 2\\left. \\ \\sqrt{x}\\, f(x) \\right|_{0}^{1} - 2\\int_{0}^{1}\\sqrt{x}\\, f\\prime(x)dx.$$\n边界项：\n$$f(1) = \\int_{1}^{1}\\frac{\\ln(t + 1)}{t}dt = 0$$\n而 $\\sqrt{x}f(x)$ 在 $x = 0$ 处为 $0$，故边界项整体为 $0$。又 $f\\prime(x) = \\frac{\\ln(x + 1)}{x}$，所以\n$$\\text{原式} = - 2\\int_{0}^{1}\\sqrt{x} \\cdot \\frac{\\ln(x + 1)}{x}dx = - 2\\int_{0}^{1}\\frac{\\ln(x + 1)}{\\sqrt{x}}dx.$$\n第二步：换元去根号。令 $t = \\sqrt{x}$，则 $x = t^{2},\\ dx = 2t\\, dt$，$\\sqrt{x} = t$，当 $x:0 \\rightarrow 1$ 时 $t:0 \\rightarrow 1$：\n$$- 2\\int_{0}^{1}\\frac{\\ln\\left( 1 + t^{2} \\right)}{t} \\cdot 2t\\, dt = - 4\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)\\, dt.$$\n第三步：对 $\\ln\\left( 1 + t^{2} \\right)$ 再分部积分，令 $u = \\ln\\left( 1 + t^{2} \\right),\\ dv = dt$：\n$$\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)\\, dt = \\left. \\ t\\ln\\left( 1 + t^{2} \\right) \\right|_{0}^{1} - \\int_{0}^{1}t \\cdot \\frac{2t}{1 + t^{2}}dt = \\ln 2 - 2\\int_{0}^{1}\\frac{t^{2}}{1 + t^{2}}dt.$$\n而 $\\frac{t^{2}}{1 + t^{2}} = 1 - \\frac{1}{1 + t^{2}}$，所以\n$$\\int_{0}^{1}\\frac{t^{2}}{1 + t^{2}}dt = \\int_{0}^{1}\\left( 1 - \\frac{1}{1 + t^{2}} \\right)dt = \\left. \\ \\left( t - \\arctan t \\right) \\right|_{0}^{1} = 1 - \\frac{\\pi}{4}.$$\n代回：\n$$\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)dt = \\ln 2 - 2\\left( 1 - \\frac{\\pi}{4} \\right) = \\ln 2 - 2 + \\frac{\\pi}{2}.$$\n所以原式等于 $- 4\\left( \\ln 2 - 2 + \\frac{\\pi}{2} \\right) = - 4\\ln 2 + 8 - 2\\pi$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>$$\\int_{0}^{1}\\frac{f(x)}{\\sqrt{x}}dx = 2\\left. \\ \\sqrt{x}f(x) \\right|_{0}^{1} - 2\\int_{0}^{1}\\sqrt{x}f\\prime(x)dx = - 2\\int_{0}^{1}\\frac{\\ln(1 + x)}{\\sqrt{x}}dx.\\quad\\left( 2\\text{ 分} \\right)$$</p>\n<p>令 $t = \\sqrt{x}$，则原式化为</p>\n<p>$$- 2\\int_{0}^{1}\\frac{\\ln\\left( 1 + t^{2} \\right)}{t} \\cdot 2t\\, dt = - 4\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)dt.\\quad\\left( 4\\text{ 分} \\right)$$</p>\n<p>分部积分并化简：</p>\n<p>$$- 4\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)dt = - 4\\left\\lbrack \\ln 2 - 2\\int_{0}^{1}\\frac{t^{2}}{1 + t^{2}}dt \\right\\rbrack = - 4\\left\\lbrack \\ln 2 - 2\\left( 1 - \\frac{\\pi}{4} \\right) \\right\\rbrack = - 4\\ln 2 + 8 - 2\\pi.\\quad\\left( 10\\text{ 分} \\right)$$</p>",
+          "text": "$$\\int_{0}^{1}\\frac{f(x)}{\\sqrt{x}}dx = 2\\left. \\ \\sqrt{x}f(x) \\right|_{0}^{1} - 2\\int_{0}^{1}\\sqrt{x}f\\prime(x)dx = - 2\\int_{0}^{1}\\frac{\\ln(1 + x)}{\\sqrt{x}}dx.\\quad\\left( 2\\text{ 分} \\right)$$\n令 $t = \\sqrt{x}$，则原式化为\n$$- 2\\int_{0}^{1}\\frac{\\ln\\left( 1 + t^{2} \\right)}{t} \\cdot 2t\\, dt = - 4\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)dt.\\quad\\left( 4\\text{ 分} \\right)$$\n分部积分并化简：\n$$- 4\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)dt = - 4\\left\\lbrack \\ln 2 - 2\\int_{0}^{1}\\frac{t^{2}}{1 + t^{2}}dt \\right\\rbrack = - 4\\left\\lbrack \\ln 2 - 2\\left( 1 - \\frac{\\pi}{4} \\right) \\right\\rbrack = - 4\\ln 2 + 8 - 2\\pi.\\quad\\left( 10\\text{ 分} \\right)$$"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>也可用二重积分交换次序：把</p>\n<p>$$f(x) = \\int_{1}^{x}\\frac{\\ln(t + 1)}{t}dt$$</p>\n<p>看成 $t$ 从 $1$ 到\n$x$（$x < 1$ 时实际反向），与外层 $x$\n积分交换次序，结果一致。两种方法都要算到同一个</p>\n<p>$$\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)dt$$</p>\n<p>。常见错误：边界项\n$\\sqrt{x}f(x)$ 在 $x = 0$ 处误以为发散（实际</p>\n<p>$$f(x) \\rightarrow \\int_{1}^{0}\\text{ }\\cdots$$</p>\n<p>有限，乘\n$\\sqrt{x} \\rightarrow 0$）。</p>",
+          "text": "也可用二重积分交换次序：把\n$$f(x) = \\int_{1}^{x}\\frac{\\ln(t + 1)}{t}dt$$\n看成 $t$ 从 $1$ 到 $x$（$x < 1$ 时实际反向），与外层 $x$ 积分交换次序，结果一致。两种方法都要算到同一个\n$$\\int_{0}^{1}\\ln\\left( 1 + t^{2} \\right)dt$$\n。常见错误：边界项 $\\sqrt{x}f(x)$ 在 $x = 0$ 处误以为发散（实际\n$$f(x) \\rightarrow \\int_{1}^{0}\\text{ }\\cdots$$\n有限，乘 $\\sqrt{x} \\rightarrow 0$）。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是忘记 $f(1) = 0$ 导致边界项算错；二是换元\n$t = \\sqrt{x}$ 时 $dx = 2t\\, dt$ 的系数漏乘；三是\n$\\frac{t^{2}}{1 + t^{2}}$ 不会拆成 $1 - \\frac{1}{1 + t^{2}}$；四是最终\n$\\pi$ 的系数（$2 \\cdot \\frac{\\pi}{4} = \\frac{\\pi}{2}$ 再乘 $- 4$ 得\n$- 2\\pi$）。</p>",
+          "text": "一是忘记 $f(1) = 0$ 导致边界项算错；二是换元 $t = \\sqrt{x}$ 时 $dx = 2t\\, dt$ 的系数漏乘；三是 $\\frac{t^{2}}{1 + t^{2}}$ 不会拆成 $1 - \\frac{1}{1 + t^{2}}$；四是最终 $\\pi$ 的系数（$2 \\cdot \\frac{\\pi}{4} = \\frac{\\pi}{2}$ 再乘 $- 4$ 得 $- 2\\pi$）。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>外层积分含变限函数 $f(x)$ 的标准套路：分部积分把 $f$\n求导，凑微分选 $d\\sqrt{x}$；出现根号必换元\n$t = \\sqrt{x}$；$\\ln\\left( 1 + t^{2} \\right)$ 分部积分后必拆\n$\\frac{t^{2}}{1 + t^{2}}$。</p>",
+          "text": "外层积分含变限函数 $f(x)$ 的标准套路：分部积分把 $f$ 求导，凑微分选 $d\\sqrt{x}$；出现根号必换元 $t = \\sqrt{x}$；$\\ln\\left( 1 + t^{2} \\right)$ 分部积分后必拆 $\\frac{t^{2}}{1 + t^{2}}$。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查含变限积分函数的定积分计算，综合分部积分、换元法，属于高等数学\"一元函数积分学\"的中高档解答题，与 2014 年第（15）题计算思路相通。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "21f6de1a5aaf85b81e0277bfa77aca46cedd4ac683fa1cead5d61e81acaa9863",
+      "schema_version": "1.0.0",
+      "source_hash": "d0224cd527252528ec29bbc5b6116e48c205a79e3b947ef87403b7834f03b765",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-15",
+        "year": 2013,
+        "num": 15
+      }
+    },
+    {
+      "id": "math-2013-16",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 16,
+      "type": "essay",
+      "stem": "（本题满分 10 分）设数列 $\\left\\{ a_{n} \\right\\}$ 满足：$a_{0} = 3,\\ a_{1} = 1,\\ a_{n - 2} - n(n - 1)a_{n} = 0\\ (n \\geq 2)$，$S(x)$ 是幂级数\n$$\\sum_{n = 0}^{\\infty}a_{n}x^{n}$$\n的和函数。（I）证明：$s''(x) - s(x) = 0$；（II）求 $s(x)$ 的表达式。",
+      "options": [],
+      "answer": "（I）见证；（II）$s(x) = e^{- x} + 2e^{x}$。",
+      "score": 10,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 10 分）设数列 $\\left\\{ a_{n} \\right\\}$\n满足：$a_{0} = 3,\\ a_{1} = 1,\\ a_{n - 2} - n(n - 1)a_{n} = 0\\ (n \\geq 2)$，$S(x)$\n是幂级数</p>\n<p>$$\\sum_{n = 0}^{\\infty}a_{n}x^{n}$$</p>\n<p>的和函数。（I）证明：$s''(x) - s(x) = 0$；（II）求 $s(x)$ 的表达式。</p>",
+          "text": "（本题满分 10 分）设数列 $\\left\\{ a_{n} \\right\\}$ 满足：$a_{0} = 3,\\ a_{1} = 1,\\ a_{n - 2} - n(n - 1)a_{n} = 0\\ (n \\geq 2)$，$S(x)$ 是幂级数\n$$\\sum_{n = 0}^{\\infty}a_{n}x^{n}$$\n的和函数。（I）证明：$s''(x) - s(x) = 0$；（II）求 $s(x)$ 的表达式。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>（I）见证；（II）$s(x) = e^{- x} + 2e^{x}$。</p>",
+          "text": "（I）见证；（II）$s(x) = e^{- x} + 2e^{x}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查幂级数逐项求导与微分方程结合求和函数，属于高等数学\"无穷级数\"与\"常微分方程\"的综合题，是\n2013 年线性代数之外最典型的幂级数大题。</p>",
+          "text": "本题考查幂级数逐项求导与微分方程结合求和函数，属于高等数学\"无穷级数\"与\"常微分方程\"的综合题，是 2013 年线性代数之外最典型的幂级数大题。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>幂级数求和函数的标准动作是<strong>逐项求导</strong>。题目给了相邻两项的递推关系\n$a_{n - 2} = n(n - 1)a_{n}$，这强烈提示我们：对 $s(x)$\n求二阶导数后，$x^{n}$ 的系数正好出现\n$n(n - 1)a_{n}$，与递推式一对照就能凑出 $s'' - s = 0$。</p>",
+          "text": "幂级数求和函数的标准动作是逐项求导。题目给了相邻两项的递推关系 $a_{n - 2} = n(n - 1)a_{n}$，这强烈提示我们：对 $s(x)$ 求二阶导数后，$x^{n}$ 的系数正好出现 $n(n - 1)a_{n}$，与递推式一对照就能凑出 $s'' - s = 0$。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>（I）对</p>\n<p>$$s(x) = \\sum_{n = 0}^{\\infty}a_{n}x^{n}$$</p>\n<p>逐项求导：</p>\n<p>$$s\\prime(x) = \\sum_{n = 1}^{\\infty}na_{n}x^{n - 1},\\quad\\quad s''(x) = \\sum_{n = 2}^{\\infty}n(n - 1)a_{n}x^{n - 2}.$$</p>\n<p>把 $s''$ 的指标换一下：令 $m = n - 2$，则 $n = m + 2$，</p>\n<p>$$s''(x) = \\sum_{m = 0}^{\\infty}(m + 2)(m + 1)a_{m + 2}x^{m}.$$</p>\n<p>由递推 $a_{n - 2} = n(n - 1)a_{n}$，把 $n$ 换成\n$m + 2$：$a_{m} = (m + 2)(m + 1)a_{m + 2}$，即\n$(m + 2)(m + 1)a_{m + 2} = a_{m}$。所以</p>\n<p>$$s''(x) = \\sum_{m = 0}^{\\infty}a_{m}x^{m} = s(x),$$</p>\n<p>即 $s''(x) - s(x) = 0$。</p>\n<p>（II）这是二阶常系数齐次方程，特征方程 $r^{2} - 1 = 0$，根\n$r = \\pm 1$，故\n$s(x) = C_{1}e^{- x} + C_{2}e^{x}$。用初值定常数：$s(0) = a_{0} = 3$，$s\\prime(0) = a_{1} = 1$。</p>\n<p>$$\\left\\{ \\begin{matrix}\nC_{1} + C_{2} = 3 \\\\\n - C_{1} + C_{2} = 1\n\\end{matrix} \\right.\\  \\Rightarrow C_{1} = 1,\\ C_{2} = 2.$$</p>\n<p>故 $s(x) = e^{- x} + 2e^{x}$。</p>",
+          "text": "（I）对\n$$s(x) = \\sum_{n = 0}^{\\infty}a_{n}x^{n}$$\n逐项求导：\n$$s\\prime(x) = \\sum_{n = 1}^{\\infty}na_{n}x^{n - 1},\\quad\\quad s''(x) = \\sum_{n = 2}^{\\infty}n(n - 1)a_{n}x^{n - 2}.$$\n把 $s''$ 的指标换一下：令 $m = n - 2$，则 $n = m + 2$，\n$$s''(x) = \\sum_{m = 0}^{\\infty}(m + 2)(m + 1)a_{m + 2}x^{m}.$$\n由递推 $a_{n - 2} = n(n - 1)a_{n}$，把 $n$ 换成 $m + 2$：$a_{m} = (m + 2)(m + 1)a_{m + 2}$，即 $(m + 2)(m + 1)a_{m + 2} = a_{m}$。所以\n$$s''(x) = \\sum_{m = 0}^{\\infty}a_{m}x^{m} = s(x),$$\n即 $s''(x) - s(x) = 0$。\n（II）这是二阶常系数齐次方程，特征方程 $r^{2} - 1 = 0$，根 $r = \\pm 1$，故 $s(x) = C_{1}e^{- x} + C_{2}e^{x}$。用初值定常数：$s(0) = a_{0} = 3$，$s\\prime(0) = a_{1} = 1$。\n$$\\left\\{ \\begin{matrix} C_{1} + C_{2} = 3 \\\\ - C_{1} + C_{2} = 1 \\end{matrix} \\right.\\ \\Rightarrow C_{1} = 1,\\ C_{2} = 2.$$\n故 $s(x) = e^{- x} + 2e^{x}$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>（I）</p>\n<p>$$s''(x) = \\sum_{n = 2}^{\\infty}n(n - 1)a_{n}x^{n - 2} = \\sum_{n = 0}^{\\infty}(n + 1)(n + 2)a_{n + 2}x^{n}$$</p>\n<p>由递推\n$a_{n} = (n + 1)(n + 2)a_{n + 2}$ 得 $s''(x) = s(x)$。（3 分）</p>\n<p>（II）解 $s'' - s = 0$ 得 $s = C_{1}e^{- x} + C_{2}e^{x}$；代入\n$s(0) = 3,\\ s\\prime(0) = 1$ 得 $C_{1} = 1,\\ C_{2} = 2$，故\n$s(x) = e^{- x} + 2e^{x}$。（10 分）</p>",
+          "text": "（I）\n$$s''(x) = \\sum_{n = 2}^{\\infty}n(n - 1)a_{n}x^{n - 2} = \\sum_{n = 0}^{\\infty}(n + 1)(n + 2)a_{n + 2}x^{n}$$\n由递推 $a_{n} = (n + 1)(n + 2)a_{n + 2}$ 得 $s''(x) = s(x)$。（3 分）\n（II）解 $s'' - s = 0$ 得 $s = C_{1}e^{- x} + C_{2}e^{x}$；代入 $s(0) = 3,\\ s\\prime(0) = 1$ 得 $C_{1} = 1,\\ C_{2} = 2$，故 $s(x) = e^{- x} + 2e^{x}$。（10 分）"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>也可先解递推：由\n$a_{n} = \\frac{a_{n - 2}}{n(n - 1)}$ 写出 $a_{2},a_{4},\\cdots$ 与\n$a_{1},a_{3},\\cdots$ 两列，发现偶子列对应 $e^{x}$、奇子列对应\n$e^{- x}$，同样得到和函数。这种\"级数↔微分方程\"双向转换是这类题的核心。</p>",
+          "text": "也可先解递推：由 $a_{n} = \\frac{a_{n - 2}}{n(n - 1)}$ 写出 $a_{2},a_{4},\\cdots$ 与 $a_{1},a_{3},\\cdots$ 两列，发现偶子列对应 $e^{x}$、奇子列对应 $e^{- x}$，同样得到和函数。这种\"级数↔微分方程\"双向转换是这类题的核心。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是逐项求导后指标平移错误（$s''$ 换成 $x^{n}$\n时系数要写 $(n + 1)(n + 2)a_{n + 2}$）；二是特征方程写成\n$r^{2} + 1 = 0$（符号错）；三是定常数时把 $s\\prime(0) = a_{1} = 1$\n漏掉或符号错。</p>",
+          "text": "一是逐项求导后指标平移错误（$s''$ 换成 $x^{n}$ 时系数要写 $(n + 1)(n + 2)a_{n + 2}$）；二是特征方程写成 $r^{2} + 1 = 0$（符号错）；三是定常数时把 $s\\prime(0) = a_{1} = 1$ 漏掉或符号错。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>幂级数 +\n递推求和函数三步：①逐项求导两次；②指标平移让系数对齐递推式；③把\n$s'' - s = 0$ 当微分方程解，用 $s(0) = a_{0},\\ s\\prime(0) = a_{1}$\n定常数。</p>",
+          "text": "幂级数 + 递推求和函数三步：①逐项求导两次；②指标平移让系数对齐递推式；③把 $s'' - s = 0$ 当微分方程解，用 $s(0) = a_{0},\\ s\\prime(0) = a_{1}$ 定常数。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查幂级数逐项求导与微分方程结合求和函数，属于高等数学\"无穷级数\"与\"常微分方程\"的综合题，是 2013 年线性代数之外最典型的幂级数大题。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "3631e2a8fe5b833d6e7ee3e7bfce09ee73a95b375eb68230e1fe85ae3a6bf055",
+      "schema_version": "1.0.0",
+      "source_hash": "e3a225263457b3d7e3b44936418485b8d3fb042d706bc5cbaa4b04411bc29193",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-16",
+        "year": 2013,
+        "num": 16
+      }
+    },
+    {
+      "id": "math-2013-17",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 17,
+      "type": "essay",
+      "stem": "（本题满分 10 分）求函数 $f(x,y) = \\left( y + \\frac{x^{3}}{3} \\right)e^{x + y}$ 的极值。",
+      "options": [],
+      "answer": "在 $(1, - 4/3)$ 处取极小值 $f(1, - 4/3) = - e^{- 1/3}$；$( - 1, - 2/3)$ 不是极值点。",
+      "score": 10,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 10 分）求函数\n$f(x,y) = \\left( y + \\frac{x^{3}}{3} \\right)e^{x + y}$ 的极值。</p>",
+          "text": "（本题满分 10 分）求函数 $f(x,y) = \\left( y + \\frac{x^{3}}{3} \\right)e^{x + y}$ 的极值。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>在 $(1, - 4/3)$ 处取极小值\n$f(1, - 4/3) = - e^{- 1/3}$；$( - 1, - 2/3)$ 不是极值点。</p>",
+          "text": "在 $(1, - 4/3)$ 处取极小值 $f(1, - 4/3) = - e^{- 1/3}$；$( - 1, - 2/3)$ 不是极值点。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查多元函数无条件极值的求法与黑塞矩阵判别，属于高等数学\"多元函数微分学\"考点。</p>",
+          "text": "本题考查多元函数无条件极值的求法与黑塞矩阵判别，属于高等数学\"多元函数微分学\"考点。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>求二元函数极值固定三步：①求驻点（令一阶偏导都为\n$0$）；②算二阶偏导 $A = f_{xx},\\ B = f_{xy},\\ C = f_{yy}$；③用\n$AC - B^{2}$ 的符号判别：&gt; $0$ 且 $A > 0$ 为极小，&gt; $0$ 且 $A < 0$\n为极大，\\&lt; $0$ 不是极值。本题函数带 $e^{x + y}$，求导时要注意乘积法则。</p>",
+          "text": "求二元函数极值固定三步：①求驻点（令一阶偏导都为 $0$）；②算二阶偏导 $A = f_{xx},\\ B = f_{xy},\\ C = f_{yy}$；③用 $AC - B^{2}$ 的符号判别：> $0$ 且 $A > 0$ 为极小，> $0$ 且 $A < 0$ 为极大，\\< $0$ 不是极值。本题函数带 $e^{x + y}$，求导时要注意乘积法则。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>记 $u = y + \\frac{x^{3}}{3}$，则 $f = u\\, e^{x + y}$。</p>\n<p>$$f_{x} = u_{x}e^{x + y} + u\\, e^{x + y} = \\left( x^{2} + y + \\frac{x^{3}}{3} \\right)e^{x + y}.$$</p>\n<p>$$f_{y} = u_{y}e^{x + y} + u\\, e^{x + y} = \\left( 1 + y + \\frac{x^{3}}{3} \\right)e^{x + y}.$$</p>\n<p>因为 $e^{x + y} \\neq 0$，驻点即解</p>\n<p>$$\\left\\{ \\begin{matrix}\nx^{2} + y + \\frac{x^{3}}{3} = 0 \\\\\n1 + y + \\frac{x^{3}}{3} = 0\n\\end{matrix} \\right.\\ $$</p>\n<p>两式相减：$x^{2} - 1 = 0$，$x = \\pm 1$。代入第二式： -\n$x = 1$：$1 + y + 1/3 = 0 \\Rightarrow y = - 4/3$； -\n$x = - 1$：$1 + y - 1/3 = 0 \\Rightarrow y = - 2/3$。</p>\n<p>求二阶偏导（在驻点处 $f_{x} = f_{y} = 0$ 可简化）：</p>\n<p>$$A = f_{xx} = e^{x + y}\\left( 2x + x^{2} + y + \\frac{x^{3}}{3} \\right) = e^{x + y}(2x)\\quad\\left( \\text{驻点处括号里 }x^{2} + y + x^{3}/3 = 0 \\right).$$</p>\n<p>类似得</p>\n<p>$$B = f_{xy} = e^{x + y}\\left( 1 + x^{2} + y + x^{3}/3 \\right) = e^{x + y}$$</p>\n<p>$C = f_{yy} = e^{x + y}\\left( 1 + y + x^{3}/3 + 1 \\right) = e^{x + y}$（驻点处\n$1 + y + x^{3}/3 = 0$）。</p>\n<p>在\n$( - 1, - 2/3)$：$A = - 2e^{- 5/3},\\ B = e^{- 5/3},\\ C = e^{- 5/3}$，$AC - B^{2} = - 2e^{- 10/3} < 0$，不是极值点。</p>\n<p>在\n$(1, - 4/3)$：$A = 2e^{- 1/3},\\ B = e^{- 1/3},\\ C = e^{- 1/3}$，$AC - B^{2} = 2e^{- 2/3} - e^{- 2/3} = e^{- 2/3} > 0$\n且 $A > 0$，为极小值点。极小值</p>\n<p>$$f(1, - 4/3) = \\left( 1 + \\frac{1}{3} - \\frac{4}{3} \\right)e^{- 1/3} = 0 - e^{- 1/3} = - e^{- 1/3}$$</p>\n<p>。</p>",
+          "text": "记 $u = y + \\frac{x^{3}}{3}$，则 $f = u\\, e^{x + y}$。\n$$f_{x} = u_{x}e^{x + y} + u\\, e^{x + y} = \\left( x^{2} + y + \\frac{x^{3}}{3} \\right)e^{x + y}.$$\n$$f_{y} = u_{y}e^{x + y} + u\\, e^{x + y} = \\left( 1 + y + \\frac{x^{3}}{3} \\right)e^{x + y}.$$\n因为 $e^{x + y} \\neq 0$，驻点即解\n$$\\left\\{ \\begin{matrix} x^{2} + y + \\frac{x^{3}}{3} = 0 \\\\ 1 + y + \\frac{x^{3}}{3} = 0 \\end{matrix} \\right.\\ $$\n两式相减：$x^{2} - 1 = 0$，$x = \\pm 1$。代入第二式： - $x = 1$：$1 + y + 1/3 = 0 \\Rightarrow y = - 4/3$； - $x = - 1$：$1 + y - 1/3 = 0 \\Rightarrow y = - 2/3$。\n求二阶偏导（在驻点处 $f_{x} = f_{y} = 0$ 可简化）：\n$$A = f_{xx} = e^{x + y}\\left( 2x + x^{2} + y + \\frac{x^{3}}{3} \\right) = e^{x + y}(2x)\\quad\\left( \\text{驻点处括号里 }x^{2} + y + x^{3}/3 = 0 \\right).$$\n类似得\n$$B = f_{xy} = e^{x + y}\\left( 1 + x^{2} + y + x^{3}/3 \\right) = e^{x + y}$$\n$C = f_{yy} = e^{x + y}\\left( 1 + y + x^{3}/3 + 1 \\right) = e^{x + y}$（驻点处 $1 + y + x^{3}/3 = 0$）。\n在 $( - 1, - 2/3)$：$A = - 2e^{- 5/3},\\ B = e^{- 5/3},\\ C = e^{- 5/3}$，$AC - B^{2} = - 2e^{- 10/3} < 0$，不是极值点。\n在 $(1, - 4/3)$：$A = 2e^{- 1/3},\\ B = e^{- 1/3},\\ C = e^{- 1/3}$，$AC - B^{2} = 2e^{- 2/3} - e^{- 2/3} = e^{- 2/3} > 0$ 且 $A > 0$，为极小值点。极小值\n$$f(1, - 4/3) = \\left( 1 + \\frac{1}{3} - \\frac{4}{3} \\right)e^{- 1/3} = 0 - e^{- 1/3} = - e^{- 1/3}$$\n。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>令 $f_{x} = f_{y} = 0$ 得驻点 $(1, - 4/3)$ 与\n$( - 1, - 2/3)$。（3 分） 算 $A = f_{xx},\\ B = f_{xy},\\ C = f_{yy}$：在\n$( - 1, - 2/3)$，$AC - B^{2} < 0$，非极值点；在\n$(1, - 4/3)$，$AC - B^{2} > 0$ 且 $A > 0$，取极小值\n$f(1, - 4/3) = - e^{- 1/3}$。（10 分）</p>",
+          "text": "令 $f_{x} = f_{y} = 0$ 得驻点 $(1, - 4/3)$ 与 $( - 1, - 2/3)$。（3 分） 算 $A = f_{xx},\\ B = f_{xy},\\ C = f_{yy}$：在 $( - 1, - 2/3)$，$AC - B^{2} < 0$，非极值点；在 $(1, - 4/3)$，$AC - B^{2} > 0$ 且 $A > 0$，取极小值 $f(1, - 4/3) = - e^{- 1/3}$。（10 分）"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>官方解析在驻点处直接给出\n$A = - e^{- 5/3},\\ B = e^{- 5/3},\\ C = e^{- 5/3}$（第一点）和\n$A = 3e^{- 1/3},\\ B = e^{- 1/3},\\ C = e^{- 1/3}$（第二点），判别结论一致。注意本题只有极小值、没有极大值。</p>",
+          "text": "官方解析在驻点处直接给出 $A = - e^{- 5/3},\\ B = e^{- 5/3},\\ C = e^{- 5/3}$（第一点）和 $A = 3e^{- 1/3},\\ B = e^{- 1/3},\\ C = e^{- 1/3}$（第二点），判别结论一致。注意本题只有极小值、没有极大值。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是乘积求导时 $e^{x + y}$ 的指数求导忘记对 $x,y$\n分别乘 $1$；二是解驻点方程组两式相减时符号错；三是判别时只看 $A$\n符号不看 $AC - B^{2}$；四是极小值计算时把括号里 $y + x^{3}/3$ 代入算错。</p>",
+          "text": "一是乘积求导时 $e^{x + y}$ 的指数求导忘记对 $x,y$ 分别乘 $1$；二是解驻点方程组两式相减时符号错；三是判别时只看 $A$ 符号不看 $AC - B^{2}$；四是极小值计算时把括号里 $y + x^{3}/3$ 代入算错。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>二元极值三步：求驻点 → 算 $A,B,C$ → $AC - B^{2}$\n判别。带指数因子的函数在驻点处可利用 $f_{x} = f_{y} = 0$ 简化二阶导。</p>",
+          "text": "二元极值三步：求驻点 → 算 $A,B,C$ → $AC - B^{2}$ 判别。带指数因子的函数在驻点处可利用 $f_{x} = f_{y} = 0$ 简化二阶导。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查多元函数无条件极值的求法与黑塞矩阵判别，属于高等数学\"多元函数微分学\"考点。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "2b78ec0f7beff5e7959711892a3cfcac1029c6f8a5b85f1b3a1f1fd6a06385d3",
+      "schema_version": "1.0.0",
+      "source_hash": "84e60e9270abd86619e712ffb0da4dc5c1da0ba403c60e85b5175553fc961820",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-17",
+        "year": 2013,
+        "num": 17
+      }
+    },
+    {
+      "id": "math-2013-18",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 18,
+      "type": "essay",
+      "stem": "（本题满分 10 分）设奇函数 $f(x)$ 在 $\\lbrack - 1,1\\rbrack$ 上具有 2 阶导数，且 $f(1) = 1$，证明：（I）存在 $\\xi \\in (0,1)$，使得 $f\\prime(\\xi) = 1$；（II）存在 $\\eta \\in ( - 1,1)$，使得 $f''(\\eta) + f\\prime(\\eta) = 1$。",
+      "options": [],
+      "answer": "（I）（II）均证毕。",
+      "score": 10,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 10 分）设奇函数 $f(x)$ 在 $\\lbrack - 1,1\\rbrack$\n上具有 2 阶导数，且 $f(1) = 1$，证明：（I）存在 $\\xi \\in (0,1)$，使得\n$f\\prime(\\xi) = 1$；（II）存在 $\\eta \\in ( - 1,1)$，使得\n$f''(\\eta) + f\\prime(\\eta) = 1$。</p>",
+          "text": "（本题满分 10 分）设奇函数 $f(x)$ 在 $\\lbrack - 1,1\\rbrack$ 上具有 2 阶导数，且 $f(1) = 1$，证明：（I）存在 $\\xi \\in (0,1)$，使得 $f\\prime(\\xi) = 1$；（II）存在 $\\eta \\in ( - 1,1)$，使得 $f''(\\eta) + f\\prime(\\eta) = 1$。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>（I）（II）均证毕。</p>",
+          "text": "（I）（II）均证毕。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查罗尔定理、拉格朗日中值定理与辅助函数构造，属于高等数学\"微分中值定理\"的证明压轴风格题。</p>",
+          "text": "本题考查罗尔定理、拉格朗日中值定理与辅助函数构造，属于高等数学\"微分中值定理\"的证明压轴风格题。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>（I）要证 $f\\prime(\\xi) = 1$，即证某辅助函数\n$F(x) = f(x) - x$ 的导数\n$F\\prime(\\xi) = 0$，用罗尔定理。奇函数给了我们两个端点值：$f(0) = 0$（奇函数在原点为\n$0$）和 $f(1) = 1$。</p>\n<p>（II）要证 $f''(\\eta) + f\\prime(\\eta) = 1$，即证</p>\n<p>$$\\left\\lbrack e^{x}\\left( f\\prime(x) - 1 \\right) \\right\\rbrack\\prime$$</p>\n<p>在某点为 $0$。构造\n$G(x) = e^{x}\\left( f\\prime(x) - 1 \\right)$，再用罗尔定理。</p>",
+          "text": "（I）要证 $f\\prime(\\xi) = 1$，即证某辅助函数 $F(x) = f(x) - x$ 的导数 $F\\prime(\\xi) = 0$，用罗尔定理。奇函数给了我们两个端点值：$f(0) = 0$（奇函数在原点为 $0$）和 $f(1) = 1$。\n（II）要证 $f''(\\eta) + f\\prime(\\eta) = 1$，即证\n$$\\left\\lbrack e^{x}\\left( f\\prime(x) - 1 \\right) \\right\\rbrack\\prime$$\n在某点为 $0$。构造 $G(x) = e^{x}\\left( f\\prime(x) - 1 \\right)$，再用罗尔定理。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>（I）$f$ 为奇函数 ⇒ $f(0) = 0$。作\n$F(x) = f(x) - x$。$F(0) = f(0) - 0 = 0$，$F(1) = f(1) - 1 = 0$。$F$ 在\n$\\lbrack 0,1\\rbrack$ 连续、$(0,1)$ 可导，由罗尔定理，存在\n$\\xi \\in (0,1)$ 使 $F\\prime(\\xi) = 0$，即 $f\\prime(\\xi) = 1$。</p>\n<p>（II）$f$ 为奇函数 ⇒ $f\\prime$\n为偶函数（奇函数求导变偶）。由（I）$f\\prime(\\xi) = 1$，故\n$f\\prime( - \\xi) = f\\prime(\\xi) = 1$。作\n$G(x) = e^{x}\\left( f\\prime(x) - 1 \\right)$。则\n$G(\\xi) = e^{\\xi}(1 - 1) = 0$，$G( - \\xi) = e^{- \\xi}\\left( f\\prime( - \\xi) - 1 \\right) = 0$。$G$\n在 $\\lbrack - \\xi,\\xi\\rbrack$ 上连续、$( - \\xi,\\xi)$\n内可导，由罗尔定理，存在 $\\eta \\in ( - \\xi,\\xi) \\subset ( - 1,1)$ 使\n$G\\prime(\\eta) = 0$：</p>\n<p>$$G\\prime(x) = e^{x}\\left( f\\prime(x) - 1 \\right) + e^{x}f''(x) = e^{x}\\left\\lbrack f''(x) + f\\prime(x) - 1 \\right\\rbrack.$$</p>\n<p>由 $G\\prime(\\eta) = 0$ 且 $e^{\\eta} \\neq 0$，得\n$f''(\\eta) + f\\prime(\\eta) = 1$。证毕。</p>",
+          "text": "（I）$f$ 为奇函数 ⇒ $f(0) = 0$。作 $F(x) = f(x) - x$。$F(0) = f(0) - 0 = 0$，$F(1) = f(1) - 1 = 0$。$F$ 在 $\\lbrack 0,1\\rbrack$ 连续、$(0,1)$ 可导，由罗尔定理，存在 $\\xi \\in (0,1)$ 使 $F\\prime(\\xi) = 0$，即 $f\\prime(\\xi) = 1$。\n（II）$f$ 为奇函数 ⇒ $f\\prime$ 为偶函数（奇函数求导变偶）。由（I）$f\\prime(\\xi) = 1$，故 $f\\prime( - \\xi) = f\\prime(\\xi) = 1$。作 $G(x) = e^{x}\\left( f\\prime(x) - 1 \\right)$。则 $G(\\xi) = e^{\\xi}(1 - 1) = 0$，$G( - \\xi) = e^{- \\xi}\\left( f\\prime( - \\xi) - 1 \\right) = 0$。$G$ 在 $\\lbrack - \\xi,\\xi\\rbrack$ 上连续、$( - \\xi,\\xi)$ 内可导，由罗尔定理，存在 $\\eta \\in ( - \\xi,\\xi) \\subset ( - 1,1)$ 使 $G\\prime(\\eta) = 0$：\n$$G\\prime(x) = e^{x}\\left( f\\prime(x) - 1 \\right) + e^{x}f''(x) = e^{x}\\left\\lbrack f''(x) + f\\prime(x) - 1 \\right\\rbrack.$$\n由 $G\\prime(\\eta) = 0$ 且 $e^{\\eta} \\neq 0$，得 $f''(\\eta) + f\\prime(\\eta) = 1$。证毕。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>（I）$F(x) = f(x) - x$，$F(0) = F(1) = 0$，罗尔定理得\n$\\exists\\xi \\in (0,1):f\\prime(\\xi) = 1$。（4 分）\n（II）$G(x) = e^{x}\\left( f\\prime(x) - 1 \\right)$，由 $f\\prime$\n偶及（I）知 $G( - \\xi) = G(\\xi) = 0$，罗尔定理得\n$\\exists\\eta \\in ( - 1,1):G\\prime(\\eta) = 0$，即\n$f''(\\eta) + f\\prime(\\eta) = 1$。（10 分）</p>",
+          "text": "（I）$F(x) = f(x) - x$，$F(0) = F(1) = 0$，罗尔定理得 $\\exists\\xi \\in (0,1):f\\prime(\\xi) = 1$。（4 分） （II）$G(x) = e^{x}\\left( f\\prime(x) - 1 \\right)$，由 $f\\prime$ 偶及（I）知 $G( - \\xi) = G(\\xi) = 0$，罗尔定理得 $\\exists\\eta \\in ( - 1,1):G\\prime(\\eta) = 0$，即 $f''(\\eta) + f\\prime(\\eta) = 1$。（10 分）"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>构造 $G$\n的灵感来自\"$f'' + f\\prime$\"凑导数：</p>\n<p>$$\\left( e^{x}(f\\prime - 1) \\right)\\prime = e^{x}(f'' + f\\prime - 1)$$</p>\n<p>。类似地，见到\n$f'' - f\\prime$ 用 $e^{- x}$，见到 $xf'' + xf\\prime$\n用别的积分因子。奇函数求导为偶函数是本题关键桥梁。</p>",
+          "text": "构造 $G$ 的灵感来自\"$f'' + f\\prime$\"凑导数：\n$$\\left( e^{x}(f\\prime - 1) \\right)\\prime = e^{x}(f'' + f\\prime - 1)$$\n。类似地，见到 $f'' - f\\prime$ 用 $e^{- x}$，见到 $xf'' + xf\\prime$ 用别的积分因子。奇函数求导为偶函数是本题关键桥梁。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是想不到\n$f(0) = 0$；二是（II）辅助函数构造不出来；三是忘记 $f\\prime$\n是偶函数，无法得到 $G( - \\xi) = 0$。</p>",
+          "text": "一是想不到 $f(0) = 0$；二是（II）辅助函数构造不出来；三是忘记 $f\\prime$ 是偶函数，无法得到 $G( - \\xi) = 0$。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>中值定理证明题：①把待证等式移项成\"某函数导数 =\n0\"；②用观察法找积分因子（$e^{x}$\n等）构造辅助函数；③找两个等值点用罗尔定理；奇函数条件优先用于推出\n$f(0) = 0$ 与 $f\\prime$ 偶。</p>",
+          "text": "中值定理证明题：①把待证等式移项成\"某函数导数 = 0\"；②用观察法找积分因子（$e^{x}$ 等）构造辅助函数；③找两个等值点用罗尔定理；奇函数条件优先用于推出 $f(0) = 0$ 与 $f\\prime$ 偶。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查罗尔定理、拉格朗日中值定理与辅助函数构造，属于高等数学\"微分中值定理\"的证明压轴风格题。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "fd29f35652dfed66b62d43805ea0c7c95424e2085fe1e3d8ed1bb5b4170f7965",
+      "schema_version": "1.0.0",
+      "source_hash": "628ec873b5ed5ea2bab25f12fe5867c1f60e9b8d0f9a692e7ab63d157740c98d",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-18",
+        "year": 2013,
+        "num": 18
+      }
+    },
+    {
+      "id": "math-2013-19",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 19,
+      "type": "essay",
+      "stem": "（本题满分 10 分）设直线 $L$ 过 $A(1,0,0),B(0,1,1)$ 两点，将 $L$ 绕 $z$ 轴旋转一周得到曲面 $\\Sigma$，$\\Sigma$ 与 $z = 0,z = 2$ 所围成的立体为 $\\Omega$。（I）求曲面 $\\Sigma$ 的方程；（II）求 $\\Omega$ 的形心坐标。\n图：直线 $L$ 绕 $z$ 轴旋转所得的旋转曲面（$z=0.5$ 处细腰）",
+      "options": [],
+      "answer": "（I）$x^{2} + y^{2} = (1 - z)^{2} + z^{2}$；（II）形心为 $(0,0,7/5)$。",
+      "score": 10,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 10 分）设直线 $L$ 过 $A(1,0,0),B(0,1,1)$ 两点，将\n$L$ 绕 $z$ 轴旋转一周得到曲面 $\\Sigma$，$\\Sigma$ 与 $z = 0,z = 2$\n所围成的立体为 $\\Omega$。（I）求曲面 $\\Sigma$ 的方程；（II）求 $\\Omega$\n的形心坐标。</p><figure class=\"fig\"><img src=\"data/math/media/img-8c38a5ceab6b.png\" alt=\"题目配图\" loading=\"lazy\" data-action=\"zoom\"><figcaption>图：直线 $L$ 绕 $z$ 轴旋转所得的旋转曲面（$z=0.5$ 处细腰）</figcaption></figure>",
+          "text": "（本题满分 10 分）设直线 $L$ 过 $A(1,0,0),B(0,1,1)$ 两点，将 $L$ 绕 $z$ 轴旋转一周得到曲面 $\\Sigma$，$\\Sigma$ 与 $z = 0,z = 2$ 所围成的立体为 $\\Omega$。（I）求曲面 $\\Sigma$ 的方程；（II）求 $\\Omega$ 的形心坐标。\n图：直线 $L$ 绕 $z$ 轴旋转所得的旋转曲面（$z=0.5$ 处细腰）"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>（I）$x^{2} + y^{2} = (1 - z)^{2} + z^{2}$；（II）形心为\n$(0,0,7/5)$。</p>",
+          "text": "（I）$x^{2} + y^{2} = (1 - z)^{2} + z^{2}$；（II）形心为 $(0,0,7/5)$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查旋转曲面方程与重积分求形心，属于高等数学\"重积分、曲线曲面积分\"综合题。</p>",
+          "text": "本题考查旋转曲面方程与重积分求形心，属于高等数学\"重积分、曲线曲面积分\"综合题。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>（I）直线绕 $z$ 轴旋转：$z$ 坐标不变，旋转半径\n$\\sqrt{x^{2} + y^{2}}$ 等于母线上对应点到 $z$ 轴距离。先写出母线 $L$\n的参数方程，任取母线上一点\n$\\left( x_{0},y_{0},z \\right)$，旋转后该点画出圆\n$x^{2} + y^{2} = x_{0}^{2} + y_{0}^{2}$，把 $x_{0},y_{0}$ 用 $z$\n表示即得曲面方程。</p>\n<p>（II）形心</p>\n<p>$$\\left( \\bar{x},\\bar{y},\\bar{z} \\right) = \\frac{\\iiint\\mathbf{r}\\, dv}{\\iiint dv}$$</p>\n<p>。立体关于\n$z$ 轴对称 ⇒ $\\bar{x} = \\bar{y} = 0$，只需算\n$\\bar{z}$。用截面法（先二后一），每个 $z$ 处截面是圆，面积 $\\pi r^{2}$。</p>",
+          "text": "（I）直线绕 $z$ 轴旋转：$z$ 坐标不变，旋转半径 $\\sqrt{x^{2} + y^{2}}$ 等于母线上对应点到 $z$ 轴距离。先写出母线 $L$ 的参数方程，任取母线上一点 $\\left( x_{0},y_{0},z \\right)$，旋转后该点画出圆 $x^{2} + y^{2} = x_{0}^{2} + y_{0}^{2}$，把 $x_{0},y_{0}$ 用 $z$ 表示即得曲面方程。\n（II）形心\n$$\\left( \\bar{x},\\bar{y},\\bar{z} \\right) = \\frac{\\iiint\\mathbf{r}\\, dv}{\\iiint dv}$$\n。立体关于 $z$ 轴对称 ⇒ $\\bar{x} = \\bar{y} = 0$，只需算 $\\bar{z}$。用截面法（先二后一），每个 $z$ 处截面是圆，面积 $\\pi r^{2}$。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>（I）$\\overrightarrow{AB} = ( - 1,1,1)$，母线\n$L:\\frac{x - 1}{- 1} = \\frac{y}{1} = \\frac{z}{1}$，即\n$x_{0} = 1 - z,\\ y_{0} = z$。旋转半径平方\n$x_{0}^{2} + y_{0}^{2} = (1 - z)^{2} + z^{2}$。故</p>\n<p>$$\\Sigma:\\ x^{2} + y^{2} = (1 - z)^{2} + z^{2} = 2z^{2} - 2z + 1.$$</p>\n<p>（II）截面圆半径平方\n$r^{2} = 2z^{2} - 2z + 1$，$z \\in \\lbrack 0,2\\rbrack$。</p>\n<p>$$\\iiint_{\\Omega}^{}dv = \\int_{0}^{2}\\pi r^{2}dz = \\pi\\int_{0}^{2}\\left( 2z^{2} - 2z + 1 \\right)dz = \\pi\\left\\lbrack \\frac{2}{3}z^{3} - z^{2} + z \\right\\rbrack_{0}^{2} = \\frac{10\\pi}{3}.$$</p>\n<p>$$\\iiint_{\\Omega}^{}z\\, dv = \\int_{0}^{2}z \\cdot \\pi r^{2}dz = \\pi\\int_{0}^{2}\\left( 2z^{3} - 2z^{2} + z \\right)dz = \\pi\\left\\lbrack \\frac{1}{2}z^{4} - \\frac{2}{3}z^{3} + \\frac{1}{2}z^{2} \\right\\rbrack_{0}^{2} = \\frac{14\\pi}{3}.$$</p>\n<p>故 $\\bar{z} = \\frac{14\\pi/3}{10\\pi/3} = \\frac{7}{5}$。形心 $(0,0,7/5)$。</p>",
+          "text": "（I）$\\overrightarrow{AB} = ( - 1,1,1)$，母线 $L:\\frac{x - 1}{- 1} = \\frac{y}{1} = \\frac{z}{1}$，即 $x_{0} = 1 - z,\\ y_{0} = z$。旋转半径平方 $x_{0}^{2} + y_{0}^{2} = (1 - z)^{2} + z^{2}$。故\n$$\\Sigma:\\ x^{2} + y^{2} = (1 - z)^{2} + z^{2} = 2z^{2} - 2z + 1.$$\n（II）截面圆半径平方 $r^{2} = 2z^{2} - 2z + 1$，$z \\in \\lbrack 0,2\\rbrack$。\n$$\\iiint_{\\Omega}^{}dv = \\int_{0}^{2}\\pi r^{2}dz = \\pi\\int_{0}^{2}\\left( 2z^{2} - 2z + 1 \\right)dz = \\pi\\left\\lbrack \\frac{2}{3}z^{3} - z^{2} + z \\right\\rbrack_{0}^{2} = \\frac{10\\pi}{3}.$$\n$$\\iiint_{\\Omega}^{}z\\, dv = \\int_{0}^{2}z \\cdot \\pi r^{2}dz = \\pi\\int_{0}^{2}\\left( 2z^{3} - 2z^{2} + z \\right)dz = \\pi\\left\\lbrack \\frac{1}{2}z^{4} - \\frac{2}{3}z^{3} + \\frac{1}{2}z^{2} \\right\\rbrack_{0}^{2} = \\frac{14\\pi}{3}.$$\n故 $\\bar{z} = \\frac{14\\pi/3}{10\\pi/3} = \\frac{7}{5}$。形心 $(0,0,7/5)$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>（I）母线 $x_{0} = 1 - z,\\ y_{0} = z$，旋转曲面\n$x^{2} + y^{2} = (1 - z)^{2} + z^{2}$。（3 分） （II）由对称性\n$\\bar{x} = \\bar{y} = 0$；截面法算得\n$\\iiint dv = 10\\pi/3$，$\\iiint zdv = 14\\pi/3$，故 $\\bar{z} = 7/5$。形心\n$(0,0,7/5)$。（10 分）</p>",
+          "text": "（I）母线 $x_{0} = 1 - z,\\ y_{0} = z$，旋转曲面 $x^{2} + y^{2} = (1 - z)^{2} + z^{2}$。（3 分） （II）由对称性 $\\bar{x} = \\bar{y} = 0$；截面法算得 $\\iiint dv = 10\\pi/3$，$\\iiint zdv = 14\\pi/3$，故 $\\bar{z} = 7/5$。形心 $(0,0,7/5)$。（10 分）"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>本题立体不是圆台（母线不平行 $z$\n轴），截面半径随 $z$\n变化，必须积分而不能套圆台公式。形心坐标公式本质是加权平均，$\\bar{z}$ 即\n$\\Omega$ 对 $xy$ 平面的矩除以体积。</p>",
+          "text": "本题立体不是圆台（母线不平行 $z$ 轴），截面半径随 $z$ 变化，必须积分而不能套圆台公式。形心坐标公式本质是加权平均，$\\bar{z}$ 即 $\\Omega$ 对 $xy$ 平面的矩除以体积。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是旋转曲面方程写错（忘了\n$x_{0} = 1 - z$）；二是截面法用成柱坐标累次积分导致繁琐；三是积分</p>\n<p>$$\\int_{0}^{2}\\left( 2z^{2} - 2z + 1 \\right)dz$$</p>\n<p>原函数算错。</p>",
+          "text": "一是旋转曲面方程写错（忘了 $x_{0} = 1 - z$）；二是截面法用成柱坐标累次积分导致繁琐；三是积分\n$$\\int_{0}^{2}\\left( 2z^{2} - 2z + 1 \\right)dz$$\n原函数算错。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>绕 $z$ 轴旋转：$x^{2} + y^{2}$ = 母线到 $z$\n轴距离平方；对称立体形心只需算一个坐标；截面法优先。</p>",
+          "text": "绕 $z$ 轴旋转：$x^{2} + y^{2}$ = 母线到 $z$ 轴距离平方；对称立体形心只需算一个坐标；截面法优先。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查旋转曲面方程与重积分求形心，属于高等数学\"重积分、曲线曲面积分\"综合题。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [
+        "data/math/media/img-8c38a5ceab6b.png"
+      ],
+      "category": {
+        "key": "gaoshu",
+        "label": "高等数学"
+      },
+      "origin": "source",
+      "content_hash": "3d4cffede24d8b50a779b926a2f84a134fe0c36bcdb2cef6c0117354c402faeb",
+      "schema_version": "1.0.0",
+      "source_hash": "355d3a744b396f1e3193ac6a48f77dcc9642d389607c663df5c75d8476075a41",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-19",
+        "year": 2013,
+        "num": 19
+      }
+    },
+    {
+      "id": "math-2013-20",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 20,
+      "type": "essay",
+      "stem": "（本题满分 11 分）设\n$$\\mathbf{A} = \\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix},\\ \\mathbf{B} = \\begin{pmatrix} 0 & 1 \\\\ 1 & b \\end{pmatrix}$$\n当 $a,b$ 为何值时，存在矩阵 $\\mathbf{C}$ 使得 $\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} = \\mathbf{B}$，并求所有矩阵 $\\mathbf{C}$。",
+      "options": [],
+      "answer": "当 $a = - 1,\\ b = 0$ 时存在；\n$$\\mathbf{C} = \\begin{pmatrix} c_{1} + c_{2} + 1 & - c_{1} \\\\ c_{1} & c_{2} \\end{pmatrix}$$\n（$c_{1},c_{2}$ 为任意常数）。",
+      "score": 11,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 11 分）设</p>\n<p>$$\\mathbf{A} = \\begin{pmatrix}\n1 & a \\\\\n1 & 0\n\\end{pmatrix},\\ \\mathbf{B} = \\begin{pmatrix}\n0 & 1 \\\\\n1 & b\n\\end{pmatrix}$$</p>\n<p>当 $a,b$ 为何值时，存在矩阵 $\\mathbf{C}$ 使得\n$\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} = \\mathbf{B}$，并求所有矩阵\n$\\mathbf{C}$。</p>",
+          "text": "（本题满分 11 分）设\n$$\\mathbf{A} = \\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix},\\ \\mathbf{B} = \\begin{pmatrix} 0 & 1 \\\\ 1 & b \\end{pmatrix}$$\n当 $a,b$ 为何值时，存在矩阵 $\\mathbf{C}$ 使得 $\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} = \\mathbf{B}$，并求所有矩阵 $\\mathbf{C}$。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>当 $a = - 1,\\ b = 0$\n时存在；</p>\n<p>$$\\mathbf{C} = \\begin{pmatrix}\nc_{1} + c_{2} + 1 & - c_{1} \\\\\nc_{1} & c_{2}\n\\end{pmatrix}$$</p>\n<p>（$c_{1},c_{2}$ 为任意常数）。</p>",
+          "text": "当 $a = - 1,\\ b = 0$ 时存在；\n$$\\mathbf{C} = \\begin{pmatrix} c_{1} + c_{2} + 1 & - c_{1} \\\\ c_{1} & c_{2} \\end{pmatrix}$$\n（$c_{1},c_{2}$ 为任意常数）。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查矩阵方程转化为线性方程组求解，属于线性代数\"线性方程组\"综合大题。</p>",
+          "text": "本题考查矩阵方程转化为线性方程组求解，属于线性代数\"线性方程组\"综合大题。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>$\\mathbf{C}$ 是 2 阶矩阵，设</p>\n<p>$$\\mathbf{C} = \\begin{pmatrix}\nx_{1} & x_{2} \\\\\nx_{3} & x_{4}\n\\end{pmatrix}$$</p>\n<p>则\n$\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} = \\mathbf{B}$ 是关于\n$x_{1},x_{2},x_{3},x_{4}$\n的一个线性方程组。有解的充要条件是系数矩阵与增广矩阵同秩。解出 $a,b$\n后再求通解。</p>",
+          "text": "$\\mathbf{C}$ 是 2 阶矩阵，设\n$$\\mathbf{C} = \\begin{pmatrix} x_{1} & x_{2} \\\\ x_{3} & x_{4} \\end{pmatrix}$$\n则 $\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} = \\mathbf{B}$ 是关于 $x_{1},x_{2},x_{3},x_{4}$ 的一个线性方程组。有解的充要条件是系数矩阵与增广矩阵同秩。解出 $a,b$ 后再求通解。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>计算：</p>\n<p>$$\\mathbf{A}\\mathbf{C} = \\begin{pmatrix}\n1 & a \\\\\n1 & 0\n\\end{pmatrix}\\begin{pmatrix}\nx_{1} & x_{2} \\\\\nx_{3} & x_{4}\n\\end{pmatrix} = \\begin{pmatrix}\nx_{1} + ax_{3} & x_{2} + ax_{4} \\\\\nx_{1} & x_{2}\n\\end{pmatrix},$$</p>\n<p>$$\\mathbf{C}\\mathbf{A} = \\begin{pmatrix}\nx_{1} & x_{2} \\\\\nx_{3} & x_{4}\n\\end{pmatrix}\\begin{pmatrix}\n1 & a \\\\\n1 & 0\n\\end{pmatrix} = \\begin{pmatrix}\nx_{1} + x_{2} & ax_{1} \\\\\nx_{3} + x_{4} & ax_{3}\n\\end{pmatrix}.$$</p>\n<p>相减并等于</p>\n<p>$$\\mathbf{B} = \\begin{pmatrix}\n0 & 1 \\\\\n1 & b\n\\end{pmatrix}$$</p>\n<p>对应四个方程：</p>\n<p>$$\\left\\{ \\begin{matrix}\n - x_{2} + ax_{3} = 0 \\\\\n - ax_{1} + x_{2} + ax_{4} = 1 \\\\\nx_{1} - x_{3} - x_{4} = 1 \\\\\nx_{2} - ax_{3} = b\n\\end{matrix} \\right.\\ $$</p>\n<p>写出增广矩阵并初等行变换：</p>\n<p>$$\\overline{\\mathbf{A}} = \\begin{pmatrix}\n0 & - 1 & a & 0 & 0 \\\\\n - a & 1 & 0 & a & 1 \\\\\n1 & 0 & - 1 & - 1 & 1 \\\\\n0 & 1 & - a & 0 & b\n\\end{pmatrix} \\rightarrow \\begin{pmatrix}\n1 & 0 & - 1 & - 1 & 1 \\\\\n0 & 1 & - a & 0 & 0 \\\\\n0 & 0 & 0 & 0 & b \\\\\n0 & 0 & 0 & 0 & 1 + a\n\\end{pmatrix}.$$</p>\n<p>方程组有解 $\\Leftrightarrow$ 最后两个方程 $0 = b$ 与 $0 = 1 + a$\n同时成立，即 $a = - 1,\\ b = 0$。</p>\n<p>代回 $a = - 1$：系数矩阵秩为 $2$，四个未知量，通解含 $4 - 2 = 2$\n个自由变量。解得</p>\n<p>$$\\mathbf{C} = \\begin{pmatrix}\nc_{1} + c_{2} + 1 & - c_{1} \\\\\nc_{1} & c_{2}\n\\end{pmatrix},\\quad\\quad c_{1},c_{2} \\in \\mathbb{R}.$$</p>",
+          "text": "计算：\n$$\\mathbf{A}\\mathbf{C} = \\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix}\\begin{pmatrix} x_{1} & x_{2} \\\\ x_{3} & x_{4} \\end{pmatrix} = \\begin{pmatrix} x_{1} + ax_{3} & x_{2} + ax_{4} \\\\ x_{1} & x_{2} \\end{pmatrix},$$\n$$\\mathbf{C}\\mathbf{A} = \\begin{pmatrix} x_{1} & x_{2} \\\\ x_{3} & x_{4} \\end{pmatrix}\\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix} = \\begin{pmatrix} x_{1} + x_{2} & ax_{1} \\\\ x_{3} + x_{4} & ax_{3} \\end{pmatrix}.$$\n相减并等于\n$$\\mathbf{B} = \\begin{pmatrix} 0 & 1 \\\\ 1 & b \\end{pmatrix}$$\n对应四个方程：\n$$\\left\\{ \\begin{matrix} - x_{2} + ax_{3} = 0 \\\\ - ax_{1} + x_{2} + ax_{4} = 1 \\\\ x_{1} - x_{3} - x_{4} = 1 \\\\ x_{2} - ax_{3} = b \\end{matrix} \\right.\\ $$\n写出增广矩阵并初等行变换：\n$$\\overline{\\mathbf{A}} = \\begin{pmatrix} 0 & - 1 & a & 0 & 0 \\\\ - a & 1 & 0 & a & 1 \\\\ 1 & 0 & - 1 & - 1 & 1 \\\\ 0 & 1 & - a & 0 & b \\end{pmatrix} \\rightarrow \\begin{pmatrix} 1 & 0 & - 1 & - 1 & 1 \\\\ 0 & 1 & - a & 0 & 0 \\\\ 0 & 0 & 0 & 0 & b \\\\ 0 & 0 & 0 & 0 & 1 + a \\end{pmatrix}.$$\n方程组有解 $\\Leftrightarrow$ 最后两个方程 $0 = b$ 与 $0 = 1 + a$ 同时成立，即 $a = - 1,\\ b = 0$。\n代回 $a = - 1$：系数矩阵秩为 $2$，四个未知量，通解含 $4 - 2 = 2$ 个自由变量。解得\n$$\\mathbf{C} = \\begin{pmatrix} c_{1} + c_{2} + 1 & - c_{1} \\\\ c_{1} & c_{2} \\end{pmatrix},\\quad\\quad c_{1},c_{2} \\in \\mathbb{R}.$$"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>设</p>\n<p>$$\\mathbf{C} = \\begin{pmatrix}\nx_{1} & x_{2} \\\\\nx_{3} & x_{4}\n\\end{pmatrix}$$</p>\n<p>展开\n$\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} = \\mathbf{B}$\n得四元线性方程组。（3 分）对增广矩阵行变换得有解条件\n$a = - 1,\\ b = 0$。（7 分）此时通解为</p>\n<p>$$\\mathbf{C} = \\begin{pmatrix}\nc_{1} + c_{2} + 1 & - c_{1} \\\\\nc_{1} & c_{2}\n\\end{pmatrix}$$</p>\n<p>。（11 分）</p>",
+          "text": "设\n$$\\mathbf{C} = \\begin{pmatrix} x_{1} & x_{2} \\\\ x_{3} & x_{4} \\end{pmatrix}$$\n展开 $\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} = \\mathbf{B}$ 得四元线性方程组。（3 分）对增广矩阵行变换得有解条件 $a = - 1,\\ b = 0$。（7 分）此时通解为\n$$\\mathbf{C} = \\begin{pmatrix} c_{1} + c_{2} + 1 & - c_{1} \\\\ c_{1} & c_{2} \\end{pmatrix}$$\n。（11 分）"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>也可从迹的角度预判：</p>\n<p>$$tr\\left( \\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} \\right) = 0$$</p>\n<p>故\n$tr\\left( \\mathbf{B} \\right) = 0$，即\n$0 + b = 0 \\Rightarrow b = 0$，与我们结果一致------这是快速检验。本题易错在展开\n$\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A}$ 时 $a$ 的位置。</p>",
+          "text": "也可从迹的角度预判：\n$$tr\\left( \\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A} \\right) = 0$$\n故 $tr\\left( \\mathbf{B} \\right) = 0$，即 $0 + b = 0 \\Rightarrow b = 0$，与我们结果一致------这是快速检验。本题易错在展开 $\\mathbf{A}\\mathbf{C} - \\mathbf{C}\\mathbf{A}$ 时 $a$ 的位置。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是矩阵乘法展开时行乘列对应错位；二是行变换算错；三是求出 $a,b$\n后忘记写出通解。</p>",
+          "text": "一是矩阵乘法展开时行乘列对应错位；二是行变换算错；三是求出 $a,b$ 后忘记写出通解。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>矩阵方程\n$\\mathbf{A}\\mathbf{X} - \\mathbf{X}\\mathbf{B} = \\mathbf{C}$ 类：设\n$\\mathbf{X}$ 未知元，展开成线性方程组，用秩判别有解条件，再求通解。</p>",
+          "text": "矩阵方程 $\\mathbf{A}\\mathbf{X} - \\mathbf{X}\\mathbf{B} = \\mathbf{C}$ 类：设 $\\mathbf{X}$ 未知元，展开成线性方程组，用秩判别有解条件，再求通解。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查矩阵方程转化为线性方程组求解，属于线性代数\"线性方程组\"综合大题。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "xiandai",
+        "label": "线性代数"
+      },
+      "origin": "source",
+      "content_hash": "88ddfb4a49be67d866265273d1a21644aa158f0e9986d7bb99122e0272426c15",
+      "schema_version": "1.0.0",
+      "source_hash": "31ba21fcac2038c0350e40e8c1d2e173b2dbc9f379d0f1df546b699915e05c36",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-20",
+        "year": 2013,
+        "num": 20
+      }
+    },
+    {
+      "id": "math-2013-21",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 21,
+      "type": "essay",
+      "stem": "（本题满分 11 分）设二次型\n$$f\\left( x_{1},x_{2},x_{3} \\right) = 2\\left( a_{1}x_{1} + a_{2}x_{2} + a_{3}x_{3} \\right)^{2} + \\left( b_{1}x_{1} + b_{2}x_{2} + b_{3}x_{3} \\right)^{2}\\quad \\text{。记}\\quad \\mathbf{\\alpha} = \\begin{pmatrix} a_{1} \\\\ a_{2} \\\\ a_{3} \\end{pmatrix},\\ \\mathbf{\\beta} = \\begin{pmatrix} b_{1} \\\\ b_{2} \\\\ b_{3} \\end{pmatrix}$$\n。（I）证明二次型 $f$ 对应的矩阵为\n$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$\n；（II）若 $\\mathbf{\\alpha},\\mathbf{\\beta}$ 正交且为单位向量，证明 $f$ 在正交变换下的标准形为 $2y_{1}^{2} + y_{2}^{2}$。",
+      "options": [],
+      "answer": "（I）（II）均证毕。",
+      "score": 11,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 11 分）设二次型</p>\n<p>$$f\\left( x_{1},x_{2},x_{3} \\right) = 2\\left( a_{1}x_{1} + a_{2}x_{2} + a_{3}x_{3} \\right)^{2} + \\left( b_{1}x_{1} + b_{2}x_{2} + b_{3}x_{3} \\right)^{2}\\quad \\text{。记}\\quad \\mathbf{\\alpha} = \\begin{pmatrix}\na_{1} \\\\\na_{2} \\\\\na_{3}\n\\end{pmatrix},\\ \\mathbf{\\beta} = \\begin{pmatrix}\nb_{1} \\\\\nb_{2} \\\\\nb_{3}\n\\end{pmatrix}$$</p>\n<p>。（I）证明二次型 $f$ 对应的矩阵为</p>\n<p>$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$</p>\n<p>；（II）若\n$\\mathbf{\\alpha},\\mathbf{\\beta}$ 正交且为单位向量，证明 $f$\n在正交变换下的标准形为 $2y_{1}^{2} + y_{2}^{2}$。</p>",
+          "text": "（本题满分 11 分）设二次型\n$$f\\left( x_{1},x_{2},x_{3} \\right) = 2\\left( a_{1}x_{1} + a_{2}x_{2} + a_{3}x_{3} \\right)^{2} + \\left( b_{1}x_{1} + b_{2}x_{2} + b_{3}x_{3} \\right)^{2}\\quad \\text{。记}\\quad \\mathbf{\\alpha} = \\begin{pmatrix} a_{1} \\\\ a_{2} \\\\ a_{3} \\end{pmatrix},\\ \\mathbf{\\beta} = \\begin{pmatrix} b_{1} \\\\ b_{2} \\\\ b_{3} \\end{pmatrix}$$\n。（I）证明二次型 $f$ 对应的矩阵为\n$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$\n；（II）若 $\\mathbf{\\alpha},\\mathbf{\\beta}$ 正交且为单位向量，证明 $f$ 在正交变换下的标准形为 $2y_{1}^{2} + y_{2}^{2}$。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>（I）（II）均证毕。</p>",
+          "text": "（I）（II）均证毕。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查二次型的矩阵表示与正交变换标准形（特征值），属于线性代数\"二次型\"考点。</p>",
+          "text": "本题考查二次型的矩阵表示与正交变换标准形（特征值），属于线性代数\"二次型\"考点。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>（I）把\n$\\left( a_{1}x_{1} + a_{2}x_{2} + a_{3}x_{3} \\right)$ 写成\n$\\mathbf{\\alpha}^{T}\\mathbf{x}$，它的平方就是</p>\n<p>$$\\left( \\mathbf{\\alpha}^{T}\\mathbf{x} \\right)^{2} = \\mathbf{x}^{T}\\left( \\mathbf{\\alpha}\\mathbf{\\alpha}^{T} \\right)\\mathbf{x}$$</p>\n<p>。同理\n$\\mathbf{\\beta}$ 项为</p>\n<p>$$\\mathbf{x}^{T}\\left( \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right)\\mathbf{x}$$</p>\n<p>。合并即得矩阵。</p>\n<p>（II）正交变换标准形的系数就是矩阵</p>\n<p>$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$</p>\n<p>的非零特征值。由于 $\\mathbf{\\alpha},\\mathbf{\\beta}$ 正交单位向量，可验证</p>\n<p>$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$</p>\n<p>在 $\\mathbf{\\alpha}$ 方向特征值为 $2$、在 $\\mathbf{\\beta}$ 方向为\n$1$、在垂直方向为 $0$。</p>",
+          "text": "（I）把 $\\left( a_{1}x_{1} + a_{2}x_{2} + a_{3}x_{3} \\right)$ 写成 $\\mathbf{\\alpha}^{T}\\mathbf{x}$，它的平方就是\n$$\\left( \\mathbf{\\alpha}^{T}\\mathbf{x} \\right)^{2} = \\mathbf{x}^{T}\\left( \\mathbf{\\alpha}\\mathbf{\\alpha}^{T} \\right)\\mathbf{x}$$\n。同理 $\\mathbf{\\beta}$ 项为\n$$\\mathbf{x}^{T}\\left( \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right)\\mathbf{x}$$\n。合并即得矩阵。\n（II）正交变换标准形的系数就是矩阵\n$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$\n的非零特征值。由于 $\\mathbf{\\alpha},\\mathbf{\\beta}$ 正交单位向量，可验证\n$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$\n在 $\\mathbf{\\alpha}$ 方向特征值为 $2$、在 $\\mathbf{\\beta}$ 方向为 $1$、在垂直方向为 $0$。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>（I）记\n$\\mathbf{x} = \\left( x_{1},x_{2},x_{3} \\right)^{T}$，则</p>\n<p>$$a_{1}x_{1} + a_{2}x_{2} + a_{3}x_{3} = \\mathbf{\\alpha}^{T}\\mathbf{x} = \\mathbf{x}^{T}\\mathbf{\\alpha}.$$</p>\n<p>故</p>\n<p>$$2\\left( \\mathbf{\\alpha}^{T}\\mathbf{x} \\right)^{2} = 2\\mathbf{x}^{T}\\left( \\mathbf{\\alpha}\\mathbf{\\alpha}^{T} \\right)\\mathbf{x},\\quad\\quad\\left( \\mathbf{\\beta}^{T}\\mathbf{x} \\right)^{2} = \\mathbf{x}^{T}\\left( \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right)\\mathbf{x}.$$</p>\n<p>相加</p>\n<p>$$f = \\mathbf{x}^{T}\\left( 2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right)\\mathbf{x}$$</p>\n<p>且该矩阵为实对称，即为二次型矩阵。</p>\n<p>（II）由 $\\mathbf{\\alpha},\\mathbf{\\beta}$\n正交单位：</p>\n<p>$$\\mathbf{\\alpha}^{T}\\mathbf{\\alpha} = 1,\\ \\mathbf{\\beta}^{T}\\mathbf{\\beta} = 1,\\ \\mathbf{\\alpha}^{T}\\mathbf{\\beta} = 0$$</p>\n<p>。</p>\n<p>$$\\left( 2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right)\\mathbf{\\alpha} = 2\\mathbf{\\alpha}\\left( \\mathbf{\\alpha}^{T}\\mathbf{\\alpha} \\right) + \\mathbf{\\beta}\\left( \\mathbf{\\beta}^{T}\\mathbf{\\alpha} \\right) = 2\\mathbf{\\alpha},$$</p>\n<p>即</p>\n<p>$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$</p>\n<p>有特征值 $2$（特征向量 $\\mathbf{\\alpha}$）。同理作用在 $\\mathbf{\\beta}$\n上得特征值 $1$。又</p>\n<p>$$r\\left( \\mathbf{\\alpha}\\mathbf{\\alpha}^{T} \\right) = 1,\\ r\\left( \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right) = 1$$</p>\n<p>故矩阵秩\n$\\leq 2$，第三个特征值为 $0$。三个特征值为 $2,1,0$，正交变换标准形即\n$2y_{1}^{2} + y_{2}^{2}$。</p>",
+          "text": "（I）记 $\\mathbf{x} = \\left( x_{1},x_{2},x_{3} \\right)^{T}$，则\n$$a_{1}x_{1} + a_{2}x_{2} + a_{3}x_{3} = \\mathbf{\\alpha}^{T}\\mathbf{x} = \\mathbf{x}^{T}\\mathbf{\\alpha}.$$\n故\n$$2\\left( \\mathbf{\\alpha}^{T}\\mathbf{x} \\right)^{2} = 2\\mathbf{x}^{T}\\left( \\mathbf{\\alpha}\\mathbf{\\alpha}^{T} \\right)\\mathbf{x},\\quad\\quad\\left( \\mathbf{\\beta}^{T}\\mathbf{x} \\right)^{2} = \\mathbf{x}^{T}\\left( \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right)\\mathbf{x}.$$\n相加\n$$f = \\mathbf{x}^{T}\\left( 2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right)\\mathbf{x}$$\n且该矩阵为实对称，即为二次型矩阵。\n（II）由 $\\mathbf{\\alpha},\\mathbf{\\beta}$ 正交单位：\n$$\\mathbf{\\alpha}^{T}\\mathbf{\\alpha} = 1,\\ \\mathbf{\\beta}^{T}\\mathbf{\\beta} = 1,\\ \\mathbf{\\alpha}^{T}\\mathbf{\\beta} = 0$$\n。\n$$\\left( 2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right)\\mathbf{\\alpha} = 2\\mathbf{\\alpha}\\left( \\mathbf{\\alpha}^{T}\\mathbf{\\alpha} \\right) + \\mathbf{\\beta}\\left( \\mathbf{\\beta}^{T}\\mathbf{\\alpha} \\right) = 2\\mathbf{\\alpha},$$\n即\n$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$\n有特征值 $2$（特征向量 $\\mathbf{\\alpha}$）。同理作用在 $\\mathbf{\\beta}$ 上得特征值 $1$。又\n$$r\\left( \\mathbf{\\alpha}\\mathbf{\\alpha}^{T} \\right) = 1,\\ r\\left( \\mathbf{\\beta}\\mathbf{\\beta}^{T} \\right) = 1$$\n故矩阵秩 $\\leq 2$，第三个特征值为 $0$。三个特征值为 $2,1,0$，正交变换标准形即 $2y_{1}^{2} + y_{2}^{2}$。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>（I）展开即证。（4 分）（II）验证</p>\n<p>$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$</p>\n<p>在 $\\mathbf{\\alpha},\\mathbf{\\beta}$ 上的特征值分别为 $2,1$，由秩\n$\\leq 2$ 知第三特征值为 $0$，标准形 $2y_{1}^{2} + y_{2}^{2}$。（11 分）</p>",
+          "text": "（I）展开即证。（4 分）（II）验证\n$$2\\mathbf{\\alpha}\\mathbf{\\alpha}^{T} + \\mathbf{\\beta}\\mathbf{\\beta}^{T}$$\n在 $\\mathbf{\\alpha},\\mathbf{\\beta}$ 上的特征值分别为 $2,1$，由秩 $\\leq 2$ 知第三特征值为 $0$，标准形 $2y_{1}^{2} + y_{2}^{2}$。（11 分）"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>外积矩阵 $\\mathbf{\\alpha}\\mathbf{\\alpha}^{T}$\n的秩为 $1$、唯一非零特征值为\n$\\mathbf{\\alpha}^{T}\\mathbf{\\alpha}$，这是秩 1\n矩阵的常用结论。本题是它的两次叠加。</p>",
+          "text": "外积矩阵 $\\mathbf{\\alpha}\\mathbf{\\alpha}^{T}$ 的秩为 $1$、唯一非零特征值为 $\\mathbf{\\alpha}^{T}\\mathbf{\\alpha}$，这是秩 1 矩阵的常用结论。本题是它的两次叠加。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是把 $\\mathbf{\\alpha}\\mathbf{\\alpha}^{T}$ 与\n$\\mathbf{\\alpha}^{T}\\mathbf{\\alpha}$（数）混淆；二是证明特征值时漏了\"第三特征值为\n$0$\"的说明。</p>",
+          "text": "一是把 $\\mathbf{\\alpha}\\mathbf{\\alpha}^{T}$ 与 $\\mathbf{\\alpha}^{T}\\mathbf{\\alpha}$（数）混淆；二是证明特征值时漏了\"第三特征值为 $0$\"的说明。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>平方和形式的二次型 ⇔ 外积矩阵之和；秩 1 矩阵\n$\\mathbf{\\alpha}\\mathbf{\\alpha}^{T}$ 的特征值为\n$\\parallel \\mathbf{\\alpha} \\parallel^{2}$ 与一堆 $0$。</p>",
+          "text": "平方和形式的二次型 ⇔ 外积矩阵之和；秩 1 矩阵 $\\mathbf{\\alpha}\\mathbf{\\alpha}^{T}$ 的特征值为 $\\parallel \\mathbf{\\alpha} \\parallel^{2}$ 与一堆 $0$。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查二次型的矩阵表示与正交变换标准形（特征值），属于线性代数\"二次型\"考点。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "xiandai",
+        "label": "线性代数"
+      },
+      "origin": "source",
+      "content_hash": "fe61b5bc2fcee31a795a77e6455bc238de8dd44491d0513edfa7ec3bff85ce89",
+      "schema_version": "1.0.0",
+      "source_hash": "c02c5fbd058576f4857c396358d4e53273eaf3205d3c8714fab33abbfe3f2fbd",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-21",
+        "year": 2013,
+        "num": 21
+      }
+    },
+    {
+      "id": "math-2013-22",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 22,
+      "type": "essay",
+      "stem": "（本题满分 11 分）设随机变量 $X$ 的概率密度为\n$$f(x) = \\left\\{ \\begin{matrix} \\frac{1}{9}x^{2}, & 0 < x < 3 \\\\ 0, & \\text{其他} \\end{matrix} \\right.\\ $$\n。令随机变量\n$$Y = \\left\\{ \\begin{matrix} 2, & X \\leq 1 \\\\ X, & 1 < X < 2 \\\\ 1, & X \\geq 2 \\end{matrix} \\right.\\ $$\n。（I）求 $Y$ 的分布函数；（II）求概率 $P\\left\\{ X \\leq Y \\right\\}$。",
+      "options": [],
+      "answer": "（I）\n$$F_{Y}(y) = \\left\\{ \\begin{matrix} 0, & y < 1 \\\\ \\frac{1}{27}\\left( y^{3} + 18 \\right), & 1 \\leq y < 2 \\\\ 1, & y \\geq 2 \\end{matrix} \\right.\\ $$\n；（II）$P\\left\\{ X \\leq Y \\right\\} = \\frac{8}{27}$。",
+      "score": 11,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 11 分）设随机变量 $X$ 的概率密度为</p>\n<p>$$f(x) = \\left\\{ \\begin{matrix}\n\\frac{1}{9}x^{2}, & 0 < x < 3 \\\\\n0, & \\text{其他}\n\\end{matrix} \\right.\\ $$</p>\n<p>。令随机变量</p>\n<p>$$Y = \\left\\{ \\begin{matrix}\n2, & X \\leq 1 \\\\\nX, & 1 < X < 2 \\\\\n1, & X \\geq 2\n\\end{matrix} \\right.\\ $$</p>\n<p>。（I）求 $Y$ 的分布函数；（II）求概率\n$P\\left\\{ X \\leq Y \\right\\}$。</p>",
+          "text": "（本题满分 11 分）设随机变量 $X$ 的概率密度为\n$$f(x) = \\left\\{ \\begin{matrix} \\frac{1}{9}x^{2}, & 0 < x < 3 \\\\ 0, & \\text{其他} \\end{matrix} \\right.\\ $$\n。令随机变量\n$$Y = \\left\\{ \\begin{matrix} 2, & X \\leq 1 \\\\ X, & 1 < X < 2 \\\\ 1, & X \\geq 2 \\end{matrix} \\right.\\ $$\n。（I）求 $Y$ 的分布函数；（II）求概率 $P\\left\\{ X \\leq Y \\right\\}$。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>（I）</p>\n<p>$$F_{Y}(y) = \\left\\{ \\begin{matrix}\n0, & y < 1 \\\\\n\\frac{1}{27}\\left( y^{3} + 18 \\right), & 1 \\leq y < 2 \\\\\n1, & y \\geq 2\n\\end{matrix} \\right.\\ $$</p>\n<p>；（II）$P\\left\\{ X \\leq Y \\right\\} = \\frac{8}{27}$。</p>",
+          "text": "（I）\n$$F_{Y}(y) = \\left\\{ \\begin{matrix} 0, & y < 1 \\\\ \\frac{1}{27}\\left( y^{3} + 18 \\right), & 1 \\leq y < 2 \\\\ 1, & y \\geq 2 \\end{matrix} \\right.\\ $$\n；（II）$P\\left\\{ X \\leq Y \\right\\} = \\frac{8}{27}$。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查离散与连续混合型随机变量函数的分布函数，属于概率论\"随机变量及其分布\"考点。</p>",
+          "text": "本题考查离散与连续混合型随机变量函数的分布函数，属于概率论\"随机变量及其分布\"考点。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>$Y$ 是分段函数：$X \\leq 1$ 时\n$Y = 2$；$1 < X < 2$ 时 $Y = X$；$X \\geq 2$ 时 $Y = 1$。$Y$\n既有连续段（中间）又有跳跃点（$y = 1,y = 2$ 处有集中概率）。求分布函数\n$F_{Y}(y) = P\\left\\{ Y \\leq y \\right\\}$ 要按 $y$ 分段讨论。</p>",
+          "text": "$Y$ 是分段函数：$X \\leq 1$ 时 $Y = 2$；$1 < X < 2$ 时 $Y = X$；$X \\geq 2$ 时 $Y = 1$。$Y$ 既有连续段（中间）又有跳跃点（$y = 1,y = 2$ 处有集中概率）。求分布函数 $F_{Y}(y) = P\\left\\{ Y \\leq y \\right\\}$ 要按 $y$ 分段讨论。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>（I）先算 $X$ 的有关概率：$f(x) = \\frac{x^{2}}{9}$ 在\n$(0,3)$。</p>\n<ul>\n<li>$y < 1$：$Y$ 的最小取值是 $1$，$F_{Y}(y) = 0$。</li>\n<li>$y \\geq 2$：$Y$ 的最大取值是 $2$，$F_{Y}(y) = 1$。</li>\n<li>$1 \\leq y < 2$：$Y \\leq y$ 包含两种情况------$Y = 1$（即\n    $X \\geq 2$）与 $1 < Y \\leq y$（即 $1 < X \\leq y$）：</li>\n</ul>\n<p>$$F_{Y}(y) = P\\left\\{ X \\geq 2 \\right\\} + P\\left\\{ 1 < X \\leq y \\right\\} = \\int_{2}^{3}\\frac{x^{2}}{9}dx + \\int_{1}^{y}\\frac{x^{2}}{9}dx = \\frac{1}{27}\\left( y^{3} + 18 \\right).$$</p>\n<p>（II）把事件 $X \\leq Y$ 按 $X$ 的三段拆开：</p>\n<p>$$P\\left\\{ X \\leq Y \\right\\} = P\\left\\{ X \\leq 1 \\right\\} + P\\left\\{ 1 < X < 2 \\right\\} + P\\left\\{ X \\geq 2\\ \\text{且 }X \\leq Y \\right\\}.$$</p>\n<p>注意 $X \\geq 2$ 时 $Y = 1$，此时 $X \\leq Y = 1$\n不可能发生（$X \\geq 2 > 1$），故该段贡献 $0$。而 $X \\leq 1$ 时 $Y = 2$\n必满足 $X \\leq Y$；$1 < X < 2$ 时 $Y = X$ 必满足 $X \\leq Y$。所以</p>\n<p>$$P\\left\\{ X \\leq Y \\right\\} = P\\left\\{ X < 2 \\right\\} = \\int_{0}^{2}\\frac{x^{2}}{9}dx = \\frac{8}{27}.$$</p>",
+          "text": "（I）先算 $X$ 的有关概率：$f(x) = \\frac{x^{2}}{9}$ 在 $(0,3)$。\n$y < 1$：$Y$ 的最小取值是 $1$，$F_{Y}(y) = 0$。\n$y \\geq 2$：$Y$ 的最大取值是 $2$，$F_{Y}(y) = 1$。\n$1 \\leq y < 2$：$Y \\leq y$ 包含两种情况------$Y = 1$（即 $X \\geq 2$）与 $1 < Y \\leq y$（即 $1 < X \\leq y$）：\n$$F_{Y}(y) = P\\left\\{ X \\geq 2 \\right\\} + P\\left\\{ 1 < X \\leq y \\right\\} = \\int_{2}^{3}\\frac{x^{2}}{9}dx + \\int_{1}^{y}\\frac{x^{2}}{9}dx = \\frac{1}{27}\\left( y^{3} + 18 \\right).$$\n（II）把事件 $X \\leq Y$ 按 $X$ 的三段拆开：\n$$P\\left\\{ X \\leq Y \\right\\} = P\\left\\{ X \\leq 1 \\right\\} + P\\left\\{ 1 < X < 2 \\right\\} + P\\left\\{ X \\geq 2\\ \\text{且 }X \\leq Y \\right\\}.$$\n注意 $X \\geq 2$ 时 $Y = 1$，此时 $X \\leq Y = 1$ 不可能发生（$X \\geq 2 > 1$），故该段贡献 $0$。而 $X \\leq 1$ 时 $Y = 2$ 必满足 $X \\leq Y$；$1 < X < 2$ 时 $Y = X$ 必满足 $X \\leq Y$。所以\n$$P\\left\\{ X \\leq Y \\right\\} = P\\left\\{ X < 2 \\right\\} = \\int_{0}^{2}\\frac{x^{2}}{9}dx = \\frac{8}{27}.$$"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>（I）分段得 $F_{Y}(y)$ 如上。（6 分）\n（II）</p>\n<p>$$P\\left\\{ X \\leq Y \\right\\} = P\\left\\{ X < 2 \\right\\} = \\int_{0}^{2}\\frac{x^{2}}{9}dx = \\frac{8}{27}$$</p>\n<p>。（11\n分）</p>",
+          "text": "（I）分段得 $F_{Y}(y)$ 如上。（6 分） （II）\n$$P\\left\\{ X \\leq Y \\right\\} = P\\left\\{ X < 2 \\right\\} = \\int_{0}^{2}\\frac{x^{2}}{9}dx = \\frac{8}{27}$$\n。（11 分）"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>本题陷阱在于 $X \\geq 2$ 时 $Y = 1$，事件\n$X \\leq Y$ 在该段空集。分段函数求分布函数务必逐段画数轴、对号入座。</p>",
+          "text": "本题陷阱在于 $X \\geq 2$ 时 $Y = 1$，事件 $X \\leq Y$ 在该段空集。分段函数求分布函数务必逐段画数轴、对号入座。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是忘记 $Y$ 在 $y = 1,2$\n处是集中概率（跳跃）；二是（II）中误把 $X \\geq 2$ 段也算入。</p>",
+          "text": "一是忘记 $Y$ 在 $y = 1,2$ 处是集中概率（跳跃）；二是（II）中误把 $X \\geq 2$ 段也算入。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>分段函数 $Y = g(X)$ 的分布函数：按 $y$ 的临界值（本题\n$1,2$）分段，每段把 $\\left\\{ Y \\leq y \\right\\}$ 翻译成关于 $X$\n的事件再积分。</p>",
+          "text": "分段函数 $Y = g(X)$ 的分布函数：按 $y$ 的临界值（本题 $1,2$）分段，每段把 $\\left\\{ Y \\leq y \\right\\}$ 翻译成关于 $X$ 的事件再积分。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查离散与连续混合型随机变量函数的分布函数，属于概率论\"随机变量及其分布\"考点。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gailv",
+        "label": "概率论"
+      },
+      "origin": "source",
+      "content_hash": "c4aacb25c73055c26fd47c610e4727ceffbfe26bd06f045b53adf63a08a37472",
+      "schema_version": "1.0.0",
+      "source_hash": "5b1aa82a6618a355c9ff9b04f20f1a74392bc33090210513369115a11bb57e6b",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-22",
+        "year": 2013,
+        "num": 22
+      }
+    },
+    {
+      "id": "math-2013-23",
+      "subject": "math",
+      "year": 2013,
+      "paper": "数学（一）真题精讲",
+      "num": 23,
+      "type": "essay",
+      "stem": "（本题满分 11 分）设总体 $X$ 的概率密度为\n$$f(x;\\theta) = \\left\\{ \\begin{matrix} \\frac{\\theta^{2}}{x^{3}}e^{- \\frac{\\theta}{x}}, & x > 0 \\\\ 0, & \\text{其他} \\end{matrix} \\right.\\ $$\n其中 $\\theta > 0$ 为未知参数，$X_{1},\\cdots,X_{n}$ 为来自总体 $X$ 的简单随机样本。（I）求 $\\theta$ 的矩估计量；（II）求 $\\theta$ 的最大似然估计量。",
+      "options": [],
+      "answer": "（I）矩估计量 $\\widehat{\\theta} = \\bar{X}$；（II）最大似然估计量\n$$\\widehat{\\theta} = \\frac{2n}{\\sum_{i = 1}^{n}\\frac{1}{X_{i}}}$$\n。",
+      "score": 11,
+      "source_blocks": [
+        {
+          "role": "stem",
+          "class": "q-stem",
+          "html": "<p>（本题满分 11 分）设总体 $X$ 的概率密度为</p>\n<p>$$f(x;\\theta) = \\left\\{ \\begin{matrix}\n\\frac{\\theta^{2}}{x^{3}}e^{- \\frac{\\theta}{x}}, & x > 0 \\\\\n0, & \\text{其他}\n\\end{matrix} \\right.\\ $$</p>\n<p>其中 $\\theta > 0$\n为未知参数，$X_{1},\\cdots,X_{n}$ 为来自总体 $X$ 的简单随机样本。（I）求\n$\\theta$ 的矩估计量；（II）求 $\\theta$ 的最大似然估计量。</p>",
+          "text": "（本题满分 11 分）设总体 $X$ 的概率密度为\n$$f(x;\\theta) = \\left\\{ \\begin{matrix} \\frac{\\theta^{2}}{x^{3}}e^{- \\frac{\\theta}{x}}, & x > 0 \\\\ 0, & \\text{其他} \\end{matrix} \\right.\\ $$\n其中 $\\theta > 0$ 为未知参数，$X_{1},\\cdots,X_{n}$ 为来自总体 $X$ 的简单随机样本。（I）求 $\\theta$ 的矩估计量；（II）求 $\\theta$ 的最大似然估计量。"
+        },
+        {
+          "role": "answer",
+          "class": "ans-body b-daan show",
+          "html": "<p>（I）矩估计量\n$\\widehat{\\theta} = \\bar{X}$；（II）最大似然估计量</p>\n<p>$$\\widehat{\\theta} = \\frac{2n}{\\sum_{i = 1}^{n}\\frac{1}{X_{i}}}$$</p>\n<p>。</p>",
+          "text": "（I）矩估计量 $\\widehat{\\theta} = \\bar{X}$；（II）最大似然估计量\n$$\\widehat{\\theta} = \\frac{2n}{\\sum_{i = 1}^{n}\\frac{1}{X_{i}}}$$\n。",
+          "hidden": false
+        },
+        {
+          "role": "kaodian",
+          "class": "block b-kaodian",
+          "label": "考点定位",
+          "html": "<p>本题考查矩估计与最大似然估计，属于概率论\"参数估计\"的标准大题。</p>",
+          "text": "本题考查矩估计与最大似然估计，属于概率论\"参数估计\"的标准大题。"
+        },
+        {
+          "role": "silu",
+          "class": "block b-silu",
+          "label": "思路引导",
+          "html": "<p>矩估计：令 $EX = \\bar{X}$，算 $EX$ 解出\n$\\theta$。最大似然：写似然函数</p>\n<p>$$L(\\theta) = \\prod f\\left( x_{i};\\theta \\right)$$</p>\n<p>取对数求导令其为零。</p>",
+          "text": "矩估计：令 $EX = \\bar{X}$，算 $EX$ 解出 $\\theta$。最大似然：写似然函数\n$$L(\\theta) = \\prod f\\left( x_{i};\\theta \\right)$$\n取对数求导令其为零。"
+        },
+        {
+          "role": "jiefa",
+          "class": "block b-jiefa",
+          "label": "解法构建",
+          "html": "<p>（I）</p>\n<p>$$EX = \\int_{0}^{+ \\infty}x \\cdot \\frac{\\theta^{2}}{x^{3}}e^{- \\theta/x}dx = \\theta^{2}\\int_{0}^{+ \\infty}\\frac{1}{x^{2}}e^{- \\theta/x}dx.$$</p>\n<p>令 $u = \\theta/x$，则 $du = - \\theta/x^{2}dx$，即\n$\\frac{1}{x^{2}}dx = - \\frac{du}{\\theta}$：</p>\n<p>$$EX = \\theta^{2} \\cdot \\frac{1}{\\theta}\\int_{0}^{+ \\infty}e^{- u}du = \\theta.$$</p>\n<p>令 $EX = \\bar{X}$，得矩估计量 $\\widehat{\\theta} = \\bar{X}$。</p>\n<p>（II）似然函数（$x_{i} > 0$）：</p>\n<p>$$L(\\theta) = \\prod_{i = 1}^{n}\\frac{\\theta^{2}}{x_{i}^{3}}e^{- \\theta/x_{i}} = \\frac{\\theta^{2n}}{\\left( x_{1}\\cdots x_{n} \\right)^{3}}e^{- \\theta\\sum_{i = 1}^{n}\\frac{1}{x_{i}}}.$$</p>\n<p>取对数：</p>\n<p>$$\\ln L(\\theta) = 2n\\ln\\theta - \\theta\\sum_{i = 1}^{n}\\frac{1}{x_{i}} - 3\\sum_{i = 1}^{n}\\ln x_{i}.$$</p>\n<p>求导：</p>\n<p>$$\\frac{d\\ln L}{d\\theta} = \\frac{2n}{\\theta} - \\sum_{i = 1}^{n}\\frac{1}{x_{i}} = 0 \\Rightarrow \\theta = \\frac{2n}{\\sum_{i = 1}^{n}\\frac{1}{x_{i}}}.$$</p>\n<p>故最大似然估计量</p>\n<p>$$\\widehat{\\theta} = \\frac{2n}{\\sum_{i = 1}^{n}\\frac{1}{X_{i}}}$$</p>\n<p>。</p>",
+          "text": "（I）\n$$EX = \\int_{0}^{+ \\infty}x \\cdot \\frac{\\theta^{2}}{x^{3}}e^{- \\theta/x}dx = \\theta^{2}\\int_{0}^{+ \\infty}\\frac{1}{x^{2}}e^{- \\theta/x}dx.$$\n令 $u = \\theta/x$，则 $du = - \\theta/x^{2}dx$，即 $\\frac{1}{x^{2}}dx = - \\frac{du}{\\theta}$：\n$$EX = \\theta^{2} \\cdot \\frac{1}{\\theta}\\int_{0}^{+ \\infty}e^{- u}du = \\theta.$$\n令 $EX = \\bar{X}$，得矩估计量 $\\widehat{\\theta} = \\bar{X}$。\n（II）似然函数（$x_{i} > 0$）：\n$$L(\\theta) = \\prod_{i = 1}^{n}\\frac{\\theta^{2}}{x_{i}^{3}}e^{- \\theta/x_{i}} = \\frac{\\theta^{2n}}{\\left( x_{1}\\cdots x_{n} \\right)^{3}}e^{- \\theta\\sum_{i = 1}^{n}\\frac{1}{x_{i}}}.$$\n取对数：\n$$\\ln L(\\theta) = 2n\\ln\\theta - \\theta\\sum_{i = 1}^{n}\\frac{1}{x_{i}} - 3\\sum_{i = 1}^{n}\\ln x_{i}.$$\n求导：\n$$\\frac{d\\ln L}{d\\theta} = \\frac{2n}{\\theta} - \\sum_{i = 1}^{n}\\frac{1}{x_{i}} = 0 \\Rightarrow \\theta = \\frac{2n}{\\sum_{i = 1}^{n}\\frac{1}{x_{i}}}.$$\n故最大似然估计量\n$$\\widehat{\\theta} = \\frac{2n}{\\sum_{i = 1}^{n}\\frac{1}{X_{i}}}$$\n。"
+        },
+        {
+          "role": "biaozhun",
+          "class": "block b-biaozhun",
+          "label": "标准解答",
+          "html": "<p>（I）$EX = \\theta$，令 $EX = \\bar{X}$ 得\n$\\widehat{\\theta} = \\bar{X}$。（5 分） （II）对数似然求导得</p>\n<p>$$\\widehat{\\theta} = \\frac{2n}{\\sum 1/X_{i}}$$</p>\n<p>。（11 分）</p>",
+          "text": "（I）$EX = \\theta$，令 $EX = \\bar{X}$ 得 $\\widehat{\\theta} = \\bar{X}$。（5 分） （II）对数似然求导得\n$$\\widehat{\\theta} = \\frac{2n}{\\sum 1/X_{i}}$$\n。（11 分）"
+        },
+        {
+          "role": "qita",
+          "class": "block b-qita",
+          "label": "其他解法 · 举一反三",
+          "html": "<p>注意本题矩估计和最大似然估计结果不同（矩估计是\n$\\bar{X}$，MLE\n是调和均值型），这是因为总体只有一个参数但两种方法用到的信息不同。换元\n$u = \\theta/x$ 是算 $EX$ 的关键。</p>",
+          "text": "注意本题矩估计和最大似然估计结果不同（矩估计是 $\\bar{X}$，MLE 是调和均值型），这是因为总体只有一个参数但两种方法用到的信息不同。换元 $u = \\theta/x$ 是算 $EX$ 的关键。"
+        },
+        {
+          "role": "yicuo",
+          "class": "block b-yicuo",
+          "label": "易错点与陷阱",
+          "html": "<p>一是算 $EX$ 时换元错；二是似然函数里\n$\\theta^{2n}$（不是 $\\theta^{n}$）；三是求导后方程列错。</p>",
+          "text": "一是算 $EX$ 时换元错；二是似然函数里 $\\theta^{2n}$（不是 $\\theta^{n}$）；三是求导后方程列错。"
+        },
+        {
+          "role": "guina",
+          "class": "block b-guina",
+          "label": "方法归纳",
+          "html": "<p>矩估计：$EX = \\bar{X}$；MLE：写\n$L \\rightarrow \\ln L \\rightarrow$ 令导数等于 $0$。涉及 $1/x$\n型密度时换元 $u = \\theta/x$ 常是关键。</p>",
+          "text": "矩估计：$EX = \\bar{X}$；MLE：写 $L \\rightarrow \\ln L \\rightarrow$ 令导数等于 $0$。涉及 $1/x$ 型密度时换元 $u = \\theta/x$ 常是关键。"
+        }
+      ],
+      "knowledge_points": [
+        "本题考查矩估计与最大似然估计，属于概率论\"参数估计\"的标准大题。"
+      ],
+      "tags": [
+        "math"
+      ],
+      "media": [],
+      "category": {
+        "key": "gailv",
+        "label": "概率论"
+      },
+      "origin": "source",
+      "content_hash": "a352838117de7a9405f7fa0e1cfee68cb1df42a3117d9742f16e0b864543d10e",
+      "schema_version": "1.0.0",
+      "source_hash": "db91bd9fe7ced84463692cf6961787c095c2fb2f424646ae7b321e8947b4217e",
+      "source_ref": {
+        "file": "legacy/数学一真题精讲_2013-2023_重制版.html",
+        "anchor": "p2013-23",
+        "year": 2013,
+        "num": 23
+      }
+    }
+  ]
+}

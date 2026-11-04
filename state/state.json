@@ -1,28 +1,28 @@
 {
   "schema_version": "1.0.0",
-  "phase": "M1",
+  "phase": "M2",
   "status": "RUNNING",
   "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-04T15:25:18Z",
+  "updated_at": "2026-11-04T15:58:08Z",
   "done_set": [
+    "m0:auth_initiated",
     "m0:contract_archive",
     "m0:scaffold",
-    "m0:auth_initiated",
-    "m1:migrate_politics",
-    "m1:migrate_cs408"
+    "m1:first-url",
+    "m1:migrate_cs408",
+    "m1:migrate_english",
+    "m1:migrate_math",
+    "m1:migrate_politics"
   ],
   "failed_set": [],
   "current_task": "m1:migrate_data",
-  "in_flight": {
-    "english": "background-agent",
-    "math": "background-agent"
-  },
-  "auth": "device-flow-pending (code 96E4-E4F2, issued 15:23Z)",
+  "in_flight": {},
+  "auth": "authorized (zly060709)",
   "metrics": {
     "questions": {
       "politics": 456,
-      "math": 0,
-      "english": 0,
+      "math": 250,
+      "english": 675,
       "cs408": 376
     },
     "expected": {
@@ -36,5 +36,10 @@
     "token_kill_line": 95000000,
     "time_cap_h": 96,
     "elapsed_h": 0
+  },
+  "deploy": {
+    "url": "https://zly060709.github.io/kaoyan-lab/",
+    "repo": "zly060709/kaoyan-lab",
+    "pages": "legacy/main"
   }
 }
