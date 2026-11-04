@@ -1,0 +1,80 @@
+[
+  {
+    "qid": "math-2015-4", "origin": "derived",
+    "title": "第4题 双曲线与双射线围成的区域 D",
+    "xlim": [0, 1.35], "ylim": [0, 1.25],
+    "items": [
+      { "kind": "graph", "f": "1/(2*x)", "domain": [0.42, 1.15], "color": "#1D4ED8", "label": "2xy=1" },
+      { "kind": "graph", "f": "1/(4*x)", "domain": [0.32, 1.15], "color": "#1F7A6D", "label": "4xy=1" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 1.05, "y2": 1.05, "color": "#B8324A" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 0.72, "y2": 1.247, "color": "#B8324A" },
+      { "kind": "polygon", "pts": [[0.5, 0.5], [0.707, 0.707], [0.65, 0.769], [0.59, 0.847], [0.538, 0.931], [0.38, 0.658], [0.42, 0.595], [0.46, 0.543]], "color": "rgba(201,169,97,.45)" },
+      { "kind": "label", "x": 0.52, "y": 0.68, "text": "D" }
+    ],
+    "caption": "极坐标下 D：θ∈[π/4, π/3]（两射线），r 介于两条双曲线之间：4xy=1 → r=1/(2√sin2θ)，2xy=1 → r=1/√sin2θ，选 B。"
+  },
+  {
+    "qid": "math-2015-10", "origin": "derived",
+    "title": "第10题 对称区间上的奇偶拆分",
+    "xlim": [-1.65, 1.65], "ylim": [-1.3, 1.65],
+    "items": [
+      { "kind": "graph", "f": "abs(x)", "domain": [-1.5708, 1.5708], "color": "#1D4ED8", "label": "|x|（偶）" },
+      { "kind": "graph", "f": "tan(x/2)", "domain": [-1.5708, 1.5708], "color": "#B8324A", "label": "sinx/(1+cosx)=tan(x/2)（奇）" }
+    ],
+    "caption": "奇函数部分积分为 0，只剩 2∫₀^{π/2}|x|dx = π²/4。"
+  },
+  {
+    "qid": "math-2015-12", "origin": "derived",
+    "title": "第12题 四面体 Ω 在 xOy 面的投影",
+    "xlim": [-0.15, 1.3], "ylim": [-0.15, 1.3],
+    "items": [
+      { "kind": "polygon", "pts": [[0, 0], [1, 0], [0, 1]], "color": "rgba(29,78,216,.25)" },
+      { "kind": "segment", "x1": 0, "y1": 1, "x2": 1, "y2": 0, "color": "#B8324A" },
+      { "kind": "label", "x": 0.3, "y": 0.28, "text": "z=1−x−y" }
+    ],
+    "caption": "Ω：x+y+z=1 与三坐标面围成的四面体；投影为直角三角形。轮换对称性：∭x=∭y=∭z=1/24，故原式=(1+2+3)/24=1/4。"
+  },
+  {
+    "qid": "math-2015-15", "origin": "derived",
+    "title": "第15题 f 与 kx³ 在原点附近的贴合",
+    "xlim": [-1.2, 1.2], "ylim": [-0.75, 0.75],
+    "items": [
+      { "kind": "graph", "f": "x-ln(1+x)-0.5*x*sin(x)", "domain": [-1.2, 1.2], "color": "#1D4ED8", "label": "f(x)" },
+      { "kind": "graph", "f": "-(x*x*x)/3", "domain": [-1.2, 1.2], "color": "#B8324A", "label": "kx³=−x³/3" }
+    ],
+    "caption": "泰勒展开定参：a=−1, b=−1/2, k=−1/3；图中两曲线在原点附近几乎重合（三阶贴合）。"
+  },
+  {
+    "qid": "math-2015-16", "origin": "derived",
+    "title": "第16题 切线面积恒为 4 的曲线",
+    "xlim": [0, 3.6], "ylim": [0, 10.5],
+    "items": [
+      { "kind": "graph", "f": "8/(4-x)", "domain": [0, 3.5], "color": "#1D4ED8" },
+      { "kind": "point", "x": 0, "y": 2, "label": "f(0)=2" },
+      { "kind": "vline", "x": 4, "style": "dashed", "label": "x=4" }
+    ],
+    "caption": "由“切线、x=x₀ 与 x 轴围面积恒 4”建立微分方程 yy′²+yy′? 解得 f(x)=8/(4−x)（f′>0 满足题设）。"
+  },
+  {
+    "qid": "math-2015-17", "origin": "derived",
+    "title": "第17题 约束曲线 x²+y²+xy=3（旋转椭圆）",
+    "xlim": [-2.6, 2.6], "ylim": [-2.6, 2.6],
+    "items": [
+      { "kind": "parametric", "fx": "cos(t)+1.732*sin(t)", "fy": "cos(t)-1.732*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "C" },
+      { "kind": "point", "x": 1, "y": 1, "label": "(1,1)" },
+      { "kind": "point", "x": -1, "y": -1, "label": "(−1,−1)" }
+    ],
+    "caption": "梯度 ∇f=(1+y,1+x) 的模在 C 上的最大值即最大方向导数；拉格朗日乘数法在 (1,1) 取 |∇f|=3。"
+  },
+  {
+    "qid": "math-2015-19", "origin": "derived",
+    "title": "第19题 空间曲线 L 的 xOy 投影",
+    "xlim": [-1.5, 1.5], "ylim": [-1.75, 1.75],
+    "items": [
+      { "kind": "parametric", "fx": "cos(t)", "fy": "1.4142*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "2x²+y²=2" },
+      { "kind": "point", "x": 0, "y": 1.4142, "label": "A(0,√2,0)" },
+      { "kind": "point", "x": 0, "y": -1.4142, "label": "B(0,−√2,0)" }
+    ],
+    "caption": "L 是球面 z=√(2−x²−y²) 与平面 z=x 的交线（空间圆），消去 z 得投影椭圆 2x²+y²=2；由 A 到 B 经 x>0 一侧（右半椭圆）。"
+  }
+]

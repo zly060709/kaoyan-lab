@@ -1,0 +1,110 @@
+[
+  {
+    "qid": "math-2016-1", "origin": "derived",
+    "title": "第1题 反常积分的两端行为（示例 a=1/2, b=2）",
+    "xlim": [0, 9], "ylim": [0, 4.6],
+    "items": [
+      { "kind": "graph", "f": "1/(sqrt(x)*(1+x)*(1+x))", "domain": [0.02, 9], "color": "#1D4ED8" },
+      { "kind": "label", "x": 0.35, "y": 3.6, "text": "x→0：同 x⁻ᵃ，需 a<1" },
+      { "kind": "label", "x": 4.2, "y": 0.55, "text": "x→∞：同 x⁻⁽ᵃ⁺ᵇ⁾，需 a+b>1" }
+    ],
+    "caption": "收敛 ⇔ 瑕端 a<1 且无穷端 a+b>1，选 C。图示为收敛情形（a=1/2, b=2）。"
+  },
+  {
+    "qid": "math-2016-2", "origin": "derived",
+    "title": "第2题 分段函数 f（原函数须连续）",
+    "xlim": [-1.5, 4.5], "ylim": [-3.2, 1.8],
+    "items": [
+      { "kind": "graph", "f": "2*x-2", "domain": [-1.5, 1], "color": "#1D4ED8", "label": "2(x−1)" },
+      { "kind": "graph", "f": "ln(x)", "domain": [1, 4.5], "color": "#1D4ED8", "label": "ln x" },
+      { "kind": "point", "x": 1, "y": 0, "label": "f 连续" }
+    ],
+    "caption": "f 在 x=1 连续，但其原函数 F 必须处处连续——各选项在 x=1 的左右极限是否相等是唯一判据，选 D。"
+  },
+  {
+    "qid": "math-2016-4", "origin": "derived",
+    "title": "第4题 阶梯函数 f 与直线 y=x",
+    "xlim": [-1, 1.25], "ylim": [-0.35, 1.5],
+    "items": [
+      { "kind": "graph", "f": "1/floor(1/x)", "domain": [0.075, 1.2], "color": "#1D4ED8" },
+      { "kind": "graph", "f": "x", "domain": [-1, 1.2], "color": "#94A3B8", "label": "y=x" },
+      { "kind": "point", "x": 0, "y": 0, "label": "(0,0)" }
+    ],
+    "caption": "阶梯高度 1/n→0；且在 (1/(n+1),1/n] 上 |f(x)−x| ≤ 1/n−1/(n+1) ~ x²，故 f′(0)=f(0)=0 存在，选 D。"
+  },
+  {
+    "qid": "math-2016-7", "origin": "derived",
+    "title": "第7题 p=P{X≤μ+σ²} 随 σ 增大而增大",
+    "xlim": [-4, 9], "ylim": [0, 0.46],
+    "items": [
+      { "kind": "graph", "f": "exp(-x*x/2)/sqrt(2*pi)", "domain": [-3.5, 3.5], "color": "#1D4ED8", "label": "N(0,1)：阈值 x=1" },
+      { "kind": "graph", "f": "exp(-x*x/8)/(2*sqrt(2*pi))", "domain": [-6, 7], "color": "#1F7A6D", "label": "N(0,4)：阈值 x=4" },
+      { "kind": "vline", "x": 1, "style": "dashed" },
+      { "kind": "vline", "x": 4, "style": "dashed" }
+    ],
+    "caption": "标准化后 p=Φ(σ)，σ↗ → p↗（选 B）。图中阈值线 x=μ+σ² 比“密度摊平”跑得更快。"
+  },
+  {
+    "qid": "math-2016-15", "origin": "derived",
+    "title": "第15题 圆 r=2 与心形线 r=2(1+cosθ) 之间的区域",
+    "xlim": [-0.8, 4.8], "ylim": [-2.6, 2.6],
+    "items": [
+      { "kind": "polar", "r": "2*(1+cos(t))", "tmin": -1.5708, "tmax": 1.5708, "color": "#B8324A", "label": "心形线" },
+      { "kind": "parametric", "fx": "2*cos(t)", "fy": "2*sin(t)", "tmin": -1.5708, "tmax": 1.5708, "color": "#1D4ED8", "label": "r=2" }
+    ],
+    "caption": "D 在圆外、心形线内（右半平面）。∬x dσ 用极坐标 + 偶对称 + 华里士公式 = 32/3 + 5π。"
+  },
+  {
+    "qid": "math-2016-16", "origin": "derived",
+    "title": "第16题 方程 y″+2y′+ky=0 (k=1/2) 的衰减解",
+    "xlim": [0, 8], "ylim": [0, 1.25],
+    "items": [
+      { "kind": "graph", "f": "1.9142*exp(-0.2929*x)-0.9142*exp(-1.7071*x)", "domain": [0, 8], "color": "#1F7A6D" },
+      { "kind": "hline", "y": 0, "style": "dashed" }
+    ],
+    "caption": "以 k=1/2、y(0)=y′(0)=1 示意：特征根均为负 → 解衰减到 0，反常积分收敛；对方程两边积分直接得 ∫₀^∞ y dx = (y′(0)+2y(0))/k = 3/k。"
+  },
+  {
+    "qid": "math-2016-17", "origin": "derived",
+    "title": "第17题 I(t)=t+e^{2−t} 的最小值",
+    "xlim": [0, 6], "ylim": [2.2, 8],
+    "items": [
+      { "kind": "graph", "f": "x+exp(2-x)", "domain": [0, 6], "color": "#1D4ED8" },
+      { "kind": "hline", "y": 3, "style": "dashed" },
+      { "kind": "point", "x": 2, "y": 3, "label": "min I(2)=3" }
+    ],
+    "caption": "恢复 f(x,y)=(x+1)e^{2x−y}+y? 后曲线积分与路径无关，I(t)=t+e^{2−t}，t=2 处取最小值 3。"
+  },
+  {
+    "qid": "math-2016-18", "origin": "derived",
+    "title": "第18题 四面体 Ω 在 xOy 面的投影",
+    "xlim": [-0.12, 1.25], "ylim": [-0.12, 2.3],
+    "items": [
+      { "kind": "polygon", "pts": [[0, 0], [1, 0], [0, 2]], "color": "rgba(31,122,109,.25)" },
+      { "kind": "segment", "x1": 0, "y1": 2, "x2": 1, "y2": 0, "color": "#B8324A" },
+      { "kind": "label", "x": 0.3, "y": 0.55, "text": "2x+y+2z=2" }
+    ],
+    "caption": "Ω 由平面 2x+y+2z=2 与三坐标面围成；高斯公式化 ∬ 为三重积分后按截面法计算，得 1/2。"
+  },
+  {
+    "qid": "math-2016-22", "origin": "derived",
+    "title": "第22题 密度 f(x)=2⁻ˣln2（即 rate=ln2 的指数分布）",
+    "xlim": [0, 5], "ylim": [0, 0.75],
+    "items": [
+      { "kind": "graph", "f": "ln(2)*exp(-ln(2)*x)", "domain": [0, 5], "color": "#7C3AED" },
+      { "kind": "vline", "x": 3, "style": "dashed", "label": "x=3" }
+    ],
+    "caption": "P{X>3}=e^{−3ln2}=1/8：每次观测“成功”概率 1/8，第 2 次成功所需次数 Y 服从负二项分布，EY=2/(1/8)=16。"
+  },
+  {
+    "qid": "math-2016-23", "origin": "derived",
+    "title": "第23题 均匀分布 U[θ,1] 的密度（示意 θ=1/4）",
+    "xlim": [0, 1.3], "ylim": [0, 1.6],
+    "items": [
+      { "kind": "hline", "y": 1.3333, "style": "dashed", "label": "1/(1−θ)=4/3" },
+      { "kind": "vline", "x": 0.25, "style": "dashed", "label": "θ" },
+      { "kind": "vline", "x": 1, "style": "dashed", "label": "1" }
+    ],
+    "caption": "以 θ=1/4 示意：密度在 [θ,1] 上恒为 1/(1−θ)。矩估计 θ̂=2X̄−1（由 EX=(1+θ)/2）；MLE θ̂=min{Xᵢ}。"
+  }
+]
