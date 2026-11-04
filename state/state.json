@@ -3,7 +3,7 @@
   "phase": "M1",
   "status": "RUNNING",
   "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-04T15:13:14Z",
+  "updated_at": "2026-11-04T15:25:18Z",
   "done_set": [
     "m0:contract_archive",
     "m0:scaffold",
@@ -17,7 +17,7 @@
     "english": "background-agent",
     "math": "background-agent"
   },
-  "auth": "device-flow-pending",
+  "auth": "device-flow-pending (code 96E4-E4F2, issued 15:23Z)",
   "metrics": {
     "questions": {
       "politics": 456,
