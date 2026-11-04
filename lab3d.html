@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D 数学实验室 · 考研全栈学习平台</title>
+<style>
+:root{--navy:#0F2540;--gold:#C9A961;--cream:#FAF8F4;--paper:#fff;--text:#1e293b;--muted:#64748b;--line:#e2e8f0;--math:#1D4ED8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC",Georgia,"Microsoft YaHei",serif;background:var(--cream);color:var(--text)}
+header{background:linear-gradient(135deg,#0F2540,#1a3a5c);color:#fff;padding:12px 20px;display:flex;align-items:center;gap:12px}
+header .bk{color:var(--gold-l);text-decoration:none;font-size:14px}
+header b{letter-spacing:2px}
+.wrap{max-width:1020px;margin:0 auto;padding:16px 16px 60px}
+.tabs{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}
+.tab{padding:8px 18px;border-radius:18px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:14px;font-family:inherit}
+.tab.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.panel{background:var(--paper);border-radius:14px;box-shadow:0 2px 14px rgba(15,37,64,.09);padding:16px 20px;margin-bottom:14px}
+.panel .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0;font-size:14px}
+.panel input[type=text]{flex:1;min-width:220px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-family:ui-monospace,Consolas,monospace;font-size:14px}
+.panel input[type=range]{width:130px}
+.panel label{color:var(--muted);font-size:13px}
+button.act{padding:7px 16px;border-radius:10px;border:1px solid var(--math);background:#fff;color:var(--math);cursor:pointer;font-family:inherit;font-size:13.5px}
+button.act:hover{background:var(--math);color:#fff}
+.formula{font-size:16px;margin:6px 0;color:var(--navy)}
+.note{font-size:12.5px;color:var(--muted);margin-top:6px}
+#gl{width:100%;height:520px;border-radius:12px;background:#f8fafc;border:1px solid var(--line);touch-action:none}
+#gl canvas{border-radius:12px;display:block}
+.vol{font-size:15px;color:var(--math);font-weight:700}
+.err{color:#b8324a;font-size:13px;min-height:18px}
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:20px;line-height:2}
+@media(max-width:640px){#gl{height:380px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="bk" href="index.html#/math1">← 返回平台</a>
+  <b>🧊 3D 数学实验室</b>
+  <span style="margin-left:auto;font-size:12px;opacity:.75">拖拽旋转 · 滚轮缩放 · 右键平移</span>
+</header>
+<div class="wrap">
+  <div class="tabs" id="tabs">
+    <button class="tab on" data-scene="surface">① 曲面 z = f(x,y)</button>
+    <button class="tab" data-scene="solid">② 旋转体（绕 x 轴）</button>
+    <button class="tab" data-scene="volume">③ 曲顶柱体（二重积分）</button>
+  </div>
+
+  <div class="panel">
+    <div id="p-surface">
+      <div class="formula">$$z = f(x,y)$$</div>
+      <div class="row"><label>f(x,y) =</label><input type="text" id="e-surface" value="sin(x)*cos(y)" spellcheck="false">
+        <button class="act" id="b-surface">重绘</button></div>
+      <div class="row"><label>x 范围</label><input type="range" id="s-surface" min="1" max="8" step="0.5" value="4"><span id="v-surface">±4</span>
+        <label style="margin-left:14px"><input type="checkbox" id="w-surface"> 线框</label></div>
+      <div class="note">抽象对应：二元函数图形、极值/鞍点（如 z=x²+y² 与 z=x²−y²）、截面法。改完按「重绘」。</div>
+    </div>
+    <div id="p-solid" style="display:none">
+      <div class="formula">$$V=\pi\int_a^b f(x)^2\,dx \quad\text{（}y=f(x)\text{ 绕 }x\text{ 轴）}$$</div>
+      <div class="row"><label>f(x) =</label><input type="text" id="e-solid" value="sqrt(x)" spellcheck="false">
+        <button class="act" id="b-solid">重绘</button></div>
+      <div class="row"><label>a</label><input type="range" id="sa" min="0" max="4" step="0.25" value="0"><span id="va">0</span>
+        <label>b</label><input type="range" id="sb" min="1" max="9" step="0.25" value="4"><span id="vb">4</span>
+        <label style="margin-left:10px"><input type="checkbox" id="w-solid"> 线框</label></div>
+      <div class="note">抽象对应：旋转体体积（真题高频）。圆柱/圆锥/抛物面都能由不同 f(x) 得到。</div>
+    </div>
+    <div id="p-volume" style="display:none">
+      <div class="formula">$$\iint_D f(x,y)\,d\sigma,\quad D=\{(x,y)\mid a\le x\le b,\ g_1(x)\le y\le g_2(x)\}$$</div>
+      <div class="row"><label>f(x,y) =</label><input type="text" id="e-vol-f" value="x*y" spellcheck="false"></div>
+      <div class="row"><label>g₁(x) =</label><input type="text" id="e-vol-g1" value="0" spellcheck="false" style="max-width:150px">
+        <label>g₂(x) =</label><input type="text" id="e-vol-g2" value="sqrt(x)" spellcheck="false" style="max-width:150px">
+        <label>a</label><input type="range" id="ca" min="0" max="4" step="0.25" value="0"><span id="ca-v">0</span>
+        <label>b</label><input type="range" id="cb" min="1" max="9" step="0.25" value="4"><span id="cb-v">4</span></div>
+      <div class="row"><button class="act" id="b-vol">重绘并计算近似体积</button><span class="vol" id="vol"></span>
+        <label style="margin-left:10px"><input type="checkbox" id="w-vol"> 线框</label></div>
+      <div class="note">抽象对应：二重积分的几何意义、X 型区域、换序（把 g₁/g₂ 换成 x 的函数对照看）。数值为均匀采样近似，仅供直观理解。</div>
+    </div>
+    <div class="err" id="err"></div>
+  </div>
+
+  <div id="gl"></div>
+  <footer>
+    扩展图形工具 · 非原卷内容（origin=extended）· 表达式白名单编译，不支持外部脚本<br>
+    场景与真题的映射表将在后续版本挂接到具体题目（合同 P4）
+  </footer>
+</div>
+<script src="vendor/three.min.js"></script>
+<script src="vendor/OrbitControls.js"></script>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+"use strict";
+const $=s=>document.querySelector(s);
+let renderer,scene,camera,controls,meshGroup=null,rafId=0,sceneId="surface";
+const errbox=$("#err");
+function showErr(m){errbox.textContent=m||""}
+function compile2(src,varname){
+  const cleaned=String(src||"").replace(/\s+/g,"");
+  if(!cleaned)throw new Error("空表达式");
+  if(!/^[0-9a-zA-Z_+\-*/^(),.]+$/.test(cleaned))throw new Error("表达式含非法字符");
+  const FN={sin:"Math.sin",cos:"Math.cos",tan:"Math.tan",asin:"Math.asin",acos:"Math.acos",atan:"Math.atan",
+    sinh:"Math.sinh",cosh:"Math.cosh",tanh:"Math.tanh",ln:"Math.log",log:"Math.log",log10:"Math.log10",
+    exp:"Math.exp",sqrt:"Math.sqrt",abs:"Math.abs",floor:"Math.floor",ceil:"Math.ceil",min:"Math.min",max:"Math.max",
+    pi:"Math.PI",e:"Math.E"};
+  let js=cleaned.replace(/[a-zA-Z_]+/g,m=>{const k=m.toLowerCase();if(k in FN)return FN[k];
+    if(k===varname[0]||k===varname[1])return k;throw new Error("未知符号:"+m)});
+  js=js.replace(/\^/g,"**");
+  const f=new Function(varname[0]+","+varname[1],"\"use strict\";try{return ("+js+")}catch(_){return NaN}");
+  return (a,b)=>{let r;try{r=f(a,b)}catch(_){return NaN}return typeof r==="number"?r:NaN};
+}
+function initGL(){
+  const host=$("#gl");
+  try{
+    renderer=new THREE.WebGLRenderer({antialias:true});
+    renderer.setPixelRatio(Math.min(2,window.devicePixelRatio||1));
+    renderer.setSize(host.clientWidth,host.clientHeight);
+    host.appendChild(renderer.domElement);
+  }catch(e){host.innerHTML="<div style='padding:40px;text-align:center;color:#b8324a'>WebGL 不可用："+e.message+"</div>";return false}
+  scene=new THREE.Scene();scene.background=new THREE.Color(0xf8fafc);
+  camera=new THREE.PerspectiveCamera(45,host.clientWidth/host.clientHeight,0.1,200);
+  camera.position.set(9,7,11);
+  controls=new THREE.OrbitControls(camera,renderer.domElement);
+  controls.enableDamping=true;controls.dampingFactor=0.08;controls.maxDistance=60;
+  scene.add(new THREE.AmbientLight(0xffffff,0.65));
+  const dl=new THREE.DirectionalLight(0xffffff,0.75);dl.position.set(6,10,8);scene.add(dl);
+  axes();
+  window.addEventListener("resize",()=>{
+    const w=host.clientWidth,h=host.clientHeight;
+    renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();
+  });
+  document.addEventListener("visibilitychange",()=>{
+    if(document.hidden){cancelAnimationFrame(rafId);rafId=0}
+    else if(!rafId)loop();
+  });
+  loop();
+  return true;
+}
+function axes(){
+  const g=new THREE.Group();
+  const mk=(a,b,c)=>{const m=new THREE.Line(new THREE.BufferGeometry().setFromPoints([a,b]),
+    new THREE.LineBasicMaterial({color:c}));g.add(m)};
+  mk(new THREE.Vector3(-10,0,0),new THREE.Vector3(10,0,0),0x94a3b8);
+  mk(new THREE.Vector3(0,-6,0),new THREE.Vector3(0,10,0),0x94a3b8);
+  mk(new THREE.Vector3(0,0,-10),new THREE.Vector3(0,0,10),0x94a3b8);
+  g.name="axes";return g;
+}
+function clearGroup(){
+  if(meshGroup){scene.remove(meshGroup);meshGroup.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material)o.material.dispose()})}
+  meshGroup=new THREE.Group();meshGroup.name="main";
+  meshGroup.add(axes());scene.add(meshGroup);
+}
+function surfaceMesh(F,x0,x1,z0,z1,wire,color){
+  const N=90,M=60,geo=new THREE.BufferGeometry();
+  const pos=[],idx=[],col=new THREE.Color(color||0x1D4ED8);
+  const zs=[];
+  for(let i=0;i<=N;i++)for(let j=0;j<=M;j++){
+    const x=x0+(x1-x0)*i/N,y=z0+(z1-z0)*j/M;
+    let z=F(x,y);if(!isFinite(z))z=0;
+    z=Math.max(-8,Math.min(8,z));
+    pos.push(x,z,y);zs.push(z);
+  }
+  for(let i=0;i<N;i++)for(let j=0;j<M;j++){
+    const a=i*(M+1)+j,b=a+M+1;
+    idx.push(a,b,a+1,b,b+1,a+1);
+  }
+  geo.setAttribute("position",new THREE.Float32BufferAttribute(pos,3));
+  geo.setIndex(idx);geo.computeVertexNormals();
+  const mat=wire?new THREE.MeshBasicMaterial({color:0x1D4ED8,wireframe:true,transparent:true,opacity:0.5})
+    :new THREE.MeshPhongMaterial({color:color||0x3b82f6,side:THREE.DoubleSide,shininess:30,transparent:true,opacity:0.92});
+  meshGroup.add(new THREE.Mesh(geo,mat));
+}
+function loop(){
+  rafId=requestAnimationFrame(loop);
+  controls.update();
+  renderer.render(scene,camera);
+}
+function buildSurface(){
+  clearGroup();
+  let F;try{F=compile2($("#e-surface").value,"xy")}catch(e){showErr(e.message);return}
+  showErr("");
+  const R=+$("#s-surface").value;$("#v-surface").textContent="±"+R;
+  surfaceMesh(F,-R,R,-R,R,$("#w-surface").checked);
+}
+function buildSolid(){
+  clearGroup();
+  const a=Math.min(+$("#sa").value,+$("#sb").value),b=Math.max(+$("#sa").value,+$("#sb").value);
+  $("#va").textContent=a;$("#vb").textContent=b;
+  let F;try{F=compile2($("#e-solid").value,"xt")}catch(e){showErr(e.message);return}
+  const g=(x)=>{const v=F(x,0);return isFinite(v)?v:0};
+  showErr("");
+  // 母线
+  const pts=[];for(let i=0;i<=100;i++){const x=a+(b-a)*i/100;pts.push(new THREE.Vector3(x,Math.max(0,g(x)),0))}
+  meshGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xb8324a})));
+  // 旋转面 (x, r cosθ, r sinθ)
+  const N=120,M=64,pos=[],idx=[];
+  for(let i=0;i<=N;i++)for(let j=0;j<=M;j++){
+    const x=a+(b-a)*i/N,th=j/M*Math.PI*2,r=Math.max(0,g(x));
+    pos.push(x,r*Math.cos(th),r*Math.sin(th));
+  }
+  for(let i=0;i<N;i++)for(let j=0;j<M;j++){const p=i*(M+1)+j,q=p+M+1;idx.push(p,q,p+1,q,q+1,p+1)}
+  const geo=new THREE.BufferGeometry();
+  geo.setAttribute("position",new THREE.Float32BufferAttribute(pos,3));geo.setIndex(idx);geo.computeVertexNormals();
+  meshGroup.add(new THREE.Mesh(geo,$("#w-solid").checked
+    ?new THREE.MeshBasicMaterial({color:0x1D4ED8,wireframe:true,transparent:true,opacity:.45})
+    :new THREE.MeshPhongMaterial({color:0x60a5fa,side:THREE.DoubleSide,transparent:true,opacity:.85})));
+  // 近似体积
+  let V=0;const n=400,h=(b-a)/n;
+  for(let i=0;i<n;i++){const x=a+(i+0.5)*h;V+=Math.PI*g(x)*g(x)*h}
+  $("#vol").textContent=""; // 旋转体面板不显示体积，公式已含
+}
+function buildVolume(){
+  clearGroup();
+  const a=Math.min(+$("#ca").value,+$("#cb").value),b=Math.max(+$("#ca").value,+$("#cb").value);
+  $("#ca-v").textContent=a;$("#cb-v").textContent=b;
+  let F,G1,G2;
+  try{F=compile2($("#e-vol-f").value,"xy");G1=compile2($("#e-vol-g1").value,"xt");G2=compile2($("#e-vol-g2").value,"xt")}
+  catch(e){showErr(e.message);return}
+  showErr("");
+  const g1=x=>{const v=G1(x,0);return isFinite(v)?v:0};
+  const g2=x=>{const v=G2(x,0);return isFinite(v)?v:g1(x)+0.001};
+  const f=(x,y)=>{let v=F(x,y);if(!isFinite(v))v=0;return Math.max(0,Math.min(8,v))};
+  // 顶面
+  const N=70,M=40,pos=[],idx=[];
+  for(let i=0;i<=N;i++)for(let j=0;j<=M;j++){
+    const x=a+(b-a)*i/N,y=g1(x)+(g2(x)-g1(x))*j/M;
+    pos.push(x,f(x,y),y);
+  }
+  for(let i=0;i<N;i++)for(let j=0;j<M;j++){const p=i*(M+1)+j,q=p+M+1;idx.push(p,q,p+1,q,q+1,p+1)}
+  const geo=new THREE.BufferGeometry();
+  geo.setAttribute("position",new THREE.Float32BufferAttribute(pos,3));geo.setIndex(idx);geo.computeVertexNormals();
+  meshGroup.add(new THREE.Mesh(geo,$("#w-vol").checked
+    ?new THREE.MeshBasicMaterial({color:0x1F7A6D,wireframe:true,transparent:true,opacity:.5})
+    :new THREE.MeshPhongMaterial({color:0x2dd4bf,side:THREE.DoubleSide,transparent:true,opacity:.9})));
+  // 侧壁 + 底面区域
+  const wallMat=new THREE.MeshPhongMaterial({color:0x1F7A6D,side:THREE.DoubleSide,transparent:true,opacity:.35});
+  const W=40;
+  [[0,1],[1,1],[1,0],[0,0]].forEach(([side,top])=>{
+    const wp=[];
+    for(let i=0;i<=W;i++){
+      const x=a+(b-a)*i/W;const y=top?g2(x):g1(x);
+      wp.push(new THREE.Vector3(x,0,y),new THREE.Vector3(x,top?f(x,y):0,y));
+    }
+    const wg=new THREE.BufferGeometry().setFromPoints(wp);
+    // 三角化两条折线
+    const idc=[];for(let i=0;i<W;i++){const p=i*2;idc.push(p,p+1,p+2,p+1,p+3,p+2)}
+    wg.setIndex(idc);wg.computeVertexNormals();
+    meshGroup.add(new THREE.Mesh(wg,wallMat));
+  });
+  const base=[];for(let i=0;i<=W;i++){const x=a+(b-a)*i/W;base.push(new THREE.Vector3(x,0,g1(x)))}
+  for(let i=W;i>=0;i--){const x=a+(b-a)*i/W;base.push(new THREE.Vector3(x,0,g2(x)))}
+  meshGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(base),new THREE.LineBasicMaterial({color:0x0f766e})));
+  // 近似体积（均匀采样）
+  const n=300,m=300;let V=0;
+  for(let i=0;i<n;i++){const x=a+(i+0.5)*(b-a)/n;const y0=g1(x),y1=g2(x);
+    for(let j=0;j<m;j++){const y=y0+(j+0.5)*(y1-y0)/m;V+=f(x,y)*(b-a)/n*(y1-y0)/m}}
+  $("#vol").textContent="∬ ≈ "+V.toFixed(3);
+}
+function katexify(){try{renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],throwOnError:false})}catch(e){}}
+function show(scene){
+  sceneId=scene;
+  ["surface","solid","volume"].forEach(k=>{
+    $("#p-"+k).style.display=k===scene?"block":"none";
+  });
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.scene===scene));
+  ({surface:buildSurface,solid:buildSolid,volume:buildVolume})[scene]();
+}
+document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>show(t.dataset.scene));
+$("#b-surface").onclick=buildSurface;$("#w-surface").onchange=buildSurface;$("#s-surface").oninput=buildSurface;
+$("#b-solid").onclick=buildSolid;$("#w-solid").onchange=buildSolid;$("#sa").oninput=buildSolid;$("#sb").oninput=buildSolid;
+$("#b-vol").onclick=buildVolume;$("#w-vol").onchange=buildVolume;$("#ca").oninput=buildVolume;$("#cb").oninput=buildVolume;
+["e-surface","e-solid","e-vol-f","e-vol-g1","e-vol-g2"].forEach(id=>$("#"+id).addEventListener("keydown",e=>{if(e.key==="Enter")show(sceneId)}));
+if(window.THREE&&THREE.WebGLRenderer){initGL();show("surface");katexify()}
+else{$("#gl").innerHTML="<div style='padding:40px;text-align:center;color:#b8324a'>3D 库加载失败，请刷新重试</div>"}
+</script>
+</body>
+</html>
