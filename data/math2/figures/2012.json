@@ -1,0 +1,80 @@
+[
+  {
+    "qid": "math2-2012-1", "origin": "derived",
+    "title": "第1题 曲线 y=(x²+x)/(x²−1) 与其渐近线",
+    "xlim": [-4, 4], "ylim": [-6, 6],
+    "items": [
+      { "kind": "graph", "f": "(x*x+x)/(x*x-1)", "domain": [-4, 4], "color": "#1D4ED8" },
+      { "kind": "vline", "x": 1, "style": "dashed", "label": "x=1 铅直" },
+      { "kind": "hline", "y": 1, "style": "dashed", "label": "y=1 水平" }
+    ],
+    "caption": "约分 y=x/(x−1)：x=1 处发散（铅直），x→∞ 贴 y=1（水平）；x=−1 为可去点（非渐近线）。共 2 条，选 C。"
+  },
+  {
+    "qid": "math2-2012-4", "origin": "derived",
+    "title": "第4题 e^{x²}sinx 的正负瓣与权重（示意）",
+    "xlim": [0, 9.8], "ylim": [-1.4, 1.4],
+    "items": [
+      { "kind": "graph", "f": "sin(x)", "domain": [0, 9.45], "color": "#1D4ED8" },
+      { "kind": "vline", "x": 3.1416, "style": "dashed", "label": "π" },
+      { "kind": "vline", "x": 6.2832, "style": "dashed", "label": "2π" },
+      { "kind": "label", "x": 1, "y": 1.15, "text": "正瓣×e^{x²}" },
+      { "kind": "label", "x": 4.2, "y": -1.2, "text": "负瓣×e^{(x+π)²} 更重" },
+      { "kind": "label", "x": 7.2, "y": 1.15, "text": "正瓣×e^{(x+2π)²} 最重" }
+    ],
+    "caption": "示意（原被积函数含 e^{x²} 权重，振幅指数增长）：各瓣折回 [0,π] 比较权重得 I₂<I₁<I₃，选 D。"
+  },
+  {
+    "qid": "math2-2012-6", "origin": "derived",
+    "title": "第6题 区域 D（sinx 与 y=1 之间）",
+    "xlim": [-1.85, 1.85], "ylim": [-1.25, 1.35],
+    "items": [
+      { "kind": "shade_between", "f1": "1", "f2": "sin(x)", "domain": [-1.5708, 1.5708], "color": "rgba(201,169,97,.4)" },
+      { "kind": "graph", "f": "sin(x)", "domain": [-1.5708, 1.5708], "color": "#1D4ED8", "label": "y=sinx" },
+      { "kind": "hline", "y": 1, "style": "dashed" }
+    ],
+    "caption": "D 关于 y 轴对称；xy⁵ 关于 x 为奇 → 积分归零，只剩 −1 的面积 → −π，选 D。"
+  },
+  {
+    "qid": "math2-2012-10", "origin": "derived",
+    "title": "第10题 黎曼和对应的 ∫₀¹ 1/(1+x²)dx",
+    "xlim": [0, 1.05], "ylim": [0, 1.1],
+    "items": [
+      { "kind": "shade_under", "f": "1/(1+x*x)", "domain": [0, 1], "color": "rgba(31,122,109,.35)" },
+      { "kind": "graph", "f": "1/(1+x*x)", "domain": [0, 1.05], "color": "#1F7A6D" }
+    ],
+    "caption": "每项 = (1/n)·1/(1+(k/n)²) → 阴影面积 = arctan1 = π/4。"
+  },
+  {
+    "qid": "math2-2012-13", "origin": "derived",
+    "title": "第13题 曲率 √2/2 的点 (−1,0)",
+    "xlim": [-2.6, 0.6], "ylim": [-0.6, 2.6],
+    "items": [
+      { "kind": "graph", "f": "x*x+x", "domain": [-2.5, 0.5], "color": "#1D4ED8" },
+      { "kind": "point", "x": -1, "y": 0, "label": "(−1,0)" }
+    ],
+    "caption": "K=2/(1+(2x+1)²)^{3/2}=√2/2 → 2x+1=±1 → x=−1（x=0 舍去，定义域 x<0）。"
+  },
+  {
+    "qid": "math2-2012-17", "origin": "derived",
+    "title": "第17题 切线、曲线与区域 D",
+    "xlim": [0, 8.2], "ylim": [-0.5, 3.2],
+    "items": [
+      { "kind": "graph", "f": "ln(x)", "domain": [0.5, 8.2], "color": "#1D4ED8", "label": "y=ln x" },
+      { "kind": "graph", "f": "x/7.389", "domain": [0, 8.2], "color": "#B8324A", "label": "切线 AB" },
+      { "kind": "point", "x": 7.389, "y": 2, "label": "A(e²,2)" },
+      { "kind": "point", "x": 1, "y": 0, "label": "B(1,0)" }
+    ],
+    "caption": "切线过 (0,1) → 切点 (e²,2)，B(1,0)；S=∫ln x dx − 三角形 = 2；V=∫πln²x dx − 圆锥 = 2π(e²−1)/3。"
+  },
+  {
+    "qid": "math2-2012-18", "origin": "derived",
+    "title": "第18题 心形线 r=1+cosθ 与极轴围域",
+    "xlim": [-0.6, 2.6], "ylim": [-1.6, 1.6],
+    "items": [
+      { "kind": "polar", "r": "1+cos(t)", "tmin": 0, "tmax": 3.1416, "color": "#1D4ED8" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 2, "y2": 0, "color": "#B8324A", "label": "极轴" }
+    ],
+    "caption": "D 为上半心形线与极轴之间：∬xy dσ = ∫₀^π∫₀^{1+cosθ} r³cosθsinθ dr dθ = 16/15。"
+  }
+]
