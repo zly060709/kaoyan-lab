@@ -3,7 +3,7 @@
   "phase": "M2+",
   "status": "RUNNING",
   "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-04T16:32:30Z",
+  "updated_at": "2026-11-04T16:37:32Z",
   "done_set": [
     "m0:auth_initiated",
     "m0:contract_archive",
@@ -49,5 +49,22 @@
       "english2 (agent)",
       "math2 2009-2011 (agent)"
     ]
+  },
+  "agent_queue": {
+    "running": [
+      "english2(2010-2025)",
+      "math2(2009-2011)"
+    ],
+    "retry_queue": [
+      "math2(2012-2015) 并发超限",
+      "math1 figures(2013-2023) 并发超限"
+    ],
+    "pending": [
+      "math2(2016-2023)",
+      "math3×15",
+      "math1 pages(2009-2012)",
+      "english1(2005-2009+2025)"
+    ],
+    "concurrency_limit": 2
   }
 }
