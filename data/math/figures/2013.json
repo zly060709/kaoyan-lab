@@ -1,0 +1,116 @@
+[
+  {
+    "qid": "math-2013-1", "origin": "derived",
+    "title": "第1题 (x−arctan x)/x³ 在 x→0 的极限形态",
+    "xlim": [-2, 2], "ylim": [-0.6, 0.9],
+    "items": [
+      { "kind": "graph", "f": "(x-atan(x))/(x*x*x)", "domain": [-2, 2], "color": "#1D4ED8", "label": "(x−arctan x)/x³" },
+      { "kind": "hline", "y": 0.3333, "style": "dashed" },
+      { "kind": "vline", "x": 0, "style": "dashed" },
+      { "kind": "label", "x": 0.35, "y": 0.55, "text": "x→0 时 → c=1/3" }
+    ],
+    "caption": "泰勒展开 x−arctan x = x³/3 − x⁷/105 + ⋯，故 k=3、c=1/3（答案 D）。图形在原点处的趋近值即所求极限。"
+  },
+  {
+    "qid": "math-2013-3", "origin": "derived",
+    "title": "第3题 f(x)=|x−1/2| 的奇延拓与 s(−9/4)",
+    "xlim": [-2.6, 1.6], "ylim": [-1.3, 1.3],
+    "items": [
+      { "kind": "graph", "f": "abs(x-0.5)", "domain": [0, 1], "color": "#1D4ED8", "label": "f(x)=|x−1/2|" },
+      { "kind": "graph", "f": "-abs(x+0.5)", "domain": [-1, 0], "color": "#1F7A6D", "label": "奇延拓" },
+      { "kind": "vline", "x": -2.25, "style": "dashed", "label": "x=−9/4" },
+      { "kind": "point", "x": -0.25, "y": -0.25, "label": "s(−9/4)=−1/4" }
+    ],
+    "caption": "正弦级数周期为 2：s(−9/4)=s(−9/4+2)=s(−1/4)，x=−1/4 落在奇延拓段，值 −|−1/4+1/2|=−1/4，选 C。"
+  },
+  {
+    "qid": "math-2013-4", "origin": "derived",
+    "title": "第4题 四条闭曲线 L₁–L₄",
+    "xlim": [-1.8, 1.8], "ylim": [-1.8, 1.8],
+    "items": [
+      { "kind": "parametric", "fx": "cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#0F2540", "label": "L₁" },
+      { "kind": "parametric", "fx": "1.4142*cos(t)", "fy": "1.4142*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#B8324A", "label": "L₂" },
+      { "kind": "parametric", "fx": "1.4142*cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1F7A6D", "label": "L₃" },
+      { "kind": "parametric", "fx": "cos(t)", "fy": "1.4142*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#7C3AED", "label": "L₄" }
+    ],
+    "caption": "格林公式把 Iᵢ 化为曲线所围区域上的二重积分；被积函数在区域内恒正且随半径增大，L₄（2x²+y²=2，沿 y 方向最长的椭圆）围住的“权重区域”最大 → I₄ 最大，选 D。"
+  },
+  {
+    "qid": "math-2013-7", "origin": "derived",
+    "title": "第7题 三个正态密度与区间 [−2,2] 的概率",
+    "xlim": [-4.5, 10.5], "ylim": [0, 0.46],
+    "items": [
+      { "kind": "shade_under", "f": "exp(-x*x/2)/sqrt(2*pi)", "domain": [-2, 2], "color": "rgba(29,78,216,.25)" },
+      { "kind": "graph", "f": "exp(-x*x/2)/sqrt(2*pi)", "domain": [-4, 4], "color": "#1D4ED8", "label": "N(0,1)" },
+      { "kind": "graph", "f": "exp(-x*x/8)/(2*sqrt(2*pi))", "domain": [-5.5, 5.5], "color": "#1F7A6D", "label": "N(0,4)" },
+      { "kind": "graph", "f": "exp(-(x-5)*(x-5)/18)/(3*sqrt(2*pi))", "domain": [-3, 13], "color": "#B8324A", "label": "N(5,9)" },
+      { "kind": "vline", "x": -2, "style": "dashed" },
+      { "kind": "vline", "x": 2, "style": "dashed" }
+    ],
+    "caption": "pᵢ=P{−2≤Xᵢ≤2}（阴影为 p₁）：σ 越小密度越集中 → p₁>p₂；N(5,9) 的区间落在尾部 → p₃ 最小，选 A。"
+  },
+  {
+    "qid": "math-2013-10", "origin": "derived",
+    "title": "第10题 二阶方程的三个已知解",
+    "xlim": [-0.6, 1.2], "ylim": [-1.6, 4],
+    "items": [
+      { "kind": "graph", "f": "exp(3*x)-x*exp(2*x)", "domain": [-0.6, 1.2], "color": "#1D4ED8", "label": "y₁" },
+      { "kind": "graph", "f": "exp(x)-x*exp(2*x)", "domain": [-0.6, 1.2], "color": "#1F7A6D", "label": "y₂" },
+      { "kind": "graph", "f": "-x*exp(2*x)", "domain": [-0.6, 1.2], "color": "#B8324A", "label": "y₃" }
+    ],
+    "caption": "解的差 y₁−y₃=e³ˣ、y₂−y₃=eˣ 给出两个齐次解；通解 y=C₁e³ˣ+C₂eˣ−xe²ˣ。"
+  },
+  {
+    "qid": "math-2013-11", "origin": "derived",
+    "title": "第11题 参数曲线 x=sin t, y=t sin t+cos t",
+    "xlim": [-1.3, 1.3], "ylim": [-6.5, 6.5],
+    "items": [
+      { "kind": "parametric", "fx": "sin(t)", "fy": "t*sin(t)+cos(t)", "tmin": -6.5, "tmax": 6.5, "color": "#1D4ED8" },
+      { "kind": "point", "x": 0.7071, "y": 1.2625, "label": "t=π/4" },
+      { "kind": "vline", "x": 0.7071, "style": "dashed" }
+    ],
+    "caption": "dy/dx = t（因 dy/dt=t sin t、dx/dt=cos t…化简后 dy/dx=t），d²y/dx²|_{t=π/4}=√2。图形在 t=π/4 处的切向即对应斜率 t=π/4。"
+  },
+  {
+    "qid": "math-2013-12", "origin": "derived",
+    "title": "第12题 反常积分 ∫₁^∞ ln x/(1+x)² dx",
+    "xlim": [0.5, 15], "ylim": [-0.08, 0.4],
+    "items": [
+      { "kind": "shade_under", "f": "ln(x)/((1+x)*(1+x))", "domain": [1, 15], "color": "rgba(31,122,109,.3)" },
+      { "kind": "graph", "f": "ln(x)/((1+x)*(1+x))", "domain": [1, 15], "color": "#1F7A6D" }
+    ],
+    "caption": "分部积分：原式 = [−ln x/(1+x)]₁^∞ + ∫₁^∞ dx/(x(1+x)) = ln2。阴影面积收敛于 ln2。"
+  },
+  {
+    "qid": "math-2013-14", "origin": "derived",
+    "title": "第14题 指数分布的无记忆性",
+    "xlim": [0, 5.2], "ylim": [0, 1.1],
+    "items": [
+      { "kind": "graph", "f": "exp(-x)", "domain": [0, 5.2], "color": "#1D4ED8", "label": "f(x)=e⁻ˣ" },
+      { "kind": "shade_under", "f": "exp(-x)", "domain": [1, 2], "color": "rgba(201,169,97,.4)" },
+      { "kind": "vline", "x": 1, "style": "dashed", "label": "a" },
+      { "kind": "vline", "x": 2, "style": "dashed", "label": "a+1" }
+    ],
+    "caption": "以 a=1 示意：P{Y≤a+1 | Y>a}=1−e⁻¹，由无记忆性该值与 a 无关。"
+  },
+  {
+    "qid": "math-2013-15", "origin": "derived",
+    "title": "第15题 被积函数 g(t)=ln(1+t)/t 与 f 的累积",
+    "xlim": [0, 2.2], "ylim": [0, 1.15],
+    "items": [
+      { "kind": "graph", "f": "ln(1+x)/x", "domain": [0.04, 2.2], "color": "#1D4ED8" },
+      { "kind": "point", "x": 1, "y": 0.6931, "label": "g(1)=ln2" }
+    ],
+    "caption": "f(x)=∫₁ˣ ln(t+1)/t dt 是这条曲线下从 1 到 x 的（带符号）累积面积；再对 f/√x 用分部积分。"
+  },
+  {
+    "qid": "math-2013-16", "origin": "derived",
+    "title": "第16题 幂级数和函数 s(x)=e⁻ˣ+2eˣ",
+    "xlim": [-1.3, 1.3], "ylim": [0, 7.5],
+    "items": [
+      { "kind": "graph", "f": "exp(-x)+2*exp(x)", "domain": [-1.3, 1.3], "color": "#7C3AED" },
+      { "kind": "point", "x": 0, "y": 3, "label": "s(0)=a₀=3" }
+    ],
+    "caption": "微分方程 s″−s′−2s=−2eˣ? 由递推可得 (I) 恒等式，(II) 解出 s(x)=e⁻ˣ+2eˣ；s(0)=a₀=3 为校验点。"
+  }
+]

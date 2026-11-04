@@ -1,0 +1,68 @@
+[
+  {
+    "qid": "math-2014-1", "origin": "derived",
+    "title": "第1题 四条曲线的渐近线判别",
+    "xlim": [0.1, 8.5], "ylim": [-0.5, 9.5],
+    "items": [
+      { "kind": "graph", "f": "x+sin(1/x)", "domain": [0.35, 8.5], "color": "#1D4ED8", "label": "(C) x+sin(1/x)" },
+      { "kind": "graph", "f": "x", "domain": [0, 8.5], "color": "#B8324A", "label": "y=x（渐近线）" },
+      { "kind": "graph", "f": "x+sin(x)", "domain": [0, 8.5], "color": "#94A3B8", "label": "(A) x+sin x" }
+    ],
+    "caption": "(C) 与 y=x 之差 sin(1/x)→0 → 有斜渐近线 y=x；(A) 与任何直线之差 sin x 不趋于 0 → 无渐近线；(B)(D) 含 x² 发散更快。选 C。"
+  },
+  {
+    "qid": "math-2014-2", "origin": "derived",
+    "title": "第2题 曲线与弦的位置关系（示例 f(x)=x²）",
+    "xlim": [-0.05, 1.05], "ylim": [-0.12, 1.15],
+    "items": [
+      { "kind": "graph", "f": "x*x", "domain": [0, 1], "color": "#1D4ED8", "label": "f(x)=x²（f″=2>0）" },
+      { "kind": "graph", "f": "x", "domain": [0, 1], "color": "#B8324A", "label": "弦 g(x)=x" },
+      { "kind": "shade_between", "f1": "x", "f2": "x*x", "domain": [0, 1], "color": "rgba(29,78,216,.15)" }
+    ],
+    "caption": "g(x)=f(0)(1−x)+f(1)x 是连接两端点的弦。凸函数（f″≥0）时曲线在弦下方：f″≥0 ⇒ f≤g，选 D。"
+  },
+  {
+    "qid": "math-2014-3", "origin": "derived",
+    "title": "第3题 二重积分区域 D",
+    "xlim": [-1.35, 1.35], "ylim": [-0.2, 1.35],
+    "items": [
+      { "kind": "shade_between", "f1": "sqrt(1-x*x)", "f2": "0", "domain": [-1, 0], "color": "rgba(201,169,97,.4)" },
+      { "kind": "shade_between", "f1": "1-x", "f2": "0", "domain": [0, 1], "color": "rgba(201,169,97,.4)" },
+      { "kind": "parametric", "fx": "cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 1.5708, "color": "#1D4ED8", "label": "x²+y²=1" },
+      { "kind": "segment", "x1": 0, "y1": 1, "x2": 1, "y2": 0, "color": "#B8324A" },
+      { "kind": "label", "x": -0.62, "y": 0.62, "text": "圆弧部分" },
+      { "kind": "label", "x": 0.45, "y": 0.32, "text": "直线部分" }
+    ],
+    "caption": "D = {(x,y) | 0≤y≤1, −√(1−y²)≤x≤1−y}：左半是四分之一圆、右半是直线 x+y=1 下方。据此换序/换极坐标，选 D。"
+  },
+  {
+    "qid": "math-2014-12", "origin": "derived",
+    "title": "第12题 柱面与平面交线的投影",
+    "xlim": [-1.35, 1.35], "ylim": [-1.35, 1.35],
+    "items": [
+      { "kind": "parametric", "fx": "cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "L 的 xOy 投影" }
+    ],
+    "caption": "L：x²+y²=1 与 y+z=0 的交线是空间椭圆，其 xOy 投影为单位圆（z=−y）。代入参数 x=cos t, y=sin t, z=−sin t 即可算 ∮ z dx + y dz = π。"
+  },
+  {
+    "qid": "math-2014-15", "origin": "derived",
+    "title": "第15题 被积函数 φ(t)=t²(e^{1/t}−1)−t",
+    "xlim": [0.35, 5], "ylim": [-0.3, 3.2],
+    "items": [
+      { "kind": "graph", "f": "x*x*(exp(1/x)-1)-x", "domain": [0.4, 5], "color": "#1F7A6D" },
+      { "kind": "hline", "y": 0.5, "style": "dashed", "label": "φ→1/2" }
+    ],
+    "caption": "t→+∞ 时 φ(t)→1/2，故分子积分 ≈ x/2，配合分母 x²ln(1+1/x) ≈ 1 → 极限为 1/2。"
+  },
+  {
+    "qid": "math-2014-18", "origin": "derived",
+    "title": "第18题 抛物面片 Σ: z=x²+y² (z≤1) 的截面示意",
+    "xlim": [-1.5, 1.5], "ylim": [-0.15, 2],
+    "items": [
+      { "kind": "graph", "f": "x*x", "domain": [-1.1, 1.1], "color": "#1D4ED8", "label": "z=x²+y² 截面" },
+      { "kind": "hline", "y": 1, "style": "dashed", "label": "z=1（补面 Σ₁）" },
+      { "kind": "segment", "x1": -1, "y1": 1, "x2": 1, "y2": 1, "color": "#B8324A" }
+    ],
+    "caption": "Σ 是开口向上的抛物面片（图为其 xz 截面）；加顶盖 Σ₁（z=1, x²+y²≤1）后用高斯公式，再减去 Σ₁ 上的积分，得 −4π。"
+  }
+]
