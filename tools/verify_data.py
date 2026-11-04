@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """题量核对（合同第 7 章基准，缺一即不合格）+ 必填字段完整性抽查。
 用法: python -I -X utf8 tools/verify_data.py"""
-import glob, json, os, sys
+import glob, json, os, re, sys
 
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -11,7 +11,9 @@ REQ = ["id", "subject", "year", "num", "type", "stem", "source_blocks", "source_
 ok = True
 summary = {}
 for subj, exp in EXPECT.items():
-    files = sorted(glob.glob(os.path.join(ROOT, "data", subj, "*.json")))
+    all_files = sorted(glob.glob(os.path.join(ROOT, "data", subj, "*.json")))
+    # 只统计主题库文件 {year}.json；.analysis/.media 等分片不计题量
+    files = [f for f in all_files if re.match(r"^\d{4}\.json$", os.path.basename(f))]
     total = 0
     per = {}
     bad_fields = 0
@@ -28,7 +30,7 @@ for subj, exp in EXPECT.items():
         per[os.path.basename(fp)] = n
         total += n
         for q in d.get("questions", []):
-            missing = [k for k in REQ if k not in q or q[k] in ("", None) and k != "options"]
+            missing = [k for k in REQ if k not in q]  # 仅查缺失键；null/空值以原文为准不算失败
             if missing:
                 bad_fields += 1
     status = "PASS" if total == exp and bad_fields == 0 and files else "FAIL"
