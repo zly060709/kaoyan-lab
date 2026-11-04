@@ -1,0 +1,58 @@
+[
+  {
+    "qid": "math2-2015-6", "origin": "derived",
+    "title": "第6题 双曲线与双射线围成的区域 D",
+    "xlim": [0, 1.35], "ylim": [0, 1.3],
+    "items": [
+      { "kind": "graph", "f": "1/(2*x)", "domain": [0.42, 1.2], "color": "#1D4ED8", "label": "2xy=1" },
+      { "kind": "graph", "f": "1/(4*x)", "domain": [0.32, 1.2], "color": "#1F7A6D", "label": "4xy=1" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 1.1, "y2": 1.1, "color": "#B8324A", "label": "y=x" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 0.75, "y2": 1.3, "color": "#B8324A", "label": "y=√3x" },
+      { "kind": "polygon", "pts": [[0.5, 0.5], [0.707, 0.707], [0.65, 0.769], [0.59, 0.847], [0.538, 0.931], [0.38, 0.658], [0.42, 0.595], [0.46, 0.543]], "color": "rgba(201,169,97,.45)" }
+    ],
+    "caption": "极坐标：θ∈[π/4, π/3]，r 从 1/√(2sin2θ)（4xy=1）到 1/√(sin2θ)（2xy=1）→ 选 B。"
+  },
+  {
+    "qid": "math2-2015-9", "origin": "derived",
+    "title": "第9题 参数曲线二阶导数",
+    "xlim": [-1.4, 1.4], "ylim": [-4.2, 4.2],
+    "items": [
+      { "kind": "parametric", "fx": "atan(t)", "fy": "3*t+t*t*t", "tmin": -1.4, "tmax": 1.4, "color": "#1D4ED8" },
+      { "kind": "point", "x": 0.7854, "y": 4, "label": "t=1" }
+    ],
+    "caption": "dy/dx=3(1+t²)²，d²y/dx²=12t(1+t²)² → t=1 处 = 48。"
+  },
+  {
+    "qid": "math2-2015-16", "origin": "derived",
+    "title": "第16题 y=A sinx 与两种旋转体",
+    "xlim": [0, 1.75], "ylim": [0, 1.3],
+    "items": [
+      { "kind": "graph", "f": "sin(x)", "domain": [0, 1.5708], "color": "#1D4ED8", "label": "y=A sinx（A=1 示意）" },
+      { "kind": "vline", "x": 1.5708, "style": "dashed", "label": "x=π/2" }
+    ],
+    "caption": "V₁（圆盘法）=π²A²/4，V₂（柱壳法）=2πA；V₁=V₂ → A=8/π。"
+  },
+  {
+    "qid": "math2-2015-18", "origin": "derived",
+    "title": "第18题 区域 D（圆与抛物线之间）",
+    "xlim": [-1.55, 1.55], "ylim": [-0.15, 1.55],
+    "items": [
+      { "kind": "parametric", "fx": "1.4142*cos(t)", "fy": "1.4142*sin(t)", "tmin": 0, "tmax": 3.1416, "color": "#1D4ED8", "label": "x²+y²=2" },
+      { "kind": "graph", "f": "x*x", "domain": [-1.19, 1.19], "color": "#B8324A", "label": "y=x²" },
+      { "kind": "label", "x": 0.35, "y": 0.85, "text": "D" }
+    ],
+    "caption": "xy 项奇对称归零；∬x²dσ=2∫₀¹x²(√(2−x²)−x²)dx=π/4−2/5。"
+  },
+  {
+    "qid": "math2-2015-20", "origin": "derived",
+    "title": "第20题 牛顿冷却曲线",
+    "xlim": [0, 1.15], "ylim": [0, 130],
+    "items": [
+      { "kind": "graph", "f": "20+100*exp(-2*0.6931*x*2)*1", "domain": [0, 1.1], "color": "#1F7A6D" },
+      { "kind": "hline", "y": 20, "style": "dashed", "label": "介质 20°C" },
+      { "kind": "point", "x": 0.5, "y": 30, "label": "30min: 30°C" },
+      { "kind": "point", "x": 1, "y": 21, "label": "60min: 21°C" }
+    ],
+    "caption": "x(t)=20+100·e^{−kt}（k=2ln10/小时）：30min 降到 30°C，再 30min 降到 21°C → 还需 30min。"
+  }
+]
