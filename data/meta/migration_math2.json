@@ -1,7 +1,7 @@
 {
  "subject": "math2",
  "expected_total": 23,
- "actual_total": 207,
+ "actual_total": 230,
  "per_year": {
   "2009": 23,
   "2010": 23,
@@ -11,11 +11,12 @@
   "2014": 23,
   "2015": 23,
   "2016": 23,
-  "2017": 23
+  "2017": 23,
+  "2018": 23
  },
  "pages_transcribed": 12,
  "source": "视觉转录（用户PDF逐页影像）",
- "updated_at": "2026-11-04T22:00:28Z",
+ "updated_at": "2026-11-04T22:38:34Z",
  "partial": true,
  "ok": true
 }
