@@ -3,7 +3,7 @@
  "phase": "M2+",
  "status": "RUNNING",
  "started_at": "2026-11-04T15:08:05Z",
- "updated_at": "2026-11-04T23:16:26Z",
+ "updated_at": "2026-11-04T23:16:55Z",
  "done_set": [
   "m0:auth_initiated",
   "m0:contract_archive",
@@ -54,7 +54,7 @@
    "math2 2009-2011 (agent)"
   ],
   "math1_figures": "82幅/2013-2023全11年，已上线并浏览器验收",
-  "math2_progress": "298/341 (2009-2021 done, 2021起22题/年)"
+  "math2_progress": "298/342 (2009-2021 done; 12×23+3×22)"
  },
  "agent_queue": {
   "running": [
