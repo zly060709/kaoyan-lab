@@ -1,0 +1,1371 @@
+{
+ "subject": "math2",
+ "year": 2016,
+ "paper": "数学（二）",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2016数学二真题及解析.pdf》（data/math2/pages/2016/，14 页），解析照录整理自原卷。",
+ "questions": [
+  {
+   "id": "math2-2016-1",
+   "subject": "math2",
+   "year": 2016,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $a_{1}=x\\left(\\cos\\sqrt{x}-1\\right)$，$a_{2}=\\sqrt{x}\\ln\\left(1+\\sqrt[3]{x}\\right)$，$a_{3}=\\sqrt[3]{x+1}-1$。当 $x\\to0^{+}$ 时，以上 3 个无穷小按照从低阶到高阶的排序是（ ）",
+   "options": [
+    "（A）$a_{1},a_{2},a_{3}$",
+    "（B）$a_{2},a_{3},a_{1}$",
+    "（C）$a_{2},a_{1},a_{3}$",
+    "（D）$a_{3},a_{2},a_{1}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$a_{1}=x\\left(\\cos\\sqrt{x}-1\\right)\\sim-\\dfrac{1}{2}x^{2}$；$a_{2}=\\sqrt{x}\\ln\\left(1+\\sqrt[3]{x}\\right)\\sim\\sqrt{x}\\cdot\\sqrt[3]{x}=x^{\\frac56}$；$a_{3}=\\sqrt[3]{x+1}-1\\sim\\dfrac{1}{3}x$。再结合高阶无穷小的定义，故选 B。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "各配等价：$\\cos\\sqrt x-1\\sim-\\frac x2$、$\\ln(1+u)\\sim u$、$(1+x)^{1/3}-1\\sim\\frac x3$ → 阶数分别为 $2,\\frac56,1$ → 低到高：$a_2(\\frac56),a_3(1),a_1(2)$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$a_3$ 的等价用 $(1+x)^\\alpha-1\\sim\\alpha x$（系数 $\\frac13$ 不影响阶）。"
+    }
+   ],
+   "knowledge_points": [
+    "等价无穷小",
+    "阶的比较"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     1,
+     5
+    ],
+    "anchor": "选择题(1)"
+   },
+   "content_hash": "sha256:071c8ec5f941d41600f0f32438eda05a15bab815518f13aaa89c31bc3cb09331",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-2",
+   "subject": "math2",
+   "year": 2016,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "已知函数 $f(x)=\\begin{cases}2(x-1), & x<1\\\\ \\ln x, & x\\ge1\\end{cases}$，则 $f(x)$ 的一个原函数是（ ）",
+   "options": [
+    "（A）$F(x)=\\begin{cases}(x-1)^{2}, & x<1\\\\ x(\\ln x-1), & x\\ge1\\end{cases}$",
+    "（B）$F(x)=\\begin{cases}(x-1)^{2}, & x<1\\\\ x(\\ln x+1)-1, & x\\ge1\\end{cases}$",
+    "（C）$F(x)=\\begin{cases}(x-1)^{2}, & x<1\\\\ x(\\ln x+1)+1, & x\\ge1\\end{cases}$",
+    "（D）$F(x)=\\begin{cases}(x-1)^{2}, & x<1\\\\ x(\\ln x-1)+1, & x\\ge1\\end{cases}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$F(x)=\\begin{cases}\\int 2(x-1)dx, & x<1\\\\ \\int\\ln x\\,dx, & x\\ge1\\end{cases}=\\begin{cases}(x-1)^{2}+C_{1}, & x<1\\\\ x(\\ln x-1)+C_{2}, & x\\ge1\\end{cases}$。$\\lim_{x\\to1^{-}}\\left[(x-1)^{2}+C_{1}\\right]=C_{1}$，$\\lim_{x\\to1^{+}}\\left[x(\\ln x-1)+C_{2}\\right]=-1+C_{2}$，则 $C_{1}=-1+C_{2}$。令 $C_{1}=C$，则 $C_{2}=1+C$。令 $C=0$，则 $F(x)=\\begin{cases}(x-1)^{2}, & x<1\\\\ x(\\ln x-1)+1, & x\\ge1\\end{cases}$，选 D。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "分段原函数必须处处连续（原函数存在定理）——两段各加常数后在 $x=1$ 处拼接对齐。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\int\\ln x\\,dx=x\\ln x-x$；只验导数不验连续性会选错。"
+    }
+   ],
+   "knowledge_points": [
+    "分段原函数",
+    "原函数连续性"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     1,
+     5
+    ],
+    "anchor": "选择题(2)"
+   },
+   "content_hash": "sha256:235997fda23d744d0e7afb609ff512df7ca8dd2e30769fa01f45ec4d6f5bd337",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-3",
+   "subject": "math2",
+   "year": 2016,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "反常积分 ①$\\int_{-\\infty}^{0}\\dfrac{1}{x^{2}}e^{\\frac{1}{x}}dx$，②$\\int_{0}^{+\\infty}\\dfrac{1}{x^{2}}e^{\\frac{1}{x}}dx$ 的敛散性为（ ）",
+   "options": [
+    "（A）①收敛，②收敛",
+    "（B）①收敛，②发散",
+    "（C）①发散，②收敛",
+    "（D）①发散，②发散"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\int_{-\\infty}^{0}\\dfrac{1}{x^{2}}e^{\\frac{1}{x}}dx=-\\int_{-\\infty}^{0}e^{\\frac1x}d\\left(\\dfrac1x\\right)=-e^{\\frac1x}\\Big|_{-\\infty}^{0}=1$，收敛。$\\int_{0}^{+\\infty}\\dfrac{1}{x^{2}}e^{\\frac{1}{x}}dx=-e^{\\frac1x}\\Big|_{0}^{+\\infty}=+\\infty$，发散。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "$\\frac{1}{x^2}dx=-d\\left(\\frac1x\\right)$ 凑微分一步出结果；$x\\to0^+$ 时 $e^{1/x}\\to\\infty$ 爆炸，$x\\to-\\infty$ 时 $e^{1/x}\\to1$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：不换元直接判断敛散；注意两个方向的行为完全不同。"
+    }
+   ],
+   "knowledge_points": [
+    "反常积分敛散性",
+    "凑微分"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     1,
+     5
+    ],
+    "anchor": "选择题(3)"
+   },
+   "content_hash": "sha256:74677ffc233a15c679f8a1447367100a7f1c1abeb70ccba09bc11f9dfc96bc6a",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-4",
+   "subject": "math2",
+   "year": 2016,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $f(x)$ 在 $(-\\infty,+\\infty)$ 内连续，其导数的图形如图所示，则（ ）",
+   "options": [
+    "（A）函数 $f(x)$ 有 2 个极值点，曲线 $y=f(x)$ 有 2 个拐点",
+    "（B）函数 $f(x)$ 有 2 个极值点，曲线 $y=f(x)$ 有 3 个拐点",
+    "（C）函数 $f(x)$ 有 3 个极值点，曲线 $y=f(x)$ 有 1 个拐点",
+    "（D）函数 $f(x)$ 有 3 个极值点，曲线 $y=f(x)$ 有 2 个拐点"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "对图像进行标记，可知 $x_{1},x_{3},x_{5}$ 为驻点，而在 $x_{1}$ 和 $x_{3}$ 两侧 $f'(x)$ 变号，则为极值点；$x_{5}$ 两侧 $f'(x)$ 不变号，则不是极值点。在 $x_{2}$ 处一阶导数不存在，但在 $x_{2}$ 两侧 $f'(x)$ 不变号，则不是极值点。在 $x_{2}$ 处二阶导数不存在，在 $x_{4}$ 和 $x_{5}$ 处二阶导数为零，在这三个点两侧一阶导函数增减性发生变化，则都为拐点。故应选（B）。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "从 $f'$ 的图读 $f$：$f'$ 变号 → 极值（$f'$ 不存在的点也算候选）；$f'$ 的增减变号（即 $f''$ 变号，含 $f'$ 垂直渐近处）→ 拐点。本题 2 极值 + 3 拐点。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$f'$ 不存在的点（$x_2$，$f'$ 有垂直渐近）也可能是拐点——看 $f'$ 增减性是否改变。"
+    }
+   ],
+   "knowledge_points": [
+    "极值与拐点（由导数图形判断）"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     1,
+     5,
+     6
+    ],
+    "anchor": "选择题(4)"
+   },
+   "content_hash": "sha256:bb09a12ebcc260f0c1fce5a912d61a0adcad3e495039b78945df0697f61b2104",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-5",
+   "subject": "math2",
+   "year": 2016,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $f_{i}(x)\\ (i=1,2)$ 具有二阶连续导数，且 $f''_{i}(x_{0})<0\\ (i=1,2)$。若两条曲线 $y=f_{i}(x)\\ (i=1,2)$ 在点 $(x_{0},y_{0})$ 处具有公切线 $y=g(x)$，且在该点处曲线 $y=f_{1}(x)$ 的曲率大于曲线 $y=f_{2}(x)$ 的曲率，则在 $x_{0}$ 的某个邻域内，有（ ）",
+   "options": [
+    "（A）$f_{1}(x)\\le f_{2}(x)\\le g(x)$",
+    "（B）$f_{2}(x)\\le f_{1}(x)\\le g(x)$",
+    "（C）$f_{1}(x)\\le g(x)\\le f_{2}(x)$",
+    "（D）$f_{2}(x)\\le g(x)\\le f_{1}(x)$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "方法一：在该点处曲线 $y=f_{1}(x)$ 的曲率大于曲线 $y=f_{2}(x)$ 的曲率，根据曲率公式 $\\rho=\\dfrac{|y''|}{\\left(1+y'^{2}\\right)^{\\frac32}}$，且 $f_{i}'(x_{0})<0$（$i=1,2$）可得 $y_{1}''<y_{2}''$，即 $f_{1}''(x_{0})<f_{2}''(x_{0})$。根据泰勒二阶展开式：$f_{1}(x)=f_{1}(x_{0})+f_{1}'(x_{0})(x-x_{0})+\\dfrac{f_{1}''(x_{0})}{2}(x-x_{0})^{2}$（1），$f_{2}(x)=f_{2}(x_{0})+f_{2}'(x_{0})(x-x_{0})+\\dfrac{f_{2}''(x_{0})}{2}(x-x_{0})^{2}$（2），$g(x)=g(x_{0})+g'(x_{0})(x-x_{0})$（3）。又两条曲线在 $(x_{0},y_{0})$ 处具有公切线 $y=g(x)$，则有 $f_{1}(x_{0})=f_{2}(x_{0})=g(x_{0})$，$f_{1}'(x_{0})=f_{2}'(x_{0})$。结合（1）（2）以及 $f_{1}''(x_{0})<f_{2}''(x_{0})$ 可得 $f_{1}(x)\\le f_{2}(x)$。再联立（1）（3）可得 $f_{1}(x)-g(x)=\\dfrac{f_{1}''(x_{0})}{2}(x-x_{0})^{2}<0$。同理 $f_{2}(x)-g(x)=\\dfrac{f_{2}''(x_{0})}{2}(x-x_{0})^{2}<0$。即可得到 $f_{1}(x)\\le f_{2}(x)\\le g(x)$，选 A。方法二：由 $f_{i}'(x_{0})<0$（$i=1,2$）知在 $x_{0}$ 某邻域内曲线是凸的（开口向下），又曲率大的弯得更厉害，故 $f_{1}(x)\\le f_{2}(x)\\le g(x)$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "$y'<0$（倾斜向下）+ 曲率大 → 更「弯」→ 在公切线下方更远：曲率大的一支在最下，公切线在最上。泰勒展开严格化：二阶项系数 $f''/2<0$ 全为负，比大小即可。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：曲率是「弯的程度」不是位置高低——需要结合 $y''<0$（凸）才能推出上下关系。"
+    }
+   ],
+   "knowledge_points": [
+    "曲率",
+    "泰勒公式",
+    "曲线位置比较"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     1,
+     6
+    ],
+    "anchor": "选择题(5)"
+   },
+   "content_hash": "sha256:42dab0af7af2c6973f93447e01f9abc6f74664d79614cea054ca00bedf4d2729",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-6",
+   "subject": "math2",
+   "year": 2016,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "已知函数 $f(x,y)=\\dfrac{e^{x}}{x-y}$，则（ ）",
+   "options": [
+    "（A）$f'_{x}-f'_{y}=0$",
+    "（B）$f'_{x}+f'_{y}=0$",
+    "（C）$f'_{x}-f'_{y}=f$",
+    "（D）$f'_{x}+f'_{y}=f$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$f'_{x}=\\dfrac{e^{x}(x-y)-e^{x}}{(x-y)^{2}}$，$f'_{y}=\\dfrac{e^{x}}{(x-y)^{2}}$；因而 $f'_{x}+f'_{y}=\\dfrac{e^{x}}{x-y}=f$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "直接求两个偏导再组合；也可用链式：$f=e^x u^{-1}$，$u=x-y$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$f_y$ 的分子是 $+e^x$（分母对 $y$ 求导取负再消）。"
+    }
+   ],
+   "knowledge_points": [
+    "偏导数计算"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     6
+    ],
+    "anchor": "选择题(6)"
+   },
+   "content_hash": "sha256:e73e7bb0a8873093a2274a361772487bb475fe472ccfaf5e55a1c2e75e24d0ad",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-7",
+   "subject": "math2",
+   "year": 2016,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $A,B$ 是可逆矩阵，且 $A$ 与 $B$ 相似，则下列结论错误的是（ ）",
+   "options": [
+    "（A）$A^{T}$ 与 $B^{T}$ 相似",
+    "（B）$A^{-1}$ 与 $B^{-1}$ 相似",
+    "（C）$A+A^{T}$ 与 $B+B^{T}$ 相似",
+    "（D）$A+A^{-1}$ 与 $B+B^{-1}$ 相似"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "由已知条件，存在可逆矩阵 $P$ 使得 $P^{-1}AP=B$。那么 $B^{T}=\\left(P^{-1}AP\\right)^{T}=P^{T}A^{T}\\left(P^{-1}\\right)^{T}=P_{1}^{-1}A^{T}P_{1}$，其中 $P_{1}=\\left(P^{T}\\right)^{-1}$，即 $A^{T}$ 和 $B^{T}$ 相似，（A）正确。$B^{-1}=\\left(P^{-1}AP\\right)^{-1}=P^{-1}A^{-1}\\left(P^{-1}\\right)^{-1}=P^{-1}A^{-1}P$，即 $A^{-1}$ 和 $B^{-1}$ 相似，（B）正确。又 $P^{-1}\\left(A+A^{-1}\\right)P=P^{-1}AP+P^{-1}A^{-1}P=B+B^{-1}$，即 $A+A^{-1}$ 和 $B+B^{-1}$ 相似，（D）正确。故选 C。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "相似的矩阵经「同一多项式/同一可逆变换」运算仍相似：$A^T,\\ A^{-1},\\ A+A^{-1}$ 都保相似；而 $A+A^T$ 的「转置」不与 $P$ 相容。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：以为对称化 $A+A^T$ 也保相似——它不是 $P$ 的多项式。"
+    }
+   ],
+   "knowledge_points": [
+    "相似矩阵的运算性质"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     6
+    ],
+    "anchor": "选择题(7)"
+   },
+   "content_hash": "sha256:c74f334b57d43d15df18111419acb103e67febf43cccb88fac0f4a507634643c",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-8",
+   "subject": "math2",
+   "year": 2016,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "设二次型 $f(x_{1},x_{2},x_{3})=a\\left(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}\\right)+2x_{1}x_{2}+2x_{2}x_{3}+2x_{1}x_{3}$ 的正、负惯性指数分别为 1, 2，则（ ）",
+   "options": [
+    "（A）$a>1$",
+    "（B）$a<-2$",
+    "（C）$-2<a<1$",
+    "（D）$a=1$ 或 $a=-2$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "二次型矩阵 $A=\\begin{pmatrix}a&1&1\\\\1&a&1\\\\1&1&a\\end{pmatrix}$。由特征多项式 $|\\lambda E-A|=(\\lambda-a-2)(\\lambda-a+1)^{2}$。矩阵 $A$ 的特征值 $a+2,\\ a-1,\\ a-1$。由 $p=1,\\ q=2$：$\\begin{cases}a+2>0\\\\a-1<0\\end{cases}\\ \\therefore-2<a<1$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "特征值 $a+2$（单），$a-1$（二重）；正惯性指数 1 → 恰一个正特征值 → $a+2>0$ 且 $a-1<0$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$a-1$ 是二重根——两个都算负惯性；端点 $a=-2$ 或 $a=1$ 时出现零特征值（秩变 2），不符 $p=1,q=2$。"
+    }
+   ],
+   "knowledge_points": [
+    "二次型",
+    "惯性指数",
+    "特征值"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     6,
+     7
+    ],
+    "anchor": "选择题(8)"
+   },
+   "content_hash": "sha256:d3e0ce05383338179bdee19ff25e2e32eb755ae6c557faf81246da722103a888",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-9",
+   "subject": "math2",
+   "year": 2016,
+   "num": 9,
+   "type": "fill",
+   "score": 4,
+   "stem": "曲线 $y=\\dfrac{x^{3}}{1+x^{2}}+\\arctan\\left(1+x^{2}\\right)$ 的斜渐近线方程为 ______。",
+   "options": [],
+   "answer": "$y=x+\\dfrac{\\pi}{2}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\lim_{x\\to\\infty}\\dfrac{y}{x}=\\lim_{x\\to\\infty}\\left[\\dfrac{x^{2}}{1+x^{2}}+\\dfrac{\\arctan\\left(1+x^{2}\\right)}{x}\\right]=1=a$；$\\lim_{x\\to\\infty}[y-ax]=\\lim_{x\\to\\infty}\\left[\\dfrac{x^{3}}{1+x^{2}}-x+\\arctan\\left(1+x^{2}\\right)\\right]=\\lim_{x\\to\\infty}\\dfrac{-x}{1+x^{2}}+\\dfrac{\\pi}{2}=\\dfrac{\\pi}{2}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "除法 $\\frac{x^3}{1+x^2}=x-\\frac{x}{1+x^2}$；$\\arctan(1+x^2)\\to\\frac\\pi2$；余项 $-\\frac{x}{1+x^2}\\to0$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\arctan$ 的极限值 $\\frac\\pi2$（两个方向一致，因 $1+x^2>0$）。"
+    }
+   ],
+   "knowledge_points": [
+    "斜渐近线"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(9)"
+   },
+   "content_hash": "sha256:3d2225565740322e7a2748f4c852109c0fd08230f35c884fff3212b329ab4510",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-10",
+   "subject": "math2",
+   "year": 2016,
+   "num": 10,
+   "type": "fill",
+   "score": 4,
+   "stem": "极限 $\\lim_{n\\to\\infty}\\dfrac{1}{n^{2}}\\left(\\sin\\dfrac{1}{n}+2\\sin\\dfrac{2}{n}+\\cdots+n\\sin\\dfrac{n}{n}\\right)=$ ______。",
+   "options": [],
+   "answer": "$\\sin 1-\\cos 1$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\lim_{n\\to\\infty}\\dfrac{1}{n^{2}}\\left(\\sin\\dfrac{1}{n}+2\\sin\\dfrac{2}{n}+\\cdots+n\\sin\\dfrac{n}{n}\\right)=\\lim_{n\\to\\infty}\\dfrac{1}{n}\\left[\\dfrac{1}{n}\\sin\\dfrac{1}{n}+\\dfrac{2}{n}\\sin\\dfrac{2}{n}+\\cdots+\\dfrac{n}{n}\\sin\\dfrac{n}{n}\\right]=\\lim_{n\\to\\infty}\\dfrac{1}{n}\\sum_{i=1}^{n}\\dfrac{i}{n}\\sin\\dfrac{i}{n}=\\int_{0}^{1}x\\sin x\\,dx=-x\\cos x\\Big|_{0}^{1}+\\int_{0}^{1}\\cos x\\,dx=\\sin 1-\\cos 1$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "改写为 $\\frac1n\\sum \\frac in\\sin\\frac in$ → 黎曼和 → $\\int_0^1 x\\sin x\\,dx$（分部积分）。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\frac{1}{n^2}$ 要拆成 $\\frac1n\\cdot\\frac1n$；分部积分 $\\int x\\sin x=-x\\cos x+\\sin x$。"
+    }
+   ],
+   "knowledge_points": [
+    "定积分定义（黎曼和）",
+    "分部积分"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(10)"
+   },
+   "content_hash": "sha256:355d599261f6267d51b63e2e10f51780f7c94e63421d136cf7c357e67f905786",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-11",
+   "subject": "math2",
+   "year": 2016,
+   "num": 11,
+   "type": "fill",
+   "score": 4,
+   "stem": "以 $y=x^{2}-e^{x}$ 和 $y=x^{2}$ 为特解的一阶非齐次线性微分方程为 ______。",
+   "options": [],
+   "answer": "$y'-y=2x-x^{2}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "利用线性微分方程解的性质与结构。设所求的一阶非齐次线性微分方程为 $y'+p(x)y=q(x)$。显然 $y=x^{2}$ 和 $y=x^{2}-e^{x}$ 的差 $e^{x}$ 是方程 $y'+p(x)y=0$ 的解，代入方程得 $p(x)=-1$。再把 $y=x^{2}$ 代入方程 $y'+p(x)y=q(x)$ 得 $q(x)=2x-x^{2}$。所求的一阶非齐次线性微分方程为 $y'-y=2x-x^{2}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "两解之差是齐次解 → 定 $p(x)$；任一特解回代 → 定 $q(x)$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$p$ 是常数 $-1$ 而不是函数；$y=x^2$ 求导 $2x$ 代入。"
+    }
+   ],
+   "knowledge_points": [
+    "一阶线性方程解的结构"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(11)"
+   },
+   "content_hash": "sha256:d44a98a705b1682bf6e25d57fe477f05e9c1426dc11022eedba3e494e12c9f01",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-12",
+   "subject": "math2",
+   "year": 2016,
+   "num": 12,
+   "type": "fill",
+   "score": 4,
+   "stem": "已知函数 $f(x)$ 在 $(-\\infty,+\\infty)$ 上连续，且 $f(x)=(x+1)^{2}+2\\int_{0}^{x}f(t)dt$，则当 $n\\ge 2$ 时，$f^{(n)}(0)=$ ______。",
+   "options": [],
+   "answer": "$5\\times2^{n-1}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$f'(x)=2(x+1)+2f(x)$，$f'(0)=2+2f(0)=4$。$f''(x)=2+2f'(x)$，$f''(0)=2+2\\times4=10$。$f'''(x)=2f''(x)$。$f^{(n)}(x)=2f^{(n-1)}(x)=2^{2}f^{(n-2)}(x)=2^{n-2}f''(x)$。$f^{(n)}(0)=2^{n-2}f''(0)=2^{n-2}\\cdot10\\ (n>2)$。则 $f^{(n)}(0)=2^{n-2}\\cdot10=5\\times2^{n-1}\\ (n\\ge2)$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "逐阶求导找递推：$f'''$ 起 $f^{(n)}=2f^{(n-1)}$（几何增长）；$f''(0)=10$ 是种子。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$n=2$ 时 $10=5\\times2$ 也满足公式（题设 $n\\ge2$ 一致）。"
+    }
+   ],
+   "knowledge_points": [
+    "变限积分方程",
+    "高阶导数递推"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(12)"
+   },
+   "content_hash": "sha256:d56bd35a285e1ae875c20b7d4d5f7fb833c69a1b7a21a1396688f5fda5625384",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-13",
+   "subject": "math2",
+   "year": 2016,
+   "num": 13,
+   "type": "fill",
+   "score": 4,
+   "stem": "已知动点 $P$ 在曲线 $y=x^{3}$ 上运动，记坐标原点与点 $P$ 间的距离为 $l$。若点 $P$ 的横坐标对时间的变化率为常数 $v_{0}$，则当点 $P$ 运动到点 $(1,1)$ 时，$l$ 对时间的变化率是 ______。",
+   "options": [],
+   "answer": "$2\\sqrt{2}v_{0}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "由题设知 $l=\\sqrt{x^{2}+y^{2}}=\\sqrt{x^{2}+x^{6}}$，$\\dfrac{dl}{dt}=\\dfrac{dl}{dx}\\cdot\\dfrac{dx}{dt}=\\dfrac{\\left(2x+6x^{5}\\right)}{2\\sqrt{x^{2}+x^{6}}}\\dfrac{dx}{dt}$，$\\left.\\dfrac{dl}{dt}\\right|_{(1,1)}=\\dfrac{8}{2\\sqrt2}v_{0}=2\\sqrt2\\,v_{0}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "相关变化率：$l=\\sqrt{x^2+x^6}$ 链式求导；$(1,1)$ 处 $\\frac{dl}{dx}=\\frac{8}{2\\sqrt2}=2\\sqrt2$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$y=x^3$ → $y^2=x^6$（不是 $x^9$）；分母 $2\\sqrt{x^2+x^6}=2\\sqrt2$。"
+    }
+   ],
+   "knowledge_points": [
+    "相关变化率"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     7,
+     8
+    ],
+    "anchor": "填空题(13)"
+   },
+   "content_hash": "sha256:9d2b0252e42e6a23a0362df02d015dee6b0ac6c8597ba8260109bddb60a44f82",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-14",
+   "subject": "math2",
+   "year": 2016,
+   "num": 14,
+   "type": "fill",
+   "score": 4,
+   "stem": "设矩阵 $\\begin{pmatrix}a&-1&-1\\\\-1&a&-1\\\\-1&-1&a\\end{pmatrix}$ 与 $\\begin{pmatrix}1&1&0\\\\0&-1&1\\\\1&0&1\\end{pmatrix}$ 等价，则 $a=$ ______。",
+   "options": [],
+   "answer": "$2$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "矩阵 $A,B$ 等价 $\\Leftrightarrow r(A)=r(B)$。由 $r\\begin{pmatrix}1&1&0\\\\0&-1&1\\\\1&0&1\\end{pmatrix}=2$，而 $|A|=\\begin{vmatrix}a&-1&-1\\\\-1&a&-1\\\\-1&-1&a\\end{vmatrix}=(a-2)(a+1)^{2}=0$，$a=-1$ 时易见 $r(B)=1$ 不合题意；$a=2$ 时矩阵 $A$ 和 $B$ 等价。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "等价 ⇔ 同秩：先求 $B$ 的秩 2，再令 $|A|=0$ 找候选，逐一验证秩。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$a=-1$ 时 $A$ 的秩是 1（全对角化到 $-3,0,0$? 实际 $r=1$），不合 $r=2$。"
+    }
+   ],
+   "knowledge_points": [
+    "矩阵等价",
+    "秩"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     8
+    ],
+    "anchor": "填空题(14)"
+   },
+   "content_hash": "sha256:e826885ea349ac2cfaef617958bd1dce5e9dc420335417f12981b2bcaee29c0a",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-15",
+   "subject": "math2",
+   "year": 2016,
+   "num": 15,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）求极限 $\\lim_{x\\to0}\\left(\\cos 2x+2x\\sin x\\right)^{\\frac{1}{x^{4}}}$。",
+   "options": [],
+   "answer": "$e^{\\frac{1}{3}}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\lim_{x\\to0}\\left(\\cos 2x+2x\\sin x\\right)^{\\frac{1}{x^{4}}}=\\lim_{x\\to0}\\left[1+\\left(\\cos 2x-1+2x\\sin x\\right)\\right]^{\\frac{1}{x^{4}}}$，$\\lim_{x\\to0}\\dfrac{\\cos 2x-1+2x\\sin x}{x^{4}}=\\lim_{x\\to0}\\dfrac{1-\\dfrac{1}{2}(2x)^{2}+\\dfrac{1}{4!}(2x)^{4}-1+2x\\left(x-\\dfrac{1}{6}x^{3}\\right)+o(x^{4})}{x^{4}}=\\lim_{x\\to0}\\dfrac{\\dfrac{1}{3}x^{4}+o(x^{4})}{x^{4}}=\\dfrac{1}{3}$，故原式 $=e^{\\frac{1}{3}}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "$1^\\infty$ 型：指数 = $\\lim\\frac{\\cos2x-1+2x\\sin x}{x^4}$；泰勒展开 $\\cos 2x$（到 $x^4$）与 $\\sin x$（到 $x^3$），二阶项相消、四阶留 $\\frac13x^4$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\cos2x$ 的四阶系数 $\\frac{2^4}{4!}=\\frac{2}{3}$，与 $2x\\sin x$ 的 $-\\frac13$ 相消后剩 $\\frac13$——展开阶数不够会误判。"
+    }
+   ],
+   "knowledge_points": [
+    "1^∞ 型极限",
+    "泰勒展开（高阶）"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     8
+    ],
+    "anchor": "解答题(15)"
+   },
+   "content_hash": "sha256:fa90f3c888a5bbc1e567f92d9e5a9acc107d1d53856b431e239f5b5c0c3e64f1",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-16",
+   "subject": "math2",
+   "year": 2016,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）设函数 $f(x)=\\int_{0}^{1}\\left|t^{2}-x^{2}\\right|dt\\ (x>0)$，求 $f'(x)$ 并求 $f(x)$ 的最小值。",
+   "options": [],
+   "answer": "$f'(x)=\\begin{cases}-2x+4x^{2}, & 0<x<1\\\\ 2x, & x\\ge1\\end{cases}$；最小值 $f\\left(\\dfrac{1}{2}\\right)=\\dfrac{1}{4}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$f(x)=\\begin{cases}\\int_{0}^{x}\\left(x^{2}-t^{2}\\right)dt+\\int_{x}^{1}\\left(t^{2}-x^{2}\\right)dt, & 0<x<1\\\\ \\int_{0}^{1}\\left(x^{2}-t^{2}\\right)dt, & x\\ge1\\end{cases}=\\begin{cases}\\dfrac{4}{3}x^{3}-x^{2}+\\dfrac{1}{3}, & 0<x<1\\\\ x^{2}-\\dfrac{1}{3}, & x\\ge1\\end{cases}$。$f'(x)=\\begin{cases}-2x+4x^{2}, & 0<x<1\\\\ 2x, & x\\ge1\\end{cases}$。$f(x)$ 在 $x=1$ 处连续，$\\lim_{x\\to1^{-}}f'(x)=\\lim_{x\\to1^{-}}\\left(-2x+4x^{2}\\right)=2$，则 $f'(1)=f'(1^{-})=2$，故 $f'(1)=2$。令 $f'(x)=0$，$4x^{2}-2x=0\\ (0<x<1)$，$2x(2x-1)=0$，$x=\\dfrac{1}{2}$。当 $0<x<\\dfrac{1}{2}$ 时 $f'(x)<0$，$f(x)$ 递减；$\\dfrac{1}{2}<x<1$ 时 $f'(x)>0$，$f(x)$ 递增；$x>1$ 时 $f'(x)>0$，$f(x)$ 递增。则 $f(x)$ 在 $x=\\dfrac{1}{2}$ 处取最小值，$f\\left(\\dfrac{1}{2}\\right)=\\dfrac{4}{3}\\cdot\\dfrac{1}{8}-\\dfrac{1}{4}+\\dfrac{1}{3}=\\dfrac{1}{4}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "按 $x$ 与 $[0,1]$ 的关系分段去掉绝对值 → 显式积分 → 分段导数（$x=1$ 处用连续性衔接）；最小值在驻点 $x=1/2$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：绝对值分段时 $t$ 与 $x$ 的角色；$f'$ 在 $x=1$ 的衔接（左导=右导=2）。"
+    }
+   ],
+   "knowledge_points": [
+    "绝对值积分",
+    "分段函数",
+    "最值"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     2,
+     8,
+     9
+    ],
+    "anchor": "解答题(16)"
+   },
+   "content_hash": "sha256:5ccebd1d3cdbb9f21587f661d945b75570484c7c89688d82b6b42045ad5cd2c6",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-17",
+   "subject": "math2",
+   "year": 2016,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）已知函数 $z=z(x,y)$ 由方程 $\\left(x^{2}+y^{2}\\right)z+\\ln z+2\\left(x+y+1\\right)=0$ 确定，求 $z=z(x,y)$ 的极值。",
+   "options": [],
+   "answer": "极大值 $z(-1,-1)=1$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\left(x^{2}+y^{2}\\right)z+\\ln z+2(x+y+1)=0$ 两边分别对 $x,y$ 求偏导得：$2xz+\\left(x^{2}+y^{2}\\right)\\dfrac{\\partial z}{\\partial x}+\\dfrac{1}{z}\\dfrac{\\partial z}{\\partial x}+2=0$（①），$2yz+\\left(x^{2}+y^{2}\\right)\\dfrac{\\partial z}{\\partial y}+\\dfrac{1}{z}\\dfrac{\\partial z}{\\partial y}+2=0$（②）。令 $\\begin{cases}\\dfrac{\\partial z}{\\partial x}=0\\\\ \\dfrac{\\partial z}{\\partial y}=0\\end{cases}$ 得 $\\begin{cases}xz+1=0\\\\ yz+1=0\\end{cases}$，故 $x=y=-\\dfrac{1}{z}$，且 $z>0$。将上式代入原方程可得 $\\ln z-\\dfrac{2}{z}+2=0$，$\\begin{cases}x=-1\\\\y=-1\\\\z=1\\end{cases}$。方程①②两边分别对 $x$ 求偏导后，在 $(-1,-1,1)$ 处计算得 $A=\\left.\\dfrac{\\partial^{2}z}{\\partial x^{2}}\\right|_{(-1,-1)}=-\\dfrac{2}{3}$，$B=\\left.\\dfrac{\\partial^{2}z}{\\partial x\\partial y}\\right|_{(-1,-1)}=0$，$C=\\left.\\dfrac{\\partial^{2}z}{\\partial y^{2}}\\right|_{(-1,-1)}=-\\dfrac{2}{3}$。又 $AC-B^{2}=\\dfrac{4}{9}>0$，$A=-\\dfrac{2}{3}<0$，从而点 $(-1,-1)$ 是 $z(x,y)$ 的极大值点，极大值为 $z(-1,-1)=1$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "隐函数驻点：$z_x=z_y=0$ → $xz+1=yz+1=0$ → $x=y$ 且代入原方程解出 $(-1,-1,1)$；二阶判别 $AC-B^2=4/9>0$，$A<0$ → 极大值 1。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$z>0$ 的约束（$\\ln z$）；二阶偏导要对①②再求导并代值化简。"
+    }
+   ],
+   "knowledge_points": [
+    "隐函数极值",
+    "AC-B² 判别"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     3,
+     9,
+     10
+    ],
+    "anchor": "解答题(17)"
+   },
+   "content_hash": "sha256:d5f275deb8eaa0b7076c3e1ba919724e3e7238d865b7b4a5f3d665b2875f11b5",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-18",
+   "subject": "math2",
+   "year": 2016,
+   "num": 18,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）设 $D$ 是由直线 $y=1$，$y=x$，$y=-x$ 围成的有界区域，计算二重积分 $\\iint_{D}\\dfrac{x^{2}-xy-y^{2}}{x^{2}+y^{2}}dxdy$。",
+   "options": [],
+   "answer": "$1-\\dfrac{\\pi}{2}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "积分区域 $D$ 关于 $y$ 轴对称，$xy$ 是关于 $x$ 的奇函数，则利用对称性得到 $\\iint_{D}\\dfrac{x^{2}-xy-y^{2}}{x^{2}+y^{2}}dxdy=\\iint_{D}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=2\\iint_{D_{右}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy$。方法一（直角坐标）：$\\iint_{D_{右}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=\\iint_{D_{右}}\\left(1-\\dfrac{2y^{2}}{x^{2}+y^{2}}\\right)dxdy=\\dfrac{1}{2}-2\\int_{0}^{1}dy\\int_{0}^{y}\\dfrac{y^{2}}{x^{2}+y^{2}}dx=\\dfrac{1}{2}-2\\int_{0}^{1}\\dfrac{\\pi}{4}y\\,dy=\\dfrac{1}{2}-\\dfrac{\\pi}{4}$。所以原式 $=1-\\dfrac{\\pi}{2}$。方法二（极坐标）：$2\\iint_{D_{右}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=\\dfrac12\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\dfrac{\\cos^{2}\\theta-\\sin^{2}\\theta}{\\sin^{2}\\theta}d\\theta=\\dfrac12\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\left(\\csc^{2}\\theta-1\\right)d\\theta-\\dfrac{\\pi}{8}=\\dfrac12-\\dfrac{\\pi}{4}$。所以原式 $=1-\\dfrac{\\pi}{2}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "对称性去掉 $xy$ 项；直角坐标里 $\\int\\frac{y^2}{x^2+y^2}dx=\\arctan\\frac xy$ 巧妙；极坐标 $\\frac{\\cos^2-\\sin^2}{\\sin^2}=\\csc^2\\theta-1$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$y$ 从 0 到 1 时 $x$ 从 0 到 $y$（右半区域）；$\\csc^2$ 的原函数 $-\\cot$。"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分对称性",
+    "直角/极坐标计算"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     3,
+     10
+    ],
+    "anchor": "解答题(18)"
+   },
+   "content_hash": "sha256:ff12e3fa3e82cee95e8318512e0781d9a2718a9948f7b52efca2ac081aecd18c",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-19",
+   "subject": "math2",
+   "year": 2016,
+   "num": 19,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）已知 $y_{1}(x)=e^{x}$，$y_{2}(x)=u(x)e^{x}$ 是二阶微分方程 $(2x-1)y''-(2x+1)y'+2y=0$ 的解。若 $u(-1)=e$，$u(0)=-1$，求 $u(x)$，并写出该微分方程的通解。",
+   "options": [],
+   "answer": "$u(x)=-(2x+1)e^{-x}$；通解 $y=C_{1}e^{x}+C_{2}(2x+1)$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "计算得 $y_{2}'(x)=\\left[u'(x)+u(x)\\right]e^{x}$，$y_{2}''(x)=\\left[u''(x)+2u'(x)+u(x)\\right]e^{x}$。将 $y_{2}(x)=u(x)e^{x}$ 代入方程 $(2x-1)y''-(2x+1)y'+2y=0$ 有 $(2x-1)u''(x)-(2x-3)u'(x)=0$，即 $\\dfrac{u''(x)}{u'(x)}=-\\dfrac{2x-3}{2x-1}$。两边积分得 $\\ln u'(x)=-x+\\ln(2x-1)+\\ln C_{1}$，即 $u'(x)=C_{1}(2x-1)e^{-x}$。因而 $u(x)=-C_{1}(2x+1)e^{-x}+C_{2}$。由条件 $u(-1)=e,\\ u(0)=-1$ 得 $C_{1}=1,\\ C_{2}=0$，即 $u(x)=-(2x+1)e^{-x}$。$y_{1}(x),\\ y_{2}(x)$ 是二阶微分方程的两个线性无关的解，所以所求的通解为 $y(x)=C_{1}e^{x}+C_{2}(2x+1)$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "已知一解 + 令另一解 $u e^x$ 代入 → $u''/u'$ 可分离 → 积分两次；$y_2=-(2x+1)$ 与 $y_1=e^x$ 线性无关 → 通解。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：代入后的化简（$e^x$ 因子全消）；$\\ln u'$ 积分的常数处理；$y_2=e^x\\cdot u=e^x\\cdot[-(2x+1)e^{-x}]=-(2x+1)$。"
+    }
+   ],
+   "knowledge_points": [
+    "二阶变系数方程",
+    "降阶法",
+    "通解结构"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     3,
+     10,
+     11
+    ],
+    "anchor": "解答题(19)"
+   },
+   "content_hash": "sha256:9a1e70cb75a894108d6cdc4bd85f2c2ca189f56ccf4e15d14363ca99c6433ecf",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-20",
+   "subject": "math2",
+   "year": 2016,
+   "num": 20,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设 $D$ 是由曲线 $y=\\sqrt{1-x^{2}}\\ (0\\le x\\le1)$ 与 $\\begin{cases}x=\\cos^{3}t\\\\ y=\\sin^{3}t\\end{cases}\\ \\left(0\\le t\\le\\dfrac{\\pi}{2}\\right)$ 围成的平面区域。求 $D$ 绕 $x$ 轴旋转一周所得旋转体的体积和表面积。",
+   "options": [],
+   "answer": "$V=\\dfrac{18\\pi}{35}$；$S=\\dfrac{16\\pi}{5}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$V=\\pi\\int_{0}^{1}y^{2}dx-\\pi\\int_{\\frac{\\pi}{2}}^{0}\\sin^{6}t\\,d\\cos^{3}t=\\pi\\int_{0}^{1}\\left(1-x^{2}\\right)dx-3\\pi\\int_{0}^{\\frac{\\pi}{2}}\\sin^{7}t\\cos^{2}t\\,dt=\\dfrac{2}{3}\\pi-3\\pi\\left(\\int_{0}^{\\frac{\\pi}{2}}\\sin^{7}t\\,dt-\\int_{0}^{\\frac{\\pi}{2}}\\sin^{9}t\\,dt\\right)=\\dfrac{2}{3}\\pi-\\dfrac{16}{105}\\pi=\\dfrac{18}{35}\\pi$。$S=2\\pi\\int_{0}^{\\frac{\\pi}{2}}\\sin t\\sqrt{\\sin^{2}t+\\cos^{2}t}\\,dt+2\\pi\\int_{0}^{\\frac{\\pi}{2}}\\sin^{3}t\\sqrt{9\\cos^{4}t\\sin^{2}t+9\\sin^{4}t\\cos^{2}t}\\,dt=2\\pi\\int_{0}^{\\frac{\\pi}{2}}\\sin t\\,dt+6\\pi\\int_{0}^{\\frac{\\pi}{2}}\\sin^{4}t\\cos t\\,dt=2\\pi+\\dfrac{6}{5}\\pi=\\dfrac{16\\pi}{5}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "区域 = 四分之一圆 − 星形线内弧：$V$ 用圆盘法两段相减（参数方程 $dx=-3\\cos^2 t\\sin t\\,dt$）；表面积 = 圆弧旋转面 + 星形线弧旋转面（星形线 $\\sqrt{x_t^2+y_t^2}=3\\sin t\\cos t$）。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：星形线弧长微元 $\\sqrt{9\\cos^4\\sin^2+9\\sin^4\\cos^2}=3\\sin t\\cos t$（第一象限非负）；华里士公式 $\\int_0^{π/2}\\sin^7=\\frac{6\\cdot4\\cdot2}{7\\cdot5\\cdot3}\\cdot1=\\frac{16}{35}$。"
+    }
+   ],
+   "knowledge_points": [
+    "旋转体体积与表面积",
+    "参数方程",
+    "星形线"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     3,
+     11
+    ],
+    "anchor": "解答题(20)"
+   },
+   "content_hash": "sha256:6d9f1960201d60ca42b6f60850542cb1cc248d92545b733e757288ca465c0695",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-21",
+   "subject": "math2",
+   "year": 2016,
+   "num": 21,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）已知 $f(x)$ 在 $\\left[0,\\dfrac{3\\pi}{2}\\right]$ 上连续，在 $\\left(0,\\dfrac{3\\pi}{2}\\right)$ 内是函数 $\\dfrac{\\cos x}{2x-3\\pi}$ 的一个原函数，且 $f(0)=0$。（I）求 $f(x)$ 在区间 $\\left[0,\\dfrac{3\\pi}{2}\\right]$ 上的平均值；（II）证明 $f(x)$ 在区间 $\\left(0,\\dfrac{3\\pi}{2}\\right)$ 内存在唯一零点。",
+   "options": [],
+   "answer": "（I）平均值为 $\\dfrac{1}{3\\pi}$；（II）证毕（唯一零点）",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "(I) 由题设知 $f(x)=\\int_{0}^{x}\\dfrac{\\cos t}{2t-3\\pi}dt+C$，由 $f(0)=0$ 知 $C=0$，则 $f(x)=\\int_{0}^{x}\\dfrac{\\cos t}{2t-3\\pi}dt$。$\\int_{0}^{\\frac{3\\pi}{2}}f(x)dx=\\int_{0}^{\\frac{3\\pi}{2}}dx\\int_{0}^{x}\\dfrac{\\cos t}{2t-3\\pi}dt=\\int_{0}^{\\frac{3\\pi}{2}}dt\\int_{t}^{\\frac{3\\pi}{2}}\\dfrac{\\cos t}{2t-3\\pi}dx=-\\dfrac{1}{2}\\int_{0}^{\\frac{3\\pi}{2}}\\cos t\\,dt=\\dfrac{1}{2}$。函数平均值为 $\\dfrac{\\int_{0}^{\\frac{3\\pi}{2}}f(x)dx}{\\frac{3\\pi}{2}-0}=\\dfrac{\\frac{1}{2}}{\\frac{3\\pi}{2}}=\\dfrac{1}{3\\pi}$。(II) $f'(x)=\\dfrac{\\cos x}{2x-3\\pi}$。当 $x\\in\\left(0,\\dfrac{\\pi}{2}\\right)$ 时 $f'(x)<0$，$f(x)$ 单调递减，又 $f(0)=0$，则 $f(x)<0$。当 $x\\in\\left(\\dfrac{\\pi}{2},\\dfrac{3\\pi}{2}\\right)$ 时 $f'(x)>0$，$f(x)$ 单调递增。$f\\left(\\dfrac{\\pi}{2}\\right)<0$，$f\\left(\\dfrac{3\\pi}{2}\\right)=\\int_{0}^{\\frac{3\\pi}{2}}\\dfrac{\\cos x}{2x-3\\pi}dx=\\dfrac{1}{2}\\int_{0}^{\\frac{3\\pi}{2}}\\dfrac{\\sin t}{t}dt>0$（换元 $t=\\frac{3\\pi}{2}-x$ 与 $\\frac{1}{t}\\sin t>0$ 于 $t\\in(0,\\frac{3\\pi}{2}]$），则 $f(x)$ 在 $\\left(\\dfrac{\\pi}{2},\\dfrac{3\\pi}{2}\\right)$ 上有唯一零点，故 $f(x)$ 在 $\\left(0,\\dfrac{3\\pi}{2}\\right)$ 有唯一零点。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "(I) 分部/交换积分次序把「原函数的积分」化为 $-\\frac12\\int\\cos t\\,dt=\\frac12$；(II) 单调性分段 + 端点符号（$f(\\pi/2)<0$、$f(3\\pi/2)>0$ 由 $\\frac{\\sin t}{t}>0$）。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：交换次序后内层积分 $\\int_t^{3\\pi/2}dx=\\frac{3\\pi}{2}-t$ 出现负号；唯一性由分段单调保证。"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分交换次序",
+    "平均值",
+    "零点存在唯一性"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     3,
+     11,
+     12
+    ],
+    "anchor": "解答题(21)"
+   },
+   "content_hash": "sha256:09c3d3eed18093fdf0467390c05d7fadf3fc353d5914684dfe2cac8729751adb",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-22",
+   "subject": "math2",
+   "year": 2016,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设矩阵 $A=\\begin{pmatrix}1&1&1-a\\\\1&0&a\\\\a+1&1&a+1\\end{pmatrix}$，$\\beta=\\begin{pmatrix}0\\\\1\\\\2a-2\\end{pmatrix}$，且方程组 $Ax=\\beta$ 无解。（I）求 $a$ 的值；（II）求方程组 $A^{T}Ax=A^{T}\\beta$ 的通解。",
+   "options": [],
+   "answer": "（I）$a=0$；（II）通解 $(1,-2,0)^{T}+k(0,-1,1)^{T}$（$k$ 为任意常数）",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "对 $(A|\\beta)$ 作初等行变换：$(A|\\beta)=\\begin{pmatrix}1&1&1-a&0\\\\1&0&a&1\\\\a+1&1&a+1&2a-2\\end{pmatrix}\\to\\begin{pmatrix}1&1&1-a&0\\\\0&-1&2a-1&1\\\\0&-a&a(a+1)&2a-2\\end{pmatrix}\\to\\begin{pmatrix}1&1&1-a&0\\\\0&-1&2a-1&1\\\\0&0&a(2-a)&a-2\\end{pmatrix}$。因方程组无解，故 $a=0$。(II) 对 $A^{T}Ax=A^{T}\\beta$，又 $A^{T}A=\\begin{pmatrix}1&1&1\\\\1&0&1\\\\1&1&1\\end{pmatrix}\\begin{pmatrix}1&1&1\\\\1&0&1\\\\1&1&1\\end{pmatrix}=\\begin{pmatrix}3&2&2\\\\2&2&2\\\\2&2&2\\end{pmatrix}$，$A^{T}\\beta=\\begin{pmatrix}1&1&1\\\\1&0&1\\\\1&1&1\\end{pmatrix}\\begin{pmatrix}0\\\\1\\\\-2\\end{pmatrix}=\\begin{pmatrix}-1\\\\-2\\\\-2\\end{pmatrix}$。对 $(A^{T}A|A^{T}\\beta)$ 作初等行变换有 $\\begin{pmatrix}3&2&2&-1\\\\2&2&2&-2\\\\2&2&2&-2\\end{pmatrix}\\to\\begin{pmatrix}1&0&0&1\\\\0&1&1&-2\\\\0&0&0&0\\end{pmatrix}$，得方程组 $A^{T}Ax=A^{T}\\beta$ 的通解为 $(1,-2,0)^{T}+k(0,-1,1)^{T}$，$k$ 为任意常数。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "(I) 无解 → 末行 $a(2-a)=0$ 且 $a-2\\ne0$ → $a=0$；(II) 正规方程 $A^TAx=A^T\\beta$（最小二乘方程）行变换求通解。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$a=2$ 时末行全零（无穷多解）不合「无解」；$A^TA$ 与 $A^T\\beta$ 是 $a=0$ 后代入的数值。"
+    }
+   ],
+   "knowledge_points": [
+    "无解判定",
+    "正规方程",
+    "通解"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     4,
+     12
+    ],
+    "anchor": "解答题(22)"
+   },
+   "content_hash": "sha256:d65e60c9857428943ac39a6d032d8595c3decd3087c5721ecea1af0f1e726740",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2016-23",
+   "subject": "math2",
+   "year": 2016,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）已知矩阵 $A=\\begin{pmatrix}0&-1&1\\\\2&-3&0\\\\0&0&0\\end{pmatrix}$。（I）求 $A^{99}$。（II）设 3 阶矩阵 $B=(\\alpha_{1},\\alpha_{2},\\alpha_{3})$ 满足 $B^{2}=BA$。记 $B^{100}=(\\beta_{1},\\beta_{2},\\beta_{3})$，将 $\\beta_{1},\\beta_{2},\\beta_{3}$ 分别表示为 $\\alpha_{1},\\alpha_{2},\\alpha_{3}$ 的线性组合。",
+   "options": [],
+   "answer": "（I）$A^{99}=\\begin{pmatrix}-2+2^{99}&1-2^{99}&2-2^{98}\\\\-2+2^{100}&1-2^{100}&2-2^{99}\\\\0&0&0\\end{pmatrix}$；（II）$\\beta_{1}=\\left(-2+2^{99}\\right)\\alpha_{1}+\\left(-2+2^{100}\\right)\\alpha_{2}$，$\\beta_{2}=\\left(1-2^{99}\\right)\\alpha_{1}+\\left(1-2^{100}\\right)\\alpha_{2}$，$\\beta_{3}=\\left(2-2^{98}\\right)\\alpha_{1}+\\left(2-2^{99}\\right)\\alpha_{2}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "(I) 由 $A$ 的特征多项式 $|\\lambda E-A|=\\lambda(\\lambda+1)(\\lambda+2)$，即 $A$ 的特征值为 $0,-1,-2$。对 $\\lambda=0$ 由 $(0E-A)x=0$ 得基础解系 $\\gamma_{1}=(3,2,2)^{T}$；对 $\\lambda=-1$ 由 $(-E-A)x=0$ 得基础解系 $\\gamma_{2}=(1,1,0)^{T}$；对 $\\lambda=-2$ 由 $(-2E-A)x=0$ 得基础解系 $\\gamma_{3}=(1,2,0)^{T}$。令 $P=(\\gamma_{1},\\gamma_{2},\\gamma_{3})$，有 $P^{-1}AP=\\Lambda=\\mathrm{diag}(0,-1,-2)$。对于 $P$，利用初等变换可求出 $P^{-1}=\\dfrac{1}{2}\\begin{pmatrix}0&0&1\\\\4&-2&-4\\\\-2&2&1\\end{pmatrix}$。则 $P^{-1}A^{99}P=\\Lambda^{99}\\Rightarrow A^{99}=P\\Lambda^{99}P^{-1}=\\begin{pmatrix}3&1&1\\\\2&1&2\\\\2&0&0\\end{pmatrix}\\begin{pmatrix}0&&\\\\&-1&\\\\&&-2^{99}\\end{pmatrix}\\dfrac{1}{2}\\begin{pmatrix}0&0&1\\\\4&-2&-4\\\\-2&2&1\\end{pmatrix}=\\begin{pmatrix}-2+2^{99}&1-2^{99}&2-2^{98}\\\\-2+2^{100}&1-2^{100}&2-2^{99}\\\\0&0&0\\end{pmatrix}$。(II) 因 $B^{2}=BA$ 知 $B^{3}=B(BA)=B^{2}A=BA^{2}$，归纳得 $B^{100}=BA^{99}=(\\alpha_{1},\\alpha_{2},\\alpha_{3})\\begin{pmatrix}-2+2^{99}&1-2^{99}&2-2^{98}\\\\-2+2^{100}&1-2^{100}&2-2^{99}\\\\0&0&0\\end{pmatrix}=\\left(\\left(-2+2^{99}\\right)\\alpha_{1}+\\left(-2+2^{100}\\right)\\alpha_{2},\\ \\left(1-2^{99}\\right)\\alpha_{1}+\\left(1-2^{100}\\right)\\alpha_{2},\\ \\left(2-2^{98}\\right)\\alpha_{1}+\\left(2-2^{99}\\right)\\alpha_{2}\\right)$。所以 $\\beta_{1}=\\left(-2+2^{99}\\right)\\alpha_{1}+\\left(-2+2^{100}\\right)\\alpha_{2}$；$\\beta_{2}=\\left(1-2^{99}\\right)\\alpha_{1}+\\left(1-2^{100}\\right)\\alpha_{2}$；$\\beta_{3}=\\left(2-2^{98}\\right)\\alpha_{1}+\\left(2-2^{99}\\right)\\alpha_{2}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "(I) 特征值 $0,-1,-2$（含零特征值）→ 对角化 → $A^{99}=P\\Lambda^{99}P^{-1}$；(II) $B^{100}=BA^{99}$ 按列读出线性组合（$B$ 的列就是 $\\alpha_i$）。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\Lambda^{99}=\\mathrm{diag}(0,(-1)^{99},(-2)^{99})=\\mathrm{diag}(0,-1,-2^{99})$；$B^{100}=B\\cdot A^{99}$（归纳 $B^{k+1}=BA^k$）。"
+    }
+   ],
+   "knowledge_points": [
+    "对角化求矩阵幂",
+    "矩阵按列分块",
+    "归纳关系"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+   "source_ref": {
+    "pdf": "2016数学二真题及解析.pdf",
+    "sha256": "3cf277b6253131fea3ca5e038713c135a76bee66c19f31c974da16b9dc32789b",
+    "pages": [
+     4,
+     13,
+     14
+    ],
+    "anchor": "解答题(23)"
+   },
+   "content_hash": "sha256:ab09e619a1462d622a0901992f2856e7bacc45912c360786bc2f753f701b6320",
+   "schema_version": "1.0.0"
+  }
+ ]
+}
