@@ -1,0 +1,69 @@
+[
+  {
+    "qid": "math2-2017-2", "origin": "derived",
+    "title": "第2题 凹函数与弦（示例 f=2x²−1）",
+    "xlim": [-1.2, 1.2], "ylim": [-1.5, 1.5],
+    "items": [
+      { "kind": "graph", "f": "2*x*x-1", "domain": [-1, 1], "color": "#1D4ED8", "label": "f(x)=2x²−1" },
+      { "kind": "hline", "y": 1, "style": "dashed", "label": "弦 g(x)=1" },
+      { "kind": "shade_between", "f1": "1", "f2": "2*x*x-1", "domain": [-1, 1], "color": "rgba(184,50,74,.25)" }
+    ],
+    "caption": "凹函数在弦下方（阴影为负面积）→ ∫₋₁¹f<∫₋₁¹g=0，选 B。"
+  },
+  {
+    "qid": "math2-2017-6", "origin": "derived",
+    "title": "第6题 赛跑速度曲线示意（同构原卷图）",
+    "xlim": [0, 30], "ylim": [0, 3.6],
+    "items": [
+      { "kind": "graph", "f": "1.6+0.8*sin(x/4.2)", "domain": [0, 30], "color": "#1D4ED8", "label": "甲 v₁（实线）" },
+      { "kind": "graph", "f": "1.2+0.95*sin(x/4.2+1.1)", "domain": [0, 30], "color": "#B8324A", "label": "乙 v₂（虚线）" },
+      { "kind": "vline", "x": 10, "style": "dashed" },
+      { "kind": "vline", "x": 25, "style": "dashed" },
+      { "kind": "label", "x": 3, "y": 2.9, "text": "面积10" },
+      { "kind": "label", "x": 15.5, "y": 3.0, "text": "面积20" },
+      { "kind": "label", "x": 26.5, "y": 2.6, "text": "面积3" }
+    ],
+    "caption": "示意（与原卷图同构）：t=10 时乙追回 10m 差距；到 t=25 乙反超 20m；t>25 后甲每 5s 追 3m → t₀=25，选 C。"
+  },
+  {
+    "qid": "math2-2017-11", "origin": "derived",
+    "title": "第11题 反常积分 ∫₀^∞ ln(1+x)/(1+x)² dx",
+    "xlim": [0, 11], "ylim": [0, 0.35],
+    "items": [
+      { "kind": "shade_under", "f": "ln(1+x)/((1+x)*(1+x))", "domain": [0, 11], "color": "rgba(31,122,109,.35)" },
+      { "kind": "graph", "f": "ln(1+x)/((1+x)*(1+x))", "domain": [0, 11], "color": "#1F7A6D" }
+    ],
+    "caption": "分部积分：边界项归零，剩 ∫₀^∞(1+x)⁻²dx=1（阴影面积）。"
+  },
+  {
+    "qid": "math2-2017-13", "origin": "derived",
+    "title": "第13题 交换次序的三角形区域",
+    "xlim": [-0.12, 1.2], "ylim": [-0.12, 1.2],
+    "items": [
+      { "kind": "polygon", "pts": [[0, 0], [1, 0], [1, 1]], "color": "rgba(201,169,97,.4)" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 1, "y2": 1, "color": "#1D4ED8", "label": "y=x" },
+      { "kind": "vline", "x": 1, "style": "dashed", "label": "x=1" }
+    ],
+    "caption": "区域 0≤y≤x≤1：交换次序后内层对 y 积分长度为 x → ∫₀¹ tanx dx=−lncos1。"
+  },
+  {
+    "qid": "math2-2017-17", "origin": "derived",
+    "title": "第17题 黎曼和对应的 ∫₀¹ xln(1+x)dx",
+    "xlim": [0, 1.05], "ylim": [0, 0.72],
+    "items": [
+      { "kind": "shade_under", "f": "x*ln(1+x)", "domain": [0, 1], "color": "rgba(29,78,216,.22)" },
+      { "kind": "graph", "f": "x*ln(1+x)", "domain": [0, 1.05], "color": "#1D4ED8" }
+    ],
+    "caption": "和式 → ∫₀¹ x ln(1+x)dx = 1/4（凑 d(x²) 分部，ln2 恰好相消）。"
+  },
+  {
+    "qid": "math2-2017-21", "origin": "derived",
+    "title": "第21题 解曲线：对数螺线 r=e^{−θ}",
+    "xlim": [-0.45, 1.1], "ylim": [-0.5, 0.5],
+    "items": [
+      { "kind": "polar", "r": "exp(-t)", "tmin": 0, "tmax": 10, "color": "#7C3AED" },
+      { "kind": "point", "x": 1, "y": 0, "label": "y(1)=0" }
+    ],
+    "caption": "½ln(x²+y²)+arctan(y/x)=0 即 ln r+θ=0 → 对数螺线 r=e^{−θ}（过 (1,0)，逆时针内旋）。"
+  }
+]
