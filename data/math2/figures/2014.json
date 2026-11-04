@@ -1,0 +1,56 @@
+[
+  {
+    "qid": "math2-2014-2", "origin": "derived",
+    "title": "第2题 四条曲线的渐近线判定",
+    "xlim": [0.3, 8.5], "ylim": [-0.5, 9.5],
+    "items": [
+      { "kind": "graph", "f": "x+sin(1/x)", "domain": [0.35, 8.5], "color": "#1D4ED8", "label": "(C) x+sin(1/x)" },
+      { "kind": "graph", "f": "x", "domain": [0, 8.5], "color": "#B8324A", "label": "y=x（渐近线）" },
+      { "kind": "graph", "f": "x+sin(x)", "domain": [0, 8.5], "color": "#94A3B8", "label": "(A) x+sin x" }
+    ],
+    "caption": "(C) 与 y=x 之差 sin(1/x)→0 → 有斜渐近线；(A) 差 sin x 不趋于 0 → 无。选 C。"
+  },
+  {
+    "qid": "math2-2014-4", "origin": "derived",
+    "title": "第4题 参数曲线 x=t²+7, y=t²+4t+1",
+    "xlim": [6, 14.5], "ylim": [-4.5, 8.5],
+    "items": [
+      { "kind": "parametric", "fx": "t*t+7", "fy": "t*t+4*t+1", "tmin": -2.6, "tmax": 2.6, "color": "#1D4ED8" },
+      { "kind": "point", "x": 8, "y": 6, "label": "t=1: (8,6)" }
+    ],
+    "caption": "抛物线（绕轴的抛物线）；t=1 处 y′=3、y″=−1 → 曲率半径 R=(1+9)^{3/2}=10√10，选 C。"
+  },
+  {
+    "qid": "math2-2014-12", "origin": "derived",
+    "title": "第12题 阿基米德螺线 r=θ 与切线",
+    "xlim": [-3.6, 4.6], "ylim": [-1.2, 3.6],
+    "items": [
+      { "kind": "polar", "r": "t", "tmin": 0, "tmax": 4.2, "color": "#1D4ED8" },
+      { "kind": "point", "x": 0, "y": 1.5708, "label": "(0,π/2)" },
+      { "kind": "graph", "f": "-0.6366*x+1.5708", "domain": [-1.2, 3.4], "color": "#B8324A", "label": "切线 (2/π)x+y=π/2" }
+    ],
+    "caption": "θ=π/2 处点在 y 轴上，切线斜率 −2/π；切线方程 (2/π)x+y−π/2=0。"
+  },
+  {
+    "qid": "math2-2014-17", "origin": "derived",
+    "title": "第17题 四分之一圆环区域 D",
+    "xlim": [-0.35, 2.5], "ylim": [-0.35, 2.5],
+    "items": [
+      { "kind": "polygon", "pts": [[1, 0], [1.259, 0.0], [1.5, 0.31], [1.66, 0.6], [1.74, 0.92], [1.73, 1.25], [1.64, 1.55], [1.46, 1.8], [1.21, 1.98], [0.92, 2.05], [0.6, 2.03], [0.31, 1.91], [0.08, 1.72], [0, 1.55], [0.71, 0.71]], "color": "rgba(201,169,97,.4)" },
+      { "kind": "parametric", "fx": "cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 1.5708, "color": "#1D4ED8", "label": "r=1" },
+      { "kind": "parametric", "fx": "2*cos(t)", "fy": "2*sin(t)", "tmin": 0, "tmax": 1.5708, "color": "#B8324A", "label": "r=2" }
+    ],
+    "caption": "轮换对称：x/(x+y) 与 y/(x+y) 各占一半 → 原式 = ½∬sin(πr)dσ = ½∫₀^{π/2}dθ∫₁² r sin πr dr = −3/4。"
+  },
+  {
+    "qid": "math2-2014-21", "origin": "derived",
+    "title": "第21题 曲线 (y+1)²=(2−x)lnx 与旋转轴 y=−1",
+    "xlim": [0.9, 2.15], "ylim": [-2.2, 1.2],
+    "items": [
+      { "kind": "graph", "f": "-1+sqrt((2-x)*ln(x))", "domain": [1.001, 2], "color": "#1D4ED8", "label": "上支" },
+      { "kind": "graph", "f": "-1-sqrt((2-x)*ln(x))", "domain": [1.001, 2], "color": "#1F7A6D", "label": "下支" },
+      { "kind": "hline", "y": -1, "style": "dashed", "label": "旋转轴 y=−1" }
+    ],
+    "caption": "闭曲线关于 y=−1 上下对称；旋转半径 |y+1|=√((2−x)lnx) → V=π∫₁²(2−x)lnx dx=(2ln2−5/4)π。"
+  }
+]
