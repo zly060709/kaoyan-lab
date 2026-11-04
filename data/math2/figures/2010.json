@@ -1,0 +1,65 @@
+[
+  {
+    "qid": "math2-2010-1", "origin": "derived",
+    "title": "第1题 f 的三个候选间断点",
+    "xlim": [-3.2, 3.2], "ylim": [-5, 7],
+    "items": [
+      { "kind": "graph", "f": "x/(x+1)*sqrt(1+1/(x*x))", "domain": [-3.2, 3.2], "color": "#1D4ED8" },
+      { "kind": "vline", "x": -1, "style": "dashed", "label": "x=−1 无穷间断" },
+      { "kind": "vline", "x": 0, "style": "dashed", "label": "x=0 跳跃" }
+    ],
+    "caption": "约分后 f= x/(x+1)·√(1+1/x²)：x=0 左右极限 −1/+1（跳跃），x=−1 发散（无穷间断），x=1 可去（图上连续）。仅 1 个无穷间断点，选 B。"
+  },
+  {
+    "qid": "math2-2010-3", "origin": "derived",
+    "title": "第3题 y=x² 与 y=2e·ln x 相切",
+    "xlim": [0, 3.2], "ylim": [-2.5, 5.5],
+    "items": [
+      { "kind": "graph", "f": "x*x", "domain": [0, 3.2], "color": "#1D4ED8", "label": "y=x²" },
+      { "kind": "graph", "f": "5.4366*ln(x)", "domain": [0.06, 3.2], "color": "#B8324A", "label": "y=2e·ln x" },
+      { "kind": "point", "x": 1.6487, "y": 2.7183, "label": "切点 (e^{1/2}, e)" }
+    ],
+    "caption": "相切条件联立：导数相等 2x=a/x 与函数值相等 x²=a·ln x → x=e^{1/2}，a=2e，选 C。"
+  },
+  {
+    "qid": "math2-2010-10", "origin": "derived",
+    "title": "第10题 曲线与其斜渐近线 y=2x",
+    "xlim": [-6.5, 6.5], "ylim": [-9, 9],
+    "items": [
+      { "kind": "graph", "f": "2*x*x*x/(x*x+1)", "domain": [-6.5, 6.5], "color": "#1D4ED8" },
+      { "kind": "graph", "f": "2*x", "domain": [-6.5, 6.5], "color": "#B8324A", "label": "y=2x" }
+    ],
+    "caption": "除法 2x³/(x²+1)=2x−2x/(x²+1)，差 →0：曲线在两方向都贴向直线 y=2x。"
+  },
+  {
+    "qid": "math2-2010-12", "origin": "derived",
+    "title": "第12题 对数螺线 r=e^θ（0≤θ≤π）",
+    "xlim": [-3.2, 1.6], "ylim": [0, 24],
+    "items": [
+      { "kind": "polar", "r": "exp(t)", "tmin": 0, "tmax": 3.1416, "color": "#1F7A6D" }
+    ],
+    "caption": "r′=r → 弧长 s=∫₀^π √(r²+r′²)dθ=√2∫₀^π e^θ dθ=√2(e^π−1)。"
+  },
+  {
+    "qid": "math2-2010-18", "origin": "derived",
+    "title": "第18题 贮油罐椭圆截面与油面（示意 a=2,b=1）",
+    "xlim": [-2.6, 2.6], "ylim": [-1.4, 1.4],
+    "items": [
+      { "kind": "parametric", "fx": "2*cos(t)", "fy": "sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "长轴2a 短轴2b" },
+      { "kind": "hline", "y": 0.5, "style": "dashed", "label": "油面（高 3b/2）" },
+      { "kind": "shade_between", "f1": "0.5", "f2": "-sqrt(1-(x/2)*(x/2))", "domain": [-1.732, 1.732], "color": "rgba(31,122,109,.3)" }
+    ],
+    "caption": "以 a=2,b=1 示意：油占下方区域（阴影），面积 = πab − 2×上方弓形；积分换元 y=b·sin t 后 S侧=(2π/3+√3/4)ab，质量=该面积×ρl。"
+  },
+  {
+    "qid": "math2-2010-20", "origin": "derived",
+    "title": "第20题 极坐标区域 D 化为三角形",
+    "xlim": [-0.15, 1.25], "ylim": [-0.15, 1.25],
+    "items": [
+      { "kind": "polygon", "pts": [[0, 0], [1, 0], [1, 1]], "color": "rgba(201,169,97,.4)" },
+      { "kind": "segment", "x1": 0, "y1": 0, "x2": 1, "y2": 1, "color": "#B8324A", "label": "θ=π/4" },
+      { "kind": "vline", "x": 1, "style": "dashed", "label": "r=secθ ⇔ x=1" }
+    ],
+    "caption": "r≤secθ 即 x≤1（r cosθ≤1），θ∈[0,π/4] → 直角区域 0≤x≤1, 0≤y≤x；被积函数化 y√(1−x²+y²) 后 I=1/3−π/16。"
+  }
+]

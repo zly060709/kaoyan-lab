@@ -1,0 +1,1373 @@
+{
+ "subject": "math2",
+ "year": 2010,
+ "paper": "数学（二）",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2010数学二真题及解析.pdf》（data/math2/pages/2010/），解析照录整理自原卷。",
+ "questions": [
+  {
+   "id": "math2-2010-1",
+   "subject": "math2",
+   "year": 2010,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "函数 $f(x)=\\dfrac{x^{2}-x}{x^{2}-1}\\sqrt{1+\\dfrac{1}{x^{2}}}$ 的无穷间断点的个数为（ ）",
+   "options": [
+    "A. 0",
+    "B. 1",
+    "C. 2",
+    "D. 3"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "函数在 $x=0,\\pm1$ 处无定义，所以间断点有 3 个。由于 $\\lim_{x\\to0}f(x)=-\\lim_{x\\to0}\\frac{\\sqrt{x^{2}+1}}{x+1}=-1$，$\\lim_{x\\to0^{+}}f(x)=\\lim_{x\\to0^{+}}\\frac{\\sqrt{x^{2}+1}}{x+1}=1$；$\\lim_{x\\to1}f(x)=\\lim_{x\\to1}\\frac{\\sqrt{x^{2}+1}}{x+1}=\\frac{\\sqrt2}{2}$，$\\lim_{x\\to-1}f(x)=-\\lim_{x\\to-1}\\frac{\\sqrt{x^{2}+1}}{x+1}=\\infty$。因此 $x=0$ 是跳跃间断点，$x=1$ 是可去间断点，$x=-1$ 是无穷间断点。故应选（B）。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "先约分 $\\frac{x(x-1)}{(x-1)(x+1)}=\\frac{x}{x+1}$（$x\\ne1$），化简后只剩 $x=0,-1$ 两类候选；逐一算左右极限定类型。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\sqrt{x^{2}}=|x|$，$x\\to0^-$ 时要变号，$x=0$ 是跳跃而不是可去；$x=1$ 虽然原式无定义但约分后极限存在，是可去点不是无穷点。"
+    }
+   ],
+   "knowledge_points": [
+    "间断点分类",
+    "极限计算"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     1,
+     5
+    ],
+    "anchor": "选择题(1)"
+   },
+   "content_hash": "sha256:fdd315f21b936255e646ef84594e7a6c5d749ff29c2800a173b446a6be457044",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-2",
+   "subject": "math2",
+   "year": 2010,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $y_{1},y_{2}$ 是一阶线性非齐次微分方程 $y'+p(x)y=q(x)$ 的两个特解，若常数 $\\lambda,\\mu$ 使 $\\lambda y_{1}+\\mu y_{2}$ 是该方程的解，$\\lambda y_{1}-\\mu y_{2}$ 是该方程对应的齐次方程的解，则（ ）",
+   "options": [
+    "A. $\\lambda=\\frac{1}{2},\\mu=\\frac{1}{2}$",
+    "B. $\\lambda=-\\frac{1}{2},\\mu=-\\frac{1}{2}$",
+    "C. $\\lambda=\\frac{2}{3},\\mu=\\frac{1}{3}$",
+    "D. $\\lambda=\\frac{2}{3},\\mu=\\frac{2}{3}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "由题意知 $y_{1}'+p(x)y_{1}=q(x)$（1），$y_{2}'+p(x)y_{2}=q(x)$（2）。将 $\\lambda y_{1}+\\mu y_{2}$ 代入微分方程得 $(\\lambda y_{1}'+\\mu y_{2}')+p(x)(\\lambda y_{1}+\\mu y_{2})=(\\lambda+\\mu)q(x)$，从而 $\\lambda+\\mu=1$。同理将 $\\lambda y_{1}-\\mu y_{2}$ 代入得 $(\\lambda-\\mu)q(x)$，由它是齐次方程的解得 $\\lambda-\\mu=0$。联立 $\\begin{cases}\\lambda+\\mu=1\\\\\\lambda-\\mu=0\\end{cases}$ 解得 $\\lambda=\\mu=\\frac{1}{2}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "非齐次解的线性组合仍是解 ⇔ 系数和为 1；组合为齐次解 ⇔ 系数和为 0。两条方程解出 $\\lambda,\\mu$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：把「齐次方程的解」也代入原非齐次方程比较；应代入对应的齐次方程 $y'+p(x)y=0$。"
+    }
+   ],
+   "knowledge_points": [
+    "线性微分方程解的结构"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     1,
+     5
+    ],
+    "anchor": "选择题(2)"
+   },
+   "content_hash": "sha256:f54b778ad23b0b78dc8b73ea2baccdab3f5456b06a10049a7e23ab078179ae49",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-3",
+   "subject": "math2",
+   "year": 2010,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "曲线 $y=x^{2}$ 与曲线 $y=a\\ln x\\ (a\\neq0)$ 相切，则 $a=$（ ）",
+   "options": [
+    "A. $4e$",
+    "B. $3e$",
+    "C. $2e$",
+    "D. $e$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$(x^{2})'=2x=(a\\ln x)'=\\frac{a}{x}$，可得 $x^{2}=\\frac{a}{2}$；由 $x^{2}=a\\ln x$ 联立，可得 $x=e^{\\frac{1}{2}}$，$a=2e$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "相切 = 有公共切点：函数值相等 + 导数值相等，两个方程解两个未知数（切点横坐标与 $a$）。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：只令函数值相等忽略切线斜率相等；注意 $\\ln x$ 定义域 $x>0$。"
+    }
+   ],
+   "knowledge_points": [
+    "曲线相切",
+    "导数几何意义"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     1,
+     5
+    ],
+    "anchor": "选择题(3)"
+   },
+   "content_hash": "sha256:5c229af90d63342475ae7f2ad9326f3c337a029b3b7e38667cf692d4a77fb15b",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-4",
+   "subject": "math2",
+   "year": 2010,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $m,n$ 是正整数，则反常积分 $\\int_{0}^{1}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx$ 的敛散性（ ）",
+   "options": [
+    "A. 仅与 $m$ 的取值有关",
+    "B. 仅与 $n$ 的取值有关",
+    "C. 与 $m,n$ 的取值都有关",
+    "D. 与 $m,n$ 的取值无关"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "显然 $x=0,\\ x=1$ 是两个瑕点，积分拆分为两个区间加和。对瑕点 $x=0$：当 $x\\to0^{+}$ 时被积函数 $=\\ln^{\\frac{2}{m}}(1-x)\\cdot x^{-\\frac{1}{n}}$ 等价于 $(-1)^{\\frac{2}{m}}x^{\\frac{2}{m}-\\frac{1}{n}}$，而 $\\int_{0}^{\\frac12}x^{\\frac{2}{m}-\\frac{1}{n}}dx$ 收敛（因 $m,n$ 是正整数 $\\Rightarrow \\frac{2}{m}-\\frac{1}{n}>-1$），故该段收敛。对瑕点 $x=1$：当 $x\\in(1-\\delta,1)$ 时被积函数 $<2^{\\frac1n}\\ln^{\\frac2m}(1-x)<2^{\\frac1n}(1-x)^{\\frac2m}$，而 $\\int_{\\frac12}^{1}(1-x)^{\\frac{2}{m}}dx$ 显然收敛，故该段收敛。所以与 $m,n$ 取值无关，选 D。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "两个瑕点分别用 $p$-积分判别：$x\\to0$ 处幂次 $\\frac2m-\\frac1n$（正整数保证 $>-1$）；$x\\to1$ 处 $\\ln$ 用 $\\ln(1-x)$ 的阶控制，总收敛。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：只盯 $x=0$ 忘了 $x=1$；$\\ln^{2}(1-x)$ 开 $m$ 次方后仍是可积的幂次（因为 $\\frac2m>0$）。"
+    }
+   ],
+   "knowledge_points": [
+    "反常积分敛散性",
+    "瑕积分 p 判别法"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     1,
+     5,
+     6
+    ],
+    "anchor": "选择题(4)"
+   },
+   "content_hash": "sha256:87b3e9ea9c6b4b1ef65e5d7daa937ce89c47fda41d92212b465ccf2f4cd4ee13",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-5",
+   "subject": "math2",
+   "year": 2010,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $z=z(x,y)$，由方程 $F\\left(\\dfrac{y}{x},\\dfrac{z}{x}\\right)=0$ 确定，其中 $F$ 为可微函数，且 $F_{2}'\\neq0$，则 $x\\dfrac{\\partial z}{\\partial x}+y\\dfrac{\\partial z}{\\partial y}=$（ ）",
+   "options": [
+    "A. $x$",
+    "B. $z$",
+    "C. $-x$",
+    "D. $-z$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$F\\left(\\frac yx,\\frac zx\\right)=0$，等式对 $x$ 求偏导：$F_{1}'\\left(-\\frac{y}{x^{2}}\\right)+F_{2}'\\left(-\\frac{z}{x^{2}}+\\frac{1}{x}\\frac{\\partial z}{\\partial x}\\right)=0$（1）；等式对 $y$ 求偏导：$F_{1}'\\cdot\\frac1x+F_{2}'\\cdot\\frac1x\\frac{\\partial z}{\\partial y}=0$（2）。(1)$\\times x^{2}$+(2)$\\times xy$ 得 $\\left(x\\frac{\\partial z}{\\partial x}+y\\frac{\\partial z}{\\partial y}\\right)F_{2}'=zF_{2}'$，所以 $x\\frac{\\partial z}{\\partial x}+y\\frac{\\partial z}{\\partial y}=z$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "齐次型方程 $F(y/x,z/x)=0$ 决定 $z$ 是一次齐次函数，欧拉定理直接给 $x z_x+y z_y=z$；不记得定理就按隐函数求导两条式子联立。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：对 $x$ 求导时 $\\frac zx$ 是商，别漏 $-\\frac{z}{x^2}$ 项。"
+    }
+   ],
+   "knowledge_points": [
+    "隐函数求导",
+    "齐次函数与欧拉定理"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     1,
+     6
+    ],
+    "anchor": "选择题(5)"
+   },
+   "content_hash": "sha256:d05a1577ec1532e1d55ff11c971c9a82b923a727a841424760535b26eddfe2c5",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-6",
+   "subject": "math2",
+   "year": 2010,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\sum_{j=1}^{n}\\dfrac{n}{(n+i)\\left(n^{2}+j^{2}\\right)}=$（ ）",
+   "options": [
+    "A. $\\int_{0}^{1}dx\\int_{0}^{x}\\dfrac{1}{(1+x)(1+y^{2})}dy$",
+    "B. $\\int_{0}^{1}dx\\int_{0}^{x}\\dfrac{1}{(1+x)(1+y)^{2}}dy$",
+    "C. $\\int_{0}^{1}dx\\int_{0}^{1}\\dfrac{1}{(1+x)(1+y)}dy$",
+    "D. $\\int_{0}^{1}dx\\int_{0}^{1}\\dfrac{1}{(1+x)(1+y^{2})}dy$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\sum_{j=1}^{n}\\frac{n}{(n+i)(n^{2}+j^{2})}=\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\frac{1}{1+\\frac in}\\cdot\\frac1n\\sum_{j=1}^{n}\\frac{1}{1+(\\frac jn)^{2}}\\cdot\\frac1n=\\int_{0}^{1}dx\\int_{0}^{1}\\frac{1}{(1+x)(1+y^{2})}dy$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "双重和拆成两个独立黎曼和的乘积：$\\frac{1}{1+i/n}\\cdot\\frac1n$ 与 $\\frac{1}{1+(j/n)^2}\\cdot\\frac1n$，分别对应 $x,y$ 的定积分 → 二重积分（正方形区域）。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$n^2+j^2$ 提出因子 $n^2$ 时漏掉给 $j$ 部分配 $\\frac1n$；区域是 $[0,1]\\times[0,1]$ 而非三角形。"
+    }
+   ],
+   "knowledge_points": [
+    "定积分定义",
+    "黎曼和",
+    "二重积分"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     1,
+     6
+    ],
+    "anchor": "选择题(6)"
+   },
+   "content_hash": "sha256:874394c29f2fed768895937f8a7cc6aca7bb16939fe2294bf54690f9ed16da3d",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-7",
+   "subject": "math2",
+   "year": 2010,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "设向量组 $I:\\alpha_{1},\\alpha_{2},\\cdots,\\alpha_{r}$ 可由向量组 $II:\\beta_{1},\\beta_{2},\\cdots,\\beta_{s}$ 线性表示，下列命题正确的是（ ）",
+   "options": [
+    "A. 若向量组 I 线性无关，则 $r\\le s$",
+    "B. 若向量组 I 线性相关，则 $r>s$",
+    "C. 若向量组 II 线性无关，则 $r\\le s$",
+    "D. 若向量组 II 线性相关，则 $r>s$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "由向量组 I 线性无关知 $r(I)=r$；又向量组 II 的秩 $r(II)\\le s$，且 I 可由 II 表示，则 $r=r(I)\\le r(II)\\le s$，即 $r\\le s$。选 A。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "标准结论：能被线性表示 → 秩不超过被表示组；无关组的秩 = 向量个数。四选项逐一用「秩不等式链」检验。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：C 中 II 无关只能给 $s\\ge r(II)$，推不出 $r\\le s$；正确的是「无关的表示组的个数不大于被表示组」。"
+    }
+   ],
+   "knowledge_points": [
+    "向量组的秩",
+    "线性表示"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     1,
+     2,
+     6
+    ],
+    "anchor": "选择题(7)"
+   },
+   "content_hash": "sha256:4151f642386262d3d515cb412a51d658262e1d735d6454316f905ff1a8def566",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-8",
+   "subject": "math2",
+   "year": 2010,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $A$ 为 4 阶实对称矩阵，且 $A^{2}+A=0$，若 $A$ 的秩为 3，则 $A$ 相似于（ ）",
+   "options": [
+    "A. $\\mathrm{diag}(1,1,1,0)$",
+    "B. $\\mathrm{diag}(1,1,-1,0)$",
+    "C. $\\mathrm{diag}(1,-1,-1,0)$",
+    "D. $\\mathrm{diag}(-1,-1,-1,0)$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "设 $A$ 的特征值为 $\\lambda$，由 $A^{2}+A=0$ 可得 $\\lambda$ 满足 $\\lambda^{2}+\\lambda=0$，即 $\\lambda(\\lambda+1)=0\\Rightarrow\\lambda=0$ 或 $\\lambda=-1$。且 $A$ 为实对称矩阵，必可相似对角化；$R(A)=3$，故对角阵的秩也是 3，$\\lambda=-1$ 是三重特征根：$A\\sim\\mathrm{diag}(-1,-1,-1,0)$。正确答案为（D）。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "矩阵方程 → 特征值方程；实对称 → 可对角化；秩 = 非零特征值个数（对角化后）→ 定重数。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：忘了「实对称」这一条件的作用（保证可对角化，从而秩=非零特征值个数对一般矩阵不成立）。"
+    }
+   ],
+   "knowledge_points": [
+    "矩阵方程与特征值",
+    "实对称矩阵",
+    "秩与相似对角化"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     6,
+     7
+    ],
+    "anchor": "选择题(8)"
+   },
+   "content_hash": "sha256:d3f0f530a4c22640b354fdf9edff5ff9eadbcd9f1e553e71d216036e4327fb6f",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-9",
+   "subject": "math2",
+   "year": 2010,
+   "num": 9,
+   "type": "fill",
+   "score": 4,
+   "stem": "三阶常系数线性齐次微分方程 $y'''-2y''+y'-2y=0$ 的通解为 $y=$ ______。",
+   "options": [],
+   "answer": "$C_{1}e^{2x}+C_{2}\\cos x+C_{3}\\sin x$（$C_{1},C_{2},C_{3}$ 为任意常数）",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "解特征方程 $\\lambda^{3}-2\\lambda^{2}+\\lambda-2=0$，特征值为 $2,\\ \\pm i$，可求得通解 $y=C_{1}e^{2x}+C_{2}\\cos x+C_{3}\\sin x$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "三次特征方程先试整数根（$\\lambda=2$ 试出），再因式分解 $（\\lambda-2)(\\lambda^2+1)$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：复根 $\\pm i$ 对应 $\\cos x,\\sin x$（$\\omega=1$），别写成 $e^x$ 组合。"
+    }
+   ],
+   "knowledge_points": [
+    "高阶常系数齐次方程",
+    "特征方程"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(9)"
+   },
+   "content_hash": "sha256:cb24df8910d918c359996afce1c2c5b11121e81e1ccb6b95118b4e093db355f1",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-10",
+   "subject": "math2",
+   "year": 2010,
+   "num": 10,
+   "type": "fill",
+   "score": 4,
+   "stem": "曲线 $y=\\dfrac{2x^{3}}{x^{2}+1}$ 的渐近线方程为 ______。",
+   "options": [],
+   "answer": "$y=2x$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "首先定义域是全体实数，故不存在垂直渐近线；其次 $\\lim_{x\\to\\infty}y=\\infty$，所以不存在水平渐近线；最后 $\\lim_{x\\to\\infty}\\frac yx=2$，而 $\\lim_{x\\to\\infty}(y-2x)=0$，故斜渐近线为 $y=2x$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "多项式分式：次数差 1 → 有斜渐近线；除法 $\\frac{2x^3}{x^2+1}=2x-\\frac{2x}{x^2+1}$ 直接读出。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：只检查 $x\\to+\\infty$；本题两方向行为一致。"
+    }
+   ],
+   "knowledge_points": [
+    "渐近线"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(10)"
+   },
+   "content_hash": "sha256:bfbc930bc682b39c47fe037c49533a8f2262fdf998eec30512bfc5bf068e4303",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-11",
+   "subject": "math2",
+   "year": 2010,
+   "num": 11,
+   "type": "fill",
+   "score": 4,
+   "stem": "函数 $y=\\ln(1-2x)$ 在 $x=0$ 处的 $n$ 阶导数 $y^{(n)}(0)=$ ______。",
+   "options": [],
+   "answer": "$-2^{n}(n-1)!$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "由泰勒展开：$\\ln(1+t)=t-\\frac{t^{2}}{2}+\\frac{t^{3}}{3}+\\cdots+\\frac{(-1)^{n-1}t^{n}}{n}+\\cdots$，令 $t=-2x$，代入可得 $\\frac{(-1)^{n-1}(-2x)^{n}}{n}=\\frac{y^{(n)}(0)}{n!}x^{n}$，比较系数可得 $y^{(n)}(0)=-2^{n}(n-1)!$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "熟记 $\\ln(1+t)$ 展开式，$t=-2x$ 代入后第 $n$ 项系数 $\\times n!$ 即 $n$ 阶导数。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：符号 $(-1)^{n-1}\\cdot(-2)^n=-2^n$ 处理错；或漏 $(n-1)!$。"
+    }
+   ],
+   "knowledge_points": [
+    "泰勒级数",
+    "高阶导数"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(11)"
+   },
+   "content_hash": "sha256:2f03777680286c30c8611d226f02d809edea8f4df9fbc9daca764a462f908ab5",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-12",
+   "subject": "math2",
+   "year": 2010,
+   "num": 12,
+   "type": "fill",
+   "score": 4,
+   "stem": "当 $0\\le\\theta\\le\\pi$ 时，对数螺线 $r=e^{\\theta}$ 的弧长为 ______。",
+   "options": [],
+   "answer": "$\\sqrt{2}\\left(e^{\\pi}-1\\right)$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "由弧长公式：$s=\\int_{0}^{\\pi}\\sqrt{r(\\theta)^{2}+r'(\\theta)^{2}}\\,d\\theta=\\int_{0}^{\\pi}\\sqrt{2}e^{\\theta}d\\theta=\\sqrt{2}(e^{\\pi}-1)$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "极坐标弧长 $s=\\int\\sqrt{r^2+r'^2}\\,d\\theta$；对数螺线 $r'=r$ → 被积函数恒 $\\sqrt2 r$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：忘开根号里的 $r'^{2}$，或对 $e^\\theta$ 求导出错。"
+    }
+   ],
+   "knowledge_points": [
+    "极坐标弧长"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(12)"
+   },
+   "content_hash": "sha256:7fa16dd3d4a919917482acfcccfe622a2e8ab3bcd64f7ec0f739e2f700acb5ae",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-13",
+   "subject": "math2",
+   "year": 2010,
+   "num": 13,
+   "type": "fill",
+   "score": 4,
+   "stem": "已知一个长方形的长 $l$ 以 $2\\,cm/s$ 的速率增加，宽 $w$ 以 $3\\,cm/s$ 的速率增加，则当 $l=12\\,cm,\\ w=5\\,cm$ 时，它的对角线增加速率为 ______。",
+   "options": [],
+   "answer": "$3\\,cm/s$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "对角线的长求导数：$\\frac{d\\sqrt{l^{2}+w^{2}}}{dt}=\\frac{ll'+ww'}{\\sqrt{l^{2}+w^{2}}}=\\frac{12\\times2+5\\times3}{\\sqrt{12^{2}+5^{2}}}=3\\ (cm/s)$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "相关变化率：对 $d=\\sqrt{l^2+w^2}$ 两边对 $t$ 求导，代数入值。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：最后忘除以 $\\sqrt{l^2+w^2}=13$（勾股数 5-12-13）。"
+    }
+   ],
+   "knowledge_points": [
+    "相关变化率"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     7
+    ],
+    "anchor": "填空题(13)"
+   },
+   "content_hash": "sha256:52b5d76b2cf70f17ff171c8d4063022c88a40c2ecfddc5bc1a036483b2b9b3fb",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-14",
+   "subject": "math2",
+   "year": 2010,
+   "num": 14,
+   "type": "fill",
+   "score": 4,
+   "stem": "设 $A,\\ B$ 为 3 阶方阵，且 $|A|=3,\\ |B|=2,\\ |A^{-1}+B|=2$，则 $|A+B^{-1}|=$ ______。",
+   "options": [],
+   "answer": "$3$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$|A+B^{-1}|=|B^{-1}(BA+E)|=|B^{-1}(BA+A^{-1}A)|=|B^{-1}||(B+A^{-1})||A|=\\frac{1}{|B|}\\cdot|B+A^{-1}|\\cdot|A|=\\frac{1}{2}\\times2\\times3=3$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "凑公因子：$A+B^{-1}=B^{-1}(BA+E)=B^{-1}(B+A^{-1})A$，再用已知行列式。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$|B^{-1}|=1/|B|$ 漏写；矩阵恒等变形要保乘法顺序。"
+    }
+   ],
+   "knowledge_points": [
+    "行列式性质",
+    "矩阵恒等变形"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     7,
+     8
+    ],
+    "anchor": "填空题(14)"
+   },
+   "content_hash": "sha256:40612b6dc2d9fa505b5087886544566e4926eb5c2fce29b040999d6d3a506bf6",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-15",
+   "subject": "math2",
+   "year": 2010,
+   "num": 15,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）求 $f(x)=\\int_{1}^{x^{2}}\\left(x^{2}-t\\right)e^{-t^{2}}dt$ 的单调区间与极值。",
+   "options": [],
+   "answer": "单调增区间 $(-1,0),(1,+\\infty)$；单调减区间 $(-\\infty,-1),(0,1)$；极大值 $f(0)=\\frac{1}{2}(1-\\frac1e)$，极小值 $f(\\pm1)=0$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$f(x)=x^{2}\\int_{1}^{x^{2}}e^{-t^{2}}dt-\\int_{1}^{x^{2}}te^{-t^{2}}dt$，$f'(x)=2x\\int_{1}^{x^{2}}e^{-t^{2}}dt$。令 $f'(x)=0$，解得 $x=0,\\ \\pm1$。在区间 $(-1,0),\\ (1,+\\infty)$，$f'(x)\\ge0$，函数 $f(x)$ 单调递增；在区间 $(-\\infty,-1),\\ (0,1)$，$f'(x)\\le0$，函数 $f(x)$ 单调递减。所以在 $x=1,x=-1$ 处取得极小值 $f(1)=f(-1)=0$；在 $x=0$ 处取得极大值 $f(0)=\\frac{1}{2}(1-\\frac{1}{e})$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "上下限含 $x$ → 先拆成 $x^2\\cdot$ 变限积分减另一变限积分再求导（乘积法则），$\\int te^{-t^2}dt$ 可积出；符号分析抓 $\\int_1^{x^2}e^{-t^2}dt$ 与 $x$ 同号（$x^2\\ge1$ 时）。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：变限积分上限是 $x^2$，求导要乘 $2x$；$f(\\pm1)=\\int_1^1=0$ 的极小值别漏。"
+    }
+   ],
+   "knowledge_points": [
+    "变限积分求导",
+    "单调性与极值"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     8
+    ],
+    "anchor": "解答题(15)"
+   },
+   "content_hash": "sha256:4a442223e7356e0ace8b5f46d570653ce87248ab31814bd225ecbb50d9d4bef5",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-16",
+   "subject": "math2",
+   "year": 2010,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）（I）比较 $\\int_{0}^{1}|\\ln t|\\left[\\ln(1+t)\\right]^{n}dt$ 与 $\\int_{0}^{1}|\\ln t|\\,t^{n}dt\\ (n=1,2,\\cdots)$ 的大小，说明理由；（II）设 $M_{n}=\\int_{0}^{1}|\\ln t|\\left[\\ln(1+t)\\right]^{n}dt\\ (n=1,2,\\cdots)$，求极限 $\\lim_{n\\to\\infty}M_{n}$。",
+   "options": [],
+   "answer": "（I）前者小于后者；（II）$\\lim M_{n}=0$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "(I) 令 $f(t)=\\ln(1+t)-t$。当 $0\\le t\\le1$ 时 $f'(t)=\\frac{1}{1+t}-1\\le0$，故当 $0\\le t\\le1$ 时 $f(t)\\le f(0)=0$，即 $0\\le\\ln(1+t)\\le t$。从而 $\\left(\\ln(1+t)\\right)^{n}\\le t^{n}$（$n=1,2,\\cdots$），又 $|\\ln t|\\ge0$，得 $\\int_{0}^{1}|\\ln t|[\\ln(1+t)]^{n}dt\\le\\int_{0}^{1}|\\ln t|t^{n}dt$。(II) $\\int_{0}^{1}|\\ln t|t^{n}dt=-\\int_{0}^{1}(\\ln t)t^{n}dt=-\\left.(\\ln t)\\frac{t^{n+1}}{n+1}\\right|_{0}^{1}+\\int_{0}^{1}\\frac{1}{n+1}t^{n}dt=\\frac{1}{(n+1)^{2}}$。$\\lim_{n\\to\\infty}\\int_{0}^{1}|\\ln t|t^{n}dt=0$，$M_{n}\\ge0$，由夹逼准则得 $\\lim_{n\\to\\infty}\\int_{0}^{1}|\\ln t|[\\ln(1+t)]^{n}dt=0$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "(I) 一元函数单调性证 $\\ln(1+t)\\le t$（经典不等式）；(II) 把右边积分精确算出 $\\frac{1}{(n+1)^2}$ → 夹逼。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$|\\ln t|$ 在 $t=0$ 处奇性不影响（可积）；分部积分的边界项 $\\ln t\\cdot t^{n+1}\\to0$ 要说明。"
+    }
+   ],
+   "knowledge_points": [
+    "函数不等式",
+    "分部积分",
+    "夹逼准则"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     2,
+     8
+    ],
+    "anchor": "解答题(16)"
+   },
+   "content_hash": "sha256:e7b4295db79973ddc0a1175f41cee5c28b44da1421709978fac1b329ec96da4d",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-17",
+   "subject": "math2",
+   "year": 2010,
+   "num": 17,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设函数 $y=f(x)$ 由参数方程 $\\begin{cases}x=2t+t^{2}\\\\ y=\\psi(t)\\end{cases}\\ (t>-1)$ 所确定，其中 $\\psi(t)$ 具有 2 阶导数，且 $\\psi(1)=\\dfrac{5}{2},\\ \\psi'(1)=6$，已知 $\\dfrac{d^{2}y}{dx^{2}}=\\dfrac{3}{4(1+t)}$，求函数 $\\psi(t)$。",
+   "options": [],
+   "answer": "$\\psi(t)=t^{3}+\\dfrac{3}{2}t^{2}\\ (t>-1)$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\frac{dy}{dx}=\\frac{y'(t)}{x'(t)}=\\frac{\\psi'(t)}{2+2t}$，$\\frac{d^{2}y}{dx^{2}}=\\frac{\\psi''(t)(2+2t)-2\\psi'(t)}{(2+2t)^{3}}=\\frac{3}{4(1+t)}$，得到二阶微分方程：$\\psi''-\\frac{1}{1+t}\\psi'=3(1+t)$。令 $u=\\psi'$，由一阶非齐次线性微分方程的通解公式可得 $\\psi'=(1+t)(3t+c_{1})$，由 $\\psi'(1)=6$，得到 $c_{1}=0$，所以 $\\psi'(t)=3t(1+t)$，$\\psi(t)=t^{3}+\\frac{3}{2}t^{2}+c_{2}$，又因为 $\\psi(1)=\\frac{5}{2}$，所以 $\\psi(t)=t^{3}+\\frac{3}{2}t^{2}\\ (t>-1)$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "参数二阶导公式（对 $t$ 求导再除 $x'(t)$）→ 反解出 $\\psi''$ 满足的一阶方程（令 $u=\\psi'$）→ 通解公式 → 两个初始条件定常数。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\frac{d^2y}{dx^2}=\\frac{d(y_t/x_t)}{dx}$ 别忘除 $x'(t)=2(1+t)$；最后 $c_2$ 由 $\\psi(1)$ 定。"
+    }
+   ],
+   "knowledge_points": [
+    "参数方程二阶导数",
+    "一阶线性微分方程"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     3,
+     8,
+     9
+    ],
+    "anchor": "解答题(17)"
+   },
+   "content_hash": "sha256:b9f8e361655237301b6e94923578072d1de281d43ee582ea3c6856c59595b272",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-18",
+   "subject": "math2",
+   "year": 2010,
+   "num": 18,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）一个高为 $l$ 的柱体形贮油罐，底面是长轴为 $2a$、短轴为 $2b$ 的椭圆。现将贮油罐平放，当油罐中油面高度为 $\\dfrac{3}{2}b$ 时（如图），计算油的质量（长度单位 $m$，质量单位 $kg$，油的密度为常量 $\\rho$，单位 $kg/m^{3}$）。",
+   "options": [],
+   "answer": "$\\left(\\dfrac{2\\pi}{3}+\\dfrac{\\sqrt{3}}{4}\\right)\\rho ab l\\ (kg)$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "由已知，质量 $M=\\rho V$，求出相应的体积即可，$V=S_{侧}\\times h,\\ h=l$。$S_{侧}=\\pi ab-2\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)ab$。设 $y=b\\sin t$，则 $dy=b\\cos t\\,dt$，则 $\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=ab\\int_{\\pi/6}^{\\pi/2}\\sqrt{1-\\sin^{2}t}\\cos t\\,dt=ab\\int_{\\pi/6}^{\\pi/2}\\cos^{2}t\\,dt=\\frac{1}{2}ab\\int_{\\pi/6}^{\\pi/2}(\\cos2t+1)dt=\\frac{1}{2}\\left(\\frac{1}{3}\\pi-\\frac{\\sqrt3}{4}\\right)ab$。所以 $S_{侧}=\\pi ab-2\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)ab$，油的质量为 $\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)\\rho ab l\\ (kg)$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "油面高于中轴线（3b/2 > b）：油面积 = 半椭圆 + 顶部弓形？不——总椭圆面积减去上方空隙两条月牙；换元 $y=b\\sin t$ 化三角积分。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：空隙是「两块对称弓形」共 $2\\int_{b/2}^{b}$；代换上下限 $y=b/2\\to t=\\pi/6$。"
+    }
+   ],
+   "knowledge_points": [
+    "定积分应用",
+    "椭圆弓形面积",
+    "物理应用（质量）"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     3,
+     9
+    ],
+    "anchor": "解答题(18)"
+   },
+   "content_hash": "sha256:5716be64924672c1540ac4a48c2710b5f5baf0a575126789f9a2c5db534ffd28",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-19",
+   "subject": "math2",
+   "year": 2010,
+   "num": 19,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设函数 $\\mu=f(x,y)$ 具有二阶连续偏导数，且满足等式 $4\\dfrac{\\partial^{2}\\mu}{\\partial x^{2}}+12\\dfrac{\\partial^{2}\\mu}{\\partial x\\partial y}+5\\dfrac{\\partial^{2}\\mu}{\\partial y^{2}}=0$，确定 $a,b$ 的值，使等式在变换 $\\xi=x+ay,\\ \\eta=x+by$ 下化简为 $\\dfrac{\\partial^{2}\\mu}{\\partial\\xi\\partial\\eta}=0$。",
+   "options": [],
+   "answer": "$a=-2,\\ b=-\\dfrac{2}{5}$ 或 $a=-\\dfrac{2}{5},\\ b=-2$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\frac{\\partial\\mu}{\\partial x}=\\frac{\\partial\\mu}{\\partial\\xi}+\\frac{\\partial\\mu}{\\partial\\eta}$，$\\frac{\\partial^{2}\\mu}{\\partial x^{2}}=\\frac{\\partial^{2}\\mu}{\\partial\\xi^{2}}+2\\frac{\\partial^{2}\\mu}{\\partial\\xi\\partial\\eta}+\\frac{\\partial^{2}\\mu}{\\partial\\eta^{2}}$；$\\frac{\\partial\\mu}{\\partial y}=a\\frac{\\partial\\mu}{\\partial\\xi}+b\\frac{\\partial\\mu}{\\partial\\eta}$，$\\frac{\\partial^{2}\\mu}{\\partial y^{2}}=a^{2}\\frac{\\partial^{2}\\mu}{\\partial\\xi^{2}}+2ab\\frac{\\partial^{2}\\mu}{\\partial\\xi\\partial\\eta}+b^{2}\\frac{\\partial^{2}\\mu}{\\partial\\eta^{2}}$；$\\frac{\\partial^{2}\\mu}{\\partial x\\partial y}=a\\frac{\\partial^{2}\\mu}{\\partial\\xi^{2}}+(a+b)\\frac{\\partial^{2}\\mu}{\\partial\\xi\\partial\\eta}+b\\frac{\\partial^{2}\\mu}{\\partial\\eta^{2}}$。代入 $4\\mu_{xx}+12\\mu_{xy}+5\\mu_{yy}=0$，得 $\\left(5a^{2}+12a+4\\right)\\frac{\\partial^{2}\\mu}{\\partial\\xi^{2}}+\\left[10ab+12(a+b)+8\\right]\\frac{\\partial^{2}\\mu}{\\partial\\xi\\partial\\eta}+\\left(5b^{2}+12b+4\\right)\\frac{\\partial^{2}\\mu}{\\partial\\eta^{2}}=0$。并对比化简目标，比较系数可得 $\\begin{cases}5a^{2}+12a+4=0\\\\5b^{2}+12b+4=0\\\\10ab+12(a+b)+8\\neq0\\end{cases}$，解得 $\\begin{cases}a=-2\\\\b=-\\frac{2}{5}\\end{cases}$ 或 $\\begin{cases}a=-\\frac{2}{5}\\\\b=-2\\end{cases}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "链式法则展开三个二阶偏导 → 按 $\\mu_{\\xi\\xi},\\mu_{\\xi\\eta},\\mu_{\\eta\\eta}$ 归类系数 → 令 $\\mu_{\\xi\\xi},\\mu_{\\eta\\eta}$ 系数为零、交叉系数非零 → 解两个相同的一元二次方程。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$5a^2+12a+4=0$ 的两根 $-2,-2/5$ 分给 $a,b$ 时要验交叉项 $\\neq0$（两根相异即自动满足）。"
+    }
+   ],
+   "knowledge_points": [
+    "复合函数二阶偏导",
+    "变量替换化简偏微分方程"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     3,
+     9,
+     10
+    ],
+    "anchor": "解答题(19)"
+   },
+   "content_hash": "sha256:63384adc27139304a996764c3fd9f1d764860de95b8c25fb16694087f8ae4918",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-20",
+   "subject": "math2",
+   "year": 2010,
+   "num": 20,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）计算二重积分 $I=\\iint_{D}r^{2}\\sin\\theta\\sqrt{1-r^{2}\\cos 2\\theta}\\,dr\\,d\\theta$，其中 $D=\\left\\{(r,\\theta)\\mid 0\\le r\\le\\sec\\theta,\\ 0\\le\\theta\\le\\dfrac{\\pi}{4}\\right\\}$。",
+   "options": [],
+   "answer": "$\\dfrac{1}{3}-\\dfrac{\\pi}{16}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "将极坐标转化为直角坐标可得积分区域为 $D=\\{(x,y)\\mid 0\\le x\\le1,\\ 0\\le y\\le x\\}$。$I=\\iint_{D}r^{2}\\sin\\theta\\sqrt{1-r^{2}\\cos^{2}\\theta+r^{2}\\sin^{2}\\theta}\\,dr\\,d\\theta=\\iint_{D}y\\sqrt{1-x^{2}+y^{2}}\\,dxdy=\\frac{1}{2}\\int_{0}^{1}dx\\int_{0}^{x}\\sqrt{1-x^{2}+y^{2}}\\,d(1-x^{2}+y^{2})=\\frac{1}{3}\\int_{0}^{1}\\left[(1-x^{2}+y^{2})^{\\frac32}\\right]_{0}^{x}dx=\\frac{1}{3}\\int_{0}^{1}\\left[1-(1-x^{2})^{\\frac32}\\right]dx$。设 $x=\\sin t$，$I=\\frac{1}{3}-\\frac{1}{3}\\int_{0}^{\\frac{\\pi}{2}}\\cos^{4}t\\,dt=\\frac{1}{3}-\\frac{1}{3}\\times\\frac{3}{4}\\times\\frac{1}{2}\\times\\frac{\\pi}{2}=\\frac{1}{3}-\\frac{\\pi}{16}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "识别 $r\\cos2\\theta$ 结构：$r^2\\cos^2\\theta=x^2$、$r^2\\sin^2\\theta=y^2$ → 被积函数 $y\\sqrt{1-x^2+y^2}$，区域由 $r=\\sec\\theta$（即 $x=1$）围成三角形；内层凑微分，外层三角换元 + 华里士公式。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\sqrt{1-r^2\\cos2\\theta}=\\sqrt{1-x^2+y^2}$ 的符号判断（区域内非负）；华里士公式系数 $\\frac34\\cdot\\frac12\\cdot\\frac\\pi2$。"
+    }
+   ],
+   "knowledge_points": [
+    "极坐标与直角坐标互化",
+    "二重积分计算",
+    "华里士公式"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     3,
+     10
+    ],
+    "anchor": "解答题(20)"
+   },
+   "content_hash": "sha256:d9be25f18ad834a6d6ec30c61ae393cbf185b48a139e1f220cd1c2c73140f177",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-21",
+   "subject": "math2",
+   "year": 2010,
+   "num": 21,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）设函数 $f(x)$ 在闭区间 $[0,1]$ 上连续，在开区间 $(0,1)$ 内可导，且 $f(0)=0,\\ f(1)=\\dfrac{1}{3}$。证明：存在 $\\xi\\in\\left(0,\\dfrac{1}{2}\\right),\\ \\eta\\in\\left(\\dfrac{1}{2},1\\right)$，使得 $f'(\\xi)+f'(\\eta)=\\xi^{2}+\\eta^{2}$。",
+   "options": [],
+   "answer": "（I）（II）均证毕",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "令 $F(x)=f(x)-\\frac{1}{3}x^{3}$，则 $F(1)=F(0)=0$。在区间 $\\left[0,\\frac{1}{2}\\right]$ 上，由拉格朗日中值定理有 $F\\left(\\frac{1}{2}\\right)-F(0)=F'(\\xi)\\left(\\frac{1}{2}-0\\right)$，其中 $\\xi\\in\\left(0,\\frac{1}{2}\\right)$，即 $F'(\\xi)=2F\\left(\\frac{1}{2}\\right)$。同理在区间 $\\left[\\frac{1}{2},1\\right]$ 上，$F(1)-F\\left(\\frac{1}{2}\\right)=F'(\\eta)\\left(1-\\frac{1}{2}\\right)$，其中 $\\eta\\in\\left(\\frac{1}{2},1\\right)$，即 $F'(\\eta)=-2F\\left(\\frac{1}{2}\\right)$。所以 $F'(\\xi)+F'(\\eta)=f'(\\xi)-\\xi^{2}+f'(\\eta)-\\eta^{2}=2F\\left(\\frac{1}{2}\\right)-F\\left(\\frac{1}{2}\\right)\\cdot2=0$，即 $f'(\\xi)+f'(\\eta)=\\xi^{2}+\\eta^{2}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "要证的等式含 $f'(\\xi)-\\xi^2$ 结构 → 构造 $F=f-\\frac{x^3}{3}$（$F'=f'-x^2$）；目标变成 $F'(\\xi)+F'(\\eta)=0$ → 在 $[0,1/2],[1/2,1]$ 两段分别用拉格朗日（$F(0)=F(1)=0$ 是关键）。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：构造函数方向反了（写成 $f+\\frac{x^3}{3}$）；两段区间的中值点必须分别在 $(0,\\frac12)$ 与 $(\\frac12,1)$ 内。"
+    }
+   ],
+   "knowledge_points": [
+    "构造辅助函数",
+    "拉格朗日中值定理",
+    "双中值点证明"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     3,
+     10
+    ],
+    "anchor": "解答题(21)"
+   },
+   "content_hash": "sha256:34320512b43c0d44d7f7ead14fe12e4d95ee23e8782ce30b96dcd49dc56c45ca",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-22",
+   "subject": "math2",
+   "year": 2010,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设 $A=\\begin{pmatrix}\\lambda&1&1\\\\0&\\lambda-1&0\\\\1&1&\\lambda\\end{pmatrix},\\ b=\\begin{pmatrix}a\\\\1\\\\1\\end{pmatrix}$。已知线性方程组 $Ax=b$ 存在 2 个不同的解。（I）求 $\\lambda,a$；（II）求方程组 $Ax=b$ 的通解。",
+   "options": [],
+   "answer": "（I）$\\lambda=-1,\\ a=-2$；（II）通解 $k\\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix}+\\begin{pmatrix}3/2\\\\-1/2\\\\0\\end{pmatrix}$（$k$ 为任意常数）",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "(I) 由 $Ax=b$ 存在 2 个不同的解，可知 $R(A)=R(A:b)<3$。对 $Ax=b$ 的增广矩阵做初等行变换：$\\overline{A}=(A:b)=\\begin{pmatrix}\\lambda&1&1&:a\\\\0&\\lambda-1&0&:1\\\\1&1&\\lambda&:1\\end{pmatrix}\\to\\begin{pmatrix}1&1&\\lambda&:1\\\\0&\\lambda-1&0&:1\\\\0&1-\\lambda&1-\\lambda^{2}&:a+1-\\lambda\\end{pmatrix}$，所以 $\\begin{cases}1-\\lambda^{2}=0\\\\a+1-\\lambda=0\\end{cases}$，解得 $\\lambda=1,\\ a=0$（舍去）；$\\lambda=-1,\\ a=-2$。(II) 由（I）知 $\\overline{A}\\to\\begin{pmatrix}1&0&-1&:3/2\\\\0&1&0&:-1/2\\\\0&0&0&:0\\end{pmatrix}$，$R(A)=R(\\overline{A})=2$，对应齐次线性方程组 $Ax=0$ 的基础解系含 1 个解向量，即 $\\alpha=\\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix}$。$Ax=b$ 的一个特解为 $\\beta=\\begin{pmatrix}3/2\\\\-1/2\\\\0\\end{pmatrix}$，$Ax=b$ 的通解为 $k\\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix}+\\begin{pmatrix}3/2\\\\-1/2\\\\0\\end{pmatrix}$（$k$ 为任意常数）。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "「两个不同解」⇔ 无穷多解 ⇔ $r(A)=r(\\bar A)<n$ → 对含参增广矩阵行变换 → 由 $1-\\lambda^2=0$ 与 $a+1-\\lambda=0$ 定参（$\\lambda=1$ 时 $r(A)<r(\\bar A)$ 无解舍去）→ 常规通解。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$\\lambda=1$ 时第二行全零但 $b$ 分量 $1\\neq0$，矛盾必须舍去；特解选取不唯一但基础解系维数固定为 $n-r=1$。"
+    }
+   ],
+   "knowledge_points": [
+    "含参线性方程组",
+    "解的判定",
+    "通解结构"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     3,
+     10,
+     11
+    ],
+    "anchor": "解答题(22)"
+   },
+   "content_hash": "sha256:f8a908cc3987849d7ec8f9c04bff1532b0b922eec14c076ef0ecba500a56fbc3",
+   "schema_version": "1.0.0"
+  },
+  {
+   "id": "math2-2010-23",
+   "subject": "math2",
+   "year": 2010,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设 $A=\\begin{pmatrix}0&-1&4\\\\-1&3&a\\\\4&a&0\\end{pmatrix}$，正交矩阵 $Q$ 使得 $Q^{T}AQ$ 为对角矩阵。若 $Q$ 的第一列为 $\\dfrac{1}{\\sqrt{6}}\\begin{pmatrix}1\\\\2\\\\1\\end{pmatrix}$，求 $a,\\ Q$。",
+   "options": [],
+   "answer": "$a=-1$；$\\lambda_{1}=2,\\ \\lambda_{2}=-4,\\ \\lambda_{3}=5$；$Q=\\begin{pmatrix}\\frac{1}{\\sqrt6}&-\\frac{1}{\\sqrt2}&-\\frac{1}{\\sqrt3}\\\\\\frac{2}{\\sqrt6}&0&\\frac{1}{\\sqrt3}\\\\\\frac{1}{\\sqrt6}&\\frac{1}{\\sqrt2}&-\\frac{1}{\\sqrt3}\\end{pmatrix}$",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "由于 $\\frac{1}{\\sqrt6}\\begin{pmatrix}1\\\\2\\\\1\\end{pmatrix}$ 是 $Q$ 的第一列，所以 $\\begin{pmatrix}1\\\\2\\\\1\\end{pmatrix}$ 是 $A$ 的一个特征向量，设其所属特征值为 $\\lambda_{1}$，则 $A\\begin{pmatrix}1\\\\2\\\\1\\end{pmatrix}=\\lambda_{1}\\begin{pmatrix}1\\\\2\\\\1\\end{pmatrix}$，即 $\\begin{pmatrix}2\\\\5+a\\\\4+2a\\end{pmatrix}=\\begin{pmatrix}\\lambda_{1}\\\\2\\lambda_{1}\\\\\\lambda_{1}\\end{pmatrix}$，所以 $\\begin{cases}\\lambda_{1}=2\\\\2\\lambda_{1}=5+a\\\\\\lambda_{1}=4+2a\\end{cases}\\Rightarrow\\begin{cases}\\lambda_{1}=2\\\\a=-1\\end{cases}$。则 $|\\lambda E-A|=\\begin{vmatrix}\\lambda&1&-4\\\\1&\\lambda-3&1\\\\-4&1&\\lambda\\end{vmatrix}$，作行变换化简 $=(\\lambda+4)\\begin{vmatrix}\\lambda-4&1\\\\2&\\lambda-3\\end{vmatrix}=(\\lambda+4)((\\lambda-2)(\\lambda-5))=0\\Rightarrow\\lambda_{1}=2,\\ \\lambda_{2}=-4,\\ \\lambda_{3}=5$。当 $\\lambda_{2}=-4$ 时，$-4E-A$ 行变换后等价方程组 $\\begin{cases}x_{1}-7x_{2}+x_{3}=0\\\\-27x_{2}=0\\end{cases}$，基础解系含 1 个解向量 $\\alpha_{2}=\\begin{pmatrix}-1\\\\0\\\\1\\end{pmatrix}$。当 $\\lambda_{3}=5$ 时，$5E-A$ 行变换后等价方程组 $\\begin{cases}x_{1}+2x_{2}+x_{3}=0\\\\x_{2}+x_{3}=0\\end{cases}$，基础解系 $\\alpha_{3}=\\begin{pmatrix}-1\\\\1\\\\-1\\end{pmatrix}$。把 $\\alpha_{2},\\alpha_{3}$ 单位化得 $\\beta_{2}=\\frac{1}{\\sqrt2}\\begin{pmatrix}-1\\\\0\\\\1\\end{pmatrix},\\ \\beta_{3}=\\frac{1}{\\sqrt3}\\begin{pmatrix}-1\\\\1\\\\-1\\end{pmatrix}$，所以 $Q=\\begin{pmatrix}\\frac{1}{\\sqrt6}&-\\frac{1}{\\sqrt2}&-\\frac{1}{\\sqrt3}\\\\\\frac{2}{\\sqrt6}&0&\\frac{1}{\\sqrt3}\\\\\\frac{1}{\\sqrt6}&\\frac{1}{\\sqrt2}&-\\frac{1}{\\sqrt3}\\end{pmatrix}$。"
+    },
+    {
+     "role": "approach",
+     "origin": "extended",
+     "text": "正交矩阵的列 = 单位特征向量 → 已知第一列即已知一个特征向量 → 特征方程定 $a$；再用 $\\lambda+4$ 因子技巧求另两个特征值（行变换 $r_3-r_1$ 提公因子），各求特征向量、单位化、拼 $Q$。"
+    },
+    {
+     "role": "warn",
+     "origin": "extended",
+     "text": "易错：$|\\lambda E-A|$ 展开硬算很繁——用行变换提取公因子 $(\\lambda+4)$；不同特征值的特征向量自动正交，只需各自单位化。"
+    }
+   ],
+   "knowledge_points": [
+    "实对称矩阵正交对角化",
+    "特征值与特征向量",
+    "施密特正交化/单位化"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+   "source_ref": {
+    "pdf": "2010数学二真题及解析.pdf",
+    "sha256": "adb8ac50eaf4b80f55059249cd1577227a6ee9461878a53db958a8f9282b57b7",
+    "pages": [
+     3,
+     11,
+     12
+    ],
+    "anchor": "解答题(23)"
+   },
+   "content_hash": "sha256:4d519dfb3ee0da8066f1d34506b77db38173b1c732f3d825ad61873fc831b2f9",
+   "schema_version": "1.0.0"
+  }
+ ]
+}
