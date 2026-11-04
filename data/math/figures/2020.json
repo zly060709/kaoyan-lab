@@ -1,0 +1,87 @@
+[
+  {
+    "qid": "math-2020-1", "origin": "derived",
+    "title": "第1题 无穷小阶的比较（内层函数参照）",
+    "xlim": [0, 1.4], "ylim": [0, 1.62],
+    "items": [
+      { "kind": "graph", "f": "sqrt(sin(x)*sin(x)*sin(x))", "domain": [0.01, 1.35], "color": "#1D4ED8", "label": "√(sin³t)~t^{3/2}" },
+      { "kind": "graph", "f": "x^1.5", "domain": [0, 1.35], "color": "#94A3B8", "label": "t^{3/2}" }
+    ],
+    "caption": "各选项求导定阶：(D) 上限 1−cos x ~ x²/2，内层 √(sin³t)~t^{3/2} → 总阶 2×(3/2)=5 最高，选 D。"
+  },
+  {
+    "qid": "math-2020-8", "origin": "derived",
+    "title": "第8题 中心极限定理：ΣXᵢ ~ N(50,25)",
+    "xlim": [33, 68], "ylim": [0, 0.092],
+    "items": [
+      { "kind": "graph", "f": "exp(-(x-50)*(x-50)/50)/(5*sqrt(2*pi))", "domain": [33, 68], "color": "#1D4ED8" },
+      { "kind": "shade_under", "f": "exp(-(x-50)*(x-50)/50)/(5*sqrt(2*pi))", "domain": [55, 68], "color": "rgba(184,50,74,.35)" },
+      { "kind": "vline", "x": 50, "style": "dashed", "label": "np=50" },
+      { "kind": "vline", "x": 55, "style": "dashed", "label": "55" }
+    ],
+    "caption": "Σ~N(50,25)：P{Σ≤55}=Φ((55−50)/5)=Φ(1)，选 B（红尾为 1−Φ(1)）。"
+  },
+  {
+    "qid": "math-2020-14", "origin": "derived",
+    "title": "第14题 X~U(−π/2,π/2)，Y=sinX 的同向趋势",
+    "xlim": [-1.75, 1.75], "ylim": [-1.3, 1.3],
+    "items": [
+      { "kind": "graph", "f": "sin(x)", "domain": [-1.5708, 1.5708], "color": "#1D4ED8", "label": "y=sin x" },
+      { "kind": "segment", "x1": -1.5708, "y1": -1, "x2": 1.5708, "y2": 1, "color": "#94A3B8" }
+    ],
+    "caption": "X 与 Y=sinX 同向变动（图示单调增）→ Cov>0；对称计算 Cov(X,sinX)=2/π。"
+  },
+  {
+    "qid": "math-2020-16", "origin": "derived",
+    "title": "第16题 挖洞法：奇点在原点的小椭圆",
+    "xlim": [-1.75, 1.75], "ylim": [-1.35, 1.35],
+    "items": [
+      { "kind": "parametric", "fx": "1.4142*cos(t)", "fy": "1.4142*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8", "label": "L: x²+y²=2" },
+      { "kind": "parametric", "fx": "0.36*cos(t)", "fy": "0.18*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#B8324A", "label": "挖洞 4x²+y²=ε²" },
+      { "kind": "point", "x": 0, "y": 0, "label": "奇点 (0,0)" }
+    ],
+    "caption": "被积函数在原点分母为零：在 L 与小椭圆 4x²+y²=ε² 之间用格林公式，小椭圆上直接参数化 → I=π。"
+  },
+  {
+    "qid": "math-2020-17", "origin": "derived",
+    "title": "第17题 和函数 S(x)=2/√(1−x)−2",
+    "xlim": [-0.95, 1.45], "ylim": [-2.7, 3.6],
+    "items": [
+      { "kind": "graph", "f": "2/sqrt(1-x)-2", "domain": [-0.9, 0.88], "color": "#1D4ED8" },
+      { "kind": "vline", "x": 1, "style": "dashed", "label": "x=1（收敛端点）" }
+    ],
+    "caption": "递推 (n+1)a_{n+1}=(n+½)aₙ → 收敛半径 R=1；解出 S(x)=2/√(1−x)−2（|x|<1）。"
+  },
+  {
+    "qid": "math-2020-18", "origin": "derived",
+    "title": "第18题 锥面环带 Σ: z=√(x²+y²)（1≤r≤2）",
+    "xlim": [-2.6, 2.6], "ylim": [-0.15, 2.6],
+    "items": [
+      { "kind": "graph", "f": "abs(x)", "domain": [1, 2.4], "color": "#1D4ED8", "label": "z=|x|（y=0 截面）" },
+      { "kind": "graph", "f": "abs(x)", "domain": [-2.4, -1], "color": "#1D4ED8" },
+      { "kind": "vline", "x": 1, "style": "dashed" },
+      { "kind": "vline", "x": 2, "style": "dashed" }
+    ],
+    "caption": "Σ 是锥面上的圆环带（图为其 y=0 截面，虚线为 r=1、r=2 边界）；投影到 xOy 后 f(xy) 的奇偶对称项抵消，I=14π/3。"
+  },
+  {
+    "qid": "math-2020-20", "origin": "derived",
+    "title": "第20题 f=(x₁−2x₂)² 的等值线（退化抛物型）",
+    "xlim": [-2.45, 2.45], "ylim": [-0.78, 0.78],
+    "items": [
+      { "kind": "segment", "x1": -0.2, "y1": -0.6, "x2": 2.2, "y2": 0.6, "color": "#1D4ED8", "label": "x₁−2x₂=1" },
+      { "kind": "segment", "x1": -2.2, "y1": -0.6, "x2": 0.2, "y2": 0.6, "color": "#B8324A", "label": "x₁−2x₂=−1" }
+    ],
+    "caption": "f=(x₁−2x₂)² 的等值线是一对平行线 → 半正定（特征值 5,0）；由迹/行列式不变定 a=4,b=1，正交变换后 f=5y₂²。"
+  },
+  {
+    "qid": "math-2020-23", "origin": "derived",
+    "title": "第23题 韦布尔分布的生存函数",
+    "xlim": [0, 6.2], "ylim": [0, 1.06],
+    "items": [
+      { "kind": "graph", "f": "exp(-(x/2))", "domain": [0, 6.2], "color": "#1D4ED8", "label": "m=1（指数：无记忆）" },
+      { "kind": "graph", "f": "exp(-(x/2)*(x/2))", "domain": [0, 6.2], "color": "#B8324A", "label": "m=2（韦布尔）" }
+    ],
+    "caption": "P(T>t)=e^{−(t/θ)^m}：仅 m=1 时条件生存概率与 s 无关；MLE 由似然函数解得 θ̂=(Σtᵢ^m/n)^{1/m}。"
+  }
+]
