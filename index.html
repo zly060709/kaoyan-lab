@@ -487,8 +487,12 @@ async function viewQuestion(s,y,num){
     return uri?`<img src="${uri}" alt="题目图片" loading="lazy" class="mimg">`:esc(seg);
   }).join("");
   const ansStr=q.answer==null?"":(typeof q.answer==="object"?JSON.stringify(q.answer):String(q.answer));
-  // 纯 LaTeX 答案（不含中日韩文字）交给 KaTeX 渲染；混排中文的答案保持原文，避免公式报错
-  const mathAns=/\\[a-zA-Z]+/.test(ansStr)&&!/[\u3000-\u303f\u3400-\u9fff\uff00-\uffef]/.test(ansStr)&&ansStr.indexOf("$")<0;
+  // 答案里的中日韩片段包进 \text{…}：可见文字不变，但整条能被 KaTeX 渲染（此前 21 条混排答案退回裸 LaTeX）
+  const texAns=s=>{let out="",last=0,m;const re=/\\(?:text|mathrm|operatorname|mathbf|boldsymbol|mathit)\{[^{}]*\}/g;
+    const seg=x=>{out+=x.replace(/[\u3000-\u303f\u3400-\u9fff\uff00-\uffef]+/g,y=>"\\text{"+y+"}")};
+    while((m=re.exec(s))){seg(s.slice(last,m.index));out+=m[0];last=m.index+m[0].length}
+    seg(s.slice(last));return out};
+  const mathAns=/\\[a-zA-Z]+/.test(ansStr)&&ansStr.indexOf("$")<0;
   const correct=new Set((ansStr.match(/[A-H]/g)||[]));
   const optArr=q.options||[];
   // 408 原卷选项是纯值（无 [A] 标签）：整列都无标签时按位置推断字母，与数据层 D037 口径一致
@@ -522,7 +526,7 @@ async function viewQuestion(s,y,num){
       ${(q.tags||[]).map(t=>`<span style="font-size:11px;color:var(--muted);border:1px solid var(--line);padding:1px 8px;border-radius:10px">${esc(t)}</span>`).join("")}
       ${q.difficulty?`<span style="font-size:11px;color:var(--amber)">难度 ${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span>`:""}
       ${q.score?`<span style="font-size:11px;color:var(--muted)">${q.score} 分</span>`:""}
-      ${ansStr?`<div class="ans">答案 <b>${mathAns?"$"+esc(ansStr)+"$":esc(ansStr)}</b></div>`:""}
+      ${ansStr?`<div class="ans">答案 <b>${mathAns?"$"+esc(texAns(ansStr))+"$":esc(ansStr)}</b></div>`:""}
       <button class="reveal-btn" id="rv" style="margin:0 0 0 8px;padding:4px 14px;font-size:12.5px">👁 揭示</button>
       <button class="reveal-btn" id="bm" style="margin:0;padding:4px 14px;font-size:12.5px">${mark?"★ 已收藏":"☆ 收藏"}</button>
     </div>

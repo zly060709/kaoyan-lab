@@ -3,7 +3,7 @@
   "phase": "M3-converge",
   "status": "RUNNING",
   "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-05T11:20:54Z",
+  "updated_at": "2026-11-05T11:32:02Z",
   "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
   "done_set": [
     "m0:auth_initiated",
@@ -36,7 +36,8 @@
     "conv4:answer-latex-separators-fix",
     "conv4:session-resume-conv6-committed",
     "conv4:math3-2022-transcribed",
-    "conv10:math3-2009-2019"
+    "conv10:math3-2009-2019",
+    "conv10b:browser-verify+answer-render-fix"
   ],
   "failed_set": [],
   "current_task": "conv4:数学三 2009-2020 视觉转录（剩余 12 卷 / 154 页影像，下一卷 2020）",

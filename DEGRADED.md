@@ -5,10 +5,10 @@
 | 时间 (UTC) | 任务 | 状态 | 处置 |
 | --- | --- | --- | --- |
 | 2026-11-05 | git push / git fetch（pack 通道） | 全局 `ghproxy.net` 的 `insteadOf` 重写 + 86MB 包 + 50–190KB/s 链路，多次 `fetch-pack: invalid index-pack output`；直连间歇性 443 连接失败 | 永久跳过 git 传输层，改走 GitHub Data API 四步提交（`tools/publish_api.py`，D104）；本地物化副本用 blobs API 逐文件取回并校验 git hash |
-| 2026-11-05 | math3 KaTeX 全量离线渲染 | 本机 node 不在 PATH；`node_repl` 沙箱禁 `new Function`，无法装载 UMD 版 `vendor/katex/katex.js` | `tools/work/render_check.js` 写好待有 Node 的会话执行；本轮以 `check_m3years.py` 的 `$`/花括号/环境配对静态检查 + 前几卷浏览器实测口径替代，不谎报渲染通过 |
+| 2026-11-05 | math3 KaTeX 全量离线渲染 | 本机 node 不在 PATH；`node_repl` 沙箱禁 `new Function`，无法装载 UMD 版 `vendor/katex/katex.js` | 离线路线放弃，改在线上页面内用生产同款 KaTeX 全量渲染：math3 12 个年份 4254 段 `$…$` 0 失败（D105）；`render_check.js` 留作有 Node 环境的会话备用，其捕获组缺陷已一并修正 |
 | 2026-11-05 | 数学三 2012 / 2020 两卷 | 上一会话草稿未定稿：2012 缺第 15–23 题解析与 meta，2020 缺第 9–23 题解析、meta 与 notes；2016 有稿但无 notes | 不入库、不按记忆补写；影像仍在 `data/math3/pages/`，登记 PENDING_YEARS 后续转录 |
 | 2026-11-05 | 数三 2009-4 / 2016-1 图形 | 草稿以【图】占位（2009 第 4 题含题干图与 4 个选项图、2016 第 1 题含 $f'(x)$ 图），原图未裁出 | `audit_m3legacy.py` A5 持续拦截；待裁 `data/math3/pages/` 影像写 `{年}.media.json` 并替换为 `@@M:` 占位 |
-| 2026-11-05 | 收敛⑩ 浏览器题页实测 | 接手会话仍无内嵌浏览器 / 无 CDP | 机械门禁 9/9 + `verify_data.py` ALL PASS + `check_m3years.py` 12 年 0 错误 + `audit_m3legacy.py` 余项均为已登记缺口 + 2019 抽样独立复算；不谎报浏览器实测 |
+| 2026-11-05 | 收敛⑩ 浏览器题页实测 | ~~无内嵌浏览器~~ 本会话具备 browser-use，已补做 | **已结清**：线上 45 题页 `.katex-error` 0 / console 0，并据此发现且修掉 21 题答案栏裸 LaTeX（D105，`sw.js` v0.3.10）；canvas 取色级图形实测仍待做 |
 | 2026-11-04 15:23 | m0:github-auth | 第 1 个设备码 `1689-3469` 到期未授权 | 已重签 `96E4-E4F2`；按合同第 0 章第 4 条继续离线构建，授权通过立即建仓推送 |
 | 2026-11-04 15:1x | m1:migrate_math（子 Agent 首次启动） | 并发上限启动失败 | 已按重试策略唤醒重跑（retry 1/3） |
 | 2026-11-05 | 全部子 Agent 队列 | 用户指令「不要开子程序，你一个人按顺序做完」（D090） | 停止在跑子 Agent（实测停止时零产出），队列改由 Orchestrator 顺序执行；合同第 5 章编制暂停，其余条款继续生效 |

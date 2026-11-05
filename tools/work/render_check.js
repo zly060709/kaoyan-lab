@@ -17,7 +17,8 @@ for (const f of files) {
       .concat((q.source_blocks || []).map((b, i) => ["block" + i, b.text]));
     for (const [name, t] of texts) {
       if (typeof t !== "string") continue;
-      for (const m of t.matchAll(/\$([^$]|\\\$)+?\$/g)) {
+      // 整段必须整体捕获：写成 /\$([^$]|\\\$)+?\$/ 时捕获组只留最后一个字符
+      for (const m of t.matchAll(/\$((?:[^$]|\\\$)+?)\$/g)) {
         segs++;
         try {
           katex.renderToString(m[1], { throwOnError: true, displayMode: false });

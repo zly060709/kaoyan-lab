@@ -6,6 +6,8 @@ token 只从环境变量 GH_TOKEN 读取，不打印、不落盘。
 
 用法：
   GH_TOKEN=... python tools/publish_api.py --root <工作副本> -m "提交信息" [--dry-run] [--only 前缀]
+  [--tree-cache tree.json]  用本地缓存的远端递归 tree（链路会截断大响应）
+  [--paths a.html,b.js]     显式指定变更集，完全跳过远端 tree 比对
 """
 import base64
 import hashlib
@@ -81,32 +83,40 @@ def main():
     base_tree = commit["tree"]["sha"]
 
     known = {}
-    tc = args[args.index("--tree-cache") + 1] if "--tree-cache" in args else None
-    tree = None
-    if tc and os.path.exists(tc):
-        cached = json.load(io.open(tc, encoding="utf-8"))
-        if cached.get("sha") == head_sha:
-            tree = {"tree": cached["tree"], "truncated": False}
-            print("远端 tree 用本地缓存", tc)
-    if tree is None:
-        tree = gh("/repos/%s/git/trees/%s?recursive=1" % (REPO, base_tree))
-    for e in tree.get("tree", []):
-        if e["type"] == "blob":
-            known[e["path"]] = (e["sha"], e.get("mode", "100644"))
-    if tree.get("truncated"):
-        die("远端 tree 被截断，无法安全比对")
-
-    locals_ = local_files(root)
     changed = []
-    for rel, p in sorted(locals_.items()):
-        if only and not rel.startswith(only):
-            continue
-        blob = io.open(p, "rb").read()
-        sha = git_hash(blob)
-        if rel in known and known[rel][0] == sha:
-            continue
-        changed.append((rel, p, sha, known.get(rel, (None, "100644"))[1], blob))
-    print("工作副本 %d 个文件，与远端不同的 %d 个" % (len(locals_), len(changed)))
+    # --paths 显式给出变更集：跳过远端递归 tree（本机链路会把 ~500KB 响应截断），小改动用它
+    explicit = args[args.index("--paths") + 1].split(",") if "--paths" in args else []
+    if explicit:
+        for rel in explicit:
+            p = os.path.join(root, rel)
+            if not os.path.exists(p):
+                die("--paths 里的文件不存在：" + rel)
+            blob = io.open(p, "rb").read()
+            changed.append((rel, p, git_hash(blob), "100644", blob))
+    else:
+        tc = args[args.index("--tree-cache") + 1] if "--tree-cache" in args else None
+        tree = None
+        if tc and os.path.exists(tc):
+            cached = json.load(io.open(tc, encoding="utf-8"))
+            if cached.get("sha") == head_sha:
+                tree = {"tree": cached["tree"], "truncated": False}
+                print("远端 tree 用本地缓存", tc)
+        if tree is None:
+            tree = gh("/repos/%s/git/trees/%s?recursive=1" % (REPO, base_tree))
+        for e in tree.get("tree", []):
+            if e["type"] == "blob":
+                known[e["path"]] = (e["sha"], e.get("mode", "100644"))
+        if tree.get("truncated"):
+            die("远端 tree 被截断，无法安全比对")
+        for rel, p in sorted(local_files(root).items()):
+            if only and not rel.startswith(only):
+                continue
+            blob = io.open(p, "rb").read()
+            sha = git_hash(blob)
+            if rel in known and known[rel][0] == sha:
+                continue
+            changed.append((rel, p, sha, known.get(rel, (None, "100644"))[1], blob))
+    print("变更文件 %d 个" % len(changed))
     for rel, _, _, _, b in changed:
         print("   %s  %dKB" % (rel, len(b) // 1024))
     if dry or not changed:
