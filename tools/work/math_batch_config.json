@@ -30,5 +30,29 @@
   "source_key": "math3:2019",
   "paper": "数学（三）",
   "note": "视觉转录自《2019数学三真题及解析.pdf》（data/math3/pages/2019/，12 页）：p1–p4 试题（p4 仅第23题收尾）、p5–p12 答案解析；题干/选项/答案/解析逐字照录。2019 年数学三结构：选择题 8×4 分、填空题 6×4 分、解答题 9 题 94 分（15–19 各 10 分、20–23 各 11 分），共 23 题 150 分。原卷排版问题照录不改，逐条清单见 tools/work/m32019_notes.md（随库存档）。"
+ },
+ "math1:2009": {
+  "prefix": "m12009",
+  "source_key": "math1.pages:2009",
+  "paper": "数学（一）真题精讲",
+  "note": "视觉转录自《2009数学一真题及解析.pdf》（data/math1.pages/pages/2009/，13 页）：题干/选项/答案/解析逐字照录。结构与排版问题以 tools/work/m12009_notes.md 为准。",
+  "out_subject": "math",
+  "out_dir": "math"
+ },
+ "math1:2011": {
+  "prefix": "m12011",
+  "source_key": "math1.pages:2011",
+  "paper": "数学（一）真题精讲",
+  "note": "视觉转录自《2011数学一真题及解析.pdf》（data/math1.pages/pages/2011/，13 页）：题干/选项/答案/解析逐字照录。结构与排版问题以 tools/work/m12011_notes.md 为准。",
+  "out_subject": "math",
+  "out_dir": "math"
+ },
+ "math1:2012": {
+  "prefix": "m12012",
+  "source_key": "math1.pages:2012",
+  "paper": "数学（一）真题精讲",
+  "note": "视觉转录自《2012数学一真题及解析.pdf》（data/math1.pages/pages/2012/，13 页）：题干/选项/答案/解析逐字照录。结构与排版问题以 tools/work/m12012_notes.md 为准。",
+  "out_subject": "math",
+  "out_dir": "math"
  }
 }
