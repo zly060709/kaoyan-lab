@@ -1,0 +1,1116 @@
+{
+ "subject": "math1",
+ "year": 2012,
+ "paper": "数学（一）真题精讲",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2012数学一真题及解析.pdf》（data/math1.pages/pages/2012/，13 页）：题干/选项/答案/解析逐字照录。结构与排版问题以 tools/work/m12012_notes.md 为准。",
+ "questions": [
+  {
+   "id": "math-2012-1",
+   "subject": "math",
+   "year": 2012,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "曲线 $y=\\dfrac{x^{2}+x}{x^{2}-1}$ 的渐近线条数为（　　）.",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(C)\n\n【解析】$\\lim\\limits_{x\\to1}\\dfrac{x^{2}+x}{x^{2}-1}=\\lim\\limits_{x\\to1}\\dfrac{x}{x-1}=\\infty$，有 1 条垂直渐近线 $x=1$；\n\n$\\lim\\limits_{x\\to\\infty}\\dfrac{x^{2}+x}{x^{2}-1}=\\lim\\limits_{x\\to\\infty}\\dfrac{x}{x-1}=1$，有 1 条水平渐近线 $y=1$."
+    }
+   ],
+   "knowledge_points": [
+    "渐近线",
+    "极限计算"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     1
+    ],
+    "anchor": "第(1)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:237656567752890827bd0b943162ad2465ceac433482db87b5e2b2afae296400"
+  },
+  {
+   "id": "math-2012-2",
+   "subject": "math",
+   "year": 2012,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $f(x)=(e^{x}-1)(e^{2x}-2)\\cdots(e^{nx}-n)$，其中 $n$ 为正整数，则 $f'(0)=$（　　）",
+   "options": [
+    "$(-1)^{n-1}(n-1)!$",
+    "$(-1)^{n}(n-1)!$",
+    "$(-1)^{n-1}n!$",
+    "$(-1)^{n}n!$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】方法一：由已知 $f(0)=0$，则\n\n$f'(0)=\\lim\\limits_{x\\to0}\\dfrac{f(x)-f(0)}{x}=\\lim\\limits_{x\\to0}\\dfrac{(e^{x}-1)(e^{2x}-2)\\cdots(e^{nx}-n)}{x}$.\n\n$=\\lim\\limits_{x\\to0}(e^{2x}-2)\\cdots(e^{nx}-n)=(-1)^{n-1}(n-1)!$"
+    }
+   ],
+   "knowledge_points": [
+    "导数定义",
+    "极限计算"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     1
+    ],
+    "anchor": "第(2)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6985a953a8047925516afed3735b5cd23873da6fd45dd51567b838302490e4d9"
+  },
+  {
+   "id": "math-2012-3",
+   "subject": "math",
+   "year": 2012,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "如果函数 $f(x,y)$ 在 $(0,0)$ 处连续，那么下列命题正确的是（　　）.",
+   "options": [
+    "$\\lim\\limits_{x\\to0\\atop y\\to0}\\dfrac{f(x,y)}{|x|+|y|}$ 存在，则 $f(x,y)$ 在 $(0,0)$ 处可微",
+    "若极限 $\\lim\\limits_{x\\to0\\atop y\\to0}\\dfrac{f(x,y)}{x^{2}+y^{2}}$ 存在，则 $f(x,y)$ 在 $(0,0)$ 处可微",
+    "若 $f(x,y)$ 在 $(0,0)$ 处可微，则极限 $\\lim\\limits_{x\\to0\\atop y\\to0}\\dfrac{f(x,y)}{|x|+|y|}$ 存在",
+    "若 $f(x,y)$ 在 $(0,0)$ 处可微，则极限 $\\lim\\limits_{x\\to0\\atop y\\to0}\\dfrac{f(x,y)}{x^{2}+y^{2}}$ 存在"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】由已知 $\\lim\\limits_{x\\to0\\atop y\\to0}\\dfrac{f(x,y)}{x^{2}+y^{2}}$ 存在，又连续，则 $f(0,0)=0$；且 $\\lim\\limits_{x\\to0\\atop y=0}\\dfrac{f(x,0)-f(0,0)}{x^{2}}$ 存在,\n\n于是 $\\lim\\limits_{x\\to0\\atop y=0}\\dfrac{f(x,0)-f(0,0)}{x}=0$，$f_{x}(0,0)=0$，同理可得 $f_{y}(0,0)=0$，于是由可微定\n\n义 $\\lim\\limits_{x\\to0\\atop y\\to0}\\dfrac{f(x,y)-f(0,0)-f_{x}(0,0)x-f_{y}(0,0)y}{\\sqrt{x^{2}+y^{2}}}=\\lim\\limits_{x\\to0\\atop y\\to0}\\dfrac{f(x,y)}{\\sqrt{x^{2}+y^{2}}}=0$,于是，可微．应\n\n选（B）."
+    }
+   ],
+   "knowledge_points": [
+    "二元函数可微性",
+    "连续与极限",
+    "偏导数"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     1
+    ],
+    "anchor": "第(3)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e2a7f292750e19eb500b9b30effe622a0653a59c0fcc28ca82b853c20e03e1cb"
+  },
+  {
+   "id": "math-2012-4",
+   "subject": "math",
+   "year": 2012,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $I_{k}=\\int_{0}^{k\\pi}e^{x^{2}}\\sin xdx, (k=1,2,3)$，则有（　　）.",
+   "options": [
+    "$I_{1}<I_{2}<I_{3}$",
+    "$I_{3}<I_{2}<I_{1}$",
+    "$I_{2}<I_{3}<I_{1}$",
+    "$I_{2}<I_{1}<I_{3}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）.\n\n【解析】$I_{1}=\\int_{0}^{\\pi}e^{x^{2}}\\sin xdx>0$,\n\n$I_{2}=\\int_{0}^{2\\pi}e^{x^{2}}\\sin xdx=\\int_{0}^{\\pi}e^{x^{2}}\\sin xdx-\\int_{0}^{\\pi}e^{(x+\\pi)^{2}}\\sin xdx=I_{1}-\\int_{0}^{\\pi}e^{(x+\\pi)^{2}}\\sin xdx<I_{1}$\n\n$I_{3}=\\int_{0}^{3\\pi}e^{x^{2}}\\sin xdx=I_{2}+\\int_{2\\pi}^{3\\pi}e^{x^{2}}\\sin xdx=\\int_{0}^{\\pi}e^{x^{2}}\\sin xdx-\\int_{0}^{\\pi}e^{(x+\\pi)^{2}}\\sin xdx+\\int_{0}^{\\pi}e^{(x+2\\pi)^{2}}\\sin xdx$\n\n$=I_{1}+\\int_{0}^{\\pi}\\left(e^{(x+2\\pi)^{2}}-e^{(x+\\pi)^{2}}\\right)\\sin xdx>I_{1}$."
+    }
+   ],
+   "knowledge_points": [
+    "定积分大小比较",
+    "换元平移"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     1
+    ],
+    "anchor": "第(4)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:c39497fbec8ef723a3ca7495ed5ddd92c836c1be1f12b6fc1fd4bba4eb286e15"
+  },
+  {
+   "id": "math-2012-5",
+   "subject": "math",
+   "year": 2012,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{\\alpha}_{1}=\\begin{pmatrix}0\\\\0\\\\c_{1}\\end{pmatrix}, \\boldsymbol{\\alpha}_{2}=\\begin{pmatrix}0\\\\1\\\\c_{2}\\end{pmatrix}, \\boldsymbol{\\alpha}_{3}=\\begin{pmatrix}1\\\\-1\\\\c_{3}\\end{pmatrix}, \\boldsymbol{\\alpha}_{4}=\\begin{pmatrix}-1\\\\1\\\\c_{4}\\end{pmatrix}$，其中 $c_{1},c_{2},c_{3},c_{4}$ 为任意常数，则下列向量组线性相关的是（　　）.",
+   "options": [
+    "$\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$",
+    "$\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{4}$",
+    "$\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4}$",
+    "$\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(C)．\n\n【解析】由 $\\boldsymbol{\\alpha}_{3}+\\boldsymbol{\\alpha}_{4}=\\begin{pmatrix}0\\\\0\\\\c_{5}\\end{pmatrix}$ 必与 $\\boldsymbol{\\alpha}_{1}$ 线性相关，从而 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4}$ 线性相关，故应选（C）."
+    }
+   ],
+   "knowledge_points": [
+    "向量组线性相关"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     1
+    ],
+    "anchor": "第(5)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:8315537e852f60977850c20506ce69f909a654bd90b82c3053397c660babd8d7"
+  },
+  {
+   "id": "math-2012-6",
+   "subject": "math",
+   "year": 2012,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{A}$ 为三阶矩阵，$\\boldsymbol{P}$ 为三阶可逆矩阵，且 $\\boldsymbol{P}^{-1}\\boldsymbol{A}\\boldsymbol{P}=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$，若 $\\boldsymbol{P}=(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})$，$\\boldsymbol{Q}=(\\boldsymbol{\\alpha}_{1}+\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})$，则 $\\boldsymbol{Q}^{-1}\\boldsymbol{A}\\boldsymbol{Q}=$（　　）.",
+   "options": [
+    "$\\begin{pmatrix}1&0&0\\\\0&2&0\\\\0&0&1\\end{pmatrix}$",
+    "$\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$",
+    "$\\begin{pmatrix}2&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$",
+    "$\\begin{pmatrix}2&0&0\\\\0&2&0\\\\0&0&1\\end{pmatrix}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(B)．\n\n【解析】解法一：由题设，\n\n$\\boldsymbol{Q}=(\\boldsymbol{\\alpha}_{1}+\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})=(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})\\begin{pmatrix}1&0&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$\n\n从而\n\n$\\boldsymbol{Q}^{-1}\\boldsymbol{A}\\boldsymbol{Q}=\\begin{pmatrix}1&0&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}^{-1}\\boldsymbol{P}^{-1}\\boldsymbol{A}\\boldsymbol{P}\\begin{pmatrix}1&0&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$\n\n$=\\begin{pmatrix}1&0&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}^{-1}\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}\\begin{pmatrix}1&0&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$\n\n解法二：由题设 $\\boldsymbol{P}^{-1}\\boldsymbol{A}\\boldsymbol{P}=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$ 可知，矩阵 $\\boldsymbol{A}$ 是可相似对角化的矩阵，因而\n\n其相似变换矩阵 $\\boldsymbol{P}$ 的列向量 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$ 是 $\\boldsymbol{A}$ 的分别属于特征值 1,1,2 的特征向量．由\n\n于 1,1 是二重特征值，故 $\\boldsymbol{\\alpha}_{1}+\\boldsymbol{\\alpha}_{2}$ 仍属于特征值 1 的特征向量，故 $\\boldsymbol{Q}^{-1}\\boldsymbol{A}\\boldsymbol{Q}=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$，\n\n故应选（B）．"
+    }
+   ],
+   "knowledge_points": [
+    "相似对角化",
+    "初等矩阵",
+    "特征向量"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(6)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d8151d7725c0253255becb1ca1f18aa62cb8e7757332d566d5f39cd6b6ce1889"
+  },
+  {
+   "id": "math-2012-7",
+   "subject": "math",
+   "year": 2012,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "设随机变量 $X$ 和 $Y$ 相互独立，且分别服从参数为 1 和参数为 4 的指数分布，则 $P(X<Y)=$（　　）",
+   "options": [
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{2}{5}$",
+    "$\\dfrac{4}{5}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(A)\n\n【解析】因为随机变量 $X$ 和 $Y$ 相互独立，且分别服从参数为 1 和参数为 4 的指数分布，即\n\n$f_{x}(x)=\\begin{cases}e^{-x}, x\\geqslant0\\\\0, \\text{其他}\\end{cases}$   $f_{y}(y)=\\begin{cases}4e^{-4y}, y\\geqslant0\\\\0, \\text{其他}\\end{cases}$\n\n所以 $X$ 和 $Y$ 的联合概率分布为：$f(x,y)=\\begin{cases}4e^{-x-4y}, x,y\\geqslant0\\\\0, \\text{其他}\\end{cases}$\n\n则 $P(x<y)=\\int_{0}^{+\\infty}dx\\int_{x}^{+\\infty}4e^{-x-4y}dy=\\dfrac{1}{5}$."
+    }
+   ],
+   "knowledge_points": [
+    "指数分布",
+    "独立性与联合密度"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(7)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:aca068c34f294ae56083ab07d1b54260ee84f30e8b9b430f94852fef50f3ebca"
+  },
+  {
+   "id": "math-2012-8",
+   "subject": "math",
+   "year": 2012,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "将长度为 1 的木棒随机地截成两段，则两段长度的相关系数为（　　）.",
+   "options": [
+    "1",
+    "$\\dfrac{1}{2}$",
+    "$-\\dfrac{1}{2}$",
+    "$-1$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(D)\n\n【解析】设截成两段的长度分别为 $X$ 与 $Y$,则 $X+Y=1$,即 $Y=1-X$，也就是说 $X$ 与 $Y$ 存在\n\n确定的线性关系，所以 $X$ 与 $Y$ 的相关系数的绝对值为 1，而 $X$ 的系数小于 0，则 $X$ 与 $Y$\n\n的相关系数为 $-1$."
+    }
+   ],
+   "knowledge_points": [
+    "相关系数",
+    "线性关系"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(8)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6e71254deca80f19ea1de21c0c0a27cac82cf34ccf83a8c6a6c938305aaaa1d8"
+  },
+  {
+   "id": "math-2012-9",
+   "subject": "math",
+   "year": 2012,
+   "num": 9,
+   "type": "blank",
+   "score": 4,
+   "stem": "已知函数 $f(x)$ 满足方程 $f''(x)+f'(x)-2f(x)=0$ 及 $f''(x)+f(x)=2e^{x}$，则 $f(x)=$________.",
+   "options": [],
+   "answer": "e^{x}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$e^{x}$\n\n【解析】$f''(x)+f'(x)-2f(x)=0$ 的通解为 $C_{1}e^{-2x}+C_{2}e^{x}$；\n\n将 $f(x)=C_{1}e^{-2x}+C_{2}e^{x}$ 和 $f''(x)=4C_{1}e^{-2x}+C_{2}e^{x}$ 代入 $f''(x)+f(x)=2e^{x}$，于是，可得：\n\n$C_{1}=0, C_{2}=1$，故函数为 $f(x)=e^{x}$."
+    }
+   ],
+   "knowledge_points": [
+    "二阶常系数线性微分方程",
+    "通解代定条件"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(9)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:89188f1867b5cf8f9106ac74731f593756385cfb997dd999f8f79b9d29e95149"
+  },
+  {
+   "id": "math-2012-10",
+   "subject": "math",
+   "year": 2012,
+   "num": 10,
+   "type": "blank",
+   "score": 4,
+   "stem": "$\\int_{0}^{2}x\\sqrt{2x-x^{2}}dx=$________.",
+   "options": [],
+   "answer": "\\frac{\\pi}{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{\\pi}{2}$\n\n【解析】令 $t=x-1$，易得 $\\int_{0}^{2}x\\sqrt{2x-x^{2}}dx=\\int_{-1}^{1}(t+1)\\sqrt{1-t^{2}}dt$\n\n由于 $t\\sqrt{1-t^{2}}$ 为奇函数，所以 $\\int_{-1}^{1}t\\sqrt{1-t^{2}}dt=0$，故原积分变为 $\\int_{-1}^{1}\\sqrt{1-t^{2}}dt=\\dfrac{\\pi}{2}$."
+    }
+   ],
+   "knowledge_points": [
+    "定积分换元",
+    "奇偶对称性",
+    "圆的面积"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(10)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1440fc544fbda6aa2f1c888f9fed5eeeba0f577cd447bd1ae634a05dda612697"
+  },
+  {
+   "id": "math-2012-11",
+   "subject": "math",
+   "year": 2012,
+   "num": 11,
+   "type": "blank",
+   "score": 4,
+   "stem": "$grad\\left(xy+\\dfrac{z}{y}\\right)\\Big|_{(2,1,1)}=$________.",
+   "options": [],
+   "answer": "(1,1,1)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$(1,1,1)$\n\n【解析】$\\dfrac{\\partial\\left(xy+\\dfrac{z}{y}\\right)}{\\partial x}=y$，$\\dfrac{\\partial\\left(xy+\\dfrac{z}{y}\\right)}{\\partial y}=x-\\dfrac{z}{y^{2}}$，$\\dfrac{\\partial\\left(xy+\\dfrac{z}{y}\\right)}{\\partial z}=\\dfrac{1}{y}$，梯度公式代入点 $(2,1,1)$\n\n可得出答案."
+    }
+   ],
+   "knowledge_points": [
+    "梯度"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(11)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:17e3b8dc675484b5b58d2404d5bceb16d14e84d75a4dc9c4914db4965fc5c3e0"
+  },
+  {
+   "id": "math-2012-12",
+   "subject": "math",
+   "year": 2012,
+   "num": 12,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $\\Sigma=\\{(x,y,z)|x+y+z=1,x\\geqslant0,y\\geqslant0,z\\geqslant0\\}$，则 $\\iint\\limits_{\\Sigma}y^{2}dS=$________.",
+   "options": [],
+   "answer": "\\frac{\\sqrt{3}}{12}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{\\sqrt{3}}{12}$\n\n【解析】投影到 $xoy$ 平面上，$\\iint\\limits_{\\Sigma}y^{2}dS=\\iint\\limits_{D}y^{2}\\sqrt{3}dxdy=\\sqrt{3}\\int_{0}^{1}dy\\int_{0}^{1-y}y^{2}dx=\\dfrac{\\sqrt{3}}{12}$."
+    }
+   ],
+   "knowledge_points": [
+    "第一类曲面积分",
+    "投影法"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(12)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1e5bf92e67cb353386c11517556ff7cc0a586b30e6bf6d868dc0c2c19ac327c7"
+  },
+  {
+   "id": "math-2012-13",
+   "subject": "math",
+   "year": 2012,
+   "num": 13,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{\\alpha}$ 为三维单位向量，$\\boldsymbol{E}$ 为三阶单位矩阵，则 $\\boldsymbol{E}-\\boldsymbol{\\alpha}\\boldsymbol{\\alpha}^{T}$ 的秩为________.",
+   "options": [],
+   "answer": "2",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】2.\n\n【解析】\n\n由 $\\boldsymbol{\\alpha}$ 为三维单位向量，知矩阵 $\\boldsymbol{\\alpha}\\boldsymbol{\\alpha}^{T}$ 的秩为 1，特征值为 1,0,0，从而 $\\boldsymbol{E}-\\boldsymbol{\\alpha}\\boldsymbol{\\alpha}^{T}$ 特征值为 0,1,1.\n\n由于 $\\boldsymbol{E}-\\boldsymbol{\\alpha}\\boldsymbol{\\alpha}^{T}$ 为实对称矩阵，又实对称矩阵的秩等于非零特征值的个数，故 $\\boldsymbol{E}-\\boldsymbol{\\alpha}\\boldsymbol{\\alpha}^{T}$ 的秩\n\n为 2."
+    }
+   ],
+   "knowledge_points": [
+    "矩阵的秩",
+    "实对称矩阵特征值"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(13)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:225802919e326fd9edd1a3cbd0528d6b025e62fda0b7c8eba3440bdf6a32237c"
+  },
+  {
+   "id": "math-2012-14",
+   "subject": "math",
+   "year": 2012,
+   "num": 14,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $A,B,C$ 为三个随机事件，$A$ 与 $C$ 互不相容，$P(AB)=\\dfrac{1}{2}$，$P(C)=\\dfrac{1}{3}$，则 $P(AB|\\overline{C})=$________.",
+   "options": [],
+   "answer": "\\frac{3}{4}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{3}{4}$\n\n【解析】因为 $A$ 与 $C$ 互不相容，即 $AC=\\phi$，又因为 $A=AC+A\\overline{C}$，所以 $A\\overline{C}=A$\n\n从而 $AB\\overline{C}=AB$，则 $P(AB|\\overline{C})=\\dfrac{P(AB\\overline{C})}{P(\\overline{C})}=\\dfrac{P(AB)}{1-P(C)}=\\dfrac{3}{4}$."
+    }
+   ],
+   "knowledge_points": [
+    "条件概率",
+    "互不相容事件"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(14)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b6f537114e22a86228a6c332910a3d34006c379100baa913faefa3950a5ed849"
+  },
+  {
+   "id": "math-2012-15",
+   "subject": "math",
+   "year": 2012,
+   "num": 15,
+   "type": "essay",
+   "score": 10,
+   "stem": "证明：$x\\ln\\dfrac{1+x}{1-x}+\\cos x>1+\\dfrac{x^{2}}{2}$，$-1<x<1$.",
+   "options": [],
+   "answer": "证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【证明】令 $f(x)=x\\ln\\dfrac{1+x}{1-x}+\\cos x-1-\\dfrac{x^{2}}{2}$，则 $f(0)=0$\n\n$f(x)$ 为偶函数，我们只需证明 $0<x<1, f(x)=x\\ln\\dfrac{1+x}{1-x}+\\cos x-1-\\dfrac{x^{2}}{2}>0$.\n\n$f'(x)=\\ln\\dfrac{1+x}{1-x}+x\\left(\\dfrac{1}{1+x}+\\dfrac{1}{1-x}\\right)-\\sin x-x$,\n\n$f''(x)=2\\left(\\dfrac{1}{1+x}+\\dfrac{1}{1-x}\\right)+x\\left(-\\dfrac{1}{(1+x)^{2}}+\\dfrac{1}{(1-x)^{2}}\\right)-\\cos x-1$\n\n$=\\dfrac{4}{1-x^{2}}+x\\left(-\\dfrac{1}{(1+x)^{2}}+\\dfrac{1}{(1-x)^{2}}\\right)-\\cos x-1$\n\n由 $0<x<1$ 可得，$\\dfrac{4}{1-x^{2}}>4$，$x\\left(-\\dfrac{1}{(1+x)^{2}}+\\dfrac{1}{(1-x)^{2}}\\right)>0$，$-2\\leqslant-\\cos x-1\\leqslant-1$；\n\n所以当 $0<x<1$，$f''(x)>0$.\n\n因此，当 $0<x<1$ 时 $f'(x)$ 单调递增．而 $f'(0)=0$，所以 $f'(x)>f'(0)=0$.\n\n得出 $f(x)$ 为增函数，又由 $f(0)=0$，得出 当 $0<x<1$，\n\n$f(x)=x\\ln\\dfrac{1+x}{1-x}+\\cos x-1-\\dfrac{x^{2}}{2}>0$，即 $x\\ln\\dfrac{1+x}{1-x}+\\cos x>1+\\dfrac{x^{2}}{2}$."
+    }
+   ],
+   "knowledge_points": [
+    "不等式证明",
+    "单调性分析",
+    "偶函数"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(15)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ed584e2ed7028a8c3f4bdf7e65a4e9785a59fc4d786b5846eee44561f564796c"
+  },
+  {
+   "id": "math-2012-16",
+   "subject": "math",
+   "year": 2012,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "求函数 $f(x,y)=xe^{-\\frac{x^{2}+y^{2}}{2}}$ 的极值.",
+   "options": [],
+   "answer": "极大值点(1,0); 极小值点(-1,0)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】$\\begin{cases}f'_{x}=e^{-\\frac{x^{2}+y^{2}}{2}}(1-x^{2})=0\\\\ f'_{y}=-xye^{-\\frac{x^{2}+y^{2}}{2}}=0\\end{cases}$，解得 $\\begin{cases}x=1,\\\\y=0,\\end{cases}$ $\\begin{cases}x=-1.\\\\y=0.\\end{cases}$\n\n$A=f''_{xx}=-xe^{-\\frac{x^{2}+y^{2}}{2}}(1-x^{2})-2xe^{-\\frac{x^{2}+y^{2}}{2}}$，$B=f''_{xy}=-ye^{-\\frac{x^{2}+y^{2}}{2}}(1-x^{2})$，\n\n$C=f''_{yy}=xe^{-\\frac{x^{2}+y^{2}}{2}}(-1+y^{2})$\n\n代入 $\\begin{cases}x=1,\\\\y=0,\\end{cases}$ 可得 $AC-B^{2}=\\dfrac{2}{e}>0, A=-\\dfrac{2}{\\sqrt{e}}<0$，则可知 $\\begin{cases}x=1,\\\\y=0,\\end{cases}$ 为函数的极大值点；\n\n代入 $\\begin{cases}x=-1.\\\\y=0.\\end{cases}$ 可得 $AC-B^{2}=\\dfrac{2}{e}>0, A=\\dfrac{2}{\\sqrt{e}}>0$，则可知 $\\begin{cases}x=-1,\\\\y=0,\\end{cases}$ 是函数极小值点."
+    }
+   ],
+   "knowledge_points": [
+    "二元函数极值",
+    "极值判别条件"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(16)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:01445b216dc7de096c553d974f44e305456b29e0c5434d2f1a41fa8627a5b1db"
+  },
+  {
+   "id": "math-2012-17",
+   "subject": "math",
+   "year": 2012,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "求幂级数 $\\sum\\limits_{n=0}^{\\infty}\\dfrac{4n^{2}+4n+3}{2n+1}x^{2n}$ 的收敛域及和函数.",
+   "options": [],
+   "answer": "收敛域(-1,1); S(x)=\\frac{1+x^{2}}{(1-x^{2})^{2}}+\\frac{1}{x}\\ln\\frac{1+x}{1-x}(-1<x<0 or 0<x<1), S(0)=3",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解】利用比值法有\n\n$\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{a_{n+1}x^{2(n+1)}}{a_{n}x^{2n}}\\right|$\n\n$=\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{4(n+1)^{2}+4(n+1)+3}{2(n+1)+1}\\times\\dfrac{2n+1}{4n^{2}+4n+3}x^{2}\\right|$\n\n$=x^{2}$\n\n令 $x^{2}<1$ 得 $-1<x<1$，\n\n当 $x=\\pm1$ 时，原级数 $=\\sum\\limits_{n=0}^{\\infty}\\dfrac{4n^{2}+4n+3}{2n+1}$，但第 n 项的极限即 $\\lim\\limits_{n\\to\\infty}\\dfrac{4n^{2}+4n+3}{2n+1}=\\infty\\neq0$，所\n\n以当 $x=\\pm1$ 时，原级数不收敛，所以原级数的收敛区间为 $(-1,1)$，和函数\n\n$S(x)=\\sum\\limits_{n=0}^{\\infty}\\dfrac{4n^{2}+4n+3}{2n+1}x^{2n}=\\sum\\limits_{n=0}^{\\infty}\\dfrac{(2n+1)^{2}+2}{2n+1}x^{2n}=\\sum\\limits_{n=0}^{\\infty}(2n+1)x^{2n}+\\sum\\limits_{n=0}^{\\infty}\\dfrac{2}{2n+1}x^{2n}$\n\n$S_{1}(x)=\\sum\\limits_{n=0}^{\\infty}(2n+1)x^{2n}=\\left(\\sum\\limits_{n=0}^{\\infty}x^{2n+1}\\right)'=\\left(\\dfrac{x}{1-x^{2}}\\right)'=\\dfrac{1+x^{2}}{(1-x^{2})^{2}}$\n\n令 $S_{2}(x)=\\sum\\limits_{n=0}^{\\infty}\\dfrac{2}{2n+1}x^{2n}=\\dfrac{1}{x}\\sum\\limits_{n=0}^{\\infty}\\dfrac{2}{2n+1}x^{2n+1}$\n\n其中令 $S_{3}(x)=\\sum\\limits_{n=0}^{\\infty}\\dfrac{2}{2n+1}x^{2n+1}$，则 $S_{3}'(x)=\\sum\\limits_{n=0}^{\\infty}2x^{2n}=\\dfrac{2}{1-x^{2}}$\n\n那么 $S_{3}(x)-S_{3}(0)=\\int_{0}^{x}\\dfrac{2}{1-t^{2}}dt=\\ln\\dfrac{1+x}{1-x}$，其中 $S_{3}(0)=0$，那么 $S_{3}(x)=\\ln\\dfrac{1+x}{1-x}$\n\n则 $S_{2}(x)=\\dfrac{1}{x}S_{3}(x)=\\dfrac{1}{x}\\ln\\dfrac{1+x}{1-x}$.\n\n所以和函数：$S(x)=S_{1}(x)+S_{2}(x)=\\begin{cases}\\dfrac{1+x^{2}}{(1-x^{2})^{2}}+\\dfrac{1}{x}\\ln\\dfrac{1+x}{1-x},-1<x<0\\ or\\ 0<x<1\\\\3,\\qquad\\qquad\\qquad\\quad x=0\\end{cases}$."
+    }
+   ],
+   "knowledge_points": [
+    "幂级数收敛域",
+    "和函数",
+    "逐项求导与积分"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(17)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:0cae2f7ed06aba6866bf96f90c8e84fb1c3714bdc08d616f70a64368b5de85ff"
+  },
+  {
+   "id": "math-2012-18",
+   "subject": "math",
+   "year": 2012,
+   "num": 18,
+   "type": "essay",
+   "score": 10,
+   "stem": "已知曲线 $L:\\begin{cases}x=f(t)\\\\y=\\cos t\\end{cases}(0\\leqslant t\\leqslant\\dfrac{\\pi}{2})$，其中函数 $f(t)$ 具有连续导数，且 $f(0)=0$，$f'(t)>0(0<t<\\dfrac{\\pi}{2})$．若曲线 $L$ 的切线与 $x$ 轴交点到切点的距离恒为 1，求函数 $f(t)$ 的表达式，并求此曲线 $L$ 与 $x$ 轴与 $y$ 轴无边界的区域的面积.",
+   "options": [],
+   "answer": "f(t)=\\ln(\\sec t+\\tan t)-\\sin t; 面积=\\frac{\\pi}{4}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解】设切点坐标为 $(x_{0},y_{0})$，则由已知,切线为：\n\n$y-y_{0}=k(x-x_{0})$，其中 $k=\\dfrac{dy}{dx}=\\dfrac{-\\sin t}{f'(t)}$，由已知，切点与 $x$ 轴交点为 $(-\\dfrac{y_{0}}{k}+x_{0},0)$，于\n\n是 $\\sqrt{(1+\\dfrac{1}{k^{2}})y_{0}^{2}}=1$\n\n$\\cos^{2}t(1+\\dfrac{f'^{2}(t)}{\\sin^{2}t})=1$，$f(t)=\\ln|\\sec t+\\tan t|-\\sin t+C$，又 $f(0)=0$，$\\Rightarrow C=0$\n\n于是，$f(t)=\\ln(\\sec t+\\tan t)-\\sin t$，\n\n$\\int_{0}^{+\\infty}ydx=\\int_{0}^{\\frac{\\pi}{2}}\\cos tf'(t)dt=\\int_{0}^{\\frac{\\pi}{2}}\\cos t\\tan t\\sin tdt=\\int_{0}^{\\frac{\\pi}{2}}\\sin^{2}tdt=\\dfrac{\\pi}{4}$."
+    }
+   ],
+   "knowledge_points": [
+    "参数方程求导",
+    "切线",
+    "平面图形面积"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(18)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3aec544cc80fdb0371442170669f3f5b5287b2855f1ea37476bdb5833b14aeaf"
+  },
+  {
+   "id": "math-2012-19",
+   "subject": "math",
+   "year": 2012,
+   "num": 19,
+   "type": "essay",
+   "score": 10,
+   "stem": "已知 $L$ 是第一象限中从点 $(0,0)$ 沿圆周 $x^{2}+y^{2}=2x$ 到点 $(2,0)$，再沿圆周$x^{2}+y^{2}=4$ 到点 $(0,2)$ 的曲线段，计算曲线积分 $J=\\int_{L}3x^{2}ydx+\\left(x^{3}+x-2y\\right)dy$.",
+   "options": [],
+   "answer": "J=\\frac{\\pi}{2}-4",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】令 $C:x=0\\quad 0\\leqslant y\\leqslant2$，则在 $C+L$ 上曲线积分（设其内部区域为 $D$）可用格\n\n林公式，所以\n\n$J=\\int_{L}3x^{2}ydx+\\left(x^{3}+x-2y\\right)dy=\\int_{L+C}3x^{2}ydx+\\left(x^{3}+x-2y\\right)dy-\\int_{C}3x^{2}ydx+\\left(x^{3}+x-2y\\right)dy$\n\n$=\\iint\\limits_{D}dxdy+\\int_{0}^{2}(-2y)dy=\\dfrac{\\pi}{2}-4$."
+    }
+   ],
+   "knowledge_points": [
+    "格林公式",
+    "第二类曲线积分"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(19)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:87d709bf4cfdf6468ded2853e7ac6d5cedc37d8bceba3edc2bcfa0834382f03a"
+  },
+  {
+   "id": "math-2012-20",
+   "subject": "math",
+   "year": 2012,
+   "num": 20,
+   "type": "essay",
+   "score": 11,
+   "stem": "设 $\\boldsymbol{A}=\\begin{pmatrix}1&a&0&0\\\\0&1&a&0\\\\0&0&1&a\\\\a&0&0&1\\end{pmatrix}, \\boldsymbol{\\beta}=\\begin{pmatrix}1\\\\-1\\\\0\\\\0\\end{pmatrix}$.（1）计算 $|\\boldsymbol{A}|$；（2）当实数 $a$ 取何值时，$\\boldsymbol{Ax}=\\boldsymbol{\\beta}$ 有无穷多解，并求其通解.",
+   "options": [],
+   "answer": "|A|=1-a^{4}; a=-1; 通解(0,-1,0,0)^{T}+k(1,1,1,1)^{T}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】（1）按照第一列展开，得 $|\\boldsymbol{A}|=1+(-1)^{5}a^{4}=1-a^{4}$.\n\n（2）若 $\\boldsymbol{Ax}=\\boldsymbol{\\beta}$ 有无穷多解，则 $|\\boldsymbol{A}|=0$，即 $1-a^{4}=0$，解得 $a=1$ 或 $a=-1$.\n\n当 $a=1$ 时，\n\n$\\overline{\\boldsymbol{A}}=\\begin{pmatrix}1&1&0&0&1\\\\0&1&1&0&-1\\\\0&0&1&1&0\\\\1&0&0&1&0\\end{pmatrix}\\to\\begin{pmatrix}1&1&0&0&1\\\\0&1&1&0&-1\\\\0&0&1&1&0\\\\0&0&0&0&-2\\end{pmatrix}$\n\n$r(\\boldsymbol{A})<r(\\overline{\\boldsymbol{A}})$，方程组 $\\boldsymbol{Ax}=\\boldsymbol{\\beta}$ 无解.\n\n当 $a=-1$ 时，\n\n$\\overline{\\boldsymbol{A}}=\\begin{pmatrix}1&-1&0&0&1\\\\0&1&-1&0&-1\\\\0&0&1&-1&0\\\\-1&0&0&1&0\\end{pmatrix}\\to\\begin{pmatrix}1&-1&0&0&1\\\\0&1&-1&0&-1\\\\0&0&1&-1&0\\\\0&0&0&0&0\\end{pmatrix}$\n\n方程组 $\\boldsymbol{Ax}=\\boldsymbol{\\beta}$ 有无穷多解，其通解为\n\n$\\begin{pmatrix}0\\\\-1\\\\0\\\\0\\end{pmatrix}+k\\begin{pmatrix}1\\\\1\\\\1\\\\1\\end{pmatrix}$，其中 $k$ 为任意常数."
+    }
+   ],
+   "knowledge_points": [
+    "行列式计算",
+    "线性方程组解的判定",
+    "通解"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(20)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:528fb70b17c27af962be4758d7c0be7227cbda28b123b58f9a441f88d806ea12"
+  },
+  {
+   "id": "math-2012-21",
+   "subject": "math",
+   "year": 2012,
+   "num": 21,
+   "type": "essay",
+   "score": 11,
+   "stem": "已知 $\\boldsymbol{A}=\\begin{pmatrix}1&0&1\\\\0&1&1\\\\-1&0&a\\\\0&a&-1\\end{pmatrix}$，二次型 $f(x_{1},x_{2},x_{3})=\\boldsymbol{x}^{T}(\\boldsymbol{A}^{T}\\boldsymbol{A})\\boldsymbol{x}$ 的秩为 2.（1）求实数 $a$ 的值；（2）求正交变换 $\\boldsymbol{x}=\\boldsymbol{Qy}$ 将 $f$ 化为标准形.",
+   "options": [],
+   "answer": "a=-1; f=2y_{1}^{2}+6y_{2}^{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】（1）对 $\\boldsymbol{A}$ 初等行变换，\n\n$\\boldsymbol{A}=\\begin{pmatrix}1&0&1\\\\0&1&1\\\\-1&0&a\\\\0&a&-1\\end{pmatrix}\\to\\begin{pmatrix}1&0&1\\\\0&1&1\\\\0&0&a+1\\\\0&0&0\\end{pmatrix}$\n\n由 $r(\\boldsymbol{A})=r(\\boldsymbol{A}^{T}\\boldsymbol{A})=2$，得 $a=-1$.\n\n（2）\n\n$\\boldsymbol{A}^{T}\\boldsymbol{A}=\\begin{pmatrix}1&1&-1&-1\\\\0&1&0&-1\\\\1&0&-1&0\\end{pmatrix}\\begin{pmatrix}1&0&1\\\\0&1&1\\\\-1&0&-1\\\\0&-1&-1\\end{pmatrix}=\\begin{pmatrix}2&0&2\\\\0&2&2\\\\2&2&4\\end{pmatrix}$\n\n由 $\\boldsymbol{A}^{T}\\boldsymbol{A}$ 的特征多项式\n\n$|\\lambda\\boldsymbol{E}-\\boldsymbol{A}^{T}\\boldsymbol{A}|=\\begin{vmatrix}\\lambda-2&0&-2\\\\0&\\lambda-2&-2\\\\-2&-2&\\lambda-4\\end{vmatrix}=\\begin{vmatrix}\\lambda-2&0&-2\\\\-(\\lambda-2)&\\lambda-2&-2\\\\0&-2&\\lambda-4\\end{vmatrix}$\n\n$=(\\lambda-2)\\begin{vmatrix}1&0&-2\\\\-1&\\lambda-2&-2\\\\0&-2&\\lambda-4\\end{vmatrix}=(\\lambda-2)\\begin{vmatrix}1&0&-2\\\\0&\\lambda-2&-4\\\\0&-2&\\lambda-4\\end{vmatrix}=\\lambda(\\lambda-2)(\\lambda-6)$\n\n得矩阵 $\\boldsymbol{A}^{T}\\boldsymbol{A}$ 的特征值 $\\lambda_{1}=2$，$\\lambda_{2}=6$，$\\lambda_{3}=0$.\n\n当 $\\lambda_{1}=2$ 时，解得 $(2\\boldsymbol{E}-\\boldsymbol{A}^{T}\\boldsymbol{A})\\boldsymbol{x}=0$ 的基础解系 $\\boldsymbol{\\alpha}_{1}=(1,-1,0)^{T}$；\n\n当 $\\lambda_{2}=6$ 时，解得 $(6\\boldsymbol{E}-\\boldsymbol{A}^{T}\\boldsymbol{A})\\boldsymbol{x}=0$ 的基础解系 $\\boldsymbol{\\alpha}_{2}=(1,1,2)^{T}$；\n\n当 $\\lambda_{3}=0$ 时，解得 $(0\\boldsymbol{E}-\\boldsymbol{A}^{T}\\boldsymbol{A})\\boldsymbol{x}=0$ 的基础解系 $\\boldsymbol{\\alpha}_{3}=(1,1,-1)^{T}$；\n\n由于 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$ 已是正交向量组，只需单位化，\n\n$\\boldsymbol{\\gamma}_{1}=\\dfrac{1}{\\sqrt{2}}\\begin{pmatrix}1\\\\-1\\\\0\\end{pmatrix}, \\boldsymbol{\\gamma}_{2}=\\dfrac{1}{\\sqrt{6}}\\begin{pmatrix}1\\\\1\\\\2\\end{pmatrix}, \\boldsymbol{\\gamma}_{3}=\\dfrac{1}{\\sqrt{3}}\\begin{pmatrix}1\\\\1\\\\-1\\end{pmatrix}$\n\n令 $\\boldsymbol{Q}=(\\boldsymbol{\\gamma}_{1},\\boldsymbol{\\gamma}_{2},\\boldsymbol{\\gamma}_{3})$，经过正交变换 $\\boldsymbol{x}=\\boldsymbol{Qy}$，二次型 $f(x_{1},x_{2},x_{3})=\\boldsymbol{x}^{T}(\\boldsymbol{A}^{T}\\boldsymbol{A})\\boldsymbol{x}$ 化成标\n\n准形 $f(x_{1},x_{2},x_{3})=2y_{1}^{2}+6y_{2}^{2}$."
+    }
+   ],
+   "knowledge_points": [
+    "二次型秩",
+    "正交变换",
+    "特征值与特征向量"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(21)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:36881c80c43304d80c6f39b5bc81537fc160fda24a9b8a6918a7cfb7717b4eef"
+  },
+  {
+   "id": "math-2012-22",
+   "subject": "math",
+   "year": 2012,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "设二维离散型随机变量 $X$ 与 $Y$ 的概率分布为$\\begin{array}{c|ccc} X\\backslash Y & 0 & 1 & 2\\\\ \\hline 0 & \\dfrac{1}{4} & 0 & \\dfrac{1}{4}\\\\ 1 & 0 & \\dfrac{1}{3} & 0\\\\ 2 & \\dfrac{1}{12} & 0 & \\dfrac{1}{12} \\end{array}$求：（1）$P(X=2Y)$；（2）$\\mathrm{cov}(X-Y,Y)$.",
+   "options": [],
+   "answer": "P(X=2Y)=\\frac{1}{4}; cov(X-Y,Y)=-\\frac{2}{3}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】\n\n(1)$P(X=2Y)=P(X=0,Y=0)+P(X=2,Y=1)$\n\n由 $X$ 与 $Y$ 的联合概率分布可知：$P(X=0,Y=0)=\\dfrac{1}{4}$，$P(X=2,Y=1)=0$，\n\n所以 $P(X=2Y)=P(X=0,Y=0)+P(X=2,Y=1)=\\dfrac{1}{4}+0=\\dfrac{1}{4}$.\n\n(2)由 $X$ 与 $Y$ 的联合概率分布可知：\n\n随机变量 $X$,$Y$ 以及 $XY$ 的分布律如下表所示：\n\n$\\begin{array}{c|ccc} X & 0 & 1 & 2\\\\ \\hline P & \\dfrac{1}{2} & \\dfrac{1}{3} & \\dfrac{1}{6} \\end{array}$\n\n$\\begin{array}{c|ccc} Y & 0 & 1 & 2\\\\ \\hline P & \\dfrac{1}{3} & \\dfrac{1}{3} & \\dfrac{1}{3} \\end{array}$\n\n$\\begin{array}{c|cccc} XY & 0 & 1 & 2 & 4\\\\ \\hline P & \\dfrac{7}{12} & \\dfrac{1}{3} & 0 & \\dfrac{1}{12} \\end{array}$\n\n所以\n\n$EX=0\\times\\dfrac{1}{2}+1\\times\\dfrac{1}{3}+2\\times\\dfrac{1}{6}=\\dfrac{2}{3}$; $EX^{2}=0^{2}\\times\\dfrac{1}{2}+1^{2}\\times\\dfrac{1}{3}+2^{2}\\times\\dfrac{1}{6}=1$\n\n$EY=0\\times\\dfrac{1}{3}+1\\times\\dfrac{1}{3}+2\\times\\dfrac{1}{3}=1$; $EY^{2}=0^{2}\\times\\dfrac{1}{3}+1^{2}\\times\\dfrac{1}{3}+2^{2}\\times\\dfrac{1}{3}=\\dfrac{5}{3}$\n\n$EXY=0\\times\\dfrac{7}{12}+1\\times\\dfrac{1}{3}+2\\times0+4\\times\\dfrac{1}{12}=\\dfrac{2}{3}$\n\n则\n\n$DX=EX^{2}-(EX)^{2}=1-\\left(\\dfrac{2}{3}\\right)^{2}=\\dfrac{5}{9}$, $DY=EY^{2}-(EY)^{2}=\\dfrac{5}{3}-1^{2}=\\dfrac{2}{3}$\n\n$\\mathrm{cov}(X-Y,Y)=\\mathrm{cov}(X,Y)-\\mathrm{cov}(Y,Y)$\n\n$=(EXY-EX\\cdot EY)-(EY^{2}-EY\\cdot EY)$\n\n$=\\left(\\dfrac{2}{3}-\\dfrac{2}{3}\\times1\\right)-\\left(\\dfrac{5}{3}-1\\times1\\right)$\n\n$=-\\dfrac{2}{3}$"
+    }
+   ],
+   "knowledge_points": [
+    "二维离散型随机变量",
+    "协方差"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     3,
+     4
+    ],
+    "anchor": "第(22)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3a0e4d61b94910858458a077c67a15a8d14bcb5d6a2beda44eef790a2e215625"
+  },
+  {
+   "id": "math-2012-23",
+   "subject": "math",
+   "year": 2012,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "设随机变量 $X$ 与 $Y$ 相互独立且分别服从正态分布 $N(\\mu,\\sigma^{2})$ 与 $N(\\mu,2\\sigma^{2})$，其中 $\\sigma$ 是未知参数且 $\\sigma>0$．设 $Z=X-Y$.（1）求 $Z$ 的概率密度 $f_{Z}(z)$；（2）设 $Z_{1},Z_{2},\\cdots,Z_{n}$ 为来自总体 $Z$ 的简单随机样本，求 $\\sigma^{2}$ 的最大似然估计量 $\\hat{\\sigma}^{2}$；（3）证明 $\\sigma^{2}$ 为 $\\hat{\\sigma}^{2}$ 的无偏估计量.",
+   "options": [],
+   "answer": "f_{Z}(z)=\\frac{1}{\\sqrt{6\\pi}\\sigma}e^{-\\frac{z^{2}}{6\\sigma^{2}}}; \\hat{\\sigma}^{2}=\\frac{1}{3n}\\sum_{i=1}^{n}Z_{i}^{2}; 无偏性证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】（1）因为随机变量 $X$ 与 $Y$ 相互独立且分别服从正态分布 $N(\\mu,\\sigma^{2})$ 与 $N(\\mu,2\\sigma^{2})$\n\n所以 $Z=X-Y$ 也服从正态分布，其中\n\n$EZ=E(X-Y)=EX-EY=\\mu-\\mu=0, DZ=D(X-Y)=DX+DY=\\sigma^{2}+2\\sigma^{2}=3\\sigma^{2}$\n\n从而 $Z$ 服从 $N(0,3\\sigma^{2})$. 则 $Z$ 的概率密度 $f_{Z}(z)=\\dfrac{1}{\\sqrt{6\\pi}\\sigma}e^{-\\frac{z^{2}}{6\\sigma^{2}}}$.\n\n（2）$Z_{1},Z_{2},\\cdots,Z_{n}$ 在样本值为 $z_{1},z_{2},\\cdots,z_{n}$ 的最大似然函数为：\n\n$L(z_{1},z_{2},\\cdots,z_{n};\\sigma^{2})=\\prod\\limits_{i=1}^{n}\\dfrac{1}{\\sqrt{6\\pi}\\sigma}e^{-\\frac{z_{i}^{2}}{6\\sigma^{2}}}=(6\\pi)^{-\\frac{n}{2}}\\cdot(\\sigma^{2})^{-\\frac{n}{2}}\\cdot e^{-\\frac{1}{6\\sigma^{2}}\\sum\\limits_{i=1}^{n}z_{i}^{2}}$\n\n两边同时取对数，有：$\\ln L(\\sigma^{2})=-\\dfrac{n}{2}\\ln(6\\pi)-\\dfrac{n}{2}\\ln(\\sigma^{2})-\\dfrac{1}{6\\sigma^{2}}\\sum\\limits_{i=1}^{n}z_{i}^{2}$\n\n令 $\\dfrac{d\\ln L(\\sigma^{2})}{d(\\sigma^{2})}=-\\dfrac{n}{2}\\cdot\\dfrac{1}{\\sigma^{2}}+\\dfrac{1}{6(\\sigma^{2})^{2}}\\sum\\limits_{i=1}^{n}z_{i}^{2}=0$，可得：$\\sigma^{2}=\\dfrac{1}{3n}\\sum\\limits_{i=1}^{n}z_{i}^{2}$\n\n所以 $\\sigma^{2}$ 的最大似然估计为：$\\hat{\\sigma}^{2}=\\dfrac{1}{3n}\\sum\\limits_{i=1}^{n}Z_{i}^{2}$\n\n（3）由（1）知，$E\\hat{\\sigma}^{2}=\\dfrac{1}{3n}\\sum\\limits_{i=1}^{n}E(Z_{i}^{2})$，其中 $E(Z_{i}^{2})=\\left[E(Z_{i})\\right]^{2}+D(Z_{i})=3\\sigma^{2}$\n\n从而 $E\\hat{\\sigma}^{2}=\\dfrac{1}{3n}\\sum\\limits_{i=1}^{n}E(Z_{i}^{2})=\\dfrac{1}{3n}\\cdot3\\sigma^{2}=\\sigma^{2}$，所以 $\\sigma^{2}$ 为 $\\hat{\\sigma}^{2}$ 的无偏估计量."
+    }
+   ],
+   "knowledge_points": [
+    "正态分布",
+    "最大似然估计",
+    "无偏估计"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+   "source_ref": {
+    "pdf": "2012数学一真题及解析.pdf",
+    "sha256": "a041182c1eb0322a4075dcf20be5432ff9c08aa531836d7d4f1d543efb0f522e",
+    "pages": [
+     4
+    ],
+    "anchor": "第(23)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3d376916e42e8b6123e8b1f6d1fe0f6b837276b5792f290025d5244826d9b3d4"
+  }
+ ]
+}
