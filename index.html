@@ -590,23 +590,27 @@ function pairSlice(t,center,before,after){
     const iLast=seg.lastIndexOf("$"),iFirst=seg.indexOf("$");
     if(iLast<(center-a))seg=seg.slice(iFirst+1);else seg=seg.slice(0,iLast);
   }
-  /* D111: \( \) 定界配对保护（合并索引改用 \( \)，仅配 $ 会让残缺式泄漏） */
+  /* D111: \( \) 定界用状态机配对（计数法在交叉错配时失效：窗口切出「前公式尾巴 \) + 后公式开头 \(」时计数恰好相等） */
   guard=0;
-  while(((seg.match(/\\\(/g)||[]).length)!==((seg.match(/\\\)/g)||[]).length)&&guard++<4){
-    const iL=seg.indexOf("\\("),iR=seg.lastIndexOf("\\)");
-    if(iL>=0&&iR>=0&&iR>iL)seg=seg.slice(iL+2);
-    else if(iL>=0)seg=seg.slice(0,iL);
-    else if(iR>=0)seg=seg.slice(iR+2);
-    else break;
+  while(guard++<6){
+    const toks=[...seg.matchAll(/\$|\\\(|\\\)/g)];
+    let depth=0,bad=-1,unclosed=false;
+    for(const x of toks){
+      if(x[0]==="\\(")depth++;
+      else if(x[0]==="\\)"){ if(depth===0){bad=x.index;break} depth-- }
+    }
+    if(bad>=0){seg=seg.slice(bad+2);continue}
+    if(depth>0){const iL=seg.lastIndexOf("\\(");seg=seg.slice(0,iL);continue}
+    break;
   }
-  /* D111: 清洗定界符之外的裸 LaTeX 残片（窗口切割落在表达式中间时），$ 与 \(…\) 内交 KaTeX */
+  /* D111: 清洗定界符之外的裸 LaTeX 残片（窗口切割落在表达式中间时），$ 与 \(…\) 内交 KaTeX；\[a-zA-Z]* 连孤反斜杠一并清掉 */
   const parts=seg.split(/(\$|\\\(|\\\))/);
   let out="",inMath=false;
   for(const p of parts){
     if(p==="$"){inMath=!inMath;out+=p}
     else if(p==="\\("){inMath=true;out+=p}
     else if(p==="\\)"){inMath=false;out+=p}
-    else out+=inMath?p:p.replace(/\\(?:begin|end)\{[a-zA-Z*]+\}/g," ").replace(/\\[a-zA-Z]+/g," ").replace(/\\\\/g," ").replace(/[{}]/g,"");
+    else out+=inMath?p:p.replace(/\\(?:begin|end)\{[a-zA-Z]+\}/g," ").replace(/\\[a-zA-Z]*/g," ").replace(/\\\\/g," ").replace(/[{}]/g,"");
   }
   return out.replace(/ {2,}/g," ").trim();
 }
