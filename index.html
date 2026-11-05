@@ -581,14 +581,38 @@ function prevText(t,n){
 }
 function pairSlice(t,center,before,after){
   t=String(t||"").replace(/\s+/g," ");
-  const a=Math.max(0,center-before);
+  let a=Math.max(0,center-before);
+  /* D111: 起点回退到非字母边界，避免把 \dfrac 等命令切成 rac{…} 残片 */
+  while(a>0&&/[a-zA-Z]/.test(t[a-1])&&/[a-zA-Z]/.test(t[a]||""))a--;
   let seg=t.slice(a,Math.min(t.length,center+after));
   let guard=0;
   while(((seg.match(/\$/g)||[]).length)%2&&guard++<4){
     const iLast=seg.lastIndexOf("$"),iFirst=seg.indexOf("$");
     if(iLast<(center-a))seg=seg.slice(iFirst+1);else seg=seg.slice(0,iLast);
   }
-  return seg;
+  /* D111: \( \) 定界用状态机配对（计数法在交叉错配时失效：窗口切出「前公式尾巴 \) + 后公式开头 \(」时计数恰好相等） */
+  guard=0;
+  while(guard++<6){
+    const toks=[...seg.matchAll(/\$|\\\(|\\\)/g)];
+    let depth=0,bad=-1,unclosed=false;
+    for(const x of toks){
+      if(x[0]==="\\(")depth++;
+      else if(x[0]==="\\)"){ if(depth===0){bad=x.index;break} depth-- }
+    }
+    if(bad>=0){seg=seg.slice(bad+2);continue}
+    if(depth>0){const iL=seg.lastIndexOf("\\(");seg=seg.slice(0,iL);continue}
+    break;
+  }
+  /* D111: 清洗定界符之外的裸 LaTeX 残片（窗口切割落在表达式中间时），$ 与 \(…\) 内交 KaTeX；\[a-zA-Z]* 连孤反斜杠一并清掉 */
+  const parts=seg.split(/(\$|\\\(|\\\))/);
+  let out="",inMath=false;
+  for(const p of parts){
+    if(p==="$"){inMath=!inMath;out+=p}
+    else if(p==="\\("){inMath=true;out+=p}
+    else if(p==="\\)"){inMath=false;out+=p}
+    else out+=inMath?p:p.replace(/\\(?:begin|end)\{[a-zA-Z]+\}/g," ").replace(/\\[a-zA-Z]*/g," ").replace(/\\\\/g," ").replace(/[{}]/g,"");
+  }
+  return out.replace(/ {2,}/g," ").trim();
 }
 
 /* ================= 图形引擎（D043 DSL + E08 解析器） ================= */
