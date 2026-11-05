@@ -3,7 +3,7 @@
 
 A = {}
 
-A[19] = (r"(1) $\ln(\sqrt{2}+1)$；(2) $\pi\left(1-\dfrac{\pi}{4}\right)$", [
+A[19] = (r"(1) $\ln(\sqrt{2}+1)$ (2) $\pi\left(1-\dfrac{\pi}{4}\right)$", [
     r"(1) $S=\displaystyle\int_{1}^{+\infty}\dfrac{1}{x\sqrt{1+x^{2}}}\mathrm{d}x\xlongequal{x=\tan t}\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\dfrac{1}{\tan t\sec t}\sec^{2}t\,\mathrm{d}t=\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\csc t\,\mathrm{d}t$",
     r"$=\ln|\csc t-\cot t|\Big|_{\frac{\pi}{4}}^{\frac{\pi}{2}}=\ln(\sqrt{2}+1)$",
     r"(2) $V=\pi\displaystyle\int_{1}^{+\infty}\dfrac{1}{x^{2}(1+x^{2})}\mathrm{d}x=\pi\int_{1}^{+\infty}\left(\dfrac{1}{x^{2}}-\dfrac{1}{1+x^{2}}\right)\mathrm{d}x$",

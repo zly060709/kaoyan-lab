@@ -1,0 +1,80 @@
+[
+  {
+    "qid": "math3-2023-2",
+    "origin": "derived",
+    "title": "第2题 分段函数 f(x)（红）与它的一个原函数 F(x)（蓝）",
+    "xlim": [-2.5, 2.5],
+    "ylim": [-1.6, 3.0],
+    "items": [
+      {"kind": "graph", "f": "1/sqrt(1+x^2)", "domain": [-2.5, 0], "color": "#B8324A"},
+      {"kind": "graph", "f": "(x+1)*cos(x)", "domain": [0, 2.5], "color": "#B8324A"},
+      {"kind": "graph", "f": "ln(sqrt(1+x^2)+x)+1", "domain": [-2.5, 0], "color": "#1D4ED8"},
+      {"kind": "graph", "f": "(x+1)*sin(x)+cos(x)", "domain": [0, 2.5], "color": "#1D4ED8"},
+      {"kind": "point", "x": 0, "y": 1, "label": "F(0)=C₁=C₂+1"},
+      {"kind": "label", "x": -2.3, "y": 0.45, "text": "f(x) 左段"},
+      {"kind": "label", "x": 1.3, "y": 1.05, "text": "F(x) 右段"}
+    ],
+    "caption": "原卷解法：x≤0 时 ∫f=ln(√(1+x²)+x)+C₁；x>0 时 ∫f=(x+1)sinx+cosx+C₂。原函数须在 x=0 连续，故 C₁=C₂+1；取 C₂=0 得 C₁=1，即选项 D。"
+  },
+  {
+    "qid": "math3-2023-14",
+    "origin": "derived",
+    "title": "第14题 资产函数 f(t)=2(e^t−t−1) 与其导数关系 f′(t)−f(t)=2t",
+    "xlim": [-1.5, 2.5],
+    "ylim": [-0.6, 8.0],
+    "items": [
+      {"kind": "graph", "f": "2*(exp(x)-x-1)", "domain": [-1.5, 2.5], "color": "#1D4ED8"},
+      {"kind": "graph", "f": "2*exp(x)-2", "domain": [-1.5, 2.5], "color": "#B8324A"},
+      {"kind": "point", "x": 0, "y": 0, "label": "f(0)=0"},
+      {"kind": "label", "x": 1.35, "y": 4.6, "text": "f(t)=2(eᵗ−t−1)"},
+      {"kind": "label", "x": 1.35, "y": 1.1, "text": "f′(t)=2eᵗ−2"}
+    ],
+    "caption": "原卷解法：∫₀f(x)dx=t[f(t)/t−t]=f(t)−t²，两边对 t 求导得 f′(t)−f(t)=2t，解得 f(t)=Ceᵗ−2t−2；代入 f(0)=0 得 C=2，即 f(t)=2(eᵗ−t−1)。"
+  },
+  {
+    "qid": "math3-2023-18",
+    "origin": "derived",
+    "title": "第18题 区域 D：0≤y≤1/(x√(1+x²))，x≥1（阴影部分）",
+    "xlim": [0.6, 6],
+    "ylim": [-0.05, 0.85],
+    "items": [
+      {"kind": "shade_under", "f": "1/(x*sqrt(1+x^2))", "domain": [1, 6], "color": "rgba(201,169,97,.28)"},
+      {"kind": "graph", "f": "1/(x*sqrt(1+x^2))", "domain": [0.65, 6], "color": "#1D4ED8"},
+      {"kind": "vline", "x": 1, "style": "dashed", "label": "x=1"},
+      {"kind": "label", "x": 1.25, "y": 0.55, "text": "y=1/(x√(1+x²))"}
+    ],
+    "caption": "原卷解法：令 x=tan t 得 S=∫₁^{+∞}dx/(x√(1+x²))=∫_{π/4}^{π/2}dt/sin t=ln((1−cos t)/sin t)|=ln(1+√2)；旋转体 V=∫₁^{+∞}π/(x²(1+x²))dx=π−π²/4=π(1−π/4)。"
+  },
+  {
+    "qid": "math3-2023-19",
+    "origin": "derived",
+    "title": "第19题 圆盘 D:(x−1)²+y²≤1（蓝）与单位圆 x²+y²=1（红），D₁ 为交叠部分、D₂ 为蓝圆在单位圆外的部分",
+    "xlim": [-1.3, 2.3],
+    "ylim": [-1.35, 1.35],
+    "items": [
+      {"kind": "parametric", "fx": "1+1*cos(t)", "fy": "1*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#1D4ED8"},
+      {"kind": "parametric", "fx": "1*cos(t)", "fy": "1*sin(t)", "tmin": 0, "tmax": 6.2832, "color": "#B8324A"},
+      {"kind": "point", "x": 0.5, "y": 0.866, "label": "上交点 (1/2, √3/2)，θ=π/3"},
+      {"kind": "point", "x": 0.5, "y": -0.866, "label": "下交点 (1/2, −√3/2)，θ=−π/3"},
+      {"kind": "label", "x": 0.25, "y": 0.35, "text": "D₁"},
+      {"kind": "label", "x": 1.55, "y": -0.45, "text": "D₂"},
+      {"kind": "segment", "x1": 0, "y1": 0, "x2": 0.5, "y2": 0.866, "color": "#64748B"}
+    ],
+    "caption": "原卷解法：√(x²+y²)=r，蓝圆在极坐标下为 0≤r≤2cosθ（−π/2≤θ≤π/2），单位圆为 r=1，两圆交于 θ=±π/3。按 r 与 1 的大小拆成 I₁=∬_D(1−r)dxdy 与 I₂=∬_{D₂}(1−r)dxdy，原式=I₁−2I₂=(π−32/9)−2(5π/9−3√3/2)=3√3−(32+π)/9。"
+  },
+  {
+    "qid": "math3-2023-22",
+    "origin": "derived",
+    "title": "第22题 X 的概率密度 f(x)=eˣ/(1+eˣ)²（红）与分布函数 F(x)=eˣ/(1+eˣ)（蓝）",
+    "xlim": [-5, 5],
+    "ylim": [-0.1, 1.15],
+    "items": [
+      {"kind": "graph", "f": "exp(x)/(1+exp(x))^2", "domain": [-5, 5], "color": "#B8324A"},
+      {"kind": "graph", "f": "exp(x)/(1+exp(x))", "domain": [-5, 5], "color": "#1D4ED8"},
+      {"kind": "point", "x": 0, "y": 0.25, "label": "f(0)=1/4"},
+      {"kind": "point", "x": 0, "y": 0.5, "label": "F(0)=1/2"},
+      {"kind": "hline", "y": 1, "style": "dashed", "color": "#94a3b8"}
+    ],
+    "caption": "原卷解法：F(x)=∫_{−∞}^x f(t)dt=eˣ/(1+eˣ)。Y=eˣ 单调，x=ln y，故 y≥0 时 f_Y(y)=f(ln y)·|1/y|=1/(1+y)²；E(Y)=∫₀^{+∞}y/(1+y)²dy=[ln(1+y)+1/(1+y)]₀^{+∞}−1，极限不存在，期望不存在。"
+  }
+]

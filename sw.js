@@ -1,5 +1,5 @@
 /* kaoyan-lab service worker — 版本化缓存，更新后页面提示刷新 */
-const VER = "kaoyan-v0.3.4";
+const VER = "kaoyan-v0.3.5";
 const CORE = ["index.html", "diag.html", "404.html", "manifest.webmanifest", "assets/icon.svg"];
 
 self.addEventListener("install", (e) => {

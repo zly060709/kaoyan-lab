@@ -1,0 +1,1075 @@
+{
+ "subject": "math3",
+ "year": 2023,
+ "paper": "数学（三）",
+ "schema_version": "1.0.0",
+ "question_count": 22,
+ "source_note": "视觉转录自《2023数学三真题及解析.pdf》（data/math3/pages/2023/，13 页）：p1–p4 试题、p5–p13 答案解析，题干/选项/答案/解析逐字照录。2023 年数学三结构：选择题 10×5 分、填空题 6×5 分、解答题 6 题共 70 分。其中第 18 题与数学二 2023 第 19 题、第 21 题与数学二 2023 第 22 题同题。",
+ "questions": [
+  {
+   "id": "math3-2023-1",
+   "subject": "math3",
+   "year": 2023,
+   "num": 1,
+   "type": "single",
+   "score": 5,
+   "stem": "已知函数 $f(x,y)=\\ln\\left(y+\\left|x\\sin y\\right|\\right)$，则（ ）",
+   "options": [
+    "$\\left.\\dfrac{\\partial f}{\\partial x}\\right|_{(0,1)}$不存在，$\\left.\\dfrac{\\partial f}{\\partial y}\\right|_{(0,1)}$存在",
+    "$\\left.\\dfrac{\\partial f}{\\partial x}\\right|_{(0,1)}$存在，$\\left.\\dfrac{\\partial f}{\\partial y}\\right|_{(0,1)}$不存在",
+    "$\\left.\\dfrac{\\partial f}{\\partial x}\\right|_{(0,1)}$存在，$\\left.\\dfrac{\\partial f}{\\partial y}\\right|_{(0,1)}$存在",
+    "$\\left.\\dfrac{\\partial f}{\\partial x}\\right|_{(0,1)}$不存在，$\\left.\\dfrac{\\partial f}{\\partial y}\\right|_{(0,1)}$不存在"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】由偏导数定义可知，$\\dfrac{\\partial f}{\\partial x}\\bigg|_{(0,1)}=\\lim\\limits_{x\\to0}\\dfrac{f(x,1)-f(0,1)}{x}=\\lim\\limits_{x\\to0}\\dfrac{\\ln(1+|x\\sin1|)}{x}=\\lim\\limits_{x\\to0}\\dfrac{|x\\sin1|}{x}=\\sin1\\cdot\\lim\\limits_{x\\to0}\\dfrac{|x|}{x}$，\n\n因为 $\\lim\\limits_{x\\to0^{+}}\\dfrac{|x|}{x}=\\lim\\limits_{x\\to0^{+}}\\dfrac{x}{x}=1,\\ \\lim\\limits_{x\\to0^{-}}\\dfrac{|x|}{x}=\\lim\\limits_{x\\to0^{-}}\\dfrac{-x}{x}=-1$，故 $\\dfrac{\\partial f}{\\partial x}\\bigg|_{(0,1)}$ 不存在。\n\n同理，$\\dfrac{\\partial f}{\\partial y}\\bigg|_{(0,1)}=\\lim\\limits_{y\\to1}\\dfrac{f(0,y)-f(0,1)}{y-1}=\\lim\\limits_{y\\to1}\\dfrac{\\ln y}{y-1}=\\lim\\limits_{y\\to1}\\dfrac{y-1}{y-1}=1$，因此 $\\dfrac{\\partial f}{\\partial y}\\bigg|_{(0,1)}$ 存在。故选（A）。"
+    }
+   ],
+   "knowledge_points": [
+    "偏导数定义",
+    "极限存在性"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     1
+    ],
+    "anchor": "第(1)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:f4cffe19576b0f799117d3f4de6078e002efc988a1dfe902bfbadbd06e6ce76a"
+  },
+  {
+   "id": "math3-2023-2",
+   "subject": "math3",
+   "year": 2023,
+   "num": 2,
+   "type": "single",
+   "score": 5,
+   "stem": "已知函数 $f(x)=\\begin{cases}\\dfrac{1}{\\sqrt{1+x^{2}}},&x\\leqslant 0,\\\\ (x+1)\\cos x,&x>0,\\end{cases}$ 的一个原函数为（ ）",
+   "options": [
+    "$F(x)=\\begin{cases}\\ln\\left(\\sqrt{1+x^{2}}-x\\right),&x\\leqslant 0,\\\\ (x+1)\\sin x+\\cos x,&x>0,\\end{cases}$",
+    "$F(x)=\\begin{cases}\\ln\\left(\\sqrt{1+x^{2}}+x\\right)+1,&x\\leqslant 0,\\\\ (x+1)\\sin x+\\cos x,&x>0,\\end{cases}$",
+    "$F(x)=\\begin{cases}\\ln\\left(\\sqrt{1+x^{2}}-x\\right),&x\\leqslant 0,\\\\ (x+1)\\cos x-\\sin x,&x>0,\\end{cases}$",
+    "$F(x)=\\begin{cases}\\ln\\left(\\sqrt{1+x^{2}}+x\\right)+1,&x\\leqslant 0,\\\\ (x+1)\\cos x-\\sin x,&x>0,\\end{cases}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】当 $x\\leqslant0$ 时，$F(x)=\\displaystyle\\int f(x)\\mathrm{d}x=\\int\\dfrac{1}{\\sqrt{1+x^{2}}}\\mathrm{d}x=\\ln(\\sqrt{1+x^{2}}+x)+C_1$，\n\n当 $x>0$ 时，$F(x)=\\displaystyle\\int f(x)\\mathrm{d}x=\\int(x+1)\\cos x\\mathrm{d}x=(x+1)\\sin x+\\cos x+C_2$，\n\n因为 $F(x)$ 在 $x=0$ 处连续，故 $F(0)=\\lim\\limits_{x\\to0^{-}}F(x)=\\lim\\limits_{x\\to0^{+}}F(x)$，即 $F(0)=C_1=C_2+1$。\n\n取 $C_2=0$，则 $F(0)=1,C_1=1$，得 $f(x)$ 的一个原函数 $F(x)=\\begin{cases}\\ln(\\sqrt{1+x^{2}}+x)+1,&x\\leqslant0,\\\\ (x+1)\\sin x+\\cos x,&x>0.\\end{cases}$ 故应选（D）。"
+    }
+   ],
+   "knowledge_points": [
+    "分段函数不定积分",
+    "原函数连续性"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     1
+    ],
+    "anchor": "第(2)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:0c9b75c31736ff4134c97bf41ff3ccbc118c26a4466256080cf4e84b91b7ee10"
+  },
+  {
+   "id": "math3-2023-3",
+   "subject": "math3",
+   "year": 2023,
+   "num": 3,
+   "type": "single",
+   "score": 5,
+   "stem": "若微分方程 $y^{\\prime\\prime}+ay^{\\prime}+by=0$ 的解在 $(-\\infty,+\\infty)$ 上有界，则（ ）",
+   "options": [
+    "$a<0,b>0$",
+    "$a>0,b>0$",
+    "$a=0,b>0$",
+    "$a=0,b<0$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】特征方程为 $r^{2}+ar+b=0$，得 $r_{1,2}=\\dfrac{-a\\pm\\sqrt{a^{2}-4b}}{2}$；\n\n若 $a^{2}-4b=0$，则 $y(x)=(C_1+C_2x)\\mathrm{e}^{-\\frac{a}{2}x}$，此时解在 $(-\\infty,+\\infty)$ 无界；\n\n若 $a^{2}-4b>0$，则 $y(x)=C_1\\mathrm{e}^{r_1x}+C_2\\mathrm{e}^{r_2x}$，此时解在 $(-\\infty,+\\infty)$ 无界；\n\n若 $a^{2}-4b<0$，此时 $r_{1,2}=\\alpha\\pm\\beta i$，则 $y(x)=\\mathrm{e}^{\\alpha x}(C_1\\cos\\beta x+C_2\\sin\\beta x)$，当 $a=0,b>0$ 时 $y(x)=(C_1\\cos\\beta x+C_2\\sin\\beta x)$，解在 $(-\\infty,+\\infty)$ 有界，故选（C）。"
+    }
+   ],
+   "knowledge_points": [
+    "二阶常系数线性微分方程",
+    "解的有界性"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     1
+    ],
+    "anchor": "第(3)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:561d04b2b5723ef60a05df0e689bc58725f33d507a68ef352f3cc1b40dabce35"
+  },
+  {
+   "id": "math3-2023-4",
+   "subject": "math3",
+   "year": 2023,
+   "num": 4,
+   "type": "single",
+   "score": 5,
+   "stem": "已知数列 $\\left\\{a_n\\right\\},\\left\\{b_n\\right\\}$ 满足 $a_n<b_n\\ (n=1,2,3\\cdots)$，且级数 $\\sum\\limits_{n=1}^{+\\infty}a_n$、$\\sum\\limits_{n=1}^{+\\infty}b_n$ 都收敛，则「$\\sum\\limits_{n=1}^{+\\infty}a_n$ 绝对收敛」是「$\\sum\\limits_{n=1}^{+\\infty}b_n$ 绝对收敛」的（ ）",
+   "options": [
+    "充分必要条件",
+    "充分不必要条件",
+    "必要不充分条件",
+    "既不充分也不必要条件"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】因级数 $\\sum\\limits_{n=1}^{+\\infty}a_n$，$\\sum\\limits_{n=1}^{+\\infty}b_n$ 均收敛，且 $a_n<b_n$，则级数 $\\sum\\limits_{n=1}^{+\\infty}(b_n-a_n)$ 也收敛，且 $b_n-a_n>0$，\n\n故 $\\sum\\limits_{n=1}^{+\\infty}(b_n-a_n)$ 为正项级数，因此 $\\sum\\limits_{n=1}^{+\\infty}(b_n-a_n)$ 绝对收敛，即 $\\sum\\limits_{n=1}^{+\\infty}|b_n-a_n|$ 收敛。\n\n又因 $|b_n|=|(b_n-a_n)+a_n|\\leqslant|b_n-a_n|+|a_n|$，其中 $\\sum\\limits_{n=1}^{+\\infty}|b_n-a_n|$ 已收敛，故当 $\\sum\\limits_{n=1}^{+\\infty}a_n$ 绝对收敛，即 $\\sum\\limits_{n=1}^{+\\infty}|a_n|$ 收敛时，$\\sum\\limits_{n=1}^{+\\infty}|b_n|$ 也收敛，因此，「$\\sum\\limits_{n=1}^{+\\infty}a_n$ 绝对收敛」是「$\\sum\\limits_{n=1}^{+\\infty}b_n$ 绝对收敛」的充分条件。\n\n同理，$|a_n|=|b_n-(b_n-a_n)|\\leqslant|b_n|+|b_n-a_n|$，其中 $\\sum\\limits_{n=1}^{+\\infty}|b_n-a_n|$ 已收敛，故当 $\\sum\\limits_{n=1}^{+\\infty}b_n$ 绝对收敛，即 $\\sum\\limits_{n=1}^{+\\infty}|b_n|$ 收敛时，$\\sum\\limits_{n=1}^{+\\infty}|a_n|$ 也收敛，因此，「$\\sum\\limits_{n=1}^{+\\infty}a_n$ 绝对收敛」是「$\\sum\\limits_{n=1}^{+\\infty}b_n$ 绝对收敛」的必要条件。\n\n综所述，得出选项（A）。"
+    }
+   ],
+   "knowledge_points": [
+    "级数绝对收敛",
+    "正项级数比较"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     1
+    ],
+    "anchor": "第(4)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:7a005ff40a8b9133e57e8ebefc32608e3fff210e475b4e55e828cc71c807b58c"
+  },
+  {
+   "id": "math3-2023-5",
+   "subject": "math3",
+   "year": 2023,
+   "num": 5,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $A,B$ 为 $n$ 阶矩阵，$E$ 为 $n$ 阶单位矩阵，$M^{*}$ 为 $M$ 的伴随矩阵，则 $\\begin{pmatrix}A&E\\\\ O&B\\end{pmatrix}^{*}$ 为（ ）",
+   "options": [
+    "$\\begin{pmatrix}|A|B^{*}&-B^{*}A^{*}\\\\ O&|B|A^{*}\\end{pmatrix}$",
+    "$\\begin{pmatrix}|B|A^{*}&-A^{*}B^{*}\\\\ O&|A|B^{*}\\end{pmatrix}$",
+    "$\\begin{pmatrix}|B|A^{*}&-B^{*}A^{*}\\\\ O&|A|B^{*}\\end{pmatrix}$",
+    "$\\begin{pmatrix}|A|B^{*}&-A^{*}B^{*}\\\\ O&|B|A^{*}\\end{pmatrix}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】由伴随矩阵的公式可知：$M^{*}=|M|\\cdot M^{-1}$，所以\n\n$\\begin{pmatrix}A&E\\\\ O&B\\end{pmatrix}^{*}=\\begin{pmatrix}A&E\\\\ O&B\\end{pmatrix}^{-1}\\cdot\\begin{vmatrix}A&E\\\\ O&B\\end{vmatrix}=\\begin{pmatrix}A^{-1}&-A^{-1}B^{-1}\\\\ O&B^{-1}\\end{pmatrix}\\cdot|A||B|=\\begin{pmatrix}|B|A^{*}&-A^{*}B^{*}\\\\ O&|A|B^{*}\\end{pmatrix}$\n\n因此答案选（B）"
+    }
+   ],
+   "knowledge_points": [
+    "分块矩阵",
+    "伴随矩阵"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     1
+    ],
+    "anchor": "第(5)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1c5ff4ee5fd6e9decea60f40aa91b6ee5d3eeefddf89ae6e5d4c5b188e398d56"
+  },
+  {
+   "id": "math3-2023-6",
+   "subject": "math3",
+   "year": 2023,
+   "num": 6,
+   "type": "single",
+   "score": 5,
+   "stem": "二次型 $f(x_1,x_2,x_3)=\\left(x_1+x_2\\right)^{2}+\\left(x_1+x_3\\right)^{2}-4\\left(x_2-x_3\\right)^{2}$ 的规范型为（ ）",
+   "options": [
+    "$y_1^{2}+y_2^{2}$",
+    "$y_1^{2}-y_2^{2}$",
+    "$y_1^{2}+y_2^{2}-4y_3^{2}$",
+    "$y_1^{2}+y_2^{2}-y_3^{2}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】B\n\n【解析】$f(x_1,x_2,x_3)=(x_1+x_2)^{2}+(x_1+x_3)^{2}-4(x_2-x_3)^{2}$\n\n$=2x_1^{2}-3x_2^{2}-3x_3^{2}+2x_1x_2+2x_1x_3+8x_2x_3$\n\n所以 $A=\\begin{pmatrix}2&1&1\\\\ 1&-3&4\\\\ 1&4&-3\\end{pmatrix}$，$|A-\\lambda E|=\\begin{vmatrix}2-\\lambda&1&1\\\\ 1&-3-\\lambda&4\\\\ 1&4&-3-\\lambda\\end{vmatrix}=0$，\n\n解得：特征值为 $0,3,-7$，所以规范型前系数为 $0,1,-1$，因此选（B）"
+    }
+   ],
+   "knowledge_points": [
+    "二次型规范型",
+    "特征值"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     2
+    ],
+    "anchor": "第(6)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a7f486aba0a90aaf8e24f7f9a93d3a690f56fcfcf31f8d49aa00b02cfb2ea5bf"
+  },
+  {
+   "id": "math3-2023-7",
+   "subject": "math3",
+   "year": 2023,
+   "num": 7,
+   "type": "single",
+   "score": 5,
+   "stem": "设向量组 $\\boldsymbol{\\alpha}_1=\\begin{pmatrix}1\\\\ 2\\\\ 3\\end{pmatrix},\\boldsymbol{\\alpha}_2=\\begin{pmatrix}2\\\\ 1\\\\ 1\\end{pmatrix},\\boldsymbol{\\beta}_1=\\begin{pmatrix}2\\\\ 5\\\\ 9\\end{pmatrix},\\boldsymbol{\\beta}_2=\\begin{pmatrix}1\\\\ 0\\\\ 1\\end{pmatrix}$，若 $\\boldsymbol{\\gamma}$ 可由 $\\boldsymbol{\\alpha}_1,\\boldsymbol{\\alpha}_2$ 表示，也可由 $\\boldsymbol{\\beta}_1,\\boldsymbol{\\beta}_2$ 表示，则 $\\boldsymbol{\\gamma}=$（ ）",
+   "options": [
+    "$k\\begin{pmatrix}3\\\\ 3\\\\ 4\\end{pmatrix},\\ k\\in\\mathbf{R}$",
+    "$k\\begin{pmatrix}3\\\\ 5\\\\ 10\\end{pmatrix},\\ k\\in\\mathbf{R}$",
+    "$k\\begin{pmatrix}-1\\\\ 1\\\\ 2\\end{pmatrix},\\ k\\in\\mathbf{R}$",
+    "$k\\begin{pmatrix}1\\\\ 5\\\\ 8\\end{pmatrix},\\ k\\in\\mathbf{R}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】设 $\\boldsymbol{\\gamma}=k_1\\boldsymbol{\\alpha}_1+k_2\\boldsymbol{\\alpha}_2=k_3\\boldsymbol{\\beta}_1+k_4\\boldsymbol{\\beta}_2$，则 $k_1\\boldsymbol{\\alpha}_1+k_2\\boldsymbol{\\alpha}_2-k_3\\boldsymbol{\\beta}_1-k_4\\boldsymbol{\\beta}_2=\\mathbf{0}$，\n\n$(\\boldsymbol{\\alpha}_1,\\boldsymbol{\\alpha}_2,-\\boldsymbol{\\beta}_1,-\\boldsymbol{\\beta}_2)=\\begin{pmatrix}1&2&-2&-1\\\\ 2&1&-5&0\\\\ 3&1&-9&-1\\end{pmatrix}\\xrightarrow{r}\\begin{pmatrix}1&2&-2&-1\\\\ 0&-3&-1&2\\\\ 0&0&1&1\\end{pmatrix}$\n\n则 $k_3+k_4=0$，取 $k_3=k$，$k_4=-k$，则 $\\boldsymbol{\\gamma}=k\\boldsymbol{\\beta}_1-k\\boldsymbol{\\beta}_2=k\\begin{pmatrix}1\\\\ 5\\\\ 8\\end{pmatrix},\\ k\\in\\mathbf{R}$，故选（D）。"
+    }
+   ],
+   "knowledge_points": [
+    "向量组的线性表示",
+    "公共解"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     2
+    ],
+    "anchor": "第(7)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1f27ba84f3619ea45bed6904655853df3d72158c8e29ec2f74a655187f278ea7"
+  },
+  {
+   "id": "math3-2023-8",
+   "subject": "math3",
+   "year": 2023,
+   "num": 8,
+   "type": "single",
+   "score": 5,
+   "stem": "设随机变量 $X$ 服从参数为 1 的泊松分布，则 $E\\bigl(|X-EX|\\bigr)=$（ ）",
+   "options": [
+    "$\\dfrac{1}{\\mathrm{e}}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{2}{\\mathrm{e}}$",
+    "$1$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】由 $X\\sim P(1)$，故 $EX=1$。\n\n$E\\bigl(|X-EX|\\bigr)=E\\bigl(|X-1|\\bigr)=\\sum\\limits_{k=0}^{\\infty}|k-1|P\\{X=k\\}=\\mathrm{e}^{-1}+\\mathrm{e}^{-1}\\sum\\limits_{k=1}^{\\infty}\\dfrac{k}{(k+1)!}$\n\n$=\\mathrm{e}^{-1}+\\mathrm{e}^{-1}\\sum\\limits_{k=1}^{\\infty}\\left(\\dfrac{1}{k!}-\\dfrac{1}{(k+1)!}\\right)=\\dfrac{2}{\\mathrm{e}}$。"
+    }
+   ],
+   "knowledge_points": [
+    "泊松分布",
+    "离散型随机变量期望"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     2
+    ],
+    "anchor": "第(8)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d2b8cada46f3322fc01def63344198787982869dededa49c3090a7a3a8676ae6"
+  },
+  {
+   "id": "math3-2023-9",
+   "subject": "math3",
+   "year": 2023,
+   "num": 9,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $X_1,X_2,\\cdots,X_n$ 为来自总体 $N(\\mu_1,\\sigma^{2})$ 的简单随机样本，$Y_1,Y_2,\\cdots,Y_m$ 为来自总体 $N(\\mu_2,2\\sigma^{2})$ 的简单随机样本，且两样本相互独立，记 $\\overline{X}=\\dfrac{1}{n}\\sum\\limits_{i=1}^{n}X_i,\\overline{Y}=\\dfrac{1}{m}\\sum\\limits_{i=1}^{m}Y_i$，$S_1^{2}=\\dfrac{1}{n-1}\\sum\\limits_{i=1}^{n}(X_i-\\overline{X})^{2},S_2^{2}=\\dfrac{1}{m-1}\\sum\\limits_{i=1}^{m}(Y_i-\\overline{Y})^{2}$，则（ ）",
+   "options": [
+    "$\\dfrac{S_1^{2}}{S_2^{2}}\\sim F\\left(n,m\\right)$",
+    "$\\dfrac{S_1^{2}}{S_2^{2}}\\sim F\\left(n-1,m-1\\right)$",
+    "$\\dfrac{2S_1^{2}}{S_2^{2}}\\sim F\\left(n,m\\right)$",
+    "$\\dfrac{2S_1^{2}}{S_2^{2}}\\sim F\\left(n-1,m-1\\right)$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】由 $\\dfrac{(n-1)S_1^{2}}{\\sigma^{2}}\\sim\\chi^{2}(n-1),\\dfrac{(m-1)S_2^{2}}{2\\sigma^{2}}\\sim\\chi^{2}(m-1)$，且样本相互独立，故\n\n$\\dfrac{\\dfrac{(n-1)S_1^{2}}{\\sigma^{2}}\\bigg/(n-1)}{\\dfrac{(m-1)S_2^{2}}{2\\sigma^{2}}\\bigg/(m-1)}\\sim F(n-1,m-1)$。\n\n整理得 $\\dfrac{2S_1^{2}}{S_2^{2}}\\sim F\\left(n-1,m-1\\right)$，故选（D）。"
+    }
+   ],
+   "knowledge_points": [
+    "抽样分布",
+    "F分布"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     2
+    ],
+    "anchor": "第(9)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d819718d985413b152d60c6136d545a65f1760ccc91638b80c94627063530179"
+  },
+  {
+   "id": "math3-2023-10",
+   "subject": "math3",
+   "year": 2023,
+   "num": 10,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $X_1,X_2$ 是来自总体 $N(\\mu,\\sigma^{2})$ 的简单随机样本，其中 $\\sigma(\\sigma>0)$ 为未知参数，记 $\\hat{\\sigma}=a\\left|X_1-X_2\\right|$，若 $E(\\hat{\\sigma})=\\sigma$，则 $a=$（ ）",
+   "options": [
+    "$\\dfrac{\\sqrt{\\pi}}{2}$",
+    "$\\dfrac{\\sqrt{2\\pi}}{2}$",
+    "$\\sqrt{\\pi}$",
+    "$\\sqrt{2\\pi}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】令 $Y=X_1-X_2$，则 $Y\\sim N(0,2\\sigma^{2})$。\n\n$\\sigma=E(\\hat{\\sigma})=aE\\left|X_1-X_2\\right|=aE|Y|=a\\displaystyle\\int_{-\\infty}^{+\\infty}|y|\\dfrac{1}{2\\sqrt{\\pi}\\sigma}\\mathrm{e}^{-\\frac{y^{2}}{4\\sigma^{2}}}\\mathrm{d}y=\\dfrac{a}{\\sqrt{\\pi}\\sigma}\\displaystyle\\int_{0}^{+\\infty}y\\mathrm{e}^{-\\frac{y^{2}}{4\\sigma^{2}}}\\mathrm{d}y=\\dfrac{2a}{\\sqrt{\\pi}}\\sigma$，\n\n得 $a=\\dfrac{\\sqrt{\\pi}}{2}$，选（A）。"
+    }
+   ],
+   "knowledge_points": [
+    "正态总体",
+    "无偏估计"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     2
+    ],
+    "anchor": "第(10)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:00767bb5bc53783c5a55aeca89316c056a504dfebe5e61323424af6f8b79f021"
+  },
+  {
+   "id": "math3-2023-11",
+   "subject": "math3",
+   "year": 2023,
+   "num": 11,
+   "type": "blank",
+   "score": 5,
+   "stem": "$\\lim\\limits_{x\\to\\infty}x^{2}\\left(2-x\\sin\\dfrac{1}{x}-\\cos\\dfrac{1}{x}\\right)=$________.",
+   "options": [],
+   "answer": "\\dfrac{2}{3}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{2}{3}$\n\n【解析】利用倒代换，令 $x=\\dfrac{1}{t}$，可得，\n\n$I=\\lim\\limits_{x\\to\\infty}x^{2}\\left(2-x\\sin\\dfrac{1}{x}-\\cos\\dfrac{1}{x}\\right)=\\lim\\limits_{t\\to0}\\dfrac{1}{t^{2}}\\left(2-\\dfrac{1}{t}\\sin t-\\cos t\\right)=\\lim\\limits_{t\\to0}\\dfrac{2t-\\sin t-t\\cos t}{t^{3}}$，\n\n由洛必达法则可知，$I=\\lim\\limits_{t\\to0}\\dfrac{2-2\\cos t+t\\sin t}{3t^{2}}=\\lim\\limits_{t\\to0}\\dfrac{2-2\\cos t}{3t^{2}}+\\dfrac{t\\sin t}{3t^{2}}=\\dfrac{2}{3}$。"
+    }
+   ],
+   "knowledge_points": [
+    "未定式极限",
+    "倒代换与洛必达法则"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3
+    ],
+    "anchor": "第(11)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:317aff306e9cb95a1a8cde3d7549a783e9c0f6e41c2f48a8048702a617b5b727"
+  },
+  {
+   "id": "math3-2023-12",
+   "subject": "math3",
+   "year": 2023,
+   "num": 12,
+   "type": "blank",
+   "score": 5,
+   "stem": "已知函数 $f(x,y)$ 满足 $\\mathrm{d}f(x,y)=\\dfrac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}}$，$f(1,1)=\\dfrac{\\pi}{4}$，则 $f(\\sqrt{3},3)=$________.",
+   "options": [],
+   "answer": "\\dfrac{\\pi}{3}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{\\pi}{3}$。\n\n【解析】由题干可知 $\\dfrac{\\partial f(x,y)}{\\partial x}=\\dfrac{-y}{x^{2}+y^{2}}$，$\\dfrac{\\partial f(x,y)}{\\partial y}=\\dfrac{x}{x^{2}+y^{2}}$，\n\n$\\therefore f(x,y)=\\displaystyle\\int\\dfrac{-y}{x^{2}+y^{2}}\\mathrm{d}x+c_1(y)=-\\arctan\\dfrac{x}{y}+c_1(y)$，\n\n将上式对 $y$ 求偏导，得 $\\dfrac{\\partial f(x,y)}{\\partial y}=\\dfrac{x}{x^{2}+y^{2}}+c_1'(y)$\n\n由 $\\dfrac{\\partial f(x,y)}{\\partial y}=\\dfrac{x}{x^{2}+y^{2}}+c_1^{'}(y)=\\dfrac{x}{x^{2}+y^{2}}$ 知 $c_1^{'}(y)=0$，$c_1(y)=C$\n\n故 $f(x,y)=-\\arctan\\dfrac{x}{y}+C$，带入初始条件 $C=\\dfrac{\\pi}{2}$，故 $f(\\sqrt{3},3)=\\dfrac{\\pi}{3}$"
+    }
+   ],
+   "knowledge_points": [
+    "全微分反求函数",
+    "偏积分"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3
+    ],
+    "anchor": "第(12)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:135afbc099072ea76ebc06e88058c983603460b2bbe3290bf92a9539c37f1eaa"
+  },
+  {
+   "id": "math3-2023-13",
+   "subject": "math3",
+   "year": 2023,
+   "num": 13,
+   "type": "blank",
+   "score": 5,
+   "stem": "$\\sum\\limits_{n=0}^{\\infty}\\dfrac{x^{2n}}{(2n)!}=$________.",
+   "options": [],
+   "answer": "\\dfrac{1}{2}(\\mathrm{e}^{x}+\\mathrm{e}^{-x})",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{1}{2}(\\mathrm{e}^{x}+\\mathrm{e}^{-x})$\n\n【解析】$s(x)=\\sum\\limits_{n=0}^{\\infty}\\dfrac{x^{2n}}{(2n)!}=1+\\dfrac{1}{2!}x^{2}+\\dfrac{1}{4!}x^{4}+\\cdots+\\dfrac{1}{(2n)!}x^{2n}+\\cdots$\n\n两边同时求导得，$s'(x)=\\sum\\limits_{n=1}^{\\infty}\\dfrac{x^{2n-1}}{(2n-1)!}=x+\\dfrac{1}{3!}x^{3}+\\dfrac{1}{5!}x^{5}+\\cdots+\\dfrac{1}{(2n-1)!}x^{2n-1}+\\cdots$\n\n因此可得微分方程，$s(x)+s'(x)=\\mathrm{e}^{x}$，\n\n解微分方程可得，$s(x)=\\mathrm{e}^{-\\int 1\\mathrm{d}x}\\left(\\int\\mathrm{e}^{x}\\mathrm{e}^{\\int 1\\mathrm{d}x}\\mathrm{d}x+C\\right)=C\\mathrm{e}^{-x}+\\dfrac{1}{2}\\mathrm{e}^{x}$，\n\n又因为 $s(0)=1$，解得 $C=\\dfrac{1}{2}$。因此，$s(x)=\\dfrac{1}{2}(\\mathrm{e}^{x}+\\mathrm{e}^{-x})$"
+    }
+   ],
+   "knowledge_points": [
+    "幂级数求和",
+    "微分方程"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3
+    ],
+    "anchor": "第(13)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:84787ac7eaee9654ccadc9ab1add00e46e90b5f08b7ea0b563c0630d950f71f0"
+  },
+  {
+   "id": "math3-2023-14",
+   "subject": "math3",
+   "year": 2023,
+   "num": 14,
+   "type": "blank",
+   "score": 5,
+   "stem": "设某公司在 $t$ 时刻的资产为 $f(t)$，从 0 到 $t$ 时刻的平均资产为 $\\dfrac{f(t)}{t}-t$，其中 $f(t)$ 连续且 $f(0)=0$，则 $f(t)=$________.",
+   "options": [],
+   "answer": "2(\\mathrm{e}^{t}-t-1)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$2(\\mathrm{e}^{t}-t-1)$。\n\n【解析】依题意 $\\displaystyle\\int_{0}^{t}f(x)\\mathrm{d}x=t\\left[\\dfrac{f(t)}{t}-t\\right]=f(t)-t^{2}$\n\n两边同对 $t$ 求导，得 $f'(t)-f(t)=2t$，\n\n解此微分方程，得 $f(t)=\\mathrm{e}^{t}\\left(\\displaystyle\\int 2t\\,\\mathrm{e}^{-t}\\mathrm{d}t+C\\right)=C\\mathrm{e}^{t}-2t-2$，\n\n代入 $f(0)=0$，得 $f(t)=2(\\mathrm{e}^{t}-t-1)$。"
+    }
+   ],
+   "knowledge_points": [
+    "变限积分方程",
+    "一阶线性微分方程"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3
+    ],
+    "anchor": "第(14)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:577cd3a3fceffe8f1f5ec316709f3226d2b0b810c84ab7e749db6f3e844526fc"
+  },
+  {
+   "id": "math3-2023-15",
+   "subject": "math3",
+   "year": 2023,
+   "num": 15,
+   "type": "blank",
+   "score": 5,
+   "stem": "已知线性方程组 $\\begin{cases}ax_1+x_3=1\\ x_1+ax_2+x_3=0\\ x_1+2x_2+ax_3=0\\ ax_1+bx_2=2\\end{cases}$ 有解，其中 $a,b$ 为常数，且 $\\begin{vmatrix}a&0&1\\ 1&a&1\\ 1&2&a\\end{vmatrix}=4$，则 $\\begin{vmatrix}1&a&1\\ 1&2&a\\ a&b&0\\end{vmatrix}=$________.",
+   "options": [],
+   "answer": "8",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】8。\n\n【解析】由 $\\begin{vmatrix}a&0&1\\\\ 1&a&1\\\\ 1&2&a\\end{vmatrix}=4$ 可得 $a=-1,a=2$\n\n当 $a=-1$，由方程有解可得 $b=\\dfrac{7}{2}$，进而可得 $\\begin{vmatrix}1&a&1\\\\ 1&2&a\\\\ a&b&0\\end{vmatrix}=\\begin{vmatrix}1&-1&1\\\\ 1&2&-1\\\\ -1&\\dfrac{7}{2}&0\\end{vmatrix}=8$，\n\n当 $a=2$，由方程有解可得 $b=-4$，进而可得 $\\begin{vmatrix}1&a&1\\\\ 1&2&a\\\\ a&b&0\\end{vmatrix}=\\begin{vmatrix}1&2&1\\\\ 1&2&2\\\\ 2&-4&0\\end{vmatrix}=8$。"
+    }
+   ],
+   "knowledge_points": [
+    "行列式计算",
+    "线性方程组有解判定"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3
+    ],
+    "anchor": "第(15)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:cb49736df25bca52be4dc1efed03e61df1119633e2b92bf227229d75b888f1e7"
+  },
+  {
+   "id": "math3-2023-16",
+   "subject": "math3",
+   "year": 2023,
+   "num": 16,
+   "type": "blank",
+   "score": 5,
+   "stem": "设随机变量 $X,Y$ 相互独立，$X\\sim B(1,p),Y\\sim B(2,p),p\\in(0,1)$，则 $X+Y$ 与 $X-Y$ 的相关系数为________.",
+   "options": [],
+   "answer": "-\\dfrac{1}{3}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$-\\dfrac{1}{3}$。\n\n【解析】根据相关系数的计算公式知 $\\rho=\\dfrac{\\mathrm{Cov}(X+Y,X-Y)}{\\sqrt{D(X+Y)}\\sqrt{D(X-Y)}}$，\n\n其中 $\\mathrm{Cov}(X+Y,X-Y)=\\mathrm{Cov}(X,X)-\\mathrm{Cov}(Y,Y)=D(X)-D(Y)=-p(1-p)$，\n\n$D(X+Y)=D(X-Y)=D(X)+D(Y)=3p(1-p)$。\n\n代入 $\\rho=\\dfrac{\\mathrm{Cov}(X+Y,X-Y)}{\\sqrt{D(X+Y)}\\sqrt{D(X-Y)}}$ 中得，$\\rho=-\\dfrac{1}{3}$。"
+    }
+   ],
+   "knowledge_points": [
+    "二项分布",
+    "相关系数"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3
+    ],
+    "anchor": "第(16)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:7e2679ad8540caa2915bccdd272d3416c7f28bda01c5c5a5e707b2b9ade86fdf"
+  },
+  {
+   "id": "math3-2023-17",
+   "subject": "math3",
+   "year": 2023,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "已知 $a\\mathrm{e}^{x}+y^{2}+y-\\ln(1+x)\\cos y+b=0$，$y(0)=0,y^{\\prime}(0)=0$。(1) 求 $a,b$；(2) 判断 $x=0$ 是否为极值。",
+   "options": [],
+   "answer": "a=1,b=-1；x=0 是极值点",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(1) $a=1,b=-1$。(2) 是\n\n【解析】(1) 对 $a\\mathrm{e}^{x}+y^{2}+y-\\ln(1+x)\\cos y+b=0$ 带入 $y(0)=0,x=0$ 可得：$a+b=0$\n\n两端求导可得：$a\\mathrm{e}^{x}+2yy'+y'-\\dfrac{1}{1+x}\\cos y+\\ln(x+1)\\cdot\\sin y\\cdot y'=0$；\n\n带入 $x=0,y=0,y'(0)=0$ 可得：$a-1=0$，解得：$a=1,b=-1$。\n\n(2) 对 $\\mathrm{e}^{x}+2yy'+y'-\\dfrac{1}{1+x}\\cos y+\\ln(x+1)\\cdot\\sin y\\cdot y'=0$，再次求导可得：\n\n$\\mathrm{e}^{x}+2\\left(y'\\right)^{2}+2yy''+y''+\\dfrac{1}{\\left(1+x\\right)^{2}}\\cos y+\\dfrac{1}{(1+x)}\\sin y\\cdot y'+\\dfrac{1}{(1+x)}\\sin y\\cdot y'+\\left(y'\\cdot y'\\cos y+\\sin y\\cdot y''\\right)\\cdot\\ln(x+1)=0$\n\n带入 $x=0,y=0,y'(0)=0$ 可得 $y''(0)=-2<0$，所以 $y(0)=0$ 为极大值点，是极值。"
+    }
+   ],
+   "knowledge_points": [
+    "隐函数求导",
+    "极值第二充分条件"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3
+    ],
+    "anchor": "第(17)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ac1e01deb81365bf2645c6e439b6f14b7e2563e3810e9438bf9c82b1d382b57d"
+  },
+  {
+   "id": "math3-2023-18",
+   "subject": "math3",
+   "year": 2023,
+   "num": 18,
+   "type": "essay",
+   "score": 12,
+   "stem": "已知平面区域 $D=\\{(x,y)\\mid 0\\leqslant y\\leqslant\\dfrac{1}{x\\sqrt{1+x^{2}}},x\\geqslant 1\\}$。(1) 求平面区域 $D$ 的面积；(2) 求 $D$ 绕 $x$ 轴旋转一周的旋转体体积。",
+   "options": [],
+   "answer": "(1)\\ \\ln(1+\\sqrt{2}),\\ (2)\\ \\pi\\left(1-\\dfrac{\\pi}{4}\\right)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(1) $\\ln(1+\\sqrt{2})$，(2) $\\pi\\left(1-\\dfrac{\\pi}{4}\\right)$。\n\n【解析】(1) 由题意得：$S=\\displaystyle\\int_{1}^{+\\infty}\\dfrac{1}{x\\sqrt{1+x^{2}}}\\mathrm{d}x=\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\dfrac{1}{\\sin t}\\mathrm{d}t=\\ln\\dfrac{1-\\cos t}{\\sin t}\\bigg|_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}=\\ln(1+\\sqrt{2})$\n\n(2) 由题意得：$V=\\displaystyle\\int_{1}^{+\\infty}\\pi\\dfrac{1}{x^{2}\\left(1+x^{2}\\right)}\\mathrm{d}x=\\int_{1}^{+\\infty}\\pi\\dfrac{1+x^{2}-x^{2}}{x^{2}\\left(1+x^{2}\\right)}\\mathrm{d}x=\\int_{1}^{+\\infty}\\pi\\dfrac{1}{x^{2}}\\mathrm{d}x-\\int_{1}^{+\\infty}\\pi\\dfrac{1}{\\left(1+x^{2}\\right)}\\mathrm{d}x$\n\n$=\\pi-\\dfrac{\\pi^{2}}{4}=\\pi\\left(1-\\dfrac{\\pi}{4}\\right)$。"
+    }
+   ],
+   "knowledge_points": [
+    "反常积分",
+    "平面图形面积",
+    "旋转体体积"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3
+    ],
+    "anchor": "第(18)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:cb295736a5b9bf6826a2f4959de296b4e3f1f0f38c61e8e00abe52414ea4fd31"
+  },
+  {
+   "id": "math3-2023-19",
+   "subject": "math3",
+   "year": 2023,
+   "num": 19,
+   "type": "essay",
+   "score": 12,
+   "stem": "已知平面区域 $D=\\left\\{(x,y)\\middle|(x-1)^{2}+y^{2}\\leqslant 1\\right\\}$，求 $\\iint_{D}\\left|\\sqrt{x^{2}+y^{2}}-1\\right|\\mathrm{d}x\\mathrm{d}y$。",
+   "options": [],
+   "answer": "3\\sqrt{3}-\\dfrac{32+\\pi}{9}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$3\\sqrt{3}-\\dfrac{32+\\pi}{9}$\n\n【解析】$\\iint_{D}\\left|\\sqrt{x^{2}+y^{2}}-1\\right|\\mathrm{d}x\\mathrm{d}y=\\iint_{D_1}(1-\\sqrt{x^{2}+y^{2}})\\mathrm{d}x\\mathrm{d}y+\\iint_{D_2}(\\sqrt{x^{2}+y^{2}}-1)\\mathrm{d}x\\mathrm{d}y$\n\n$=\\iint_{D}(1-\\sqrt{x^{2}+y^{2}})\\mathrm{d}x\\mathrm{d}y-\\iint_{D_2}(1-\\sqrt{x^{2}+y^{2}})\\mathrm{d}x\\mathrm{d}y+\\iint_{D_2}(\\sqrt{x^{2}+y^{2}}-1)\\mathrm{d}x\\mathrm{d}y$\n\n$=\\iint_{D}(1-\\sqrt{x^{2}+y^{2}})\\mathrm{d}x\\mathrm{d}y-2\\iint_{D_2}(1-\\sqrt{x^{2}+y^{2}})\\mathrm{d}x\\mathrm{d}y=I_1-2I_2$\n\n$I_1=\\displaystyle\\iint_{D}(1-\\sqrt{x^{2}+y^{2}})\\mathrm{d}x\\mathrm{d}y=\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}\\mathrm{d}\\theta\\int_{0}^{2\\cos\\theta}(1-r)r\\mathrm{d}r=2\\int_{0}^{\\frac{\\pi}{2}}(2\\cos^{2}\\theta-\\dfrac{8}{3}\\cos^{3}\\theta)\\mathrm{d}\\theta$\n\n$=4\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\cos^{2}\\theta\\mathrm{d}\\theta-\\dfrac{16}{3}\\int_{0}^{\\frac{\\pi}{2}}\\cos^{3}\\theta\\mathrm{d}\\theta=4\\times\\dfrac{1}{2}\\times\\dfrac{\\pi}{2}-\\dfrac{16}{3}\\times\\dfrac{2}{3}\\times1=\\pi-\\dfrac{32}{9}$\n\n$I_2=\\displaystyle\\iint_{D_2}(1-\\sqrt{x^{2}+y^{2}})\\mathrm{d}x\\mathrm{d}y=\\int_{-\\frac{\\pi}{3}}^{\\frac{\\pi}{3}}\\mathrm{d}\\theta\\int_{1}^{2\\cos\\theta}(1-r)r\\mathrm{d}r=2\\int_{0}^{\\frac{\\pi}{3}}(2\\cos^{2}\\theta-\\dfrac{8}{3}\\cos^{3}\\theta-\\dfrac{1}{6})\\mathrm{d}\\theta$\n\n$=2\\displaystyle\\int_{0}^{\\frac{\\pi}{3}}(\\cos 2\\theta-\\dfrac{8}{3}\\cos^{3}\\theta+\\dfrac{5}{6})\\mathrm{d}\\theta=\\int_{0}^{\\frac{\\pi}{3}}\\cos 2\\theta\\mathrm{d}(2\\theta)-\\dfrac{16}{3}\\int_{0}^{\\frac{\\pi}{3}}\\cos^{3}\\theta\\mathrm{d}\\theta+2\\int_{0}^{\\frac{\\pi}{3}}\\dfrac{5}{6}\\mathrm{d}\\theta$\n\n$=\\dfrac{\\sqrt{3}}{2}-\\dfrac{16}{3}\\times\\dfrac{3\\sqrt{3}}{8}+\\dfrac{5\\pi}{9}=\\dfrac{5}{9}\\pi-\\dfrac{3\\sqrt{3}}{2}$\n\n$\\therefore I_1-2I_2=\\pi-\\dfrac{32}{9}-2(\\dfrac{5}{9}\\pi-\\dfrac{3\\sqrt{3}}{2})=3\\sqrt{3}-\\dfrac{32+\\pi}{9}$\n\n即 $\\iint_{D}\\left|\\sqrt{x^{2}+y^{2}}-1\\right|\\mathrm{d}x\\mathrm{d}y=3\\sqrt{3}-\\dfrac{32+\\pi}{9}$。"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分极坐标",
+    "区域分块与对称性"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     3,
+     4
+    ],
+    "anchor": "第(19)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:5f1060f47cf5a7f853bf09303288853cb4b07fb5e9a1c29de68b2e5224d5569b"
+  },
+  {
+   "id": "math3-2023-20",
+   "subject": "math3",
+   "year": 2023,
+   "num": 20,
+   "type": "essay",
+   "score": 12,
+   "stem": "设函数 $f(x)$ 在 $[-a,a]$ 上具有二阶连续导数，证明：(Ⅰ) 若 $f(0)=0$，则存在 $\\xi\\in(-a,a)$ 使得 $f^{\\prime\\prime}(\\xi)=\\dfrac{1}{a^{2}}\\bigl[f(a)+f(-a)\\bigr]$；(Ⅱ) 若 $f(x)$ 在 $(-a,a)$ 内取得极值，则存在 $\\eta\\in(-a,a)$ 使得 $\\left|f^{\\prime\\prime}(\\eta)\\right|\\geqslant\\dfrac{1}{2a^{2}}\\left|f(a)-f(-a)\\right|$。",
+   "options": [],
+   "answer": "证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【证明】(Ⅰ) 由泰勒公式可知\n\n$\\begin{cases}f(a)=f(0)+f'(0)a+\\dfrac{f''(\\xi_1)}{2}a^{2},\\ \\xi_1\\in(0,a),\\\\[4pt] f(-a)=f(0)-f'(0)a+\\dfrac{f''(\\xi_2)}{2}a^{2},\\ \\xi_2\\in(-a,0),\\end{cases}$\n\n两式相加得 $f(a)+f(-a)=\\dfrac{f''(\\xi_1)+f''(\\xi_2)}{2}a^{2}$，\n\n再由平均值定理可知存在 $\\xi\\in(-a,a)$ 使得 $f''(\\xi)=\\dfrac{f''(\\xi_1)+f''(\\xi_2)}{2}$，\n\n即存在 $\\xi\\in(-a,a)$ 使得 $f''(\\xi)=\\dfrac{1}{a^{2}}\\bigl[f(a)+f(-a)\\bigr]$。\n\n(Ⅱ) 由 $f(x)$ 在 $(-a,a)$ 内取得极值，故存在 $c\\in(-a,a)$ 使得 $f'(c)=0$。\n\n由泰勒公式可知 $\\begin{cases}f(a)=f(c)+f'(c)(a-c)+\\dfrac{f''(\\eta_1)}{2}(a-c)^{2},\\ \\eta_1\\in(c,a),\\\\[4pt] f(-a)=f(c)+f'(c)(-a-c)+\\dfrac{f''(\\eta_2)}{2}(a+c)^{2},\\ \\eta_2\\in(-a,c),\\end{cases}$\n\n两式相减得 $f(a)-f(-a)=\\dfrac{f''(\\eta_1)}{2}(a-c)^{2}-\\dfrac{f''(\\eta_2)}{2}(a+c)^{2}$，\n\n令 $\\left|f''(\\eta)\\right|=\\max\\left\\{\\left|f''(\\eta_1)\\right|,\\left|f''(\\eta_2)\\right|\\right\\}$，则\n\n$\\left|f(a)-f(-a)\\right|\\leqslant\\left|\\dfrac{f''(\\eta)}{2}\\right|\\left[(a-c)^{2}+(a+c)^{2}\\right]=\\left|\\dfrac{f''(\\eta)}{2}\\right|\\left(2a^{2}+2c^{2}\\right)\\leqslant 2a^{2}\\left|f''(\\eta)\\right|$，\n\n即存在 $\\eta\\in(-a,a)$ 使得 $\\left|f''(\\eta)\\right|\\geqslant\\dfrac{1}{2a^{2}}\\left|f(a)-f(-a)\\right|$。"
+    }
+   ],
+   "knowledge_points": [
+    "泰勒公式",
+    "中值定理证明"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     4
+    ],
+    "anchor": "第(20)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:fb7d14257b9f46c341211ab4829b113593d06ec2b0677f302b179d274848e66c"
+  },
+  {
+   "id": "math3-2023-21",
+   "subject": "math3",
+   "year": 2023,
+   "num": 21,
+   "type": "essay",
+   "score": 12,
+   "stem": "若矩阵 $A$ 满足对任意的 $x_1,x_2,x_3$ 均有 $A\\begin{pmatrix}x_1\\ x_2\\ x_3\\end{pmatrix}=\\begin{pmatrix}x_1+x_2+x_3\\ 2x_1-x_2+x_3\\ x_2-x_3\\end{pmatrix}$。(1) 求矩阵 $A$；(2) 求可逆矩阵 $P$ 与对角矩阵 $\\Lambda$，使得 $P^{-1}AP=\\Lambda$。",
+   "options": [],
+   "answer": "A=\\begin{pmatrix}1&1&1\\\\ 2&-1&1\\\\ 0&1&-1\\end{pmatrix},\\ P=\\begin{pmatrix}0&-1&4\\\\ -1&0&3\\\\ 1&2&1\\end{pmatrix},\\ \\Lambda=\\begin{pmatrix}-2&&\\\\ &-1&\\\\ &&2\\end{pmatrix}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(1) $A=\\begin{pmatrix}1&1&1\\\\ 2&-1&1\\\\ 0&1&-1\\end{pmatrix}$\n\n(2) 可逆矩阵 $P=\\begin{pmatrix}0&-1&4\\\\ -1&0&3\\\\ 1&2&1\\end{pmatrix}$，对角阵 $\\Lambda=\\begin{pmatrix}-2&&\\\\ &-1&\\\\ &&2\\end{pmatrix}$。\n\n【解析】(1) 由题设 $A\\begin{pmatrix}x_1\\\\ x_2\\\\ x_3\\end{pmatrix}=\\begin{pmatrix}x_1+x_2+x_3\\\\ 2x_1-x_2+x_3\\\\ x_2-x_3\\end{pmatrix}=\\begin{pmatrix}1&1&1\\\\ 2&-1&1\\\\ 0&1&-1\\end{pmatrix}\\begin{pmatrix}x_1\\\\ x_2\\\\ x_3\\end{pmatrix}$\n\n故 $A=\\begin{pmatrix}1&1&1\\\\ 2&-1&1\\\\ 0&1&-1\\end{pmatrix}$。\n\n(2) 由 $|A-\\lambda E|=\\begin{vmatrix}1-\\lambda&1&1\\\\ 2&-1-\\lambda&1\\\\ 0&1&-1-\\lambda\\end{vmatrix}=(\\lambda+2)(\\lambda+1)(2-\\lambda)=0$ 得：\n\n$\\lambda_1=-2,\\ \\lambda_2=-1,\\ \\lambda_3=2$；\n\n当 $\\lambda_1=-2$ 时，解方程组 $(A-\\lambda_1 E)x=0$ 得特征向量 $\\boldsymbol{\\xi}_1=(0,-1,1)^{\\mathrm{T}}$；\n\n当 $\\lambda_2=-1$ 时，解方程组 $(A-\\lambda_2 E)x=0$ 得特征向量 $\\boldsymbol{\\xi}_2=(-1,0,2)^{\\mathrm{T}}$；\n\n当 $\\lambda_3=2$ 时，解方程组 $(A-\\lambda_3 E)x=0$ 得特征向量 $\\boldsymbol{\\xi}_3=(4,3,1)^{\\mathrm{T}}$；\n\n则存在可逆矩阵 $P=(\\boldsymbol{\\xi}_1,\\boldsymbol{\\xi}_2,\\boldsymbol{\\xi}_3)=\\begin{pmatrix}0&-1&4\\\\ -1&0&3\\\\ 1&2&1\\end{pmatrix}$，使得 $P^{-1}AP=\\Lambda=\\begin{pmatrix}-2&&\\\\ &-1&\\\\ &&2\\end{pmatrix}$。"
+    }
+   ],
+   "knowledge_points": [
+    "矩阵对角化",
+    "特征值与特征向量"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     4
+    ],
+    "anchor": "第(21)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:5f4d50e485c37e53b9d9fac81923ef4ae3e02f46c8cfefe145896bc2a2791bb7"
+  },
+  {
+   "id": "math3-2023-22",
+   "subject": "math3",
+   "year": 2023,
+   "num": 22,
+   "type": "essay",
+   "score": 12,
+   "stem": "设随机变量 $X$ 的概率密度为 $f(x)=\\dfrac{\\mathrm{e}^{x}}{\\left(1+\\mathrm{e}^{x}\\right)^{2}}$，$-\\infty<x<+\\infty$。令 $Y=\\mathrm{e}^{X}$。(1) 求 $X$ 的分布函数；(2) 求 $Y$ 的概率密度；(3) $Y$ 的期望是否存在。",
+   "options": [],
+   "answer": "F(x)=\\dfrac{\\mathrm{e}^{x}}{1+\\mathrm{e}^{x}},\\ f_Y(y)=\\dfrac{1}{(1+y)^{2}}\\ (y\\geqslant 0),\\ E(Y)=+\\infty",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(1) $F(x)=\\dfrac{\\mathrm{e}^{x}}{1+\\mathrm{e}^{x}}$，$-\\infty<x<+\\infty$。\n\n(2) $f_Y(y)=\\begin{cases}\\dfrac{1}{\\left(1+y\\right)^{2}},&y\\geqslant0,\\\\ 0,&y<0.\\end{cases}$\n\n(3) 不存在。\n\n【解析】(1) $F(x)=P\\{X\\leqslant x\\}=\\displaystyle\\int_{-\\infty}^{x}f(t)\\mathrm{d}t=\\int_{-\\infty}^{x}\\dfrac{\\mathrm{e}^{t}}{\\left(1+\\mathrm{e}^{t}\\right)^{2}}\\mathrm{d}t=\\dfrac{\\mathrm{e}^{x}}{1+\\mathrm{e}^{x}},-\\infty<x<+\\infty$。\n\n(2) $Y=\\mathrm{e}^{X}$，则有 $X=h(Y)=\\ln Y$，则\n\n$f_Y(y)=\\begin{cases}f[h(y)]\\cdot\\left|h'(y)\\right|,&y\\geqslant0,\\\\ 0,&y<0,\\end{cases}=\\begin{cases}\\dfrac{y}{\\left(1+y\\right)^{2}}\\cdot\\dfrac{1}{y},&y\\geqslant0,\\\\ 0,&y<0,\\end{cases}=\\begin{cases}\\dfrac{1}{\\left(1+y\\right)^{2}},&y\\geqslant0,\\\\ 0,&y<0.\\end{cases}$\n\n(3) $E(Y)=\\displaystyle\\int_{-\\infty}^{+\\infty}y\\cdot f_Y(y)\\mathrm{d}y=\\int_{0}^{+\\infty}y\\cdot\\dfrac{1}{\\left(1+y\\right)^{2}}\\mathrm{d}y=\\left[\\ln(1+y)+\\dfrac{1}{1+y}\\right]\\bigg|_{0}^{+\\infty}$\n\n$=\\lim\\limits_{y\\to+\\infty}\\left[\\ln(1+y)+\\dfrac{1}{1+y}\\right]-1$，\n\n因为此极限不存在，故反常积分发散，$Y$ 的期望不存在。"
+    }
+   ],
+   "knowledge_points": [
+    "分布函数",
+    "随机变量函数的密度",
+    "数学期望存在性"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+   "source_ref": {
+    "pdf": "2023数学三真题及解析.pdf",
+    "sha256": "6e246d6156026a20c9303427c03b59ed60c5673970b44e0583a21554df69ef10",
+    "pages": [
+     4
+    ],
+    "anchor": "第(22)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:9e06e61c44abacfa4b573fc714326f411a9eee296021f42f1e03dbf9f240e155"
+  }
+ ]
+}

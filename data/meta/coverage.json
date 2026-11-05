@@ -102,9 +102,11 @@
     ]
   },
   "math3": {
-    "status": "imaging",
-    "dataYears": [],
-    "questions": 0,
+    "status": "active",
+    "dataYears": [
+      2023
+    ],
+    "questions": 22,
     "paperYears": [
       2009,
       2010,

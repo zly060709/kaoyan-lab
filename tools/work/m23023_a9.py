@@ -3,7 +3,7 @@
 
 A = {}
 
-A[22] = (r"(1) $A=\begin{pmatrix}1&1&1\\ 2&-1&1\\ 0&1&-1\end{pmatrix}$；(2) $P=\begin{pmatrix}4&1&0\\ 3&0&1\\ 1&-2&-1\end{pmatrix}$，$\Lambda=\begin{pmatrix}2& &\\ &-1&\\ & &-2\end{pmatrix}$", [
+A[22] = (r"(1) $A=\begin{pmatrix}1&1&1\\ 2&-1&1\\ 0&1&-1\end{pmatrix}$ (2) $P=\begin{pmatrix}4&1&0\\ 3&0&1\\ 1&-2&-1\end{pmatrix}$ $\Lambda=\begin{pmatrix}2& &\\ &-1&\\ & &-2\end{pmatrix}$", [
     r"(1) 由矩阵的运算规律可知，$A=\begin{pmatrix}1&1&1\\ 2&-1&1\\ 0&1&-1\end{pmatrix}$；",
     r"(2) 令 $|\lambda E-A|=0$，$\begin{vmatrix}\lambda-1&-1&-1\\ -2&\lambda+1&-1\\ 0&-1&\lambda+1\end{vmatrix}=(\lambda-2)(\lambda+1)(\lambda+2)=0$",
     r"得矩阵 $A$ 的特征值为 $\lambda_{1}=2,\lambda_{2}=-1,\lambda_{3}=-2$。",

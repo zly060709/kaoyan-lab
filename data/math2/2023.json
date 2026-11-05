@@ -895,7 +895,7 @@
    "score": 12,
    "stem": "已知 $D:\\left\\{(x,y)\\mid 0\\leqslant y\\leqslant\\dfrac{1}{x\\sqrt{1+x^{2}}},\\ x\\geqslant 1\\right\\}$。(1) 求 $D$ 的面积；(2) 求 $D$ 绕 $x$ 轴旋转所得旋转体的体积。",
    "options": [],
-   "answer": "(1) \\ln(\\sqrt{2}+1)；(2) \\pi\\left(1-\\dfrac{\\pi}{4}\\right)",
+   "answer": "(1) \\ln(\\sqrt{2}+1) (2) \\pi\\left(1-\\dfrac{\\pi}{4}\\right)",
    "source_blocks": [
     {
      "role": "analysis",
@@ -930,7 +930,7 @@
     "anchor": "解答题(19)"
    },
    "schema_version": "1.0.0",
-   "content_hash": "sha256:5a401878d8fde3ec515be9af9e8a46e1d291cebe447086f221ddaa5c4f3e6e09"
+   "content_hash": "sha256:b69371b74d11a84d22a63b41031601adb5cd9c439a4543bd550780f78a64b4fd"
   },
   {
    "id": "math2-2023-20",
@@ -1033,7 +1033,7 @@
    "score": 12,
    "stem": "已知 $A\\begin{pmatrix}x_{1}\\\\ x_{2}\\\\ x_{3}\\end{pmatrix}=\\begin{pmatrix}x_{1}+x_{2}+x_{3}\\\\ 2x_{1}-x_{2}+x_{3}\\\\ x_{2}-x_{3}\\end{pmatrix}$ 对所有 $x$ 均成立。(1) 求矩阵 $A$；(2) 求可逆矩阵 $P$ 和对角阵 $\\Lambda$，使得 $P^{-1}AP=\\Lambda$。",
    "options": [],
-   "answer": "(1) A=\\begin{pmatrix}1&1&1\\\\ 2&-1&1\\\\ 0&1&-1\\end{pmatrix}；(2) P=\\begin{pmatrix}4&1&0\\\\ 3&0&1\\\\ 1&-2&-1\\end{pmatrix}，\\Lambda=\\begin{pmatrix}2& &\\\\ &-1&\\\\ & &-2\\end{pmatrix}",
+   "answer": "(1) A=\\begin{pmatrix}1&1&1\\\\ 2&-1&1\\\\ 0&1&-1\\end{pmatrix} (2) P=\\begin{pmatrix}4&1&0\\\\ 3&0&1\\\\ 1&-2&-1\\end{pmatrix} \\Lambda=\\begin{pmatrix}2& &\\\\ &-1&\\\\ & &-2\\end{pmatrix}",
    "source_blocks": [
     {
      "role": "analysis",
@@ -1068,7 +1068,7 @@
     "anchor": "解答题(22)"
    },
    "schema_version": "1.0.0",
-   "content_hash": "sha256:0aa75d82fdeae2cb6829cade5875c7389bef51e0d35c310f5d4c6b24192782d7"
+   "content_hash": "sha256:64465233c8b0d00915e9a82f43a4ea6cd3456fc1c19ac29826db6f535396968e"
   }
  ]
 }
