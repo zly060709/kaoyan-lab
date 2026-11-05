@@ -3,7 +3,7 @@
   "phase": "M3-converge",
   "status": "RUNNING",
   "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-05T14:21:48Z",
+  "updated_at": "2026-11-05T14:29:58Z",
   "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
   "done_set": [
     "m0:auth_initiated",
@@ -43,10 +43,11 @@
     "conv12:数学三 2012/2020 两卷定稿入库（math3 15 卷 342 题，索引 3628）",
     "conv13:CI 门禁工作流 checks.yml + publish_api tree-cache 命中修复",
     "conv14:注册表 paperYears 回归修复 + 首页去硬编码 + sw 自动升版",
-    "conv14c:修影像入口前缀错配（paperDir）+ 新增 G10 门禁"
+    "conv14c:修影像入口前缀错配（paperDir）+ 新增 G10 门禁",
+    "conv14d:影像入口修复线上复核（数一四卷首次可点通，v0.3.14）"
   ],
   "failed_set": [],
-  "current_task": "conv14d:发布收敛⑭（paperDir + G10）并线上复核数一影像入口",
+  "current_task": "conv15:数一 2009–2012 四卷转录（影像已在库，需从远端取图）",
   "in_flight": {},
   "auth": "authorized (zly060709)",
   "gates": {
