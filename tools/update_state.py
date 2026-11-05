@@ -33,7 +33,10 @@ def main():
             except Exception as e:
                 print(f"[warn] {f}: {e}")
 
-    task = sys.argv[1] if len(sys.argv) > 1 else "heartbeat"
+    # 任务名只取第一个非选项位置参数。此前直接取 sys.argv[1]，`--task xxx` 的调用会把
+    # 字面量 "--task" 写进 done_set，污染台账。
+    pos = [a for a in sys.argv[1:] if not a.startswith("-")]
+    task = pos[0] if pos else "heartbeat"
     # 扩展科目（math2/math3/mgt199/law498…）不在 migration_*.json 里，一律按磁盘实数反推，
     # 否则 state 的题量指标会停在旧年份（曾长期显示 math3 44 题而磁盘已 273 题）。
     qs = state.setdefault("metrics", {}).setdefault("questions", {})
