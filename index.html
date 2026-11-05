@@ -1065,7 +1065,6 @@ async function viewQuestion(seq,s,y,num){
       ${ansStr?`<div class="ans">答案 <b data-ans="${esc(ansStr)}">${esc(ansStr)}</b></div>`:""}
       <button class="reveal-btn" id="rv" style="margin:0 0 0 8px;padding:4px 14px;font-size:12.5px">👁 揭示</button>
       <button class="reveal-btn" id="bm" style="margin:0;padding:4px 14px;font-size:12.5px" aria-pressed="${mark}">${mark?"★ 已收藏":"☆ 收藏"}</button>
-      <a class="reveal-btn" href="${esc(fbURL)}" target="_blank" rel="noopener noreferrer" style="margin:0;padding:4px 14px;font-size:12.5px">⚑ 反馈</a>
     </div>
     <div class="jdres" id="jdres"></div>
     ${q.stem?`<div class="stem">${fillText(q.stem)}</div>`:""}
@@ -1075,7 +1074,8 @@ async function viewQuestion(seq,s,y,num){
     ${blocks||noAnaBlock}
     ${buildSteps(ana)}
     <div class="srcbar">来源：${esc((q.source_ref&&q.source_ref.pdf)||q.source_ref&&q.source_ref.file||"legacy")} · ${esc((q.source_ref&&q.source_ref.anchor)||"")} ·
-      <code id="srchash" title="点击复制完整哈希">${esc(String(q.source_hash||"").slice(0,24))}…</code>${paperLink?" · "+paperLink:""}</div>
+      <code id="srchash" title="点击复制完整哈希">${esc(String(q.source_hash||"").slice(0,24))}…</code>${paperLink?" · "+paperLink:""} ·
+      <a href="${esc(fbURL)}" target="_blank" rel="noopener noreferrer">⚑ 反馈本题</a></div>
   </div></article>
   <div class="qnav">
     <button id="prev">‹ 上一题 (j)</button><button id="rand">🎲 随机一题</button><button id="next">下一题 (k) ›</button>
