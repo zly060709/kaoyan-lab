@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T18:49:23Z",
+  "updated_at": "2026-11-05T19:07:49Z",
   "subjects": [
     {
       "id": "politics",
@@ -105,6 +105,7 @@
       "status": "active",
       "dataDir": "math",
       "dataYears": [
+        2009,
         2010,
         2011,
         2012,
@@ -121,6 +122,7 @@
         2023
       ],
       "yearCounts": {
+        "2009": 23,
         "2010": 23,
         "2011": 23,
         "2012": 23,
@@ -148,7 +150,7 @@
         "2011": 13,
         "2012": 13
       },
-      "questionTotal": 319,
+      "questionTotal": 342,
       "analysisYears": [],
       "figureYears": [
         2013,
