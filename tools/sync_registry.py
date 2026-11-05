@@ -88,6 +88,31 @@ def objective_total(data_dir, types):
     return n
 
 
+def pages_prefixes():
+    """返回 {subject_id: 影像清单里的目录前缀}，来自 source_pdfs.json 的键前缀本身。
+
+    前端原样用 `dataDir` 去匹配清单键，但数一的题目目录是 `math`、影像目录前缀是
+    `math1.pages`，两者不同名，于是年份卡片能列出影像、点进去却提示「未入库」。
+    把前缀登记进注册表（`paperDir`），让前端按事实匹配而不是猜目录名。
+    """
+    src = os.path.join(ROOT, "data", "meta", "source_pdfs.json")
+    if not os.path.exists(src):
+        return {}
+    out = {}
+    for key in load(src):
+        m = PAGE_KEY_RE.match(key)
+        if not m:
+            continue
+        prefix, sid = m.group(1), PAGES_DIR_TO_SUBJECT.get(m.group(1))
+        if not sid:
+            continue
+        if sid in out and out[sid] != prefix:
+            print("[warn] %s 的影像前缀不唯一：%s / %s（取前者）" % (sid, out[sid], prefix))
+            continue
+        out.setdefault(sid, prefix)
+    return out
+
+
 def paper_years():
     """返回 {subject_id: {year: 页数}}，来自逐页影像清单 `data/meta/source_pdfs.json`。
 
@@ -166,6 +191,7 @@ def main():
     spath = os.path.join(ROOT, "data", "meta", "subjects.json")
     reg = load(spath)
     papers = paper_years()
+    pdirs = pages_prefixes()
     coverage = {}
     for s in reg["subjects"]:
         data_dir = s.get("dataDir") or s["id"]
@@ -174,6 +200,11 @@ def main():
         s["dataYears"] = sorted(per_year.keys())
         s["yearCounts"] = {str(y): n for y, n in sorted(per_year.items())}
         s["paperYears"] = sorted(py.keys())
+        pdir = pdirs.get(s["id"])
+        if pdir:
+            s["paperDir"] = pdir
+        else:
+            s.pop("paperDir", None)
         s["paperPages"] = {str(y): n for y, n in sorted(py.items())}
         s["analysisYears"] = analysis_years(data_dir)
         s["figureYears"] = figure_years(data_dir)
@@ -202,7 +233,8 @@ def main():
     reg["note"] = ("20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | "
                    "pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。"
                    "dataYears/paperYears/questionTotal/objectiveTotal 由 tools/sync_registry.py 依真实数据反推；"
-                   "paperYears 取影像清单声明的页数（本机缺文件不代表仓库缺，真值由 CI 的 verify_pages.py 校）。")
+                   "paperYears 取影像清单声明的页数（本机缺文件不代表仓库缺，真值由 CI 的 verify_pages.py 校），"
+                   "paperDir 是清单键的真实前缀，与题目目录 dataDir 可以不同名（数一：math vs math1.pages）。")
     dump(spath, reg)
     dump(os.path.join(ROOT, "data", "meta", "coverage.json"), coverage)
     for sid, c in coverage.items():

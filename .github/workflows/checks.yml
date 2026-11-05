@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: G1-G9 机械门禁
+      - name: G1-G10 机械门禁
         run: python -X utf8 tools/gates.py
       - name: 数据完整性 verify_data
         run: python -X utf8 tools/verify_data.py

@@ -198,6 +198,13 @@ async function fetchShard(url){
 }
 function subjById(id){return (REG&&REG.subjects||[]).find(s=>s.id===id)}
 function dirOf(id){const s=subjById(id);return (s&&s.dataDir)||id}
+// 影像清单键前缀与题目目录名不同名（数一题目在 data/math、影像前缀是 math1.pages），
+// 原先两处各用 dirOf 猜，猜不中就在科目页已列出该卷的情况下渲染「未入库」。前缀真值取注册表 paperDir。
+function paperKeysOf(man,id,y){
+  if(!man)return [];const s=subjById(id)||{};
+  const pats=[s.paperDir,s.dataDir,id].filter(Boolean);
+  return Object.keys(man).filter(k=>k.endsWith(":"+y)&&pats.some(p=>k.startsWith(p+":")));
+}
 let _kt=0;
 function prevText(t,n){
   const s=String(t||"").replace(/@@M:[-\w]+:\d+@@/g,"").replace(/\s+/g," ").slice(0,n);
@@ -390,8 +397,7 @@ async function viewSubject(s){
 /* ============ 原卷影像页 ============ */
 async function viewPaper(s,y){
   let man=null;try{man=await fetchJSON("data/meta/source_pdfs.json")}catch(e){}
-  const dir=dirOf(s.id);
-  const keys=man?Object.keys(man).filter(k=>k.endsWith(":"+y)&&(k.startsWith(dir+":")||k.startsWith(s.id+":"))):[];
+  const keys=paperKeysOf(man,s.id,y);
   const info=keys.length?man[keys[0]]:null;
   const pages=(info&&info.page_files)||[];
   if(!pages.length){app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s.id}">${esc(s.short||s.name)}</a> › ${y}</div>
@@ -428,7 +434,7 @@ async function viewYear(s,y){
   }
   let paperLink="";
   try{const mp=await fetchJSON("data/meta/source_pdfs.json");
-    const kk=Object.keys(mp).filter(k=>k.endsWith(":"+y)&&(k.startsWith(dirOf(s.id)+":")||k.startsWith(s.id+":")));
+    const kk=paperKeysOf(mp,s.id,y);
     const pgs=(kk.length&&mp[kk[0]].page_files)||[];
     if(pgs.length)paperLink=`<a class="ycard dim" style="display:inline-block;padding:6px 14px;margin:0 0 12px" href="#/${s.id}/${y}/paper"><b>原卷影像</b><span>${pgs.length} 页 · 逐题对照</span></a>`;
   }catch(e){}

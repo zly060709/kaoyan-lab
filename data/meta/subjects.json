@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T14:05:54Z",
-  "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal/objectiveTotal 由 tools/sync_registry.py 依真实数据反推；paperYears 取影像清单声明的页数（本机缺文件不代表仓库缺，真值由 CI 的 verify_pages.py 校）。",
+  "updated_at": "2026-11-05T14:17:33Z",
+  "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal/objectiveTotal 由 tools/sync_registry.py 依真实数据反推；paperYears 取影像清单声明的页数（本机缺文件不代表仓库缺，真值由 CI 的 verify_pages.py 校），paperDir 是清单键的真实前缀，与题目目录 dataDir 可以不同名（数一：math vs math1.pages）。",
   "subjects": [
     {
       "id": "politics",
@@ -169,7 +169,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "paperDir": "math1.pages"
     },
     {
       "id": "math2",
@@ -270,7 +271,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "paperDir": "math2"
     },
     {
       "id": "math3",
@@ -359,7 +361,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "paperDir": "math3"
     },
     {
       "id": "english2",
@@ -580,7 +583,8 @@
       },
       "questionTotal": 58,
       "analysisYears": [],
-      "figureYears": []
+      "figureYears": [],
+      "paperDir": "law498"
     },
     {
       "id": "med306",
