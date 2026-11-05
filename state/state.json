@@ -3,7 +3,7 @@
  "phase": "M3-converge",
  "status": "RUNNING",
  "started_at": "2026-11-04T15:08:05Z",
- "updated_at": "2026-11-05T16:27:38Z",
+ "updated_at": "2026-11-05T17:25:45Z",
  "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
  "done_set": [
   "conv10:math3-2009-2019",
@@ -45,7 +45,8 @@
   "m1:migrate_english",
   "m1:migrate_math",
   "m1:migrate_politics",
-  "math2-2009-2021-done"
+  "math2-2009-2021-done",
+  "D111-acceptance"
  ],
  "failed_set": [],
  "current_task": "conv10 完成：待推送后线上核验",
