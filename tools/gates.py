@@ -271,11 +271,16 @@ def main():
         import validate_schema as vs
         qschema = vs.load_schema()
         bad_schema = []
+        nq10 = 0
         for rel, q in vs.iter_questions():
+            nq10 += 1
             for e in vs.validate(q, qschema, q.get("id", "?")):
                 bad_schema.append(f"{rel} {e}")
         gate("G10 schema 结构", not bad_schema,
-             "3467 题结构合格" if not bad_schema else "错误 %d，例: %s" % (len(bad_schema), "; ".join(bad_schema[:3])))
+             "%d 题结构合格" % nq10 if not bad_schema
+             else "错误 %d，例: %s" % (len(bad_schema), "; ".join(bad_schema[:3])))
+    except Exception as e:
+        gate("G10 schema 结构", False, "校验器异常: %s" % str(e)[:80])
     except Exception as e:
         gate("G10 schema 结构", False, "校验器异常: %s" % str(e)[:80])
 

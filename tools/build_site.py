@@ -32,6 +32,8 @@ VENDOR_FILES = [
     "vendor/katex/katex.min.js",
     "vendor/katex/katex.min.css",
     "vendor/katex/contrib/auto-render.min.js",
+    "vendor/three.min.js",
+    "vendor/OrbitControls.js",
 ]
 VENDOR_FONT_EXT = (".woff2",)
 
