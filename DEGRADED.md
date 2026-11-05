@@ -22,6 +22,7 @@
 | 2026-11-05 | ZCode 主会话 | 收敛⑥ 收尾（DEGRADED 口径更新后）请求失败 `The request could not be completed`，该轮成果未提交 | 由新会话接手：先核对门禁 9/9 与磁盘产出，补齐台账后 commit + push，再按 `state/queue_sequential` 继续；不回滚任何已落盘文件 |
 | 2026-11-05 | 前端 JS 语法校验 | 本机 node 不在 PATH，无法 `node --check` | 降级为浏览器 `new Function(内联脚本)` 探针 + 本地 `http.server` 实路由抽查（曾据此定位并修复一个漏括号导致的整脚本不执行） |
 | 2026-11-05 | 浏览器截图验收 | 内嵌浏览器无可见视口（`NATIVE_BROWSER_VIEWPORT_UNAVAILABLE`），Lighthouse 未跑分 | 改用 DOM 结构断言（选项高亮/图片破图/裸 JSON/undefined 文本）逐项验收；Lighthouse 分数不谎报，记于 QUALITY_REPORT「尚未执行的验收项」 |
+| 2026-11-06 | D111 台账提交 c7f811a 推送 | 宿主到 github.com:443 持续断连（18 次重试全失败） | 提交已落本地 main，心跳已刷；下轮巡检网络恢复后首推（不重做任务，幂等） |
 | 2026-11-05 | 199 管综 / 396 经综 / eol 7 科 资料接入 | 用户新提供的资料尚未迁移入库 | 注册表保持 `pending`，不显示虚假年份；迁移在台账 #2/#4/#5 顺序推进 |
 | 2026-11-05 → 06 | GitHub Pages 服务端部署超时 | 19:01 UTC 起 deploy job 连续超时（attempt 1–3 失败），曾判定「内容已提交但 2009/2012 两卷待上线」 | **已结清**：run `42093996232` 的 attempt 4 于 20:09 UTC 三个 job 全 success，deployment `7584112993` 生效；线上 manifest/blob 与 main 原始字节逐字节一致，数学一 2009/2011/2012 与法硕 2023 全部可用。旧 `jobs.json` 失败快照为 attempt 1 残留，已替换为成功快照（D112） |
 
