@@ -104,9 +104,10 @@
   "math3": {
     "status": "active",
     "dataYears": [
+      2022,
       2023
     ],
-    "questions": 22,
+    "questions": 44,
     "paperYears": [
       2009,
       2010,

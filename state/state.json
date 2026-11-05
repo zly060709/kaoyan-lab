@@ -3,7 +3,7 @@
  "phase": "M3-converge",
  "status": "RUNNING",
  "started_at": "2026-11-04T15:08:05Z",
- "updated_at": "2026-11-05T06:26:06Z",
+ "updated_at": "2026-11-05T06:55:12Z",
  "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
  "done_set": [
   "m0:auth_initiated",
@@ -33,10 +33,12 @@
   "conv4:math2-2023-transcribed",
   "conv4:figure-expr-var-binding-fix",
   "conv4:math3-2023-transcribed",
-  "conv4:answer-latex-separators-fix"
+  "conv4:answer-latex-separators-fix",
+  "conv4:session-resume-conv6-committed",
+  "conv4:math3-2022-transcribed"
  ],
  "failed_set": [],
- "current_task": "conv4:数学三 2009-2022 视觉转录（剩余 14 卷 / 181 页影像，下一卷 2022）",
+ "current_task": "conv4:数学三 2009-2021 视觉转录（剩余 13 卷 / 166 页影像，下一卷 2021）",
  "in_flight": {},
  "auth": "authorized (zly060709)",
  "gates": {
@@ -45,7 +47,7 @@
   "checked_at": "2026-11-05"
  },
  "metrics": {
-  "questions_total": 3250,
+  "questions_total": 3272,
   "questions": {
    "politics": 456,
    "math": 250,
@@ -54,7 +56,7 @@
    "math2": 342,
    "cs408": 376,
    "mgt199": 1024,
-   "math3": 22
+   "math3": 44
   },
   "expected": {
    "politics": 456,
@@ -70,7 +72,7 @@
   "figure_files": {
    "math1": 11,
    "math2": 15,
-   "math3": 1
+   "math3": 2
   },
   "step_analysis_questions": {
    "cs408": 376
@@ -103,7 +105,7 @@
    "mgt199"
   ],
   "imaging_only": [
-   "math3"
+   "math3 (仅 2009–2021 的 13 卷仍为原卷影像)"
   ],
   "not_yet_migrated": [
    "econ396",
@@ -122,10 +124,13 @@
   "known_source_gaps": {
    "mgt199-2025": "源包只有 55 题（缺写作第 56、57 题）",
    "mgt199-sufficiency": "源包未给 A-E 判断结果选项文本，options 留空并逐题附原卷切片"
+  },
+  "partial_transcribed": {
+   "math3": "2022/2023 共 44 题已转录，其余 13 卷保持影像"
   }
  },
  "queue_sequential": [
-  "conv4:数学三 14 卷视觉转录（数学二 342 题、数学三 2023 卷 22 题已完成）",
+  "conv4:数学三 13 卷视觉转录（数学二 342 题、数学三 2022/2023 共 44 题已完成）",
   "conv5:英语二 16 卷、数一 2009-2012、英一 2005-2009+2025 转录",
   "conv6:396 经综 22 份 PDF 转录",
   "conv7:eol 7 科 116 张扫描件接入",
