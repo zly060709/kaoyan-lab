@@ -4,13 +4,13 @@
 
 - 线上地址：https://zly060709.github.io/kaoyan-lab/
 - 仓库：https://github.com/zly060709/kaoyan-lab （本地路径见 README）
-- 最后更新：2026-11-05（收敛⑫ · 数三 2012 / 2020 两卷定稿入库，math3 达 15 卷 342 题，全站累计 3628 题）
+- 最后更新：2026-11-05（收敛⑬ · 9 项门禁进 CI（`checks.yml` 首跑 success）+ `publish_api.py` 的 `--tree-cache` 命中修复；上一轮收敛⑫ 数三 2012/2020 定稿，math3 15 卷 342 题，全站 3628 题）
 
 ## 平台待改清单（本轮逐条在代码里核实过，按性价比排序）
 
 | # | 问题 | 证据 | 建议动作 |
 | --- | --- | --- | --- |
-| 1 | **CI 不跑门禁**，9 项 gates 只能本地手跑，坏数据可以照常上线 | `.github/workflows/` 只有 `deploy-pages.yml`（checkout→upload→deploy，无任何校验步骤） | 加 `on: push/PR` 的 check job：`gates.py` + `verify_data.py` + `verify_figures.py` + `audit_m3legacy.py`，非 0 退出即红；Pages 部署依赖它 |
+| 1 | ~~**CI 不跑门禁**~~ ✅ **收敛⑬ 已做**：9 项门禁与三个校验脚本已进入 `on: push / pull_request` 的 `checks.yml`，首跑 success | 原证据：`.github/workflows/` 只有 `deploy-pages.yml`（无任何校验步骤）。现状：新增 `.github/workflows/checks.yml`，依次跑 `gates.py` / `verify_data.py` / `verify_figures.py` / `work/audit_m3legacy.py` / `work/check_m3years.py`，任一非 0 退出即红；首跑 run `42040372969` completed success（commit `7ea1db09`） | **残留一项（有意不做）**：没有把 `deploy-pages` 的 `deploy` 作业改成 `needs: check`，因为那要动正在服役的部署通道（本机没有 Actions 调试回路，改坏的代价是全站停止更新）。要做的是把两个作业合到同一工作流并让 deploy 依赖 check——建议下次在有 Actions 调试条件时做，或用户明确批准后再动 |
 | 2 | **合同要求的 tests/ 不存在**，`data/schema.json` 无消费者 | 仓库根无 `tests`；全仓 grep `schema.json` 只命中它自己 | 二选一：把 schema.json 接成真正的字段校验（G4/G5 升级），或删除它并在合同偏差表登记；现状是「看起来有、实际没用」 |
 | 3 | **自测模式只遮答案，不作答不判分** | `index.html:115,151–153` 是纯 CSS 隐藏；`index.html:633–634` 只切开关写 localStorage | 需要作答层：选项点击记录、客观题即时判分（选项字母已规整，可直接比对 `answer`）、解答题自评勾选、按年/科的正确率与用时汇总 |
 | 4 | **搜索是前端全量拉分片**，线上慢且不可取消 | `index.html:602–612` 对每个在册科目先取 manifest 再并发该科所有年份分片；线上实测单分片 8s 级、整轮 100 个请求、首屏可 >30s | 至少做到：按选中科目才拉、请求可取消（旧结果不覆盖新结果）、结果分页；进一步做 5–10KB 的轻量倒排而不是 100 个分片 |
@@ -18,7 +18,7 @@
 | 6 | **九段精讲只有 408 与 199** | 注册表 `analysisYears`：cs408 8 年、mgt199 18 年，math1/math2/math3/politics/english 全为空 | 合同 P2 最大缺口；按科产出 `{年}.analysis.json`（可先从数学三已入库的 13 卷起步，解析原文已在 `source_blocks`） |
 | 7 | **数据队列缺口** | math3 15 卷已全部定稿入库（2012/2020 于收敛⑫ 结清）；剩余缺口是 math1 2009–2012 仅影像、mgt199 2025 缺写作 2 题、law498 2023 仅封面；`english2 / econ396 / law397 / law398 / med306 / med307 / edu311 / psy312 / his313 / agri314 / chem315 / plant414 / animal415` 共 13 科 `pending` | math1 四卷影像已在仓库 `data/math1.pages/pages/{年}/`（本机会作副本为稀疏检出，文件只在远端），可照数三管线续录；其余科目等你提供资料后按同一管线开工，注册表保持 pending 不显示空壳 |
 | 8 | **存量「提到图却无 media」** | 同类扫描另报 cs408 20 题、math2 4 题、mgt199 64 题（`DEGRADED.md` 已登记） | 这些科的原卷影像不在 `data/*/pages/`，没有裁图来源；需要你补原始 PDF，不画假图 |
-| 9 | **缓存版本靠手改，实测也会被旧缓存骗** | `sw.js` 对 `/data/` 是 stale-while-revalidate，数据变了必须手动升 `VER`，忘了就线上吃旧数据（本轮 v0.3.10 → v0.3.11 手改）。收敛⑫ 在本地复现了同一坑：2012 卷修掉 `\mathrm{其他}` 并重建 `data/math3/2012.json` 后，浏览器仍报 6 条 KaTeX strict 警告，直到 `unregister()` + `caches.delete('kaoyan-v0.3.12')` 才读到新文件——**同理会给出「假清洁」的实测结论** | 在 `tools/publish_api.py` 里做一次「数据变更 → 版本号自动 +1」，把这条隐性规则变成机器规则；并把「取消防注册 + 清 cache」写进浏览器实测脚本的前置步骤，而不是靠人记得 |
+| 9 | **缓存版本靠手改，实测也会被旧缓存骗** | `sw.js` 对 `/data/` 是 stale-while-revalidate，数据变了必须手动升 `VER`，忘了就线上吃旧数据（本轮 v0.3.10 → v0.3.11 手改）。收敛⑫ 在本地复现了同一坑：2012 卷修掉 `\mathrm{其他}` 并重建 `data/math3/2012.json` 后，浏览器仍报 6 条 KaTeX strict 警告，直到 `unregister()` + `caches.delete('kaoyan-v0.3.12')` 才读到新文件——**同理会给出「假清洁」的实测结论** | 在 `tools/publish_api.py` 里做一次「数据变更 → 版本号自动 +1」，把这条隐性规则变成机器规则；并把「取消防注册 + 清 cache」写进浏览器实测脚本的前置步骤，而不是靠人记得。**顺带在收敛⑬ 修掉同一文件的另一条**：`--tree-cache` 的有效期原来拿 tree sha 与 commit sha 比，永不相等，等于每次都要重新取会被本机链路截断的全量 tree；现按 `base_tree` 比对，并用合成缓存 dry-run 验证过命中路径（自动升版仍未做） |
 | 10 | **Lighthouse / 可访问性没有分数** | 本机无 CDP 可视化面板，合同「性能 ≥90 / 可访问性 ≥95」至今未跑（`QUALITY_REPORT` 已如实标注未执行） | 有 Chrome 的会话补跑一次并入台账；不谎报 |
 | 11 | **图形 DSL 能力缺口** | `circle` 只支持原点圆（数学一 2013-7 一类平移圆只能 `parametric` 绕开）；派生图形仍只覆盖部分数学卷 | 给 DSL 增 `cx/cy`（改一处引擎），避免逐题绕 |
 
@@ -36,7 +36,7 @@
 | 法硕综合课非法学（合同外扩展，用户新加料） | — | 58 | ✅ 2022 卷视觉转录入库（58 题 150 分）；2023 仅有封面待补，其余年份待资料 |
 | 合计 | 1757 | 3628 | 四科基准全部满足（3628 与 `gates.py` G5、`data/index/*` 条目数、注册表 `questionTotal` 三处口径一致） |
 
-## 机械门禁（`python -I -X utf8 tools/gates.py`，当前 9/9 PASS）
+## 机械门禁（`python -I -X utf8 tools/gates.py`，当前 9/9 PASS；收敛⑬ 起同一批检查在 CI 每次 push/PR 自动跑，`checks.yml`）
 
 | 门禁 | 结果 | 说明 |
 | --- | --- | --- |
@@ -50,6 +50,15 @@
 | G8 内部资源有效 | PASS | 21 处静态引用无失效（JS 模板字面量不再误判） |
 | G9 注册表与数据一致 | PASS | `data/meta/subjects.json`、`coverage.json` 由磁盘反推（本轮新增 `figureYears` 字段同源） |
 
+## 本轮（收敛⑬）门禁进 CI + `--tree-cache` 的永不相等比对
+
+待改清单第 1 条（最严重那条）落地，附带修掉发布工具里一条潜伏缺陷。
+
+1. **`.github/workflows/checks.yml` 新增** —— `on: push / pull_request / workflow_dispatch`，单 job 依次跑 `tools/gates.py`（G1–G9）、`tools/verify_data.py`、`tools/verify_figures.py`、`tools/work/audit_m3legacy.py`（A1–A7）、`tools/work/check_m3years.py`，任一非 0 退出即红。五个脚本本地退出码全部为 0，且**只用标准库**（逐个核过 import：`collections / glob / hashlib / io / json / math / os / re / sys`，无 numpy 等第三方），所以 CI 侧不需要装任何依赖，`setup-python` 3.11 即可。首跑 run `42040372969` 在 commit `7ea1db09` 上 **completed success**，同批 `Deploy Pages` run `42040372739` 也 success。
+2. **有意不碰部署通道** —— 原建议里有「Pages 部署依赖它」，做法是把 `deploy` 作业改成 `needs: check`，但那要改动正在服役的 `deploy-pages.yml` 作业图；本机没有 Actions 调试回路（改一次要等 push+跑一次），改坏的后果是全站停止更新。决策：先只做「独立红/绿信号」，把依赖关系留给有调试条件或用户批准时再动，并把这条残留显式记在待改清单 #1 里，不让它伪装成已完全结清。
+3. **`tools/publish_api.py` 的 `--tree-cache` 原来永远不会命中** —— 缓存文件顶层 `sha` 存的是 **tree sha**（本次核实：`tree.json` 的 `128e3b9…` 用 `/git/trees/{sha}` 取回 OK、用 `/commits/{sha}` 取回 404），而代码拿它和 **commit sha** 比较，永不相等 → 每次都退回「重新取全量递归 tree」这条在本机必然失败的路（响应会被链路截断）。这解释了为什么此前每次发布都得走 `--paths`。改为与 `base_tree` 比对后，用一个只含 `data/meta` 的合成缓存 + `--dry-run --only data/meta` 验证命中：打印「远端 tree 用本地缓存」，14 个 blob 比对结果「变更文件 0 个」，与远端事实一致。
+4. **发布通道的另一条纪律（本轮踩点）** —— 本机会作副本是**稀疏物化**：`data/meta/source_pdfs.json` 记的 447 个 `page_files` 有 293 个本地不存在，但 contents API 逐个确认远端都在（`data/math2/pages/{年}`、`data/math1.pages/pages/{年}`），而 `publish_api.py` 用 `base_tree` 只做新增/更新、从不发删除，所以「本地全量 diff」发布不会删图。真正的风险是反过来——**看到本地缺文件就判定仓库丢图**。本轮我先这样误判了一次，远端比对后撤回，结论记入 D108 第 4 条。
+
 ## 本轮（收敛⑫）数三 2012 / 2020 两卷定稿入库（math3 达 15 卷 342 题）
 
 两卷的题干、影像与选择题/填空题解析早在影像转录阶段已定稿，**缺的是后段解析与元信息**：2012 缺解答 15–23（9 题）解析，2020 缺第 9–23 题（填空 9–14 + 解答 15–23 共 15 题）解析。本轮把两卷补齐、逐题独立复算、装配入库，math3 由 13 卷 296 题增至 **15 卷 342 题**（2009–2023 无缺口）。
@@ -60,7 +69,7 @@
 4. **修完仍见 6 条警告 —— service worker 在供旧数据** —— 本地 `index.html` 注册了 `sw.js`（缓存 `kaoyan-v0.3.12`），`/data/` 走 stale-while-revalidate，重建后的 JSON 被旧缓存挡住。`unregister()` + `caches.delete()` 后重测才读到新文件。这是「待改清单 #9」的第一次**本地**复现，也是它为什么危险：旧缓存既能给出假告警，也能给出假清洁的实测结论。
 5. **一次「差点改错代码」的自我更正：2020 分值口径** —— 我一度在 notes 里判定 2020 卷面未印逐题满分、`SCORE_ORIGIN[2020]` 应从 `print` 改 `derive`。裁图回看题干页后推翻：p2 底部印有「（15）（本题满分 10 分）」，15–19 各 10 分、20–23 各 11 分（合计 94，与填空 9–14 的 6×5=30、选择 1–8 的 8×4=32 相加恰为 150，2012 notes 亦记 p8 印有「三、解答题：15～23 小题，共 94 分」）。**改的是 notes 与页角色表，`build_m3legacy.py` 未动**。教训：`SCORE_ORIGIN` 是关于「卷面印没印」的事实断言，改动必须回到卷面证据，不能采信上一段读图结论。
 6. **入库与机械复核** —— `data/math3/2012.json`、`2020.json` 各 23 题 / 150 分；搜索索引 3582 → **3628 条**；`gates.py` 9/9（G1 显示 math3 342、G5 3628 题缺字段 0、G7 1119 处占位符仍可解析）；`verify_data.py` ALL PASS；`audit_m3legacy.py` A1–A7 各年 PASS（2012 另报同题交叉 1 组）；`check_m3years.py` 15 年静态检查 0 错误；注册表 `dataYears` 由 13 → 15 卷，`paperYears` 保持 2009–2020。两卷均无图形引用，A7「提到图却无 media」命中 0，故本轮无 media/DSL 图形接线工作。
-7. **浏览器实测（本地 `python -m http.server`）** —— 2012 与 2020 全部 $23\times2=46$ 个题页逐页导航（清缓存后重跑）：`.katex-error` 0、裸 `@@M:` 0、`undefined`/`NaN` 文本 0、console 消息 0 条。
+7. **浏览器实测（先本地后线上）** —— 本地 `python -m http.server` 与线上 `https://zly060709.github.io/kaoyan-lab/` 各跑一遍 2012 / 2020 全部 $23\times2=46$ 个题页逐页导航：`.katex-error` 0、裸 `@@M:` 0、`undefined`/`NaN` 文本 0、console 消息 0 条。两轮都在**先 `unregister()` + `caches.delete()` 清掉 service worker 缓存**之后跑（见本节第 4 条），否则会读到旧 JSON。线上实测时 `sw.js` 已是 `kaoyan-v0.3.12`，注册表 `dataYears` 15 卷、`questionTotal=342`、全站合计 3628，数三科目页 15 个年份全部显示；`data/math3/figures/{2012,2020}.json` 与 `2012.analysis.json` 直连确实 404，但题页不发这些请求（`figureYears` 只有 2021–2023），实测期间非 2xx 请求 0 个——D107 的按册请求对新卷同样生效。
 8. **诚实边界** —— 影像为 130 dpi 渲染件，源 PDF 当前只在回收站目录，两处字级存疑行靠对已渲染 PNG 做 2.4–3.2× 放大裁切确认，未回到原始矢量源；未做 canvas 取色级像素比对；解析正文为逐字照录，其中 14 条照录/疑似笔误（含 2020-15 解析缺负号、p10 印作 $f(x,y)=f(x,y)+\tfrac{3\pi}{16}x$ 的自我相加、2012-23 密度自变量 $v/z$ 混用）分别登记在 `m32012_notes.md`、`m32020_notes.md`，未改写原文。
 
 ## 本轮（收敛⑪）图形接入的浏览器实测与四项真缺陷修复
@@ -195,4 +204,5 @@
 - 2026-11-05 · 收敛⑩b：**数三浏览器实测结清** —— 12 年 4254 个公式段 KaTeX 失败 0、45 题页 console 0；查出并修复 21 题答案栏裸 LaTeX（D105），`sw.js` → v0.3.10。
 - 2026-11-05 · 收敛⑩c：**12 幅原卷图形接入 + 2016 卷补复核入库**（math3 296 题、索引 3582 条，D106）；新增 A7「提到图却无 media」检，多拦出已入库的 2015-2、2018-16 两处丢图。
 - 2026-11-05 · 收敛⑪：**图形接入的浏览器实测 + 四处缺陷修复**（D107）—— 数三含图四卷 92 题页全量实测（0 KaTeX 失败 / 0 裸占位符 / 0 非 2xx），发布后**线上 296 题页全量复跑**同样 0 缺陷（12 幅 media 图 + 12 页 DSL 图形全部到位）；修题页无条件请求 `figures/{年}.json` 造成的每题 404（注册表新增 `figureYears`）、列表页与搜索索引泄漏 `@@M:` 占位符、搜索片段不渲染公式、`state.json` 总题量死值；`sw.js` → v0.3.11，门禁 9/9。
-- 2026-11-05 · 收敛⑫：**数学三 2012 / 2020 两卷定稿入库**（D108）—— 补齐 2012 解答 15–23 与 2020 第 9–23 题的解析与 meta，137 项逐题独立复算全部吻合（首轮 13 项不吻合经逐条查证全是复算器自身缺陷，未据此改动正确转录）；math3 由 13 卷 296 题达 **15 卷 342 题**（2009–2023 无缺口），索引 3582 → 3628 条；自查并修复 2012-23 的 `\mathrm{其他}` → `\text{其他}`（6 条 KaTeX strict 警告），并复现/登记「SW 旧缓存让实测读到旧 JSON」；自我更正一处 2020 分值口径误判（卷面确印逐题满分，`SCORE_ORIGIN` 不动）；本地 46 题页实测 0 缺陷 / console 0 条，`sw.js` → v0.3.12，门禁 9/9、`verify_data` ALL PASS、`audit_m3legacy` A1–A7 PASS。
+- 2026-11-05 · 收敛⑫：**数学三 2012 / 2020 两卷定稿入库**（D108）—— 补齐 2012 解答 15–23 与 2020 第 9–23 题的解析与 meta，137 项逐题独立复算全部吻合（首轮 13 项不吻合经逐条查证全是复算器自身缺陷，未据此改动正确转录）；math3 由 13 卷 296 题达 **15 卷 342 题**（2009–2023 无缺口），索引 3582 → 3628 条；自查并修复 2012-23 的 `\mathrm{其他}` → `\text{其他}`（6 条 KaTeX strict 警告），并复现/登记「SW 旧缓存让实测读到旧 JSON」；自我更正一处 2020 分值口径误判（卷面确印逐题满分，`SCORE_ORIGIN` 不动）；本地 46 题页实测 0 缺陷 / console 0 条，`sw.js` → v0.3.12，门禁 9/9、`verify_data` ALL PASS、`audit_m3legacy` A1–A7 PASS。发布 commit `d4348b1a`（29 文件、`--paths` 白名单）、Deploy Pages run success 后**线上 46 题页复跑同样 0 缺陷 / console 0 条**，线上注册表确认 math3 15 卷 342 题、全站 3628 题。
+- 2026-11-05 · 收敛⑬：**9 项门禁进 CI**（D109）—— 新增 `.github/workflows/checks.yml`（push/PR 跑 gates + verify_data + verify_figures + audit_m3legacy + check_m3years，全部只用标准库），首跑 run `42040372969` success（commit `7ea1db09`）；有意不改 `deploy-pages.yml` 的作业依赖（部署通道改动风险大，残留记在待改清单 #1）；修 `tools/publish_api.py` 的 `--tree-cache` 有效期比对（原把 tree sha 与 commit sha 比，永不命中 → 每次都被迫走必然截断的全量 tree 拉取），用合成缓存 dry-run 验证命中。
