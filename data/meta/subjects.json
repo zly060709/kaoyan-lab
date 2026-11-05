@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T16:26:39Z",
+  "updated_at": "2026-11-05T16:33:56Z",
   "subjects": [
     {
       "id": "politics",
@@ -42,7 +42,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 456,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "english",
@@ -90,7 +91,9 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 780,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": [],
+      "objectiveTotal": 675
     },
     {
       "id": "math1",
@@ -142,7 +145,21 @@
         "2012": 13
       },
       "questionTotal": 273,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "paperDir": "math1.pages"
     },
     {
       "id": "math2",
@@ -222,7 +239,25 @@
         "2023": 13
       },
       "questionTotal": 342,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "paperDir": "math2"
     },
     {
       "id": "math3",
@@ -234,19 +269,35 @@
       "status": "active",
       "dataDir": "math3",
       "dataYears": [
+        2009,
         2010,
         2011,
+        2012,
         2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
         2019,
+        2020,
         2021,
         2022,
         2023
       ],
       "yearCounts": {
+        "2009": 23,
         "2010": 23,
         "2011": 23,
+        "2012": 23,
         "2013": 23,
+        "2014": 23,
+        "2015": 23,
+        "2016": 23,
+        "2017": 23,
+        "2018": 23,
         "2019": 23,
+        "2020": 23,
         "2021": 22,
         "2022": 22,
         "2023": 22
@@ -285,8 +336,14 @@
         "2022": 15,
         "2023": 13
       },
-      "questionTotal": 158,
-      "analysisYears": []
+      "questionTotal": 342,
+      "analysisYears": [],
+      "figureYears": [
+        2021,
+        2022,
+        2023
+      ],
+      "paperDir": "math3"
     },
     {
       "id": "english2",
@@ -302,7 +359,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "cs408",
@@ -345,7 +403,8 @@
         2023,
         2024,
         2025
-      ]
+      ],
+      "figureYears": []
     },
     {
       "id": "mgt199",
@@ -418,7 +477,8 @@
         2024,
         2025,
         2026
-      ]
+      ],
+      "figureYears": []
     },
     {
       "id": "econ396",
@@ -434,7 +494,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "law397",
@@ -450,7 +511,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "law398",
@@ -466,7 +528,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "law498",
@@ -491,7 +554,9 @@
         "2022": 19
       },
       "questionTotal": 58,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": [],
+      "paperDir": "law498"
     },
     {
       "id": "med306",
@@ -507,7 +572,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "med307",
@@ -523,7 +589,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "edu311",
@@ -539,7 +606,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "psy312",
@@ -555,7 +623,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "his313",
@@ -571,7 +640,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "agri314",
@@ -587,7 +657,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "chem315",
@@ -603,7 +674,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "plant414",
@@ -619,7 +691,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "animal415",
@@ -635,8 +708,9 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     }
   ],
-  "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal 由 tools/sync_registry.py 依真实数据反推。"
+  "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal/objectiveTotal 由 tools/sync_registry.py 依真实数据反推；paperYears 取影像清单声明的页数（本机缺文件不代表仓库缺，真值由 CI 的 verify_pages.py 校），paperDir 是清单键的真实前缀，与题目目录 dataDir 可以不同名（数一：math vs math1.pages）。"
 }

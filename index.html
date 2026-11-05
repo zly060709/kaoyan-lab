@@ -575,7 +575,7 @@ function upgradeAnswers(scope){
     if(h!=null)e.innerHTML=h})}catch(e){}
 }
 function prevText(t,n){
-  const s=String(t||"").replace(/\s+/g," ").slice(0,n);
+  const s=String(t||"").replace(/@@M:[-\w]+:\d+@@/g,"").replace(/\s+/g," ").slice(0,n);
   if(((s.match(/\$/g)||[]).length)%2){const i=s.lastIndexOf("$");if(i>0)return s.slice(0,i)}
   return s;
 }
@@ -670,8 +670,9 @@ async function loadFigures(sid,year,qid){
   }catch(e){return []}
 }
 function paperKeys(man,sid,y){
-  const dir=dirOf(sid);
-  return Object.keys(man).filter(k=>{const b=k.split(":")[0];return k.endsWith(":"+y)&&(b===dir||b===sid||b===sid+".pages"||b===dir+".pages")});
+  const s=subjById(sid)||{};
+  const pats=[s.paperDir,s.dataDir,sid,sid+".pages",(s.dataDir||"")+".pages"].filter(Boolean);
+  return Object.keys(man).filter(k=>k.endsWith(":"+y)&&pats.some(p=>k.startsWith(p+":")));
 }
 
 /* ================= 外观（C04）/ 元信息（B16）/ 竞态（A09） ================= */

@@ -1,0 +1,32 @@
+name: Checks
+# 合同第 7 章验收：机械门禁必须在 CI 里跑。本工作流只做校验，不改 Deploy Pages 的部署通道。
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: G1-G10 机械门禁
+        run: python -X utf8 tools/gates.py
+      - name: 数据完整性 verify_data
+        run: python -X utf8 tools/verify_data.py
+      - name: 图形 DSL verify_figures
+        run: python -X utf8 tools/verify_figures.py
+      - name: 数三 legacy 卷审计 A1-A7
+        run: python -X utf8 tools/work/audit_m3legacy.py
+      - name: 数三各年静态检查
+        run: python -X utf8 tools/work/check_m3years.py
+      - name: 原卷影像清单对磁盘（全量检出才可信）
+        run: python -X utf8 tools/verify_pages.py

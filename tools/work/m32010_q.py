@@ -90,7 +90,7 @@ add(num=12, type="blank", score=4, pages=[2], anchor="第(12)题",
     options=[])
 
 add(num=13, type="blank", score=4, pages=[2], anchor="第(13)题",
-    stem=r"设 $A,B$ 为 3 阶方阵，且 $|A|=3,|B|=2,|A^{-1}+B|=2,，则 $|A+B^{-1}|=$______.",
+    stem=r"设 $A,B$ 为 3 阶方阵，且 $|A|=3,|B|=2,|A^{-1}+B|=2,$，则 $|A+B^{-1}|=$______.",
     options=[])
 
 add(num=14, type="blank", score=4, pages=[2], anchor="第(14)题",

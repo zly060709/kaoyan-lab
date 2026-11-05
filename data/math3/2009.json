@@ -1,0 +1,1119 @@
+{
+ "subject": "math3",
+ "year": 2009,
+ "paper": "数学（三）",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2009数学三真题及解析.pdf》（data/math3/pages/2009/，12 页）。2009–2020 年数学三结构：选择题 8×4=32 分、填空题 6×4=24 分、解答题 15–23 共 94 分，合计 150 分。解答题逐题分值照卷面题号后的「（本题满分 X 分）」印刷。题干/选项/答案/解析逐字照录，原卷的疑似排版或笔误（错字、漏字、半全角混用、上下标排版不一致）一律不改，逐条登记在 tools/work/m32009_notes.md（17 条编号记录）。本卷另有 5 幅原卷图形，为页面影像直接裁图（data/math3/2009.media.json），未重绘、未派生。",
+ "questions": [
+  {
+   "id": "math3-2009-1",
+   "subject": "math3",
+   "year": 2009,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "函数 $f(x)=\\dfrac{x-x^{3}}{\\sin\\pi x}$ 的可去间断点的个数为（ ）",
+   "options": [
+    "$1$",
+    "$2$",
+    "$3$",
+    "无穷多个"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】$f(x)=\\dfrac{x-x^{3}}{\\sin\\pi x}$\n\n则当 $x$ 取任何整数时，$f(x)$ 均无意义. 故 $f(x)$ 的间断点有无穷多个，但可去间断点为\n\n极限存在的点，故应是 $x-x^{3}=0$ 的解. $x_{1}=0$，$x_{2}=1,x_{3}=-1$，\n\n$\\lim\\limits_{x\\to0}\\dfrac{x-x^{3}}{\\sin\\pi x}=\\lim\\limits_{x\\to0}\\dfrac{1-3x^{2}}{\\pi\\cos\\pi x}=\\dfrac{1}{\\pi}$；\n\n$\\lim\\limits_{x\\to1}\\dfrac{x-x^{3}}{\\sin\\pi x}=\\lim\\limits_{x\\to1}\\dfrac{1-3x^{2}}{\\pi\\cos\\pi x}=\\dfrac{2}{\\pi}$；$\\lim\\limits_{x\\to-1}\\dfrac{x-x^{3}}{\\sin\\pi x}=\\lim\\limits_{x\\to-1}\\dfrac{1-3x^{2}}{\\pi\\cos\\pi x}=\\dfrac{2}{\\pi}$.\n\n故可去间断点为 3 个，即 $x_{1}=0$，$x_{2}=1,x_{3}=-1$. "
+    }
+   ],
+   "knowledge_points": [
+    "函数的间断点",
+    "可去间断点",
+    "极限计算"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     1
+    ],
+    "anchor": "第(1)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:8bc114b0e6c91bfb363c43903731569e3640d1883ce82317005733f6369b7c51"
+  },
+  {
+   "id": "math3-2009-2",
+   "subject": "math3",
+   "year": 2009,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "当 $x\\to0$ 时，$f(x)=x-\\sin ax$ 与 $g(x)=x^{2}\\ln(1-bx)$ 等价无穷小，则（ ）",
+   "options": [
+    "$a=1,b=-\\dfrac{1}{6}$",
+    "$a=1,b=\\dfrac{1}{6}$",
+    "$a=-1,b=-\\dfrac{1}{6}$",
+    "$a=-1,b=\\dfrac{1}{6}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】$\\sin ax=ax-\\dfrac{1}{6}(ax)^{3}+o\\left(x^{3}\\right)$，$\\ln(1-bx)\\sim-bx$,所以 $\\lim\\limits_{x\\to0}\\dfrac{x-\\sin ax}{x^{2}\\ln(1-bx)}=$\n\n$\\lim\\limits_{x\\to0}\\dfrac{x-ax+\\dfrac{1}{6}(ax)^{3}+o\\left(x^{3}\\right)}{x^{2}(-bx)}=\\lim\\limits_{x\\to0}\\dfrac{x-ax+\\dfrac{1}{6}(ax)^{3}+o\\left(x^{3}\\right)}{-bx^{3}}=1,a=1,\\dfrac{a^{3}}{-6}=b$，可以解得\n\n$a=1,b=-\\dfrac{1}{6}$. 所以选（A）"
+    }
+   ],
+   "knowledge_points": [
+    "等价无穷小",
+    "泰勒展开"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     1
+    ],
+    "anchor": "第(2)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:aa1244d81101ae5f771ddc580476d0a1bd8b7f675762ee07d28a4148ebf0bd67"
+  },
+  {
+   "id": "math3-2009-3",
+   "subject": "math3",
+   "year": 2009,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "使不等式 $\\displaystyle\\int_{1}^{x}\\dfrac{\\sin t}{t}dt>\\ln x$ 成立的 $x$ 的范围是（ ）",
+   "options": [
+    "$(0,1)$",
+    "$\\left(1,\\dfrac{\\pi}{2}\\right)$",
+    "$\\left(\\dfrac{\\pi}{2},\\pi\\right)$",
+    "$(\\pi,+\\infty)$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】原问题可转化为求\n\n$f(x)=\\displaystyle\\int_{1}^{x}\\dfrac{\\sin t}{t}dt-\\ln x=\\int_{1}^{x}\\dfrac{\\sin t}{t}dt-\\int_{1}^{x}\\dfrac{1}{t}dt=\\int_{1}^{x}\\dfrac{\\sin t-1}{t}dt=\\int_{x}^{1}\\dfrac{1-\\sin t}{t}dt>0$ 成立时 $x$ 的取值范围，由 $\\dfrac{1-\\sin t}{t}>0,t\\in(0,1)$ 时，知当 $x\\in(0,1)$ 时，$f(x)>0$，故应选（A）"
+    }
+   ],
+   "knowledge_points": [
+    "变限积分",
+    "积分不等式"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     1
+    ],
+    "anchor": "第(3)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:864372593e3f76b3133e0ae47121f4f4836aea2708faec41d96d7cf8cb381901"
+  },
+  {
+   "id": "math3-2009-4",
+   "subject": "math3",
+   "year": 2009,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $y=f(x)$ 在区间 $[-1,3]$ 上的图形如图所示，则函数 $F(x)=\\displaystyle\\int_{0}^{x}f(t)dt$ 为（ ） @@M:math3-2009-4:0@@",
+   "options": [
+    "@@M:math3-2009-4:1@@",
+    "@@M:math3-2009-4:2@@",
+    "@@M:math3-2009-4:3@@",
+    "@@M:math3-2009-4:4@@"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】$F(x)=\\displaystyle\\int_{0}^{x}f(t)dt$，$F(x_{0})$ 表示 $y=f(x)$ 与 $x$ 轴、$y$ 轴及 $x=x_{0}$ 所围成的图形的代数面积。由 $f(x)$ 的图形可知，$x\\in(-1,0)$ 时，$f(x)>0$ 且为常数,应有 $F(x)$ 单调递增且为直线函数. $x\\in(0,1)$ 时, $f(x)<0,F(x)\\leqslant0$,且单调递减. $x\\in(1,2)$ 时, $f(x)>0,F(x)$ 单调递增. $x\\in(2,3)$ 时, $f(x)=0,F(x)$ 为常函数. 正确选项为（D）"
+    }
+   ],
+   "knowledge_points": [
+    "变限积分的性质",
+    "定积分的几何意义"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     1,
+     2
+    ],
+    "anchor": "第(4)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:43a3b8d523c2f0ed4f764a04cfef8127833a6121054dc9c04dd6be91a03b9141"
+  },
+  {
+   "id": "math3-2009-5",
+   "subject": "math3",
+   "year": 2009,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{A}$、$\\boldsymbol{B}$ 均为 2 阶矩阵，$\\boldsymbol{A}^{*}$,$\\boldsymbol{B}^{*}$ 分别为 $\\boldsymbol{A}$、$\\boldsymbol{B}$ 的伴随矩阵. 若 $|\\boldsymbol{A}|=2$，$|\\boldsymbol{B}|=3$，则分块矩阵 $\\begin{pmatrix}\\boldsymbol{O}&\\boldsymbol{A}\\\\\\boldsymbol{B}&\\boldsymbol{O}\\end{pmatrix}$ 的伴随矩阵为（ ）",
+   "options": [
+    "$\\begin{pmatrix}\\boldsymbol{O}&3\\boldsymbol{B}^{*}\\\\2\\boldsymbol{A}^{*}&\\boldsymbol{O}\\end{pmatrix}$",
+    "$\\begin{pmatrix}\\boldsymbol{O}&2\\boldsymbol{B}^{*}\\\\3\\boldsymbol{A}^{*}&\\boldsymbol{O}\\end{pmatrix}$",
+    "$\\begin{pmatrix}\\boldsymbol{O}&3\\boldsymbol{A}^{*}\\\\2\\boldsymbol{B}^{*}&\\boldsymbol{O}\\end{pmatrix}$",
+    "$\\begin{pmatrix}\\boldsymbol{O}&2\\boldsymbol{A}^{*}\\\\3\\boldsymbol{B}^{*}&\\boldsymbol{O}\\end{pmatrix}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】由于分块矩阵 $\\begin{pmatrix}\\boldsymbol{O}&\\boldsymbol{A}\\\\\\boldsymbol{B}&\\boldsymbol{O}\\end{pmatrix}$ 的行列式$\\left|\\begin{matrix}\\boldsymbol{O}&\\boldsymbol{A}\\\\\\boldsymbol{B}&\\boldsymbol{O}\\end{matrix}\\right|=(-1)^{2\\times2}\\left|\\boldsymbol{A}\\right|\\left|\\boldsymbol{B}\\right|=2\\times3=6$，即分块矩阵可逆，根据公式 $\\boldsymbol{C}^{*}=\\left|\\boldsymbol{C}\\right|\\boldsymbol{C}^{-1}$ 可得$\\begin{pmatrix}\\boldsymbol{O}&\\boldsymbol{A}\\\\\\boldsymbol{B}&\\boldsymbol{O}\\end{pmatrix}^{*}=\\left|\\begin{matrix}\\boldsymbol{O}&\\boldsymbol{A}\\\\\\boldsymbol{B}&\\boldsymbol{O}\\end{matrix}\\right|\\begin{pmatrix}\\boldsymbol{O}&\\boldsymbol{A}\\\\\\boldsymbol{B}&\\boldsymbol{O}\\end{pmatrix}^{-1}$\n\n$=6\\begin{pmatrix}\\boldsymbol{O}&\\boldsymbol{B}^{-1}\\\\\\boldsymbol{A}^{-1}&\\boldsymbol{O}\\end{pmatrix}=6\\begin{pmatrix}\\boldsymbol{O}&\\dfrac{1}{|\\boldsymbol{B}|}\\boldsymbol{B}^{*}\\\\[2mm]\\dfrac{1}{|\\boldsymbol{A}|}\\boldsymbol{A}^{*}&\\boldsymbol{O}\\end{pmatrix}=6\\begin{pmatrix}\\boldsymbol{O}&\\dfrac{1}{3}\\boldsymbol{B}^{*}\\\\[2mm]\\dfrac{1}{2}\\boldsymbol{A}^{*}&\\boldsymbol{O}\\end{pmatrix}=\\begin{pmatrix}\\boldsymbol{O}&2\\boldsymbol{B}^{*}\\\\3\\boldsymbol{A}^{*}&\\boldsymbol{O}\\end{pmatrix}$，故答案为\n\n（B）"
+    }
+   ],
+   "knowledge_points": [
+    "分块矩阵",
+    "伴随矩阵"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(5)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:df13e078d39b58d4479b83f24bbd460ded2cbca81cc21f21916aab5b3672da8e"
+  },
+  {
+   "id": "math3-2009-6",
+   "subject": "math3",
+   "year": 2009,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{A}$，$\\boldsymbol{P}$ 均为 3 阶矩阵，$\\boldsymbol{P}^{T}$ 为 $\\boldsymbol{P}$ 的转置矩阵，且 $\\boldsymbol{P}^{T}\\boldsymbol{A}\\boldsymbol{P}=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$，若 $\\boldsymbol{P}=(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}),\\boldsymbol{Q}=(\\boldsymbol{\\alpha}_{1}+\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})$，则 $\\boldsymbol{Q}^{T}\\boldsymbol{A}\\boldsymbol{Q}$ 为（ ）",
+   "options": [
+    "$\\begin{pmatrix}2&1&0\\\\1&1&0\\\\0&0&2\\end{pmatrix}$",
+    "$\\begin{pmatrix}1&1&0\\\\1&2&0\\\\0&0&2\\end{pmatrix}$",
+    "$\\begin{pmatrix}2&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$",
+    "$\\begin{pmatrix}1&0&0\\\\0&2&0\\\\0&0&2\\end{pmatrix}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】$\\boldsymbol{Q}=(\\boldsymbol{\\alpha}_{1}+\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})=(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})\\begin{pmatrix}1&0&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}=(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})\\boldsymbol{E}_{12}(1)$，即：\n\n$\\boldsymbol{Q}=\\boldsymbol{P}\\boldsymbol{E}_{12}(1)$，$\\boldsymbol{Q}^{T}\\boldsymbol{A}\\boldsymbol{Q}=[\\boldsymbol{P}\\boldsymbol{E}_{12}(1)]^{T}\\boldsymbol{A}[\\boldsymbol{P}\\boldsymbol{E}_{12}(1)]=\\boldsymbol{E}_{12}^{T}(1)[\\boldsymbol{P}^{T}\\boldsymbol{A}\\boldsymbol{P}]\\boldsymbol{E}_{12}(1)$\n\n$=\\boldsymbol{E}_{12}^{T}(1)\\begin{pmatrix}1&0&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}\\boldsymbol{E}_{12}(1)=\\begin{pmatrix}1&1&0\\\\0&1&0\\\\0&0&1\\end{pmatrix}\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}\\begin{pmatrix}1&1&0\\\\0&1&0\\\\0&0&1\\end{pmatrix}=\\begin{pmatrix}2&1&0\\\\1&1&0\\\\0&0&2\\end{pmatrix}$. "
+    }
+   ],
+   "knowledge_points": [
+    "正交变换",
+    "初等矩阵",
+    "二次型矩阵"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(6)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:4f6e8262dfd1868cc2ef807c60cd336369b3abb1c5fd35a834a8201383e6c2e6"
+  },
+  {
+   "id": "math3-2009-7",
+   "subject": "math3",
+   "year": 2009,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "设事件 $A$ 与事件 $B$ 互不相容，则（ ）",
+   "options": [
+    "$P(\\overline{A}\\,\\overline{B})=0$",
+    "$P(AB)=P(A)P(B)$",
+    "$P(A)=1-P(B)$",
+    "$P(\\overline{A}\\cup\\overline{B})=1$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】因为 $A,B$ 互不相容，所以 $P(AB)=0$. \n\n（A）$P=(\\overline{A}\\,\\overline{B})=P(\\overline{A\\cup B})=1-P(A\\cup B)$，因为 $P(A\\cup B)$ 不一定等于 1，所以（A）不正确；（B）当 $P(A),P(B)$ 不为 0 时，（B）不成立，故排除；（C）只有当 $A,B$ 互为对立事件的时候才成立，故排除；（D）$P=(\\overline{A}\\cup\\overline{B})=P(\\overline{AB})=1-P(AB)=1$，故（D）正确."
+    }
+   ],
+   "knowledge_points": [
+    "互不相容事件",
+    "对立事件",
+    "概率的性质"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(7)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:cca55534dc9d1b0a91c5071d9196ba5d9166e5b5c16ba49d09d363ff5f55224b"
+  },
+  {
+   "id": "math3-2009-8",
+   "subject": "math3",
+   "year": 2009,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "设随机变量 $X$ 与 $Y$ 相互独立，且 $X$ 服从标准正态分布 $N(0,1)$,$Y$ 的概率分布为 $P\\{Y=0\\}=P\\{Y=1\\}=\\dfrac{1}{2}$，记 $F_{z}(z)$ 为随机变量 $Z=XY$ 的分布函数，则函数 $F_{z}(z)$ 的间断点个数为（ ）",
+   "options": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$3$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】$F_{z}(z)=P(XY\\leqslant z)=P(XY\\leqslant z|Y=0)P(Y=0)+P(XY\\leqslant z|y=1)P(Y=1)$\n\n$=\\dfrac{1}{2}[P(XY\\leqslant z|Y=0)+P(XY\\leqslant z|Y=1)]$\n\n$=\\dfrac{1}{2}[P(X\\cdot0\\leqslant z|Y=0)+P(XY\\leqslant z|Y=1)]$\n\n由于 $X$，$Y$ 独立：得 $F_{z}(z)=\\dfrac{1}{2}[P(X\\cdot0\\leqslant z)+P(X\\leqslant z)]$. \n\n（1）若 $z<0$，则 $F_{z}(z)=\\dfrac{1}{2}\\Phi(z)$. （2）若 $z\\geqslant0$，则 $F_{z}(z)=\\dfrac{1}{2}(1+\\Phi(z))$. \n\n因此，$z=0$ 为间断点，故选（B）."
+    }
+   ],
+   "knowledge_points": [
+    "随机变量函数的分布",
+    "分布函数的间断点",
+    "标准正态分布"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     2
+    ],
+    "anchor": "第(8)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ee4693d1a80b89337242817bd6b8be2191b4e5ca7bedccbcc95c38e02ed2aef3"
+  },
+  {
+   "id": "math3-2009-9",
+   "subject": "math3",
+   "year": 2009,
+   "num": 9,
+   "type": "blank",
+   "score": 4,
+   "stem": "$\\lim\\limits_{x\\to0}\\dfrac{e-e^{\\cos x}}{\\sqrt[3]{1+x^{2}}-1}=$________.",
+   "options": [],
+   "answer": "\\dfrac{3e}{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{3e}{2}$. \n\n【解析】$\\lim\\limits_{x\\to0}\\dfrac{e-e^{\\cos x}}{\\sqrt[3]{1+x^{2}}-1}=\\lim\\limits_{x\\to0}\\dfrac{e\\left(1-e^{\\cos x-1}\\right)}{\\sqrt[3]{1+x^{2}}-1}=\\lim\\limits_{x\\to0}\\dfrac{-e(\\cos x-1)}{\\dfrac{x^{2}}{3}}=\\lim\\limits_{x\\to0}\\dfrac{e\\cdot\\dfrac{x^{2}}{2}}{\\dfrac{x^{2}}{3}}=\\dfrac{3e}{2}$"
+    }
+   ],
+   "knowledge_points": [
+    "泰勒展开求极限",
+    "等价无穷小替换"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(9)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d8957f6753a7ca4c29b03f7934456eff1708fc24e7637ec320ee9cf18869f12e"
+  },
+  {
+   "id": "math3-2009-10",
+   "subject": "math3",
+   "year": 2009,
+   "num": 10,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $z=(x+e^{y})^{x}$，则 $\\dfrac{\\partial z}{\\partial x}\\Big|_{(1,0)}=$________.",
+   "options": [],
+   "answer": "2\\ln 2+1",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$2\\ln2+1$. \n\n【解析】由 $z=(x+e^{y})^{x}$，故 $z(x,0)=(x+1)^{x}$\n\n$\\dfrac{\\partial z}{\\partial x}\\Big|_{y=0}=[(x+1)^{x}]'=[e^{x\\ln(1+x)}]'=e^{x\\ln(1+x)}\\left[\\ln(1+x)+\\dfrac{x}{1+x}\\right]$\n\n代入 $x=1$ 得，$\\dfrac{\\partial z}{\\partial x}\\Big|_{(1,0)}=e^{\\ln2}\\left(\\ln2+\\dfrac{1}{2}\\right)=2\\ln2+1$. "
+    }
+   ],
+   "knowledge_points": [
+    "偏导数",
+    "多元复合函数求导"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(10)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:5935d3ce5504a62d728585aa9a82ff01a18b90144627a9cb210ec91c195be87a"
+  },
+  {
+   "id": "math3-2009-11",
+   "subject": "math3",
+   "year": 2009,
+   "num": 11,
+   "type": "blank",
+   "score": 4,
+   "stem": "幂级数 $\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{e^{n}-(-1)^{n}}{n^{2}}x^{n}$ 的收敛半径为________.",
+   "options": [],
+   "answer": "\\dfrac{1}{e}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{1}{e}$\n\n【解析】由题意知，$a_{n}=\\dfrac{e^{n}-(-1)^{n}}{n^{2}}>0$\n\n$\\left|\\dfrac{a_{n+1}}{a_{n}}\\right|=\\dfrac{e^{n+1}-(-1)^{n+1}}{(n+1)^{2}}\\cdot\\dfrac{n^{2}}{e^{n}-(-1)^{n}}=\\dfrac{n^{2}}{(n+1)^{2}}\\cdot\\dfrac{e^{n+1}\\left[1-\\left(-\\dfrac{1}{e}\\right)^{n+1}\\right]}{e^{n}\\left[1-\\left(-\\dfrac{1}{e}\\right)^{n+1}\\right]}\\to e\\,(n\\to\\infty)$\n\n所以，该幂级数的收敛半径为 $\\dfrac{1}{e}$. "
+    }
+   ],
+   "knowledge_points": [
+    "幂级数的收敛半径",
+    "比值判别法"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(11)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ea2f18c5b230ab01ded9ac80e2cfb6230d4135849848b66f0d7545911c27d970"
+  },
+  {
+   "id": "math3-2009-12",
+   "subject": "math3",
+   "year": 2009,
+   "num": 12,
+   "type": "blank",
+   "score": 4,
+   "stem": "设某产品的需求函数为 $Q=Q(P)$，其对应价格 $P$ 的弹性 $\\varepsilon=0.2$，则当需求量为 10000 件时，价格增加 1 元会使产品收益增加________元.",
+   "options": [],
+   "answer": "8000",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】8000\n\n【解析】由题意知 $\\varepsilon=-\\dfrac{P}{Q}\\dfrac{dQ}{dP}=0.2$，收益函数为 $R=PQ(P)$，收益微分为\n\n$dR=PdQ+QdP=Q(1-\\varepsilon)dP$ 代入得 $dR=8000$. "
+    }
+   ],
+   "knowledge_points": [
+    "需求价格弹性",
+    "收益函数"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(12)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:9321465769b4867220434abbccb477156169ba737e65eb8ce947e72b8f855292"
+  },
+  {
+   "id": "math3-2009-13",
+   "subject": "math3",
+   "year": 2009,
+   "num": 13,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{\\alpha}=(1,1,1)^{T}$,$\\boldsymbol{\\beta}=(1,0,k)^{T}$，若矩阵 $\\boldsymbol{\\alpha}\\boldsymbol{\\beta}^{T}$ 相似于 $\\begin{pmatrix}3&0&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}$，则 $k=$________.",
+   "options": [],
+   "answer": "2",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】2. \n\n【解析】$\\boldsymbol{\\alpha}\\boldsymbol{\\beta}^{T}$ 相似于 $\\begin{pmatrix}3&0&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}$，根据相似矩阵有相同的特征值，得到 $\\boldsymbol{\\alpha}\\boldsymbol{\\beta}^{T}$ 的特征值为 $3,0,0$. \n\n而 $\\boldsymbol{\\alpha}^{T}\\boldsymbol{\\beta}$ 为矩阵 $\\boldsymbol{\\alpha}\\boldsymbol{\\beta}^{T}$ 的对角元素之和，所以 $1+k=3+0+0,\\therefore k=2$. "
+    }
+   ],
+   "knowledge_points": [
+    "相似矩阵",
+    "矩阵的迹",
+    "秩 1 矩阵的特征值"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(13)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:cb2c0e378874bbfee9a72fa1f7ff07afef5e7151b41a88de475127f0bd25fd25"
+  },
+  {
+   "id": "math3-2009-14",
+   "subject": "math3",
+   "year": 2009,
+   "num": 14,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $X_{1},X_{2},\\cdots,X_{m}$ 为来自二项分布总体 $B(n,p)$ 的简单随机样本，$\\overline{X}$ 和 $S^{2}$ 分别为样本 均值和样本方差. 记统计量 $T=\\overline{X}-S^{2}$，则 $ET=$________.",
+   "options": [],
+   "answer": "np^2",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$np^{2}$. \n\n【解析】由 $ET=E(\\overline{X}-S^{2})=E\\overline{X}-ES^{2}=np-np(1-p)=np^{2}$. "
+    }
+   ],
+   "knowledge_points": [
+    "样本均值与样本方差",
+    "二项分布的期望"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(14)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:5b61bb50928579cc367d7a38e7145c3d6a99e40e35ff0445a427e11809e0e9b5"
+  },
+  {
+   "id": "math3-2009-15",
+   "subject": "math3",
+   "year": 2009,
+   "num": 15,
+   "type": "essay",
+   "score": 9,
+   "stem": "（本题满分为 9 分）求二元函数 $f(x,y)=x^{2}(2+y^{2})+y\\ln y$ 极值.",
+   "options": [],
+   "answer": "f(0,1/e)=-1/e",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$f'_{x}(x,y)=2x(2+y^{2})=0$, $f'_{y}(x,y)=2x^{2}y+\\ln y+1=0$，驻点为\n\n$x=0,y=\\dfrac{1}{e}$. $f''_{xx}=2(2+y^{2}),f''_{yy}=2x^{2}+\\dfrac{1}{y},f''_{xy}=4xy$,则\n\n$f''_{xx}\\Big|_{\\left(0,\\frac{1}{e}\\right)}=2\\left(2+\\dfrac{1}{e^{2}}\\right)$, $f''_{xy}\\Big|_{\\left(0,\\frac{1}{e}\\right)}=0$, $f''_{yy}\\Big|_{\\left(0,\\frac{1}{e}\\right)}=e$ 在驻点，\n\n$A=f''_{xx}>0,AC-B^{2}=f''_{xx}f''_{yy}-(f''_{xy})^{2}>0$，二元函数存在极小值 $f\\left(0,\\dfrac{1}{e}\\right)=-\\dfrac{1}{e}$"
+    }
+   ],
+   "knowledge_points": [
+    "二元函数的极值",
+    "极值的充分条件"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(15)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:46e30768c432ac8ab63e8f17880287ed732c4f2ac4960952a36d265efdf4f924"
+  },
+  {
+   "id": "math3-2009-16",
+   "subject": "math3",
+   "year": 2009,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）计算不定积分 $\\displaystyle\\int\\ln\\Bigl(1+\\sqrt{\\dfrac{1+x}{x}}\\Bigr)dx\\,(x>0)$.",
+   "options": [],
+   "answer": "x\\ln(1+\\sqrt{(1+x)/x})+\\frac{1}{2}\\ln(\\sqrt{1+x}+\\sqrt{x})-\\frac{1}{2}(\\sqrt{x(x+1)}-x)+C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】令 $\\sqrt{\\dfrac{1+x}{x}}=t$ 得 $x=\\dfrac{1}{t^{2}-1}$，\n\n原式 $=\\displaystyle\\int\\ln(1+t)d(\\dfrac{1}{t^{2}-1})=\\dfrac{\\ln(1+t)}{t^{2}-1}-\\int\\dfrac{1}{t^{2}-1}\\cdot\\dfrac{1}{t+1}dt$\n\n$=\\dfrac{\\ln(1+t)}{t^{2}-1}-\\displaystyle\\int\\left(\\dfrac{1}{4(t-1)}+\\dfrac{-1}{4(t+1)}+\\dfrac{-1}{2(t+1)^{2}}\\right)dt=\\dfrac{\\ln(1+t)}{t^{2}-1}+\\dfrac{1}{4}\\ln\\Bigl|\\dfrac{t+1}{t-1}\\Bigr|-\\dfrac{1}{2(t+1)}+C$\n\n$=x\\ln(1+\\sqrt{\\dfrac{1+x}{x}})+\\dfrac{1}{4}\\ln\\dfrac{\\sqrt{\\dfrac{1+x}{x}}+1}{\\sqrt{\\dfrac{1+x}{x}}-1}-\\dfrac{1}{2(\\sqrt{\\dfrac{1+x}{x}}+1)}+C$\n\n$=x\\ln(1+\\sqrt{\\dfrac{1+x}{x}})+\\dfrac{1}{2}\\ln(\\sqrt{1+x}+\\sqrt{x})-\\dfrac{1}{2}(\\sqrt{x(x+1)}-x)+C$. "
+    }
+   ],
+   "knowledge_points": [
+    "不定积分换元",
+    "分部积分",
+    "有理函数积分"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(16)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:9879a6e8d2d1686eda5a101ad74dfa29f0e70cbcdb969bcdee5e08dc64640776"
+  },
+  {
+   "id": "math3-2009-17",
+   "subject": "math3",
+   "year": 2009,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）计算二重积分 $\\displaystyle\\iint\\limits_{D}(x-y)dxdy$，其中 $D=\\{(x,y)\\,|\\,(x-1)^{2}+(y-1)^{2}\\leqslant2,\\ y\\geqslant x\\}$. ",
+   "options": [],
+   "answer": "-8/3",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】由 $(x-1)^{2}+(y-1)^{2}\\leqslant2$ 得 $r\\leqslant2(\\sin\\theta+\\cos\\theta)$，\n\n所以 $\\displaystyle\\iint\\limits_{D}(x-y)dxdy=\\int_{\\frac{\\pi}{4}}^{\\frac{3\\pi}{4}}d\\theta\\int_{0}^{2(\\sin\\theta+\\cos\\theta)}(r\\cos\\theta-r\\sin\\theta)rdr$\n\n$=\\displaystyle\\int_{\\frac{\\pi}{4}}^{\\frac{3\\pi}{4}}\\left[\\dfrac{1}{3}(\\cos\\theta-\\sin\\theta)r^{3}\\Big|_{0}^{2(\\sin\\theta+\\cos\\theta)}\\right]d\\theta$\n\n$=\\displaystyle\\int_{\\frac{\\pi}{4}}^{\\frac{3\\pi}{4}}\\dfrac{8}{3}(\\cos\\theta-\\sin\\theta).(\\sin\\theta+\\cos\\theta)^{3}d\\theta$\n\n$=\\dfrac{8}{3}\\displaystyle\\int_{\\frac{\\pi}{4}}^{\\frac{3\\pi}{4}}(\\sin\\theta+\\cos\\theta)^{3}d(\\sin\\theta+\\cos\\theta)=\\dfrac{8}{3}\\times\\dfrac{1}{4}(\\sin\\theta+\\cos\\theta)^{4}\\Big|_{\\frac{\\pi}{4}}^{\\frac{3\\pi}{4}}=-\\dfrac{8}{3}$. "
+    }
+   ],
+   "knowledge_points": [
+    "二重积分",
+    "极坐标"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(17)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e96a502dc935bc6293d6f9e82c8a4f4f06a491511abb133bdc86d5a2344b675d"
+  },
+  {
+   "id": "math3-2009-18",
+   "subject": "math3",
+   "year": 2009,
+   "num": 18,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）(I) 证明拉格朗日中值定理：若函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 可导，则存在 $\\zeta\\in(a,b)$，使得 $f(b)-f(a)=f'(\\zeta)(b-a)$. （II)证明：若函数 $f(x)$ 在 $x=0$ 处连续，在 $(0,\\delta)(\\delta>0)$ 内可导，且 $\\lim\\limits_{x\\to0^{+}}f'(x)=A$ 则 $f'_{+}(0)$ 存在，且 $f'_{+}(0)=A$. ",
+   "options": [],
+   "answer": "证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】(I) 过 $(a,f(a))$ 与 $(b,f(b))$ 的直线方程为 $f(x)=f(a)+\\dfrac{f(b)-f(a)}{b-a}(x-a)$，\n\n取辅助函数 $F(x)=f(x)-f(a)-\\dfrac{f(b)-f(a)}{b-a}(x-a)$，则 $F(a)=F(b)$；\n\n$F(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $F'(x)=f'(x)-\\dfrac{f(b)-f(a)}{b-a}$. \n\n由罗尔定理，存在 $\\zeta\\in(a,b)$，使 $F'(\\zeta)=0$，即\n\n$f'(\\zeta)-\\dfrac{f(b)-f(a)}{b-a}=0$，或 $f(b)-f(a)=f'(\\zeta)(b-a)$. \n\n（II）任取 $x\\in(0,\\delta)$，则函数 $f(x)$ 满足：\n\n在闭区间 $[0,x]$ 上连续，开区间 $(0,x)$ 内可导，由拉格朗日中值定理可得：\n\n$\\exists\\eta\\in(0,x)\\subset(0,\\delta)$，使得 $f'(\\eta)=\\dfrac{f(x)-f(0)}{x-0}$，\n\n两边取 $x\\to0^{+}$ 时的极限，注意到 $\\lim\\limits_{x\\to0^{+}}f'(x)=A$，可得\n\n$f'_{+}(0)=\\lim\\limits_{x\\to0^{+}}\\dfrac{f(x)-f(0)}{x-0}=\\lim\\limits_{x\\to0^{+}}f'(\\eta)=A$，\n\n于是 $f'_{+}(0)$ 存在，且 $f'_{+}(0)=A$. "
+    }
+   ],
+   "knowledge_points": [
+    "罗尔定理",
+    "拉格朗日中值定理",
+    "单侧导数"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     3
+    ],
+    "anchor": "第(18)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e06fe1c66717dd4bc14ab3742037894983eba48e91aaa302149b82dba8721cb7"
+  },
+  {
+   "id": "math3-2009-19",
+   "subject": "math3",
+   "year": 2009,
+   "num": 19,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）设曲线 $y=f(x)$，其中 $y=f(x)$ 是可导函数，且 $f(x)>0$，已知 曲线 $y=f(x)$ 与直线 $y=0,x=1$ 及 $x=t\\,(t>1)$ 所围成的曲边梯形，绕 $x$ 轴旋转一周所得的 立体体积值是曲边梯形面积值的 $\\pi t$ 倍，求该曲线方程.",
+   "options": [],
+   "answer": "2y+1/\\sqrt{y}-3x=0",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】旋转体的体积为 $V=\\displaystyle\\int_{1}^{t}\\pi f(x)^{2}dx=\\pi\\int_{1}^{t}f(x)^{2}dx$，\n\n曲边梯形的面积为：$s=\\displaystyle\\int_{1}^{t}f(x)dx$，则由题可知\n\n$V=\\pi ts\\Rightarrow\\pi\\int_{1}^{t}f(x)^{2}dx=\\pi t\\int_{1}^{t}f(x)dx\\Rightarrow\\int_{1}^{t}f(x)^{2}dx=t\\int_{1}^{t}f(x)dx$. \n\n两边对 $t$ 求导可得 $f(x)^{2}=\\int_{1}^{t}f(x)dx+tf(t)\\Rightarrow f(t)^{2}-tf(t)=\\int_{1}^{t}f(x)dx$\n\n继续求导可得 $2f(t)f'(t)-f(t)-tf'(t)=f(t)$，化简可得\n\n$(2f(t)-t)f'(t)=2f(t)$ 记 $f(t)=y$，则 $\\dfrac{dt}{dy}+\\dfrac{1}{2y}t=1$，解之得 $t=Cy^{-\\frac{1}{2}}+\\dfrac{2}{3}y$. \n\n在（V）式中令 $t=1$，则 $f^{2}(1)-f(1)=0$,且 $f(t)>0,\\therefore f(1)=1$，代入 $t=Cy^{-\\frac{1}{2}}+\\dfrac{2}{3}y$ 得\n\n$C=\\dfrac{1}{3}$, $\\therefore t=\\dfrac{1}{3}\\left(\\dfrac{1}{\\sqrt{y}}+2y\\right)$. 所以该曲线方程为：$2y+\\dfrac{1}{\\sqrt{y}}-3x=0$. "
+    }
+   ],
+   "knowledge_points": [
+    "旋转体体积",
+    "一阶线性微分方程"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     4
+    ],
+    "anchor": "第(19)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1d589f4ab99ad696391d1de0310d708ec0e76e525dc0888d1db2b1fcd56e2561"
+  },
+  {
+   "id": "math3-2009-20",
+   "subject": "math3",
+   "year": 2009,
+   "num": 20,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设 $\\boldsymbol{A}=\\begin{pmatrix}1&-1&-1\\\\-1&1&1\\\\0&-4&-2\\end{pmatrix}$,$\\boldsymbol{\\zeta}_{1}=\\begin{pmatrix}-1\\\\1\\\\-2\\end{pmatrix}$（I）求满足 $\\boldsymbol{A}\\boldsymbol{\\zeta}_{2}=\\boldsymbol{\\zeta}_{1},\\boldsymbol{A}^{2}\\boldsymbol{\\zeta}_{3}=\\boldsymbol{\\zeta}_{1}$ 的所有向量 $\\boldsymbol{\\zeta}_{2},\\boldsymbol{\\zeta}_{3}$；（II）对（I）中的任一向量 $\\boldsymbol{\\zeta}_{2},\\boldsymbol{\\zeta}_{3}$，证明：$\\boldsymbol{\\zeta}_{1},\\boldsymbol{\\zeta}_{2},\\boldsymbol{\\zeta}_{3}$ 线性无关.",
+   "options": [],
+   "answer": "(I) \\zeta_2=(-1/2,1/2,0)^T+k_1(-1/2,-1/2,1)^T, \\zeta_3=(-1/2,0,0)^T+k_2(-1,1,0)^T+k_3(0,0,1)^T (k_i 为任意常数); (II) 证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】(I) 解方程 $\\boldsymbol{A}\\boldsymbol{\\zeta}_{2}=\\boldsymbol{\\zeta}_{1}$，对增广矩阵 $\\left(\\boldsymbol{A},\\boldsymbol{\\zeta}_{1}\\right)$ 做初等行变换，\n\n$\\left(\\boldsymbol{A},\\boldsymbol{\\zeta}_{1}\\right)\\to\\begin{pmatrix}1&-1&-1&-1\\\\-1&1&1&1\\\\0&-4&-2&-2\\end{pmatrix}\\to\\begin{pmatrix}1&-1&-1&-1\\\\0&1&\\frac{1}{2}&\\frac{1}{2}\\\\0&0&0&0\\end{pmatrix}\\to\\begin{pmatrix}1&0&-\\frac{1}{2}&-\\frac{1}{2}\\\\0&1&\\frac{1}{2}&\\frac{1}{2}\\\\0&0&0&0\\end{pmatrix}$\n\n解得，$\\boldsymbol{\\zeta}_{2}=\\begin{pmatrix}-\\frac{1}{2}\\\\\\frac{1}{2}\\\\0\\end{pmatrix}+k_{1}\\begin{pmatrix}-\\frac{1}{2}\\\\-\\frac{1}{2}\\\\1\\end{pmatrix}$，其中 $k_{1}$ 为任意常数. 解方程 $\\boldsymbol{A}^{2}\\boldsymbol{\\zeta}_{3}=\\boldsymbol{\\zeta}_{1}$，\n\n$\\boldsymbol{A}^{2}=\\begin{pmatrix}2&2&0\\\\-2&-2&0\\\\4&4&0\\end{pmatrix}$，对增广矩阵 $\\left(\\boldsymbol{A}^{2},\\boldsymbol{\\zeta}_{1}\\right)$ 做初等行变换，\n\n$\\left(\\boldsymbol{A}^{2},\\boldsymbol{\\zeta}_{1}\\right)\\to\\begin{pmatrix}2&2&0&-1\\\\-2&-2&0&1\\\\4&4&0&-2\\end{pmatrix}\\to\\begin{pmatrix}1&1&0&-\\frac{1}{2}\\\\0&0&0&0\\\\0&0&0&0\\end{pmatrix}$\n\n解得，$\\boldsymbol{\\zeta}_{3}=\\begin{pmatrix}-\\frac{1}{2}\\\\0\\\\0\\end{pmatrix}+k_{2}\\begin{pmatrix}-1\\\\1\\\\0\\end{pmatrix}+k_{3}\\begin{pmatrix}0\\\\0\\\\1\\end{pmatrix}$，其中 $k_{2},k_{3}$ 为任意常数.\n\n（II）证明：由于\n\n$\\left|\\begin{matrix}-1&-\\frac{1}{2}+\\frac{1}{2}k_{1}&-\\frac{1}{2}-k_{2}\\\\ 1&\\frac{1}{2}-\\frac{1}{2}k_{1}&k_{2}\\\\ -2&k_{1}&k_{3}\\end{matrix}\\right|=\\left|\\begin{matrix}0&0&-\\frac{1}{2}\\\\ 1&\\frac{1}{2}-\\frac{1}{2}k_{1}&k_{2}\\\\ -2&k_{1}&k_{3}\\end{matrix}\\right|=-\\dfrac{1}{2}(k_{1}+1-k_{1})=-\\dfrac{1}{2}\\neq0$. \n\n故 $\\boldsymbol{\\zeta}_{1},\\boldsymbol{\\zeta}_{2},\\boldsymbol{\\zeta}_{3}$ 线性无关."
+    }
+   ],
+   "knowledge_points": [
+    "非齐次线性方程组的解",
+    "线性无关的证明"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     4
+    ],
+    "anchor": "第(20)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:dab280bbe56d62bb468c87eb81cd4cd7aab50f748ddd1fd6f5ad6f3a1f79ec65"
+  },
+  {
+   "id": "math3-2009-21",
+   "subject": "math3",
+   "year": 2009,
+   "num": 21,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设二次型 $f(x_{1},x_{2},x_{3})=ax_{1}^{2}+ax_{2}^{2}+(a-1)x_{3}^{2}+2x_{1}x_{3}-2x_{2}x_{3}$（I）求二次型 $f$ 的矩阵的所有特征值；（II）若二次型 $f$ 的规范形为 $y_{1}^{2}+y_{2}^{2}$，求 $a$ 的值.",
+   "options": [],
+   "answer": "(I) 特征值为 a-2, a, a+1; (II) a=2",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】(I) $\\boldsymbol{A}=\\begin{pmatrix}a&0&1\\\\0&a&-1\\\\1&-1&a-1\\end{pmatrix}$. \n\n$|\\lambda\\boldsymbol{E}-\\boldsymbol{A}|=\\left|\\begin{matrix}\\lambda-a&0&-1\\\\0&\\lambda-a&1\\\\-1&1&\\lambda-a+1\\end{matrix}\\right|=\\left|\\begin{matrix}\\lambda-a&\\lambda-a&0\\\\0&\\lambda-a&1\\\\-1&1&\\lambda-a+1\\end{matrix}\\right|=\\left|\\begin{matrix}\\lambda-a&0&0\\\\0&\\lambda-a&1\\\\-1&2&\\lambda-a+1\\end{matrix}\\right|$\n\n$=(\\lambda-a)\\left((\\lambda-a)^{2}+(\\lambda-a)-2\\right)=(\\lambda-a)(\\lambda-a-1)(\\lambda-a+2)$. \n\n所以二次型的矩阵 $\\boldsymbol{A}$ 的特征值为 $a-2,a,a+1$. \n\n（II）若规范形为 $y_{1}^{2}+y_{2}^{2}$，说明有两个特征值为正，一个为 0，当 $a=2$ 时，三个特征值为\n\n$0,2,3$，得二次型的规范形为 $y_{1}^{2}+y_{2}^{2}$. "
+    }
+   ],
+   "knowledge_points": [
+    "二次型的矩阵",
+    "特征值",
+    "规范形"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     4
+    ],
+    "anchor": "第(21)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:c7d2b4b66bd5c796796fe1d5fb0f8eb7af1ec0f1b56246b6a67b6b4e7d25ab43"
+  },
+  {
+   "id": "math3-2009-22",
+   "subject": "math3",
+   "year": 2009,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设二维随机变量 $(X,Y)$ 的概率密度为 $f(x,y)=\\begin{cases}e^{-x}&0<y<x\\\\ 0&\\text{其他}\\end{cases}$（I）求条件概率密度 $f_{Y|X}(y|x)$. （II）求条件概率 $P=[X\\leqslant1|Y\\leqslant1]$. ",
+   "options": [],
+   "answer": "(I) f_{Y|X}(y|x)=1/x (0<y<x), 其他为 0; (II) (e-2)/(e-1)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】(I) $f(x,y)=\\begin{cases}e^{-x}&0<y<x\\\\0&\\text{其他}\\end{cases}$ 得其边缘密度函数\n\n$f_{x}(x)=\\displaystyle\\int_{0}^{x}e^{-x}dy=xe^{-x}\\quad x>0$. \n\n故 $f_{y|x}(y|x)=\\dfrac{f(x,y)}{f_{x}(x)}=\\dfrac{1}{x}\\quad 0<y<x$,\n\n即 $f_{y|x}(y|x)=\\begin{cases}\\dfrac{1}{x}&0<y<x\\\\0&\\text{其他}\\end{cases}$. \n\n（II）$P[X\\leqslant1,Y\\leqslant1]=\\displaystyle\\iint\\limits_{x\\leqslant1,y\\leqslant1}f(x,y)dxdy=\\int_{0}^{1}dx\\int_{0}^{x}e^{-x}dy=\\int_{0}^{1}xe^{-x}dx=1-2e^{-1}$,\n\n$f_{Y}(y)=\\displaystyle\\int_{y}^{+\\infty}e^{-x}dx=-e^{-x}\\Big|_{y}^{+\\infty}=e^{-y},y>0$,\n\n所以 $P[Y\\leqslant1]=\\displaystyle\\int_{0}^{1}e^{-y}dy=-e^{-y}\\Big|_{0}^{1}=-e^{-1}+1=1-e^{-1}$,\n\n所以 $P[X\\leqslant1,Y\\leqslant1]=\\dfrac{1-2e^{-1}}{1-e^{-1}}=\\dfrac{e-2}{e-1}$. "
+    }
+   ],
+   "knowledge_points": [
+    "条件概率密度",
+    "边缘密度",
+    "条件概率"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     4
+    ],
+    "anchor": "第(22)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:414ded9343bc119bddfde56026ab0d3a2aa4395be180394f22992f5f0569b6f7"
+  },
+  {
+   "id": "math3-2009-23",
+   "subject": "math3",
+   "year": 2009,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）袋中有一个红球，两个黑球，三个白球，现有放回的从袋中取两次，每次取一球，以 $X$，$Y$，$Z$ 分别表示两次取球的红、黑、白球的个数. （I）求 $P\\{X=1|Z=0\\}$.（II）求二维随机变量 $(X,Y)$ 的概率分布.",
+   "options": [],
+   "answer": "(I) 4/9; (II) 概率分布表见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】(I) 在没有取白球的情况下取了一次红球，利用样本空间的缩减法，相当于只有 1 个红球，2 个黑球放回摸两次，其中摸一个红球的概率，所以 $P\\{X=1|Z=0\\}=$\n\n$\\dfrac{C_{2}^{1}\\times2}{3^{2}}=\\dfrac{4}{9}$. \n\n（II）$X$，$Y$ 取值范围为 $0,1,2$，故\n\n$P(X=0,Y=0)=\\dfrac{C_{3}^{1}\\times C_{3}^{1}}{6^{2}}=\\dfrac{1}{4}$,$P(X=1,Y=0)=\\dfrac{C_{2}^{1}\\times C_{3}^{1}}{6^{2}}=\\dfrac{1}{6}$;\n\n$P(X=2,Y=0)=\\dfrac{1}{6^{2}}=\\dfrac{1}{36}$,$P(X=0,Y=1)=\\dfrac{C_{2}^{1}\\times C_{2}^{1}\\times C_{3}^{1}}{6^{2}}=\\dfrac{1}{3}$;\n\n$P(X=1,Y=1)=\\dfrac{C_{2}^{1}\\times C_{2}^{1}}{6^{2}}=\\dfrac{1}{9}$,$P(X=2,Y=1)=0$;\n\n$P(X=0,Y=2)=\\dfrac{C_{2}^{1}\\times C_{2}^{1}}{6^{2}}=\\dfrac{1}{9}$,$P(X=1,Y=2)=0$,$P(X=2,Y=2)=0$. \n\n（原卷为分布表，逐格照录）$X\\backslash Y$：0，1，2；$X=0$ 行：1/4，1/3，1/9；$X=1$ 行：1/6，1/9，0；$X=2$ 行：1/36，0，0."
+    }
+   ],
+   "knowledge_points": [
+    "古典概型",
+    "条件概率",
+    "二维离散型随机变量的分布"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+   "source_ref": {
+    "pdf": "2009数学三真题及解析.pdf",
+    "sha256": "3970497323f2259262184e2290deb0556c61454214f59f0e968458547afc6a0e",
+    "pages": [
+     4
+    ],
+    "anchor": "第(23)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:fc526ddc050328f7763c1e8b4781a0f10bf1b7e84d61bc492460f0083c6b8d4e"
+  }
+ ]
+}

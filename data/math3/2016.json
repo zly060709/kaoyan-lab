@@ -1,0 +1,1116 @@
+{
+ "subject": "math3",
+ "year": 2016,
+ "paper": "数学（三）",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2016数学三真题及解析.pdf》（data/math3/pages/2016/，14 页）。2009–2020 年数学三结构：选择题 8×4=32 分、填空题 6×4=24 分、解答题 15–23 共 94 分，合计 150 分。解答题逐题分值照卷面题号后的「（本题满分 X 分）」印刷。题干/选项/答案/解析逐字照录，原卷的疑似排版或笔误（错字、漏字、半全角混用、上下标排版不一致）一律不改，逐条登记在 tools/work/m32016_notes.md（18 条编号记录）。本卷另有 5 幅原卷图形，为页面影像直接裁图（data/math3/2016.media.json），未重绘、未派生。",
+ "questions": [
+  {
+   "id": "math3-2016-1",
+   "subject": "math3",
+   "year": 2016,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $y=f(x)$ 在 $(-\\infty,+\\infty)$ 内连续，其导函数的图形如图所示，则. @@M:math3-2016-1:0@@",
+   "options": [
+    "函数 $f(x)$ 有 2 个极值点，曲线 $y=f(x)$ 有 2 个拐点",
+    "函数 $f(x)$ 有 2 个极值点，曲线 $y=f(x)$ 有 3 个拐点",
+    "函数 $f(x)$ 有 3 个极值点，曲线 $y=f(x)$ 有 1 个拐点",
+    "函数 $f(x)$ 有 3 个极值点，曲线 $y=f(x)$ 有 2 个拐点"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】B.\n\n【解析】对图像进行标记，可知 $x_{1},x_{3},x_{5}$ 为驻点，而在 $x_{1}$ 和 $x_{3}$ 两侧 $f'(x)$ 变号，则为极值点，\n\n$x_{5}$ 两侧 $f'(x)$ 不变号，则不是极值点，在 $x_{2}$ 处一阶导数不存在，但在 $x_{2}$ 两侧 $f'(x)$ 不变号，\n\n则不是极值点，在 $x_{2}$ 处二阶导数不存在，在 $x_{4}$ 和 $x_{5}$ 处二阶导数为零，在这三个点两侧一阶\n\n导函数增减性发生变化，则都为拐点，故应选（B）.\n\n@@M:math3-2016-1:1@@"
+    }
+   ],
+   "knowledge_points": [
+    "导数图象分析",
+    "极值与拐点的判定"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     1
+    ],
+    "anchor": "第(1)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b69e1ee99b6c44cc8ab0a54e84a7aab8475a5ecc77b6ff8559ba3001b3dff8c6"
+  },
+  {
+   "id": "math3-2016-2",
+   "subject": "math3",
+   "year": 2016,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "已知函数 $f(x,y)=\\dfrac{e^{x}}{x-y}$，则.",
+   "options": [
+    "$f_{x}'-f_{y}'=0$",
+    "$f_{x}'+f_{y}'=0$",
+    "$f_{x}'-f_{y}'=f$",
+    "$f_{x}'+f_{y}'=f$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】D.\n\n【解析】$f_{x}'=\\dfrac{e^{x}(x-y)-e^{x}}{(x-y)^{2}},f_{y}'=\\dfrac{e^{x}}{(x-y)^{2}}$, 因而 $f_{x}'+f_{y}'=\\dfrac{e^{x}}{x-y}=f$."
+    }
+   ],
+   "knowledge_points": [
+    "二元函数偏导数",
+    "商的求导法则"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     1
+    ],
+    "anchor": "第(2)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b93daa8c8023e0d66d545231f2f1b6e853e56020b8af367e05ffd6e77a95d799"
+  },
+  {
+   "id": "math3-2016-3",
+   "subject": "math3",
+   "year": 2016,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $J_{i}=\\displaystyle\\iint\\limits_{D_{i}}\\sqrt[3]{x-y}dxdy(i=1,2,3)$，其中 $D_{1}=\\left\\{(x,y)\\middle|0\\leqslant x\\leqslant1,0\\leqslant y\\leqslant1\\right\\}$，$D_{2}=\\left\\{(x,y)\\middle|0\\leqslant x\\leqslant1,0\\leqslant y\\leqslant\\sqrt{x}\\right\\}$,$D_{3}=\\left\\{(x,y)\\middle|0\\leqslant x\\leqslant1,x^{2}\\leqslant y\\leqslant1\\right\\}$,则.",
+   "options": [
+    "$J_{1}<J_{2}<J_{3}$",
+    "$J_{3}<J_{1}<J_{2}$",
+    "$J_{2}<J_{3}<J_{1}$",
+    "$J_{2}<J_{1}<J_{3}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】B.\n\n【解析】$D_{1}$ 关于直线 $y=x$ 对称，$J_{1}=\\dfrac{1}{2}\\displaystyle\\iint\\limits_{D_{1}}(\\sqrt[3]{x-y}+\\sqrt[3]{y-x})dxdy=0.$\n\n$D_{1}$ 被直线 $y=x$ 对分成的两个积分区域记为 $D_{11}$ 及 $D_{12}$，则\n\n$\\displaystyle\\iint\\limits_{D_{11}}\\sqrt[3]{x-y}dxdy=-\\displaystyle\\iint\\limits_{D_{12}}\\sqrt[3]{x-y}dxdy$，$\\displaystyle\\iint\\limits_{D_{11}}\\sqrt[3]{x-y}dxdy<0,\\displaystyle\\iint\\limits_{D_{12}}\\sqrt[3]{x-y}dxdy>0$\n\n如图所示,\n\n$J_{2}=\\displaystyle\\iint\\limits_{D_{2}}\\sqrt[3]{x-y}dxdy=\\displaystyle\\iint\\limits_{D_{21}}\\sqrt[3]{x-y}dxdy+\\displaystyle\\iint\\limits_{D_{22}}\\sqrt[3]{x-y}dxdy+\\displaystyle\\iint\\limits_{D_{23}}\\sqrt[3]{x-y}dxdy$,\n\n$J_{3}=\\displaystyle\\iint\\limits_{D_{3}}\\sqrt[3]{x-y}dxdy=\\displaystyle\\iint\\limits_{D_{31}}\\sqrt[3]{x-y}dxdy+\\displaystyle\\iint\\limits_{D_{32}}\\sqrt[3]{x-y}dxdy+\\displaystyle\\iint\\limits_{D_{33}}\\sqrt[3]{x-y}dxdy$,\n\n由轮换对称性可知：$\\displaystyle\\iint\\limits_{D_{31}}\\sqrt[3]{x-y}dxdy=-\\displaystyle\\iint\\limits_{D_{32}}\\sqrt[3]{x-y}dxdy$；\n\n故 $J_{2}=\\displaystyle\\iint\\limits_{D_{2}}\\sqrt[3]{x-y}dxdy=\\displaystyle\\iint\\limits_{D_{23}}\\sqrt[3]{x-y}dxdy>0$，\n\n$J_{3}=\\displaystyle\\iint\\limits_{D_{3}}\\sqrt[3]{x-y}dxdy=\\displaystyle\\iint\\limits_{D_{33}}\\sqrt[3]{x-y}dxdy<0$,\n\n故 $J_{3}<J_{1}<J_{2}$，选（B）.\n\n@@M:math3-2016-3:0@@ @@M:math3-2016-3:1@@ @@M:math3-2016-3:2@@"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分的对称性",
+    "积分值比较"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     1
+    ],
+    "anchor": "第(3)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:0fb544aaae5c216448ac56b6aeeafb0ec29fca2a3d0d9ee3fdc8dba1528ffce3"
+  },
+  {
+   "id": "math3-2016-4",
+   "subject": "math3",
+   "year": 2016,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "级数为 $\\displaystyle\\sum_{n=1}^{\\infty}\\Bigl(\\dfrac{1}{\\sqrt{n}}-\\dfrac{1}{\\sqrt{n+1}}\\Bigr)\\sin(n+k)$（$k$ 为常数）.",
+   "options": [
+    "绝对收敛",
+    "条件收敛",
+    "发散",
+    "收敛性与 $k$ 有关"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】A.\n\n【解析】$\\Bigl|\\Bigl(\\dfrac{1}{\\sqrt{n}}-\\dfrac{1}{\\sqrt{n+1}}\\Bigr)\\sin(n+k)\\Bigr|\\leqslant\\dfrac{1}{\\sqrt{n}}-\\dfrac{1}{\\sqrt{n+1}}$\n\n$=\\dfrac{\\sqrt{n+1}-\\sqrt{n}}{\\sqrt{n(n+1)}}=\\dfrac{1}{\\sqrt{n(n+1)}(\\sqrt{n+1}+\\sqrt{n})}\\leqslant\\dfrac{1}{n^{\\frac{3}{2}}}$ 因而级数绝对收敛，选（A）."
+    }
+   ],
+   "knowledge_points": [
+    "正项级数比较判别法",
+    "绝对收敛"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     1
+    ],
+    "anchor": "第(4)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:86a1d042f791fd2cf573949505b4464cdae667f48c74cbb01f3b63623b89d73e"
+  },
+  {
+   "id": "math3-2016-5",
+   "subject": "math3",
+   "year": 2016,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $A$，$B$ 是可逆矩阵，且 $A$ 与 $B$ 相似，则下列结论错误的是.",
+   "options": [
+    "$A^{\\mathrm{T}}$ 与 $B^{\\mathrm{T}}$ 相似",
+    "$A^{-1}$ 与 $B^{-1}$ 相似",
+    "$A+A^{\\mathrm{T}}$ 与 $B+B^{\\mathrm{T}}$ 相似",
+    "$A+A^{-1}$ 与 $B+B^{-1}$ 相似"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】C.\n\n【解析】由已知条件，存在可逆矩阵 $P$ 使得 $P^{-1}AP=B.$\n\n那么 $B^{\\mathrm{T}}=(P^{-1}AP)^{\\mathrm{T}}=P^{\\mathrm{T}}A^{\\mathrm{T}}(P^{-1})^{\\mathrm{T}}=P_{1}^{-1}A^{\\mathrm{T}}P_{1}$，其中 $P_{1}=(P^{\\mathrm{T}})^{-1}$，即 $A^{\\mathrm{T}}$ 和 $B^{\\mathrm{T}}$ 相似，（A）正确.\n\n$B^{-1}=(P^{-1}AP)^{-1}=P^{-1}A^{-1}(P^{-1})^{-1}=P^{-1}A^{-1}P$，即 $A^{-1}$ 和 $B^{-1}$ 相似，（B）正确.\n\n又 $P^{-1}(A+A^{-1})P=P^{-1}AP+P^{-1}A^{-1}P=B+B^{-1}$，即 $A+A^{-1}$ 和 $B+B^{-1}$ 相似，（D）正确，\n\n故选 C."
+    }
+   ],
+   "knowledge_points": [
+    "相似矩阵",
+    "矩阵的逆与转置"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     1
+    ],
+    "anchor": "第(5)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1f8a0f4714ea1a2c235f5ee06f6b61f6d05d8d40508da711d9e3129ba42c1274"
+  },
+  {
+   "id": "math3-2016-6",
+   "subject": "math3",
+   "year": 2016,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "设二次型 $f(x_{1},x_{2},x_{3})=a(x_{1}^{2}+x_{2}^{2}+x_{3}^{2})+2x_{1}x_{2}+2x_{2}x_{3}+2x_{1}x_{3}$的正负惯性指数分别为$1,2$，则.",
+   "options": [
+    "$a>1$",
+    "$a<-2$",
+    "$-2<a<1$",
+    "$a=1$或 $a=-2$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】C.\n\n【解析】二次型矩阵 $A=\\begin{pmatrix}a&1&1\\\\ 1&a&1\\\\ 1&1&a\\end{pmatrix}$\n\n由特征多项式 $|\\lambda E-A|=\\begin{vmatrix}\\lambda-a&-1&-1\\\\ -1&\\lambda-a&-1\\\\ -1&-1&\\lambda-a\\end{vmatrix}=(\\lambda-a-2)(\\lambda-a+1)^{2}$,\n\n矩阵 $A$ 的特征值，$a+2,a-1,a-1.$ 由 $p=1,q=2$，$\\begin{cases}a+2>0\\\\ a-1<0\\end{cases}\\therefore-2<a<1.$"
+    }
+   ],
+   "knowledge_points": [
+    "二次型",
+    "正负惯性指数",
+    "特征值"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     1
+    ],
+    "anchor": "第(6)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:c0fde4ab5595a45ba87573663aed1e020b017abed31de60bb6dd76e5fbda8e6f"
+  },
+  {
+   "id": "math3-2016-7",
+   "subject": "math3",
+   "year": 2016,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $A,B$ 为两个随机事件，且 $0<P(A)<1,0<P(B)<1$，如果 $P(A|B)=1$，则.",
+   "options": [
+    "$P(\\overline{B}|\\overline{A})=1$",
+    "$P(A|\\overline{B})=0$",
+    "$P(A\\cup B)=1$",
+    "$P(B|A)=1$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】A.\n\n【解析】$P(A|B)=1,$ 则 $P(\\overline{A}|B)=0$ 也就有 $P(\\overline{A}B)=0$，\n\n$P(B|\\overline{A})=0$ 得 $P(\\overline{B}|\\overline{A})=1.$"
+    }
+   ],
+   "knowledge_points": [
+    "条件概率",
+    "事件的独立性"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     1,
+     2
+    ],
+    "anchor": "第(7)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a73d037e3ac931697cf263464db60e7c9f0e08e75025360801382ac6c0ce0ff1"
+  },
+  {
+   "id": "math3-2016-8",
+   "subject": "math3",
+   "year": 2016,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "设随机变量 $X$ 与 $Y$ 相互独立，且 $X\\sim N(1,2),Y\\sim N(1,4)$，则 $D(XY)=$.",
+   "options": [
+    "$6$",
+    "$8$",
+    "$14$",
+    "$15$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】C.\n\n【解析】$D(XY)=E(XY)^{2}-(EXY)^{2}=EX^{2}EY^{2}-(EXEY)^{2}$\n\n$=\\Bigl[DX+(EX)^{2}\\Bigr]\\Bigl[DY+(EY)^{2}\\Bigr]-1^{2}=14.$"
+    }
+   ],
+   "knowledge_points": [
+    "独立随机变量",
+    "方差"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2
+    ],
+    "anchor": "第(8)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:273393ae9526e5d67bfef9caa24a82405e16b89e2ecb3d3db0665095e3d6c4fb"
+  },
+  {
+   "id": "math3-2016-9",
+   "subject": "math3",
+   "year": 2016,
+   "num": 9,
+   "type": "blank",
+   "score": 4,
+   "stem": "已知函数 $f(x)$ 满足 $\\lim\\limits_{x\\to0}\\dfrac{\\sqrt{1+f(x)\\sin2x}-1}{e^{3x}-1}=2$，则 $\\lim\\limits_{x\\to0}f(x)=$________.",
+   "options": [],
+   "answer": "6",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$6$.\n\n【解析】$\\lim\\limits_{x\\to0}\\dfrac{\\sqrt{1+f(x)\\sin2x}-1}{e^{3x}-1}=\\lim\\limits_{x\\to0}\\dfrac{\\dfrac{1}{2}f(x)\\sin2x}{3x}=\\dfrac{1}{3}\\lim\\limits_{x\\to0}f(x)=2$\n\n则 $\\lim\\limits_{x\\to0}f(x)=6.$"
+    }
+   ],
+   "knowledge_points": [
+    "等价无穷小替换",
+    "极限计算"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2
+    ],
+    "anchor": "第(9)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:0f7caf640d2fe16e4bfe181f0add77c3298a828570d5e0da2bed7dda5a5bddcd"
+  },
+  {
+   "id": "math3-2016-10",
+   "subject": "math3",
+   "year": 2016,
+   "num": 10,
+   "type": "blank",
+   "score": 4,
+   "stem": "极限 $\\lim\\limits_{n\\to\\infty}\\dfrac{1}{n^{2}}\\Bigl(\\sin\\dfrac{1}{n}+2\\sin\\dfrac{2}{n}+\\cdots+n\\sin\\dfrac{n}{n}\\Bigr)=$________.",
+   "options": [],
+   "answer": "\\sin1-\\cos1",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\sin1-\\cos1$\n\n【解析】$\\lim\\limits_{n\\to\\infty}\\dfrac{1}{n^{2}}\\Bigl(\\sin\\dfrac{1}{n}+2\\sin\\dfrac{2}{n}+\\cdots+n\\sin\\dfrac{n}{n}\\Bigr)$\n\n$=\\lim\\limits_{n\\to\\infty}\\dfrac{1}{n}\\Bigl[\\dfrac{1}{n}\\sin\\dfrac{1}{n}+\\dfrac{2}{n}\\sin\\dfrac{2}{n}+\\cdots+\\dfrac{n}{n}\\sin\\dfrac{n}{n}\\Bigr]$\n\n$=\\lim\\limits_{n\\to\\infty}\\dfrac{1}{n}\\displaystyle\\sum_{i=1}^{\\infty}\\dfrac{i}{n}\\sin\\dfrac{i}{n}=\\displaystyle\\int_{0}^{1}x\\sin xdx$\n\n$=-x\\cos x\\Big|_{0}^{1}+\\displaystyle\\int_{0}^{1}\\cos xdx=\\sin1-\\cos1$"
+    }
+   ],
+   "knowledge_points": [
+    "定积分的定义",
+    "数列极限"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2
+    ],
+    "anchor": "第(10)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3c0a7de092041e8df8330cca6a6f52d62f72e1032d989f1eb6fd85df3a2f4bed"
+  },
+  {
+   "id": "math3-2016-11",
+   "subject": "math3",
+   "year": 2016,
+   "num": 11,
+   "type": "blank",
+   "score": 4,
+   "stem": "设函数 $f(u,v)$ 可微，$z=z(x,y)$ 由方程 $(x+1)z-y^{2}=x^{2}f(x-z,y)$ 确定，则 $dz\\big|_{(0,1)}=$________.",
+   "options": [],
+   "answer": "-dx+2dy",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$-dx+2dy.$\n\n【解析】易得 $x=0,y=1$ 时 $z=1$，方程两边求全微分\n\n$zdx+(x+1)dz-2ydy=2xfdx+x^{2}\\bigl[f_{1}'(dx-dz)+f_{2}'dy\\bigr]$\n\n把 $x=0,y=1,z=1$ 代入上式有 $dz\\big|_{(0,1)}=-dx+2dy$"
+    }
+   ],
+   "knowledge_points": [
+    "隐函数求导",
+    "全微分"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2
+    ],
+    "anchor": "第(11)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e54a1c205305051f5072a28fc98d439bd8d25cfb5f05ea7fb5d64532d3722c94"
+  },
+  {
+   "id": "math3-2016-12",
+   "subject": "math3",
+   "year": 2016,
+   "num": 12,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $D=\\left\\{(x,y)\\ \\middle|\\ \\ |x|\\leqslant y\\leqslant1,-1\\leqslant x\\leqslant1\\right\\}$，则 $\\displaystyle\\iint\\limits_{D}x^{2}e^{-y^{2}}dxdy=$________.",
+   "options": [],
+   "answer": "\\dfrac{1}{3}(1-2e^{-1})",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{1}{3}(1-2e^{-1})$.\n\n【解析】利用二重积分的对称性\n\n$\\displaystyle\\iint\\limits_{D}x^{2}e^{-y^{2}}dxdy=2\\displaystyle\\iint\\limits_{D_{\\text{右}}}x^{2}e^{-y^{2}}dxdy=2\\displaystyle\\int_{0}^{1}e^{-y^{2}}dy\\displaystyle\\int_{0}^{y}x^{2}dx=\\dfrac{2}{3}\\displaystyle\\int_{0}^{1}y^{3}e^{-y^{2}}dy$\n\n$=-\\dfrac{1}{3}\\displaystyle\\int_{0}^{1}y^{2}de^{-y^{2}}=-\\dfrac{1}{3}\\Bigl(y^{2}e^{-y^{2}}\\Big|_{0}^{1}-2\\displaystyle\\int_{0}^{1}ye^{-y^{2}}dy\\Bigr)$\n\n$=-\\dfrac{1}{3}\\Bigl(e^{-1}+e^{-y^{2}}\\Big|_{0}^{1}\\Bigr)=\\dfrac{1}{3}(1-2e^{-1})$"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分的对称性",
+    "分部积分法"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2
+    ],
+    "anchor": "第(12)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:c29849b3fbb1850a7b3502516b96adcac173c39fe69b2d0e0f9a286fcb5456a6"
+  },
+  {
+   "id": "math3-2016-13",
+   "subject": "math3",
+   "year": 2016,
+   "num": 13,
+   "type": "blank",
+   "score": 4,
+   "stem": "行列式$\\begin{vmatrix}\\lambda&-1&0&0\\\\ 0&\\lambda&-1&0\\\\ 0&0&\\lambda&-1\\\\ 4&3&2&\\lambda+1\\end{vmatrix}=$_______.",
+   "options": [],
+   "answer": "\\lambda^{4}+\\lambda^{3}+2\\lambda^{2}+3\\lambda+4",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\lambda^{4}+\\lambda^{3}+2\\lambda^{2}+3\\lambda+4.$\n\n【解析】按第 $1$ 列展开\n\n$D=\\lambda\\begin{vmatrix}\\lambda&-1&0\\\\ 0&\\lambda&-1\\\\ 3&2&\\lambda+1\\end{vmatrix}+4(-1)^{4+1}\\begin{vmatrix}-1&0&0\\\\ \\lambda&-1&0\\\\ 0&\\lambda&-1\\end{vmatrix}$\n\n$=\\lambda\\Bigl(\\lambda\\begin{vmatrix}\\lambda&-1\\\\ 2&\\lambda+1\\end{vmatrix}+3\\cdot(-1)^{3+1}\\begin{vmatrix}-1&0\\\\ \\lambda&-1\\end{vmatrix}\\Bigr)+4$\n\n$=\\lambda^{4}+\\lambda^{3}+2\\lambda^{2}+3\\lambda+4$"
+    }
+   ],
+   "knowledge_points": [
+    "行列式按列展开"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2
+    ],
+    "anchor": "第(13)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:f1abe20ecd2107aca34f2b835aa2b44d1c1d799a9a776518b36af8d0bca9a055"
+  },
+  {
+   "id": "math3-2016-14",
+   "subject": "math3",
+   "year": 2016,
+   "num": 14,
+   "type": "blank",
+   "score": 4,
+   "stem": "设袋中有红、白、黑球各 1 个，从中有放回地取球，每次取 1 个，直到三种颜色的球都取到时停止，则取球次数恰好为 4 的概率为________.",
+   "options": [],
+   "answer": "\\dfrac{2}{9}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{2}{9}.$\n\n【解析】本题为古典概型，用概率公式 $P(A)=\\dfrac{m}{n}$\n\n$n$ 计算：恰好取 4 次停止，每次取球有 3 种不同颜色，又是有放回的，所以总的情况 $n=3^{4}.$\n\n$m$ 计算：先考虑第 4 次的颜色，这颜色一定与前 3 次的不同. 前 3 次必定已有且仅有 2 种不\n\n同颜色，这样第 4 次抽到第 3 色才凑够 3 种颜色，总之第 4 次有 3 种可能，前 3 次由其余 2 种\n\n颜色构成，其总数为每次有 2 种可能，3 次有 $2^{3}=8$ 种可能，扣除 3 次同一色共 2 种，所以\n\n前 3 次由两种不同颜色构成共有 $8-2=6$ 种可能，所有 $m=3\\cdot6=18.$ 故 $P(A)=\\dfrac{18}{3^{4}}=\\dfrac{2}{9}.$"
+    }
+   ],
+   "knowledge_points": [
+    "古典概型"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2
+    ],
+    "anchor": "第(14)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d3693d8a4f1bc1802457a59a9810da90752efae6ab632afc3b2591ce519e91ac"
+  },
+  {
+   "id": "math3-2016-15",
+   "subject": "math3",
+   "year": 2016,
+   "num": 15,
+   "type": "essay",
+   "score": 10,
+   "stem": "求极限 $\\lim\\limits_{x\\to0}\\left(\\cos2x+2x\\sin x\\right)^{\\frac{1}{x^{4}}}.$",
+   "options": [],
+   "answer": "e^{\\frac{1}{3}}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解】$\\lim\\limits_{x\\to0}\\left(\\cos2x+2x\\sin x\\right)^{\\frac{1}{x^{4}}}=\\lim\\limits_{x\\to0}\\Bigl[1+(\\cos2x-1+2x\\sin x)\\Bigr]^{\\frac{1}{x^{4}}}$\n\n$\\lim\\limits_{x\\to0}\\dfrac{\\cos2x-1+2x\\sin x}{x^{4}}=\\lim\\limits_{x\\to0}\\dfrac{\\Bigl[-\\dfrac{(2x)^{2}}{2!}+\\dfrac{(2x)^{4}}{4!}+o(x^{4})\\Bigr]+2x\\Bigl[x-\\dfrac{x^{3}}{3!}+o(x^{3})\\Bigr]}{x^{4}}$\n\n$=\\lim\\limits_{x\\to0}\\dfrac{\\dfrac{1}{3}x^{4}+o(x^{4})}{x^{4}}=\\dfrac{1}{3}$\n\n原式 $=e^{\\frac{1}{3}}$. "
+    }
+   ],
+   "knowledge_points": [
+    "泰勒展开",
+    "幂指函数极限"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2
+    ],
+    "anchor": "第(15)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:7dbf03b82e009bd47c2fe69f2ec7541f0f8a7406ac5e0a20dca7d4c4a38e4d67"
+  },
+  {
+   "id": "math3-2016-16",
+   "subject": "math3",
+   "year": 2016,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "设某商品的最大需求量为 1200 件，该商品的需求函数 $Q=Q(p)$，需求弹性$\\eta=\\dfrac{p}{120-p}\\,(\\eta>0)$，$p$ 为单价（万元）.（I）求需求函数的表达式；（II）求 $p=100$ 万元时的边际收益，并说明其经济意义.",
+   "options": [],
+   "answer": "Q(p)=10(120-p);\\ \\dfrac{dR}{dQ}\\Big|_{p=100}=80",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】（I）由弹性公式 $\\eta=\\Bigl|\\dfrac{p}{Q}\\dfrac{dQ}{dp}\\Bigr|$ 得\n\n$\\dfrac{p}{Q}\\dfrac{dQ}{dp}=\\dfrac{-p}{120-p}$\n\n$-\\dfrac{dQ}{Q}=\\dfrac{dp}{120-p}$\n\n$Q=C(p-120)$\n\n$Q(0)=1200$ 得 $C=-10,$ 需求函数为 $Q(p)=-10(p-120)=10(120-p)$.\n\n（II）收益函数为 $R=Qp=(1200-10p)p$,\n\n边际收益函数为 $\\dfrac{dR}{dQ}=\\dfrac{dR}{dp}\\dfrac{dp}{dQ}=(1200-20p)\\Bigl(-\\dfrac{1}{10}\\Bigr)=2p-120$,\n\n由此可知 $\\dfrac{dR}{dQ}\\Big|_{p=100}=80$，经济意义是销售第 201 件商品时，收益增加 80 万元."
+    }
+   ],
+   "knowledge_points": [
+    "需求弹性",
+    "边际收益"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     2,
+     3
+    ],
+    "anchor": "第(16)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:8af9718a65ac3ea3a675a258522207326b0f5d64fb4064fc5d0d46eb4d686026"
+  },
+  {
+   "id": "math3-2016-17",
+   "subject": "math3",
+   "year": 2016,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "设函数 $f(x)=\\displaystyle\\int_{0}^{1}\\left|t^{2}-x^{2}\\right|dt(x>0)$，求 $f'(x)$ 并求 $f(x)$ 的最小值.",
+   "options": [],
+   "answer": "f'(x)=\\begin{cases}-2x+4x^{2},&0<x<1\\\\ 2x,&x\\geqslant1\\end{cases};\\ f_{\\min}=f\\Bigl(\\dfrac{1}{2}\\Bigr)=\\dfrac{1}{4}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】\n\n$f(x)=\\begin{cases}\\displaystyle\\int_{0}^{x}(x^{2}-t^{2})dt+\\displaystyle\\int_{x}^{1}(t^{2}-x^{2})dt,0<x<1\\\\ \\displaystyle\\int_{0}^{1}(x^{2}-t^{2})dt,x\\geqslant1\\end{cases}=\\begin{cases}\\dfrac{4}{3}x^{3}-x^{2}+\\dfrac{1}{3},0<x<1\\\\ x^{2}-\\dfrac{1}{3},x\\geqslant1\\end{cases}.$ \n\n$f'(x)=\\begin{cases}-2x+4x^{2},0<x<1\\\\ 2x,x\\geqslant1\\end{cases}.$ \n\n$f(x)$ 在 $x=1$ 处连续，$\\lim\\limits_{x\\to1^{-}}f'(x)=\\lim\\limits_{x\\to1^{-}}(-2x+4x^{2})=2.$\n\n则 $f'_{-}(1)=f'_{+}(1)=2$，故 $f'(1)=2.$\n\n令 $f'(x)=0$，$4x^{2}-2x=0\\ \\ (0<x<1)$\n\n$2x(2x-1)=0$，$x=\\dfrac{1}{2}$\n\n当 $0<x<\\dfrac{1}{2}$，$f'(x)<0$，$f(x)\\searrow$\n\n$\\dfrac{1}{2}<x<1$，$f'(x)>0$，$f(x)\\nearrow$\n\n$x>1$，$f'(x)>0$，$f(x)\\nearrow$\n\n则 $f(x)$ 在 $x=\\dfrac{1}{2}$ 处取最小值，$f\\Bigl(\\dfrac{1}{2}\\Bigr)=\\dfrac{1}{3}-\\Bigl(\\dfrac{1}{2}\\Bigr)^{2}+\\dfrac{4}{3}\\Bigl(\\dfrac{1}{2}\\Bigr)^{3}=\\dfrac{1}{4}.$"
+    }
+   ],
+   "knowledge_points": [
+    "变限积分求导",
+    "分段函数",
+    "函数最值"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     3
+    ],
+    "anchor": "第(17)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e17e698897a9e40c179a466f8f61147a5fcceecdf12bb32bf60926d9a5998cbc"
+  },
+  {
+   "id": "math3-2016-18",
+   "subject": "math3",
+   "year": 2016,
+   "num": 18,
+   "type": "essay",
+   "score": 10,
+   "stem": "设函数 $f(x)$ 连续，且满足 $\\displaystyle\\int_{0}^{x}f(x-t)dt=\\int_{0}^{x}(x-t)f(t)dt+e^{-x}-1$，求 $f(x)$.",
+   "options": [],
+   "answer": "f(x)=-\\dfrac{e^{x}+e^{-x}}{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】\n\n$\\displaystyle\\int_{0}^{x}f(x-t)dt\\ \\overset{x-t=u}{=}\\ \\int_{0}^{x}f(u)du$\n\n$\\displaystyle\\int_{0}^{x}f(u)du=x\\int_{0}^{x}f(t)dt-\\int_{0}^{x}tf(t)dt+e^{-x}-1$\n\n等式两端对 $x$ 求导得 $f(x)=\\displaystyle\\int_{0}^{x}f(t)dt+xf(x)-xf(x)-e^{-x}=\\displaystyle\\int_{0}^{x}f(t)dt-e^{-x}$\n\n等式两端再对 $x$ 求导得 $f'(x)=f(x)+e^{-x}$ 即\n\n$f'(x)-f(x)=e^{-x}$,\n\n$f(x)=e^{-\\int -dx}\\Bigl[\\int e^{-x}e^{\\int -dx}+C\\Bigr]=e^{x}\\Bigl(-\\dfrac{1}{2}e^{-2x}+C\\Bigr)$,\n\n又 $f(0)=-1,C=-\\dfrac{1}{2}$,\n\n$f(x)=-\\dfrac{1}{2}e^{x}(e^{-2x}+1)=-\\dfrac{e^{x}+e^{-x}}{2}$. "
+    }
+   ],
+   "knowledge_points": [
+    "变限积分换元",
+    "一阶线性微分方程"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     3
+    ],
+    "anchor": "第(18)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b9ef2280e6718fc3dd8deb23b38f3d019d8e42ed49f379cbe278d2c226de4ac8"
+  },
+  {
+   "id": "math3-2016-19",
+   "subject": "math3",
+   "year": 2016,
+   "num": 19,
+   "type": "essay",
+   "score": 10,
+   "stem": "求幂级数 $\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^{2n+2}}{(n+1)(2n+1)}$ 的收敛域及和函数.",
+   "options": [],
+   "answer": "[-1,1],\\ S(x)=\\begin{cases}x\\ln\\dfrac{1+x}{1-x}+\\ln(1-x^{2}),&-1<x<1\\\\ 2\\ln2,&x=\\pm1\\end{cases}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】\n\n因为 $\\lim\\limits_{n\\to\\infty}\\Bigl|\\dfrac{u_{n+1}}{u_{n}}\\Bigr|=\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{\\dfrac{x^{2(n+1)+2}}{(n+2)(2n+3)}}{\\dfrac{x^{2n+2}}{(n+1)(2n+1)}}\\right|=x^{2}$\n\n所以当 $x^{2}<1$ 时，原级数收敛；当 $x^{2}>1$ 时，原级数发散. 因此原级数的收敛区间为 $(-1,1)$. \n\n而 $x=\\pm1$ 时，原级数变为 $\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{1}{(n+1)(2n+1)}$ 是收敛的，原级数的收敛域为 $[-1,1]$. \n\n设 $S(x)=\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^{2n+2}}{(n+1)(2n+1)},x\\in(-1,1)$，则 $\\forall x\\in(-1,1)$ 有\n\n$S'(x)=2\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^{2n+1}}{2n+1},S''(x)=2\\displaystyle\\sum_{n=0}^{\\infty}x^{2n}=\\dfrac{2}{1-x^{2}}$,\n\n所以 $S'(x)=S'(0)+\\displaystyle\\int_{0}^{x}S''(t)dt=\\displaystyle\\int_{0}^{x}\\dfrac{2}{1-t^{2}}dt=\\ln\\dfrac{1+x}{1-x}$. \n\n$S(x)=S(0)+\\displaystyle\\int_{0}^{x}S'(t)dt=\\displaystyle\\int_{0}^{x}\\ln\\dfrac{1+t}{1-t}dt$\n\n$=t\\ln\\dfrac{1+t}{1-t}\\Big|_{0}^{x}-\\displaystyle\\int_{0}^{x}td\\ln\\dfrac{1+t}{1-t}=x\\ln\\dfrac{1+x}{1-x}-\\displaystyle\\int_{0}^{x}\\dfrac{2t}{1-t^{2}}dt=x\\ln\\dfrac{1+x}{1-x}+\\ln(1-x^{2})$\n\n$x=\\pm1$ 时，$\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{1}{(n+1)(2n+1)}=2\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{1}{(2n+2)(2n+1)}=2\\displaystyle\\sum_{n=0}^{\\infty}\\Bigl(\\dfrac{1}{2n+1}-\\dfrac{1}{2n+2}\\Bigr)$\n\n$=2\\bigl(1-\\dfrac{1}{2}+\\dfrac{1}{3}-\\dfrac{1}{4}+...\\bigr)=2\\ln2$. \n\n故 $S(x)=\\begin{cases}x\\ln\\dfrac{1+x}{1-x}+\\ln(1-x^{2}),-1<x<1\\\\ 2\\ln2,x=\\pm1\\end{cases}.$ "
+    }
+   ],
+   "knowledge_points": [
+    "幂级数收敛域",
+    "逐项求导",
+    "和函数"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     3
+    ],
+    "anchor": "第(19)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3c114cd2fb5e45315c72a871010cb8ebe814d795717e715b953c7c9e1e7272aa"
+  },
+  {
+   "id": "math3-2016-20",
+   "subject": "math3",
+   "year": 2016,
+   "num": 20,
+   "type": "essay",
+   "score": 11,
+   "stem": "设矩阵 $A=\\begin{pmatrix}1&1&1-a\\\\ 1&0&a\\\\ a+1&1&a+1\\end{pmatrix}$，$\\boldsymbol{\\beta}=\\begin{pmatrix}0\\\\ 1\\\\ 2a-2\\end{pmatrix}$，且方程组 $A\\boldsymbol{x}=\\boldsymbol{\\beta}$ 无解.（I）求 $a$ 的值；（II）求方程组 $A^{\\mathrm{T}}A\\boldsymbol{x}=A^{\\mathrm{T}}\\boldsymbol{\\beta}$ 的通解.",
+   "options": [],
+   "answer": "(I)\\ a=0;\\ (II)\\ (1,-2,0)^{\\mathrm{T}}+k(0,-1,1)^{\\mathrm{T}}\\ (k\\ \\text{为任意常数})",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】对 $(A|\\boldsymbol{\\beta})$ 作初等行变换，有\n\n$(A|\\boldsymbol{\\beta})=\\begin{pmatrix}1&1&1-a&0\\\\ 1&0&a&1\\\\ a+1&1&a+1&2a-2\\end{pmatrix}\\to\\begin{pmatrix}1&1&1-a&0\\\\ 0&-1&2a-1&1\\\\ 0&-a&a(a+1)&2a-2\\end{pmatrix}$\n\n$\\to\\begin{pmatrix}1&1&1-a&0\\\\ 0&-1&2a-1&1\\\\ 0&0&a(2-a)&a-2\\end{pmatrix}$\n\n因方程组无解，故 $a=0.$\n\n（II）对 $A^{\\mathrm{T}}A\\boldsymbol{x}=A^{\\mathrm{T}}\\boldsymbol{\\beta}$，又 $A^{\\mathrm{T}}A=\\begin{pmatrix}1&1&1\\\\ 1&0&1\\\\ 1&0&1\\end{pmatrix}\\begin{pmatrix}1&1&1\\\\ 1&0&0\\\\ 1&1&1\\end{pmatrix}=\\begin{pmatrix}3&2&2\\\\ 2&2&2\\\\ 2&2&2\\end{pmatrix}$,\n\n$A^{\\mathrm{T}}\\boldsymbol{\\beta}=\\begin{pmatrix}1&1&1\\\\ 1&0&1\\\\ 1&0&1\\end{pmatrix}\\begin{pmatrix}0\\\\ 1\\\\ -2\\end{pmatrix}=\\begin{pmatrix}-1\\\\ -2\\\\ -2\\end{pmatrix}$，对 $\\bigl(A^{\\mathrm{T}}A\\big|A^{\\mathrm{T}}\\boldsymbol{\\beta}\\bigr)$ 作初等行变换有\n\n$\\begin{pmatrix}3&2&2&-1\\\\ 2&2&2&-2\\\\ 2&2&2&-2\\end{pmatrix}\\to\\begin{pmatrix}1&0&0&1\\\\ 0&1&1&-2\\\\ 0&0&0&0\\end{pmatrix}$，得方程组 $A^{\\mathrm{T}}A\\boldsymbol{x}=A^{\\mathrm{T}}\\boldsymbol{\\beta}$ 的通解为\n\n$(1,-2,0)^{\\mathrm{T}}+k(0,-1,1)^{\\mathrm{T}}$，$k$ 为任意常数."
+    }
+   ],
+   "knowledge_points": [
+    "非齐次线性方程组",
+    "矩阵的秩",
+    "方程组的通解"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     3
+    ],
+    "anchor": "第(20)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:4eca71acdcc51a06e945a63869773e94c3db01538c1f0f261c38c86f4202a2eb"
+  },
+  {
+   "id": "math3-2016-21",
+   "subject": "math3",
+   "year": 2016,
+   "num": 21,
+   "type": "essay",
+   "score": 11,
+   "stem": "已知矩阵 $A=\\begin{pmatrix}0&-1&1\\\\ 2&-3&0\\\\ 0&0&0\\end{pmatrix}.$（I）求 $A^{99}.$（II）设 3 阶矩阵 $B=(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})$ 满足 $B^{2}=BA.$ 记 $B^{100}=(\\boldsymbol{\\beta}_{1},\\boldsymbol{\\beta}_{2},\\boldsymbol{\\beta}_{3}),$将 $\\boldsymbol{\\beta}_{1},\\boldsymbol{\\beta}_{2},\\boldsymbol{\\beta}_{3}$ 分别表示为 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$ 的线性组合.",
+   "options": [],
+   "answer": "(I)\\ A^{99}=\\begin{pmatrix}-2+2^{99}&1-2^{99}&2-2^{98}\\\\ -2+2^{100}&1-2^{100}&2-2^{99}\\\\ 0&0&0\\end{pmatrix};\\ (II)\\ \\boldsymbol{\\beta}_{1}=(-2+2^{99})\\boldsymbol{\\alpha}_{1}+(-2+2^{100})\\boldsymbol{\\alpha}_{2};\\ \\boldsymbol{\\beta}_{2}=(1-2^{99})\\boldsymbol{\\alpha}_{1}+(1-2^{100})\\boldsymbol{\\alpha}_{2};\\ \\boldsymbol{\\beta}_{3}=(2-2^{98})\\boldsymbol{\\alpha}_{1}+(2-2^{99})\\boldsymbol{\\alpha}_{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】（I）由 $A$ 的特征多项式\n\n$|\\lambda E-A|=\\begin{vmatrix}\\lambda&1&-1\\\\ -2&\\lambda+3&0\\\\ 0&0&\\lambda\\end{vmatrix}=\\lambda(\\lambda+1)(\\lambda+2)$，即 $A$ 的特征值为 $0,-1,-2.$\n\n对 $\\lambda=0$ 由 $(0E-A)\\boldsymbol{x}=\\boldsymbol{0}$，\n\n$\\begin{pmatrix}0&1&-1\\\\ -2&3&0\\\\ 0&0&0\\end{pmatrix}$\n\n得基础解系 $\\boldsymbol{\\gamma}_{1}=(3,2,2)^{\\mathrm{T}}$\n\n对 $\\lambda=-1$ 由 $(-E-A)\\boldsymbol{x}=\\boldsymbol{0}$，\n\n$\\begin{pmatrix}1&-1&0\\\\ 0&0&1\\\\ 0&0&0\\end{pmatrix}$\n\n得基础解系 $\\boldsymbol{\\gamma}_{2}=(1,1,0)^{\\mathrm{T}}$\n\n对 $\\lambda=-2$ 由 $(-2E-A)\\boldsymbol{x}=\\boldsymbol{0}$，\n\n$\\begin{pmatrix}-2&1&0\\\\ 0&0&1\\\\ 0&0&0\\end{pmatrix}$\n\n得基础解系 $\\boldsymbol{\\gamma}_{3}=(1,2,0)^{\\mathrm{T}}$\n\n令 $P=(\\boldsymbol{\\gamma}_{1},\\boldsymbol{\\gamma}_{2},\\boldsymbol{\\gamma}_{3})$ 有 $P^{-1}AP=\\Lambda=\\begin{pmatrix}0&&\\\\ &-1&\\\\ &&-2\\end{pmatrix}$，对于 $P$，利用初等变换可求出\n\n$P^{-1}=\\dfrac{1}{2}\\begin{pmatrix}0&0&1\\\\ 4&-2&-4\\\\ -2&2&1\\end{pmatrix}$,\n\n则 $P^{-1}A^{99}P=\\Lambda^{99}\\Rightarrow A^{99}=P\\Lambda^{99}P^{-1}=\\begin{pmatrix}3&1&1\\\\ 2&1&2\\\\ 2&0&0\\end{pmatrix}\\begin{pmatrix}0&&\\\\ &-1&\\\\ &&-2^{99}\\end{pmatrix}\\dfrac{1}{2}\\begin{pmatrix}0&0&1\\\\ 4&-2&-4\\\\ -2&2&1\\end{pmatrix}$\n\n$=\\begin{pmatrix}-2+2^{99}&1-2^{99}&2-2^{98}\\\\ -2+2^{100}&1-2^{100}&2-2^{99}\\\\ 0&0&0\\end{pmatrix}.$ \n\n（II）因 $B^{2}=BA$ 知 $B^{3}=B(BA)=B^{2}A=BA^{2}$,\n\n归纳得\n\n$B^{100}=BA^{99}=(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3})\\begin{pmatrix}-2+2^{99}&1-2^{99}&2-2^{98}\\\\ -2+2^{100}&1-2^{100}&2-2^{99}\\\\ 0&0&0\\end{pmatrix}$,\n\n$=\\bigl((-2+2^{99})\\boldsymbol{\\alpha}_{1}+(-2+2^{100})\\boldsymbol{\\alpha}_{2},(1-2^{99})\\boldsymbol{\\alpha}_{1}+(1-2^{100})\\boldsymbol{\\alpha}_{2},(2-2^{98})\\boldsymbol{\\alpha}_{1}+(2-2^{99})\\boldsymbol{\\alpha}_{2}\\bigr)$\n\n$\\boldsymbol{\\beta}_{1}=(-2+2^{99})\\boldsymbol{\\alpha}_{1}+(-2+2^{100})\\boldsymbol{\\alpha}_{2};\\ \\boldsymbol{\\beta}_{2}=(1-2^{99})\\boldsymbol{\\alpha}_{1}+(1-2^{100})\\boldsymbol{\\alpha}_{2};$\n\n$\\boldsymbol{\\beta}_{3}=(2-2^{98})\\boldsymbol{\\alpha}_{1}+(2-2^{99})\\boldsymbol{\\alpha}_{2}.$ "
+    }
+   ],
+   "knowledge_points": [
+    "相似对角化",
+    "矩阵的幂",
+    "特征值与特征向量"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     3
+    ],
+    "anchor": "第(21)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:c3709a8fcca06ebb16be658e1c8d208585943d9820db85efd62021459bbb1602"
+  },
+  {
+   "id": "math3-2016-22",
+   "subject": "math3",
+   "year": 2016,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "设二维随机变量 $(X,Y)$ 在区域 $D=\\left\\{(x,y)\\middle|0<x<1,x^{2}<y<\\sqrt{x}\\right\\}$ 上服从均匀分布，令$U=\\begin{cases}1,&X\\leqslant Y.\\\\ 0,&X>Y.\\end{cases}$（I）写出 $(X,Y)$ 的概率密度;（II）问 $U$ 与 $X$ 是否相互独立？并说明理由;（III）求 $Z=U+X$ 的分布函数 $F(z)$.",
+   "options": [],
+   "answer": "(I)\\ f_{1}(x,y)=\\begin{cases}3,&0<x<1,x^{2}<y<\\sqrt{x}\\\\ 0,&\\text{其他}\\end{cases};\\ (II)\\ U\\ \\text{与}\\ X\\ \\text{不相互独立};\\ (III)\\ F(z)\\ \\text{分段见解析}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】（I）$(X,Y)$ 的概率密度可用在区域 $D$ 上均匀分布的密度公式直接写出：\n\n$S_{D}=\\displaystyle\\int_{0}^{1}(\\sqrt{x}-x^{2})dx=\\dfrac{1}{3}$\n\n$f_{1}(x,y)=\\begin{cases}3,0<x<1,x^{2}<y<\\sqrt{x}\\\\ 0,\\text{其他}\\end{cases}$\n\n（II）由于 $U$ 是离散型随机变量，考查 $U$ 与 $X$ 是否独立，只要验证是否成立，\n\n$P\\{U=i,X\\leqslant x_{1}\\}=P\\{U=i\\}P\\{X\\leqslant x_{1}\\},i=0,1.$ \n\n不妨取 $0\\leqslant x_{1}\\leqslant1$，则有\n\n$P\\{U=0,X\\leqslant x_{1}\\}=P\\{X>Y,X\\leqslant x_{1}\\}=P\\{Y<X\\leqslant x_{1}\\}=\\displaystyle\\iint\\limits_{y<x\\leqslant x_{1}}f_{1}(x,y)dxdy$\n\n$=\\displaystyle\\int_{0}^{x_{1}}dx\\displaystyle\\int_{x^{2}}^{x}3dy=\\displaystyle\\int_{0}^{x_{1}}3(x-x^{2})dx=\\dfrac{3}{2}x_{1}^{2}-x_{1}^{3}$,\n\n$P\\{U=0\\}=P\\{X>Y\\}=\\displaystyle\\iint\\limits_{x>y}f_{1}(x,y)dxdy=\\displaystyle\\int_{0}^{1}dx\\displaystyle\\int_{x^{2}}^{x}3dy=\\dfrac{1}{2}$,\n\n$P\\{X\\leqslant x_{1}\\}=\\displaystyle\\iint\\limits_{x\\leqslant x_{1}}f_{1}(x,y)dxdy=\\displaystyle\\int_{0}^{x_{1}}dx\\displaystyle\\int_{x^{2}}^{\\sqrt{x}}3dy=2x_{1}^{\\frac{3}{2}}-x_{1}^{3}$,\n\n所以 $P\\{U=i,X\\leqslant x_{1}\\}\\neq P\\{U=i\\}P\\{X\\leqslant x_{1}\\},i=0,1.$ 即 $U$ 与 $X$ 不相互独立.\n\n（III）$Z=U+X$ 其分布函数\n\n$F(z)=P\\{Z\\leqslant z\\}=P\\{U+X\\leqslant z\\}$\n\n$=P\\{U=0,U+X\\leqslant z\\}+P\\{U=1,U+X\\leqslant z\\}$\n\n$=P\\{X>Y,X\\leqslant z\\}+P\\{X\\leqslant Y,X\\leqslant z-1\\}$\n\n$=\\displaystyle\\iint\\limits_{x>y,x\\leqslant z}f_{1}(x,y)dxdy+\\displaystyle\\iint\\limits_{x\\leqslant y,x\\leqslant z-1}f_{1}(x,y)dxdy$\n\n当 $z<0$ 时，$F(z)=0$;\n\n当 $0\\leqslant z<1$ 时，$F(z)=\\displaystyle\\iint\\limits_{x>y\\atop x\\leqslant z}f_{1}(x,y)dxdy+0=\\displaystyle\\int_{0}^{z}dx\\displaystyle\\int_{x^{2}}^{x}3dy=\\dfrac{3}{2}z^{2}-z^{3}$;\n\n当 $1\\leqslant z<2$ 时，\n\n$F(z)=\\displaystyle\\iint\\limits_{x>y\\atop x\\leqslant z}f_{1}(x,y)dxdy+\\displaystyle\\iint\\limits_{x\\leqslant y\\atop x\\leqslant z-1}f_{1}(x,y)dxdy=\\displaystyle\\int_{0}^{1}dx\\displaystyle\\int_{x^{2}}^{x}3dy+\\displaystyle\\int_{0}^{z-1}dx\\displaystyle\\int_{x}^{\\sqrt{x}}3dy$\n\n$=\\dfrac{1}{2}+2(z-1)^{\\frac{3}{2}}-\\dfrac{3}{2}(z-1)^{2}$;\n\n当 $z\\geqslant2$ 时，$F(z)=1$. "
+    }
+   ],
+   "knowledge_points": [
+    "二维均匀分布",
+    "随机变量的独立性",
+    "分布函数"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     3
+    ],
+    "anchor": "第(22)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:8edeb6dc3cf8b9c148dc9e32824ed648c88ec0c78d1cfd27806434cb66449a67"
+  },
+  {
+   "id": "math3-2016-23",
+   "subject": "math3",
+   "year": 2016,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "设总体 $X$ 的概率密度为 $f(x,\\theta)=\\begin{cases}\\dfrac{3x^{2}}{\\theta^{3}},&0<x<\\theta\\\\ 0,&\\text{其他}\\end{cases}$其中 $\\theta\\in(0,+\\infty)$ 为未知参数，$X_{1},X_{2},X_{3}$ 为来自总体 $X$ 的简单随机样本，令 $T=\\max(X_{1},X_{2},X_{3}).$（I）求 $T$ 的概率密度;（II）确定 $a$，使得 $E(aT)=\\theta$.",
+   "options": [],
+   "answer": "(I)\\ f_{T}(t)=\\begin{cases}\\dfrac{9t^{8}}{\\theta^{9}},&0<t<\\theta\\\\ 0,&\\text{其他}\\end{cases};\\ (II)\\ a=\\dfrac{10}{9}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】（I）$F(x)=\\displaystyle\\int_{-\\infty}^{x}f(x;\\theta)dx=\\begin{cases}0,&x<0\\\\ \\dfrac{x^{3}}{\\theta^{3}},&0\\leqslant x<\\theta\\\\ 1,&\\theta\\leqslant x\\end{cases}$\n\n$F_{T}(t)=P\\{T\\leqslant t\\}=P\\{\\max(X_{1},X_{2},X_{3})\\leqslant t\\}=P\\{X_{1}\\leqslant t,X_{2}\\leqslant t,X_{3}\\leqslant t\\}$\n\n由于 $X_{1},X_{2},X_{3}$ 相互独立，所以 $P\\{X_{1}\\leqslant t\\}P\\{X_{2}\\leqslant t\\}P\\{X_{3}\\leqslant t\\}=F^{3}(t)$\n\n$f_{T}(t)=F_{T}'(t)=3F_{T}^{2}(t)f(t;\\theta)=\\begin{cases}3\\bigl(\\dfrac{t^{3}}{\\theta^{3}}\\bigr)^{2}\\dfrac{3t^{2}}{\\theta^{3}},0<t<\\theta\\\\ 0,\\text{其他}\\end{cases}=\\begin{cases}\\dfrac{9t^{8}}{\\theta^{9}},0<t<\\theta\\\\ 0,\\text{其他}\\end{cases}$\n\n（II）$ET=\\displaystyle\\int_{-\\infty}^{+\\infty}tf_{T}(t)dt=\\displaystyle\\int_{0}^{\\theta}\\dfrac{9t^{9}}{\\theta^{9}}dt=\\dfrac{9}{10}\\theta,E(aT)=aET=a\\cdot\\dfrac{9}{10}\\theta=\\theta$，则 $a=\\dfrac{10}{9}.$"
+    }
+   ],
+   "knowledge_points": [
+    "最大顺序统计量",
+    "数学期望",
+    "参数估计"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+   "source_ref": {
+    "pdf": "2016数学三真题及解析.pdf",
+    "sha256": "c3f18bf43a2bbbefcebf50e418edae8603b69e45329bde37d18ba94e74b476ce",
+    "pages": [
+     3,
+     4
+    ],
+    "anchor": "第(23)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:cc7efb7cff87dd775f03a41f42e97e05f70e3c63c17275fbbe854ac3b4da37e6"
+  }
+ ]
+}

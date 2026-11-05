@@ -1,0 +1,1115 @@
+{
+ "subject": "math3",
+ "year": 2014,
+ "paper": "数学（三）",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2014数学三真题及解析.pdf》（data/math3/pages/2014/，13 页）。2009–2020 年数学三结构：选择题 8×4=32 分、填空题 6×4=24 分、解答题 15–23 共 94 分，合计 150 分。解答题逐题分值：卷面只印「三、解答题：15～23 小题，共 94 分」，未印逐题分值，按 15–19 题各 10 分、20–23 题各 11 分折算（50+44=94），系推定值而非卷面原文。题干/选项/答案/解析逐字照录，原卷的疑似排版或笔误（错字、漏字、半全角混用、上下标排版不一致）一律不改，逐条登记在 tools/work/m32014_notes.md（12 条编号记录）。",
+ "questions": [
+  {
+   "id": "math3-2014-1",
+   "subject": "math3",
+   "year": 2014,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "$\\lim\\limits_{n\\to\\infty}a_{n}=a$，且 $a\\neq0$，则 $n$ 充分大时.",
+   "options": [
+    "$|a_{n}|>\\dfrac{|a|}{2}$",
+    "$|a_{n}|<\\dfrac{|a|}{2}$",
+    "$a_{n}>a-\\dfrac{1}{n}$",
+    "$a_{n}<a+\\dfrac{1}{n}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】由极限的保号性，即可得到 $|a_{n}|>\\dfrac{|a|}{2}$ 正确，（C）反例 $a_{n}=a-\\dfrac{2}{n}$，（D）反例 $a_{n}=a+\\dfrac{2}{n}$."
+    }
+   ],
+   "knowledge_points": [
+    "数列极限",
+    "极限的保号性"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     1
+    ],
+    "anchor": "第1题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:9329874c6134ad387ad0b42f24ede1f05474f5876d980560687e4f1d3a3a4743"
+  },
+  {
+   "id": "math3-2014-2",
+   "subject": "math3",
+   "year": 2014,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "下列曲线中，具有渐近线的是.",
+   "options": [
+    "$y=x+\\sin x$",
+    "$y=x^{2}+\\sin x$",
+    "$y=x+\\sin\\dfrac{1}{x}$",
+    "$y=x^{2}+\\sin\\dfrac{1}{x}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】A. $\\lim\\limits_{x\\to\\infty}(x+\\sin x)=\\infty$，所以 $y=x+\\sin x$ 无水平渐近线，又可知 $y=x+\\sin x$ 无垂直渐近线，又 $\\lim\\limits_{x\\to\\infty}\\dfrac{x+\\sin x}{x}=1$，$\\lim\\limits_{x\\to\\infty}(x+\\sin x-x)=\\lim\\limits_{x\\to\\infty}\\sin x$ 极限不存在，所以 $y=x+\\sin x$ 无斜渐近线；\n\nB. $\\lim\\limits_{x\\to\\infty}(x^{2}+\\sin x)=\\infty$，所以 $y=x^{2}+\\sin x$ 无水平渐近线，又可知 $y=x^{2}+\\sin x$ 无垂直渐近线，又 $\\lim\\limits_{x\\to\\infty}\\dfrac{x^{2}+\\sin x}{x}=\\infty$，极限不存在，所以 $y=x^{2}+\\sin x$ 无斜渐近线；\n\nC. $\\lim\\limits_{x\\to\\infty}(x+\\sin\\dfrac{1}{x})=\\infty$，所以 $y=x+\\sin\\dfrac{1}{x}$ 无水平渐近线，又可知 $y=x+\\sin\\dfrac{1}{x}$ 无垂直渐近线，又 $\\lim\\limits_{x\\to\\infty}\\dfrac{x+\\sin\\dfrac{1}{x}}{x}=1$；所以 $y=x+\\sin\\dfrac{1}{x}$ 有斜渐近线 $y=x$，\n\nD. $\\lim\\limits_{x\\to\\infty}(x^{2}+\\sin\\dfrac{1}{x})=\\infty$，所以 $y=x^{2}+\\sin\\dfrac{1}{x}$ 无水平渐近线，又可知 $y=x^{2}+\\sin\\dfrac{1}{x}$ 无垂直渐近线，又 $\\lim\\limits_{x\\to\\infty}\\dfrac{x^{2}+\\sin\\dfrac{1}{x}}{x}=\\infty$，极限不存在，所以 $y=x^{2}+\\sin\\dfrac{1}{x}$ 无斜渐近线."
+    }
+   ],
+   "knowledge_points": [
+    "渐近线"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     1
+    ],
+    "anchor": "第2题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e86772e6e98ee8c57d52a9e0f08e115dd72e4ac1148706eb402758de75a99d8f"
+  },
+  {
+   "id": "math3-2014-3",
+   "subject": "math3",
+   "year": 2014,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $P(x)=a+bx+cx^{2}+dx^{3}$，当 $x\\to0$ 时，若 $P(x)-\\tan x$ 是比 $x^{3}$ 高阶无穷小，则下列选项错误的是.",
+   "options": [
+    "$a=0$",
+    "$b=1$",
+    "$c=0$",
+    "$d=\\dfrac{1}{6}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】$\\tan x=x+\\dfrac{1}{3}x^{3}+o(x^{3})$，所以由 $P(x)-\\tan x$ 是比 $x^{3}$ 高阶无穷小，得 $\\lim\\limits_{x\\to0}\\dfrac{P(x)-\\tan x}{x^{3}}=0$，所以\n\n$\\lim\\limits_{x\\to0}\\dfrac{P(x)-\\tan x}{x^{3}}=0$, 所以 $\\lim\\limits_{x\\to0}\\dfrac{a+bx+cx^{2}+dx^{3}-x-\\dfrac{1}{3}x^{3}-o(x^{3})}{x^{3}}=0$, 所以 $a=0$\n\n$b=1$, $c=0$, $d=\\dfrac{1}{3}$."
+    }
+   ],
+   "knowledge_points": [
+    "泰勒公式",
+    "高阶无穷小"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     1
+    ],
+    "anchor": "第3题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:535434cfc184e5ac562c57d0b0c75755da73ce30e754e2f1c7d4ae6b3d70a853"
+  },
+  {
+   "id": "math3-2014-4",
+   "subject": "math3",
+   "year": 2014,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $f(x)$ 具有二阶导数，$g(x)=f(0)(1-x)+f(1)x$，则在区间 $[0,1]$ 上.",
+   "options": [
+    "当 $f'(x)\\geqslant0$ 时，$f(x)\\geqslant g(x)$",
+    "当 $f'(x)\\geqslant0$ 时，$f(x)\\leqslant g(x)$",
+    "当 $f''(x)\\geqslant0$ 时，$f(x)\\geqslant g(x)$",
+    "当 $f''(x)\\geqslant0$ 时，$f(x)\\leqslant g(x)$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】$g(x)=f(0)(1-x)+f(1)x$，$g(0)=f(0),g(1)=f(1)$；故 $g(x)$ 实质为一条连接 $[0,f(0)],[1,f(1)]$ 的直线，所以当 $f''(x)\\geqslant0$ 时，$f(x)$ 为凹的，由图形知，$f(x)\\leqslant g(x)$."
+    }
+   ],
+   "knowledge_points": [
+    "曲线的凹凸性",
+    "函数不等式"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     1
+    ],
+    "anchor": "第4题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:153bf2a270f86d67569344d4d27cdd4f8e5d1fb771f35881e0bb4a9fed2dd2b2"
+  },
+  {
+   "id": "math3-2014-5",
+   "subject": "math3",
+   "year": 2014,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "四阶行列式 $\\begin{vmatrix}0&a&b&0\\\\ a&0&0&b\\\\ 0&c&d&0\\\\ c&0&0&d\\end{vmatrix}=$.",
+   "options": [
+    "$(ad-bc)^{2}$",
+    "$-(ad-bc)^{2}$",
+    "$a^{2}d^{2}-b^{2}c^{2}$",
+    "$b^{2}c^{2}-a^{2}d^{2}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】解法一 利用行列式性质把此行列式化为拉普拉斯形式\n\n$\\begin{vmatrix}0&a&b&0\\\\ a&0&0&b\\\\ 0&c&d&0\\\\ c&0&0&d\\end{vmatrix}=-\\begin{vmatrix}a&b&0&0\\\\ c&d&0&0\\\\ 0&0&d&c\\\\ 0&0&b&a\\end{vmatrix}=-(ad-bc)^{2}$；\n\n解法二 按第一列展开\n\n$\\begin{vmatrix}0&a&b&0\\\\ a&0&0&b\\\\ 0&c&d&0\\\\ c&0&0&d\\end{vmatrix}=-a\\begin{vmatrix}a&b&0\\\\ c&d&0\\\\ 0&0&d\\end{vmatrix}-c\\begin{vmatrix}a&b&0\\\\ 0&0&b\\\\ c&d&0\\end{vmatrix}$\n\n$=-ad(ad-bc)+bc(ad-bc)$\n\n$=-(ad-bc)^{2}$\n\n所以正确答案为(B)."
+    }
+   ],
+   "knowledge_points": [
+    "行列式按列展开",
+    "拉普拉斯定理"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     1
+    ],
+    "anchor": "第5题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:8e0c5d7fa9fcaba50e4856ec039c959cc33e656791f571b6846acd47bc1bbd47"
+  },
+  {
+   "id": "math3-2014-6",
+   "subject": "math3",
+   "year": 2014,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3}$ 均为三维向量，则任意常数 $k,l$，向量组 $\\boldsymbol{a}_{1}+k\\boldsymbol{a}_{3},\\boldsymbol{a}_{2}+l\\boldsymbol{a}_{3}$ 线性无关是向量组$\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3}$ 线性无关.",
+   "options": [
+    "必要非充分条件",
+    "充分非必要条件",
+    "充分必要条件",
+    "既非充分又非必要条件"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(A)\n\n【解析】①充分性\n\n若向量组 $\\boldsymbol{a}_{1}+k\\boldsymbol{a}_{3},\\boldsymbol{a}_{2}+l\\boldsymbol{a}_{3}$ 线性无关，令 $k=0,l=0$，得 $\\boldsymbol{a}_{1},\\boldsymbol{a}_{2}$ 线性无关.\n\n但 $\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3}$ 不一定线性无关，比如若 $\\boldsymbol{a}_{3}=\\boldsymbol{0}$ 时，$\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3}$ 线性相关.\n\n从而任意常数 $k,l$，向量组 $\\boldsymbol{a}_{1}+k\\boldsymbol{a}_{3},\\boldsymbol{a}_{2}+l\\boldsymbol{a}_{3}$ 线性无关不是向量组 $\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3}$ 线性无关的充分条件.\n\n②必要性\n\n$(\\boldsymbol{a}_{1}+k\\boldsymbol{a}_{3},\\boldsymbol{a}_{2}+l\\boldsymbol{a}_{3})=(\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3})\\begin{pmatrix}1&0\\\\ 0&1\\\\ k&l\\end{pmatrix}$\n\n令\n\n$\\boldsymbol{C}=(\\boldsymbol{a}_{1}+k\\boldsymbol{a}_{3},\\boldsymbol{a}_{2}+l\\boldsymbol{a}_{3}),\\boldsymbol{A}=(\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3}),\\boldsymbol{B}=\\begin{pmatrix}1&0\\\\ 0&1\\\\ k&l\\end{pmatrix}$,\n\n从而 $\\boldsymbol{C}=\\boldsymbol{AB}$. $\\because$向量组 $\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3}$ 线性无关，$\\therefore r(\\boldsymbol{A})=3$\n\n$\\therefore r(\\boldsymbol{C})=r(\\boldsymbol{AB})=r(\\boldsymbol{B})=2$. $\\therefore$对于任意常数 $k,l$，向量组 $\\boldsymbol{a}_{1}+k\\boldsymbol{a}_{3},\\boldsymbol{a}_{2}+l\\boldsymbol{a}_{3}$ 线性无关. 正确答案为(A)."
+    }
+   ],
+   "knowledge_points": [
+    "向量组的线性相关性",
+    "矩阵的秩"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     1
+    ],
+    "anchor": "第6题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:4c3c10d651fe4c758300da9808dea4a48ed7102957daa9cb93c390c08faad0d3"
+  },
+  {
+   "id": "math3-2014-7",
+   "subject": "math3",
+   "year": 2014,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "设随机事件 $A$ 与 $B$ 相互独立，且 $P(B)=0.5$，$P(A-B)=0.3$，则 $P(B-A)=$ .",
+   "options": [
+    "$0.1$",
+    "$0.2$",
+    "$0.3$",
+    "$0.4$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】$\\because$随机事件 $A$ 与 $B$ 相互独立\n\n$\\therefore P(A-B)=P(A)-P(AB)=P(A)-P(A)P(B)=0.3$\n\n$\\Rightarrow P(A)=0.6$\n\n$\\therefore P(B-A)=P(B)-P(AB)=P(B)-P(A)P(B)=0.2$"
+    }
+   ],
+   "knowledge_points": [
+    "事件独立性",
+    "概率的减法公式"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     1
+    ],
+    "anchor": "第7题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3e991ed74597d33118187d2409ce60d70c8089ed3c2fac4e29d3ab0b0ab0fa2f"
+  },
+  {
+   "id": "math3-2014-8",
+   "subject": "math3",
+   "year": 2014,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $X_{1},X_{2},X_{3}$ 为来自正态总体 $N(0,\\sigma^{2})$ 的简单随机样本，则统计量 $S=\\dfrac{X_{1}-X_{2}}{\\sqrt{2}|X_{3}|}$ 服从.",
+   "options": [
+    "$F(1,1)$",
+    "$F(2,1)$",
+    "$t(1)$",
+    "$t(2)$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】$\\because X_{1},X_{2}$ 相互独立且均服从 $N(0,\\sigma^{2})$，$\\therefore\\dfrac{X_{1}-X_{2}}{\\sqrt{2}\\sigma}\\sim N(0,1)$，\n\n又 $\\because\\left(\\dfrac{X_{3}}{\\sigma}\\right)^{2}\\sim\\chi^{2}(1)$，$\\dfrac{X_{1}-X_{2}}{\\sqrt{2}\\sigma}$ 与 $\\left(\\dfrac{X_{3}}{\\sigma}\\right)^{2}$ 相互独立.\n\n$\\therefore S=\\dfrac{\\dfrac{X_{1}-X_{2}}{\\sqrt{2}\\sigma}}{\\sqrt{\\dfrac{\\left(\\dfrac{X_{3}}{\\sigma}\\right)^{2}}{1}}}=\\dfrac{X_{1}-X_{2}}{\\sqrt{2}|X_{3}|}\\sim t(1)$."
+    }
+   ],
+   "knowledge_points": [
+    "正态总体抽样分布",
+    "t 分布"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     1,
+     2
+    ],
+    "anchor": "第8题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:cc70167746452ff84deb41bab619241e40039410e9e3a825348144d58e607a79"
+  },
+  {
+   "id": "math3-2014-9",
+   "subject": "math3",
+   "year": 2014,
+   "num": 9,
+   "type": "blank",
+   "score": 4,
+   "stem": "设的需求函数为 $Q=40-2p$（$p$ 为商品的价格），则该商品的边际收益为________.",
+   "options": [],
+   "answer": "20-Q",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$20-Q$\n\n【解析】$S(Q)=Qp=Q(20-\\dfrac{1}{2}Q)$，所以 $S'(Q)=Qp=20-Q$."
+    }
+   ],
+   "knowledge_points": [
+    "需求函数",
+    "边际收益"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第9题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ef5b027a2117fca1e77e48c4bbf156302e4c6cef059544505059814fa84a42a1"
+  },
+  {
+   "id": "math3-2014-10",
+   "subject": "math3",
+   "year": 2014,
+   "num": 10,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $D$ 是由曲线 $xy+1=0$ 与直线 $y+x=0$ 及 $y=2$ 围成的有界区域，则 $D$ 的面积为________.",
+   "options": [],
+   "answer": "\\dfrac{3}{2}-\\ln 2",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{3}{2}-\\ln2$\n\n【解析】实质为由 $y=-x$，$y=2$，$y=-\\dfrac{1}{x}$ 围成的 $Y$ 型区域，所以\n\n$S=\\displaystyle\\int_{1}^{2}(-\\dfrac{1}{y}+y)dy=\\dfrac{3}{2}-\\ln2$."
+    }
+   ],
+   "knowledge_points": [
+    "平面图形的面积",
+    "定积分应用"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第10题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6cdd9365e21bca27f18ce385edbc82e94961712a92f5f1c44509a62c0423809a"
+  },
+  {
+   "id": "math3-2014-11",
+   "subject": "math3",
+   "year": 2014,
+   "num": 11,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $\\displaystyle\\int_{0}^{a}xe^{2x}dx=\\dfrac{1}{4}$，则 $a=$________.",
+   "options": [],
+   "answer": "\\dfrac{1}{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{1}{2}$\n\n【解析】利用分部积分得\n\n$\\displaystyle\\int_{0}^{a}xe^{2x}dx=\\dfrac{1}{2}\\int_{0}^{a}xde^{2x}=\\dfrac{1}{2}xe^{2x}\\Big|_{0}^{a}-\\dfrac{1}{2}\\int_{0}^{a}e^{2x}dx=\\dfrac{1}{2}ae^{2a}-\\dfrac{1}{4}e^{2x}\\Big|_{0}^{a}=\\dfrac{1}{2}ae^{2a}-\\dfrac{1}{4}e^{2a}+\\dfrac{1}{4}$,\n\n$=\\left(\\dfrac{1}{2}a-\\dfrac{1}{4}\\right)e^{2a}+\\dfrac{1}{4}=\\dfrac{1}{4}$；所以 $\\dfrac{1}{2}a-\\dfrac{1}{4}=0$，故 $a=\\dfrac{1}{2}$."
+    }
+   ],
+   "knowledge_points": [
+    "分部积分法"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第11题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:4fce2089d9ce8a187e8e302438abb555d0afb03feb1c89888f0add180e661202"
+  },
+  {
+   "id": "math3-2014-12",
+   "subject": "math3",
+   "year": 2014,
+   "num": 12,
+   "type": "blank",
+   "score": 4,
+   "stem": "$\\displaystyle\\int_{0}^{1}dy\\int_{y}^{1}\\left(\\dfrac{e^{x^{2}}}{x}-e^{y^{2}}\\right)dx=$________.",
+   "options": [],
+   "answer": "\\dfrac{1}{2}(e-1)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{1}{2}(e-1)$\n\n【解析】被积函数 $\\dfrac{e^{x^{2}}}{x}-e^{y^{2}}$ 分开计算得\n\n$\\displaystyle\\int_{0}^{1}dy\\int_{y}^{1}\\left(\\dfrac{e^{x^{2}}}{x}-e^{y^{2}}\\right)dx=\\int_{0}^{1}dy\\int_{y}^{1}\\dfrac{e^{x^{2}}}{x}dx-\\int_{0}^{1}dy\\int_{y}^{1}e^{y^{2}}dx=\\int_{0}^{1}dx\\int_{0}^{x}\\dfrac{e^{x^{2}}}{x}dy-\\int_{0}^{1}dy\\int_{y}^{1}e^{y^{2}}dx$\n\n由于 $\\displaystyle\\int_{0}^{1}dx\\int_{0}^{x}\\dfrac{e^{x^{2}}}{x}dy=\\int_{0}^{1}e^{x^{2}}dx$，$\\displaystyle\\int_{0}^{1}e^{y^{2}}(y-1)dy=\\int_{0}^{1}ye^{y^{2}}dy-\\int_{0}^{1}e^{y^{2}}dy$\n\n所以\n\n$\\displaystyle\\int_{0}^{1}dx\\int_{0}^{x}\\dfrac{e^{x^{2}}}{x}dy-\\int_{0}^{1}dy\\int_{y}^{1}e^{y^{2}}dx=\\int_{0}^{1}e^{x^{2}}dx+\\int_{0}^{1}ye^{y^{2}}dy-\\int_{0}^{1}e^{y^{2}}dy=\\int_{0}^{1}ye^{y^{2}}dy=\\dfrac{1}{2}(e-1)$."
+    }
+   ],
+   "knowledge_points": [
+    "交换积分次序",
+    "二重积分计算"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第12题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:099311964f164bf7c6f5f85a1f215fd2d1e82947e8b28f2257c910810d743c9f"
+  },
+  {
+   "id": "math3-2014-13",
+   "subject": "math3",
+   "year": 2014,
+   "num": 13,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $f\\left(x_{1},x_{2},x_{3}\\right)=x_{1}^{2}-x_{2}^{2}+2ax_{1}x_{3}+4x_{2}x_{3}$ 的负惯性指数为 1，则 $a$ 的取值范围为________.",
+   "options": [],
+   "answer": "[-2,2]",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$[-2,2]$\n\n【解析】解法一：二次型的矩阵\n\n$\\boldsymbol{A}=\\begin{pmatrix}1&0&a\\\\ 0&-1&2\\\\ a&2&0\\end{pmatrix}$\n\n从而知其三个特征值之和为 0.\n\n又因为其负惯性指数为 1，所以 $|\\boldsymbol{A}|\\leqslant0$，即 $|\\boldsymbol{A}|=a^{2}-4\\leqslant0\\Rightarrow-2\\leqslant a\\leqslant2$.\n\n解法二：$f\\left(x_{1},x_{2},x_{3}\\right)=\\left(x_{1}-ax_{3}\\right)^{2}-\\left(x_{2}-2x_{3}\\right)^{2}+\\left(4-a^{2}\\right)x_{3}^{2}$，因为负惯性指数为 1，故\n\n$4-a^{2}\\geqslant0$，即 $-2\\leqslant a\\leqslant2$."
+    }
+   ],
+   "knowledge_points": [
+    "二次型",
+    "惯性指数"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第13题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6affd62bbc2ac452b5a7f960a0b271eac2bd3fc44bef4c8a6e79db018ab7a015"
+  },
+  {
+   "id": "math3-2014-14",
+   "subject": "math3",
+   "year": 2014,
+   "num": 14,
+   "type": "blank",
+   "score": 4,
+   "stem": "设总体 $X$ 的概率密度为 $f\\left(x,\\theta\\right)=\\begin{cases}\\dfrac{2x}{3\\theta^{2}},&\\theta<x<2\\theta,\\\\ \\theta,&\\text{其他}\\end{cases}$其中 $\\theta$ 为未知参数，$X_{1},X_{2},\\cdots,X_{n}$ 为来自总体 $X$ 的简单随机变量，若 $E\\Bigl[c\\displaystyle\\sum\\limits_{n=1}^{\\infty}X_{i}^{2}\\Bigr]=\\theta^{2}$，则 $c=$________.",
+   "options": [],
+   "answer": "\\dfrac{2}{5n}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{2}{5n}$\n\n【解析】$EX_{i}^{2}=\\displaystyle\\int_{-\\infty}^{+\\infty}x^{2}f(x)dx=\\int_{\\theta}^{2\\theta}x^{2}\\dfrac{2x}{3\\theta^{2}}dx=\\dfrac{5}{2}\\theta^{2}$，\n\n从而 $E\\Bigl[c\\displaystyle\\sum\\limits_{n=1}^{\\infty}X_{i}^{2}\\Bigr]=cE\\Bigl[\\sum\\limits_{n=1}^{\\infty}X_{i}^{2}\\Bigr]=cn\\dfrac{5}{2}\\theta^{2}=\\theta^{2}$，\n\n$\\Rightarrow c=\\dfrac{2}{5n}$."
+    }
+   ],
+   "knowledge_points": [
+    "概率密度",
+    "随机变量的期望"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第14题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:519b8e5381afc1dd79181a9157b511811847ed19b3a30138c2620255c0ca63a5"
+  },
+  {
+   "id": "math3-2014-15",
+   "subject": "math3",
+   "year": 2014,
+   "num": 15,
+   "type": "essay",
+   "score": 10,
+   "stem": "求极限 $\\lim\\limits_{x\\to+\\infty}\\dfrac{\\displaystyle\\int_{1}^{x}\\bigl[t^{2}(e^{\\frac{1}{t}}-1)-t\\bigr]dt}{x^{2}\\ln(1+\\dfrac{1}{x})}$ .",
+   "options": [],
+   "answer": "\\dfrac{1}{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{1}{2}$\n\n【解析】\n\n$\\lim\\limits_{x\\to+\\infty}\\dfrac{\\displaystyle\\int_{1}^{x}[t^{2}(e^{\\frac{1}{t}}-1)-t]dt}{x^{2}\\ln(1+\\dfrac{1}{x})}=\\lim\\limits_{x\\to+\\infty}\\dfrac{\\displaystyle\\int_{1}^{x}[t^{2}(e^{\\frac{1}{t}}-1)-t]dt}{x}=\\lim\\limits_{x\\to+\\infty}\\Bigl[x^{2}(e^{\\frac{1}{x}}-1)-x\\Bigr]$，令 $t=\\dfrac{1}{x}$\n\n$=\\lim\\limits_{t\\to0^{+}}\\Bigl[\\left(\\dfrac{1}{t}\\right)^{2}(e^{t}-1)-\\dfrac{1}{t}\\Bigr]=\\lim\\limits_{t\\to0^{+}}\\Bigl[\\dfrac{(e^{t}-1)-t}{t^{2}}\\Bigr]=\\dfrac{1}{2}$."
+    }
+   ],
+   "knowledge_points": [
+    "变限积分求导",
+    "洛必达法则",
+    "等价无穷小"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第15题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6a131a475a8c4fc815e1278fce5a68575169f19cdaddcae4d3e082c3377b26e1"
+  },
+  {
+   "id": "math3-2014-16",
+   "subject": "math3",
+   "year": 2014,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "设平面区域 $D=\\left\\{(x,y)\\bigr|1\\leqslant x^{2}+y^{2}\\leqslant4,x\\geqslant0,y\\geqslant0\\right\\}$，计算 $\\displaystyle\\iint\\limits_{D}\\dfrac{x\\sin(\\pi\\sqrt{x^{2}+y^{2}})}{x+y}dxdy$ .",
+   "options": [],
+   "answer": "-\\dfrac{3}{4}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$-\\dfrac{3}{4}$\n\n【解析】由轮换对称性得，\n\n$\\displaystyle\\iint\\limits_{D}\\dfrac{x\\sin(\\pi\\sqrt{x^{2}+y^{2}})}{x+y}dxdy=\\dfrac{1}{2}\\iint\\limits_{D}\\sin\\left(\\pi\\sqrt{x^{2}+y^{2}}\\right)dxdy=\\dfrac{1}{2}\\int_{0}^{\\frac{\\pi}{2}}d\\theta\\int_{1}^{2}\\sin\\left(\\pi r\\right)rdr=-\\dfrac{3}{4}$."
+    }
+   ],
+   "knowledge_points": [
+    "二重积分",
+    "轮换对称性",
+    "极坐标"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第16题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:8d2f00fc85b87408fa049a750aff5256d3b799de55ca88f404e1f223aa4d724c"
+  },
+  {
+   "id": "math3-2014-17",
+   "subject": "math3",
+   "year": 2014,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "设 $f(u)$ 具有连续导数，且 $z=f(e^{x}\\cos y)$ 满足 $\\cos y\\dfrac{\\partial z}{\\partial x}-\\sin y\\dfrac{\\partial z}{\\partial y}=(4z+e^{x}\\cos y)e^{x}$，若 $f(0)=0$，求 $f(u)$ 的表达式.",
+   "options": [],
+   "answer": "f(u)=\\dfrac{1}{16}(e^{4u}-4u-1)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$f(u)=\\dfrac{1}{16}(e^{4u}-4u-1)$.\n\n【解析】由于 $\\dfrac{\\partial z}{\\partial x}=f'(e^{x}\\cos y)e^{x}\\cos y$，$\\dfrac{\\partial z}{\\partial y}=-f'(e^{x}\\cos y)e^{x}\\sin y$，\n\n所以\n\n$\\cos y\\dfrac{\\partial z}{\\partial x}-\\sin y\\dfrac{\\partial z}{\\partial y}=f'(e^{x}\\cos y)e^{x}\\cos^{2}y+f'(e^{x}\\cos y)e^{x}\\sin^{2}y$\n\n$=f'(e^{x}\\cos y)e^{x}=(4z+e^{x}\\cos y)e^{x}$\n\n即 $f'(e^{x}\\cos y)e^{x}=[4f(e^{x}\\cos y)+e^{x}\\cos y]e^{x}$，\n\n所以 $f'(e^{x}\\cos y)=4f(e^{x}\\cos y)+e^{x}\\cos y$.\n\n所以 $f'(u)=4f(u)+u$，对应的微分方程为 $y'-4y=x$，为一阶线性微分方程，\n\n$y=e^{\\int4dx}\\left(\\int xe^{-\\int4dx}dx+C\\right)$，计算得 $y=e^{4x}\\left(\\int xe^{-4x}dx+C\\right)=-\\dfrac{1}{16}(4x+1)+Ce^{4x}$，又由\n\n$f(0)=0$ 得 $C=\\dfrac{1}{16}$，所以 $y=\\dfrac{1}{16}(e^{4x}-4x-1)$，得 $f(u)=\\dfrac{1}{16}(e^{4u}-4u-1)$."
+    }
+   ],
+   "knowledge_points": [
+    "多元复合函数求导",
+    "一阶线性微分方程"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第17题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:10b5f37c7140cfc236e3a3393e7548f793e59eb7ef9d56e24b0dc8109827850a"
+  },
+  {
+   "id": "math3-2014-18",
+   "subject": "math3",
+   "year": 2014,
+   "num": 18,
+   "type": "essay",
+   "score": 10,
+   "stem": "求 $\\displaystyle\\sum\\limits_{n=0}^{\\infty}(n+1)(n+3)x^{n}$ 的收敛域及和函数.",
+   "options": [],
+   "answer": "S(x)=\\dfrac{3-x}{(1-x)^{3}},x\\in(-1,1)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$S(x)=\\dfrac{3-x}{(1-x)^{3}},x\\in(-1,1)$\n\n【解析】$\\displaystyle\\sum\\limits_{n=0}^{\\infty}(n+1)(n+3)x^{n}$ 收敛域为 $(-1,1)$. 设和函数为 $S(x)$，则\n\n$S(x)=\\left(\\displaystyle\\sum\\limits_{n=0}^{\\infty}(n+3)x^{n+1}\\right)'$\n\n$=\\left(\\dfrac{1}{x}\\displaystyle\\sum\\limits_{n=0}^{\\infty}(n+3)x^{n+2}\\right)'=\\left(\\dfrac{1}{x}\\left(\\displaystyle\\sum\\limits_{n=0}^{\\infty}x^{n+3}\\right)'\\right)'=\\left(\\dfrac{1}{x}\\left(\\dfrac{x^{3}}{1-x}\\right)'\\right)'$\n\n$=\\dfrac{3-x}{(1-x)^{3}}$\n\n则 $S(x)=\\dfrac{3-x}{(1-x)^{3}},x\\in(-1,1)$."
+    }
+   ],
+   "knowledge_points": [
+    "幂级数",
+    "收敛域",
+    "和函数"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2
+    ],
+    "anchor": "第18题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6f44534cbaa3bca2d5a7ad12fc4617e9c26ae9e358e9679257161feed32b35bf"
+  },
+  {
+   "id": "math3-2014-19",
+   "subject": "math3",
+   "year": 2014,
+   "num": 19,
+   "type": "essay",
+   "score": 10,
+   "stem": "设函数 $f(x),g(x)$ 在区间 $[a,b]$ 上连续，且 $f(x)$ 单调增加，$0\\leqslant g(x)\\leqslant1$，证明：（1）$0\\leqslant\\displaystyle\\int_{a}^{x}g(t)dt\\leqslant x-a,x\\in[a,b]$.（2）$\\displaystyle\\int_{a}^{a+\\int_{a}^{b}g(t)dt}f(x)dx\\leqslant\\int_{a}^{b}f(x)g(x)dx$ .",
+   "options": [],
+   "answer": "证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】\n\n（1）由 $g(x)$ 在闭区间 $[0,1]$ 上连续，且 $0\\leqslant g(x)\\leqslant1$，由积分的性质可得\n\n$\\displaystyle\\int_{a}^{x}0dt\\leqslant\\int_{a}^{x}g(t)dt\\leqslant\\int_{a}^{x}1dt$.\n\n所以\n\n$0\\leqslant\\displaystyle\\int_{a}^{x}g(t)dt\\leqslant x-a$；\n\n（2）令 $F(t)=\\displaystyle\\int_{a}^{a+\\int_{a}^{t}g(x)dx}f(x)dx-\\int_{a}^{t}f(x)g(x)dx$ 则 $F(a)=0$，\n\n$F'(t)=f\\left(\\displaystyle\\int_{a}^{t}g(x)dx\\right)g(t)-f(t)g(t)$，\n\n由 $f(x)$ 在区间 $[0,1]$ 单调增，且 $0\\leqslant g(x)\\leqslant1$，可得\n\n$F'(t)=f\\left(a+\\displaystyle\\int_{a}^{t}g(x)dx\\right)g(t)-f(t)g(t)\\leqslant f(a+t-a)g(t)-f(t)g(t)=0$.\n\n所以，$F(t)$ 为减函数. 因此 $F(b)=\\displaystyle\\int_{a}^{a+\\int_{a}^{b}g(x)dx}f(x)dx-\\int_{a}^{b}f(x)g(x)dx\\leqslant F(a)=0$.\n\n即 $\\displaystyle\\int_{a}^{a+\\int_{a}^{b}g(t)dt}f(x)dx\\leqslant\\int_{a}^{b}f(x)g(x)dx$."
+    }
+   ],
+   "knowledge_points": [
+    "积分不等式证明",
+    "变限积分求导",
+    "函数单调性"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     2,
+     3
+    ],
+    "anchor": "第19题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:0d9fcd0a27a2aeed2ffc21789530c88d292d3174a363e1e3357b0febce165786"
+  },
+  {
+   "id": "math3-2014-20",
+   "subject": "math3",
+   "year": 2014,
+   "num": 20,
+   "type": "essay",
+   "score": 11,
+   "stem": "设矩阵 $\\boldsymbol{A}=\\begin{pmatrix}1&-2&3&-4\\\\ 0&1&-1&1\\\\ 1&2&0&-3\\end{pmatrix}$,$\\boldsymbol{E}$ 为三阶单位矩阵（I）求 $\\boldsymbol{Ax}=\\boldsymbol{0}$ 的一个基础解系；（II）求满足 $\\boldsymbol{AB}=\\boldsymbol{E}$ 的所有的矩阵 $\\boldsymbol{B}$ .",
+   "options": [],
+   "answer": "(I)\\ \\alpha=(-1,2,3,1)^{T};\\ (II)\\ B=(\\alpha_{1}+k_{1}\\alpha,\\alpha_{2}+k_{2}\\alpha,\\alpha_{3}+k_{3}\\alpha),\\ k_{1},k_{2},k_{3}\\in R",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】（I）$\\boldsymbol{A}=\\begin{pmatrix}1&-2&3&-4\\\\ 0&1&-1&1\\\\ 1&2&0&-3\\end{pmatrix}\\to\\begin{pmatrix}1&0&0&1\\\\ 0&1&0&-2\\\\ 0&0&1&-3\\end{pmatrix}$.\n\n从而同解方程组为\n\n$\\begin{cases}x_{1}=-x_{4},\\\\ x_{2}=2x_{4},\\\\ x_{3}=3x_{4}\\end{cases}$\n\n所以方程组 $\\boldsymbol{Ax}=\\boldsymbol{0}$ 的一个基础解系为 $\\boldsymbol{\\alpha}=\\begin{pmatrix}-1\\\\ 2\\\\ 3\\\\ 1\\end{pmatrix}$.\n\n（II）令 $\\boldsymbol{\\beta}_{1}=\\begin{pmatrix}1\\\\ 0\\\\ 0\\end{pmatrix},\\boldsymbol{\\beta}_{2}=\\begin{pmatrix}0\\\\ 1\\\\ 0\\end{pmatrix},\\boldsymbol{\\beta}_{3}=\\begin{pmatrix}0\\\\ 0\\\\ 1\\end{pmatrix}$，则\n\n$(\\boldsymbol{A}|\\boldsymbol{\\beta}_{1},\\boldsymbol{\\beta}_{2},\\boldsymbol{\\beta}_{3})=\\begin{pmatrix}1&-2&3&-4&\\vdots&1&0&0\\\\ 0&1&-1&1&\\vdots&0&1&0\\\\ 1&2&0&-3&\\vdots&0&0&1\\end{pmatrix}$\n\n$\\to\\begin{pmatrix}1&0&0&1&\\vdots&2&6&-1\\\\ 0&1&0&-2&\\vdots&-1&-3&1\\\\ 0&0&1&-3&\\vdots&-1&-4&1\\end{pmatrix}$，\n\n所以 $\\boldsymbol{Ax}=\\boldsymbol{\\beta}_{1}$ 的一个特解为 $\\boldsymbol{\\alpha}_{1}=\\begin{pmatrix}2\\\\ -1\\\\ -1\\\\ 0\\end{pmatrix}$，\n\n$\\boldsymbol{Ax}=\\boldsymbol{\\beta}_{2}$ 的一个特解为 $\\boldsymbol{\\alpha}_{2}=\\begin{pmatrix}6\\\\ -3\\\\ -4\\\\ 0\\end{pmatrix}$，\n\n$\\boldsymbol{Ax}=\\boldsymbol{\\beta}_{3}$ 的一个特解为 $\\boldsymbol{\\alpha}_{3}=\\begin{pmatrix}-1\\\\ 1\\\\ 1\\\\ 0\\end{pmatrix}$，\n\n所以\n\n$\\boldsymbol{B}=\\begin{pmatrix}-k_{1}+2&-k_{2}+6&-k_{3}-1\\\\ 2k_{1}-1&2k_{2}-3&2k_{3}+1\\\\ 3k_{1}-1&3k_{2}-4&3k_{3}+1\\\\ k_{1}&k_{2}&k_{3}\\end{pmatrix},\\left(k_{1},k_{2},k_{3}\\in R\\right)$."
+    }
+   ],
+   "knowledge_points": [
+    "齐次线性方程组",
+    "基础解系",
+    "矩阵方程"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     3
+    ],
+    "anchor": "第20题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:129f58b4c58000a4e3ab8ec118dd8065265124b9050ce8e517814daa4caba5d9"
+  },
+  {
+   "id": "math3-2014-21",
+   "subject": "math3",
+   "year": 2014,
+   "num": 21,
+   "type": "essay",
+   "score": 11,
+   "stem": "证明 $n$ 阶矩阵 $\\begin{pmatrix}1&1&\\cdots&1\\\\ 1&1&\\cdots&1\\\\ \\vdots&\\vdots&&\\vdots\\\\ 1&1&\\cdots&1\\end{pmatrix}$与 $\\begin{pmatrix}0&0&\\cdots&1\\\\ 0&0&\\cdots&2\\\\ \\vdots&\\vdots&&\\vdots\\\\ 0&0&\\cdots&n\\end{pmatrix}$ 相似.",
+   "options": [],
+   "answer": "证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【证明】令\n\n$\\boldsymbol{A}=\\begin{pmatrix}1&1&\\cdots&1\\\\ 1&1&\\cdots&1\\\\ \\vdots&\\vdots&&\\vdots\\\\ 1&1&\\cdots&1\\end{pmatrix},\\boldsymbol{B}=\\begin{pmatrix}0&0&\\cdots&1\\\\ 0&0&\\cdots&2\\\\ \\vdots&\\vdots&&\\vdots\\\\ 0&0&\\cdots&n\\end{pmatrix}$\n\n则\n\n$|\\lambda\\boldsymbol{E}-\\boldsymbol{A}|=\\begin{vmatrix}\\lambda-1&-1&\\cdots&-1\\\\ -1&\\lambda-1&\\cdots&-1\\\\ \\vdots&\\vdots&&\\vdots\\\\ -1&-1&\\cdots&\\lambda-1\\end{vmatrix}=(\\lambda-n)\\begin{vmatrix}1&1&\\cdots&1\\\\ 0&\\lambda&\\cdots&0\\\\ \\vdots&\\vdots&&\\vdots\\\\ 0&0&\\cdots&\\lambda\\end{vmatrix}=\\lambda^{n-1}(\\lambda-n)=0$\n\n$\\Rightarrow\\lambda_{1}=\\lambda_{2}=\\cdots=\\lambda_{n-1}=0,\\lambda_{n}=n$，\n\n因为 $\\boldsymbol{A}^{T}=\\boldsymbol{A}$，即 $\\boldsymbol{A}$ 为实对称矩阵，\n\n所以 $\\boldsymbol{A}$ 可相似对角化，即 $\\boldsymbol{A}\\sim\\boldsymbol{\\Lambda}$，其中 $\\boldsymbol{\\Lambda}=\\begin{pmatrix}n&&&\\\\ &0&&\\\\ &&\\ddots&\\\\ &&&0\\end{pmatrix}$，\n\n$|\\lambda\\boldsymbol{E}-\\boldsymbol{B}|=\\begin{vmatrix}\\lambda&0&\\cdots&-1\\\\ 0&\\lambda&\\cdots&-2\\\\ \\vdots&\\vdots&&\\vdots\\\\ 0&0&\\cdots&\\lambda-n\\end{vmatrix}=\\lambda^{n-1}(\\lambda-n)=0\\Rightarrow\\lambda_{1}=\\lambda_{2}=\\cdots=\\lambda_{n-1}=0,\\lambda_{n}=n$.\n\n当 $\\lambda_{1}=\\lambda_{2}=\\cdots=\\lambda_{n-1}=0$ 时，$0\\boldsymbol{E}-\\boldsymbol{B}=\\begin{pmatrix}0&0&\\cdots&-1\\\\ 0&0&\\cdots&-2\\\\ \\vdots&\\vdots&&\\vdots\\\\ 0&0&\\cdots&-n\\end{pmatrix}\\to\\begin{pmatrix}0&0&\\cdots&1\\\\ 0&0&\\cdots&0\\\\ \\vdots&\\vdots&&\\vdots\\\\ 0&0&\\cdots&0\\end{pmatrix}$，\n\n即 $r(-\\boldsymbol{B})=1$，则 $r(\\boldsymbol{B})=1$，\n\n所以 $\\lambda_{1}=\\lambda_{2}=\\cdots=\\lambda_{n-1}=0$ 对应 $n-1$ 个线性无关的特征向量，\n\n从而 $\\boldsymbol{B}$ 可相似对角化，即 $\\boldsymbol{B}\\sim\\boldsymbol{\\Lambda}$，其中 $\\boldsymbol{\\Lambda}=\\begin{pmatrix}n&&&\\\\ &0&&\\\\ &&\\ddots&\\\\ &&&0\\end{pmatrix}$，所以 $\\boldsymbol{A}$ 与 $\\boldsymbol{B}$ 相似."
+    }
+   ],
+   "knowledge_points": [
+    "特征值与特征向量",
+    "相似对角化"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     3
+    ],
+    "anchor": "第21题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:eb03560407698f5d38dd26b878b89504a9c9046a09573f20f34145b3609482ab"
+  },
+  {
+   "id": "math3-2014-22",
+   "subject": "math3",
+   "year": 2014,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "设随机变量 $X$ 的概率分布为 $P\\left\\{X=1\\right\\}=P\\left\\{X=2\\right\\}=\\dfrac{1}{2}$,在给定 $X=i$ 的条件下，随机变量 $Y$ 服从均匀分布 $u\\left(0,i\\right)\\left(i=1,2\\right)$，（I）求 $Y$ 的分布函数 $F_{Y}\\left(y\\right)$；（II）求 $E\\left(Y\\right)$.",
+   "options": [],
+   "answer": "(I)\\ F_{Y}(y)=\\begin{cases}0,&y<0\\\\ \\dfrac{3}{4}y,&0\\leqslant y<1\\\\ \\dfrac{1}{2}\\left(1+\\dfrac{y}{2}\\right),&1\\leqslant y<2\\\\ 1,&y\\geqslant2\\end{cases};\\ (II)\\ E(Y)=\\dfrac{3}{4}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】（I）\n\n$F_{Y}(y)=P\\{Y\\leqslant y\\}=P\\{Y\\leqslant y,X=1\\}+P\\{Y\\leqslant y,X=2\\}$\n\n$=P\\{Y\\leqslant y|X=1\\}P\\{X=1\\}+P\\{Y\\leqslant y|X=2\\}P\\{X=2\\}$\n\n$=\\dfrac{1}{2}\\Bigl[P\\{Y\\leqslant y|X=1\\}+P\\{Y\\leqslant y|X=2\\}\\Bigr]$\n\n当 $y<0$ 时，$F_{Y}(y)=0$；\n\n当 $0\\leqslant y<1$ 时，$F_{Y}(y)=\\dfrac{1}{2}\\left(y+\\dfrac{y}{2}\\right)=\\dfrac{3}{4}y$；\n\n当 $1\\leqslant y<2$ 时，$F_{Y}(y)=\\dfrac{1}{2}\\left(1+\\dfrac{y}{2}\\right)$；\n\n当 $y\\geqslant2$ 时，$F_{Y}(y)=1$.\n\n所以 $F_{Y}(y)=\\begin{cases}0,&y<0\\\\ \\dfrac{3}{4}y,&0\\leqslant y<1\\\\ \\dfrac{1}{2}\\left(1+\\dfrac{y}{2}\\right),&1\\leqslant y<2\\\\ 1,&y\\geqslant2\\end{cases}$.\n\n（II）由 $Y$ 的分布函数 $F_{Y}(y)$ 得到概率密度为\n\n$f(y)=F_{Y}'(y)=\\begin{cases}\\dfrac{3}{4},&0<y<1\\\\ \\dfrac{1}{4},&1\\leqslant y<2\\\\ 0,&\\text{其他}\\end{cases}$，\n\n则 $E(Y)=\\displaystyle\\int_{-\\infty}^{+\\infty}yf(y)dy=\\int_{0}^{1}y\\dfrac{3}{4}dy+\\int_{1}^{2}y\\dfrac{1}{4}dy=\\dfrac{3}{4}$."
+    }
+   ],
+   "knowledge_points": [
+    "条件分布",
+    "分布函数",
+    "期望"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     3
+    ],
+    "anchor": "第22题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:026a87a4762356610c5224d5ce286f18014995bae7bffa39281f716edc4eb931"
+  },
+  {
+   "id": "math3-2014-23",
+   "subject": "math3",
+   "year": 2014,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "设随机变量 $X,Y$ 的概率分布相同，$X$ 的概率分布为 $P\\left\\{X=0\\right\\}=\\dfrac{1}{3},P\\left\\{X=1\\right\\}=\\dfrac{2}{3}$，且 $X$ 与 $Y$ 的相关系数 $\\rho_{XY}=\\dfrac{1}{2}$ .（I）求 $\\left(X,Y\\right)$ 的概率分布；（II）求 $P\\left\\{X+Y\\leqslant1\\right\\}$ .",
+   "options": [],
+   "answer": "(I)\\ P\\{X=0,Y=0\\}=\\dfrac{2}{9},P\\{X=0,Y=1\\}=\\dfrac{1}{9},P\\{X=1,Y=0\\}=\\dfrac{1}{9},P\\{X=1,Y=1\\}=\\dfrac{5}{9};\\ (II)\\ \\dfrac{4}{9}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】（I）由已知得 $EX=EY=\\dfrac{2}{3},EX^{2}=EY^{2}=\\dfrac{2}{3}$.\n\n从而 $DX=DY=\\dfrac{2}{9}$，$\\rho_{XY}=\\dfrac{1}{2}=\\dfrac{EXY-EXEY}{\\sqrt{DX}\\sqrt{DY}}$，以 $EXY=\\dfrac{5}{9}$，\n\n从而 $P\\{X=1,Y=1\\}=\\dfrac{5}{9}$.\n\n$P\\{X=1,Y=0\\}=P\\{X=1\\}-P\\{X=1,Y=1\\}=\\dfrac{1}{9}$\n\n$P\\{X=0,Y=0\\}=P\\{Y=0\\}-P\\{X=1,Y=0\\}=\\dfrac{2}{9}$\n\n$P\\{X=0,Y=1\\}=P\\{Y=1\\}-P\\{X=1,Y=1\\}=\\dfrac{1}{9}$\n\n即 $\\left(X,Y\\right)$ 的概率分布为\n\n$\\begin{array}{c|cc|c} \\boldsymbol{X}\\backslash\\boldsymbol{Y} & 0 & 1 & \\\\ \\hline 0 & \\dfrac{2}{9} & \\dfrac{1}{9} & \\dfrac{1}{3} \\\\ 1 & \\dfrac{1}{9} & \\dfrac{5}{9} & \\dfrac{2}{3} \\\\ \\hline  & \\dfrac{1}{3} & \\dfrac{2}{3} & \\end{array}$\n\n（II）$P\\{X+Y\\leqslant1\\}=P\\{X=0,Y=0\\}+P\\{X=0,Y=1\\}+P\\{X=1,Y=0\\}=\\dfrac{4}{9}$."
+    }
+   ],
+   "knowledge_points": [
+    "二维离散型分布",
+    "相关系数",
+    "协方差"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+   "source_ref": {
+    "pdf": "2014数学三真题及解析.pdf",
+    "sha256": "bd500c7b317773b327b5a430ef6f857f402b0c84c4e4b309d3085d721ec1366e",
+    "pages": [
+     3
+    ],
+    "anchor": "第23题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:babddaf4d05f52adde5de9f3cd463120153b496de2a8e87d8aa3612eea61ad27"
+  }
+ ]
+}

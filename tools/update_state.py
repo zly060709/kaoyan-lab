@@ -33,8 +33,36 @@ def main():
             except Exception as e:
                 print(f"[warn] {f}: {e}")
 
-    task = sys.argv[1] if len(sys.argv) > 1 else "heartbeat"
+    # 任务名只取第一个非选项位置参数。此前直接取 sys.argv[1]，`--task xxx` 的调用会把
+    # 字面量 "--task" 写进 done_set，污染台账。
+    pos = [a for a in sys.argv[1:] if not a.startswith("-")]
+    task = pos[0] if pos else "heartbeat"
+    # 扩展科目（math2/math3/mgt199/law498…）不在 migration_*.json 里，一律按磁盘实数反推，
+    # 否则 state 的题量指标会停在旧年份（曾长期显示 math3 44 题而磁盘已 273 题）。
+    qs = state.setdefault("metrics", {}).setdefault("questions", {})
+    for d in sorted(os.listdir(os.path.join(ROOT, "data"))):
+        p = os.path.join(ROOT, "data", d)
+        if not os.path.isdir(p):
+            continue
+        n = 0
+        for f in os.listdir(p):
+            if f.endswith(".json") and f[0].isdigit():
+                try:
+                    n += int(json.load(open(os.path.join(p, f), encoding="utf-8")).get("question_count") or 0)
+                except Exception:
+                    pass
+        if n:
+            qs[d] = n
+    # 总题量按注册表求和（注册表由 sync_registry 从磁盘反推）。此前 questions_total
+    # 是一个从不更新的死值，长期停在 3272 而磁盘实为 3582。
+    try:
+        reg = json.load(open(os.path.join(ROOT, "data", "meta", "subjects.json"), encoding="utf-8"))
+        state["metrics"]["questions_total"] = sum(int(s.get("questionTotal") or 0) for s in reg["subjects"])
+    except Exception as e:
+        print(f"[warn] questions_total 反推失败: {e}")
     state["updated_at"] = now()
+    if task != "heartbeat" and task not in state.setdefault("done_set", []):
+        state["done_set"].append(task)
     json.dump(state, open(sp, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     json.dump({"updated_at": now(), "task": task, "by": "orchestrator"},
               open(os.path.join(S, "heartbeat.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)

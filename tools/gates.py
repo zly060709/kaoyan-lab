@@ -11,6 +11,7 @@
   G7 媒体占位符可解析 每个 @@M:id:i@@ 在对应 media 分片里有 URI
   G8 内部资源有效     html/sw 引用的本地路径存在（含数据文件路径）
   G9 注册表与数据一致 subjects.json 的 dataYears/yearCounts 与磁盘实际相符
+  G10 影像入口可解析 注册表声明的 paperYears/paperPages 在 source_pdfs.json 里按前端同一套前缀规则可解析
 
 用法: python -I -X utf8 tools/gates.py [--json out.json]
 退出码 0 = 全部门禁通过。
@@ -278,6 +279,38 @@ def main():
     except Exception as e:
         gate("G10 schema 结构", False, "校验器异常: %s" % str(e)[:80])
 
+    # G10 影像入口可解析
+    # 科目页的「原卷影像 N 页」卡片读注册表，点进去的影像页读 source_pdfs.json 的键前缀；
+    # 两边匹配规则一旦不一致（数一题目目录 math、影像前缀 math1.pages），线上就会
+    # 「卡片列出了、页面说未入库」。这里用前端同一套 [paperDir, dataDir, id] 规则复算。
+    bad_img = []
+    mpath = os.path.join(ROOT, "data", "meta", "source_pdfs.json")
+    pages = load(mpath) if os.path.exists(mpath) else {}
+    claimed = set()
+    for s in reg["subjects"]:
+        pats = [s.get("paperDir"), s.get("dataDir"), s["id"]]
+        for y in s.get("paperYears") or []:
+            claimed.add("%s:%d" % (s.get("paperDir") or s["id"], y))
+            keys = [k for k in pages
+                    if k.endswith(":%d" % y) and any(p and k.startswith(p + ":") for p in pats)]
+            if not keys:
+                bad_img.append("%s %s 无影像键（paperDir=%s）" % (s["id"], y, s.get("paperDir")))
+                continue
+            n = len(pages[keys[0]].get("page_files") or [])
+            if not n:
+                bad_img.append("%s %s 清单页数为 0" % (s["id"], y))
+            elif s.get("paperPages", {}).get(str(y)) != n:
+                bad_img.append("%s %s 注册表 %s 页 != 清单 %d 页" % (s["id"], y, s["paperPages"].get(str(y)), n))
+    # 反向：清单里每一卷都必须被某个科目的 paperYears 认领，否则新增影像目录前缀会被
+    # sync_registry 的 PAGES_DIR_TO_SUBJECT 静默丢弃——线上表现为「资料在库里，页面看不见」。
+    for k in pages:
+        if not re.match(r"^(.+):(\d{4})$", k):
+            continue
+        if k not in claimed:
+            bad_img.append("影像清单 %s 未被任何科目的 paperYears 认领" % k)
+    gate("G11 影像入口可解析", not bad_img,
+         "%d 卷影像键与页数均可解析" % sum(len(s.get("paperYears") or []) for s in reg["subjects"])
+         if not bad_img else "; ".join(bad_img[:5]))
     ok = all(r["pass"] for r in results)
     print("\n门禁汇总：%d/%d 通过%s" % (sum(1 for r in results if r["pass"]), len(results),
                                     "（全部通过，可打绿色 tag）" if ok else "（存在不合格项）"))
