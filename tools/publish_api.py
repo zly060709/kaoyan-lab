@@ -14,6 +14,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import sys
 import urllib.request
 
@@ -64,6 +65,32 @@ def local_files(root):
             rel = os.path.relpath(p, root).replace("\\", "/")
             out[rel] = p
     return out
+
+
+VER_RE = re.compile(r'(const VER = ")(kaoyan-v\d+\.\d+\.\d+)(")')
+
+
+def bump_sw_version(root, dry):
+    """数据变更即自动升 sw.js 的 VER（末位 +1），把「改了数据要手升版本号」这条隐性规则变成机器规则。
+
+    sw.js 对 /data/ 是 stale-while-revalidate：VER 不升，线上与本地实测都会继续读到旧 JSON，
+    既能给出假告警也能给出假清洁（收敛⑫ 本地复现过）。返回 (旧, 新)，未改动时返回 (None, None)。
+    """
+    p = os.path.join(root, "sw.js")
+    if not os.path.exists(p):
+        return None, None
+    text = io.open(p, encoding="utf-8").read()
+    m = VER_RE.search(text)
+    if not m:
+        die("sw.js 里找不到可识别的 `const VER = \"kaoyan-vX.Y.Z\"`，无法自动升版（请手改或修正正则）")
+    old = m.group(2)
+    parts = old.split("v")[1].split(".")
+    parts[-1] = str(int(parts[-1]) + 1)
+    new = "kaoyan-v" + ".".join(parts)
+    if not dry:
+        io.open(p, "w", encoding="utf-8", newline="\n").write(
+            text[:m.start(2)] + new + text[m.end(2):])
+    return old, new
 
 
 def main():
@@ -118,6 +145,21 @@ def main():
             if rel in known and known[rel][0] == sha:
                 continue
             changed.append((rel, p, sha, known.get(rel, (None, "100644"))[1], blob))
+    rels = [c[0] for c in changed]
+    data_touched = any(r.startswith("data/") and r.endswith(".json") for r in rels)
+    if data_touched and "sw.js" not in rels:
+        old, new = bump_sw_version(root, dry)
+        if new:
+            print("数据变更 -> sw.js 版本自动 %s -> %s%s"
+                  % (old, new, "（--dry-run，未写盘）" if dry else ""))
+            if not dry:
+                sp = os.path.join(root, "sw.js")
+                blob = io.open(sp, "rb").read()
+                changed = [c for c in changed if c[0] != "sw.js"]
+                changed.append(("sw.js", sp, git_hash(blob),
+                                known.get("sw.js", (None, "100644"))[1], blob))
+    elif data_touched:
+        print("数据变更，但 sw.js 已在变更集里 -> 按已给内容发布，不再自动升版")
     print("变更文件 %d 个" % len(changed))
     for rel, _, _, _, b in changed:
         print("   %s  %dKB" % (rel, len(b) // 1024))

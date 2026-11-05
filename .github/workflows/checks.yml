@@ -28,3 +28,5 @@ jobs:
         run: python -X utf8 tools/work/audit_m3legacy.py
       - name: 数三各年静态检查
         run: python -X utf8 tools/work/check_m3years.py
+      - name: 原卷影像清单对磁盘（全量检出才可信）
+        run: python -X utf8 tools/verify_pages.py

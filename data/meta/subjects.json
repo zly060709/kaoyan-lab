@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T13:29:10Z",
-  "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal 由 tools/sync_registry.py 依真实数据反推。",
+  "updated_at": "2026-11-05T14:05:54Z",
+  "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal/objectiveTotal 由 tools/sync_registry.py 依真实数据反推；paperYears 取影像清单声明的页数（本机缺文件不代表仓库缺，真值由 CI 的 verify_pages.py 校）。",
   "subjects": [
     {
       "id": "politics",
@@ -101,7 +101,8 @@
       "paperPages": {},
       "questionTotal": 780,
       "analysisYears": [],
-      "figureYears": []
+      "figureYears": [],
+      "objectiveTotal": 675
     },
     {
       "id": "math1",
@@ -142,8 +143,18 @@
         "2022": 22,
         "2023": 22
       },
-      "paperYears": [],
-      "paperPages": {},
+      "paperYears": [
+        2009,
+        2010,
+        2011,
+        2012
+      ],
+      "paperPages": {
+        "2009": 13,
+        "2010": 12,
+        "2011": 13,
+        "2012": 13
+      },
       "questionTotal": 250,
       "analysisYears": [],
       "figureYears": [
@@ -207,8 +218,40 @@
         "2022": 22,
         "2023": 22
       },
-      "paperYears": [],
-      "paperPages": {},
+      "paperYears": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "paperPages": {
+        "2009": 12,
+        "2010": 12,
+        "2011": 13,
+        "2012": 11,
+        "2013": 11,
+        "2014": 13,
+        "2015": 12,
+        "2016": 14,
+        "2017": 11,
+        "2018": 15,
+        "2019": 11,
+        "2020": 14,
+        "2021": 10,
+        "2022": 11,
+        "2023": 13
+      },
       "questionTotal": 342,
       "analysisYears": [],
       "figureYears": [
@@ -288,7 +331,10 @@
         2017,
         2018,
         2019,
-        2020
+        2020,
+        2021,
+        2022,
+        2023
       ],
       "paperPages": {
         "2009": 12,
@@ -302,7 +348,10 @@
         "2017": 13,
         "2018": 15,
         "2019": 12,
-        "2020": 13
+        "2020": 13,
+        "2021": 12,
+        "2022": 15,
+        "2023": 13
       },
       "questionTotal": 342,
       "analysisYears": [],
@@ -523,8 +572,12 @@
       "yearCounts": {
         "2022": 58
       },
-      "paperYears": [],
-      "paperPages": {},
+      "paperYears": [
+        2022
+      ],
+      "paperPages": {
+        "2022": 19
+      },
       "questionTotal": 58,
       "analysisYears": [],
       "figureYears": []
