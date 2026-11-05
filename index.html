@@ -581,14 +581,34 @@ function prevText(t,n){
 }
 function pairSlice(t,center,before,after){
   t=String(t||"").replace(/\s+/g," ");
-  const a=Math.max(0,center-before);
+  let a=Math.max(0,center-before);
+  /* D111: 起点回退到非字母边界，避免把 \dfrac 等命令切成 rac{…} 残片 */
+  while(a>0&&/[a-zA-Z]/.test(t[a-1])&&/[a-zA-Z]/.test(t[a]||""))a--;
   let seg=t.slice(a,Math.min(t.length,center+after));
   let guard=0;
   while(((seg.match(/\$/g)||[]).length)%2&&guard++<4){
     const iLast=seg.lastIndexOf("$"),iFirst=seg.indexOf("$");
     if(iLast<(center-a))seg=seg.slice(iFirst+1);else seg=seg.slice(0,iLast);
   }
-  return seg;
+  /* D111: \( \) 定界配对保护（合并索引改用 \( \)，仅配 $ 会让残缺式泄漏） */
+  guard=0;
+  while(((seg.match(/\\\(/g)||[]).length)!==((seg.match(/\\\)/g)||[]).length)&&guard++<4){
+    const iL=seg.indexOf("\\("),iR=seg.lastIndexOf("\\)");
+    if(iL>=0&&iR>=0&&iR>iL)seg=seg.slice(iL+2);
+    else if(iL>=0)seg=seg.slice(0,iL);
+    else if(iR>=0)seg=seg.slice(iR+2);
+    else break;
+  }
+  /* D111: 清洗定界符之外的裸 LaTeX 残片（窗口切割落在表达式中间时），$ 与 \(…\) 内交 KaTeX */
+  const parts=seg.split(/(\$|\\\(|\\\))/);
+  let out="",inMath=false;
+  for(const p of parts){
+    if(p==="$"){inMath=!inMath;out+=p}
+    else if(p==="\\("){inMath=true;out+=p}
+    else if(p==="\\)"){inMath=false;out+=p}
+    else out+=inMath?p:p.replace(/\\(?:begin|end)\{[a-zA-Z*]+\}/g," ").replace(/\\[a-zA-Z]+/g," ").replace(/\\\\/g," ").replace(/[{}]/g,"");
+  }
+  return out.replace(/ {2,}/g," ").trim();
 }
 
 /* ================= 图形引擎（D043 DSL + E08 解析器） ================= */
