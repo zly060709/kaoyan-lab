@@ -1,0 +1,166 @@
+[
+ {
+  "qid": "math2-2023-1",
+  "origin": "derived",
+  "title": "第1题 曲线 y=x·ln(e+1/(x−1)) 与其斜渐近线 y=x+1/e",
+  "xlim": [1.6, 10],
+  "ylim": [0, 11],
+  "items": [
+   {"kind": "graph", "f": "x*ln(e+1/(x-1))", "domain": [1.6, 10], "color": "#1D4ED8"},
+   {"kind": "graph", "f": "x+1/e", "domain": [1.6, 10], "color": "#B8324A"},
+   {"kind": "label", "x": 2.0, "y": 3.3, "text": "y=x·ln(e+1/(x−1))"},
+   {"kind": "label", "x": 7.2, "y": 5.4, "text": "斜渐近线 y=x+1/e"},
+   {"kind": "vline", "x": 1.6, "style": "dashed"}
+  ],
+  "caption": "原卷解法：a=lim(x→∞) y/x=lim ln(e+1/(x−1))=1，b=lim(y−x)=lim x·ln(1+1/(ex−e))=lim x/(ex−e)=1/e，故斜渐近线为 y=x+1/e，选 B。"
+ },
+ {
+  "qid": "math2-2023-2",
+  "origin": "derived",
+  "title": "第2题 分段函数 f(x)（红）与它的一个原函数 F(x)（蓝）",
+  "xlim": [-2.5, 2.5],
+  "ylim": [-1.6, 3.0],
+  "items": [
+   {"kind": "graph", "f": "1/sqrt(1+x^2)", "domain": [-2.5, 0], "color": "#B8324A"},
+   {"kind": "graph", "f": "(x+1)*cos(x)", "domain": [0, 2.5], "color": "#B8324A"},
+   {"kind": "graph", "f": "ln(sqrt(1+x^2)+x)+1", "domain": [-2.5, 0], "color": "#1D4ED8"},
+   {"kind": "graph", "f": "(x+1)*sin(x)+cos(x)", "domain": [0, 2.5], "color": "#1D4ED8"},
+   {"kind": "point", "x": 0, "y": 1, "label": "F(0)=C₁=C₂+1"},
+   {"kind": "label", "x": -2.3, "y": 0.45, "text": "f(x) 左段"},
+   {"kind": "label", "x": 1.3, "y": 1.05, "text": "F(x) 右段"}
+  ],
+  "caption": "原卷解法：x≤0 时 ∫f=ln(√(1+x²)+x)+C₁；x>0 时 ∫f=(x+1)sinx+cosx+C₂。原函数须在 x=0 连续，故 C₁=C₂+1；取 C₂=0 得 C₁=1，即选项 D。"
+ },
+ {
+  "qid": "math2-2023-3",
+  "origin": "derived",
+  "title": "第3题 关键不等式 (2/π)x<sin x 与 y_{n+1}=y_n² 的收缩速度",
+  "xlim": [0, 1.6],
+  "ylim": [0, 1.6],
+  "items": [
+   {"kind": "graph", "f": "sin(x)", "domain": [0, 1.6], "color": "#1D4ED8"},
+   {"kind": "graph", "f": "2*x/pi", "domain": [0, 1.6], "color": "#B8324A"},
+   {"kind": "graph", "f": "x^2", "domain": [0, 1.2649], "color": "#1F7A6D"},
+   {"kind": "graph", "f": "0.5*x", "domain": [0, 1.6], "color": "#C9A961"},
+   {"kind": "label", "x": 1.15, "y": 1.02, "text": "sin x"},
+   {"kind": "label", "x": 1.35, "y": 0.9, "text": "(2/π)x"},
+   {"kind": "label", "x": 1.02, "y": 0.62, "text": "x²"},
+   {"kind": "label", "x": 1.4, "y": 0.72, "text": "x/2"}
+  ],
+  "caption": "原卷解法：x∈(0,π/2) 时 (2/π)x<sinx ⇒ x_{n+1}>(2/π)x_n；又 y_{n+1}≤(1/2)y_n ⇒ y_{n+1}/x_{n+1}<(π/4)ⁿ·y₁/x₁→0，故 y_n 是 x_n 的高阶无穷小，选 B。"
+ },
+ {
+  "qid": "math2-2023-5",
+  "origin": "derived",
+  "title": "第5题 参数曲线 x=2t+|t|, y=|t|sin t（t∈[−1,1]）",
+  "xlim": [-1.3, 3.3],
+  "ylim": [-1.1, 1.1],
+  "items": [
+   {"kind": "parametric", "fx": "2*t+abs(t)", "fy": "abs(t)*sin(t)", "tmin": -1, "tmax": 1, "color": "#1D4ED8"},
+   {"kind": "point", "x": 0, "y": 0, "label": "t=0"},
+   {"kind": "label", "x": 2.0, "y": -0.75, "text": "t>0：x=3t"},
+   {"kind": "label", "x": -1.15, "y": -0.95, "text": "t<0：x=t"}
+  ],
+  "caption": "原卷解法：f'(0)=lim |t|sint/(2t+|t|)=0；t>0 时 f'=(sint+tcost)/3，t<0 时 f'=−(sint+tcost)，两侧均趋于 0 ⇒ f' 在 0 连续；但 f''₊(0)=2/9≠f''(0)=−2 ⇒ f''(0) 不存在，选 C。"
+ },
+ {
+  "qid": "math2-2023-7",
+  "origin": "derived",
+  "title": "第7题 f''(x)/e^x=x²+4x+2+a：a=1 变号（有拐点），a=2 不变号（无拐点）",
+  "xlim": [-5, 0.6],
+  "ylim": [-1.6, 6.0],
+  "items": [
+   {"kind": "graph", "f": "x^2+4*x+3", "domain": [-5, 0.6], "color": "#1D4ED8"},
+   {"kind": "graph", "f": "x^2+4*x+4", "domain": [-5, 0.6], "color": "#B8324A"},
+   {"kind": "hline", "y": 0},
+   {"kind": "point", "x": -3, "y": 0, "label": "x=−3"},
+   {"kind": "point", "x": -1, "y": 0, "label": "x=−1"},
+   {"kind": "point", "x": -2, "y": 0, "label": "a=2 重根"},
+   {"kind": "label", "x": -4.6, "y": 4.2, "text": "a=1：x²+4x+3"},
+   {"kind": "label", "x": -1.2, "y": 4.6, "text": "a=2：(x+2)²"}
+  ],
+  "caption": "原卷解法：无极值 ⇒ x²+2x+a≥0 ⇒ a≥1；有拐点 ⇒ x²+4x+2+a=0 有变号根 ⇒ a≤2；a=2 时 f''=(x+2)²e^x 不变号（f⁽⁴⁾(−2)=2）故无拐点 ⇒ a∈[1,2)，选 C。"
+ },
+ {
+  "qid": "math2-2023-12",
+  "origin": "derived",
+  "title": "第12题 弧长被积函数 √(1+y'²)=√(4−x²)（阴影即弧长积分区间 [−√3,√3]）",
+  "xlim": [-2.2, 2.2],
+  "ylim": [-0.4, 2.6],
+  "items": [
+   {"kind": "shade_under", "f": "sqrt(4-x^2)", "domain": [-1.7321, 1.7321], "color": "rgba(29,78,216,.18)"},
+   {"kind": "graph", "f": "sqrt(4-x^2)", "domain": [-2, 2], "color": "#1D4ED8"},
+   {"kind": "graph", "f": "sqrt(3-x^2)", "domain": [-1.7321, 1.7321], "color": "#B8324A"},
+   {"kind": "vline", "x": 1.7321, "style": "dashed", "label": "√3"},
+   {"kind": "vline", "x": -1.7321, "style": "dashed"},
+   {"kind": "label", "x": 0.3, "y": 2.25, "text": "√(4−x²)=√(1+y'²)"},
+   {"kind": "label", "x": -1.6, "y": 1.15, "text": "y'=√(3−x²)"}
+  ],
+  "caption": "原卷解法：y'(x)=√(3−x²) ⇒ S=∫_{−√3}^{√3}√(4−x²)dx=2∫_0^{√3}√(4−x²)dx，令 x=2sinu ⇒ S=4∫_0^{π/3}(1+cos2u)du=4π/3+√3。"
+ },
+ {
+  "qid": "math2-2023-14",
+  "origin": "derived",
+  "title": "第14题 曲线 3x³=2y³+y⁵ 在 (1,1) 处的切线（斜率 9/11）与法线（斜率 −11/9）",
+  "xlim": [-0.1, 2.2],
+  "ylim": [-0.1, 2.2],
+  "items": [
+   {"kind": "parametric", "fx": "((2*t^3+t^5)/3)^(1/3)", "fy": "t", "tmin": 0.4, "tmax": 1.7, "color": "#1D4ED8"},
+   {"kind": "segment", "x1": 0.2, "y1": 0.3455, "x2": 2.0, "y2": 1.8182, "color": "#B8324A"},
+   {"kind": "segment", "x1": 0.4, "y1": 1.7333, "x2": 1.6, "y2": 0.2667, "color": "#1F7A6D"},
+   {"kind": "point", "x": 1, "y": 1, "label": "(1,1)"},
+   {"kind": "label", "x": 1.55, "y": 1.9, "text": "切线 k=9/11"},
+   {"kind": "label", "x": 1.62, "y": 0.3, "text": "法线 k=−11/9"}
+  ],
+  "caption": "原卷解法：两边求导 9x²=6y²y'+5y⁴y'；x=1 时由 3=2y³+y⁵ 得 y=1，故 y'=9/11，法线斜率为 −11/9。"
+ },
+ {
+  "qid": "math2-2023-17",
+  "origin": "derived",
+  "title": "第17题 曲线 y=x(2−ln x) 与面积最小处的切线（阴影三角形面积 = e³）",
+  "xlim": [0, 9.5],
+  "ylim": [-1.0, 5.2],
+  "items": [
+   {"kind": "polygon", "pts": [[0, 0], [8.9632, 0], [0, 4.4817]], "color": "rgba(201,169,97,.22)"},
+   {"kind": "graph", "f": "x*(2-ln(x))", "domain": [2.7183, 7.3891], "color": "#1D4ED8"},
+   {"kind": "segment", "x1": 0, "y1": 4.4817, "x2": 8.9632, "y2": 0, "color": "#B8324A"},
+   {"kind": "point", "x": 4.4817, "y": 2.2409, "label": "P(e^(3/2), e^(3/2)/2)"},
+   {"kind": "label", "x": 6.2, "y": 1.15, "text": "y=x(2−ln x)"},
+   {"kind": "label", "x": 0.6, "y": 4.85, "text": "切线 y=4.48−0.5x"}
+  ],
+  "caption": "原卷解法：截距式条件 x=y−xy' ⇒ y'=y/x−1 ⇒ y=−xlnx+Cx，过 (e²,0) 得 C=2；S=(1/2)x²/(lnx−1)，dS/dx=x(2lnx−3)/(2(lnx−1)²)=0 ⇒ x=e^{3/2}，S_min=e³。"
+ },
+ {
+  "qid": "math2-2023-19",
+  "origin": "derived",
+  "title": "第19题 区域 D：0≤y≤1/(x√(1+x²)), x≥1（阴影为 D 的截断示意）",
+  "xlim": [0.5, 5],
+  "ylim": [-0.1, 1.0],
+  "items": [
+   {"kind": "shade_under", "f": "1/(x*sqrt(1+x^2))", "domain": [1, 5], "color": "rgba(29,78,216,.18)"},
+   {"kind": "graph", "f": "1/(x*sqrt(1+x^2))", "domain": [0.6, 5], "color": "#1D4ED8"},
+   {"kind": "vline", "x": 1, "style": "dashed", "label": "x=1"},
+   {"kind": "label", "x": 2.1, "y": 0.42, "text": "y=1/(x√(1+x²))"},
+   {"kind": "label", "x": 3.4, "y": 0.06, "text": "x→+∞ 时收敛"}
+  ],
+  "caption": "原卷解法：S=∫_1^{+∞}dx/(x√(1+x²))，令 x=tant ⇒ ∫_{π/4}^{π/2}csct dt=ln|csct−cott|=ln(√2+1)；V=π∫_1^{+∞}dx/(x²(1+x²))=π[−1/x−arctanx]_1^{+∞}=π(1−π/4)。"
+ },
+ {
+  "qid": "math2-2023-20",
+  "origin": "derived",
+  "title": "第20题 极坐标下的区域 D（原卷配图）：两椭圆弧之间、0≤θ≤π/3",
+  "xlim": [0, 1.9],
+  "ylim": [0, 1.9],
+  "items": [
+   {"kind": "polar", "r": "1/sqrt(1-sin(t)*cos(t))", "tmin": 0, "tmax": 1.0472, "color": "#1D4ED8"},
+   {"kind": "polar", "r": "sqrt(2/(1-sin(t)*cos(t)))", "tmin": 0, "tmax": 1.0472, "color": "#B8324A"},
+   {"kind": "segment", "x1": 0, "y1": 0, "x2": 1.8, "y2": 0, "color": "#7C3AED"},
+   {"kind": "segment", "x1": 0, "y1": 0, "x2": 0.9, "y2": 1.5588, "color": "#7C3AED"},
+   {"kind": "label", "x": 1.35, "y": 0.08, "text": "y=0"},
+   {"kind": "label", "x": 0.98, "y": 1.62, "text": "y=√3 x"},
+   {"kind": "label", "x": 0.55, "y": 0.95, "text": "x²+y²−xy=1"},
+   {"kind": "label", "x": 1.05, "y": 1.25, "text": "=2"}
+  ],
+  "caption": "原卷解法：x=rcosθ, y=rsinθ，边界化为 1/√(1−sinθcosθ)≤r≤√(2/(1−sinθcosθ))，0≤θ≤π/3；∬_D dxdy/(3x²+y²)=∫_0^{π/3}ln√2/(3cos²θ+sin²θ)dθ=(√3ln2/24)π。"
+ }
+]

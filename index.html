@@ -223,9 +223,8 @@ function compileExpr(src){
     pi:"Math.PI",e:"Math.E"};
   let js=cleaned.replace(/[a-zA-Z_]+/g,m=>{const k=m.toLowerCase();if(k in FN)return FN[k];if(k==="x"||k==="t")return k;throw new Error("未知符号:"+m)});
   js=js.replace(/\^/g,"**");
-  const v=cleaned.toLowerCase().includes("t")?"t":"x";
-  const f=new Function(v,"\"use strict\";try{return ("+js+")}catch(_){return NaN}");
-  return x=>{let r;try{r=f(x)}catch(_){return NaN}return typeof r==="number"?r:NaN};
+  const f=new Function("x","t","\"use strict\";try{return ("+js+")}catch(_){return NaN}");
+  return v=>{let r;try{r=f(v,v)}catch(_){return NaN}return typeof r==="number"?r:NaN};
 }
 function renderFigure(host,spec){
   const W=Math.min(680,(host.clientWidth||600)-36),H=340,dpr=window.devicePixelRatio||1;

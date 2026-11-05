@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T04:29:36Z",
+  "updated_at": "2026-11-05T04:57:19Z",
   "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal 由 tools/sync_registry.py 依真实数据反推。",
   "subjects": [
     {
@@ -166,7 +166,7 @@
       "dataDir": "math2",
       "years": [
         2009,
-        2022
+        2023
       ],
       "dataYears": [
         2009,
@@ -182,7 +182,8 @@
         2019,
         2020,
         2021,
-        2022
+        2022,
+        2023
       ],
       "yearCounts": {
         "2009": 23,
@@ -198,7 +199,8 @@
         "2019": 23,
         "2020": 23,
         "2021": 22,
-        "2022": 22
+        "2022": 22,
+        "2023": 22
       },
       "paperYears": [
         2009,
@@ -234,7 +236,7 @@
         "2022": 11,
         "2023": 13
       },
-      "questionTotal": 320,
+      "questionTotal": 342,
       "analysisYears": []
     },
     {
