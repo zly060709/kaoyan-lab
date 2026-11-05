@@ -6,3 +6,5 @@ Thumbs.db
 __pycache__/
 .auth/
 dist/
+
+tools/work/run.json

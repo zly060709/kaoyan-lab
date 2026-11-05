@@ -1,9 +1,9 @@
 {
  "schema_version": "1.0.0",
  "phase": "M3-converge",
- "status": "RUNNING",
+ "status": "DONE",
  "started_at": "2026-11-04T15:08:05Z",
- "updated_at": "2026-11-05T17:25:45Z",
+ "updated_at": "2026-11-05T22:22:17Z",
  "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
  "done_set": [
   "conv10:math3-2009-2019",
@@ -46,34 +46,39 @@
   "m1:migrate_math",
   "m1:migrate_politics",
   "math2-2009-2021-done",
-  "D111-acceptance"
+  "D111-acceptance",
+  "conv15:法硕 498 2023 卷三源合录 58 题入库并线上验收",
+  "conv16:数学一 2011/2012/2009 三卷视觉转录入库（2009–2023 十五年全齐 342 题）",
+  "conv16b:Pages 服务端波动恢复后部署成功 + 线上端到端验收（全站 3778 题）"
  ],
  "failed_set": [],
- "current_task": "conv10 完成：待推送后线上核验",
+ "current_task": "本轮任务已交付：数学一 2009/2011/2012 与法硕 498 2023 全部入库并上线，线上验收通过（Deploy Pages run 42093996232 attempt 4 success / deployment 7584112993）；剩余待资料科目见 PENDING_YEARS.md",
  "in_flight": {},
  "auth": "authorized (zly060709)",
  "gates": {
   "tool": "tools/gates.py",
-  "pass": "9/9",
-  "checked_at": "2026-11-05"
+  "pass": "11/11",
+  "checked_at": "2026-11-06"
  },
  "metrics": {
-  "questions_total": 3272,
+  "questions_total": 3778,
   "questions": {
    "politics": 456,
-   "math": 250,
+   "math": 342,
    "english": 780,
    "english_objective": 675,
    "math2": 342,
    "cs408": 376,
    "mgt199": 1024,
-   "math3": 44
+   "math3": 342,
+   "law498": 116
   },
   "expected": {
    "politics": 456,
-   "math": 250,
+   "math": 342,
    "english_objective": 675,
-   "cs408": 376
+   "cs408": 376,
+   "law498": 116
   },
   "images_pages": {
    "math1": 51,
@@ -111,13 +116,13 @@
    "politics",
    "math1",
    "math2",
+   "math3",
    "english1",
    "cs408",
-   "mgt199"
+   "mgt199",
+   "law498"
   ],
-  "imaging_only": [
-   "math3 (仅 2009–2021 的 13 卷仍为原卷影像)"
-  ],
+  "imaging_only": [],
   "not_yet_migrated": [
    "econ396",
    "law397",
@@ -136,13 +141,11 @@
    "mgt199-2025": "源包只有 55 题（缺写作第 56、57 题）",
    "mgt199-sufficiency": "源包未给 A-E 判断结果选项文本，options 留空并逐题附原卷切片"
   },
-  "partial_transcribed": {
-   "math3": "2022/2023 共 44 题已转录，其余 13 卷保持影像"
-  }
+  "partial_transcribed": {}
  },
  "queue_sequential": [
   "conv4:数学三 13 卷视觉转录（数学二 342 题、数学三 2021/2022/2023 共 66 题已完成；法硕498 2022 卷 58 题为用户加料已入库）",
-  "conv5:英语二 16 卷、数一 2009-2012、英一 2005-2009+2025 转录",
+  "conv5:英语二 16 卷、英一 2005-2009+2025 转录（数一 2009/2011/2012 三卷已于收敛⑫⑬⑭ 结清）",
   "conv6:396 经综 22 份 PDF 转录",
   "conv7:eol 7 科 116 张扫描件接入",
   "conv8:合同第 3 章前端功能全集",

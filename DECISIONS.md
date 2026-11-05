@@ -2,6 +2,14 @@
 
 本文件由 Orchestrator 维护：所有模糊处的默认决策记录于此（AGENT_CONTRACT.md 第 0/5/6 章要求）。新条目倒序追加。用户已明确：不提问、自行决策并记录。
 
+## D112 · 2026-11-06 · 本轮收尾：部署是否上线，以 run 终态与线上产物为准，不以失败 job 快照为准
+接手时台账停在「GitHub Pages 服务端持续超时，2009/2012 两卷待部署」，后续 5 轮自动「继续」均无产出。本轮不重跑任何已完成的转录/构建，只做状态核对、全链复验与台账收敛，结论与决策如下。
+
+1. **先看终态再决定要不要动手** —— Deploy Pages run `42093996232`（head `cbdc5cf`，2009 卷提交）的 API 终态是 `completed/success`，其 `attempt 4` 的 check/build/deploy 三个 job 全部 success（deploy 20:09:23–20:09:34 UTC），deployment `7584112993` 已生效。此前会话记录的 `tools/work/jobs.json` 里那条 `deploy failure` 是 attempt 1 的旧快照，不是该 run 的最终结果；会话在自动重试跑通前就结束了，于是把「暂时失败」写成了「卡住」。决策：判定部署状态一律查 run 终态 + attempt，再查线上产物，不拿本地 API 快照当结论（与 D111 第 6 条「测量本身也要被怀疑」同源）。本轮已把 `jobs.json` 换成该 run 的全 success 快照。
+2. **线上验收走内容寻址，不靠猜 blob 名** —— 线上 `enc/manifest.json` 已含 `data/math/2009.json`（及 `.media.json`）、`2011.json`、`2012.json`、`data/law498/2023.json`，全部 200 且密文长度 = 明文 + 16B tag。上一轮曾拿本地 `dist/enc/` 的文件名去测线上得到 404，根因是本机工作区 CRLF、CI 检出 LF，明文哈希因而不同（`build_site.py` 的 blob 名 = sha256(明文)[:16]）。本轮改用 `git show HEAD:<path>` 取仓库原始字节算 sha256[:16]，与线上 manifest 的 `f` 逐一比对：2009 `ee5c…`、2011 `8f43…`、2012 `de73…`、2009.media `e822…`、law498/2023 `598c…`、subjects `9d92…` 全部吻合，证明线上密文与已通过门禁的 main 数据逐字节一致。线上 `index.html` 与本地也只差行尾（1445 字节 = 1445 行 CRLF→LF），`sw.js` 同为 `kyl-0.5.4`。
+3. **不重复已完成的工作** —— 用户给的优先级清单（三卷核验 → 配置条目 → build_math_batch/sync_registry/audit_math/build_index → 门禁/单测 → 提交推送 → 线上核验；法硕 2023）接手时已全部落地：`math_batch_config.json` 三个条目齐、`check_math_modules.py m12009 m12011 m12012` 三卷 23 题 150 分全 PASS、`verify_data` ALL PASS（math 342 / law498 116）、`gates.py` 11/11（3778 题）、单测 14/14、HEAD == origin/main。本轮只补台账与最终验收，不再跑构建脚本，避免把已上线的确定性产物重新洗一遍。
+4. **台账口径收敛，但不动历史快照** —— `PENDING_YEARS` / `state.json` / `QUALITY_REPORT` 里「数学一仅影像」「法硕 2023 仅封面」「3709 题」「门禁 9/9」「待推送后线上核验」等均已过时，更新到 3778 题 / 11/11 / status=DONE；`QUALITY_REPORT` 的历史题量表保留各阶段快照，另加「收敛⑯ 最终验收快照」小节声明当前口径。`DEGRADED.md` 的 Pages 波动登记为已恢复。剩余待资料科目维持 `pending`，不编造。
+
 ## D111 · 2026-11-06 · 浏览器实测债补测（收敛⑮）＋ 搜索摘要裸 LaTeX 的三向修复
 以带浏览器工具的会话补做收敛⑦⑧⑨连续登记的「题页 console / KaTeX / 图形 canvas 实测」债，过程中发现并修复搜索摘要泄漏。决策如下。
 
