@@ -21,6 +21,7 @@ PAGES_DIR_TO_SUBJECT = {
     "math1.pages": "math1",
     "math2": "math2",
     "math3": "math3",
+    "law498": "law498",
 }
 
 

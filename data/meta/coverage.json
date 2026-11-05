@@ -191,6 +191,16 @@
     "questions": 0,
     "paperYears": []
   },
+  "law498": {
+    "status": "active",
+    "dataYears": [
+      2022
+    ],
+    "questions": 58,
+    "paperYears": [
+      2022
+    ]
+  },
   "med306": {
     "status": "pending",
     "dataYears": [],

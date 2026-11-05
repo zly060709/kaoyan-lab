@@ -167,7 +167,7 @@ body.selftest article.revealed .opt.correct{display:block}
 <div id="backtop">↑</div>
 <div class="toast" id="toast"></div>
 <footer>
-  内容包含第三方版权考研真题与解析（408 部分原始资料为新东方在线《408 真题集（2009–2025）》；数学/英语部分源自用户提供的《学科历年真题》资料）· 仅限个人学习使用，禁止二次分发与商用<br>
+  内容包含第三方版权考研真题与解析（408 部分原始资料为新东方在线《408 真题集（2009–2025）》；数学/英语部分源自用户提供的《学科历年真题》资料；法硕（非法学）综合课源自用户提供的 2022 年真题及答案详解图片版）· 仅限个人学习使用，禁止二次分发与商用<br>
   kaoyan-lab · 纯静态离线可用 · 学习数据仅存于本浏览器 · <a href="/diag.html" style="color:var(--muted)">自诊断</a>
 </footer>
 <script>
@@ -350,6 +350,7 @@ async function viewHome(){
   <div class="card" style="--acc:var(--teal);margin:0;font-size:14.5px">
     · 已收录 ${totalQ} 题（${liveSubs} 科有题，英语按全部单元计、其中客观题 675；其余统考科目等你提供资料后按同一管线开工，绝不编造真题）<br>
     · 408 全部 376 题已挂<b>九段式分步精讲</b>（题卡下方「扩展精讲 · 九段式」，逐段自主揭示）<br>
+    · 新科目：<b>法硕（非法学）综合课 498</b> 2022 卷 58 题已入库（含答案详解与点评，原卷影像可对照）<br>
     · 未转录完成的年份直接提供<b>原卷影像</b>逐页查看（数一 2009–2012、数二/数三 2009–2023）<br>
     · 数学题的函数图像、积分区域、曲线关系等抽象概念已图形化（题卡下方图形面板，标注为扩展图形）· <a href="lab3d.html" style="color:var(--math)">🧊 3D 实验室（曲面/旋转体/二重积分）</a><br>
     · 顶部「自测」开关：隐藏答案与解析，先做后对；题目页 <b>j/k</b> 翻题、<b>空格</b> 揭示、<b>/</b> 搜索<br>
@@ -416,7 +417,11 @@ async function viewYear(s,y){
       ${(p.blocks||[]).map(b=>b.role==="en"?`<div class="en">${b.html}</div>`:b.role==="zh"?`<div class="zh">${b.html}</div>`:"").join("")}</details>`).join("");
   }
   let paperLink="";
-  const mp=(CACHE["data/meta/source_pdfs.json"]||null);
+  try{const mp=await fetchJSON("data/meta/source_pdfs.json");
+    const kk=Object.keys(mp).filter(k=>k.endsWith(":"+y)&&(k.startsWith(dirOf(s.id)+":")||k.startsWith(s.id+":")));
+    const pgs=(kk.length&&mp[kk[0]].page_files)||[];
+    if(pgs.length)paperLink=`<a class="ycard dim" style="display:inline-block;padding:6px 14px;margin:0 0 12px" href="#/${s.id}/${y}/paper"><b>原卷影像</b><span>${pgs.length} 页 · 逐题对照</span></a>`;
+  }catch(e){}
   let sections="";
   if(Array.isArray(d.sections)&&d.sections.length){
     sections=`<div class="card" style="margin:0 0 12px"><b style="font-size:13px">试卷结构（源包原文）</b>`+
@@ -424,10 +429,10 @@ async function viewYear(s,y){
       `<div style="font-size:12px;color:var(--muted);margin-top:8px">条件充分性判断的 A–E 判断结果选项在源 Markdown 包中未给出，平台按合同不编造，逐题附原卷切片供核对。</div></div>`;
   }
   app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s.id}">${esc(s.short||s.name)}</a> › ${y}</div>
-  <h2 class="sec">${y} 年 ${esc(s.short||s.name)}（${d.question_count||qs.length} 题）</h2>${sections}
+  <h2 class="sec">${y} 年 ${esc(s.short||s.name)}（${d.question_count||qs.length} 题）</h2>${sections}${paperLink}
   <div class="qlist">${rows||"<div class='qcard'>暂无题目数据</div>"}</div>${passages}`;
 }
-const TYPE_LABEL={single:"单选",multi:"多选",fill:"填空",essay:"解答",reading:"阅读",cloze:"完形",partb:"新题型",translation:"翻译",writing:"写作",code:"代码",big:"大题",sufficiency:"条件充分性判断",logic:"逻辑推理",other:"题"};
+const TYPE_LABEL={single:"单选",multi:"多选",fill:"填空",essay:"解答",analysis:"分析题",reading:"阅读",cloze:"完形",partb:"新题型",translation:"翻译",writing:"写作",code:"代码",big:"大题",sufficiency:"条件充分性判断",logic:"逻辑推理",other:"题"};
 
 /* ============ 九段式分步揭示（合同第 3 章 B，扩展精讲 origin=extended） ============ */
 const STEPS=[["考点定位","kaodian"],["先补基础","basis"],["审题抓条件","read"],["思路引导","silu"],
@@ -516,6 +521,7 @@ async function viewQuestion(s,y,num){
       <div class="tt">${esc(q.title||(s.short+" "+y+" 第 "+q.num+" 题"))}</div>
       ${(q.tags||[]).map(t=>`<span style="font-size:11px;color:var(--muted);border:1px solid var(--line);padding:1px 8px;border-radius:10px">${esc(t)}</span>`).join("")}
       ${q.difficulty?`<span style="font-size:11px;color:var(--amber)">难度 ${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span>`:""}
+      ${q.score?`<span style="font-size:11px;color:var(--muted)">${q.score} 分</span>`:""}
       ${ansStr?`<div class="ans">答案 <b>${mathAns?"$"+esc(ansStr)+"$":esc(ansStr)}</b></div>`:""}
       <button class="reveal-btn" id="rv" style="margin:0 0 0 8px;padding:4px 14px;font-size:12.5px">👁 揭示</button>
       <button class="reveal-btn" id="bm" style="margin:0;padding:4px 14px;font-size:12.5px">${mark?"★ 已收藏":"☆ 收藏"}</button>
@@ -571,7 +577,7 @@ async function viewQuestion(s,y,num){
     renderMath(box);
   });
 }
-const ROLE_L={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",kaodian:"考点定位",silu:"思路引导",jiefa:"解法构建",biaozhun:"标准解答",yicuo:"易错深挖",guina:"方法归纳",qita:"其他解法",stem_nodes:"题干结构化原文",options:"选项原文",paper_slice:"原卷切片",note:"源包校注",other:"原文区块"};
+const ROLE_L={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",analysis2:"点评",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",kaodian:"考点定位",silu:"思路引导",jiefa:"解法构建",biaozhun:"标准解答",yicuo:"易错深挖",guina:"方法归纳",qita:"其他解法",stem_nodes:"题干结构化原文",options:"选项原文",paper_slice:"原卷切片",note:"源包校注",other:"原文区块"};
 
 /* ============ 搜索 ============ */
 async function viewSearch(q){

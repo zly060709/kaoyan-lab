@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T07:44:49Z",
+  "updated_at": "2026-11-05T09:00:32Z",
   "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal 由 tools/sync_registry.py 依真实数据反推。",
   "subjects": [
     {
@@ -485,6 +485,32 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
+      "analysisYears": []
+    },
+    {
+      "id": "law498",
+      "code": "498",
+      "name": "法硕联考综合（非法学）",
+      "short": "法硕综合(非法)",
+      "color": "#0E7490",
+      "icon": "⚖",
+      "status": "active",
+      "need": "提供历年真题资料即可开工",
+      "dataDir": "law498",
+      "years": [],
+      "dataYears": [
+        2022
+      ],
+      "yearCounts": {
+        "2022": 58
+      },
+      "paperYears": [
+        2022
+      ],
+      "paperPages": {
+        "2022": 19
+      },
+      "questionTotal": 58,
       "analysisYears": []
     },
     {

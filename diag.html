@@ -22,7 +22,7 @@ button{padding:6px 16px;border-radius:8px;border:1px solid #0F2540;background:#f
 <a href="index.html" style="margin-left:10px">← 返回首页</a>
 <script>
 "use strict";
-const EXPECT={politics:456,math:250,english:675,cs408:376};
+const EXPECT={politics:456,math:250,english:675,cs408:376,law498:58};
 const errs=JSON.parse(localStorage.getItem("kaoyan_errlog")||"[]");
 document.getElementById("errs").innerHTML=errs.length?("<table>"+errs.map(e=>"<tr><td>"+e+"</td></tr>").join("")+"</table>"):"（无）";
 window.addEventListener("error",e=>{try{const a=JSON.parse(localStorage.getItem("kaoyan_errlog")||"[]");a.unshift(new Date().toISOString()+" "+e.message);localStorage.setItem("kaoyan_errlog",JSON.stringify(a.slice(0,10)))}catch(_){}});

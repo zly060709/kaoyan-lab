@@ -1,55 +1,169 @@
 {
-  "$schema": "https://json-schema.org/draft/07/schema#",
-  "title": "kaoyan-question",
-  "description": "四科统一题目 schema（AGENT_CONTRACT.md §1.3）。字段一条不丢；原文内容只读；扩展内容 origin=extended。",
-  "type": "object",
-  "required": ["id", "subject", "year", "num", "type", "stem", "source_blocks", "source_hash", "origin", "content_hash", "schema_version"],
-  "properties": {
-    "id": { "type": "string", "description": "如 pol-2013-01 / math-2019-15 / eng-2016-33 / cs408-2021-27" },
-    "subject": { "enum": ["politics", "math", "english", "cs408"] },
-    "year": { "type": "integer" },
-    "paper": { "type": "string" },
-    "num": { "type": "integer" },
-    "type": { "enum": ["single", "multi", "fill", "essay", "reading", "cloze", "partb", "translation", "writing", "code", "big"] },
-    "stem": { "type": "string" },
-    "stem_nodes": { "type": "array" },
-    "options": { "type": "array", "items": { "type": "string" } },
-    "answer": { "description": "以原文为准，永不由扩展流程改写" },
-    "score": { "type": ["number", "null"] },
-    "source_blocks": {
-      "type": "array",
-      "description": "原文内容只读区块：原解析、背诵框架、师生问答、思路引导、标准解答、易错深挖、双语对照、词汇释义、代码块、图片等",
-      "items": {
-        "type": "object",
-        "required": ["role", "text"],
-        "properties": {
-          "role": { "type": "string" },
-          "class": { "type": "string" },
-          "html": { "type": "string" },
-          "text": { "type": "string" }
-        }
-      }
-    },
-    "source_hash": { "type": "string", "description": "原文内容哈希，CI 校验永不变" },
-    "analysis_steps": { "type": "array", "description": "新增九段式扩展精讲，origin=extended" },
-    "knowledge_points": { "type": "array" },
-    "difficulty": { "type": ["integer", "null"], "minimum": 1, "maximum": 5 },
-    "tags": { "type": "array", "description": "政治6类 / 408四科 / 数学模块 / 英语题型" },
-    "media": { "type": "array" },
-    "related_ids": { "type": "array" },
-    "variants": { "type": "array" },
-    "origin": { "enum": ["source", "derived", "extended"] },
-    "content_hash": { "type": "string" },
-    "schema_version": { "type": "string" },
-    "source_ref": {
-      "type": "object",
-      "description": "可追溯：原文件、年份、题号、原始区块锚点",
-      "properties": {
-        "file": { "type": "string" },
-        "anchor": { "type": "string" },
-        "year": { "type": "integer" },
-        "num": { "type": "integer" }
-      }
+ "$schema": "https://json-schema.org/draft/07/schema#",
+ "title": "kaoyan-question",
+ "description": "四科统一题目 schema（AGENT_CONTRACT.md §1.3）。字段一条不丢；原文内容只读；扩展内容 origin=extended。",
+ "type": "object",
+ "required": [
+  "id",
+  "subject",
+  "year",
+  "num",
+  "type",
+  "stem",
+  "source_blocks",
+  "source_hash",
+  "origin",
+  "content_hash",
+  "schema_version"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "description": "如 pol-2013-01 / math-2019-15 / eng-2016-33 / cs408-2021-27"
+  },
+  "subject": {
+   "enum": [
+    "politics",
+    "math",
+    "english",
+    "cs408"
+   ]
+  },
+  "year": {
+   "type": "integer"
+  },
+  "paper": {
+   "type": "string"
+  },
+  "num": {
+   "type": "integer"
+  },
+  "type": {
+   "enum": [
+    "single",
+    "multi",
+    "fill",
+    "essay",
+    "reading",
+    "cloze",
+    "partb",
+    "translation",
+    "writing",
+    "code",
+    "big",
+    "analysis",
+    "sufficiency",
+    "logic"
+   ]
+  },
+  "stem": {
+   "type": "string"
+  },
+  "stem_nodes": {
+   "type": "array"
+  },
+  "options": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "answer": {
+   "description": "以原文为准，永不由扩展流程改写"
+  },
+  "score": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "source_blocks": {
+   "type": "array",
+   "description": "原文内容只读区块：原解析、背诵框架、师生问答、思路引导、标准解答、易错深挖、双语对照、词汇释义、代码块、图片等",
+   "items": {
+    "type": "object",
+    "required": [
+     "role",
+     "text"
+    ],
+    "properties": {
+     "role": {
+      "type": "string"
+     },
+     "class": {
+      "type": "string"
+     },
+     "html": {
+      "type": "string"
+     },
+     "text": {
+      "type": "string"
+     }
     }
+   }
+  },
+  "source_hash": {
+   "type": "string",
+   "description": "原文内容哈希，CI 校验永不变"
+  },
+  "analysis_steps": {
+   "type": "array",
+   "description": "新增九段式扩展精讲，origin=extended"
+  },
+  "knowledge_points": {
+   "type": "array"
+  },
+  "difficulty": {
+   "type": [
+    "integer",
+    "null"
+   ],
+   "minimum": 1,
+   "maximum": 5
+  },
+  "tags": {
+   "type": "array",
+   "description": "政治6类 / 408四科 / 数学模块 / 英语题型"
+  },
+  "media": {
+   "type": "array"
+  },
+  "related_ids": {
+   "type": "array"
+  },
+  "variants": {
+   "type": "array"
+  },
+  "origin": {
+   "enum": [
+    "source",
+    "derived",
+    "extended"
+   ]
+  },
+  "content_hash": {
+   "type": "string"
+  },
+  "schema_version": {
+   "type": "string"
+  },
+  "source_ref": {
+   "type": "object",
+   "description": "可追溯：原文件、年份、题号、原始区块锚点",
+   "properties": {
+    "file": {
+     "type": "string"
+    },
+    "anchor": {
+     "type": "string"
+    },
+    "year": {
+     "type": "integer"
+    },
+    "num": {
+     "type": "integer"
+    }
+   }
   }
+ }
 }
