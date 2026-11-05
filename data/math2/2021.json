@@ -993,7 +993,7 @@
     {
      "role": "analysis",
      "origin": "source",
-     "text": "$f'(x)=\\begin{cases}-\\dfrac{2x+x^{2}}{\\left(1+x\\right)^{2}},&x<0\\ 且\\ x\\neq-1\\\\0,&x=0\\\\\\dfrac{2x+x^{2}}{\\left(1+x\\right)^{2}},&x>0\\end{cases}$，$f''(x)=\\begin{cases}-\\dfrac{2}{\\left(1+x\\right)^{3}},&x<0\\ 且\\ x\\neq-1\\\\\\dfrac{2}{\\left(1+x\\right)^{3}},&x>0\\end{cases}$。\n故，凹区间为 $(-\\infty,-1)\\cup(0,+\\infty)$；凸区间为 $(-1,0)$。\n$\\lim_{x\\to-1}f(x)=\\lim_{x\\to-1}\\dfrac{x\\left|x\\right|}{1+x}=\\infty$，垂直渐近线：$x=-1$。\n$\\lim_{x\\to+\\infty}\\dfrac{f(x)}{x}=\\lim_{x\\to+\\infty}\\dfrac{x^{2}}{x(1+x)}=1$，$\\lim_{x\\to+\\infty}\\left[f(x)-x\\right]=\\lim_{x\\to+\\infty}\\dfrac{x^{2}-x-x^{2}}{1+x}=-1$；\n$\\lim_{x\\to-\\infty}\\dfrac{f(x)}{x}=\\lim_{x\\to-\\infty}\\dfrac{-x^{2}}{x(1+x)}=-1$，$\\lim_{x\\to-\\infty}\\left[f(x)+x\\right]=\\lim_{x\\to-\\infty}\\dfrac{-x^{2}+x+x^{2}}{1+x}=1$。\n斜渐近线：$y=x-1$ 和 $y=-x+1$。"
+     "text": "$f'(x)=\\begin{cases}-\\dfrac{2x+x^{2}}{\\left(1+x\\right)^{2}},&x<0\\ \\text{且}\\ x\\neq-1\\\\0,&x=0\\\\\\dfrac{2x+x^{2}}{\\left(1+x\\right)^{2}},&x>0\\end{cases}$，$f''(x)=\\begin{cases}-\\dfrac{2}{\\left(1+x\\right)^{3}},&x<0\\ \\text{且}\\ x\\neq-1\\\\\\dfrac{2}{\\left(1+x\\right)^{3}},&x>0\\end{cases}$。\n故，凹区间为 $(-\\infty,-1)\\cup(0,+\\infty)$；凸区间为 $(-1,0)$。\n$\\lim_{x\\to-1}f(x)=\\lim_{x\\to-1}\\dfrac{x\\left|x\\right|}{1+x}=\\infty$，垂直渐近线：$x=-1$。\n$\\lim_{x\\to+\\infty}\\dfrac{f(x)}{x}=\\lim_{x\\to+\\infty}\\dfrac{x^{2}}{x(1+x)}=1$，$\\lim_{x\\to+\\infty}\\left[f(x)-x\\right]=\\lim_{x\\to+\\infty}\\dfrac{x^{2}-x-x^{2}}{1+x}=-1$；\n$\\lim_{x\\to-\\infty}\\dfrac{f(x)}{x}=\\lim_{x\\to-\\infty}\\dfrac{-x^{2}}{x(1+x)}=-1$，$\\lim_{x\\to-\\infty}\\left[f(x)+x\\right]=\\lim_{x\\to-\\infty}\\dfrac{-x^{2}+x+x^{2}}{1+x}=1$。\n斜渐近线：$y=x-1$ 和 $y=-x+1$。"
     },
     {
      "role": "approach",
@@ -1035,7 +1035,7 @@
     "anchor": "解答题(18)"
    },
    "schema_version": "1.0.0",
-   "content_hash": "sha256:eb215c911a2ce6d8a7969770b2a73efb1f00c63038d352c964a7667be4d5aa44"
+   "content_hash": "sha256:990b9b45fcd54f9aa84c48bb3fff2cf863ee7ac7708ccc52857c27eeed43ea69"
   },
   {
    "id": "math2-2021-19",

@@ -1,5 +1,12 @@
 name: Deploy Pages
-# 备用部署通道：legacy 构建失败时启用（合同第 6 章降级路径）
+# 部署通道：push main → check（门禁+schema+公式审计+测试）→ build（data/**/* 全量 AES-GCM 加密进 dist/）→ deploy（只发布 dist/）。
+# 口令存于 GitHub Secret KYL_PASS（构建时加密，仓库与密文中均无口令明文）。
+# 本地等价命令：
+#   python -I -X utf8 tools/gates.py
+#   python -I -X utf8 tools/validate_schema.py
+#   python -I -X utf8 tools/audit_math.py
+#   python -I -X utf8 -m unittest discover -s tests -v
+#   python -I -X utf8 tools/build_site.py --dist dist --password-file .auth/site_pass.txt
 on:
   push:
     branches: [main]
@@ -15,20 +22,54 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 机械门禁（G1–G10）
+        run: python -I -X utf8 tools/gates.py
+      - name: schema 结构校验
+        run: python -I -X utf8 tools/validate_schema.py
+      - name: 公式渲染审计
+        run: python -I -X utf8 tools/audit_math.py
+      - name: 单元测试
+        run: python -I -X utf8 -m unittest discover -s tests -v
+
+  build:
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install cryptography
+        run: pip install cryptography
+      - name: 构建加密发布目录（白名单 + data/**/* AES-GCM）
+        env:
+          KYL_PASS: ${{ secrets.KYL_PASS }}
+        run: |
+          if [ -z "$KYL_PASS" ]; then echo "::error::Secret KYL_PASS 未配置（口令加密构建需要）"; exit 1; fi
+          python -I -X utf8 tools/build_site.py --dist dist
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dist'
+
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

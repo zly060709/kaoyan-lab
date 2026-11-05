@@ -1,0 +1,1116 @@
+{
+ "subject": "math1",
+ "year": 2010,
+ "paper": "数学（一）真题精讲",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2010数学一真题及解析.pdf》（data/math1.pages/pages/2010/，12 页）：p1–p4 试题、p5–p12 答案解析；题干/选项/答案/解析逐字照录。2010 年数学一结构：选择题 8×4 分、填空题 6×4 分、解答题 9 题 94 分（15–19 各 10 分、20–23 各 11 分），共 23 题 150 分。解析标签原卷为【答案】/【详解】，解答题无单独【答案】行，照录。原卷排版问题照录不改（第5题题干以句点结尾、第9题尾部无横线、第23题缺右括号、第21题双逗号等），逐条清单见 tools/work/m12010_notes.md（随库存档）。",
+ "questions": [
+  {
+   "id": "math-2010-1",
+   "subject": "math",
+   "year": 2010,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "极限 $\\lim\\limits_{x\\to\\infty}\\left(\\dfrac{x^{2}}{(x-a)(x+b)}\\right)^{x}=$",
+   "options": [
+    "$1$",
+    "$e$",
+    "$e^{a-b}$",
+    "$e^{b-a}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】C.\n\n【详解】方法一：\n\n$\\lim\\limits_{x\\to\\infty}\\left(\\dfrac{x^{2}}{(x-a)(x+b)}\\right)^{x}=\\lim\\limits_{x\\to\\infty}e^{\\ln\\left(\\dfrac{x^{2}}{(x-a)(x+b)}\\right)^{x}}=\\lim\\limits_{x\\to\\infty}e^{x\\ln\\left(\\dfrac{x^{2}}{(x-a)(x+b)}\\right)}$\n\n$=\\lim\\limits_{x\\to\\infty}e^{x\\ln\\left(1+\\dfrac{x^{2}}{(x-a)(x+b)}-1\\right)}=\\lim\\limits_{x\\to\\infty}e^{x\\left(\\dfrac{x^{2}}{(x-a)(x+b)}-1\\right)}$\n\n$=\\lim\\limits_{x\\to\\infty}e^{x\\left(\\dfrac{(a-b)x+ab}{(x-a)(x+b)}\\right)}=\\lim\\limits_{x\\to\\infty}e^{\\dfrac{(a-b)x^{2}+abx}{(x-a)(x+b)}}$\n\n$=e^{a-b}$\n\n方法二：本题是 $1^{\\infty}$ 型极限\n\n$\\lim\\limits_{x\\to\\infty}\\left(\\dfrac{x^{2}}{(x-a)(x+b)}\\right)^{x}=\\lim\\limits_{x\\to\\infty}e^{x\\left(\\dfrac{x^{2}}{(x-a)(x+b)}-1\\right)}=\\lim\\limits_{x\\to\\infty}e^{\\dfrac{(a-b)x^{2}+abx}{(x-a)(x+b)}}=e^{a-b}.$"
+    }
+   ],
+   "knowledge_points": [
+    "$1^\\infty$ 型极限",
+    "等价无穷小替换"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     1
+    ],
+    "anchor": "第(1)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ccd62989939a1e431ad72135d20622d27c10865a3569af9d82999ee9f768dacf"
+  },
+  {
+   "id": "math-2010-2",
+   "subject": "math",
+   "year": 2010,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $z=z(x,y)$，由方程 $F\\left(\\dfrac{y}{x},\\dfrac{z}{x}\\right)=0$ 确定，其中 $F$ 为可微函数，且 $F_{2}'\\neq0$，则 $x\\dfrac{\\partial z}{\\partial x}+y\\dfrac{\\partial z}{\\partial y}=$",
+   "options": [
+    "$x$",
+    "$z$",
+    "$-x$",
+    "$-z$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】B.\n\n$F\\left(\\dfrac{y}{x},\\dfrac{z}{x}\\right)=0.$\n\n等式两边对 $x$ 求偏导，得 $F_{1}'\\cdot\\left(-\\dfrac{y}{x^{2}}\\right)+F_{2}'\\cdot\\left(-\\dfrac{z}{x^{2}}+\\dfrac{1}{x}\\dfrac{\\partial z}{\\partial x}\\right)=0$  (1)\n\n等式两边对 $y$ 求偏导，得 $F_{1}'\\cdot\\dfrac{1}{x}+F_{2}'\\cdot\\dfrac{1}{x}\\dfrac{\\partial z}{\\partial y}=0$  (2)\n\n$(1)\\times x^{2}+(2)\\times xy$ 得 $\\left(x\\dfrac{\\partial z}{\\partial x}+y\\dfrac{\\partial z}{\\partial y}\\right)F_{2}'=zF_{2}'$，所以 $x\\dfrac{\\partial z}{\\partial x}+y\\dfrac{\\partial z}{\\partial y}=z.$"
+    }
+   ],
+   "knowledge_points": [
+    "隐函数存在定理",
+    "多元复合函数求偏导"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     1
+    ],
+    "anchor": "第(2)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e7fe5a17c2ddf184ab81bff78f5cb79b75596fb17913333e46b87dc5e5e9de7a"
+  },
+  {
+   "id": "math-2010-3",
+   "subject": "math",
+   "year": 2010,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $m,n$ 是正整数, 则反常积分 $\\displaystyle\\int_{0}^{1}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx$ 的敛散性.",
+   "options": [
+    "仅与 $m$ 的取值有关",
+    "仅与 $n$ 的取值有关",
+    "与 $m,n$ 的取值有关",
+    "与 $m,n$ 的取值无关"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】D.\n\n【详解】显然 $x=0, x=1$ 是两个瑕点，有\n\n$\\int_{0}^{1}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx=\\int_{0}^{\\frac{1}{2}}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx+\\int_{\\frac{1}{2}}^{1}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx$, 对于 $\\int_{0}^{\\frac{1}{2}}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx$ 的瑕点\n\n$x=0$，当 $x\\to0^{+}$ 时 $\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}=\\ln^{\\frac{2}{m}}(1-x)x^{-\\frac{1}{n}}$ 等价于 $(-1)^{\\frac{2}{m}}x^{\\frac{2}{m}-\\frac{1}{n}}$，而 $\\int_{0}^{\\frac{1}{2}}x^{\\frac{2}{m}-\\frac{1}{n}}dx$ 收\n\n敛(因对任意正整数 $m,n$ 有 $\\dfrac{1}{n}-\\dfrac{2}{m}<1$)，故 $\\int_{0}^{\\frac{1}{2}}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx$ 收敛；对 $\\int_{\\frac{1}{2}}^{1}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx$\n\n的瑕点 $x=1$，$x\\in(1-\\delta,1)\\left(0<\\delta<\\dfrac{1}{2}\\right)$ 时, $\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}<2^{\\frac{1}{n}}\\ln^{\\frac{2}{m}}(1-x)<2^{\\frac{1}{n}}(1-x)^{\\frac{2}{m}}$,\n\n而 $\\int_{\\frac{1}{2}}^{1}(1-x)^{\\frac{2}{m}}dx$ 显然收敛，故 $\\int_{\\frac{1}{2}}^{1}\\dfrac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx$ 收敛. 所以选择 D."
+    }
+   ],
+   "knowledge_points": [
+    "反常积分敛散性判别",
+    "比较判别法"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     1
+    ],
+    "anchor": "第(3)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a68b73552ab132d04ffa3c964efb4d0409bdccbad31a5302bda3ad82aee5394a"
+  },
+  {
+   "id": "math-2010-4",
+   "subject": "math",
+   "year": 2010,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "$\\lim\\limits_{n\\to\\infty}\\sum\\limits_{i=1}^{n}\\sum\\limits_{j=1}^{n}\\dfrac{n}{(n+i)(n^{2}+j^{2})}=$",
+   "options": [
+    "$\\int_{0}^{1}dx\\int_{0}^{x}\\dfrac{1}{(1+x)(1+y^{2})}dy$",
+    "$\\int_{0}^{1}dx\\int_{0}^{x}\\dfrac{1}{(1+x)(1+y)}dy$",
+    "$\\int_{0}^{1}dx\\int_{0}^{1}\\dfrac{1}{(1+x)(1+y)}dy$",
+    "$\\int_{0}^{1}dx\\int_{0}^{1}\\dfrac{1}{(1+x)(1+y^{2})}dy$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】D.\n\n【详解】\n\n$\\lim\\limits_{x\\to\\infty}\\sum\\limits_{i=1}^{n}\\sum\\limits_{j=1}^{n}\\dfrac{n}{(n+i)(n^{2}+j^{2})}=\\lim\\limits_{n\\to\\infty}\\sum\\limits_{i=1}^{n}\\dfrac{1}{\\left(1+\\dfrac{i}{n}\\right)}\\dfrac{1}{n}\\sum\\limits_{j=1}^{n}\\dfrac{1}{\\left(1+\\left(\\dfrac{j}{n}\\right)^{2}\\right)}\\dfrac{1}{n}=$\n\n$\\int_{0}^{1}dx\\int_{0}^{1}\\dfrac{1}{(1+x)(1+y^{2})}dy.$"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分的定义（黎曼和）",
+    "极限的定积分化"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     1
+    ],
+    "anchor": "第(4)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:34b9be83024222d8b7c03411834a6fb3efdb106db7a8db3eb9852ad4ab89ea60"
+  },
+  {
+   "id": "math-2010-5",
+   "subject": "math",
+   "year": 2010,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{A}$ 为 $m\\times n$ 型矩阵，$\\boldsymbol{B}$ 为 $n\\times m$ 型矩阵，$\\boldsymbol{E}$ 为 $m$ 阶单位矩阵，若 $\\boldsymbol{AB}=\\boldsymbol{E}$，则.",
+   "options": [
+    "秩 $r(\\boldsymbol{A})=m$，秩 $r(\\boldsymbol{B})=m$",
+    "秩 $r(\\boldsymbol{A})=m$，秩 $r(\\boldsymbol{B})=n$",
+    "秩 $r(\\boldsymbol{A})=n$，秩 $r(\\boldsymbol{B})=m$",
+    "秩 $r(\\boldsymbol{A})=n$，秩 $r(\\boldsymbol{B})=n$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】A\n\n【详解】由于 $\\boldsymbol{AB}=\\boldsymbol{E}$ 所以 $R(\\boldsymbol{AB})=m$,\n\n又 $R(\\boldsymbol{AB})=m\\leqslant\\min(R(\\boldsymbol{A}),R(\\boldsymbol{B}))$ 即 $R(\\boldsymbol{A})\\geqslant m, R(\\boldsymbol{B})\\geqslant m$,\n\n$R(\\boldsymbol{A})\\leqslant m, R(\\boldsymbol{B})\\leqslant m, R(\\boldsymbol{A})=m, R(\\boldsymbol{B})=m$."
+    }
+   ],
+   "knowledge_points": [
+    "矩阵秩的不等式",
+    "秩的性质"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     1
+    ],
+    "anchor": "第(5)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ec8a297ecbfaf2e26261c51b4540148b282c4800c46191d4276de014408d8262"
+  },
+  {
+   "id": "math-2010-6",
+   "subject": "math",
+   "year": 2010,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{A}$ 为 4 阶实对称矩阵，且 $\\boldsymbol{A}^{2}+\\boldsymbol{A}=\\boldsymbol{0}$，若 $\\boldsymbol{A}$ 的秩为 3，则 $\\boldsymbol{A}$ 相似于.",
+   "options": [
+    "$\\begin{pmatrix}1&&&\\\\&1&&\\\\&&1&\\\\&&&0\\end{pmatrix}$",
+    "$\\begin{pmatrix}1&&&\\\\&1&&\\\\&&-1&\\\\&&&0\\end{pmatrix}$",
+    "$\\begin{pmatrix}1&&&\\\\&-1&&\\\\&&-1&\\\\&&&0\\end{pmatrix}$",
+    "$\\begin{pmatrix}-1&&&\\\\&-1&&\\\\&&-1&\\\\&&&0\\end{pmatrix}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】D.\n\n【详解】设 $\\boldsymbol{A}$ 的特征值为 $\\lambda$，则由 $\\boldsymbol{A}^{2}+\\boldsymbol{A}=\\boldsymbol{0}$ 可得 $\\lambda$ 满足关系式 $\\lambda^{2}+\\lambda=0$\n\n即 $\\lambda(\\lambda+1)=0\\Rightarrow\\lambda=0$ 或 $\\lambda=-1$, 且 $\\boldsymbol{A}$ 为实对称矩阵，必可相似对角化.\n\n又因为 $R(\\boldsymbol{A})=3$, 对角阵的秩也是 3. 所以 $\\lambda=-1$ 是三重特征根，\n\n故 $\\boldsymbol{A}\\sim\\begin{pmatrix}-1&&&\\\\&-1&&\\\\&&-1&\\\\&&&0\\end{pmatrix}$，所以正确答案为（D）."
+    }
+   ],
+   "knowledge_points": [
+    "实对称矩阵的相似对角化",
+    "特征值与秩的关系"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     1,
+     2
+    ],
+    "anchor": "第(6)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6e5edfc1d091f5716628f4a6330111152fab758af92b1831c2c36734bd81bd72"
+  },
+  {
+   "id": "math-2010-7",
+   "subject": "math",
+   "year": 2010,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "设随机变量 $X$ 的分布函数 $F(x)=\\begin{cases}0,&x<0\\\\ \\dfrac{1}{2},&0\\leqslant x<1\\\\ 1-e^{-x},&x\\geqslant1\\end{cases}$，则 $P\\{x=1\\}=$",
+   "options": [
+    "$0$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{1}{2}-e^{-1}$",
+    "$1-e^{-1}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】C.\n\n【详解】$P\\{x=1\\}=P\\{x\\leqslant1\\}-P\\{x<1\\}=F(1)-F(1-0)=1-e^{-1}-\\dfrac{1}{2}=\\dfrac{1}{2}-e^{-1}$\n\n所以选 C."
+    }
+   ],
+   "knowledge_points": [
+    "分布函数与点概率的计算"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     2
+    ],
+    "anchor": "第(7)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:2835e4ef5a016445bb641b2a2757e470bf6dd9e1f93a20e10fbc55d7977d4a62"
+  },
+  {
+   "id": "math-2010-8",
+   "subject": "math",
+   "year": 2010,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $f_{1}(x)$ 为标准正态分布的概率密度，$f_{2}(x)$ 为 $[-1,3]$ 上的均匀分布的概率密度，若 $f(x)=\\begin{cases}af_{1}(x),&x\\leqslant0\\\\ bf_{2}(x),&x>0\\end{cases}(a>0,b>0)$ 为概率密度，则 $a,b$ 应满足",
+   "options": [
+    "$2a+3b=4$",
+    "$3a+2b=4$",
+    "$a+b=1$",
+    "$a+b=2$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】A.\n\n【详解】由概率密度的性质 $\\int_{-\\infty}^{+\\infty}f(x)dx=1$，有\n\n$a\\int_{-\\infty}^{0}f_{1}(x)dx+b\\int_{0}^{3}f_{2}(x)dx=1\\Rightarrow\\dfrac{1}{2}a+\\dfrac{3}{4}b=1\\Rightarrow2a+3b=4$\n\n所以选 A."
+    }
+   ],
+   "knowledge_points": [
+    "概率密度的归一性",
+    "标准正态分布",
+    "均匀分布"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     2
+    ],
+    "anchor": "第(8)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1397c814aa878262d292de9fe4658366184c59f4a5f86b943b07b60ae4f17b9b"
+  },
+  {
+   "id": "math-2010-9",
+   "subject": "math",
+   "year": 2010,
+   "num": 9,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $\\begin{cases}x=e^{-t}\\\\ y=\\displaystyle\\int_{0}^{t}\\ln(1+u^{2})du\\end{cases}$，求 $\\dfrac{d^{2}y}{dx^{2}}\\Big|_{t=0}=.$",
+   "options": [],
+   "answer": "0",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】0.\n\n【详解】\n\n$\\dfrac{dy}{dx}=\\dfrac{y'(t)}{x'(t)}=\\dfrac{\\ln(1+t^{2})}{-e^{-t}}$\n\n$\\dfrac{d^{2}y}{dx^{2}}=\\dfrac{d}{dx}\\left(\\dfrac{dy}{dx}\\right)=\\dfrac{d}{dt}\\left(\\dfrac{dy}{dx}\\right)\\dfrac{dt}{dx}=\\left(\\dfrac{\\ln(1+t^{2})}{-e^{-t}}\\right)'\\dfrac{1}{x'(t)}$\n\n$=-\\dfrac{\\dfrac{2t}{1+t^{2}}e^{-t}+\\ln(1+t^{2})e^{-t}}{\\left(e^{-t}\\right)^{2}}\\times\\dfrac{1}{-e^{-t}}=e^{2t}\\left(\\dfrac{2t}{1+t^{2}}+\\ln(1+t^{2})\\right)$\n\n$\\Rightarrow\\dfrac{d^{2}y}{dx^{2}}\\Big|_{t=0}=0$"
+    }
+   ],
+   "knowledge_points": [
+    "参数方程确定的函数求二阶导",
+    "变限积分求导"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     2
+    ],
+    "anchor": "第(9)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b8e42ecc800420cd6af89068b98b3ba8291dd4ec2119aaa26eb3c73c70916571"
+  },
+  {
+   "id": "math-2010-10",
+   "subject": "math",
+   "year": 2010,
+   "num": 10,
+   "type": "blank",
+   "score": 4,
+   "stem": "$\\displaystyle\\int_{0}^{\\pi^{2}}\\sqrt{x}\\cos\\sqrt{x}dx=$________.",
+   "options": [],
+   "answer": "-4\\pi",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$-4\\pi$\n\n【详解】令 $\\sqrt{x}=t$, 原式为\n\n$2\\int_{0}^{\\pi}t^{2}\\cos t\\,dt=2\\left(t^{2}\\sin t\\big|_{0}^{\\pi}-\\int_{0}^{\\pi}2t\\sin t\\,dt\\right)=-4\\int_{0}^{\\pi}t\\sin t\\,dt=4\\left(t\\cos t\\big|_{0}^{\\pi}-\\int_{0}^{\\pi}\\cos t\\,dt\\right)=-4\\pi$"
+    }
+   ],
+   "knowledge_points": [
+    "定积分换元法",
+    "分部积分法"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     2
+    ],
+    "anchor": "第(10)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:67be10f6ed1e8959316ba14b9306c24a1c78d2547cb3774c39306b16fd424c5b"
+  },
+  {
+   "id": "math-2010-11",
+   "subject": "math",
+   "year": 2010,
+   "num": 11,
+   "type": "blank",
+   "score": 4,
+   "stem": "已知曲线 $L$ 的方程为 $y=1-|x|,x\\in[-1,1]$ 起点是 $(-1,0)$, 终点是 $(1,0)$, 则曲线积分 $\\displaystyle\\int_{L}xy\\,dx+x^{2}dy=$________.",
+   "options": [],
+   "answer": "0",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】0.\n\n【详解】令 $L_{1}:\\begin{cases}x=t\\\\ y=1+t\\end{cases}, -1\\leqslant t\\leqslant0$, $L_{2}:\\begin{cases}x=t\\\\ y=1-t\\end{cases}, 0\\leqslant t\\leqslant1$,\n\n$\\int_{L}xy\\,dx+x^{2}dy=\\int_{L_{1}}xy\\,dx+x^{2}dy+\\int_{L_{2}}xy\\,dx+x^{2}dy=\\int_{-1}^{0}t(1+t)+t^{2}\\,dt+\\int_{0}^{1}t(1-t)-t^{2}\\,dt$\n\n$=\\left(\\dfrac{2}{3}t^{3}+\\dfrac{t^{2}}{2}\\right)\\Big|_{-1}^{0}+\\left(\\dfrac{t^{2}}{2}-\\dfrac{2}{3}t^{3}\\right)\\Big|_{0}^{1}=0$"
+    }
+   ],
+   "knowledge_points": [
+    "第二类曲线积分",
+    "分段参数化计算"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     2
+    ],
+    "anchor": "第(11)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:c4b9195ae930a2d3b2740b302ef47283e0874f8e47d4f745c676e72454b0285e"
+  },
+  {
+   "id": "math-2010-12",
+   "subject": "math",
+   "year": 2010,
+   "num": 12,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $\\Omega=\\{(x,y,z)\\,|\\,x^{2}+y^{2}\\leqslant z\\leqslant1\\}$, 则 $\\Omega$ 的形心的竖坐标 $\\bar{z}=$________.",
+   "options": [],
+   "answer": "\\dfrac{2}{3}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{2}{3}.$\n\n【详解】$\\bar{z}=\\dfrac{\\iiint\\limits_{\\Omega}z\\,dxdydz}{\\iiint\\limits_{\\Omega}dxdydz}=\\dfrac{\\int_{0}^{2\\pi}d\\theta\\int_{0}^{1}rdr\\int_{r^{2}}^{1}z\\,dz}{\\int_{0}^{2\\pi}d\\theta\\int_{0}^{1}rdr\\int_{r^{2}}^{1}dz}=\\dfrac{\\dfrac{\\pi}{3}}{\\dfrac{\\pi}{2}}=\\dfrac{2}{3}.$"
+    }
+   ],
+   "knowledge_points": [
+    "三重积分（柱面坐标）",
+    "旋转体形心公式"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     2
+    ],
+    "anchor": "第(12)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d7253c7c90ecc41be43978879fa66f517e3f0b0365ffd7143f22834d89417623"
+  },
+  {
+   "id": "math-2010-13",
+   "subject": "math",
+   "year": 2010,
+   "num": 13,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 $\\boldsymbol{\\alpha}_{1}=(1,2,-1,0)^{T}$, $\\boldsymbol{\\alpha}_{2}=(1,1,0,2)^{T}$, $\\boldsymbol{\\alpha}_{3}=(2,1,1,a)^{T}$ 若由 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$ 生成的向量空间维数是 2，则 $a=$________.",
+   "options": [],
+   "answer": "\\alpha=6",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\alpha=6.$\n\n【详解】由题意知向量组 $\\alpha_{1},\\alpha_{2},\\alpha_{3}$ 线性相关，而其中两个向量线性无关，所以\n\n$R(\\alpha_{1},\\alpha_{2},\\alpha_{3})=2$\n\n$\\begin{pmatrix}1&1&2\\\\ 2&1&1\\\\ -1&0&1\\\\ 0&2&\\alpha\\end{pmatrix}\\xrightarrow[\\;r_{3}+r_{1}\\;]{\\;r_{2}-2r_{1}\\;}\\begin{pmatrix}1&1&2\\\\ 0&-1&-3\\\\ 0&1&3\\\\ 0&2&\\alpha\\end{pmatrix}\\xrightarrow[\\;r_{4}+2r_{2}\\;]{\\;r_{3}+r_{2}\\;}\\begin{pmatrix}1&1&2\\\\ 0&-1&-3\\\\ 0&0&0\\\\ 0&0&\\alpha-6\\end{pmatrix}$\n\n故 $\\alpha-6=0\\Rightarrow\\alpha=6$"
+    }
+   ],
+   "knowledge_points": [
+    "向量组的秩",
+    "生成向量空间的维数"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     2
+    ],
+    "anchor": "第(13)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d1b53b253785a83c10d315d7bd67bec35f428990b2b2a121c00ea9c4735a865d"
+  },
+  {
+   "id": "math-2010-14",
+   "subject": "math",
+   "year": 2010,
+   "num": 14,
+   "type": "blank",
+   "score": 4,
+   "stem": "设随机变量 $X$ 概率分布为 $p\\{X=k\\}=\\dfrac{C}{k!}, k=0,1,2,\\cdots$，则 $EX^{2}=$________.",
+   "options": [],
+   "answer": "2",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】2.\n\n【详解】由概率密度的性质 $\\sum\\limits_{k=0}^{\\infty}P\\{X=k\\}=1$，有 $\\sum\\limits_{k=0}^{\\infty}\\dfrac{C}{k!}=1\\Rightarrow C=e^{-1}$，即\n\n$P\\{X=k\\}=\\dfrac{e^{-1}}{k!}, k=0,1,2,\\cdots$ 为参数为 1 的泊松分布，则有\n\n$EX=1, DX=1\\Rightarrow EX^{2}=DX+(EX)^{2}=2.$"
+    }
+   ],
+   "knowledge_points": [
+    "离散型分布律的归一性",
+    "泊松分布",
+    "期望方差公式"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3
+    ],
+    "anchor": "第(14)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:093b7b9733e19297f5e3eb26bffd283628b5fd855582cb0d8519192c89a73f73"
+  },
+  {
+   "id": "math-2010-15",
+   "subject": "math",
+   "year": 2010,
+   "num": 15,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）求微分方程 $y''-3y'+2y=2xe^{x}$ 的通解.",
+   "options": [],
+   "answer": "y=C_{1}e^{2x}+C_{2}e^{x}+(-x^{2}-2x)e^{x}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】齐次方程 $y''-3y'+2y=0$ 的特征方程为 $\\lambda^{2}-3\\lambda+2=0$ 由此得\n\n$\\lambda_{1}=2,\\lambda_{2}=1$. 齐次方程的通解为 $y=C_{1}e^{2x}+C_{2}e^{x}$，设非齐次方程的特解为\n\n$y=(Ax+B)xe^{x}$，代入原方程可得，$A=-1,B=-2$. 因此原方程的通解为\n\n$y=C_{1}e^{2x}+C_{2}e^{x}+(-x^{2}-2x)e^{x}$ ($C_{1},C_{2}$ 为任意常数)."
+    }
+   ],
+   "knowledge_points": [
+    "二阶常系数非齐次线性微分方程",
+    "特解的待定系数法"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3
+    ],
+    "anchor": "第(15)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1057d4bd154397301442043742e058dec67a7a45cae6a04c4592abfb0796b8af"
+  },
+  {
+   "id": "math-2010-16",
+   "subject": "math",
+   "year": 2010,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）求函数 $f(x)=\\displaystyle\\int_{1}^{x^{2}}(x^{2}-t)e^{-t^{2}}dt$ 的单调区间与极值.",
+   "options": [],
+   "answer": "增区间 (-1,0),(1,+\\infty), 减区间 (-\\infty,-1),(0,1); 极小值 f(1)=f(-1)=0; 极大值 f(0)=\\dfrac{1}{2}\\left(1-\\dfrac{1}{e}\\right)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】$f(x)=x^{2}\\int_{1}^{x^{2}}e^{-t^{2}}dt-\\int_{1}^{x^{2}}te^{-t^{2}}dt$, $f'(x)=2x\\int_{1}^{x^{2}}e^{-t^{2}}dt$. 令 $f'(x)=2x\\int_{1}^{x^{2}}e^{-t^{2}}dt=0$,\n\n解得 $x=0$，$\\pm1$. 在区间 $(-1,0)$，$(1,+\\infty)$，$f'(x)\\geqslant0$，函数 $f(x)$ 单调递增，在区间\n\n$(-\\infty,-1)$，$(0,1)$，$f'(x)\\leqslant0$，函数 $f(x)$ 单调递减. 所以在 $x=1,x=-1$ 处取得极\n\n小值：$f(1)=f(-1)=0$；在 $x=0$ 取得极大值：$f(0)=\\dfrac{1}{2}(1-\\dfrac{1}{e})$."
+    }
+   ],
+   "knowledge_points": [
+    "变限积分求导",
+    "单调区间与极值"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3
+    ],
+    "anchor": "第(16)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:21155d8bba931de5966caf50b35bb80fd84f9dd7e4fd6e3635027f29170a47c0"
+  },
+  {
+   "id": "math-2010-17",
+   "subject": "math",
+   "year": 2010,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）（I）比较 $\\displaystyle\\int_{0}^{1}|\\ln t|\\left[\\ln(1+t)\\right]^{n}dt$ 与 $\\displaystyle\\int_{0}^{1}|\\ln t|t^{n}dt, n=1,2,\\cdots$ 的大小，说明理由；（II）设 $M_{n}=\\displaystyle\\int_{0}^{1}|\\ln t|\\left[\\ln(1+t)\\right]^{n}dt (n=1,2,\\cdots)$，求极限 $\\lim\\limits_{n\\to\\infty}M_{n}$.",
+   "options": [],
+   "answer": "(I)\\ \\int_{0}^{1}|\\ln t|[\\ln(1+t)]^{n}dt<\\int_{0}^{1}t^{n}|\\ln t|dt; (II)\\ \\lim\\limits_{n\\to\\infty}M_{n}=0",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】\n\n（I）令 $f(t)=\\ln(1+t)-t$，当 $0\\leqslant t\\leqslant1$ 时，$f'(t)=\\dfrac{1}{1+t}-1\\leqslant0$\n\n故当 $0\\leqslant t\\leqslant1$ 时 $f(t)\\leqslant f(0)=0$，即 $0\\leqslant t\\leqslant1$ 时，$0\\leqslant\\ln(1+t)\\leqslant t$,\n\n从而 $\\left(\\ln(1+t)\\right)^{n}\\leqslant t^{n}(n=1,2,\\cdots)$ 又由 $|\\ln t|\\geqslant0$,\n\n得 $\\int_{0}^{1}|\\ln t|\\left[\\ln(1+t)\\right]^{n}dt<\\int_{0}^{1}t^{n}|\\ln t|dt (n=1,2,\\cdots).$\n\n（II）$\\int_{0}^{1}|\\ln t|t^{n}dt=-\\int_{0}^{1}(\\ln t)t^{n}dt=-\\left.(\\ln t)\\dfrac{1}{n+1}t^{n+1}\\right|_{0}^{1}+\\int_{0}^{1}\\dfrac{1}{n+1}t^{n}dt=\\dfrac{1}{(n+1)^{2}}$\n\n$\\lim\\limits_{n\\to\\infty}\\int_{0}^{1}|\\ln t|t^{n}dt=0$, 又 $M_{n}\\geqslant0$, 所以由夹逼准则得 $\\lim\\limits_{n\\to\\infty}\\int_{0}^{1}|\\ln t|\\left[\\ln(1+t)\\right]^{n}dt=0.$"
+    }
+   ],
+   "knowledge_points": [
+    "定积分的大小比较",
+    "分部积分",
+    "夹逼准则"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3
+    ],
+    "anchor": "第(17)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:58a1a6c034b15b719f1e228ac32f3c39f663702b5f9bb4982036d937b0eedb9c"
+  },
+  {
+   "id": "math-2010-18",
+   "subject": "math",
+   "year": 2010,
+   "num": 18,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）求幂级数 $\\sum\\limits_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{2n-1}x^{2n}$ 的收敛域及和函数.",
+   "options": [],
+   "answer": "收敛域 [-1,1]; 和函数 s(x)=x\\arctan x, x\\in[-1,1]",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】$\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{u_{n+1}(x)}{u_{n}(x)}\\right|=\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{x^{2n+2}(2n-1)}{x^{2n}(2n+1)}\\right|=x^{2}$，所以当 $x^{2}<1$ 即 $-1<x<1$ 时，原幂\n\n级数绝对收敛；当 $x=\\pm1$ 时，级数为 $\\sum\\limits_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{2n-1}$，根据莱布尼兹判别法知此级数收敛,\n\n故原幂级数的收敛域为 $[-1,1]$.\n\n由题意可设 $s(x)=\\sum\\limits_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{2n-1}x^{2n}$，则 $s(x)=\\sum\\limits_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{2n-1}x^{2n}=x\\sum\\limits_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{2n-1}x^{2n-1}$，令\n\n$\\sum\\limits_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{2n-1}x^{2n-1}=f(x), x\\in[-1,1]$，则 $f'(x)=\\sum\\limits_{n=1}^{\\infty}(-1)^{n-1}x^{2(n-1)}=\\dfrac{1}{1+x^{2}}$.\n\n因为 $f(0)=0$，所以 $f(x)=\\int_{0}^{x}f'(t)dt+f(0)=\\arctan x$，从而可得\n\n$s(x)=x\\arctan x, x\\in[-1,1]$, 收敛域 $x\\in[-1,1]$, 和函数 $s(x)=x\\arctan x$."
+    }
+   ],
+   "knowledge_points": [
+    "幂级数收敛域",
+    "逐项求导求和函数"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3
+    ],
+    "anchor": "第(18)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:09cc67537793172672b2d6f96a6aee6e07b885053a56d01b193f932d028a3f7a"
+  },
+  {
+   "id": "math-2010-19",
+   "subject": "math",
+   "year": 2010,
+   "num": 19,
+   "type": "essay",
+   "score": 10,
+   "stem": "（本题满分 10 分）设 $P$ 为椭球面 $S:x^{2}+y^{2}+z^{2}-yz=1$ 上的动点，若 $S$ 在点 $P$ 处的切平面与 $xOy$ 面垂直，求点 $P$ 的轨迹 $C$，并计算曲面积分 $I=\\iint\\limits_{\\Sigma}\\dfrac{(x+\\sqrt{3})|y-2z|}{\\sqrt{4+y^{2}+z^{2}-4yz}}dS$，其中 $\\Sigma$ 是椭球面 $S$ 位于曲线 $C$ 上方的部分.",
+   "options": [],
+   "answer": "轨迹 C: 2z-y=0, x^{2}+\\dfrac{3}{4}y^{2}=1; I=2\\pi",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】切平面法向量 $F_{x}=2x, F_{y}=2y-z, F_{z}=2z-y$，$xoy$ 面的法向量为 $(0,0,1)$,\n\n因 $S$ 在点 $P$ 处的切平面与 $xOy$ 面垂直. 所以 $2x\\times0+(2y-z)\\times0+(2z-y)\\times1=0\\Rightarrow z=\\dfrac{y}{2}.$\n\n所以轨迹 $C$ 为 $\\begin{cases}x^{2}+y^{2}+z^{2}-yz=1\\\\ y=2z\\end{cases}$ 即 $\\begin{cases}2z-y=0\\\\ x^{2}+\\dfrac{3}{4}y^{2}=1\\end{cases}$ 取 $D_{xy}=\\left\\{(x,y)\\Big|x^{2}+\\dfrac{3}{4}y^{2}\\leqslant1\\right\\}$,\n\n由于 $dS=\\sqrt{1+z_{x}^{2}+z_{y}^{2}}dxdy=\\sqrt{1+\\left(\\dfrac{2x}{y-2z}\\right)^{2}+\\left(\\dfrac{2y-z}{y-2z}\\right)^{2}}dxdy$\n\n$=\\dfrac{\\sqrt{4x^{2}+5y^{2}+5z^{2}-8yz}}{|y-2z|}dxdy=\\dfrac{\\sqrt{4+y^{2}+z^{2}-4yz}}{|y-2z|}dxdy$\n\n所以，原式 $=\\iint\\limits_{D_{xy}}\\dfrac{(x+\\sqrt{3})|y-2z|}{\\sqrt{4+y^{2}+z^{2}-4yz}}\\cdot\\dfrac{\\sqrt{4+y^{2}+z^{2}-4yz}}{|y-2z|}dxdy=\\iint\\limits_{D_{xy}}\\left(x+\\sqrt{3}\\right)dxdy$\n\n$=\\iint\\limits_{D_{xy}}xdxdy+\\iint\\limits_{D_{xy}}\\sqrt{3}dxdy=0+\\sqrt{3}\\cdot\\pi\\cdot1\\cdot\\dfrac{2}{\\sqrt{3}}=2\\pi$."
+    }
+   ],
+   "knowledge_points": [
+    "曲面的切平面法向量",
+    "轨迹方程",
+    "第一类曲面积分的投影法"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3
+    ],
+    "anchor": "第(19)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:fdbade6937faf2580b06b5164e220e27d6d8eee11b720416318c677631b69623"
+  },
+  {
+   "id": "math-2010-20",
+   "subject": "math",
+   "year": 2010,
+   "num": 20,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设 $\\boldsymbol{A}=\\begin{pmatrix}\\lambda&1&1\\\\ 0&\\lambda-1&0\\\\ 1&1&\\lambda\\end{pmatrix}$，$\\boldsymbol{b}=\\begin{pmatrix}a\\\\1\\\\1\\end{pmatrix}$，已知线性方程组 $\\boldsymbol{Ax}=\\boldsymbol{b}$ 存在 2个不同的解，（I）求 $\\lambda$，$a$；（II）求方程组的 $\\boldsymbol{Ax}=\\boldsymbol{b}$ 通解.",
+   "options": [],
+   "answer": "(I)\\ \\lambda=-1, a=-2; (II)\\ x=k(1,0,1)^{T}+(3/2,-1/2,0)^{T} (k 为任意常数)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】（I）由 $\\boldsymbol{Ax}=\\boldsymbol{b}$ 存在 2 个不同的解，可知 $R(\\boldsymbol{A})=R(\\boldsymbol{A}\\!\\vdots\\,\\boldsymbol{b})<3$\n\n对 $\\boldsymbol{Ax}=\\boldsymbol{b}$ 的增广矩阵做初等行变换,\n\n$\\bar{\\boldsymbol{A}}=(\\boldsymbol{A}\\!\\vdots\\,\\boldsymbol{b})=\\begin{pmatrix}\\lambda&1&1&\\vdots&a\\\\ 0&\\lambda-1&0&\\vdots&1\\\\ 1&1&\\lambda&\\vdots&1\\end{pmatrix}\\xrightarrow{\\;r_{1}\\leftrightarrow r_{3}\\;}\\begin{pmatrix}1&1&\\lambda&\\vdots&1\\\\ 0&\\lambda-1&0&\\vdots&1\\\\ \\lambda&1&1&\\vdots&a\\end{pmatrix}$\n\n$\\xrightarrow{\\;r_{3}-\\lambda r_{1}\\;}\\begin{pmatrix}1&1&\\lambda&\\vdots&1\\\\ 0&\\lambda-1&0&\\vdots&1\\\\ 0&1-\\lambda&1-\\lambda^{2}&\\vdots&a-\\lambda\\end{pmatrix}\\xrightarrow{\\;r_{3}+r_{2}\\;}\\begin{pmatrix}1&1&\\lambda&\\vdots&1\\\\ 0&\\lambda-1&0&\\vdots&1\\\\ 0&0&1-\\lambda^{2}&\\vdots&a+1-\\lambda\\end{pmatrix}$\n\n所以 $\\begin{cases}1-\\lambda^{2}=0\\\\ a+1-\\lambda=0\\end{cases}$，解得 $\\lambda=1,a=0$ （舍去）；$\\lambda=-1,a=-2$.\n\n（II）由（I）知，$\\bar{\\boldsymbol{A}}=\\begin{pmatrix}1&1&-1&\\vdots&1\\\\ 0&-2&0&\\vdots&1\\\\ 0&0&0&\\vdots&0\\end{pmatrix}\\to\\begin{pmatrix}1&0&-1&\\vdots&1.5\\\\ 0&1&0&\\vdots&-0.5\\\\ 0&0&0&\\vdots&0\\end{pmatrix}$,\n\n$R(\\boldsymbol{A})=R(\\bar{\\boldsymbol{A}})=2$, 对应齐次线性方程组 $\\boldsymbol{Ax}=\\boldsymbol{0}$ 的基础解系含 1 个解向量，即 $\\boldsymbol{\\alpha}=\\begin{pmatrix}1\\\\ 0\\\\ 1\\end{pmatrix}$,\n\n$\\boldsymbol{Ax}=\\boldsymbol{b}$ 的一个特解为 $\\boldsymbol{\\beta}=\\begin{pmatrix}\\dfrac{3}{2}\\\\ -\\dfrac{1}{2}\\\\ 0\\end{pmatrix}$, $\\boldsymbol{Ax}=\\boldsymbol{b}$ 的通解为 $k\\begin{pmatrix}1\\\\ 0\\\\ 1\\end{pmatrix}+\\begin{pmatrix}\\dfrac{3}{2}\\\\ -\\dfrac{1}{2}\\\\ 0\\end{pmatrix}$（其中 $k$ 为任意常数）."
+    }
+   ],
+   "knowledge_points": [
+    "含参非齐次线性方程组",
+    "解的判定与通解结构"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3
+    ],
+    "anchor": "第(20)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:63ef70e06121d871bf8ebd18553a13975033bca846e57334f4db6bbcc6ecf99d"
+  },
+  {
+   "id": "math-2010-21",
+   "subject": "math",
+   "year": 2010,
+   "num": 21,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）已知二次型 $f(x_{1},x_{2},x_{3})=\\boldsymbol{x}^{T}\\boldsymbol{Ax}$ 在正交变换 $\\boldsymbol{x}=\\boldsymbol{Qy}$ 下的标准形为 $y_{1}^{2}+y_{2}^{2}$，且 $\\boldsymbol{Q}$ 的第 3 列为 $\\left(\\dfrac{\\sqrt{2}}{2},0,\\dfrac{\\sqrt{2}}{2}\\right)^{T}$（I）求矩阵 $\\boldsymbol{A}$；（II）证明 $\\boldsymbol{A}+\\boldsymbol{E}$ 为正定矩阵，其中 $\\boldsymbol{E}$ 为 3 阶单位矩阵.",
+   "options": [],
+   "answer": "(I)\\ A=\\begin{pmatrix}1/2&0&-1/2\\\\ 0&1&0\\\\ -1/2&0&1/2\\end{pmatrix}; (II)\\ 证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】\n\n（I）由题意知矩阵 $\\boldsymbol{A}$ 的特征值为 1,1,0, 且特征值 0 对应的特征向量为 $\\left(\\dfrac{\\sqrt{2}}{2},0,\\dfrac{\\sqrt{2}}{2}\\right)^{T}$,\n\n$\\boldsymbol{Q}^{T}\\boldsymbol{AQ}=\\begin{pmatrix}1&&\\\\ &1&\\\\ &&0\\end{pmatrix}$, 设特征值 1 对应的特征向量为 $(x_{1},x_{2},x_{3})^{T}$，则\n\n$\\dfrac{\\sqrt{2}}{2}\\cdot x_{1}+0\\cdot x_{2}+\\dfrac{\\sqrt{2}}{2}\\cdot x_{3}=0$，求解得特征值 1 对应的特征向量为\n\n$(0,1,0)^{T},(1,0,-1)^{T}$，将其单位化得 $(0,1,0)^{T},\\left(\\dfrac{1}{\\sqrt{2}},0,-\\dfrac{1}{\\sqrt{2}}\\right)^{T}.$\n\n$\\boldsymbol{Q}=\\begin{pmatrix}0&\\dfrac{\\sqrt{2}}{2}&\\dfrac{\\sqrt{2}}{2}\\\\ 1&0&0\\\\ 0&-\\dfrac{\\sqrt{2}}{2}&\\dfrac{\\sqrt{2}}{2}\\end{pmatrix}$, $\\boldsymbol{Q}^{T}=\\boldsymbol{Q}^{-1}=\\begin{pmatrix}0&1&0\\\\ \\dfrac{\\sqrt{2}}{2}&0&-\\dfrac{\\sqrt{2}}{2}\\\\ \\dfrac{\\sqrt{2}}{2}&0&\\dfrac{\\sqrt{2}}{2}\\end{pmatrix}$,\n\n$\\boldsymbol{A}=\\boldsymbol{Q}\\Lambda\\boldsymbol{Q}^{T}=\\begin{pmatrix}0&\\dfrac{\\sqrt{2}}{2}&\\dfrac{\\sqrt{2}}{2}\\\\ 1&0&0\\\\ 0&-\\dfrac{\\sqrt{2}}{2}&\\dfrac{\\sqrt{2}}{2}\\end{pmatrix}\\begin{pmatrix}1&&\\\\ &1&\\\\ &&0\\end{pmatrix}\\begin{pmatrix}0&1&0\\\\ \\dfrac{\\sqrt{2}}{2}&0&-\\dfrac{\\sqrt{2}}{2}\\\\ \\dfrac{\\sqrt{2}}{2}&0&\\dfrac{\\sqrt{2}}{2}\\end{pmatrix}=\\begin{pmatrix}\\dfrac{1}{2}&0&-\\dfrac{1}{2}\\\\ 0&1&0\\\\ -\\dfrac{1}{2}&0&\\dfrac{1}{2}\\end{pmatrix}.$\n\n（II）证明：$\\left(\\boldsymbol{A}+\\boldsymbol{E}\\right)^{T}=\\boldsymbol{A}^{T}+\\boldsymbol{E}=\\boldsymbol{A}+\\boldsymbol{E}$, , $\\boldsymbol{A}+\\boldsymbol{E}$ 为实对称矩阵. 又 $\\boldsymbol{A}$ 的特征值为 1,1,0,\n\n$\\boldsymbol{A}+\\boldsymbol{E}$ 的特征值为 2,2,1，都大于 0，$\\boldsymbol{A}+\\boldsymbol{E}$ 为正定矩阵."
+    }
+   ],
+   "knowledge_points": [
+    "实对称矩阵对角化",
+    "正交变换化二次型",
+    "正定矩阵的判定"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3
+    ],
+    "anchor": "第(21)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:57fb713506f8bd2399c41fb1ba1cee6110bb04ccee08ac8b607c86fee0f575de"
+  },
+  {
+   "id": "math-2010-22",
+   "subject": "math",
+   "year": 2010,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分）设二维随机变量 $(X,Y)$ 的概率密度为 $f(x,y)=Ae^{-2x^{2}+2xy-y^{2}}, -\\infty<x<+\\infty$，$-\\infty<y<+\\infty$ 求常数 A 及条件概率密度 $f_{Y|X}(y|x)$.",
+   "options": [],
+   "answer": "A=\\dfrac{1}{\\pi}, f_{Y|X}(y|x)=\\dfrac{1}{\\sqrt{\\pi}}e^{-(x-y)^{2}}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】由概率密度的性质 $\\int_{-\\infty}^{+\\infty}\\int_{-\\infty}^{+\\infty}f(x,y)dxdy=1$，可知\n\n$\\int_{-\\infty}^{+\\infty}\\int_{-\\infty}^{+\\infty}Ae^{-2x^{2}+2xy-y^{2}}dxdy=A\\int_{-\\infty}^{+\\infty}e^{-x^{2}}dx\\int_{-\\infty}^{+\\infty}e^{-(x-y)^{2}}dy=1.$\n\n又知 $\\int_{-\\infty}^{+\\infty}e^{-x^{2}}dx=\\sqrt{\\pi}$，有 $\\int_{-\\infty}^{+\\infty}e^{-x^{2}}dx\\int_{-\\infty}^{+\\infty}e^{-(x-y)^{2}}dy=\\pi$，所以 $A=\\dfrac{1}{\\pi}$，即\n\n$f(x,y)=\\dfrac{1}{\\pi}e^{-2x^{2}+2xy-y^{2}}$，$X$ 的边缘概率密度为\n\n$f_{X}(x)=\\dfrac{1}{\\pi}e^{-x^{2}}\\int_{-\\infty}^{+\\infty}e^{-(x-y)^{2}}dy=\\dfrac{1}{\\pi}e^{-x^{2}}\\cdot\\sqrt{\\pi}=\\dfrac{1}{\\sqrt{\\pi}}e^{-x^{2}}, -\\infty<x<+\\infty$,\n\n$f_{Y|X}(y|x)=\\dfrac{f(x,y)}{f_{X}(x)}=\\dfrac{\\dfrac{1}{\\pi}e^{-2x^{2}+2xy-y^{2}}}{\\dfrac{1}{\\sqrt{\\pi}}e^{-x^{2}}}=\\dfrac{1}{\\sqrt{\\pi}}e^{-(x-y)^{2}}, -\\infty<x<+\\infty, -\\infty<y<+\\infty$."
+    }
+   ],
+   "knowledge_points": [
+    "二维随机变量的联合密度",
+    "边缘密度",
+    "条件密度"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     3,
+     4
+    ],
+    "anchor": "第(22)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:9c9b87998c33ee7e67380e2705b410ef4091a5423aa60cc9b4873624f9092e3d"
+  },
+  {
+   "id": "math-2010-23",
+   "subject": "math",
+   "year": 2010,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "（本题满分 11 分设总体 $X$ 的概率分布为 $\\begin{array}{c|ccc} X & 1 & 2 & 3\\\\ \\hline P & 1-\\theta & \\theta-\\theta^{2} & \\theta^{2}\\end{array}$ 其中参数 $\\theta\\in(0,1)$ 未知，以 $N_{i}$ 表示来自总体 $X$ 的简单随机样本（样本容量为 $n$）中等于 $i$的个数 $(i=1,2,3)$. 试求常数 $a_{1},a_{2},a_{3}$，使 $T=\\sum\\limits_{i=1}^{3}a_{i}N_{i}$ 为 $\\theta$ 的无偏估计量，并求 $T$ 的方差.",
+   "options": [],
+   "answer": "a_{1}=0, a_{2}=a_{3}=\\dfrac{1}{n}; DT=\\dfrac{(1-\\theta)\\theta}{n}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【详解】由题知 $N_{1},N_{2},N_{3}$ 分别服从二项分布 $B(n,1-\\theta), B(n,\\theta-\\theta^{2}), B(n,\\theta^{2})$，则有\n\n$EN_{1}=n(1-\\theta), EN_{2}=n(\\theta-\\theta^{2}), EN_{3}=n\\theta^{2}$,\n\n$ET=E(\\sum\\limits_{i=1}^{3}a_{i}N_{i})=\\sum\\limits_{i=1}^{3}a_{i}EN_{i}=a_{1}n(1-\\theta)+a_{2}n(\\theta-\\theta^{2})+a_{3}n\\theta^{2}=\\theta$\n\n$\\Rightarrow\\begin{cases}a_{1}n=0\\\\ a_{2}n-a_{1}n=1\\\\ a_{3}n-a_{2}n=0\\end{cases}\\Rightarrow\\begin{cases}a_{1}=0\\\\ a_{2}=\\dfrac{1}{n}\\\\ a_{3}=\\dfrac{1}{n}\\end{cases}$\n\n即 $T=\\sum\\limits_{i=1}^{3}a_{i}N_{i}=\\dfrac{N_{2}+N_{3}}{n}=\\dfrac{n-N_{1}}{n}=1-\\dfrac{N_{1}}{n}$,\n\n$DT=D(1-\\dfrac{N_{1}}{n})=\\dfrac{1}{n^{2}}DN_{1}=\\dfrac{1}{n^{2}}\\times n(1-\\theta)\\theta=\\dfrac{(1-\\theta)\\theta}{n}$."
+    }
+   ],
+   "knowledge_points": [
+    "二项分布",
+    "无偏估计",
+    "估计量的方差"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+   "source_ref": {
+    "pdf": "2010数学一真题及解析.pdf",
+    "sha256": "7eb5fe317791e38299e4e8e5a14587811c350edbb8f6b0a1440c790f050ecca9",
+    "pages": [
+     4
+    ],
+    "anchor": "第(23)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:802346659d53b88d406867c57aa919107da7ad013d32258d036f1c277f85a47e"
+  }
+ ]
+}

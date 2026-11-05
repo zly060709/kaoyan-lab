@@ -68,6 +68,11 @@ for fp in sorted(glob.glob(os.path.join(ROOT, "data", subj, "figures", "*.json")
                             errs.append(f"{f.get('qid')}: {key}={it[key]} 全部取样为 NaN")
                     except ValueError as e:
                         errs.append(f"{f.get('qid')}: {e}")
+            # circle 支持 cx/cy 任意圆心（与前端 DSL 同步，cx/cy 缺省 0）
+            if it.get("kind") == "circle":
+                for key in ("cx", "cy", "r"):
+                    if key in it and not isinstance(it[key], (int, float)):
+                        errs.append(f"{f.get('qid')}: circle.{key} 应为数值")
     total += len(figs)
     status = "OK" if not errs else "FAIL"
     if errs:

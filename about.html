@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>关于 · 数据来源 · 隐私与使用条款</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0F2540">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#FAF8F4;color:#1e293b;max-width:820px;margin:0 auto;padding:28px 20px 80px;line-height:1.95}
+h1{font-size:22px;color:#0F2540}h2{font-size:17px;color:#0F2540;margin:30px 0 10px;border-left:4px solid #C9A961;padding-left:10px}
+p,li{font-size:14.5px;color:#334155}
+code{font-family:ui-monospace,Consolas,monospace;font-size:13px;background:#eef2f7;border-radius:6px;padding:1px 6px}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13.5px;margin:10px 0}
+td,th{border:1px solid #e2e8f0;padding:6px 10px;text-align:left}
+th{background:#e8f0fe}
+a{color:#0F2540}
+.box{background:#fff;border-radius:14px;box-shadow:0 2px 12px rgba(15,37,64,.08);padding:18px 22px;margin:12px 0}
+</style>
+</head>
+<body>
+<h1>考研真题逐题精讲 · 个人学习库</h1>
+<p>本站是一个<b>纯个人使用</b>的考研真题学习库：逐题原文与解析、图形化讲解、自测判分与错题本。站点内容已整体加密（AES-256-GCM），仅持有访问口令的人可以解锁阅读，且全站要求搜索引擎不收录（robots.txt 全站 Disallow + 每页 noindex）。</p>
+
+<h2>一、数据来源与保真原则</h2>
+<div class="box">
+<table>
+<tr><th>科目</th><th>覆盖</th><th>来源</th></tr>
+<tr><td>政治 101</td><td>2013–2024 · 456 题</td><td>用户提供资料（PDF 交叉核对）</td></tr>
+<tr><td>数学一 301</td><td>2010、2013–2023 · 273 题</td><td>用户提供《学科历年真题》资料，逐年视觉转录</td></tr>
+<tr><td>数学二 302</td><td>2009–2023 · 342 题</td><td>同上（原卷影像在库可对照）</td></tr>
+<tr><td>数学三 303</td><td>2010–2023 部分年份 · 158 题</td><td>同上；其余年份仅原卷影像，未转录不放假题</td></tr>
+<tr><td>英语一 201</td><td>2010–2024 · 780 题（客观 675）</td><td>用户提供资料迁移</td></tr>
+<tr><td>408 计算机</td><td>2018–2025 · 376 题</td><td>新东方在线《408 真题集（2009–2025）》</td></tr>
+<tr><td>199 管综</td><td>2009–2026 · 1024 题</td><td>用户提供的 Markdown 题库 + 原卷切片</td></tr>
+<tr><td>法硕综合课 498</td><td>2022 · 58 题</td><td>用户提供的真题及答案详解图片版</td></tr>
+</table>
+<p><b>保真原则</b>：题目、选项、答案、解析一律逐字照录原始资料，不改写、不补写；没有可靠转录的年份只提供原卷影像（含来源 PDF 名与 SHA-256 前缀），绝不凭记忆生成「真题」。每题带 <code>source_hash</code> 可溯源。</p>
+</div>
+
+<h2>二、版权与使用范围</h2>
+<div class="box">
+<p>本站内容包含第三方版权的考研真题与解析（来源见上表），<b>版权归原权利方所有</b>。本站仅限持有口令的本人用于个人学习、研究，<b>禁止向任何人分发、转载、公开传播或用于商业用途</b>；也不要把口令告诉他人或把解锁后的内容转发出去。</p>
+<p>站点代码部分以 MIT 许可发布（见仓库 LICENSE）；题库内容<b>不适用</b>该许可。</p>
+</div>
+
+<h2>三、隐私说明</h2>
+<div class="box">
+<p>本站<b>没有账号、没有后端、没有任何追踪或统计</b>。所有学习数据（收藏、自测成绩、错题本、考试日期、外观偏好）只保存在你自己的浏览器 <code>localStorage</code> 里：</p>
+<ul>
+<li>清空浏览器数据 = 学习记录清零（先去「我的 → 导出 JSON 备份」）；</li>
+<li>「记住口令」会把访问口令存在本机 localStorage（<code>kyl:pass</code>），公用电脑上请解锁后手动清除，或不要勾选记住；</li>
+<li>浏览器可能缓存密文以支持离线使用，密文离开口令不可读。</li>
+</ul>
+</div>
+
+<h2>四、技术与已知边界</h2>
+<div class="box">
+<ul>
+<li>纯静态托管（GitHub Pages），内容层构建期 AES-256-GCM 加密，口令只存在于你本地与托管平台加密的部署密钥中，不进代码仓库；</li>
+<li>已知边界：口令属于共享凭据，请勿外传；服务端无访问审计。若未来要分享给他人，应改为支持服务端鉴权的托管并逐人授权；</li>
+<li>建议：仓库设为 Private 可进一步降低内容暴露面（本地与部署不受影响）。</li>
+</ul>
+</div>
+
+<p style="margin-top:30px"><a href="index.html">← 返回站点</a></p>
+</body>
+</html>

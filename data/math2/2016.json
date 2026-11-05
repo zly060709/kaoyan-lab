@@ -1031,7 +1031,7 @@
     {
      "role": "analysis",
      "origin": "source",
-     "text": "积分区域 $D$ 关于 $y$ 轴对称，$xy$ 是关于 $x$ 的奇函数，则利用对称性得到 $\\iint_{D}\\dfrac{x^{2}-xy-y^{2}}{x^{2}+y^{2}}dxdy=\\iint_{D}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=2\\iint_{D_{右}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy$。方法一（直角坐标）：$\\iint_{D_{右}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=\\iint_{D_{右}}\\left(1-\\dfrac{2y^{2}}{x^{2}+y^{2}}\\right)dxdy=\\dfrac{1}{2}-2\\int_{0}^{1}dy\\int_{0}^{y}\\dfrac{y^{2}}{x^{2}+y^{2}}dx=\\dfrac{1}{2}-2\\int_{0}^{1}\\dfrac{\\pi}{4}y\\,dy=\\dfrac{1}{2}-\\dfrac{\\pi}{4}$。所以原式 $=1-\\dfrac{\\pi}{2}$。方法二（极坐标）：$2\\iint_{D_{右}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=\\dfrac12\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\dfrac{\\cos^{2}\\theta-\\sin^{2}\\theta}{\\sin^{2}\\theta}d\\theta=\\dfrac12\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\left(\\csc^{2}\\theta-1\\right)d\\theta-\\dfrac{\\pi}{8}=\\dfrac12-\\dfrac{\\pi}{4}$。所以原式 $=1-\\dfrac{\\pi}{2}$。"
+     "text": "积分区域 $D$ 关于 $y$ 轴对称，$xy$ 是关于 $x$ 的奇函数，则利用对称性得到 $\\iint_{D}\\dfrac{x^{2}-xy-y^{2}}{x^{2}+y^{2}}dxdy=\\iint_{D}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=2\\iint_{D_{\\text{右}}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy$。方法一（直角坐标）：$\\iint_{D_{\\text{右}}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=\\iint_{D_{\\text{右}}}\\left(1-\\dfrac{2y^{2}}{x^{2}+y^{2}}\\right)dxdy=\\dfrac{1}{2}-2\\int_{0}^{1}dy\\int_{0}^{y}\\dfrac{y^{2}}{x^{2}+y^{2}}dx=\\dfrac{1}{2}-2\\int_{0}^{1}\\dfrac{\\pi}{4}y\\,dy=\\dfrac{1}{2}-\\dfrac{\\pi}{4}$。所以原式 $=1-\\dfrac{\\pi}{2}$。方法二（极坐标）：$2\\iint_{D_{\\text{右}}}\\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}dxdy=\\dfrac12\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\dfrac{\\cos^{2}\\theta-\\sin^{2}\\theta}{\\sin^{2}\\theta}d\\theta=\\dfrac12\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\left(\\csc^{2}\\theta-1\\right)d\\theta-\\dfrac{\\pi}{8}=\\dfrac12-\\dfrac{\\pi}{4}$。所以原式 $=1-\\dfrac{\\pi}{2}$。"
     },
     {
      "role": "approach",
@@ -1071,7 +1071,7 @@
     ],
     "anchor": "解答题(18)"
    },
-   "content_hash": "sha256:ff12e3fa3e82cee95e8318512e0781d9a2718a9948f7b52efca2ac081aecd18c",
+   "content_hash": "sha256:497058002e943fae77fc75691db45b89a9b427a811245d300f0232d523338979",
    "schema_version": "1.0.0"
   },
   {

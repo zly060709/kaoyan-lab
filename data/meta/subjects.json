@@ -1,7 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T09:00:32Z",
-  "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal 由 tools/sync_registry.py 依真实数据反推。",
+  "updated_at": "2026-11-05T16:26:39Z",
   "subjects": [
     {
       "id": "politics",
@@ -12,10 +11,6 @@
       "icon": "🚩",
       "status": "active",
       "dataDir": "politics",
-      "years": [
-        2013,
-        2024
-      ],
       "dataYears": [
         2013,
         2014,
@@ -58,10 +53,6 @@
       "icon": "Ⅰ",
       "status": "active",
       "dataDir": "english",
-      "years": [
-        2010,
-        2024
-      ],
       "dataYears": [
         2010,
         2011,
@@ -110,11 +101,8 @@
       "icon": "∑",
       "status": "active",
       "dataDir": "math",
-      "years": [
-        2013,
-        2023
-      ],
       "dataYears": [
+        2010,
         2013,
         2014,
         2015,
@@ -128,6 +116,7 @@
         2023
       ],
       "yearCounts": {
+        "2010": 23,
         "2013": 23,
         "2014": 23,
         "2015": 23,
@@ -152,7 +141,7 @@
         "2011": 13,
         "2012": 13
       },
-      "questionTotal": 250,
+      "questionTotal": 273,
       "analysisYears": []
     },
     {
@@ -164,10 +153,6 @@
       "icon": "∫",
       "status": "active",
       "dataDir": "math2",
-      "years": [
-        2009,
-        2023
-      ],
       "dataYears": [
         2009,
         2010,
@@ -248,16 +233,20 @@
       "icon": "π",
       "status": "active",
       "dataDir": "math3",
-      "years": [
-        2021,
-        2023
-      ],
       "dataYears": [
+        2010,
+        2011,
+        2013,
+        2019,
         2021,
         2022,
         2023
       ],
       "yearCounts": {
+        "2010": 23,
+        "2011": 23,
+        "2013": 23,
+        "2019": 23,
         "2021": 22,
         "2022": 22,
         "2023": 22
@@ -296,7 +285,7 @@
         "2022": 15,
         "2023": 13
       },
-      "questionTotal": 66,
+      "questionTotal": 158,
       "analysisYears": []
     },
     {
@@ -308,10 +297,6 @@
       "icon": "Ⅱ",
       "status": "pending",
       "dataDir": "english2",
-      "years": [
-        2010,
-        2025
-      ],
       "dataYears": [],
       "yearCounts": {},
       "paperYears": [],
@@ -328,10 +313,6 @@
       "icon": "⌨",
       "status": "active",
       "dataDir": "cs408",
-      "years": [
-        2018,
-        2025
-      ],
       "dataYears": [
         2018,
         2019,
@@ -497,7 +478,6 @@
       "status": "active",
       "need": "提供历年真题资料即可开工",
       "dataDir": "law498",
-      "years": [],
       "dataYears": [
         2022
       ],
@@ -657,5 +637,6 @@
       "questionTotal": 0,
       "analysisYears": []
     }
-  ]
+  ],
+  "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal 由 tools/sync_registry.py 依真实数据反推。"
 }

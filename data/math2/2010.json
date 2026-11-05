@@ -525,7 +525,7 @@
     {
      "role": "approach",
      "origin": "extended",
-     "text": "三次特征方程先试整数根（$\\lambda=2$ 试出），再因式分解 $（\\lambda-2)(\\lambda^2+1)$。"
+     "text": "三次特征方程先试整数根（$\\lambda=2$ 试出），再因式分解 $\\text{（}\\lambda-2)(\\lambda^2+1)$。"
     },
     {
      "role": "warn",
@@ -560,7 +560,7 @@
     ],
     "anchor": "填空题(9)"
    },
-   "content_hash": "sha256:cb24df8910d918c359996afce1c2c5b11121e81e1ccb6b95118b4e093db355f1",
+   "content_hash": "sha256:a6302e3391ff47f5665a9d5160129302d9a12a574ff18bc7210ae3c4ed3e7d06",
    "schema_version": "1.0.0"
   },
   {
@@ -1033,7 +1033,7 @@
     {
      "role": "analysis",
      "origin": "source",
-     "text": "由已知，质量 $M=\\rho V$，求出相应的体积即可，$V=S_{侧}\\times h,\\ h=l$。$S_{侧}=\\pi ab-2\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)ab$。设 $y=b\\sin t$，则 $dy=b\\cos t\\,dt$，则 $\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=ab\\int_{\\pi/6}^{\\pi/2}\\sqrt{1-\\sin^{2}t}\\cos t\\,dt=ab\\int_{\\pi/6}^{\\pi/2}\\cos^{2}t\\,dt=\\frac{1}{2}ab\\int_{\\pi/6}^{\\pi/2}(\\cos2t+1)dt=\\frac{1}{2}\\left(\\frac{1}{3}\\pi-\\frac{\\sqrt3}{4}\\right)ab$。所以 $S_{侧}=\\pi ab-2\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)ab$，油的质量为 $\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)\\rho ab l\\ (kg)$。"
+     "text": "由已知，质量 $M=\\rho V$，求出相应的体积即可，$V=S_{\\text{侧}}\\times h,\\ h=l$。$S_{\\text{侧}}=\\pi ab-2\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)ab$。设 $y=b\\sin t$，则 $dy=b\\cos t\\,dt$，则 $\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=ab\\int_{\\pi/6}^{\\pi/2}\\sqrt{1-\\sin^{2}t}\\cos t\\,dt=ab\\int_{\\pi/6}^{\\pi/2}\\cos^{2}t\\,dt=\\frac{1}{2}ab\\int_{\\pi/6}^{\\pi/2}(\\cos2t+1)dt=\\frac{1}{2}\\left(\\frac{1}{3}\\pi-\\frac{\\sqrt3}{4}\\right)ab$。所以 $S_{\\text{侧}}=\\pi ab-2\\int_{b/2}^{b}a\\sqrt{1-\\frac{y^{2}}{b^{2}}}dy=\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)ab$，油的质量为 $\\left(\\frac{2\\pi}{3}+\\frac{\\sqrt3}{4}\\right)\\rho ab l\\ (kg)$。"
     },
     {
      "role": "approach",
@@ -1074,7 +1074,7 @@
     ],
     "anchor": "解答题(18)"
    },
-   "content_hash": "sha256:5716be64924672c1540ac4a48c2710b5f5baf0a575126789f9a2c5db534ffd28",
+   "content_hash": "sha256:aa1b74c459a3f3dcc978682b87ebfa40caeb2252f1dfea0a666b8c202419d10e",
    "schema_version": "1.0.0"
   },
   {

@@ -245,6 +245,8 @@ def main():
             bad_refs.append(sw + " 缺失")
             continue
         for m in re.finditer(r'"([\w./-]+\.(?:html|js|css|json|webmanifest|svg|png))"', open(p, encoding="utf-8").read()):
+            if m.group(1).startswith("/enc/"):
+                continue  # enc/ 是构建产物（tools/build_site.py 生成），仓库根目录无需存在
             checked += 1
             if not os.path.exists(os.path.join(ROOT, m.group(1))):
                 bad_refs.append("%s -> %s" % (sw, m.group(1)))
@@ -261,6 +263,20 @@ def main():
         if sorted(s.get("dataYears") or []) != real:
             drift.append("%s 注册 %s != 实际 %s" % (s["id"], s.get("dataYears"), real))
     gate("G9 注册表一致", not drift, "与磁盘数据一致" if not drift else "; ".join(drift[:4]))
+
+    # G10 schema 结构校验（data/schema.json 消费者，内置 draft-07 子集）
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import validate_schema as vs
+        qschema = vs.load_schema()
+        bad_schema = []
+        for rel, q in vs.iter_questions():
+            for e in vs.validate(q, qschema, q.get("id", "?")):
+                bad_schema.append(f"{rel} {e}")
+        gate("G10 schema 结构", not bad_schema,
+             "3467 题结构合格" if not bad_schema else "错误 %d，例: %s" % (len(bad_schema), "; ".join(bad_schema[:3])))
+    except Exception as e:
+        gate("G10 schema 结构", False, "校验器异常: %s" % str(e)[:80])
 
     ok = all(r["pass"] for r in results)
     print("\n门禁汇总：%d/%d 通过%s" % (sum(1 for r in results if r["pass"]), len(results),

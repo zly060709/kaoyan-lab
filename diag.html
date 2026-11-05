@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>自诊断 · 考研全栈学习平台</title>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>自诊断 · 考研真题精讲</title>
 <style>
-body{font-family:"Microsoft YaHei",sans-serif;background:#FAF8F4;color:#1e293b;max-width:820px;margin:0 auto;padding:24px;line-height:1.8}
+body{font-family:system-ui,"Segoe UI","Microsoft YaHei",sans-serif;background:#FAF8F4;color:#1e293b;max-width:820px;margin:0 auto;padding:24px;line-height:1.8}
 h1{font-size:20px;color:#0F2540}h2{font-size:16px;color:#0F2540;margin:18px 0 8px}
 table{border-collapse:collapse;width:100%;background:#fff;font-size:14px}
 td,th{border:1px solid #e2e8f0;padding:6px 10px;text-align:left}
@@ -14,29 +15,53 @@ button{padding:6px 16px;border-radius:8px;border:1px solid #0F2540;background:#f
 </style></head>
 <body>
 <h1>🔧 自诊断</h1>
-<p>数据版本、题数核对、缓存与错误日志。学习数据仅存浏览器本地。</p>
-<h2>题库迁移状态</h2><div id="tbl">加载中…</div>
+<p>注册表、缓存、加密状态与错误日志。学习数据仅存浏览器本地。</p>
+<h2>科目注册表（题量核对）</h2><div id="tbl">加载中…</div>
+<h2>运行状态</h2><div id="rt">检测中…</div>
 <h2>最近脚本错误（本机最近 10 条）</h2><div id="errs">（无）</div>
 <h2>诊断信息</h2><pre id="diag">…</pre>
 <button onclick="navigator.clipboard&&navigator.clipboard.writeText(document.getElementById('diag').textContent)">一键复制诊断信息</button>
 <a href="index.html" style="margin-left:10px">← 返回首页</a>
 <script>
 "use strict";
-const EXPECT={politics:456,math:250,english:675,cs408:376,law498:58};
-const errs=JSON.parse(localStorage.getItem("kaoyan_errlog")||"[]");
-document.getElementById("errs").innerHTML=errs.length?("<table>"+errs.map(e=>"<tr><td>"+e+"</td></tr>").join("")+"</table>"):"（无）";
-window.addEventListener("error",e=>{try{const a=JSON.parse(localStorage.getItem("kaoyan_errlog")||"[]");a.unshift(new Date().toISOString()+" "+e.message);localStorage.setItem("kaoyan_errlog",JSON.stringify(a.slice(0,10)))}catch(_){}});
+function rows2tbl(rows){return "<table><tr><th>项</th><th>值</th></tr>"+rows.map(r=>"<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>").join("")+"</table>"}
+const errs=(()=>{try{return JSON.parse(localStorage.getItem("kyl:errlog")||"[]")}catch(e){return[]}})();
+document.getElementById("errs").innerHTML=errs.length?("<table>"+errs.map(e=>"<tr><td>"+String(e.t||"").slice(0,19)+"</td><td>"+esc(e.scope||"")+"</td><td>"+esc(e.msg||"")+"</td><td><code>"+esc(e.hash||"")+"</code></td></tr>").join("")+"</table>"):"（无）";
+function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 (async()=>{
-  let rows="",ok=true;
-  for(const[s,exp]of Object.entries(EXPECT)){
-    let n=0,st="",files=0;
-    try{const m=await fetch("data/meta/migration_"+s+".json").then(r=>r.json());n=m.actual_total??m.actual_objective??0;files=Object.keys(m.per_year||m.per_year_objective||{}).length}catch(_){st="无报告"}
-    const pass=n===exp&&!st;if(!pass)ok=false;
-    rows+=`<tr><td>${s}</td><td>${exp}</td><td class="${pass?"ok":"bad"}">${n||"—"}${st?"（"+st+"）":""}</td><td>${files} 年</td></tr>`;
-  }
-  document.getElementById("tbl").innerHTML=`<table><tr><th>科目</th><th>基准</th><th>已迁移</th><th>年份数</th></tr>${rows}</table>
-  <p class="${ok?"ok":"bad"}">${ok?"全部达标":"未达标：迁移仍在进行或存在缺口"}</p>`;
-  document.getElementById("diag").textContent=JSON.stringify({ua:navigator.userAgent,lang:navigator.language,online:navigator.onLine,hash:location.href,ts:new Date().toISOString()},null,2);
+  const rows=[];let ok=true;
+  // 加密状态
+  let enc="未加密（本地明文模式）";
+  try{const r=await fetch("enc/manifest.json",{cache:"no-cache"});if(r.ok){const m=await r.json();enc="已加密 · KDF "+m.kdf.iter+" 次 · 内容文件 "+Object.keys(m.files).length+" 个"}}catch(e){}
+  rows.push(["内容加密",enc]);
+  // 注册表
+  try{
+    const reg=await fetch("data/meta/subjects.json").then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()});
+    const live=reg.subjects.filter(s=>s.status==="active");
+    const total=reg.subjects.reduce((a,s)=>a+(s.questionTotal||0),0);
+    rows.push(["注册表","OK · "+reg.subjects.length+" 科 · "+total+" 题 · 版本 "+String(reg.updated_at||"").slice(0,10)]);
+    rows.push(["已上线科目",live.map(s=>s.id+":"+s.questionTotal).join(", ")]);
+  }catch(e){ok=false;rows.push(["注册表","<span class=bad>FAIL "+esc(e.message)+"</span>"])}
+  // SW 与缓存
+  let swr="不可用";let buckets="";
+  if("serviceWorker" in navigator&&navigator.serviceWorker.controller){
+    swr="已接管";
+    if(window.caches){try{
+      const ks=await caches.keys();
+      for(const k of ks){const c=await caches.open(k);buckets+=k+"("+ (await c.keys()).length+" 条) ";}
+    }catch(e){}}
+  }else if("serviceWorker" in navigator){swr="已注册未接管（首次访问）"}
+  rows.push(["Service Worker",swr]);
+  rows.push(["缓存桶",buckets||"（无）"]);
+  // KaTeX
+  rows.push(["KaTeX",(window.katex?"JS OK":"未加载")+" / "+(window.renderMathInElement?"auto-render OK":"未加载")]);
+  // 存储
+  let lsN=0;try{lsN=localStorage.length}catch(e){}
+  rows.push(["localStorage 键数",lsN]);
+  rows.push(["UA",navigator.userAgent]);
+  document.getElementById("rt").innerHTML=rows2tbl(rows);
+  document.getElementById("diag").textContent=JSON.stringify({href:location.href,enc:enc,ua:navigator.userAgent,errs:errs.slice(0,5)},null,1);
+  document.title="自诊断 · "+(ok?"正常":"异常");
 })();
 </script>
 </body>
