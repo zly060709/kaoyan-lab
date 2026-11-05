@@ -90,6 +90,32 @@ h2.sec::before{content:"✦";color:var(--gold)}
 .blk[data-role="warn"],.blk[data-role="vocab"]{background:var(--rose-bg);border-left:3px solid var(--rose)}.blk[data-role="warn"] .lab{color:var(--rose)}
 .blk[data-role="nodes"],.blk[data-role="desc"],.blk[data-role="solution"],.blk[data-role="other"],.blk[data-role="frame"],.blk[data-role="kaodian"],.blk[data-role="silu"],.blk[data-role="jiefa"],.blk[data-role="biaozhun"],.blk[data-role="yicuo"],.blk[data-role="guina"],.blk[data-role="qita"]{background:#f8fafc;border:1px solid var(--line)}
 .blk img{max-width:100%;border-radius:8px;margin:8px 0}
+.mimg{max-width:100%;height:auto;border-radius:8px;margin:8px 0;cursor:zoom-in;background:#fff}
+.steps{border:1px solid var(--gold-l);border-radius:12px;padding:12px 14px;margin:14px 0;background:#fffdf7}
+.steps .sthd{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;color:var(--navy-mid);margin-bottom:8px}
+.steps .sthd b{letter-spacing:1px}
+.steps .org{font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:0 6px}
+.steps .stct{margin-left:auto;color:var(--muted);font-size:12px}
+.strow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.stp{font:inherit;font-size:12px;padding:3px 11px;border-radius:99px;border:1px solid var(--line);background:#fff;color:var(--navy-mid);cursor:pointer;transition:.18s}
+.stp:hover{border-color:var(--gold);background:#fdf6e6}
+.stp.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.stp.all{border-style:dashed}
+.step{display:none;background:var(--blue-bg);border-left:3px solid var(--navy-mid);border-radius:10px;padding:11px 14px;margin:8px 0;font-size:14.5px;line-height:1.9;word-break:break-word}
+.step.on{display:block;animation:fadein .22s ease-out}
+.step .lab{display:block;font-weight:800;font-size:12.5px;letter-spacing:1px;color:var(--navy-mid);margin-bottom:4px}
+.step p{margin:2px 0}
+.stnote{font-size:12.5px;color:var(--muted)}
+@keyframes fadein{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+body.selftest .steps,body.selftest .strow{display:none}
+@media (prefers-reduced-motion:reduce){.step.on{animation:none}}
+.pprid{display:grid;gap:14px}
+.ppfig{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px;box-shadow:var(--shadow)}
+.ppfig img{width:100%;display:block;border-radius:8px;cursor:zoom-in}
+.ppfig figcaption{font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
+.lbx{position:fixed;inset:0;background:rgba(8,14,26,.92);z-index:300;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;gap:12px}
+.lbx img{max-width:100%;max-height:84vh;border-radius:10px;background:#fff}
+.lbx-x{font:inherit;padding:6px 16px;border-radius:99px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;cursor:pointer}
 .figbox{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
 .figbox h4{font-size:14px;color:var(--navy);margin-bottom:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .figbox h4 .derv{font-size:10.5px;color:var(--amber);background:var(--amber-bg);border-radius:8px;padding:1px 8px;font-weight:600}
@@ -154,6 +180,17 @@ async function fetchJSON(url){
   finally{clearTimeout(tid)}
 }
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+async function fetchShard(url){
+  /* 合同第 6 章：单文件 ≤500KB。指针文件用 parts 列出子片，这里合并后回写缓存。 */
+  const j=await fetchJSON(url);
+  if(!j||!Array.isArray(j.parts)||!j.parts.length)return j;
+  const base=url.slice(0,url.lastIndexOf("/")+1);
+  const ps=[];for(const p of j.parts){try{ps.push(await fetchJSON(base+p))}catch(e){}}
+  let merged;
+  if(j.items!==undefined){const m={};ps.forEach(x=>Object.assign(m,x.items||{}));merged=Object.assign({},j,{items:Object.assign(m,{}),parts:null})}
+  else{let a=(j.analysis||[]).slice();ps.forEach(x=>a=a.concat(x.analysis||[]));merged=Object.assign({},j,{analysis:a,parts:null})}
+  CACHE[url]=merged;return merged;
+}
 function subjById(id){return (REG&&REG.subjects||[]).find(s=>s.id===id)}
 function dirOf(id){const s=subjById(id);return (s&&s.dataDir)||id}
 let _kt=0;
@@ -264,6 +301,7 @@ function route(){
   const year=parseInt(p[1],10);
   if(!year)return view404();
   if(p[2]==="q")return viewQuestion(s,year,parseInt(p[3]||"1",10));
+  if(p[2]==="paper")return viewPaper(s,year);
   return viewYear(s,year);
 }
 addEventListener("hashchange",route);
@@ -272,23 +310,23 @@ addEventListener("hashchange",route);
 async function viewHome(){
   const days=(()=>{const d=ls("examDate")||"2026-12-19";const ms=new Date(d+"T09:00:00")-Date.now();return ms>0?Math.ceil(ms/864e5):0})();
   const subs=REG.subjects;
-  const counts={};
-  await Promise.all(subs.filter(s=>s.status!=="pending").map(async s=>{
-    try{const m=await fetchJSON(`data/meta/migration_${dirOf(s.id)}.json`);counts[s.id]=m.actual_total??m.actual_objective??0}catch(e){counts[s.id]=0}
-  }));
   const cards=subs.map(s=>{
-    const st={active:["active","已上线"],migrating:["migrating","迁移中"],pending:["pending","待资料"]}[s.status];
+    const st={active:["active","已上线"],imaging:["migrating","原卷在库"],migrating:["migrating","迁移中"],pending:["pending","待资料"]}[s.status]||["pending","待资料"];
     if(s.status==="pending"){
       return `<div class="card pending"><span class="icode">${s.icon||"·"}</span><h3>${esc(s.name)}<span class="badge-st st-pending">待资料</span></h3>
         <div class="code">课程代码 ${esc(s.code)}</div><div class="need">${esc(s.need||"提供真题资料后按同一精讲管线开工")}</div></div>`;
     }
-    const n=counts[s.id]||0;
+    const n=s.questionTotal||0,dy=s.dataYears||[],py=s.paperYears||[];
+    const rng=dy.length?(dy.length===1?dy[0]:dy[0]+"–"+dy[dy.length-1]):"";
+    const tail=n?`已收录 <b>${n}</b> 题 · ${rng}${py.length?` · 原卷影像 ${py.length} 卷`:""}`
+                :`原卷影像 <b>${py.length}</b> 卷 · 题目转录中`;
     return `<a class="card" style="--acc:${s.color}" href="#/${s.id}"><span class="icode">${s.icon||"·"}</span>
       <h3>${esc(s.short||s.name)}<span class="badge-st st-${st[0]}">${st[1]}</span></h3>
       <div class="code">${esc(s.name)} · ${esc(s.code)}</div>
-      <div class="cnt">已收录 <b>${n}</b> 题 · ${s.years?s.years[0]+"–"+s.years[1]:""}</div></a>`;
+      <div class="cnt">${tail}</div></a>`;
   }).join("");
-  const totalQ=Object.values(counts).reduce((a,b)=>a+b,0);
+  const totalQ=subs.reduce((a,s)=>a+(s.questionTotal||0),0);
+  const liveSubs=subs.filter(s=>(s.dataYears||[]).length).length;
   app.innerHTML=`
   <div class="hero">
     <h1>考研全栈学习平台</h1>
@@ -300,7 +338,9 @@ async function viewHome(){
   <div class="grid">${cards}</div>
   <h2 class="sec">使用说明</h2>
   <div class="card" style="--acc:var(--teal);margin:0;font-size:14.5px">
-    · 已收录 ${totalQ} 题（7 科在库，其余统考科目等你提供资料后按同一管线开工，绝不编造真题）<br>
+    · 已收录 ${totalQ} 题（${liveSubs} 科有题，英语按全部单元计、其中客观题 675；其余统考科目等你提供资料后按同一管线开工，绝不编造真题）<br>
+    · 408 全部 376 题已挂<b>九段式分步精讲</b>（题卡下方「扩展精讲 · 九段式」，逐段自主揭示）<br>
+    · 未转录完成的年份直接提供<b>原卷影像</b>逐页查看（数一 2009–2012、数二/数三 2009–2023）<br>
     · 数学题的函数图像、积分区域、曲线关系等抽象概念已图形化（题卡下方图形面板，标注为扩展图形）· <a href="lab3d.html" style="color:var(--math)">🧊 3D 实验室（曲面/旋转体/二重积分）</a><br>
     · 顶部「自测」开关：隐藏答案与解析，先做后对；题目页 <b>j/k</b> 翻题、<b>空格</b> 揭示、<b>/</b> 搜索<br>
     · 数据按科按年懒加载，PWA 离线可用；学习进度仅存本地浏览器
@@ -313,17 +353,41 @@ async function viewHome(){
 
 /* ============ 科目页 ============ */
 async function viewSubject(s){
-  let counts={};
-  try{const m=await fetchJSON(`data/meta/migration_${dirOf(s.id)}.json`);counts=m.per_year_objective||m.per_year||{}}catch(e){}
-  let yrs=[];if(s.years){for(let y=s.years[0];y<=s.years[1];y++)yrs.push(y)}
-  const cards=yrs.map(y=>{
-    const n=counts[y];const has=n!=null&&n>0;
-    return `<a class="ycard${has?"":" dim"}" href="#/${s.id}/${y}"><b>${y}</b><span>${has?n+" 题":(s.status==="migrating"?"迁移中":"进入")}</span></a>`;
-  }).join("");
+  const yc=s.yearCounts||{},pp=s.paperPages||{};
+  const dys=(s.dataYears||[]).slice().sort((a,b)=>b-a);
+  const pays=(s.paperYears||[]).filter(y=>!yc[y]).sort((a,b)=>b-a);
+  const cards=dys.map(y=>`<a class="ycard" href="#/${s.id}/${y}"><b>${y}</b><span>${yc[y]} 题</span></a>`).join("")
+    +pays.map(y=>`<a class="ycard dim" href="#/${s.id}/${y}/paper"><b>${y}</b><span>原卷影像 ${pp[y]||""} 页</span></a>`).join("");
+  const note=s.status==="imaging"?`<div class="blk" data-role="other">本科目<b>原卷影像</b>已在库（下方年份可直接逐页查看），题目转录尚未完成——按合同第 2 章第 8 条，没有可靠转录就不放题目，绝不编造。</div>`:"";
   app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › ${esc(s.short||s.name)}</div>
   <h2 class="sec">${esc(s.name)} · 选择年份（课程代码 ${esc(s.code)}）</h2>
   ${s.id&&s.id.startsWith("math")?`<div class="card" style="--acc:${s.color};margin:0 0 14px"><a href="lab3d.html" style="color:var(--math);text-decoration:none;font-weight:700">🧊 进入 3D 数学实验室</a> —— 曲面 z=f(x,y) · 旋转体 · 曲顶柱体（二重积分几何意义），拖拽旋转、实时重算近似体积</div>`:""}
-  <div class="ygrid">${cards}</div>`;
+  ${note}
+  <div class="ygrid">${cards||'<div class="qcard">该科目暂无年份数据（等真实资料）</div>'}</div>`;
+}
+
+/* ============ 原卷影像页 ============ */
+async function viewPaper(s,y){
+  let man=null;try{man=await fetchJSON("data/meta/source_pdfs.json")}catch(e){}
+  const dir=dirOf(s.id);
+  const keys=man?Object.keys(man).filter(k=>k.endsWith(":"+y)&&(k.startsWith(dir+":")||k.startsWith(s.id+":"))):[];
+  const info=keys.length?man[keys[0]]:null;
+  const pages=(info&&info.page_files)||[];
+  if(!pages.length){app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s.id}">${esc(s.short||s.name)}</a> › ${y}</div>
+    <h2 class="sec">${y} 年原卷影像未入库</h2><div class="qcard">该年份的试卷影像还没有渲染入库（PDF 原件在本地资料库，等转录管线推进）。</div>`;return}
+  app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s.id}">${esc(s.short||s.name)}</a> › ${y} 原卷影像</div>
+  <h2 class="sec">${y} 年 ${esc(s.short||s.name)} 原卷影像（${pages.length} 页）</h2>
+  <div class="blk" data-role="other">来源：<b>${esc(info.pdf||"")}</b> · SHA-256 <code>${esc(String(info.sha256||"").slice(0,16))}…</code> · 逐页忠实渲染，未做任何改写；题目转录进行中。</div>
+  <div class="pprid">${pages.map((p,i)=>`<figure class="ppfig"><img src="${esc(p)}" alt="${y} 年第 ${i+1} 页" loading="lazy" data-full="${esc(p)}"><figcaption>第 ${i+1} 页</figcaption></figure>`).join("")}</div>`;
+  app.querySelectorAll(".ppfig img").forEach(img=>img.onclick=()=>lightbox(img.src));
+}
+function lightbox(src){
+  const box=document.createElement("div");box.className="lbx";
+  box.innerHTML=`<img src="${esc(src)}" alt="原卷放大"><button class="lbx-x" aria-label="关闭">✕ 关闭（Esc）</button>`;
+  const close=()=>box.remove();
+  box.onclick=e=>{if(e.target===box||e.target.classList.contains("lbx-x"))close()};
+  const ek=e=>{if(e.key==="Escape"){close();removeEventListener("keydown",ek,true)}};
+  addEventListener("keydown",ek,true);document.body.appendChild(box);
 }
 
 /* ============ 年份页 ============ */
@@ -349,6 +413,35 @@ async function viewYear(s,y){
 }
 const TYPE_LABEL={single:"单选",multi:"多选",fill:"填空",essay:"解答",reading:"阅读",cloze:"完形",partb:"新题型",translation:"翻译",writing:"写作",code:"代码",big:"大题",other:"题"};
 
+/* ============ 九段式分步揭示（合同第 3 章 B，扩展精讲 origin=extended） ============ */
+const STEPS=[["考点定位","kaodian"],["先补基础","basis"],["审题抓条件","read"],["思路引导","silu"],
+  ["关键一步","key"],["完整推导","derive"],["为什么不选其他","why"],["易错深挖","yicuo"],["举一反三","fan"]];
+const STEP_MARK=["①","②","③","④","⑤","⑥","⑦","⑧","⑨"];
+const STEP_ALIAS={"书写套路/评分点":"derive","书写套路":"derive","方法归纳":"yicuo","其他解法":"fan",
+  "解法构建":"key","标准解答":"derive","易错提醒":"yicuo","逐项解析":"why","详细解析":"derive","怎么想":"silu"};
+function buildSteps(ana){
+  if(!ana||!Array.isArray(ana.nodes)||!ana.nodes.length)return "";
+  const bucket={},order=[];let last="derive";
+  ana.nodes.forEach(n=>{
+    const lb=n.label?String(n.label).trim():null;
+    let key=null;
+    if(lb){const hit=STEPS.find(x=>x[0]===lb);key=hit?hit[1]:(STEP_ALIAS[lb]||null)}
+    if(!key)key=last;else if(!bucket[key])last=key;
+    if(!bucket[key]){bucket[key]=[];order.push(key)}
+    (n.lines||[]).forEach(l=>bucket[key].push(String(l)));
+  });
+  const present=STEPS.filter(x=>bucket[x[1]]&&bucket[x[1]].length);
+  if(!present.length)return "";
+  const idx=k=>STEPS.findIndex(x=>x[1]===k);
+  const row=present.map(x=>`<button class="stp" data-k="${x[1]}">${STEP_MARK[idx(x[1])]} ${esc(x[0])}</button>`).join("");
+  const body=present.map(x=>`<div class="step" data-k="${x[1]}"><span class="lab">${STEP_MARK[idx(x[1])]} ${esc(x[0])}</span>`+
+    bucket[x[1]].map(l=>`<p>${esc(l)}</p>`).join("")+`</div>`).join("");
+  return `<div class="steps" id="steps"><div class="sthd"><b>扩展精讲 · 九段式分步揭示</b><span class="org">非原文</span>`+
+    `<span class="stct">已揭示 <b id="stn">0</b>/${present.length}</span>`+
+    `<button class="stp all" id="stall">全部揭示</button></div><div class="strow">${row}</div>${body}`+
+    (ana.desc?`<div class="stnote">一句话要点：${esc(ana.desc)}</div>`:"")+`</div>`;
+}
+
 /* ============ 题目页 ============ */
 function optLetter(o){const m=String(o).match(/^\s*(?:\[?([A-H])\]?|[A-H])[\.、\s]/);return m?m[1]:null}
 async function viewQuestion(s,y,num){
@@ -358,19 +451,28 @@ async function viewQuestion(s,y,num){
   const q=qs[idx];
   let mediaMap=null;
   const raw=JSON.stringify(q);
-  if(raw.includes("@@M:")){try{mediaMap=(await fetchJSON(`data/${dirOf(s.id)}/${y}.media.json`)).items||{}}catch(e){}}
+  if(raw.includes("@@M:")){try{mediaMap=(await fetchShard(`data/${dirOf(s.id)}/${y}.media.json`)).items||{}}catch(e){}}
+  let ana=null;
+  try{const ad=await fetchShard(`data/${dirOf(s.id)}/${y}.analysis.json`);
+    ana=(ad.analysis||[]).find(a=>a.id===q.id)||null}catch(e){}
   const fill=t=>String(t??"").replace(/@@M:([-\w]+):(\d+)@@/g,(m0,id,i)=>{
     const uri=mediaMap&&mediaMap[id]&&mediaMap[id][i];
-    return uri?`<img src="${uri}" alt="题目图片" loading="lazy">`:m0;});
+    return uri?`<img src="${uri}" alt="题目图片" loading="lazy" class="mimg">`:m0;});
+  const fillText=t=>String(t??"").split(/(@@M:[-\w]+:\d+@@)/g).map(seg=>{
+    const m=seg.match(/^@@M:([-\w]+):(\d+)@@$/);
+    if(!m)return esc(seg);
+    const uri=mediaMap&&mediaMap[m[1]]&&mediaMap[m[1]][m[2]];
+    return uri?`<img src="${uri}" alt="题目图片" loading="lazy" class="mimg">`:esc(seg);
+  }).join("");
   const ansStr=q.answer==null?"":(typeof q.answer==="object"?JSON.stringify(q.answer):String(q.answer));
   const correct=new Set((ansStr.match(/[A-H]/g)||[]));
   const opts=(q.options||[]).map(o=>{
     const obj=typeof o==="object"?JSON.stringify(o):String(o);
     const L=optLetter(obj);
-    return `<div class="opt${L&&correct.has(L)?" correct":""}">${esc(obj)}</div>`;}).join("");
+    return `<div class="opt${L&&correct.has(L)?" correct":""}">${fillText(obj)}</div>`;}).join("");
   const blocks=(q.source_blocks||[]).map(b=>{
     const role=ROLE_L[b.role]?b.role:"other";
-    const body=b.html?fill(b.html):esc(fill(b.text||""));
+    const body=b.html?fill(b.html):fillText(b.text||"");
     const org=b.origin&&b.origin!=="source"?`<span class="org">${b.origin==="extended"?"扩展精讲":"变式"}</span>`:"";
     return `<div class="blk" data-role="${role}"><span class="lab">${ROLE_L[role]}</span>${org}${body}</div>`;}).join("");
   const mark=ls("bm:"+q.id)==="1";
@@ -384,10 +486,11 @@ async function viewQuestion(s,y,num){
       <button class="reveal-btn" id="rv" style="margin:0 0 0 8px;padding:4px 14px;font-size:12.5px">👁 揭示</button>
       <button class="reveal-btn" id="bm" style="margin:0;padding:4px 14px;font-size:12.5px">${mark?"★ 已收藏":"☆ 收藏"}</button>
     </div>
-    ${q.stem?`<div class="stem">${esc(fill(q.stem))}</div>`:""}
+    ${q.stem?`<div class="stem">${fillText(q.stem)}</div>`:""}
     ${opts?`<div class="opts">${opts}</div>`:""}
     <div id="figs"></div>
     ${blocks||'<div class="blk" data-role="other">（本题解析迁移中）</div>'}
+    ${buildSteps(ana)}
     <div style="font-size:12px;color:var(--muted)">来源：${esc((q.source_ref&&q.source_ref.pdf)||q.source_ref&&q.source_ref.file||"legacy")} · ${esc((q.source_ref&&q.source_ref.anchor)||"")} · ${esc(String(q.source_hash||"").slice(0,24))}…</div>
   </div></article>
   <div class="qnav">
@@ -404,7 +507,26 @@ async function viewQuestion(s,y,num){
     if(e.key==="k"&&idx<qs.length-1)go(qs[idx+1].num);
     if(e.key===" "){e.preventDefault();$("#qart").classList.toggle("revealed")}
   });
+  const stBox=$("#steps");
+  if(stBox){
+    const total=stBox.querySelectorAll(".step").length;
+    const upd=()=>{const n=$("#stn");if(n)n.textContent=stBox.querySelectorAll(".step.on").length};
+    stBox.querySelectorAll(".stp[data-k]").forEach(b=>b.onclick=()=>{
+      const el=stBox.querySelector('.step[data-k="'+b.dataset.k+'"]');
+      if(!el)return;
+      const on=el.classList.toggle("on");b.classList.toggle("on",on);
+      if(on)ls("hint:"+q.id,(+(ls("hint:"+q.id)||0)+1));
+      upd();
+    });
+    const all=$("#stall");
+    if(all)all.onclick=()=>{
+      stBox.querySelectorAll(".step").forEach(e=>e.classList.add("on"));
+      stBox.querySelectorAll(".stp[data-k]").forEach(e=>e.classList.add("on"));
+      ls("hint:"+q.id,(+(ls("hint:"+q.id)||0)+total));upd();
+    };
+  }
   renderMath(app);
+  app.querySelectorAll(".mimg,.blk img").forEach(img=>img.onclick=()=>lightbox(img.currentSrc||img.src));
   // 图形面板（D043）
   loadFigures(s.id,y,q.id).then(figs=>{
     if(!figs.length)return;
