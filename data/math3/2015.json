@@ -1,0 +1,1116 @@
+{
+ "subject": "math3",
+ "year": 2015,
+ "paper": "数学（三）",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2015数学三真题及解析.pdf》（data/math3/pages/2015/，12 页）。2009–2020 年数学三结构：选择题 8×4=32 分、填空题 6×4=24 分、解答题 15–23 共 94 分，合计 150 分。解答题逐题分值照卷面题号后的「（本题满分 X 分）」印刷。题干/选项/答案/解析逐字照录，原卷的疑似排版或笔误（错字、漏字、半全角混用、上下标排版不一致）一律不改，逐条登记在 tools/work/m32015_notes.md（13 条编号记录）。",
+ "questions": [
+  {
+   "id": "math3-2015-1",
+   "subject": "math3",
+   "year": 2015,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\{x_{n}\\}$ 是数列,下列命题中不正确的是（　）",
+   "options": [
+    "若 $\\lim\\limits_{n\\to\\infty}x_{n}=a$ ,则 $\\lim\\limits_{n\\to\\infty}x_{2n}=\\lim\\limits_{n\\to\\infty}x_{2n+1}=a$",
+    "若 $\\lim\\limits_{n\\to\\infty}x_{2n}=\\lim\\limits_{n\\to\\infty}x_{2n+1}=a$，则 $\\lim\\limits_{n\\to\\infty}x_{n}=a$",
+    "若 $\\lim\\limits_{n\\to\\infty}x_{n}=a$ ,则 $\\lim\\limits_{n\\to\\infty}x_{3n}=\\lim\\limits_{n\\to\\infty}x_{3n+1}=a$",
+    "若 $\\lim\\limits_{n\\to\\infty}x_{3n}=\\lim\\limits_{n\\to\\infty}x_{3n+1}=a$ ,则 $\\lim\\limits_{n\\to\\infty}x_{n}=a$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(D)\n\n【解析】考查数列极限与子列极限的关系.数列收敛，那么它的任何无穷子列均收敛.所以(A)与（C）正确；一个数列存在多个无穷子列并集包含原数列所有项，且这些子列均收敛于同一个值，则原数列是收敛的.(B)正确，(D) 错误，故选（D）"
+    }
+   ],
+   "knowledge_points": [
+    "数列极限",
+    "子列极限的关系"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     1
+    ],
+    "anchor": "第(1)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:9f6e64437d4b5f17e88b37403ee8b322afbb9ca94027a00a42192028863ce6fc"
+  },
+  {
+   "id": "math3-2015-2",
+   "subject": "math3",
+   "year": 2015,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "设函数 $f(x)$ 在 $(-\\infty,+\\infty)$ 内连续,其 2 阶导函数 $f''(x)$ 的图形如右图所示,则曲线 $y=f(x)$ 的拐点个数为（　）",
+   "options": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$3$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(C)\n\n【解析】根据拐点的必要条件，拐点可能是 $f''(x)$ 不存在的点或 $f''(x)=0$ 的点处产生.所以$y=f(x)$ 有三个点可能是拐点，根据拐点的定义，即凹凸性改变的点；二阶导函数 $f''(x)$ 符号发生改变的点即为拐点.所以从图可知，拐点个数为 2，故选（C）"
+    }
+   ],
+   "knowledge_points": [
+    "拐点的判定",
+    "二阶导数的几何应用"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     1
+    ],
+    "anchor": "第(2)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1285ec964cc2eed7bd3286833c833a28d37789f587c63a2cdec0a9f9aeeeedf2"
+  },
+  {
+   "id": "math3-2015-3",
+   "subject": "math3",
+   "year": 2015,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $D=\\left\\{(x,y)\\middle|x^{2}+y^{2}\\leq2x,x^{2}+y^{2}\\leq2y\\right\\}$,函数 $f(x,y)$ 在 $D$ 上连续,则$\\iint\\limits_{D}f(x,y)\\mathrm{d}x\\mathrm{d}y=$（　）",
+   "options": [
+    "$\\int_{0}^{\\frac{\\pi}{4}}\\mathrm{d}\\theta\\int_{0}^{2\\cos\\theta}f\\left(r\\cos\\theta,r\\sin\\theta\\right)r\\mathrm{d}r+\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\mathrm{d}\\theta\\int_{0}^{2\\sin\\theta}f\\left(r\\cos\\theta,r\\sin\\theta\\right)r\\mathrm{d}r$",
+    "$\\int_{0}^{\\frac{\\pi}{4}}\\mathrm{d}\\theta\\int_{0}^{2\\sin\\theta}f\\left(r\\cos\\theta,r\\sin\\theta\\right)r\\mathrm{d}r+\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\mathrm{d}\\theta\\int_{0}^{2\\cos\\theta}f\\left(r\\cos\\theta,r\\sin\\theta\\right)r\\mathrm{d}r$",
+    "$2\\int_{0}^{1}\\mathrm{d}x\\int_{1-\\sqrt{1-x^{2}}}^{x}f\\left(x,y\\right)\\mathrm{d}y$",
+    "$2\\int_{0}^{1}\\mathrm{d}x\\int_{x}^{\\sqrt{2x-x^{2}}}f\\left(x,y\\right)\\mathrm{d}y$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(B)\n\n【解析】根据图可得，在极坐标系下该二重积分要分成两个积分区域\n\n$D_{1}=\\left\\{(r,\\theta)\\middle|0\\leq\\theta\\leq\\dfrac{\\pi}{4},0\\leq r\\leq2\\sin\\theta\\right\\}$,$D_{2}=\\left\\{(r,\\theta)\\middle|\\dfrac{\\pi}{4}\\leq\\theta\\leq\\dfrac{\\pi}{2},0\\leq r\\leq2\\cos\\theta\\right\\}$\n\n所以\n\n$\\iint\\limits_{D}f\\left(x,y\\right)\\mathrm{d}x\\mathrm{d}y=\\int_{0}^{\\frac{\\pi}{4}}\\mathrm{d}\\theta\\int_{0}^{2\\sin\\theta}f\\left(r\\cos\\theta,r\\sin\\theta\\right)r\\mathrm{d}r+\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}}\\mathrm{d}\\theta\\int_{0}^{2\\cos\\theta}f\\left(r\\cos\\theta,r\\sin\\theta\\right)r\\mathrm{d}r$,\n\n选（B）"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分的极坐标",
+    "积分区域的不等式表示"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     1
+    ],
+    "anchor": "第(3)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:69bc7f1f5fc4bfa5099ed3cca9c8e5a91a6626dbf6bc2d75096e9979882fdbb9"
+  },
+  {
+   "id": "math3-2015-4",
+   "subject": "math3",
+   "year": 2015,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "下列级数中发散的是（　）",
+   "options": [
+    "$\\sum\\limits_{n=1}^{\\infty}\\dfrac{n}{3^{n}}$",
+    "$\\sum\\limits_{n=1}^{\\infty}\\dfrac{1}{\\sqrt{n}}\\ln(1+\\dfrac{1}{n})$",
+    "$\\sum\\limits_{n=2}^{\\infty}\\dfrac{\\left(-1\\right)^{n}+1}{\\ln n}$",
+    "$\\sum\\limits_{n=1}^{\\infty}\\dfrac{n!}{n^{n}}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(C)\n\n【解析】(A)为正项级数，因为 $\\lim\\limits_{n\\to\\infty}\\dfrac{\\dfrac{n+1}{3^{n+1}}}{\\dfrac{n}{3^{n}}}=\\lim\\limits_{n\\to\\infty}\\dfrac{n+1}{3n}=\\dfrac{1}{3}=<1$，所以根据正项级数的比值判\n\n别法$\\sum\\limits_{n=1}^{\\infty}\\dfrac{n}{3^{n}}$ 收敛；(B)为正项级数，因为 $\\dfrac{1}{\\sqrt{n}}\\ln(1+\\dfrac{1}{n})\\sim\\dfrac{1}{n^{\\frac{3}{2}}}$，根据 $P$ 级数收敛准则, 知\n\n$\\sum\\limits_{n=1}^{\\infty}\\dfrac{1}{\\sqrt{n}}\\ln(1+\\dfrac{1}{n})$ 收敛；(C) $\\sum\\limits_{n=1}^{\\infty}\\dfrac{\\left(-1\\right)^{n}+1}{\\ln n}=\\sum\\limits_{n=1}^{\\infty}\\dfrac{\\left(-1\\right)^{n}}{\\ln n}+\\sum\\limits_{n=1}^{\\infty}\\dfrac{1}{\\ln n}$，根据莱布尼茨判别法知\n\n$\\sum\\limits_{n=1}^{\\infty}\\dfrac{\\left(-1\\right)^{n}}{\\ln n}$ 收敛，$\\sum\\limits_{n=1}^{\\infty}\\dfrac{1}{\\ln n}$ 发散, 所以根据级数收敛定义知, $\\sum\\limits_{n=1}^{\\infty}\\dfrac{\\left(-1\\right)^{n}+1}{\\ln n}$ 发散；(D)为正项\n\n级数, 因为 $\\lim\\limits_{n\\to\\infty}\\dfrac{\\dfrac{(n+1)!}{(n+1)^{n+1}}}{\\dfrac{n!}{n^{n}}}=\\lim\\limits_{n\\to\\infty}\\dfrac{(n+1)!}{n!}\\dfrac{n^{n}}{(n+1)^{n+1}}=\\lim\\limits_{n\\to\\infty}\\left(\\dfrac{n}{n+1}\\right)^{n}=\\dfrac{1}{e}<1$，所以根据正项级\n\n数的比值判别法$\\sum\\limits_{n=1}^{\\infty}\\dfrac{n!}{n^{n}}$收敛, 所以选（C）"
+    }
+   ],
+   "knowledge_points": [
+    "正项级数判敛",
+    "莱布尼茨判别法",
+    "级数收敛的定义"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     1
+    ],
+    "anchor": "第(4)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b59cf7d03a1e6bd97c90f6519eba887a9122f5750134e2c61a619a2ab7205135"
+  },
+  {
+   "id": "math3-2015-5",
+   "subject": "math3",
+   "year": 2015,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "设矩阵 $\\boldsymbol{A}=\\begin{pmatrix}1&1&1\\\\ 1&2&a\\\\ 1&4&a^{2}\\end{pmatrix}$，$\\boldsymbol{b}=\\begin{pmatrix}1\\\\ d\\\\ d^{2}\\end{pmatrix}$，若集合 $\\Omega=\\{1,2\\}$，则线性方程组$\\boldsymbol{Ax}=\\boldsymbol{b}$ 有无穷多解的充分必要条件为（　）",
+   "options": [
+    "$a\\notin\\Omega,d\\notin\\Omega$",
+    "$a\\notin\\Omega,d\\in\\Omega$",
+    "$a\\in\\Omega,d\\notin\\Omega$",
+    "$a\\in\\Omega,d\\in\\Omega$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(D)\n\n【解析】$(\\boldsymbol{A},\\boldsymbol{b})=\\left(\\begin{array}{cccc}1&1&1&1\\\\ 1&2&a&d\\\\ 1&4&a^{2}&d^{2}\\end{array}\\right)\\to\\left(\\begin{array}{cccc}1&1&1&1\\\\ 0&1&a-1&d-1\\\\ 0&0&(a-1)(a-2)&(d-1)(d-2)\\end{array}\\right)$,\n\n由 $r(\\boldsymbol{A})=r(\\boldsymbol{A},\\boldsymbol{b})<3$，故 $a=1$ 或 $a=2$，同时 $d=1$ 或 $d=2$. 故选（D）．"
+    }
+   ],
+   "knowledge_points": [
+    "非齐次线性方程组有无穷多解的条件",
+    "矩阵的秩"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     2
+    ],
+    "anchor": "第(5)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e9afeb628e88a8329a23c203096ed47782bb8ab0ddfcdbdc9adb87e13f92f7be"
+  },
+  {
+   "id": "math3-2015-6",
+   "subject": "math3",
+   "year": 2015,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "设二次型 $f=(x_{1},x_{2},x_{3})$ 在正交变换 $\\boldsymbol{x}=\\boldsymbol{Py}$ 下的标准形为 $2y_{1}^{2}+y_{2}^{2}-y_{3}^{2}$，其中 $\\boldsymbol{P}=(\\boldsymbol{e}_{1},\\boldsymbol{e}_{2},\\boldsymbol{e}_{3})$，若 $\\boldsymbol{Q}=(\\boldsymbol{e}_{1},-\\boldsymbol{e}_{3},\\boldsymbol{e}_{2})$ 则 $f=(x_{1},x_{2},x_{3})$ 在正交变换 $\\boldsymbol{x}=\\boldsymbol{Qy}$ 下的标准形为（　）",
+   "options": [
+    "$2y_{1}^{2}-y_{2}^{2}+y_{3}^{2}$",
+    "$2y_{1}^{2}+y_{2}^{2}-y_{3}^{2}$",
+    "$2y_{1}^{2}-y_{2}^{2}-y_{3}^{2}$",
+    "$2y_{1}^{2}+y_{2}^{2}+y_{3}^{2}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(A)\n\n【解析】解法一：由 $\\boldsymbol{x}=\\boldsymbol{Py}$，故 $f=\\boldsymbol{x}^{T}\\boldsymbol{Ax}=\\boldsymbol{y}^{T}\\left(\\boldsymbol{P}^{T}\\boldsymbol{AP}\\right)\\boldsymbol{y}=2y_{1}^{2}-y_{2}^{2}+y_{3}^{2}$.且\n\n$\\boldsymbol{P}^{T}\\boldsymbol{AP}=\\begin{pmatrix}2&0&0\\\\ 0&1&0\\\\ 0&0&-1\\end{pmatrix}$,\n\n$\\boldsymbol{Q}=\\boldsymbol{P}\\begin{pmatrix}1&0&0\\\\ 0&0&1\\\\ 0&-1&0\\end{pmatrix}=\\boldsymbol{PC}$,\n\n$\\boldsymbol{Q}^{T}\\boldsymbol{AQ}=\\boldsymbol{C}^{T}\\left(\\boldsymbol{P}^{T}\\boldsymbol{AP}\\right)\\boldsymbol{C}=\\begin{pmatrix}2&0&0\\\\ 0&-1&0\\\\ 0&0&1\\end{pmatrix}$.\n\n所以 $f=\\boldsymbol{x}^{T}\\boldsymbol{Ax}=\\boldsymbol{y}^{T}\\left(\\boldsymbol{P}^{T}\\boldsymbol{AP}\\right)\\boldsymbol{y}=2y_{1}^{2}-y_{2}^{2}+y_{3}^{2}$. 选（A）.\n\n解法二：设二次型的矩阵为 $\\boldsymbol{A}$，则\n\n$\\boldsymbol{P}^{-1}\\boldsymbol{AP}=\\boldsymbol{P}^{T}\\boldsymbol{AP}=\\begin{pmatrix}2&0&0\\\\ 0&1&0\\\\ 0&0&-1\\end{pmatrix}$\n\n可见 $\\boldsymbol{e}_{1},\\boldsymbol{e}_{2},\\boldsymbol{e}_{3}$ 都是 $\\boldsymbol{A}$ 的特征向量，特征值依次为 $2,1,-1$；于是 $\\boldsymbol{e}_{1},-\\boldsymbol{e}_{3},\\boldsymbol{e}_{2}$ 也是 $\\boldsymbol{A}$ 的特征向\n\n量，特征值分别是 $1,-1,1$从而正交变换 $\\boldsymbol{x}=\\boldsymbol{Qy}$ 下的标准形为 $2y_{1}^{2}-y_{2}^{2}+y_{3}^{2}$."
+    }
+   ],
+   "knowledge_points": [
+    "二次型标准形",
+    "正交变换",
+    "特征值与特征向量"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     2
+    ],
+    "anchor": "第(6)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:afde3fabfc9bf8acb56031ce35923fc4bd4ea55ea2d3df16d517a71cb6373691"
+  },
+  {
+   "id": "math3-2015-7",
+   "subject": "math3",
+   "year": 2015,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "若 $A,B$ 为任意两个随机事件,则（　）",
+   "options": [
+    "$P\\left(AB\\right)\\leq P\\left(A\\right)P\\left(B\\right)$",
+    "$P\\left(AB\\right)\\geq P\\left(A\\right)P\\left(B\\right)$",
+    "$P\\left(AB\\right)\\leq\\dfrac{P\\left(A\\right)+P\\left(B\\right)}{2}$",
+    "$P\\left(AB\\right)\\geq\\dfrac{P\\left(A\\right)+P\\left(B\\right)}{2}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(C)\n\n【解析】由于 $AB\\subset A,AB\\subset B$，按概率的基本性质，我们有 $P\\left(AB\\right)\\leq P\\left(A\\right)$ 且\n\n$P\\left(AB\\right)\\leq P\\left(B\\right)$，从而 $P\\left(AB\\right)\\leq\\dfrac{P\\left(A\\right)+P\\left(B\\right)}{2}$，选（C）．"
+    }
+   ],
+   "knowledge_points": [
+    "概率的基本性质",
+    "事件的关系与运算"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     2
+    ],
+    "anchor": "第(7)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b00c82bfcdcfd8fdba56c19f007fd3a265a5fc632f6d1c36b4c8b51ca02021bd"
+  },
+  {
+   "id": "math3-2015-8",
+   "subject": "math3",
+   "year": 2015,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "设总体 $X\\sim B\\left(m,\\theta\\right)$, $X_{1},X_{2},\\ldots,X_{n}$ 为来自该总体的简单随机样本, $\\overline{X}$ 为样本均值,则 $E\\left[\\sum\\limits_{i=1}^{n}\\left(X_{i}-\\overline{X}\\right)^{2}\\right]=$（　）",
+   "options": [
+    "$(m-1)n\\theta\\left(1-\\theta\\right)$",
+    "$m\\left(n-1\\right)\\theta\\left(1-\\theta\\right)$",
+    "$(m-1)\\left(n-1\\right)\\theta\\left(1-\\theta\\right)$",
+    "$mn\\theta\\left(1-\\theta\\right)$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(B)\n\n【解析】根据样本方差 $S^{2}=\\dfrac{1}{n-1}\\sum\\limits_{i=1}^{n}\\left(X_{i}-\\overline{X}\\right)^{2}$ 的性质 $E(S^{2})=D(X)$，而\n\n$D(X)=m\\theta(1-\\theta)$，从而 $E\\bigl[\\sum\\limits_{i=1}^{n}\\left(X_{i}-\\overline{X}\\right)^{2}\\bigr]=(n-1)E(S^{2})=m(n-1)\\theta(1-\\theta)$，选（B）．"
+    }
+   ],
+   "knowledge_points": [
+    "样本方差",
+    "二项分布的期望与方差"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     2
+    ],
+    "anchor": "第(8)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:f66ca520e84a50608cab2842b77b239bc08ac049ffe5159c3704e0164779bf8c"
+  },
+  {
+   "id": "math3-2015-9",
+   "subject": "math3",
+   "year": 2015,
+   "num": 9,
+   "type": "blank",
+   "score": 4,
+   "stem": "$\\lim\\limits_{x\\to0}\\dfrac{\\ln(\\cos x)}{x^{2}}=$________.",
+   "options": [],
+   "answer": "-\\dfrac{1}{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$-\\dfrac{1}{2}$\n\n【解析】原极限$\\lim\\limits_{x\\to0}\\dfrac{\\ln(1+\\cos x-1)}{x^{2}}=\\lim\\limits_{x\\to0}\\dfrac{\\cos x-1}{x^{2}}=-\\dfrac{1}{2}$."
+    }
+   ],
+   "knowledge_points": [
+    "等价无穷小替换"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     2
+    ],
+    "anchor": "第(9)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a9377d333fdc4e857d2ddae350d65a01fd9468e164d2ff856e33d056960ca6d1"
+  },
+  {
+   "id": "math3-2015-10",
+   "subject": "math3",
+   "year": 2015,
+   "num": 10,
+   "type": "blank",
+   "score": 4,
+   "stem": "设函数 $f(x)$ 连续, $\\varphi(x)=\\int_{0}^{x^{2}}xf(t)\\mathrm{d}t$,若 $\\varphi(1)=1$,$\\varphi'(1)=5$,则 $f(1)=$________.",
+   "options": [],
+   "answer": "2",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$2$\n\n【解析】因为 $f(x)$ 连续，所以 $\\varphi(x)$ 可导，所以 $\\varphi'(x)=\\int_{0}^{x^{2}}f(t)\\mathrm{d}t+2x^{2}f(x^{2})$；\n\n因为 $\\varphi(1)=1$，所以 $\\varphi(1)=\\int_{0}^{1}f(t)\\mathrm{d}t=1$,\n\n又因为 $\\varphi'(1)=5$，所以 $\\varphi'(1)=\\int_{0}^{1}f(t)\\mathrm{d}t+2f(1)=5$.故 $f(1)=2$."
+    }
+   ],
+   "knowledge_points": [
+    "变限积分求导",
+    "被积变量与上限变量"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     2
+    ],
+    "anchor": "第(10)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:006b2acff61c1ad71f2e735939f2fa537cdb446769e1c36200ce744eb5f3b0e5"
+  },
+  {
+   "id": "math3-2015-11",
+   "subject": "math3",
+   "year": 2015,
+   "num": 11,
+   "type": "blank",
+   "score": 4,
+   "stem": "若函数 $z=z(x,y)$ 由方程 $\\mathrm{e}^{x+2y+3z}+xyz=1$ 确定,则 $\\mathrm{d}z\\Big|_{(0,0)}=$________.",
+   "options": [],
+   "answer": "-\\dfrac{1}{3}dx-\\dfrac{2}{3}dy",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$-\\dfrac{1}{3}dx-\\dfrac{2}{3}dy$\n\n【解析】当 $x=0,y=0$ 时带入 $\\mathrm{e}^{x+2y+3z}+xyz=1$，得 $z=0$.\n\n对 $\\mathrm{e}^{x+2y+3z}+xyz=1$求微分，得 $\\mathrm{d}\\left(\\mathrm{e}^{x+2y+3z}+xyz\\right)=\\mathrm{e}^{x+2y+3z}d(x+2y+3z)+d(xyz)$\n\n$=\\mathrm{e}^{x+2y+3z}\\left(dx+2dy+3dz\\right)+yzdx+xzdy+xydz=0$\n\n把 $x=0,y=0,z=0$ 代入上式，得 $dx+2dy+3dz=0$\n\n所以 $dz\\big|_{(0,0)}=-\\dfrac{1}{3}dx-\\dfrac{2}{3}dy$."
+    }
+   ],
+   "knowledge_points": [
+    "隐函数求偏导",
+    "全微分"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     2
+    ],
+    "anchor": "第(11)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6d7d78581f55d406dad204678cd4fcc443660a3978548acdac27141844034ec8"
+  },
+  {
+   "id": "math3-2015-12",
+   "subject": "math3",
+   "year": 2015,
+   "num": 12,
+   "type": "blank",
+   "score": 4,
+   "stem": "设函数 $y=y(x)$ 是微分方程 $y''+y'-2y=0$ 的解,且在 $x=0$ 处 $y(x)$ 取得极值 3,则 $y(x)=$________.",
+   "options": [],
+   "answer": "e^{-2x}+2e^{x}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$y(x)=e^{-2x}+2e^{x}$\n\n【解析】$y''+y'-2y=0$ 的特征方程为 $\\lambda^{2}+\\lambda-2=0$，特征根为 $\\lambda=-2,\\lambda=1$，所以该齐\n\n次微分方程的通解为 $y(x)=C_{1}e^{-2x}+C_{2}e^{x}$，因为 $y(x)$ 可导，所以 $x=0$ 为驻点，即\n\n$y(0)=3,y'(0)=0$，所以 $C_{1}=1,C_{2}=2$，故 $y(x)=e^{-2x}+2e^{x}$."
+    }
+   ],
+   "knowledge_points": [
+    "二阶常系数线性微分方程",
+    "极值的必要条件"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     3
+    ],
+    "anchor": "第(12)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:628a577e4690074dac6d8543eaae061aaa4ba0c7977356d7538c5abba7fa357a"
+  },
+  {
+   "id": "math3-2015-13",
+   "subject": "math3",
+   "year": 2015,
+   "num": 13,
+   "type": "blank",
+   "score": 4,
+   "stem": "设 3 阶矩阵 $\\boldsymbol{A}$ 的特征值为 $2,-2,1$, $\\boldsymbol{B}=\\boldsymbol{A}^{2}-\\boldsymbol{A}+\\boldsymbol{E}$,其中 $\\boldsymbol{E}$ 为 3 阶单位矩阵,则行列式$\\left|\\boldsymbol{B}\\right|=$________.",
+   "options": [],
+   "answer": "21",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$21$\n\n【解析】$\\boldsymbol{A}$ 的所有特征值为 $2,-2,1,\\boldsymbol{B}$ 的所有特征值为 $3,7,1$. 所以$\\left|\\boldsymbol{B}\\right|=3\\times7\\times1=21$."
+    }
+   ],
+   "knowledge_points": [
+    "矩阵多项式的特征值",
+    "行列式"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     3
+    ],
+    "anchor": "第(13)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a483ef44051f6bc0f08b353b5ccfdc026154c1c6678797301250091e4071c708"
+  },
+  {
+   "id": "math3-2015-14",
+   "subject": "math3",
+   "year": 2015,
+   "num": 14,
+   "type": "blank",
+   "score": 4,
+   "stem": "设二维随机变量 $(X,Y)$ 服从正态分布 $N(1,0;1,1;0)$，则 $P\\{XY-Y<0\\}=$____.",
+   "options": [],
+   "answer": "\\dfrac{1}{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{1}{2}$\n\n【解析】由题设知，$X\\sim N(1,1),Y\\sim N(0,1)$，而且 $X$、$Y$ 相互独立，从而\n\n$P\\{XY-Y<0\\}=P\\{(X-1)Y<0\\}=P\\{X-1>0,Y<0\\}+P\\{X-1<0,Y>0\\}$\n\n$=P\\{X>1\\}P\\{Y<0\\}+P\\{X<1\\}P\\{Y>0\\}=\\dfrac{1}{2}\\times\\dfrac{1}{2}+\\dfrac{1}{2}\\times\\dfrac{1}{2}=\\dfrac{1}{2}$."
+    }
+   ],
+   "knowledge_points": [
+    "二维正态分布",
+    "随机变量的独立性"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     3
+    ],
+    "anchor": "第(14)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:deb67cd90675142ff6f4a3609813b127b3ce1dc2ce84014ac3f1cd975a16785c"
+  },
+  {
+   "id": "math3-2015-15",
+   "subject": "math3",
+   "year": 2015,
+   "num": 15,
+   "type": "essay",
+   "score": 10,
+   "stem": "设函数 $f(x)=x+a\\ln(1+x)+bx\\sin x,g(x)=kx^{3}$.若 $f(x)$ 与 $g(x)$ 在 $x\\to0$ 时是等价无穷小,求 $a,b,k$ 的值.",
+   "options": [],
+   "answer": "a=-1, b=-1/2, k=-1/3",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$a=-1,b=-\\dfrac{1}{2},k=-\\dfrac{1}{3}$\n\n【解析】因为 $\\ln(1+x)=x-\\dfrac{x^{2}}{2}+\\dfrac{x^{3}}{3}+o(x^{3}),\\sin x=x-\\dfrac{x^{3}}{3!}+o(x^{3})$，那么，\n\n$1=\\lim\\limits_{x\\to0}\\dfrac{f(x)}{g(x)}=\\lim\\limits_{x\\to0}\\dfrac{x+a\\ln(1+x)+bx\\sin x}{kx^{3}}=\\lim\\limits_{x\\to0}\\dfrac{(1+a)x+(b-\\dfrac{a}{2})x^{2}+\\dfrac{a}{3}x^{3}+o(x^{3})}{kx^{3}}$,\n\n可得：$\\begin{cases}1+a=0\\\\ b-\\dfrac{a}{2}=0\\\\ \\dfrac{a}{3k}=1\\end{cases}$，所以，$\\begin{cases}a=-1\\\\ b=-\\dfrac{1}{2}\\\\ k=-\\dfrac{1}{3}\\end{cases}$."
+    }
+   ],
+   "knowledge_points": [
+    "泰勒公式",
+    "等价无穷小",
+    "极限的比较"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     3
+    ],
+    "anchor": "第(15)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:c69cc8b3492f65d2ec60ba25124c094de3fd71ca985677b50d06f09d79d0ef68"
+  },
+  {
+   "id": "math3-2015-16",
+   "subject": "math3",
+   "year": 2015,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "计算二重积分 $\\iint\\limits_{D}x(x+y)dxdy$，其中 $D=\\left\\{(x,y)\\middle|x^{2}+y^{2}\\leq2,y\\geq x^{2}\\right\\}$.",
+   "options": [],
+   "answer": "\\dfrac{\\pi}{4}-\\dfrac{2}{5}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{\\pi}{4}-\\dfrac{2}{5}$\n\n【解析】由于被积区域关于 $y$ 轴对阵且 $xy$ 是关于 $x$ 的奇函数，则 $\\iint\\limits_{D}xydxdy=0$；故：\n\n$\\iint\\limits_{D}x(x+y)dxdy=\\iint\\limits_{D}x^{2}dxdy$\n\n$=2\\int_{0}^{1}dx\\int_{x^{2}}^{\\sqrt{2-x^{2}}}x^{2}dy=2\\int_{0}^{1}x^{2}\\left(\\sqrt{2-x^{2}}-x^{2}\\right)dx$\n\n$=2\\int_{0}^{1}x^{2}\\sqrt{2-x^{2}}\\,dx-\\dfrac{2}{5}\\stackrel{x=\\sqrt{2}\\sin t}{=}2\\int_{0}^{\\frac{\\pi}{4}}2\\sin^{2}t\\,2\\cos^{2}t\\,dt-\\dfrac{2}{5}$\n\n$=2\\int_{0}^{\\frac{\\pi}{4}}\\sin^{2}2t\\,dt-\\dfrac{2}{5}=\\dfrac{\\pi}{4}-\\dfrac{2}{5}$."
+    }
+   ],
+   "knowledge_points": [
+    "二重积分的计算",
+    "对称性化简",
+    "定积分换元"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     3
+    ],
+    "anchor": "第(16)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:16b7a3280fa00cb729742c5f3b367855c17c34d0d0480e5a7e96a65957fc9983"
+  },
+  {
+   "id": "math3-2015-17",
+   "subject": "math3",
+   "year": 2015,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "为了实现利润的最大化,厂商需要对某商品确定其定价模型,设 $Q$ 为该商品的需求量,$P$ 为价格, $MC$ 为边际成本, $\\eta$ 为需求弹性 $\\left(\\eta>0\\right)$.（I）证明定价模型为 $P=\\dfrac{MC}{1-\\dfrac{1}{\\eta}}$；（II）若该商品的成本函数为 $C(Q)=1600+Q^{2}$，需求函数为 $Q=40-P$，试由（I）中的定价模型确定此商品的价格.",
+   "options": [],
+   "answer": "(I)略; (II)P=30",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(I) 略（II）$P=30$.\n\n【解析】(I) 由于利润函数 $L(Q)=R(Q)-C(Q)=PQ-C(Q)$,两边对 $Q$ 求导，得\n\n$\\dfrac{dL}{dQ}=P+Q\\dfrac{dP}{dQ}-C'(Q)=P+Q\\dfrac{dP}{dQ}-MC$.\n\n当且仅当 $\\dfrac{dL}{dQ}=0$ 时，利润 $L(Q)$ 最大，又由于 $\\eta=-\\dfrac{P}{Q}\\dfrac{dP}{dQ}$,所以 $\\dfrac{dP}{dQ}=-\\dfrac{1}{\\eta}\\dfrac{P}{Q}$,\n\n故当 $P=\\dfrac{MC}{1-\\dfrac{1}{\\eta}}$ 时，利润最大.\n\n(II) 由于 $MC=C'(Q)=2Q=2(40-P)$,则 $\\eta=-\\dfrac{P}{Q}\\dfrac{dQ}{dP}=\\dfrac{P}{40-P}$ 代入(I)中的定价模型,\n\n得 $P=\\dfrac{2(40-P)}{1-\\dfrac{40-P}{P}}$,从而解得 $P=30$."
+    }
+   ],
+   "knowledge_points": [
+    "利润最大化",
+    "需求弹性",
+    "边际成本"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     3
+    ],
+    "anchor": "第(17)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:cc39d4396e498569da746bc73dcccebe9557e376135e3d22fa47451167e66d69"
+  },
+  {
+   "id": "math3-2015-18",
+   "subject": "math3",
+   "year": 2015,
+   "num": 18,
+   "type": "essay",
+   "score": 10,
+   "stem": "设函数 $f(x)$ 在定义域 $I$ 上的导数大于零,若对任意的 $x_{0}\\in I$，曲线 $y=f(x)$ 在点$(x_{0},f(x_{0}))$ 处的切线与直线 $x=x_{0}$ 及 $x$ 轴所围成区域的面积恒为 4,且 $f(0)=2$，求 $f(x)$表达式.",
+   "options": [],
+   "answer": "f(x)=\\dfrac{8}{4-x}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$f(x)=\\dfrac{8}{4-x}$\n\n【解析】曲线的切线方程为 $y-f(x_{0})=f'(x_{0})(x-x_{0})$，切线与 $x$ 轴的交点为\n\n$\\left(x_{0}-\\dfrac{f(x_{0})}{f'(x_{0})},0\\right)$. 故面积为：$s=\\dfrac{1}{2}\\dfrac{f^{2}(x_{0})}{f'(x_{0})}=4$.\n\n故 $f(x)$ 满足的方程为 $f^{2}(x)=8f'(x)$,此为可分离变量的微分方程,\n\n解得 $f(x)=\\dfrac{-8}{x+C}$，又由于 $f(0)=2$，带入可得 $C=-4$，从而 $f(x)=\\dfrac{8}{4-x}$."
+    }
+   ],
+   "knowledge_points": [
+    "切线方程",
+    "可分离变量微分方程"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     3
+    ],
+    "anchor": "第(18)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:22e228a623c0af3b544016eff4acc6d97f4dc87e550aecda45b5f63784ae0314"
+  },
+  {
+   "id": "math3-2015-19",
+   "subject": "math3",
+   "year": 2015,
+   "num": 19,
+   "type": "essay",
+   "score": 10,
+   "stem": "（I）设函数 $u(x),v(x)$ 可导,利用导数定义证明 $\\left[u(x)v(x)\\right]'=u'(x)v(x)+u(x)v'(x)$;（II）设函数 $u_{1}(x),u_{2}(x),\\cdots,u_{n}(x)$ 可导, $f(x)=u_{1}(x)u_{2}(x)\\cdots u_{n}(x)$，写出 $f'(x)$ 的求导公式.",
+   "options": [],
+   "answer": "f'(x)=u_{1}'(x)u_{2}(x)\\cdots u_{n}(x)+u_{1}(x)u_{2}'(x)\\cdots u_{n}(x)+\\cdots+u_{1}(x)u_{2}(x)\\cdots u_{n}'(x)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$f'(x)=\\left[u_{1}(x)u_{2}(x)\\cdots u_{n}(x)\\right]'$\n\n$=u_{1}'(x)u_{2}(x)\\cdots u_{n}(x)+u_{1}(x)u_{2}'(x)\\cdots u_{n}(x)+\\cdots+u_{1}(x)u_{2}(x)\\cdots u_{n}'(x)$\n\n【解析】(I) $\\left[u(x)v(x)\\right]'=\\lim\\limits_{h\\to0}\\dfrac{u(x+h)v(x+h)-u(x)v(x)}{h}$\n\n$=\\lim\\limits_{h\\to0}\\dfrac{u(x+h)v(x+h)-u(x+h)v(x)+u(x+h)v(x)-u(x)v(x)}{h}$\n\n$=\\lim\\limits_{h\\to0}u(x+h)\\dfrac{v(x+h)-v(x)}{h}+\\lim\\limits_{h\\to0}\\dfrac{u(x+h)-u(x)}{h}v(x)$\n\n$=u(x)v'(x)+u'(x)v(x)$.\n\n(II) 由题意得\n\n$f'(x)=\\left[u_{1}(x)u_{2}(x)\\cdots u_{n}(x)\\right]'$\n\n$=u_{1}'(x)u_{2}(x)\\cdots u_{n}(x)+u_{1}(x)u_{2}'(x)\\cdots u_{n}(x)+\\cdots+u_{1}(x)u_{2}(x)\\cdots u_{n}'(x)$."
+    }
+   ],
+   "knowledge_points": [
+    "导数的定义",
+    "乘积求导公式的证明"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     3,
+     4
+    ],
+    "anchor": "第(19)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:331f6b19a4b131fca64a8d3139c067d37106b03ccd9424f5ea95beabcad77509"
+  },
+  {
+   "id": "math3-2015-20",
+   "subject": "math3",
+   "year": 2015,
+   "num": 20,
+   "type": "essay",
+   "score": 11,
+   "stem": "设矩阵 $\\boldsymbol{A}=\\begin{pmatrix}a&1&0\\\\ 1&a&-1\\\\ 0&1&a\\end{pmatrix}$,且 $\\boldsymbol{A}^{3}=\\boldsymbol{O}$.（I）求 $a$ 的值；（II）若矩阵 $\\boldsymbol{X}$ 满足 $\\boldsymbol{X}-\\boldsymbol{XA}^{2}-\\boldsymbol{AX}+\\boldsymbol{AXA}^{2}=\\boldsymbol{E}$，其中 $\\boldsymbol{E}$ 为 3 阶单位矩阵,求 $\\boldsymbol{X}$.",
+   "options": [],
+   "answer": "a=0,\\ X=\\begin{pmatrix}3&1&-2\\\\ 1&1&-1\\\\ 2&1&-1\\end{pmatrix}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$a=0,\\boldsymbol{X}=\\begin{pmatrix}3&1&-2\\\\ 1&1&-1\\\\ 2&1&-1\\end{pmatrix}$\n\n【解析】(I) $\\boldsymbol{A}^{3}=\\boldsymbol{O}\\Rightarrow\\left|\\boldsymbol{A}\\right|=0\\Rightarrow\\begin{vmatrix}a&1&0\\\\ 1&a&-1\\\\ 0&1&a\\end{vmatrix}=\\begin{vmatrix}0&1&0\\\\ 1-a^{2}&a&-1\\\\ -a&1&a\\end{vmatrix}=a^{3}=0\\Rightarrow a=0$.\n\n(II) 由题意知\n\n$\\boldsymbol{X}-\\boldsymbol{XA}^{2}-\\boldsymbol{AX}+\\boldsymbol{AXA}^{2}=\\boldsymbol{E}\\Rightarrow\\boldsymbol{X}\\left(\\boldsymbol{E}-\\boldsymbol{A}^{2}\\right)-\\boldsymbol{AX}\\left(\\boldsymbol{E}-\\boldsymbol{A}^{2}\\right)=\\boldsymbol{E}$\n\n$\\Rightarrow\\left(\\boldsymbol{E}-\\boldsymbol{A}\\right)\\boldsymbol{X}\\left(\\boldsymbol{E}-\\boldsymbol{A}^{2}\\right)=\\boldsymbol{E}\\Rightarrow\\boldsymbol{X}=\\left(\\boldsymbol{E}-\\boldsymbol{A}\\right)^{-1}\\left(\\boldsymbol{E}-\\boldsymbol{A}^{2}\\right)^{-1}=\\left[\\left(\\boldsymbol{E}-\\boldsymbol{A}^{2}\\right)\\left(\\boldsymbol{E}-\\boldsymbol{A}\\right)\\right]^{-1}$ 且\n\n$\\Rightarrow\\boldsymbol{X}=\\left(\\boldsymbol{E}-\\boldsymbol{A}^{2}-\\boldsymbol{A}\\right)^{-1}$\n\n$\\boldsymbol{E}-\\boldsymbol{A}^{2}-\\boldsymbol{A}=\\begin{pmatrix}0&-1&1\\\\ -1&1&1\\\\ -1&-1&2\\end{pmatrix}$,\n\n$\\left(\\begin{array}{ccc:ccc}0&-1&1&1&0&0\\\\ -1&1&1&0&1&0\\\\ -1&-1&2&0&0&1\\end{array}\\right)\\to\\left(\\begin{array}{ccc:ccc}1&-1&-1&0&-1&0\\\\ 0&-1&1&1&0&0\\\\ -1&-1&2&0&0&1\\end{array}\\right)$\n\n$\\to\\left(\\begin{array}{ccc:ccc}1&-1&-1&0&-1&0\\\\ 0&1&-1&-1&0&0\\\\ 0&-2&1&0&-1&1\\end{array}\\right)\\to\\left(\\begin{array}{ccc:ccc}1&-1&-1&0&-1&0\\\\ 0&1&-1&-1&0&0\\\\ 0&0&-1&-2&-1&1\\end{array}\\right)$\n\n$\\to\\left(\\begin{array}{ccc:ccc}1&-1&0&2&0&-1\\\\ 0&1&0&1&1&-1\\\\ 0&0&1&2&1&-1\\end{array}\\right)\\to\\left(\\begin{array}{ccc:ccc}1&0&0&3&1&-2\\\\ 0&1&0&1&1&-1\\\\ 0&0&1&2&1&-1\\end{array}\\right)$\n\n$\\therefore\\boldsymbol{X}=\\begin{pmatrix}3&1&-2\\\\ 1&1&-1\\\\ 2&1&-1\\end{pmatrix}$."
+    }
+   ],
+   "knowledge_points": [
+    "矩阵的幂",
+    "矩阵方程",
+    "逆矩阵"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     4
+    ],
+    "anchor": "第(20)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:54d204966b52a0c148697e2a789eaa132916c04c768ebd828f65c9ca763f56d7"
+  },
+  {
+   "id": "math3-2015-21",
+   "subject": "math3",
+   "year": 2015,
+   "num": 21,
+   "type": "essay",
+   "score": 11,
+   "stem": "设矩阵 $\\boldsymbol{A}=\\begin{pmatrix}0&2&-3\\\\ -1&3&-3\\\\ 1&-2&a\\end{pmatrix}$ 相似于矩阵 $\\boldsymbol{B}=\\begin{pmatrix}1&-2&0\\\\ 0&b&0\\\\ 0&3&1\\end{pmatrix}$.（I）求 $a,b$ 的值；（II）求可逆矩阵 $\\boldsymbol{P}$,使 $\\boldsymbol{P}^{-1}\\boldsymbol{AP}$ 为对角矩阵.",
+   "options": [],
+   "answer": "a=4,\\ b=5,\\ P=\\begin{pmatrix}2&-3&-1\\\\ 1&0&-1\\\\ 0&1&1\\end{pmatrix}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】(I) $\\boldsymbol{A}\\sim\\boldsymbol{B}\\Rightarrow tr(\\boldsymbol{A})=tr(\\boldsymbol{B})\\Rightarrow3+a=1+b+1$.\n\n$\\left|\\boldsymbol{A}\\right|=\\left|\\boldsymbol{B}\\right|\\Rightarrow\\begin{vmatrix}0&2&-3\\\\ -1&3&-3\\\\ 1&-2&a\\end{vmatrix}=\\begin{vmatrix}1&-2&0\\\\ 0&b&0\\\\ 0&3&1\\end{vmatrix}$,\n\n$\\begin{cases}a-b=-1\\\\ 2a-b=3\\end{cases}\\Rightarrow\\begin{cases}a=4\\\\ b=5\\end{cases}$.\n\n(II) 结合(I)，$\\left|\\lambda\\boldsymbol{E}-\\boldsymbol{B}\\right|=\\begin{vmatrix}\\lambda-1&-2&0\\\\ 0&\\lambda-5&0\\\\ 0&3&\\lambda-1\\end{vmatrix}=\\left(\\lambda-1\\right)^{2}\\left(\\lambda-5\\right)=0$,\n\n$\\boldsymbol{B}$ 的特征值 $\\lambda_{1}=\\lambda_{2}=1,\\lambda_{3}=5$；\n\n且 $\\boldsymbol{A}$ 与 $\\boldsymbol{B}$ 相似，则有 $\\boldsymbol{A}$ 的特征值 $\\lambda_{1}=\\lambda_{2}=1,\\lambda_{3}=5$；\n\n$\\lambda_{1}=\\lambda_{2}=1$ 时 $\\left(\\boldsymbol{E}-\\boldsymbol{A}\\right)\\boldsymbol{x}=\\boldsymbol{0}$ 的基础解系为$\\boldsymbol{\\xi}_{1}=(2,1,0)^{T};\\boldsymbol{\\xi}_{2}=(-3,0,1)^{T}$;\n\n$\\lambda_{3}=5$ 时 $(5\\boldsymbol{E}-\\boldsymbol{A})\\boldsymbol{x}=\\boldsymbol{0}$ 的基础解系为 $\\boldsymbol{\\xi}_{3}=(-1,-1,1)^{T}$.\n\n令 $\\boldsymbol{P}=(\\boldsymbol{\\xi}_{1},\\boldsymbol{\\xi}_{2},\\boldsymbol{\\xi}_{3})=\\begin{pmatrix}2&-3&-1\\\\ 1&0&-1\\\\ 0&1&1\\end{pmatrix}$，则可逆矩阵 $\\boldsymbol{P}$，使 $\\boldsymbol{P}^{-1}\\boldsymbol{AP}$ 为对角矩阵.即\n\n$\\boldsymbol{P}^{-1}\\boldsymbol{AP}=\\begin{pmatrix}1& &\\\\ &1&\\\\ & &5\\end{pmatrix}$."
+    }
+   ],
+   "knowledge_points": [
+    "相似矩阵的性质",
+    "特征值与特征向量",
+    "相似对角化"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     4
+    ],
+    "anchor": "第(21)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e6ff71ec38b33c06e59b9471c5dbcad47cf863dba271816f154b9f929d07dd5b"
+  },
+  {
+   "id": "math3-2015-22",
+   "subject": "math3",
+   "year": 2015,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "设随机变量 $X$ 的概率密度为 $f(x)=\\begin{cases}2^{-x}\\ln2,&x>0\\\\ 0,&x\\leq0\\end{cases}$对 $X$ 进行独立重复的观测,直到第 2 个大于 3 的观测值出现时停止,记 $Y$ 为观测次数（I）求 $Y$ 的概率分布；（II）求 $E(Y)$.",
+   "options": [],
+   "answer": "(I)\\ P\\{Y=n\\}=C_{n-1}^{1}p(1-p)^{n-2}p=(n-1)\\left(\\dfrac{1}{8}\\right)^{2}\\left(\\dfrac{7}{8}\\right)^{n-2},\\ n=2,3,\\cdots;\\ (II)\\ E(Y)=16",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(I) $P\\{Y=n\\}=C_{n-1}^{1}p(1-p)^{n-2}p=(n-1)(\\dfrac{1}{8})^{2}(\\dfrac{7}{8})^{n-2}$，$n=2,3,\\cdots$；\n\n(II) $E(Y)=16$.\n\n【解析】(I) 记 $p$ 为观测值大于 3 的概率，则 $p=P(X>3)=\\int_{3}^{+\\infty}2^{-x}ln2dx=\\dfrac{1}{8}$,\n\n从而 $P\\{Y=n\\}=C_{n-1}^{1}p(1-p)^{n-2}p=(n-1)(\\dfrac{1}{8})^{2}(\\dfrac{7}{8})^{n-2}$，$n=2,3,\\cdots$\n\n为 $Y$ 的概率分布；\n\n(II) $E(Y)=\\sum\\limits_{n=2}^{\\infty}n\\cdot P\\{Y=n\\}=\\sum\\limits_{n=2}^{\\infty}n\\cdot(n-1)(\\dfrac{1}{8})^{2}(\\dfrac{7}{8})^{n-2}$\n\n记 $S(x)=\\sum\\limits_{n=2}^{\\infty}n\\cdot(n-1)x^{n-2}$ $-1<x<1$，则 $E(Y)=(\\dfrac{1}{8})^{2}S(\\dfrac{7}{8})$\n\n$S(x)=\\sum\\limits_{n=2}^{\\infty}n\\cdot(n-1)x^{n-2}=(\\sum\\limits_{n=2}^{\\infty}n\\cdot x^{n-1})'=(\\sum\\limits_{n=2}^{\\infty}x^{n})''=\\dfrac{2}{\\left(1-x\\right)^{3}}$，所以 $E(Y)=(\\dfrac{1}{8})^{2}S(\\dfrac{7}{8})=16$."
+    }
+   ],
+   "knowledge_points": [
+    "独立重复观测的分布",
+    "幂级数求和",
+    "期望的计算"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     4
+    ],
+    "anchor": "第(22)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:7399675e9220f2797f033927ad2c1cff1fea6043cf8b902326660a36be227272"
+  },
+  {
+   "id": "math3-2015-23",
+   "subject": "math3",
+   "year": 2015,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "设总体 $X$ 的概率密度为$f(x,\\theta)=\\begin{cases}\\dfrac{1}{1-\\theta},&\\theta\\leq x\\leq1,\\\\ 0,&\\text{其他},\\end{cases}$其中 $\\theta$ 为未知参数，$X_{1},X_{2},\\cdots,X_{n}$ 为来自该总体的简单随机样本.（I）求 $\\theta$ 的矩估计量；（II）求 $\\theta$ 的最大似然估计.",
+   "options": [],
+   "answer": "(I)\\ \\hat{\\theta}=2\\overline{X}-1;\\ (II)\\ \\hat{\\theta}=\\min\\{X_{1},X_{2},\\cdots,X_{n}\\}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】(I) $\\hat{\\theta}=2\\overline{X}-1$，$\\overline{X}=\\dfrac{1}{n}\\sum\\limits_{i=1}^{n}X_{i}$；\n\n(II) $\\hat{\\theta}=\\min\\{X_{1},X_{2},\\cdots,X_{n}\\}$.\n\n【解析】(I) $E(X)=\\int_{-\\infty}^{+\\infty}xf(x;\\theta)dx=\\int_{\\theta}^{1}x\\cdot\\dfrac{1}{1-\\theta}dx=\\dfrac{1+\\theta}{2}$，\n\n令 $E(X)=\\overline{X}$，即 $\\dfrac{1+\\theta}{2}=\\overline{X}$，解得 $\\hat{\\theta}=2\\overline{X}-1$, $\\overline{X}=\\dfrac{1}{n}\\sum\\limits_{i=1}^{n}X_{i}$ 为 $\\theta$ 的矩估计量 ；\n\n(II) 似然函数 $L(\\theta)=\\prod\\limits_{i=1}^{n}f(x_{i};\\theta)$，\n\n当 $\\theta\\leq x_{i}\\leq1$ 时，$L(\\theta)=\\prod\\limits_{i=1}^{n}\\dfrac{1}{1-\\theta}=(\\dfrac{1}{1-\\theta})^{n}$，则 $\\ln L(\\theta)=-n\\ln(1-\\theta)$.\n\n从而 $\\dfrac{d\\ln L(\\theta)}{d\\theta}=\\dfrac{n}{1-\\theta}$，关于 $\\theta$ 单调增加,\n\n所以 $\\hat{\\theta}=\\min\\{X_{1},X_{2},\\cdots,X_{n}\\}$ 为 $\\theta$ 的最大似然估计."
+    }
+   ],
+   "knowledge_points": [
+    "矩估计法",
+    "最大似然估计"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+   "source_ref": {
+    "pdf": "2015数学三真题及解析.pdf",
+    "sha256": "1491002e54dfd380676016000a8e6abc121518a54ce69dc6e0882ef5e9ddcc4d",
+    "pages": [
+     4
+    ],
+    "anchor": "第(23)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:87160683a71fb9da69329ac9bf0018004e9f7a1400fe7475d8ca6f3813dc3145"
+  }
+ ]
+}
