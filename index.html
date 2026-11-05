@@ -628,10 +628,12 @@ async function viewSearch(q){
     }
     const hits=out.filter(e=>!kw||(e.title||"").toLowerCase().includes(kw)||(e.text||"").toLowerCase().includes(kw)).slice(0,80);
     if(!hits.length){res.innerHTML="<div class='qcard'>无结果。换个关键词试试。</div>";return}
-    const bal=s=>{if(((s.match(/\$/g)||[]).length)%2){const i=s.lastIndexOf("$");if(i>0)return s.slice(0,i)}return s};
-    const hl=t=>{const i=(t||"").toLowerCase().indexOf(kw);
-      if(kw&&i>=0)return bal(esc(t.slice(Math.max(0,i-40),i))+"<mark>"+esc(t.slice(i,i+kw.length))+"</mark>"+esc(t.slice(i+kw.length,i+kw.length+90)));
-      return bal(esc((t||"").slice(0,130)))};
+    const hl=t=>{t=prevText(String(t||""),160);let i=t.toLowerCase().indexOf(kw);
+      if(kw&&i>=0){const a=Math.max(0,i-40);t=t.slice(a)}
+      // 搜索摘要兜底（D104，覆盖收敛⑭b bal() 未覆盖的 $ 外残片）：索引截断可能把 LaTeX 切在 $ 外；清洗 $ 外残片，$ 内交 KaTeX
+      t=t.split("$").map((seg,idx)=>idx%2===0?seg.replace(/\\(?:begin|end)\{[a-zA-Z*]+\}/g," ").replace(/\\[a-zA-Z]+/g," ").replace(/[{}]/g,""):seg).join("$");
+      i=t.toLowerCase().indexOf(kw);
+      if(kw&&i>=0){const a=Math.max(0,i-30);return (a>0?"…":"")+esc(t.slice(a,i))+"<mark>"+esc(t.slice(i,i+kw.length))+"</mark>"+esc(t.slice(i+kw.length,i+kw.length+110))}return esc(t.slice(0,140))};
     res.innerHTML=hits.map(e=>{
       const s=subjById(e.sid);const snippet=hl(e.text||e.title);
       return `<a class="sr" style="--acc:${s?s.color:"#999"}" href="#/${e.sid}/${e.year}/q/${e.num}">
