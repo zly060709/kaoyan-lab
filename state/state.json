@@ -1,9 +1,10 @@
 {
  "schema_version": "1.0.0",
- "phase": "M2+",
+ "phase": "M3-converge",
  "status": "RUNNING",
  "started_at": "2026-11-04T15:08:05Z",
- "updated_at": "2026-11-04T23:16:55Z",
+ "updated_at": "2026-11-05T00:00:00Z",
+ "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
  "done_set": [
   "m0:auth_initiated",
   "m0:contract_archive",
@@ -13,20 +14,37 @@
   "m1:migrate_english",
   "m1:migrate_math",
   "m1:migrate_politics",
-  "math2-2018-done",
-  "math2-2019-done",
-  "math2-2020-done",
-  "math2-2021-done"
+  "math2-2009-2021-done",
+  "conv1:shards<=500KB",
+  "conv1:408-steps-wired",
+  "conv1:registry-truthful",
+  "conv2:legacy-hash-baseline",
+  "conv2:politics-99-answers-promoted",
+  "conv2:cs408-type-and-stem-fixed",
+  "conv2:subjective-answer-gate",
+  "conv2:gate-false-positives",
+  "conv2:blk-json-structured-render",
+  "conv2:option-letter-and-highlight",
+  "conv2:sw-v0.3.1",
+  "conv2:gates-9-of-9"
  ],
  "failed_set": [],
- "current_task": "math2-2022-transcribe",
+ "current_task": "conv3:199管综 Markdown 迁移入库",
  "in_flight": {},
  "auth": "authorized (zly060709)",
+ "gates": {
+  "tool": "tools/gates.py",
+  "pass": "9/9",
+  "checked_at": "2026-11-05"
+ },
  "metrics": {
+  "questions_total": 2160,
   "questions": {
    "politics": 456,
    "math": 250,
-   "english": 675,
+   "english": 780,
+   "english_objective": 675,
+   "math2": 298,
    "cs408": 376
   },
   "expected": {
@@ -34,44 +52,64 @@
    "math": 250,
    "english_objective": 675,
    "cs408": 376
+  },
+  "images_pages": {
+   "math1": 51,
+   "math2": 183,
+   "math3": 194
+  },
+  "figure_files": {
+   "math1": 11,
+   "math2": 13
+  },
+  "step_analysis_questions": {
+   "cs408": 376
   }
  },
  "budget": {
   "token_kill_line": 95000000,
   "time_cap_h": 96,
-  "elapsed_h": 0
+  "elapsed_h": 0,
+  "note": "本地无法读取会话侧 token 计量，以产出清单替代量化审计（见 QUALITY_REPORT）"
  },
  "deploy": {
   "url": "https://zly060709.github.io/kaoyan-lab/",
   "repo": "zly060709/kaoyan-lab",
-  "pages": "legacy/main"
+  "pages": "workflow (.github/workflows/deploy-pages.yml, D042)"
  },
  "expansion": {
   "target": "20科统考",
-  "sources": "用户资料 学科历年真题(96 PDF)",
-  "in_flight": [
-   "english2 (agent)",
-   "math2 2009-2011 (agent)"
+  "sources": [
+   "用户资料 学科历年真题（96 PDF，政治/数一/数二/数三/英一/英二）",
+   "用户资料 kaoyan-extra（199 管综 Markdown 2009-2026 + 396 经综 22 PDF）",
+   "用户资料 kaoyan-eol-images（7 科 116 张扫描件）"
   ],
-  "math1_figures": "82幅/2013-2023全11年，已上线并浏览器验收",
-  "math2_progress": "298/342 (2009-2021 done; 12×23+3×22)"
+  "migrated": ["politics", "math1", "math2", "english1", "cs408"],
+  "imaging_only": ["math3"],
+  "not_yet_migrated": [
+   "mgt199",
+   "econ396",
+   "law397",
+   "law398",
+   "med306",
+   "med307",
+   "edu311",
+   "psy312",
+   "his313",
+   "agri314",
+   "chem315",
+   "plant414",
+   "animal415"
+  ]
  },
- "agent_queue": {
-  "running": [
-   "english2(2010-2025)",
-   "math2(2009-2011)"
-  ],
-  "retry_queue": [
-   "math2(2012-2015) 并发超限",
-   "math1 figures(2013-2023) 并发超限"
-  ],
-  "pending": [
-   "math2(2016-2023)",
-   "math3×15",
-   "math1 pages(2009-2012)",
-   "english1(2005-2009+2025)"
-  ],
-  "concurrency_limit": 2
- },
- "mode": "single-agent-sequential (D090, 用户指令)"
+ "queue_sequential": [
+  "conv3:199管综 Markdown 迁移（18 年 × 57 题 + 1073 切片图）",
+  "conv4:数学二 2022-2023 / 数学三 15 卷视觉转录",
+  "conv5:英语二 16 卷、数一 2009-2012、英一 2005-2009+2025 转录",
+  "conv6:396 经综 22 份 PDF 转录",
+  "conv7:eol 7 科 116 张扫描件接入",
+  "conv8:合同第 3 章前端功能全集",
+  "conv9:P2 逐题九段精讲（除 408 外）",
+  "conv10:P3 变式题与模拟卷"
+ ]
 }

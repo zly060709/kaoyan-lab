@@ -81,6 +81,11 @@ h2.sec::before{content:"✦";color:var(--gold)}
 .blk{border-radius:10px;padding:13px 17px;margin:12px 0;font-size:14.5px;line-height:1.95;white-space:pre-wrap;word-break:break-word;position:relative}
 .blk .lab{display:block;font-weight:800;font-size:12.5px;letter-spacing:1px;margin-bottom:6px}
 .blk .org{position:absolute;right:10px;top:10px;font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:0 6px}
+.nd{margin:0 0 7px}.nd:last-child{margin-bottom:0}
+.ndl{color:var(--acc);font-size:13px}
+.ndcode{font-family:ui-monospace,Consolas,monospace;font-size:13.5px;background:#263238;color:#eceff1;border-radius:8px;padding:9px 12px;margin:0 0 7px;overflow-x:auto;white-space:pre}
+/* 原文区块里自带的选项排版：保留不删，但压成「原文照录」附录，避免与结构化选项混淆 */
+.blk .opts{border-top:1px dashed var(--line);margin-top:9px;padding-top:9px;opacity:.72;font-size:13.5px}
 .blk[data-role="stem"],.blk[data-role="material"]{background:#eceff1;border-left:3px solid #90a4ae}
 .blk[data-role="answer"]{background:#e8f5e9;border-left:3px solid #2e7d32}.blk[data-role="answer"] .lab{color:#2e7d32}
 .blk[data-role="approach"],.blk[data-role="think"]{background:var(--amber-bg);border-left:3px solid var(--amber)}.blk[data-role="approach"] .lab,.blk[data-role="think"] .lab{color:var(--amber)}
@@ -443,7 +448,7 @@ function buildSteps(ana){
 }
 
 /* ============ 题目页 ============ */
-function optLetter(o){const m=String(o).match(/^\s*(?:\[?([A-H])\]?|[A-H])[\.、\s]/);return m?m[1]:null}
+function optLetter(o){const s=String(o);const m=s.match(/^\s*(?:\[?([A-H])\]?|[（(]([A-H])[）)]|([A-H])[\.、\s])/);return m?(m[1]||m[2]||m[3]):null}
 async function viewQuestion(s,y,num){
   let d;try{d=await fetchJSON(`data/${dirOf(s.id)}/${y}.json`)}catch(e){app.innerHTML=`<div class="qcard">加载失败：${esc(e.message)}</div>`;return}
   const qs=d.questions||[];const idx=qs.findIndex(q=>q.num===num);
@@ -466,13 +471,28 @@ async function viewQuestion(s,y,num){
   }).join("");
   const ansStr=q.answer==null?"":(typeof q.answer==="object"?JSON.stringify(q.answer):String(q.answer));
   const correct=new Set((ansStr.match(/[A-H]/g)||[]));
-  const opts=(q.options||[]).map(o=>{
+  const optArr=q.options||[];
+  // 408 原卷选项是纯值（无 [A] 标签）：整列都无标签时按位置推断字母，与数据层 D037 口径一致
+  const positional=optArr.length>0&&!optArr.some(o=>optLetter(typeof o==="object"?JSON.stringify(o):String(o)));
+  const opts=optArr.map((o,i)=>{
     const obj=typeof o==="object"?JSON.stringify(o):String(o);
-    const L=optLetter(obj);
-    return `<div class="opt${L&&correct.has(L)?" correct":""}">${fillText(obj)}</div>`;}).join("");
+    const L=positional?String.fromCharCode(65+i):optLetter(obj);
+    const shown=positional?`${L}. ${obj}`:obj;
+    return `<div class="opt${L&&correct.has(L)?" correct":""}">${fillText(shown)}</div>`;}).join("");
+  const nodeBlock=txt=>{
+    if(typeof txt!=="string"||txt.trim().charAt(0)!=="[")return null;
+    let arr;try{arr=JSON.parse(txt)}catch(e){return null}
+    if(!Array.isArray(arr)||!arr.length||!arr.every(n=>n&&typeof n==="object"))return null;
+    return arr.map(n=>{
+      const lines=(n.lines||[]).map(l=>esc(String(l))).join("<br>");
+      if(n.type==="code")return `<pre class="ndcode">${(n.lines||[]).map(l=>esc(String(l))).join("\n")}</pre>`;
+      const lab=n.label?`<b class="ndl">${esc(String(n.label))}</b> `:"";
+      return `<div class="nd">${lab}${lines}</div>`;
+    }).join("");
+  };
   const blocks=(q.source_blocks||[]).map(b=>{
     const role=ROLE_L[b.role]?b.role:"other";
-    const body=b.html?fill(b.html):fillText(b.text||"");
+    const body=b.html?fill(b.html):(nodeBlock(b.text)||fillText(b.text||""));
     const org=b.origin&&b.origin!=="source"?`<span class="org">${b.origin==="extended"?"扩展精讲":"变式"}</span>`:"";
     return `<div class="blk" data-role="${role}"><span class="lab">${ROLE_L[role]}</span>${org}${body}</div>`;}).join("");
   const mark=ls("bm:"+q.id)==="1";
@@ -536,7 +556,7 @@ async function viewQuestion(s,y,num){
     figs.forEach((f,i)=>renderFigure($("#fig"+i),f));
   });
 }
-const ROLE_L={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",kaodian:"考点定位",silu:"思路引导",jiefa:"解法构建",biaozhun:"标准解答",yicuo:"易错深挖",guina:"方法归纳",qita:"其他解法",other:"原文区块"};
+const ROLE_L={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",kaodian:"考点定位",silu:"思路引导",jiefa:"解法构建",biaozhun:"标准解答",yicuo:"易错深挖",guina:"方法归纳",qita:"其他解法",stem_nodes:"题干结构化原文",other:"原文区块"};
 
 /* ============ 搜索 ============ */
 async function viewSearch(q){

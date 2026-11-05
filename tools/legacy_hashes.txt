@@ -1,0 +1,7 @@
+# legacy/** 只读基线 —— 用户原始上传件（ZCode 会话分享页 artifact 对象键中的 SHA-256）
+# 校验方式：python -I -X utf8 tools/gates.py（G2）；格式 = <sha256>  <文件名>
+# 任何一行不匹配都意味着原始内容被改动，属合同硬红线（第 2 章第 1 条「原文只读」）。
+6d1e706adec4244031fe69d007902f6f2f88670cddd5778a52ade0c9185db6c5  408_真题逐题精讲_修复版.html
+4bb048e27113fe9016ae55f2fbe22c2b9cb439ec0dcc5244e22895a146b37237  数学一真题精讲_2013-2023_重制版.html
+3583872f60b3b3458ce8cf0f62cce392e849cce26bbc59ad1e8bca96071f7f01  考研政治真题逐题精讲_修复版.html
+933e4c546477c14768e6c0fc7f171bee303ad760a155ffbfe8e2cad0e32cea95  考研英语一真题逐题精讲_2010-2024.html

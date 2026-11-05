@@ -57,11 +57,28 @@ def collect_questions(entry):
                 qs.extend(p["questions"])
     return qs
 
-def qtype_map(qt):
+def qtype_map(qt, answer=None):
     s = norm_text(qt)
     if "单" in s: return "single"
     if "多" in s: return "multi"
+    if "choice" in s.lower():
+        # legacy 用英文 "choice"，单/多选由答案字母个数判定（不改写答案本身）
+        letters = re.sub(r"[^A-Za-z]", "", norm_text(answer))
+        return "multi" if len(letters) > 1 else "single"
     return "big"
+
+def render_stem_nodes(nodes):
+    """legacy stem_nodes 原样转文本，逐行照录（.stem 用 pre-wrap，保留换行）。不增删内容。"""
+    NL = chr(10)
+    out = []
+    for n in nodes or []:
+        if not isinstance(n, dict):
+            continue
+        lines = [norm_text(x) for x in (n.get("lines") or [])]
+        label = norm_text(n.get("label"))
+        body = NL.join(lines)
+        out.append((label + " " + body).strip())
+    return NL.join(x for x in out if x.strip())
 
 def img_list(*vals):
     out = []
@@ -113,15 +130,21 @@ for entry in data:
         tags = [norm_text(q.get("subject"))] if q.get("subject") else []
         if qt: tags.append(norm_text(qt))
         source_blocks = []
+        if q.get("stem_nodes"):
+            source_blocks.append({"role": "stem_nodes", "html": "",
+                                  "text": json.dumps(q["stem_nodes"], ensure_ascii=False)})
         if q.get("desc") is not None:
             source_blocks.append({"role": "desc", "html": "", "text": norm_text(q["desc"])})
         if q.get("nodes") is not None:
             source_blocks.append({"role": "nodes", "html": "", "text": json.dumps(q["nodes"], ensure_ascii=False)})
         src_hash = "sha256:" + hashlib.sha256(
             json.dumps(q, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+        stem_text = norm_text(q.get("stem"))
+        if not stem_text.strip() and q.get("stem_nodes"):
+            stem_text = render_stem_nodes(q["stem_nodes"])
         base = {
             "id": qid, "subject": "cs408", "year": year, "num": num,
-            "type": qtype_map(qt), "stem": norm_text(q.get("stem")),
+            "type": qtype_map(qt, q.get("answer")), "stem": stem_text,
             "options": q.get("options") if isinstance(q.get("options"), list) else [],
             "answer": q.get("answer"), "score": q.get("score"),
             "source_blocks": source_blocks, "source_hash": src_hash,
