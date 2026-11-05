@@ -3,7 +3,7 @@
   "phase": "M3-converge",
   "status": "RUNNING",
   "started_at": "2026-11-04T15:08:05Z",
-  "updated_at": "2026-11-05T12:49:54Z",
+  "updated_at": "2026-11-05T13:44:16Z",
   "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
   "done_set": [
     "m0:auth_initiated",
@@ -39,10 +39,11 @@
     "conv10:math3-2009-2019",
     "conv10b:browser-verify+answer-render-fix",
     "conv11:数学三 2016 卷入库 + 原卷图形 media 接入",
-    "conv11b:数三 296 题页线上全量实测结清（0 缺陷 / 12 media 图 / 12 DSL 图形页）"
+    "conv11b:数三 296 题页线上全量实测结清（0 缺陷 / 12 media 图 / 12 DSL 图形页）",
+    "conv12:数学三 2012/2020 两卷定稿入库（math3 15 卷 342 题，索引 3628）"
   ],
   "failed_set": [],
-  "current_task": "conv12:数学三 2012 / 2020 两卷转录（草稿已在 tools/work，影像已入库；完成后 math3 达 15 年 342 题）",
+  "current_task": "conv12b:发布 2012/2020 两卷产物到 main（--paths 白名单）+ 线上 46 题页实测",
   "in_flight": {},
   "auth": "authorized (zly060709)",
   "gates": {
@@ -51,7 +52,7 @@
     "checked_at": "2026-11-05"
   },
   "metrics": {
-    "questions_total": 3582,
+    "questions_total": 3628,
     "questions": {
       "politics": 456,
       "math": 250,
@@ -60,7 +61,7 @@
       "math2": 342,
       "cs408": 376,
       "mgt199": 1024,
-      "math3": 296,
+      "math3": 342,
       "law498": 58
     },
     "expected": {

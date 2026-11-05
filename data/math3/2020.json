@@ -1,0 +1,1124 @@
+{
+ "subject": "math3",
+ "year": 2020,
+ "paper": "数学（三）",
+ "schema_version": "1.0.0",
+ "question_count": 23,
+ "source_note": "视觉转录自《2020数学三真题及解析.pdf》（data/math3/pages/2020/，13 页）。2009–2020 年数学三结构：选择题 8×4=32 分、填空题 6×4=24 分、解答题 15–23 共 94 分，合计 150 分。解答题逐题分值照卷面题号后的「（本题满分 X 分）」印刷。题干/选项/答案/解析逐字照录，原卷的疑似排版或笔误（错字、漏字、半全角混用、上下标排版不一致）一律不改，逐条登记在 tools/work/m32020_notes.md（14 条编号记录）。",
+ "questions": [
+  {
+   "id": "math3-2020-1",
+   "subject": "math3",
+   "year": 2020,
+   "num": 1,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $\\lim\\limits_{x\\to a}\\dfrac{f(x)-a}{x-a}=b$，则 $\\lim\\limits_{x\\to a}\\dfrac{\\sin f(x)-\\sin a}{x-a}=$（　）",
+   "options": [
+    "$b\\sin a$",
+    "$b\\cos a$",
+    "$b\\sin f(a)$",
+    "$b\\cos f(a)$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】∵ $\\lim\\limits_{x\\to a}\\dfrac{f(x)-a}{x-a}=b$ ∴ $\\lim\\limits_{x\\to a}f(x)=a$，\n\n设 $f(x)=u$，则 $\\lim\\limits_{x\\to a}\\dfrac{\\sin f(x)-\\sin a}{f(x)-a}=\\lim\\limits_{u\\to a}\\dfrac{\\sin u-\\sin a}{u-a}=\\cos a$，\n\n则 $\\lim\\limits_{x\\to a}\\dfrac{\\sin f(x)-\\sin a}{x-a}=\\lim\\limits_{x\\to a}\\dfrac{\\sin f(x)-\\sin a}{f(x)-a}\\cdot\\lim\\limits_{x\\to a}\\dfrac{f(x)-a}{x-a}=b\\cos a$."
+    }
+   ],
+   "knowledge_points": [
+    "导数定义",
+    "复合函数极限"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     1
+    ],
+    "anchor": "第(1)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:59eab89cddcd567a68806354f531af5fea3c69cc8bc5c559369a6f6eabe831df"
+  },
+  {
+   "id": "math3-2020-2",
+   "subject": "math3",
+   "year": 2020,
+   "num": 2,
+   "type": "single",
+   "score": 4,
+   "stem": "数 $f(x)=\\dfrac{e^{\\frac{1}{x-1}}\\ln|1+x|}{(e^{x}-1)(x-2)}$，则第二类间断点个数为（　）",
+   "options": [
+    "$1$",
+    "$2$",
+    "$3$",
+    "$4$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】本题考查的是第一类间断点与第二类间断点的定义，判断间断点及类型的一般步骤为：①找出无定义的点（无意义的点）；②求该点的左右极限；③按照间断点的定义判定.\n\n第二类间断点的定义为 $f_{-}(x_{0}),f_{+}(x_{0})$ 至少有一个不存在，很显然 $f(x)$ 不存在的点为$x=-1,x=0,x=1,x=2$.\n\n在 $x=-1$ 处，$\\lim\\limits_{x\\to-1^{-}}f(x)=-\\infty$, $\\lim\\limits_{x\\to-1^{+}}f(x)=-\\infty$；\n\n在 $x=0$ 处，$\\lim\\limits_{x\\to0^{-}}f(x)=\\lim\\limits_{x\\to0^{+}}f(x)=-\\dfrac{1}{2e}$；\n\n在 $x=1$ 处，$\\lim\\limits_{x\\to1^{-}}e^{\\frac{1}{x-1}}=0$ ， $\\lim\\limits_{x\\to1^{+}}e^{\\frac{1}{x-1}}=+\\infty$，$\\lim\\limits_{x\\to1^{-}}f(x)=0$，$\\lim\\limits_{x\\to1^{+}}f(x)=-\\infty$；\n\n在 $x=2$ 处，$\\lim\\limits_{x\\to2^{-}}f(x)=-\\infty$，$\\lim\\limits_{x\\to2^{+}}f(x)=+\\infty$；\n\n所以，第二类间断点为 3 个."
+    }
+   ],
+   "knowledge_points": [
+    "间断点及其分类"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     1
+    ],
+    "anchor": "第(2)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b147f0a1ad183b98bf8d0ff27411e7f28680da58f392fa245b641ad20c9d2543"
+  },
+  {
+   "id": "math3-2020-3",
+   "subject": "math3",
+   "year": 2020,
+   "num": 3,
+   "type": "single",
+   "score": 4,
+   "stem": "对奇函数 $f(x)$ 在 $(-\\infty,+\\infty)$ 上有连续导数，则（　）",
+   "options": [
+    "$\\int_{0}^{x}\\left[\\cos f(t)+f'(t)\\right]dt$ 是奇函数",
+    "$\\int_{0}^{x}\\left[\\cos f(t)+f'(t)\\right]dt$ 是偶函数",
+    "$\\int_{0}^{x}\\left[\\cos f'(t)+f(t)\\right]dt$ 是奇函数",
+    "$\\int_{0}^{x}\\left[\\cos f'(t)+f(t)\\right]dt$ 是偶函数"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】$f(x)$ 为奇函数，则其导数 $f'(x)$ 为偶函数，又 $\\cos x$ 为偶函数，则$\\cos f(x)=\\cos f(-x)$，则 $\\cos f(x)$ 为偶函数，故 $\\cos f(x)+f'(x)$ 为偶函数，以 0 为下限、被积函数为偶函数的变限积分函数为奇函数. 所以，本题选 $A$;对于 $C$ 和 $D$ 选项，$f'(x)$为偶函数，则 $\\cos f'(x)=\\cos f'(-x)$ 为偶函数，$f(x)$ 为奇函数，则 $\\cos f'(x)+f(x)$ 既非奇函数又非偶函数."
+    }
+   ],
+   "knowledge_points": [
+    "奇偶函数性质",
+    "变限积分",
+    "函数周期性"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     1
+    ],
+    "anchor": "第(3)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:87794d72912ddf48f4af9a3312a4d133cfba9f430fc5bbbb9d2f3ba6556f3c15"
+  },
+  {
+   "id": "math3-2020-4",
+   "subject": "math3",
+   "year": 2020,
+   "num": 4,
+   "type": "single",
+   "score": 4,
+   "stem": "已知幂级数 $\\sum\\limits_{n=1}^{\\infty}na_{n}(x-2)^{n}$ 的收敛区间为 $(-2,6)$，则 $\\sum\\limits_{n=1}^{\\infty}a_{n}(x+1)^{2n}$ 的收敛区间为（　）",
+   "options": [
+    "$(-2,6)$",
+    "$(-3,1)$",
+    "$(-5,3)$",
+    "$(-17,15)$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】由比值法可知，幂级数收敛时，$\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{a_{n+1}(x+1)^{2n+2}}{a_{n}(x+1)^{2n}}\\right|=\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{a_{n+1}}{a_{n}}\\right|(x+1)^{2}<1$，\n\n则要求 $\\sum\\limits_{n=1}^{\\infty}a_{n}(x+2)^{2n}$ 的收敛区间，只需要求出 $\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{a_{n+1}}{a_{n}}\\right|$ 的值即可，\n\n而条件告诉我们幂级数 $\\sum\\limits_{n=1}^{\\infty}na_{n}(x-2)^{n}$ 的收敛区间为 $(-2,6)$，即收敛半径为 4，\n\n$\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{(n+1)a_{n+1}}{na_{n}}\\right|=\\lim\\limits_{n\\to\\infty}\\dfrac{n+1}{n}\\left|\\dfrac{a_{n+1}}{a_{n}}\\right|=\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{a_{n+1}}{a_{n}}\\right|=\\dfrac{1}{4}$，\n\n则 $\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{a_{n+1}}{a_{n}}\\right|(x+1)^{2n}=\\dfrac{1}{4}(x+1)^{2}<1$，即 $-3<x<1$.\n\n所以本题选（B）."
+    }
+   ],
+   "knowledge_points": [
+    "幂级数收敛半径与收敛区间",
+    "变量替换"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     1
+    ],
+    "anchor": "第(4)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:de346726e4385779089f9939262020b8eeb61c26aa2e846d5de0648298b0389a"
+  },
+  {
+   "id": "math3-2020-5",
+   "subject": "math3",
+   "year": 2020,
+   "num": 5,
+   "type": "single",
+   "score": 4,
+   "stem": "设四阶矩阵 $A=(a_{ij})$ 不可逆，$a_{12}$ 的代数余子式 $A_{12}\\neq0$，$\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3},\\boldsymbol{a}_{4}$ 为矩阵 $A$ 的列向量组，$A^{*}$ 为 $A$ 的伴随矩阵，则 $A^{*}\\boldsymbol{x}=\\boldsymbol{0}$ 的通解为（　）",
+   "options": [
+    "$\\boldsymbol{x}=k_{1}\\boldsymbol{a}_{1}+k_{2}\\boldsymbol{a}_{2}+k_{3}\\boldsymbol{a}_{3}$",
+    "$\\boldsymbol{x}=k_{1}\\boldsymbol{a}_{1}+k_{2}\\boldsymbol{a}_{2}+k_{3}\\boldsymbol{a}_{4}$",
+    "$\\boldsymbol{x}=k_{1}\\boldsymbol{a}_{1}+k_{2}\\boldsymbol{a}_{3}+k_{3}\\boldsymbol{a}_{4}$",
+    "$\\boldsymbol{x}=k_{1}\\boldsymbol{a}_{2}+k_{2}\\boldsymbol{a}_{3}+k_{3}\\boldsymbol{a}_{4}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】$A=(a_{ij})$ 不可逆知，$|A|=0$ 及 $r(A)<4$；由 $A_{12}\\neq0$ 知 $A^{*}\\neq O$ 且 $\\boldsymbol{a}_{1},\\boldsymbol{a}_{3},\\boldsymbol{a}_{4}$ 线性无关（无关组的延长组仍无关），故 $r(A)=3$ 及 $r(A^{*})=1$，故 $A^{*}\\boldsymbol{x}=\\boldsymbol{0}$ 的基础解系含有 3 个向量. 由 $A^{*}A=|A|E=O$ 知，$A$ 的列向量均为 $A^{*}\\boldsymbol{x}=\\boldsymbol{0}$ 的解,故通解 $\\boldsymbol{x}=k_{1}\\boldsymbol{a}_{1}+k_{2}\\boldsymbol{a}_{3}+k_{3}\\boldsymbol{a}_{4}$."
+    }
+   ],
+   "knowledge_points": [
+    "伴随矩阵",
+    "矩阵的秩",
+    "齐次线性方程组基础解系"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     1
+    ],
+    "anchor": "第(5)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:0999fba6e2d4aa3879de11eb765c71ce1bf47c4db315b6f8c24f8ea6af952660"
+  },
+  {
+   "id": "math3-2020-6",
+   "subject": "math3",
+   "year": 2020,
+   "num": 6,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $A$ 为三阶矩阵，$\\boldsymbol{a}_{1},\\boldsymbol{a}_{2}$ 为 $A$ 的特征值 1 对应的两个线性无关的特征向量，$\\boldsymbol{a}_{3}$ 为 $A$ 的特征值 $-1$ 的特征向量．若存在可逆矩阵 $P$，使得 $P^{-1}AP=\\begin{pmatrix}1&0&0\\\\ 0&-1&0\\\\ 0&0&1\\end{pmatrix}$，则 $P$ 可为（　）",
+   "options": [
+    "$(\\boldsymbol{a}_{1}+\\boldsymbol{a}_{3},\\boldsymbol{a}_{2},-\\boldsymbol{a}_{3})$",
+    "$(\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2},\\boldsymbol{a}_{2},-\\boldsymbol{a}_{3})$",
+    "$(\\boldsymbol{a}_{1}+\\boldsymbol{a}_{3},-\\boldsymbol{a}_{3},\\boldsymbol{a}_{2})$",
+    "$(\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2},-\\boldsymbol{a}_{3},\\boldsymbol{a}_{2})$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】因为 $\\boldsymbol{a}_{1},\\boldsymbol{a}_{2}$ 为 $A$ 的特征值 1 对应的两个线性无关的特征向量，故 $\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2},\\boldsymbol{a}_{2}$ 仍为特征值 1 的两个线性无关的特征向量；因为 $\\boldsymbol{a}_{3}$ 为 $A$ 的特征值 $-1$ 的特征向量，故 $-\\boldsymbol{a}_{3}$ 仍为特征值 $-1$ 的特征向量，因为特征向量与特征值的排序一一对应，故只需 $P=(\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2},-\\boldsymbol{a}_{3},\\boldsymbol{a}_{2})$，\n\n就有 $P^{-1}AP=\\begin{pmatrix}1&0&0\\\\ 0&-1&0\\\\ 0&0&1\\end{pmatrix}$."
+    }
+   ],
+   "knowledge_points": [
+    "特征值与特征向量",
+    "相似对角化"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     1
+    ],
+    "anchor": "第(6)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:6fff7805bc301b8d40a7ea7af0b06208a87957ce1971caeb9e28065899aa57f4"
+  },
+  {
+   "id": "math3-2020-7",
+   "subject": "math3",
+   "year": 2020,
+   "num": 7,
+   "type": "single",
+   "score": 4,
+   "stem": "设 $A,B,C$ 为三个随机事件，且$P(A)=P(B)=P(C)=\\dfrac{1}{4}$,$P(AB)=0$,$P(AC)=P(BC)=\\dfrac{1}{12}$，则 $A,B,C$ 中恰有一个事件发生的概率为（　）",
+   "options": [
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{5}{12}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】\n\n$P(A\\bar{B}\\bar{C})+P(\\bar{A}B\\bar{C})+P(\\bar{A}\\bar{B}C)$\n\n$=P(A\\cap\\overline{B\\cup C})+P(B\\cap\\overline{A\\cup C})+P(C\\cap\\overline{A\\cup B})$\n\n$=P(A)-P(AB)-P(AC)+P(ABC)+P(B)-P(AB)-P(BC)+P(ABC)$\n\n$+P(C)-P(AC)-P(BC)+P(ABC)$\n\n又 $ABC\\subset AB$，$P(ABC)\\leqslant P(AB)=0,P(ABC)=0$，\n\n原式$=\\dfrac{1}{4}-\\dfrac{1}{12}+\\dfrac{1}{4}-\\dfrac{1}{12}+\\dfrac{1}{4}-\\dfrac{1}{12}-\\dfrac{1}{12}=\\dfrac{5}{12}$."
+    }
+   ],
+   "knowledge_points": [
+    "事件概率运算",
+    "和事件与积事件"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2
+    ],
+    "anchor": "第(7)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:bb25437f7710240017302148ea98f8c3bc3d3dab95c8191005a0a5928fff0953"
+  },
+  {
+   "id": "math3-2020-8",
+   "subject": "math3",
+   "year": 2020,
+   "num": 8,
+   "type": "single",
+   "score": 4,
+   "stem": "若二维随机变量 $(X,Y)$ 服从 $N(0;0;1,4;-\\dfrac{1}{2})$，则下列服从标准正态分布且与 $X$ 独立的是（　）",
+   "options": [
+    "$\\dfrac{\\sqrt{5}}{5}(X+Y)$",
+    "$\\dfrac{\\sqrt{5}}{5}(X-Y)$",
+    "$\\dfrac{\\sqrt{3}}{3}(X+Y)$",
+    "$\\dfrac{\\sqrt{3}}{3}(X-Y)$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】由二维正态分布可知 $X\\sim N(0,1)$， $Y\\sim N(0,4)$， $\\rho_{XY}=-\\dfrac{1}{2}$\n\n$D(X+Y)=DX+DY+2\\rho_{XY}\\sqrt{DX}\\sqrt{DY}=3$，\n\n所以 $X+Y\\sim N(0,3)$，$\\dfrac{\\sqrt{3}}{3}(X+Y)\\sim N(0,1)$.\n\n又 $\\mathrm{cov}(X,X+Y)=\\mathrm{cov}(X,X)+\\mathrm{cov}(X,Y)=DX+\\rho_{XY}\\sqrt{DX}\\sqrt{DY}=0$，\n\n所以 $X$ 与 $\\dfrac{\\sqrt{3}}{3}(X+Y)$ 独立."
+    }
+   ],
+   "knowledge_points": [
+    "二维正态分布",
+    "随机变量独立性",
+    "标准正态化"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2
+    ],
+    "anchor": "第(8)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d27574f49f689a357dd9a7d5ce249074e07a58a902199ce4dec10b5f9561b304"
+  },
+  {
+   "id": "math3-2020-9",
+   "subject": "math3",
+   "year": 2020,
+   "num": 9,
+   "type": "blank",
+   "score": 4,
+   "stem": "设函数 $z=\\arctan[xy+\\sin(x+y)]$,则 $\\mathrm{d}z\\big|_{(0,\\pi)}=$________.",
+   "options": [],
+   "answer": "dz|_{(0,\\pi)}=(\\pi-1)dx-dy",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（9）【答案】$\\left.dz\\right|_{(0,\\pi)}=(\\pi-1)dx-dy$\n\n【解析】$\\dfrac{\\partial z}{\\partial x}=\\dfrac{y+\\cos(x+y)}{1+\\left[xy+\\sin(x+y)\\right]^{2}},\\dfrac{\\partial z}{\\partial y}=\\dfrac{x+\\cos(x+y)}{1+\\left[xy+\\sin(x+y)\\right]^{2}}$，将 $x=0,y=\\pi$ 带入可知，\n\n$\\left.dz\\right|_{(0,\\pi)}=(\\pi-1)dx-dy$"
+    }
+   ],
+   "knowledge_points": [
+    "偏导数",
+    "全微分"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2
+    ],
+    "anchor": "第(9)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:18e0aa278eb5a0819b7d745e684961b34a788cf74063e7f53ef83e98d5812084"
+  },
+  {
+   "id": "math3-2020-10",
+   "subject": "math3",
+   "year": 2020,
+   "num": 10,
+   "type": "blank",
+   "score": 4,
+   "stem": "曲线 $x+y+\\mathrm{e}^{2xy}=0$ 在点 $(0,-1)$ 处的切线方程为________.",
+   "options": [],
+   "answer": "y=x-1",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（10）【答案】$y=x-1$\n\n【解析】在 $x+y+e^{2xy}=0$ 两侧同时对 $x$ 求导有$1+\\dfrac{dy}{dx}+e^{2xy}\\left(2y+2x\\dfrac{dy}{dx}\\right)=0$，将\n\n$x=0,y=-1$ 带入可知$\\dfrac{dy}{dx}=1$，所以切线方程为 $y=x-1.$"
+    }
+   ],
+   "knowledge_points": [
+    "隐函数求导",
+    "切线方程"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2
+    ],
+    "anchor": "第(10)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1769917e4599fa85ef4130e7f9c0ff35815d3a040f5ab4164768f39fbb92e245"
+  },
+  {
+   "id": "math3-2020-11",
+   "subject": "math3",
+   "year": 2020,
+   "num": 11,
+   "type": "blank",
+   "score": 4,
+   "stem": "设某厂家生产某产品的产量为 $Q$,已知成本函数 $C(Q)=100+13Q$,设该产品的单价为$p$，需求量关于价格的函数为 $Q(p)=\\dfrac{800}{p+3}-2$,则利润取得最大值时的产量为________.",
+   "options": [],
+   "answer": "Q=8",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（11）【答案】$Q=8$\n\n【解析】由 $Q(p)=\\dfrac{800}{P+3}-2$ 可知 $p=\\dfrac{800}{Q+2}-3$，则利润函数为\n\n$L(Q)=\\left(\\dfrac{800}{Q+2}-3\\right)Q-(100+13Q),\\quad\\dfrac{dL(Q)}{dQ}=\\dfrac{1600}{\\left(Q+2\\right)^{2}}-16$，令$\\dfrac{dL(Q)}{dQ}=0$可得，$Q=8$，\n\n此时$\\dfrac{d^{2}L(Q)}{dQ^{2}}=-\\dfrac{3200}{\\left(Q+2\\right)^{3}}<0$，故取得最大利润."
+    }
+   ],
+   "knowledge_points": [
+    "导数经济应用",
+    "边际与利润最大化"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2
+    ],
+    "anchor": "第(11)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:7779f276b01b492eb523775d5f2254330ca239c79fd18418c73f9dec616a6947"
+  },
+  {
+   "id": "math3-2020-12",
+   "subject": "math3",
+   "year": 2020,
+   "num": 12,
+   "type": "blank",
+   "score": 4,
+   "stem": "设平面区域 $D=\\left\\{(x,y)\\mid\\dfrac{x}{2}\\leqslant y\\leqslant\\dfrac{1}{1+x^{2}},0\\leqslant x\\leqslant1\\right\\}$,$D$ 绕 $y$ 轴旋转所得旋转体的体积为________.",
+   "options": [],
+   "answer": "\\pi(\\ln 2-\\dfrac{1}{3})",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（12）【答案】$\\pi(\\ln 2-\\dfrac{1}{3})$\n\n【解析】由题意列式得$V=\\int_{0}^{1}2\\pi x\\left(\\dfrac{1}{1+x^{2}}-\\dfrac{x}{2}\\right)dx=\\pi\\left(\\ln(1+x^{2})-\\dfrac{1}{3}x^{3}\\right)\\left|\\right._{0}^{1}=\\ \\pi(\\ln 2-\\dfrac{1}{3})\\ .$"
+    }
+   ],
+   "knowledge_points": [
+    "定积分应用",
+    "旋转体体积",
+    "柱壳法"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2
+    ],
+    "anchor": "第(12)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:55bd7eba1904aa951e9cdf87f952de433c5ccbc608e010679cd015142f8dab1e"
+  },
+  {
+   "id": "math3-2020-13",
+   "subject": "math3",
+   "year": 2020,
+   "num": 13,
+   "type": "blank",
+   "score": 4,
+   "stem": "行列式 $\\begin{vmatrix}a&0&-1&1\\\\ 0&a&1&-1\\\\ -1&1&a&0\\\\ 1&-1&0&a\\end{vmatrix}=$________.",
+   "options": [],
+   "answer": "a^{2}(a^{2}-4)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（13）【答案】$a^{2}(a^{2}-4).$\n\n【解析】\n\n原式$=a\\begin{vmatrix}1&1&1&1\\\\ 0&a&1&-1\\\\ -1&1&a&0\\\\ 1&-1&0&a\\end{vmatrix}=a\\begin{vmatrix}1&1&1&1\\\\ 0&a&1&-1\\\\ 0&2&a+1&1\\\\ 0&0&a&a\\end{vmatrix}=a\\begin{vmatrix}a&1&-1\\\\ 2&a+1&1\\\\ 0&a&a\\end{vmatrix}=a^{2}\\begin{vmatrix}a&2&-1\\\\ 2&a&1\\\\ 0&0&1\\end{vmatrix}=a^{2}(a^{2}-4).$"
+    }
+   ],
+   "knowledge_points": [
+    "行列式计算",
+    "行列式性质"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2
+    ],
+    "anchor": "第(13)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d40d2b8d2979948aad72bab0337a13c43a71f9862338e98a3b38d4836bcbc38e"
+  },
+  {
+   "id": "math3-2020-14",
+   "subject": "math3",
+   "year": 2020,
+   "num": 14,
+   "type": "blank",
+   "score": 4,
+   "stem": "随机变量 $X$ 的分布律为 $P(X=k)=\\dfrac{1}{2^{k}}$,$k=1,2,...$,$Y$ 为 $X$ 被 3 除的余数,则 $EY=$",
+   "options": [],
+   "answer": "\\dfrac{8}{7}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（14）【答案】$\\dfrac{8}{7}$\n\n【解析】$P\\left\\{Y=0\\right\\}=\\sum_{n=1}^{\\infty}P\\left\\{X=3n\\right\\}=\\sum_{n=1}^{\\infty}\\dfrac{1}{8^{n}}=\\dfrac{1}{7}$\n\n$P\\left\\{Y=1\\right\\}=\\sum_{n=0}^{\\infty}P\\left\\{X=3n+1\\right\\}=\\sum_{n=0}^{\\infty}\\dfrac{1}{2}\\dfrac{1}{8^{n}}=\\dfrac{4}{7}$\n\n$P\\left\\{Y=2\\right\\}=\\sum_{n=0}^{\\infty}P\\left\\{X=3n+2\\right\\}=\\sum_{n=0}^{\\infty}\\dfrac{1}{4}\\dfrac{1}{8^{n}}=\\dfrac{2}{7}$\n\n所以 $EY=0\\times\\dfrac{1}{7}+1\\times\\dfrac{4}{7}+2\\times\\dfrac{2}{7}=\\dfrac{8}{7}.$"
+    }
+   ],
+   "knowledge_points": [
+    "随机变量函数的分布",
+    "几何分布",
+    "数学期望"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2
+    ],
+    "anchor": "第(14)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:fbebdcc8028bfa8dcdcb7f8ab424bb38558ef41288a458414253f64c824eded8"
+  },
+  {
+   "id": "math3-2020-15",
+   "subject": "math3",
+   "year": 2020,
+   "num": 15,
+   "type": "essay",
+   "score": 10,
+   "stem": "设 $a,b$ 为常数，且当 $n\\to\\infty$ 时，$\\left(1+\\dfrac{1}{n}\\right)^{n}-e$ 与 $\\dfrac{b}{n^{a}}$ 为等价无穷小，求 $a,b$ 的值.",
+   "options": [],
+   "answer": "a=1,\\ b=-\\dfrac{1}{2}e",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（15）【答案】$a=1,b=-\\dfrac{1}{2}e$\n\n【解析】$\\lim\\limits_{n\\to\\infty}\\dfrac{\\left(1+\\dfrac{1}{n}\\right)^{n}-e}{\\dfrac{b}{n^{a}}}=\\dfrac{1}{b}\\lim\\limits_{n\\to\\infty}\\dfrac{e^{n\\ln\\left(1+\\frac{1}{n}\\right)}-e}{\\dfrac{1}{n^{a}}}=\\dfrac{e}{b}\\lim\\limits_{n\\to\\infty}\\dfrac{e^{n\\ln\\left(1+\\frac{1}{n}\\right)-1}-1}{\\dfrac{1}{n^{a}}}$\n\n$=\\dfrac{e}{b}\\lim\\limits_{n\\to\\infty}\\dfrac{n\\ln(1+\\dfrac{1}{n})-1}{\\dfrac{1}{n^{a}}}=\\dfrac{e}{b}\\lim\\limits_{n\\to\\infty}\\dfrac{n\\left(\\ln(1+\\dfrac{1}{n})-\\dfrac{1}{n}\\right)}{\\dfrac{1}{n^{a}}}$\n\n由于 $\\ln(1+\\dfrac{1}{n})-\\dfrac{1}{n}\\sim\\dfrac{1}{2}\\dfrac{1}{n^{2}}\\left(n\\to\\infty\\right)$，则 $a=1$，且①式 $\\dfrac{-\\dfrac{1}{2}e}{b}=1$，得 $b=-\\dfrac{1}{2}e.$"
+    }
+   ],
+   "knowledge_points": [
+    "等价无穷小",
+    "数列极限",
+    "泰勒展开"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     2,
+     3
+    ],
+    "anchor": "第(15)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d4cc726f6f30ed43df4eea45f423297a5cc221a45c7a6a06cb6d397aee2b050c"
+  },
+  {
+   "id": "math3-2020-16",
+   "subject": "math3",
+   "year": 2020,
+   "num": 16,
+   "type": "essay",
+   "score": 10,
+   "stem": "求函数 $f(x,y)=x^{3}+8y^{3}-xy$ 的极值.",
+   "options": [],
+   "answer": "极小值 -\\dfrac{1}{216}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（16）【答案】极小值为 $f=\\left(\\dfrac{1}{6},\\dfrac{1}{12}\\right)=-\\dfrac{1}{216}$\n\n【解析】$\\begin{cases}f_{x}'\\left(x,y\\right)=3x^{2}-y=0\\\\ f_{y}'\\left(x,y\\right)=24y^{2}-x=0\\end{cases}$\n\n所以 $\\begin{cases}x=0\\\\ y=0\\end{cases}$ 或 $\\begin{cases}x=\\dfrac{1}{6}\\\\ y=\\dfrac{1}{12}\\end{cases}$，所以驻点为 $\\left(0,0\\right)$ 或 $\\left(\\dfrac{1}{6},\\dfrac{1}{12}\\right).$\n\n$A=f_{xx}''\\left(x,y\\right)=6x$，$B=f_{xy}''\\left(x,y\\right)=-1$，$C=f_{yy}''\\left(x,y\\right)=48y$ 代入 $\\left(0,0\\right)$，此时 $AC-B^{2}<0$ 所以不是极值点，代入 $\\left(\\dfrac{1}{6},\\dfrac{1}{12}\\right)$，$AC-B^{2}>0$ 且 $A>0$，所以 $\\left(\\dfrac{1}{6},\\dfrac{1}{12}\\right)$ 是极小值点，$f=\\left(\\dfrac{1}{6},\\dfrac{1}{12}\\right)=-\\dfrac{1}{216}$ 为极小值."
+    }
+   ],
+   "knowledge_points": [
+    "二元函数极值",
+    "驻点判定",
+    "Hessian判别法"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     3
+    ],
+    "anchor": "第(16)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b97b23515d78d50ae94a522c816275272dfe06ee1b01ce231f0a97e15a374e83"
+  },
+  {
+   "id": "math3-2020-17",
+   "subject": "math3",
+   "year": 2020,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "设函数 $y=f(x)$ 满足 $y''+2y'+5y=0$，且有 $f(0)=1$,$f'(0)=-1$.（I）求 $f(x)$；（II）设 $a_{n}=\\int_{n\\pi}^{+\\infty}f(x)dx$，求 $\\sum\\limits_{n=1}^{\\infty}a_{n}$.",
+   "options": [],
+   "answer": "(1)\\ f(x)=e^{-x}\\cos 2x;\\ (2)\\ \\sum\\limits_{n=1}^{\\infty}a_{n}=\\dfrac{1}{5}\\dfrac{1}{e^{\\pi}-1}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（17）【答案】（I）$f(x)=e^{-x}\\cos 2x$ （II）$\\sum\\limits_{n=1}^{\\infty}a_{n}=\\dfrac{1}{5}\\sum\\limits_{n=1}^{\\infty}e^{-n\\pi}=\\dfrac{1}{5}\\dfrac{1}{e^{\\pi}-1}$\n\n【解析】（I）由 $y''+2y'+5y=0$ 得 $\\lambda^{2}+2\\lambda+5=0$，解得 $\\lambda_{1,2}=-1\\pm 2i$，\n\n则 $f(x)=e^{-x}\\left(C_{1}\\cos 2x+C_{2}\\sin 2x\\right)$，又由 $f(0)=1,f'(0)=-1$ 得 $C_{1}=1,C_{2}=0$，\n\n则 $f(x)=e^{-x}\\cos 2x.$\n\n（II）$a_{n}=\\int_{n\\pi}^{+\\infty}e^{-x}\\cos 2xdx=\\dfrac{1}{5}\\left(-e^{-x}\\cos 2x+2e^{-x}\\sin 2x\\right)\\Big|_{n\\pi}^{+\\infty}$\n\n$=\\dfrac{1}{5}e^{-x}\\left(-\\cos 2x+2\\sin 2x\\right)\\Big|_{n\\pi}^{+\\infty}=\\dfrac{1}{5}e^{-n\\pi}$，则 $\\sum\\limits_{n=1}^{\\infty}a_{n}=\\dfrac{1}{5}\\sum\\limits_{n=1}^{\\infty}e^{-n\\pi}=\\dfrac{1}{5}\\dfrac{1}{e^{\\pi}-1}.$"
+    }
+   ],
+   "knowledge_points": [
+    "二阶常系数齐次微分方程",
+    "反常积分",
+    "等比级数求和"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     3
+    ],
+    "anchor": "第(17)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:363e9b24fc9d778711e526710edafa15c170f9221ca8173cf3f201cbac8b0bf9"
+  },
+  {
+   "id": "math3-2020-18",
+   "subject": "math3",
+   "year": 2020,
+   "num": 18,
+   "type": "essay",
+   "score": 10,
+   "stem": "区域 $D=\\left\\{(x,y)\\mid x^{2}+y^{2}\\leqslant1,y\\geqslant0\\right\\}$,连续函数满足 $f(x,y)=y\\sqrt{1-x^{2}}+x\\iint\\limits_{D}f(x,y)dxdy$，计算 $\\iint\\limits_{D}xf(x,y)dxdy$.",
+   "options": [],
+   "answer": "\\dfrac{3\\pi^{2}}{128}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（18）【答案】$\\dfrac{3\\pi^{2}}{128}$\n\n【解析】设 $\\iint_{D}f(x,y)dxdy=A$，则 $f(x,y)=y\\sqrt{1-x^{2}}+Ax$，\n\n两边同取积分得 $A=\\iint_{D}f(x,y)dxdy=\\iint_{D}y\\sqrt{1-x^{2}}dxdy+\\iint_{D}Axdxdy$\n\n$=\\iint_{D}y\\sqrt{1-x^{2}}dxdy=2\\iint_{D_{1}}y\\sqrt{1-x^{2}}dxdy=2\\int_{0}^{1}\\sqrt{1-x^{2}}dx\\int_{0}^{\\sqrt{1-x^{2}}}ydy$\n\n$=\\int_{0}^{1}\\left(1-x^{2}\\right)^{\\frac{3}{2}}dx\\xlongequal{x=\\sin t}\\int_{0}^{\\frac{\\pi}{2}}\\cos^{4}tdt=\\dfrac{3}{4}\\dfrac{1}{2}\\dfrac{\\pi}{2}=\\dfrac{3\\pi}{16}.$\n\n则 $f(x,y)=f(x,y)+\\dfrac{3\\pi}{16}x$，$\\iint_{D}xf(x,y)dxdy=\\iint_{D}x\\left(y\\sqrt{1-x^{2}}+\\dfrac{3\\pi}{16}x\\right)dxdy$\n\n$=\\dfrac{3\\pi}{16}\\cdot\\iint_{D}x^{2}dxdy=\\dfrac{3\\pi}{16}\\cdot 2\\iint_{D_{1}}x^{2}dxdy=\\dfrac{3\\pi}{16}\\cdot 2\\cdot\\dfrac{1}{2}\\iint_{D_{1}}\\left(x^{2}+y^{2}\\right)dxdy$\n\n$=\\dfrac{3\\pi}{16}\\int_{0}^{\\frac{\\pi}{2}}d\\theta\\int_{0}^{1}r^{2}rdr=\\dfrac{3\\pi}{16}\\cdot\\dfrac{\\pi}{2}\\cdot\\dfrac{1}{4}=\\dfrac{3\\pi^{2}}{128}.$"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分",
+    "积分方程",
+    "对称性"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     3
+    ],
+    "anchor": "第(18)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:5606c60f3700476f0075cb9a2c25093c70280e603737b3b70d8b6299c764a467"
+  },
+  {
+   "id": "math3-2020-19",
+   "subject": "math3",
+   "year": 2020,
+   "num": 19,
+   "type": "essay",
+   "score": 10,
+   "stem": "设函数 $f(x)$ 在 $[0,2]$ 上具有连续导数. $f(0)=f(2)=0$，$M=\\max\\limits_{x\\in[0,2]}\\left\\{\\left|f(x)\\right|\\right\\}$. 证:（I）存在 $\\xi\\in(0,2)$ 使 $\\left|f'(\\xi)\\right|\\geqslant M$；（II）若对任意 $x\\in(0,2)$,$\\left|f'(x)\\right|\\leqslant M$,则 $M=0$.",
+   "options": [],
+   "answer": "证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（19）【解析】（I）证明：（I）$M=0$ 时，则 $f(x)=0$，显然成立.\n\n$M>0$ 时，不妨设在点 $c(\\in(0,2))$ 处取得最大值 $\\left|f(c)\\right|=M.$\n\n由拉格朗日中值定理得，存在 $\\xi_{1}\\in(0,c)$，使得 $\\left|f'(\\xi_{1})\\right|=\\left|\\dfrac{f(c)-f(0)}{c-0}\\right|=\\dfrac{M}{c}$；\n\n存在 $\\xi_{2}\\in(c,2)$，使得 $\\left|f'(\\xi_{2})\\right|=\\left|\\dfrac{f(2)-f(c)}{2-c}\\right|=\\dfrac{M}{2-c}$；\n\n所以 $\\left(\\dfrac{M}{c}-M\\right)\\left(\\dfrac{M}{2-c}-M\\right)=-M^{2}\\dfrac{\\left(c-1\\right)^{2}}{c\\left(2-c\\right)}\\leqslant 0$，即 $M$ 介于 $\\dfrac{M}{c}$ 与 $\\dfrac{M}{2-c}$ 之间，\n\n从而有 $\\left|f'(\\xi_{1})\\right|\\geqslant M$ 或 $\\left|f'(\\xi_{2})\\right|\\geqslant M$，结论得证.\n\n（II）当 $c\\neq 1$ 时，采用反证法，假设 $M>0$.\n\n则 $\\left|f'(\\xi_{1})\\right|>M$ 或 $\\left|f'(\\xi_{2})\\right|>M$，与已知矛盾，假设不成立.\n\n当 $c=1$ 时，此时 $\\left|f(1)\\right|=M$，易知 $f'(1)=0$.\n\n不妨设 $f(1)=M$，则 $G(x)=f(x)-Mx,0\\leqslant x\\leqslant 1$；则有 $G'(x)=f'(x)-M\\leqslant 0$，从而 $G(x)$ 单调递减.\n\n又 $G(0)=G(1)=0$，从而 $G(x)=0$，即 $f(x)=Mx,0\\leqslant x\\leqslant 1.$\n\n因此 $f^{\\prime}_{-}(1)=M$，从而 $M=0$。综上所述，$M=0$."
+    }
+   ],
+   "knowledge_points": [
+    "拉格朗日中值定理",
+    "含介点的不等式证明",
+    "反证法"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     3
+    ],
+    "anchor": "第(19)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3def332902f49436ede0922d3860af438fe6919783c3938fe782de04ce6d35fd"
+  },
+  {
+   "id": "math3-2020-20",
+   "subject": "math3",
+   "year": 2020,
+   "num": 20,
+   "type": "essay",
+   "score": 11,
+   "stem": "设二次型 $f(x_{1},x_{2})=x_{1}^{2}-4x_{1}x_{2}+4x_{2}^{2}$ 经正交变换 $\\begin{pmatrix}x_{1}\\\\ x_{2}\\end{pmatrix}=Q\\begin{pmatrix}y_{1}\\\\ y_{2}\\end{pmatrix}$ 化为二次型$g(y_{1},y_{2})=ay_{1}^{2}+4y_{1}y_{2}+by_{2}^{2}$，其中 $a\\geqslant b$．求:（I）求 $a,b$ 的值；（II）求正交矩阵 $Q$.",
+   "options": [],
+   "answer": "(1)\\ a=4,b=1;\\ (2)\\ Q=\\begin{pmatrix}\\dfrac{4}{5}&-\\dfrac{3}{5}\\\\ -\\dfrac{3}{5}&-\\dfrac{4}{5}\\end{pmatrix}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（20）【解析】（I）设 $f=x^{T}Ax$，其中 $A=\\begin{pmatrix}1&-2\\\\ -2&4\\end{pmatrix}$，经正交变换 $x=Qy$，\n\n$f=y^{T}Q^{T}AQy=y^{T}By$，其中 $B=\\begin{pmatrix}a&2\\\\ 2&b\\end{pmatrix}$；\n\n可知 $Q^{T}AQ=Q^{-1}AQ=B$，即 $A$ 相似于 $B$，则 $\\begin{cases}tr(A)=tr(B)\\\\ \\left|A\\right|=\\left|B\\right|\\end{cases}$ 解得 $a=4,b=1$ ；\n\n（II）设 $P_{1}^{-1}AP_{1}=\\Lambda,P_{2}^{-1}BP_{2}=\\Lambda$，则 $\\left(P_{1}P_{2}^{-1}\\right)^{-1}A\\left(P_{1}P_{2}^{-1}\\right)=B$，因此 $Q=P_{1}P_{2}^{-1}$；\n\n由 $\\left|\\lambdaE-A\\right|=\\begin{vmatrix}\\lambda-1&2\\\\ 2&\\lambda-4\\end{vmatrix}=0$，解出 $\\lambda_{1}=0,\\lambda_{2}=5$；\n\n$\\left(0E-A\\right)=\\begin{pmatrix}-1&2\\\\ 2&-4\\end{pmatrix}\\rightarrow\\begin{pmatrix}1&-2\\\\ 0&0\\end{pmatrix}$，故 $\\xi_{1}=\\left(2,1\\right)^{T}$；\n\n$\\left(5E-A\\right)=\\begin{pmatrix}4&2\\\\ 2&1\\end{pmatrix}\\rightarrow\\begin{pmatrix}2&1\\\\ 0&0\\end{pmatrix}$，故 $\\xi_{2}=\\left(1,-2\\right)^{T}$；故 $P_{1}=\\dfrac{1}{\\sqrt{5}}\\begin{pmatrix}2&1\\\\ 1&-2\\end{pmatrix}$；\n\n$\\left(0E-B\\right)=\\begin{pmatrix}-4&-2\\\\ -2&-1\\end{pmatrix}\\rightarrow\\begin{pmatrix}2&1\\\\ 0&0\\end{pmatrix}$，故 $\\eta_{1}=\\left(1,-2\\right)^{T}$；\n\n$\\left(5E-B\\right)=\\begin{pmatrix}1&-2\\\\ -2&4\\end{pmatrix}\\rightarrow\\begin{pmatrix}1&-2\\\\ 0&0\\end{pmatrix}$，故 $\\eta_{2}=\\left(2,1\\right)^{T}$；$P_{2}=\\dfrac{1}{\\sqrt{5}}\\begin{pmatrix}1&2\\\\ -2&1\\end{pmatrix}$；\n\n综上所述，$Q=P_{1}P_{2}^{-1}=\\begin{pmatrix}\\dfrac{4}{5}&-\\dfrac{3}{5}\\\\ -\\dfrac{3}{5}&-\\dfrac{4}{5}\\end{pmatrix}.$"
+    }
+   ],
+   "knowledge_points": [
+    "二次型",
+    "正交变换",
+    "矩阵相似",
+    "特征值与特征向量"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     3
+    ],
+    "anchor": "第(20)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:f0aa0bfcb54aaf8f19176f63936cae79008749a2e80dfbd183b244b811823419"
+  },
+  {
+   "id": "math3-2020-21",
+   "subject": "math3",
+   "year": 2020,
+   "num": 21,
+   "type": "essay",
+   "score": 11,
+   "stem": "设 $A$ 为二阶矩阵，$P=(\\boldsymbol{\\alpha},A\\boldsymbol{\\alpha})$，$\\boldsymbol{\\alpha}$ 是非零向量且不是 $A$ 的特征向量.（I）证明矩阵 $P$ 可逆；（II）若 $A^{2}\\boldsymbol{\\alpha}+A\\boldsymbol{\\alpha}-6\\boldsymbol{\\alpha}=\\boldsymbol{0}$，求 $P^{-1}AP$ 并判断 $A$ 是否相似于对角矩阵.",
+   "options": [],
+   "answer": "(1)\\ 证明见解析;\\ (2)\\ P^{-1}AP=\\begin{pmatrix}0&6\\\\ 1&-1\\end{pmatrix}，A 可以相似对角化",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（21）【解析】（I）$\\alpha$ 不是特征向量且 $\\alpha\\neq 0$，则 $A\\alpha\\neq k\\alpha$，即 $A\\alpha,\\alpha$ 线性无关，故 $P=\\left(\\alpha,A\\alpha\\right)$ 可逆.\n\n（II）设 $P^{-1}AP=B$，则 $AP=PB$，即\n\n$A(\\alpha,A\\alpha)=\\left(A\\alpha,A^{2}\\alpha\\right)=\\left(A\\alpha,6\\alpha-A\\alpha\\right)=\\left(\\alpha,A\\alpha\\right)\\begin{pmatrix}0&6\\\\ 1&-1\\end{pmatrix}$\n\n所以 $P^{-1}AP=B=\\begin{pmatrix}0&6\\\\ 1&-1\\end{pmatrix}$，则 $A\\sim B$，\n\n$\\left|\\lambdaE-B\\right|=\\begin{vmatrix}\\lambda&-6\\\\ -1&\\lambda+1\\end{vmatrix}=\\left(\\lambda+3\\right)\\left(\\lambda-2\\right)=0$\n\n$\\lambda_{1}=-3,\\lambda_{2}=2$，因为 $\\lambda_{1}\\neq\\lambda_{2}$，所以 $B$ 可以相似对角化，则 $A$ 可以相似对角化."
+    }
+   ],
+   "knowledge_points": [
+    "线性无关",
+    "特征值与特征向量",
+    "相似对角化判定"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     3,
+     4
+    ],
+    "anchor": "第(21)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:368c820575b9902d84228f417b5f7c088e8ece80218df41aa5000aa0757d0d01"
+  },
+  {
+   "id": "math3-2020-22",
+   "subject": "math3",
+   "year": 2020,
+   "num": 22,
+   "type": "essay",
+   "score": 11,
+   "stem": "二维随机变量 $(X,Y)$ 在区域 $D=\\left\\{(x,y)\\middle|0<y<\\sqrt{1-x^{2}}\\right\\}$ 上服从均匀分布，且$Z_{1}=\\begin{cases}1,&X-Y>0\\\\ 0,&X-Y\\leqslant0\\end{cases}$，$Z_{2}=\\begin{cases}1,&X+Y>0\\\\ 0,&X+Y\\leqslant0\\end{cases}$. 求:（I）二维随机变量 $(Z_{1},Z_{2})$ 的概率分布；（II）求 $Z_{1},Z_{2}$ 得相关系数.",
+   "options": [],
+   "answer": "(1)\\ 分布律见解析;\\ (2)\\ \\rho=\\dfrac{1}{3}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（22）【解析】由题意 $f\\left(x,y\\right)=\\begin{cases}\\dfrac{2}{\\pi},\\left(x,y\\right)\\in D\\\\ 0,\\left(x,y\\right)\\notin D\\end{cases}$，所以可计算\n\n$P\\left(Z_{1}=0,Z_{2}=0\\right)=P\\left(X-Y\\leq 0,X+Y\\leq 0\\right)=\\dfrac{1}{4}$；\n\n$P\\left(Z_{1}=0,Z_{2}=1\\right)=P\\left(X-Y\\leq 0,X+Y>0\\right)=\\dfrac{1}{2}$；\n\n$P\\left(Z_{1}=1,Z_{2}=0\\right)=P\\left(X-Y>0,X+Y\\leq 0\\right)=0$；\n\n$P\\left(Z_{1}=1,Z_{2}=1\\right)=P\\left(X-Y>0,X+Y>0\\right)=\\dfrac{1}{4}.$\n\n可得 $\\begin{array}{|c|c|c|}\\hline Z_{1}\\backslash Z_{2}&0&1\\\\ \\hline 0&\\dfrac{1}{4}&\\dfrac{1}{2}\\\\ \\hline 1&0&\\dfrac{1}{4}\\\\ \\hline\\end{array}$\n\n由（1）可计算 $E\\left(Z_{1}\\right)=\\dfrac{1}{4},E\\left(Z_{2}\\right)=\\dfrac{3}{4},D\\left(Z_{1}\\right)=\\dfrac{3}{16},D\\left(Z_{2}\\right)=\\dfrac{3}{16},E\\left(Z_{1}Z_{2}\\right)=\\dfrac{1}{4}.$\n\n所以可得 $\\rho=\\dfrac{Cov\\left(Z_{1},Z_{2}\\right)}{\\sqrt{DZ_{1}}\\sqrt{DZ_{2}}}=\\dfrac{E\\left(Z_{1}Z_{2}\\right)-EZ_{1}\\cdot EZ_{2}}{\\sqrt{DZ_{1}}\\sqrt{DZ_{2}}}=\\dfrac{1}{3}.$"
+    }
+   ],
+   "knowledge_points": [
+    "二维均匀分布",
+    "离散型随机变量分布律",
+    "相关系数"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     4
+    ],
+    "anchor": "第(22)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:2bdba2fa04b72c7910c7d59fdb1b2951095d302a7cdabf7c00c3531811de86c7"
+  },
+  {
+   "id": "math3-2020-23",
+   "subject": "math3",
+   "year": 2020,
+   "num": 23,
+   "type": "essay",
+   "score": 11,
+   "stem": "设某元件的使用寿命 $T$ 的分布函数为 $F(t)=\\begin{cases}1-e^{-\\left(\\frac{t}{\\theta}\\right)^{m}},&t\\geqslant0\\\\ 0,&t<0\\end{cases}$，其中 $\\theta,m$ 为参数且大于零.（I）计算概率 $P\\left\\{T>t\\right\\}$ 与 $P(T>s+t|T>s)$，其中 $s>0,t>0$；（II）任取 $\\boldsymbol{n}$ 个元件试验，其寿命分别为 $t_{1},t_{2},...,t_{n}$，若 $\\boldsymbol{m}$ 已知，求 $\\theta$ 得最大似然估计值 $\\hat{\\theta}$.",
+   "options": [],
+   "answer": "(1)\\ P\\left\\{T>t\\right\\}=e^{-\\left(\\frac{t}{\\theta}\\right)^{m}},\\ P\\left\\{T>s+t\\mid T>s\\right\\}=e^{\\left(\\frac{s}{\\theta}\\right)^{m}-\\left(\\frac{s+t}{\\theta}\\right)^{m}};\\ (2)\\ \\hat{\\theta}=\\sqrt[m]{\\dfrac{1}{n}\\sum\\limits_{i=1}^{n}t_{i}^{m}}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "（23）【解析】（I）$P\\left\\{T>t\\right\\}=1-P\\left\\{T\\leq t\\right\\}=1-F\\left(t\\right)=e^{-\\left(\\frac{t}{\\theta}\\right)^{m}}$，\n\n$P\\left\\{T>t+s\\mid T>s\\right\\}=\\dfrac{P\\left\\{T>t+s,T>s\\right\\}}{P\\left\\{T>s\\right\\}}=\\dfrac{e^{-\\left(\\frac{s+t}{\\theta}\\right)^{m}}}{e^{-\\left(\\frac{s}{\\theta}\\right)^{m}}}=e^{\\left(\\frac{s}{\\theta}\\right)^{m}-\\left(\\frac{s+t}{\\theta}\\right)^{m}}$；\n\n（II）求得密度函数 $f\\left(t\\right)=\\begin{cases}\\dfrac{mt^{m-1}}{\\theta^{m}}e^{-\\left(\\frac{t}{\\theta}\\right)^{m}},&t\\geq 0\\\\ 0,&t<0\\end{cases}$，\n\n故可构造似然函数为 $L\\left(\\theta\\right)=\\dfrac{m^{n}\\prod\\limits_{i=1}^{n}t_{i}^{m-1}}{\\theta^{mn}}e^{-\\sum\\limits_{i=1}^{n}\\left(\\frac{t_{i}}{\\theta}\\right)^{m}},\\quad t_{i}>0,i=1,2,3,...,n,$\n\n取对数 $\\ln L\\left(\\theta\\right)=n\\ln m+\\left(m-1\\right)\\ln\\left(t_{1}t_{2}\\cdots t_{n}\\right)-mn\\ln\\theta-\\dfrac{1}{\\theta^{m}}\\sum\\limits_{i=1}^{n}t_{i}^{m}$\n\n求导可得 $\\dfrac{d\\ln L\\left(\\theta\\right)}{d\\theta}=-\\dfrac{mn}{\\theta}+m\\dfrac{1}{\\theta^{m+1}}\\sum\\limits_{i=1}^{n}t_{i}^{m}=0,$\n\n解出 $\\theta$ 的极大似然估计为 $\\hat{\\theta}=\\sqrt[m]{\\dfrac{1}{n}\\sum\\limits_{i=1}^{n}t_{i}^{m}}$ ."
+    }
+   ],
+   "knowledge_points": [
+    "分布函数",
+    "威布尔分布",
+    "最大似然估计"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+   "source_ref": {
+    "pdf": "2020数学三真题及解析.pdf",
+    "sha256": "79516a0eef719401a2c84e4c975506f400a1d3680dc31a7b4a2723d7e6495c46",
+    "pages": [
+     4
+    ],
+    "anchor": "第(23)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:c496c76eaf42b5a4b66b4db708846c0d2a07a396a5862e04c360e3888f672246"
+  }
+ ]
+}
