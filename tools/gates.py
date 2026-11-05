@@ -27,7 +27,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIMIT = 500 * 1024
-BASELINE = {"politics": 456, "math": 250, "english": 675, "cs408": 376, "law498": 58}
+BASELINE = {"politics": 456, "math": 250, "english": 675, "cs408": 376, "law498": 116}
 REQUIRED = ["id", "subject", "year", "num", "type", "stem", "answer",
             "source_blocks", "source_hash", "content_hash"]
 # 主观题没有单一「答案字符串」，答案材料以原文区块形式存在（合同第 2 章：答案只可照录，不可编造）。

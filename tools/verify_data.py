@@ -5,7 +5,7 @@ import glob, json, os, re, sys
 
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXPECT = {"politics": 456, "math": 273, "english": 675, "cs408": 376, "law498": 58}
+EXPECT = {"politics": 456, "math": 273, "english": 675, "cs408": 376, "law498": 116}
 REQ = ["id", "subject", "year", "num", "type", "stem", "source_blocks", "source_hash", "origin", "content_hash", "schema_version"]
 
 ok = True

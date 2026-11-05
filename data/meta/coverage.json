@@ -207,9 +207,10 @@
   "law498": {
     "status": "active",
     "dataYears": [
-      2022
+      2022,
+      2023
     ],
-    "questions": 58,
+    "questions": 116,
     "paperYears": [
       2022
     ]

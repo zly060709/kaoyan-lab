@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T16:33:56Z",
+  "updated_at": "2026-11-05T17:40:15Z",
   "subjects": [
     {
       "id": "politics",
@@ -542,10 +542,12 @@
       "need": "提供历年真题资料即可开工",
       "dataDir": "law498",
       "dataYears": [
-        2022
+        2022,
+        2023
       ],
       "yearCounts": {
-        "2022": 58
+        "2022": 58,
+        "2023": 58
       },
       "paperYears": [
         2022
@@ -553,7 +555,7 @@
       "paperPages": {
         "2022": 19
       },
-      "questionTotal": 58,
+      "questionTotal": 116,
       "analysisYears": [],
       "figureYears": [],
       "paperDir": "law498"
