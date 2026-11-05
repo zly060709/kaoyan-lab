@@ -25,7 +25,7 @@ VERIFY_PLAIN = b"kaoyan-lab-v1"
 KDF_ITER = 310000
 
 # 部署白名单（A06）：内部文档 / legacy / 工具 / 明文数据一律不进发布目录
-ROOT_FILES = ["index.html", "lab3d.html", "diag.html", "404.html", "robots.txt",
+ROOT_FILES = ["index.html", "lab3d.html", "diag.html", "404.html", "about.html", "robots.txt",
               "manifest.webmanifest", "sw.js", ".nojekyll"]
 ROOT_DIRS = ["assets"]
 VENDOR_FILES = [
