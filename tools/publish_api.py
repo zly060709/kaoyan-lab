@@ -98,7 +98,9 @@ def main():
         tree = None
         if tc and os.path.exists(tc):
             cached = json.load(io.open(tc, encoding="utf-8"))
-            if cached.get("sha") == head_sha:
+            # 缓存里存的是 tree sha（trees 响应的顶层 sha），此前拿它和 commit sha 比，
+            # 永远不相等 -> --tree-cache 形同虚设，每次仍去取会被截断的全量 tree。
+            if cached.get("sha") == base_tree:
                 tree = {"tree": cached["tree"], "truncated": False}
                 print("远端 tree 用本地缓存", tc)
         if tree is None:
