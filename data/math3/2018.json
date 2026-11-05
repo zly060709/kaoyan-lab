@@ -4,7 +4,7 @@
  "paper": "数学（三）",
  "schema_version": "1.0.0",
  "question_count": 23,
- "source_note": "视觉转录自《2018数学三真题及解析.pdf》（data/math3/pages/2018/，15 页）。2009–2020 年数学三结构：选择题 8×4=32 分、填空题 6×4=24 分、解答题 15–23 共 94 分，合计 150 分。解答题逐题分值照卷面题号后的「（本题满分 X 分）」印刷。题干/选项/答案/解析逐字照录，原卷的疑似排版或笔误（错字、漏字、半全角混用、上下标排版不一致）一律不改，逐条登记在 tools/work/m32018_notes.md（11 条编号记录）。",
+ "source_note": "视觉转录自《2018数学三真题及解析.pdf》（data/math3/pages/2018/，15 页）。2009–2020 年数学三结构：选择题 8×4=32 分、填空题 6×4=24 分、解答题 15–23 共 94 分，合计 150 分。解答题逐题分值照卷面题号后的「（本题满分 X 分）」印刷。题干/选项/答案/解析逐字照录，原卷的疑似排版或笔误（错字、漏字、半全角混用、上下标排版不一致）一律不改，逐条登记在 tools/work/m32018_notes.md（11 条编号记录）。本卷另有 1 幅原卷图形，为页面影像直接裁图（data/math3/2018.media.json），未重绘、未派生。",
  "questions": [
   {
    "id": "math3-2018-1",
@@ -753,7 +753,7 @@
     {
      "role": "analysis",
      "origin": "source",
-     "text": "【解析】积分区域如右图阴影部分所示，且曲线与直线的交点为$\\left(\\dfrac{1}{\\sqrt{2}},\\dfrac{\\sqrt{3}}{\\sqrt{2}}\\right)$.\n\n则$\\iint\\limits_{D}x^{2}\\mathrm{d}x\\mathrm{d}y=\\int_{0}^{\\frac{\\sqrt{2}}{2}}\\mathrm{d}x\\int_{\\sqrt{3}x}^{\\sqrt{3(1-x^{2})}}x^{2}\\mathrm{d}y$\n\n$=\\sqrt{3}\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{2}(\\sqrt{1-x^{2}}-x)\\mathrm{d}x$\n\n$=\\sqrt{3}(\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{2}\\sqrt{1-x^{2}}\\mathrm{d}x-\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{3}\\mathrm{d}x)$，\n\n其中，$\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{2}\\sqrt{1-x^{2}}\\mathrm{d}x\\xlongequal{x=\\sin t}\\int_{0}^{\\frac{\\pi}{4}}\\sin^{2}t\\cdot\\cos^{2}t\\mathrm{d}t$\n\n$=\\dfrac{1}{4}\\int_{0}^{\\frac{\\pi}{4}}\\sin^{2}2t\\mathrm{d}t=\\dfrac{1}{8}\\int_{0}^{\\frac{\\pi}{4}}(1-\\cos4t)\\mathrm{d}t$\n\n$=\\dfrac{1}{8}(t-\\dfrac{\\sin4t}{4})\\Big|_{0}^{\\frac{\\pi}{4}}=\\dfrac{\\pi}{32}$，\n\n$\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{3}\\mathrm{d}x=\\dfrac{x^{4}}{4}\\Big|_{0}^{\\frac{\\sqrt{2}}{2}}=\\dfrac{1}{16}$，\n\n所以 $\\iint\\limits_{D}x^{2}\\mathrm{d}x\\mathrm{d}y=\\sqrt{3}(\\dfrac{\\pi}{32}-\\dfrac{1}{16})=\\dfrac{\\sqrt{3}(\\pi-2)}{32}$."
+     "text": "【解析】积分区域如右图阴影部分所示，且曲线与直线的交点为$\\left(\\dfrac{1}{\\sqrt{2}},\\dfrac{\\sqrt{3}}{\\sqrt{2}}\\right)$.\n\n@@M:math3-2018-16:0@@\n\n则$\\iint\\limits_{D}x^{2}\\mathrm{d}x\\mathrm{d}y=\\int_{0}^{\\frac{\\sqrt{2}}{2}}\\mathrm{d}x\\int_{\\sqrt{3}x}^{\\sqrt{3(1-x^{2})}}x^{2}\\mathrm{d}y$\n\n$=\\sqrt{3}\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{2}(\\sqrt{1-x^{2}}-x)\\mathrm{d}x$\n\n$=\\sqrt{3}(\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{2}\\sqrt{1-x^{2}}\\mathrm{d}x-\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{3}\\mathrm{d}x)$，\n\n其中，$\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{2}\\sqrt{1-x^{2}}\\mathrm{d}x\\xlongequal{x=\\sin t}\\int_{0}^{\\frac{\\pi}{4}}\\sin^{2}t\\cdot\\cos^{2}t\\mathrm{d}t$\n\n$=\\dfrac{1}{4}\\int_{0}^{\\frac{\\pi}{4}}\\sin^{2}2t\\mathrm{d}t=\\dfrac{1}{8}\\int_{0}^{\\frac{\\pi}{4}}(1-\\cos4t)\\mathrm{d}t$\n\n$=\\dfrac{1}{8}(t-\\dfrac{\\sin4t}{4})\\Big|_{0}^{\\frac{\\pi}{4}}=\\dfrac{\\pi}{32}$，\n\n$\\int_{0}^{\\frac{\\sqrt{2}}{2}}x^{3}\\mathrm{d}x=\\dfrac{x^{4}}{4}\\Big|_{0}^{\\frac{\\sqrt{2}}{2}}=\\dfrac{1}{16}$，\n\n所以 $\\iint\\limits_{D}x^{2}\\mathrm{d}x\\mathrm{d}y=\\sqrt{3}(\\dfrac{\\pi}{32}-\\dfrac{1}{16})=\\dfrac{\\sqrt{3}(\\pi-2)}{32}$."
     }
    ],
    "knowledge_points": [
@@ -783,7 +783,7 @@
     "anchor": "第(16)题"
    },
    "schema_version": "1.0.0",
-   "content_hash": "sha256:1bb81e7dc458842e9b28dda46851099443af225ca4ff03b2c0fadb882d74aade"
+   "content_hash": "sha256:3a105002cba90f8dee97f08d544d7b696ce072d88713bcc8c333fb63a98acb6f"
   },
   {
    "id": "math3-2018-17",

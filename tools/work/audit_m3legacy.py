@@ -3,9 +3,11 @@
 A1 结构：选择 8 / 填空 6 / 解答 9，分值 4/4/推定，合计 150
 A2 answer 字段与解析块首行【答案】（X）逐题一致
 A3 选择题恰 4 个选项、填空与解答不给选项
-A4 解析块非空、含【答案】或【解析】/【详解】标记
+A4 解析块非空、含【答案】或【解析】/【详解】/【解】/【证明】标记
 A5 题干/选项里仍有【图】等未接图的占位 -> 登记为缺口
 A6 与数学一/数学二同年份同题干的答案交叉核对
+A7 题干/解析文字提到"如图/右图/下图/见图"却整题无 @@M 占位也无 media 字段
+   （草稿把原图静默丢掉的情形，A5 拦不住——2016 第 1/3 题、2015 第 2 题由此发现）
 用法：python tools/work/audit_m3legacy.py [2019 ...]
 """
 import io
@@ -58,13 +60,16 @@ def audit(year):
             out.append(f"A3 {q['id']} 非选择题带选项")
         if len(blk.strip()) < 8:
             out.append(f"A4 {q['id']} 解析过短")
-        if not re.search(r"【(答案|解析|详解|证明)】", blk):
+        if not re.search(r"【(答案|解析|详解|证明|解)】", blk):
             out.append(f"A4 {q['id']} 解析无【答案】/【解析】标记")
         m = re.search(r"【答案】\s*[（(]\s*([A-D])", blk)
         if m and q["type"] == "single" and m.group(1) != (q["answer"] or "").strip():
             out.append(f"A2 {q['id']} 字段 {q['answer']!r} vs 解析 {m.group(1)}")
         if "【图】" in q["stem"] or any("【图】" in o for o in q["options"]):
             out.append(f"A5 {q['id']} 题干/选项含【图】占位（原图未接入）")
+        whole = q["stem"] + " " + " ".join(q["options"]) + " " + blk
+        if re.search(r"如图|右图|左图|下图|见图", whole) and "@@M:" not in whole and not q["media"]:
+            out.append(f"A7 {q['id']} 文字提到图但整题无 media（草稿静默漏图）")
     for other in ("math1", "math2"):
         for oq in load(other, year):
             key = norm_stem(oq["stem"])

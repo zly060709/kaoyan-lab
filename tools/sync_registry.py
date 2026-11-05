@@ -104,6 +104,29 @@ def analysis_years(data_dir):
     return sorted(out)
 
 
+def figure_years(data_dir):
+    """列出真正有 DSL 图形文件的年份（data/{科}/figures/{年}.json 且是非空数组）。
+
+    与 analysisYears 同因：前端无条件请求会在缺图年份的每个题页留下 404，
+    被 try/catch 吞掉但浏览器 console 仍报错，合同「console 报错 = 0」成假通过。
+    """
+    base = os.path.join(ROOT, "data", data_dir, "figures")
+    out = []
+    if not os.path.isdir(base):
+        return out
+    for fn in sorted(os.listdir(base)):
+        m = re.match(r"^(\d{4})\.json$", fn)
+        if not m:
+            continue
+        try:
+            d = load(os.path.join(base, fn))
+        except Exception:
+            continue
+        if isinstance(d, list) and d:
+            out.append(int(m.group(1)))
+    return sorted(out)
+
+
 def main():
     spath = os.path.join(ROOT, "data", "meta", "subjects.json")
     reg = load(spath)
@@ -118,6 +141,7 @@ def main():
         s["paperYears"] = sorted(py.keys())
         s["paperPages"] = {str(y): n for y, n in sorted(py.items())}
         s["analysisYears"] = analysis_years(data_dir)
+        s["figureYears"] = figure_years(data_dir)
         total = sum(per_year.values())
         s["questionTotal"] = total
         if total > 0:

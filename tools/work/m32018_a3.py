@@ -14,6 +14,7 @@ A[15] = (r"a=1,\ b=1", [
 A[16] = (r"\dfrac{\sqrt{3}(\pi-2)}{32}", [
     r"【解析】积分区域如右图阴影部分所示，且曲线与直线的交点为"
     r"$\left(\dfrac{1}{\sqrt{2}},\dfrac{\sqrt{3}}{\sqrt{2}}\right)$.",
+    r"@@M:math3-2018-16:0@@",
     r"则$\iint\limits_{D}x^{2}\mathrm{d}x\mathrm{d}y=\int_{0}^{\frac{\sqrt{2}}{2}}\mathrm{d}x\int_{\sqrt{3}x}^{\sqrt{3(1-x^{2})}}x^{2}\mathrm{d}y$",
     r"$=\sqrt{3}\int_{0}^{\frac{\sqrt{2}}{2}}x^{2}(\sqrt{1-x^{2}}-x)\mathrm{d}x$",
     r"$=\sqrt{3}(\int_{0}^{\frac{\sqrt{2}}{2}}x^{2}\sqrt{1-x^{2}}\mathrm{d}x-\int_{0}^{\frac{\sqrt{2}}{2}}x^{3}\mathrm{d}x)$，",

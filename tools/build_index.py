@@ -12,6 +12,7 @@ SNIP = 600
 
 def norm(s):
     s = re.sub(r"<[^>]+>", " ", s or "")
+    s = re.sub(r"@@M:[-\w]+:\d+@@", " ", s)  # 图片占位符不进搜索文本，否则命中行印出裸 @@M:…@@
     return re.sub(r"\s+", " ", s).strip()
 
 total = 0

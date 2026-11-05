@@ -34,7 +34,7 @@ if __name__ == "__main__":
     years = [int(a) for a in sys.argv[1:]] if len(sys.argv) > 1 else None
     total_err = 0
     for f in sorted(os.listdir(DIR)):
-        if not (f.endswith(".json") and f[0].isdigit()):
+        if not (f.endswith(".json") and f[0].isdigit()) or ".media" in f:
             continue
         y = int(f.split(".")[0])
         if years and y not in years:

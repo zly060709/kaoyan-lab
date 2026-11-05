@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T11:16:52Z",
+  "updated_at": "2026-11-05T12:17:40Z",
   "note": "20 科全国统考/联考框架。status: active=已上线 | imaging=仅有原卷影像（题目转录中） | pending=待用户提供资料（合同禁止编造真题）。dataDir 为数据目录别名。dataYears/paperYears/questionTotal 由 tools/sync_registry.py 依真实数据反推。",
   "subjects": [
     {
@@ -47,7 +47,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 456,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "english",
@@ -99,7 +100,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 780,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "math1",
@@ -143,7 +145,20 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 250,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "math2",
@@ -195,7 +210,24 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 342,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "math3",
@@ -217,6 +249,7 @@
         2013,
         2014,
         2015,
+        2016,
         2017,
         2018,
         2019,
@@ -231,6 +264,7 @@
         "2013": 23,
         "2014": 23,
         "2015": 23,
+        "2016": 23,
         "2017": 23,
         "2018": 23,
         "2019": 23,
@@ -266,8 +300,13 @@
         "2019": 12,
         "2020": 13
       },
-      "questionTotal": 273,
-      "analysisYears": []
+      "questionTotal": 296,
+      "analysisYears": [],
+      "figureYears": [
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "english2",
@@ -287,7 +326,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "cs408",
@@ -334,7 +374,8 @@
         2023,
         2024,
         2025
-      ]
+      ],
+      "figureYears": []
     },
     {
       "id": "mgt199",
@@ -407,7 +448,8 @@
         2024,
         2025,
         2026
-      ]
+      ],
+      "figureYears": []
     },
     {
       "id": "econ396",
@@ -423,7 +465,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "law397",
@@ -439,7 +482,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "law398",
@@ -455,7 +499,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "law498",
@@ -477,7 +522,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 58,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "med306",
@@ -493,7 +539,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "med307",
@@ -509,7 +556,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "edu311",
@@ -525,7 +573,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "psy312",
@@ -541,7 +590,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "his313",
@@ -557,7 +607,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "agri314",
@@ -573,7 +624,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "chem315",
@@ -589,7 +641,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "plant414",
@@ -605,7 +658,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     },
     {
       "id": "animal415",
@@ -621,7 +675,8 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 0,
-      "analysisYears": []
+      "analysisYears": [],
+      "figureYears": []
     }
   ]
 }

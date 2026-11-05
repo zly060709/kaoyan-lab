@@ -67,6 +67,13 @@ def build(year):
              "按 15–19 题各 10 分、20–23 题各 11 分折算（50+44=94），系推定值而非卷面原文。"
     )
 
+    media_note = ""
+    mpath = os.path.join(ROOT, "data", "math3", f"{year}.media.json")
+    if os.path.exists(mpath):
+        mdoc = json.load(io.open(mpath, encoding="utf-8"))
+        nm = sum(len(v) for v in (mdoc.get("items") or {}).values())
+        media_note = (f"本卷另有 {nm} 幅原卷图形，为页面影像直接裁图（data/math3/{year}.media.json），未重绘、未派生。")
+
     questions = []
     for it in qmod.ITEMS:
         num = it["num"]
@@ -118,6 +125,7 @@ def build(year):
             "题干/选项/答案/解析逐字照录，原卷的疑似排版或笔误（错字、漏字、半全角混用、"
             "上下标排版不一致）一律不改，逐条登记在 tools/work/" + f"m3{year}_notes.md" +
             (f"（{n_lines} 条编号记录）。" if os.path.exists(notes) else "（本卷尚无复核记录，待补）。")
+            + media_note
         ),
         "questions": questions,
     }

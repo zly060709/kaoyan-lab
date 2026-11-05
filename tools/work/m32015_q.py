@@ -18,7 +18,7 @@ add(num=1, type="single", score=4, pages=[1], anchor="第(1)题",
 
 add(num=2, type="single", score=4, pages=[1], anchor="第(2)题",
     stem=r"设函数 $f(x)$ 在 $(-\infty,+\infty)$ 内连续,其 2 阶导函数 $f''(x)$ 的图形如右图所示,"
-         r"则曲线 $y=f(x)$ 的拐点个数为（　）",
+         r"则曲线 $y=f(x)$ 的拐点个数为（　） @@M:math3-2015-2:0@@",
     options=[r"$0$", r"$1$", r"$2$", r"$3$"])
 
 add(num=3, type="single", score=4, pages=[1], anchor="第(3)题",

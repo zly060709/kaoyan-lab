@@ -50,6 +50,13 @@ def main():
                     pass
         if n:
             qs[d] = n
+    # 总题量按注册表求和（注册表由 sync_registry 从磁盘反推）。此前 questions_total
+    # 是一个从不更新的死值，长期停在 3272 而磁盘实为 3582。
+    try:
+        reg = json.load(open(os.path.join(ROOT, "data", "meta", "subjects.json"), encoding="utf-8"))
+        state["metrics"]["questions_total"] = sum(int(s.get("questionTotal") or 0) for s in reg["subjects"])
+    except Exception as e:
+        print(f"[warn] questions_total 反推失败: {e}")
     state["updated_at"] = now()
     if task != "heartbeat" and task not in state.setdefault("done_set", []):
         state["done_set"].append(task)

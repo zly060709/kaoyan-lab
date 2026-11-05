@@ -30,12 +30,13 @@ add(num=3, type="single", score=4, pages=[1], anchor="第(3)题",
     ])
 
 add(num=4, type="single", score=4, pages=[1, 2], anchor="第(4)题",
-    stem=r"设函数 $y=f(x)$ 在区间 $[-1,3]$ 上的图形如图所示，则函数 $F(x)=\displaystyle\int_{0}^{x}f(t)dt$ 为（ ）",
+    stem=r"设函数 $y=f(x)$ 在区间 $[-1,3]$ 上的图形如图所示，则函数 $F(x)=\displaystyle\int_{0}^{x}f(t)dt$ 为（ ）"
+         r" @@M:math3-2009-4:0@@",
     options=[
-        r"【图】选项（A）的 $F(x)$ 图形（原卷 p1，图形描述见转录 notes）",
-        r"【图】选项（B）的 $F(x)$ 图形（原卷 p1，图形描述见转录 notes）",
-        r"【图】选项（C）的 $F(x)$ 图形（原卷 p2，图形描述见转录 notes）",
-        r"【图】选项（D）的 $F(x)$ 图形（原卷 p2，图形描述见转录 notes）",
+        r"@@M:math3-2009-4:1@@",
+        r"@@M:math3-2009-4:2@@",
+        r"@@M:math3-2009-4:3@@",
+        r"@@M:math3-2009-4:4@@",
     ])
 
 add(num=5, type="single", score=4, pages=[2], anchor="第(5)题",

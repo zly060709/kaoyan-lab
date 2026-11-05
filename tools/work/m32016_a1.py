@@ -9,6 +9,7 @@ A[1] = ("B", [
     r"$x_{5}$ 两侧 $f'(x)$ 不变号，则不是极值点，在 $x_{2}$ 处一阶导数不存在，但在 $x_{2}$ 两侧 $f'(x)$ 不变号，",
     r"则不是极值点，在 $x_{2}$ 处二阶导数不存在，在 $x_{4}$ 和 $x_{5}$ 处二阶导数为零，在这三个点两侧一阶",
     r"导函数增减性发生变化，则都为拐点，故应选（B）.",
+    r"@@M:math3-2016-1:1@@",
 ])
 
 A[2] = ("D", [
@@ -31,6 +32,7 @@ A[3] = ("B", [
     r"故 $J_{2}=\displaystyle\iint\limits_{D_{2}}\sqrt[3]{x-y}dxdy=\displaystyle\iint\limits_{D_{23}}\sqrt[3]{x-y}dxdy>0$，",
     r"$J_{3}=\displaystyle\iint\limits_{D_{3}}\sqrt[3]{x-y}dxdy=\displaystyle\iint\limits_{D_{33}}\sqrt[3]{x-y}dxdy<0$,",
     r"故 $J_{3}<J_{1}<J_{2}$，选（B）.",
+    r"@@M:math3-2016-3:0@@ @@M:math3-2016-3:1@@ @@M:math3-2016-3:2@@",
 ])
 
 A[4] = ("A", [
