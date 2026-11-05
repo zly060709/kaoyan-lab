@@ -630,7 +630,7 @@ async function viewSearch(q){
     if(!hits.length){res.innerHTML="<div class='qcard'>无结果。换个关键词试试。</div>";return}
     const hl=t=>{t=prevText(String(t||""),160);let i=t.toLowerCase().indexOf(kw);
       if(kw&&i>=0){const a=Math.max(0,i-40);t=t.slice(a)}
-      // 搜索摘要兜底（D104，覆盖收敛⑭b bal() 未覆盖的 $ 外残片）：索引截断可能把 LaTeX 切在 $ 外；清洗 $ 外残片，$ 内交 KaTeX
+      // 搜索摘要兜底（D111，覆盖收敛⑭b bal() 未覆盖的 $ 外残片）：索引截断可能把 LaTeX 切在 $ 外；清洗 $ 外残片，$ 内交 KaTeX
       t=t.split("$").map((seg,idx)=>idx%2===0?seg.replace(/\\(?:begin|end)\{[a-zA-Z*]+\}/g," ").replace(/\\[a-zA-Z]+/g," ").replace(/[{}]/g,""):seg).join("$");
       i=t.toLowerCase().indexOf(kw);
       if(kw&&i>=0){const a=Math.max(0,i-30);return (a>0?"…":"")+esc(t.slice(a,i))+"<mark>"+esc(t.slice(i,i+kw.length))+"</mark>"+esc(t.slice(i+kw.length,i+kw.length+110))}return esc(t.slice(0,140))};
