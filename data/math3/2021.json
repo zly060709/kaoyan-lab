@@ -1,0 +1,1071 @@
+{
+ "subject": "math3",
+ "year": 2021,
+ "paper": "数学（三）",
+ "schema_version": "1.0.0",
+ "question_count": 22,
+ "source_note": "视觉转录自《2021数学三真题及解析.pdf》（data/math3/pages/2021/，12 页）：p1–p4 试题、p5–p12 答案解析；题干/选项/答案/解析逐字照录，原卷中疑似排版问题的行（如第 17 题解析用拉丁字母 a 指代题干中的 $\\alpha$、第 21 题 (3E−A) 行变换结果的第一行）一并不改。第 5 题解析 $|\\lambda E-A|$ 第二个等号一步为原文照录。2021 年数学三结构：选择题 10×5 分、填空题 6×5 分、解答题 6 题共 70 分（原卷未逐题印分值，按 17 题 10 分、18–22 题各 12 分计）。",
+ "questions": [
+  {
+   "id": "math3-2021-1",
+   "subject": "math3",
+   "year": 2021,
+   "num": 1,
+   "type": "single",
+   "score": 5,
+   "stem": "当 $x\\to0$ 时，$\\displaystyle\\int_{0}^{x^{2}}\\left(e^{t^{3}}-1\\right)dt$ 是 $x^{7}$ 的（ ）",
+   "options": [
+    "低阶无穷小",
+    "等价无穷小",
+    "高阶无穷小",
+    "同阶但非等价无穷小"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】$\\lim\\limits_{x\\to0}\\dfrac{\\displaystyle\\int_{0}^{x^{2}}\\left(e^{t^{3}}-1\\right)dt}{x^{7}}=\\lim\\limits_{x\\to0}\\dfrac{2x\\cdot\\left(e^{x^{6}}-1\\right)}{7x^{6}}=\\lim\\limits_{x\\to0}\\dfrac{2x^{7}}{7x^{6}}=0$，故 $\\displaystyle\\int_{0}^{x^{2}}\\left(e^{t^{3}}-1\\right)dt$ 是 $x^{7}$ 的高阶无穷小，故选（C）"
+    }
+   ],
+   "knowledge_points": [
+    "变限积分求导",
+    "无穷小阶的比较"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     1
+    ],
+    "anchor": "第(1)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:e5a91040edb85ada7543abcfa692bc4ea455dc6fb7d14161e17058ec10b1501e"
+  },
+  {
+   "id": "math3-2021-2",
+   "subject": "math3",
+   "year": 2021,
+   "num": 2,
+   "type": "single",
+   "score": 5,
+   "stem": "$f(x)=\\begin{cases}\\dfrac{e^{x}-1}{x},&x\\neq0,\\\\ 1,&x=0\\end{cases}$ 在 $x=0$ 处（ ）",
+   "options": [
+    "连续且取得极大值",
+    "连续且取得极小值",
+    "可导且导数为零",
+    "可导且导数不为零"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】由于 $\\lim\\limits_{x\\to0}f(x)=\\lim\\limits_{x\\to0}\\dfrac{e^{x}-1}{x}=1=f(0)$，故在 $x=0$ 处连续.\n\n又 $f'(0)=\\lim\\limits_{x\\to0}\\dfrac{f(x)-f(0)}{x}=\\lim\\limits_{x\\to0}\\dfrac{\\dfrac{e^{x}-1}{x}-1}{x}=\\lim\\limits_{x\\to0}\\dfrac{e^{x}-1-x}{x^{2}}=\\dfrac{1}{2}$，故可导，选（D）"
+    }
+   ],
+   "knowledge_points": [
+    "分段函数的连续性",
+    "导数定义与极值"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     1
+    ],
+    "anchor": "第(2)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d0f3efe3a2da008ae49a30f3f4a9796adb47820850dd99b3c3c98eee9503d135"
+  },
+  {
+   "id": "math3-2021-3",
+   "subject": "math3",
+   "year": 2021,
+   "num": 3,
+   "type": "single",
+   "score": 5,
+   "stem": "函数 $f(x)=ax-b\\ln x\\,(a>0)$ 有 2 个零点，则 $\\dfrac{b}{a}$ 的取值范围是（ ）",
+   "options": [
+    "$(e,+\\infty)$",
+    "$(0,e)$",
+    "$\\left(0,\\dfrac{1}{e}\\right)$",
+    "$\\left(\\dfrac{1}{e},+\\infty\\right)$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】由 $f(x)=ax-b\\ln x(a>0)$，当 $x>0$ 时，$f'(x)=a-\\dfrac{b}{x}$.\n\n当 $b\\leqslant0$ 时，$f'(x)>0$，$f(x)$ 单调递增，与题意矛盾.\n\n当 $b>0$ 时，令 $f'(x)=0$，则 $x=\\dfrac{b}{a}$，\n\n则当 $x\\in\\left(0,\\dfrac{b}{a}\\right)$ 时，$f'(x)<0$，当 $x\\in\\left(\\dfrac{b}{a},+\\infty\\right)$ 时，$f'(x)>0$.\n\n又 $\\lim\\limits_{x\\to0^{+}}f(x)=+\\infty$，$\\lim\\limits_{x\\to+\\infty}f(x)=+\\infty$，故令 $f\\left(\\dfrac{b}{a}\\right)=b\\left(1-\\ln\\dfrac{b}{a}\\right)<0$，即 $\\dfrac{b}{a}>e$ 时与 $x$ 轴有两个交点，故选（A）"
+    }
+   ],
+   "knowledge_points": [
+    "函数零点个数",
+    "单调性与最值"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     1
+    ],
+    "anchor": "第(3)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:aa3ca97d626ff324da0549cc610bf9ec3b6372f2e144dbc5295d74fd042fa098"
+  },
+  {
+   "id": "math3-2021-4",
+   "subject": "math3",
+   "year": 2021,
+   "num": 4,
+   "type": "single",
+   "score": 5,
+   "stem": "设函数 $f(x,y)$ 可微且 $f(x+1,e^{x})=x(x+1)^{2}$，$f(x,x^{2})=2x^{2}\\ln x$，则 $df(1,1)=$（ ）",
+   "options": [
+    "$dx+dy$",
+    "$dx-dy$",
+    "$dy$",
+    "$-dy$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】$f(x+1,e^{x})=x(x+1)^{2}$ 两边对 $x$ 求导：\n\n$f_{1}'(x+1,e^{x})+f_{2}'(x+1,e^{x})\\cdot e^{x}=(x+1)^{2}+2x(x+1)$\n\n将 $x=0$ 带入，得 $f_{1}'(1,1)+f_{2}'(1,1)=1$；①\n\n$f(x,x^{2})=2x^{2}\\ln x$ 两边对 $x$ 求导：\n\n$f_{1}'(x,x^{2})+f_{2}'(x,x^{2})\\cdot2x=4x\\ln x+2x$\n\n将 $x=1$ 带入，得 $f_{1}'(1,1)+2f_{2}'(1,1)=2$ ②\n\n联立①、②，解得 $f_{1}'(1,1)=0$，$f_{2}'(1,1)=1$，故选（C）"
+    }
+   ],
+   "knowledge_points": [
+    "多元复合函数求导",
+    "全微分"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     1
+    ],
+    "anchor": "第(4)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3cd9c12178f01f9dbebce6bca9d51ef536d3a19974d277cd3ab6cd5ce3f4e645"
+  },
+  {
+   "id": "math3-2021-5",
+   "subject": "math3",
+   "year": 2021,
+   "num": 5,
+   "type": "single",
+   "score": 5,
+   "stem": "二次型 $f(x_{1},x_{2},x_{3})=(x_{1}+x_{2})^{2}+(x_{2}+x_{3})^{2}-(x_{3}-x_{1})^{2}$的正惯性指数和负惯性指数分别为（ ）",
+   "options": [
+    "$2,0$",
+    "$1,1$",
+    "$2,1$",
+    "$1,2$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】解法一：\n\n$f(x_{1},x_{2},x_{3})=2x_{2}^{2}+2x_{1}x_{2}+2x_{2}x_{3}+2x_{1}x_{3}$\n\n$=2(x_{2}^{2}+x_{1}x_{2}+x_{2}x_{3})+2x_{1}x_{3}$\n\n$=2\\Bigl[x_{2}^{2}+x_{2}(x_{1}+x_{3})+\\dfrac{1}{4}(x_{1}+x_{3})^{2}\\Bigr]-\\dfrac{1}{2}(x_{1}+x_{3})^{2}+2x_{1}x_{3}$\n\n$=2\\Bigl[x_{2}+\\dfrac{1}{2}(x_{1}+x_{3})\\Bigr]^{2}-\\dfrac{1}{2}(x_{1}-x_{3})^{2}$\n\n故二次型 $f(x_{1},x_{2},x_{3})$ 的正负惯性指数为 1，1.\n\n解法二：$f(x_{1},x_{2},x_{3})=2x_{1}x_{2}+2x_{2}^{2}+2x_{2}x_{3}+2x_{1}x_{3}$ 可得二次型矩阵为 $\\begin{pmatrix}0&1&1\\\\ 1&2&1\\\\ 1&1&0\\end{pmatrix}$，\n\n$|\\lambda E-A|=\\begin{vmatrix}\\lambda&-1&-1\\\\ -1&\\lambda-2&-1\\\\ -1&-1&\\lambda\\end{vmatrix}=\\begin{vmatrix}\\lambda+1&0&-\\lambda-1\\\\ -1&\\lambda-2&-1\\\\ -1&-1&\\lambda\\end{vmatrix}=\\begin{vmatrix}\\lambda+1&0&0\\\\ -1&\\lambda-2&-2\\\\ -1&-1&\\lambda-1\\end{vmatrix}=(\\lambda+1)(\\lambda^{2}-3\\lambda)$\n\n$=\\lambda(\\lambda+1)(\\lambda-3)$\n\n故二次型特征值为 $0,-1,3$，二次型 $f(x_{1},x_{2},x_{3})$ 的正负惯性指数为 1,1．"
+    }
+   ],
+   "knowledge_points": [
+    "二次型",
+    "惯性指数"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     1
+    ],
+    "anchor": "第(5)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:14107fe8b435a818a10f98198610dbfead73e2021ea30637c07113aad36ee3d3"
+  },
+  {
+   "id": "math3-2021-6",
+   "subject": "math3",
+   "year": 2021,
+   "num": 6,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $A=(\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3},\\boldsymbol{a}_{4})$ 为 4 阶正交矩阵，若矩阵 $B=\\begin{pmatrix}\\boldsymbol{a}_{1}^{\\mathrm{T}}\\\\ \\boldsymbol{a}_{2}^{\\mathrm{T}}\\\\ \\boldsymbol{a}_{3}^{\\mathrm{T}}\\end{pmatrix}$，$\\boldsymbol{\\beta}=\\begin{pmatrix}1\\\\ 1\\\\ 1\\end{pmatrix}$，$k$ 表示任意常数，则线性方程组 $B\\boldsymbol{x}=\\boldsymbol{\\beta}$ 的通解为 $\\boldsymbol{x}=$（ ）",
+   "options": [
+    "$\\boldsymbol{a}_{2}+\\boldsymbol{a}_{3}+\\boldsymbol{a}_{4}+k\\boldsymbol{a}_{1}$",
+    "$\\boldsymbol{a}_{1}+\\boldsymbol{a}_{3}+\\boldsymbol{a}_{4}+k\\boldsymbol{a}_{2}$",
+    "$\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2}+\\boldsymbol{a}_{4}+k\\boldsymbol{a}_{3}$",
+    "$\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2}+\\boldsymbol{a}_{3}+k\\boldsymbol{a}_{4}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】由 $A=(\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3},\\boldsymbol{a}_{4})$ 为 4 阶正交矩阵，$\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3},\\boldsymbol{a}_{4}$ 均为单位向量，且两两正交，\n\n故 $r(B)=3$，且 $\\begin{pmatrix}\\boldsymbol{a}_{1}^{\\mathrm{T}}\\\\ \\boldsymbol{a}_{2}^{\\mathrm{T}}\\\\ \\boldsymbol{a}_{3}^{\\mathrm{T}}\\end{pmatrix}\\boldsymbol{a}_{4}=0$ 故 $B\\boldsymbol{x}=0$ 的基础解系为 $\\boldsymbol{a}_{4}$，\n\n$B(\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2}+\\boldsymbol{a}_{3})=\\begin{pmatrix}\\boldsymbol{a}_{1}^{\\mathrm{T}}\\\\ \\boldsymbol{a}_{2}^{\\mathrm{T}}\\\\ \\boldsymbol{a}_{3}^{\\mathrm{T}}\\end{pmatrix}(\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2}+\\boldsymbol{a}_{3})=\\begin{pmatrix}1\\\\ 1\\\\ 1\\end{pmatrix}$\n\n故 $B\\boldsymbol{x}=\\boldsymbol{\\beta}$ 的通解为 $\\boldsymbol{x}=\\boldsymbol{a}_{1}+\\boldsymbol{a}_{2}+\\boldsymbol{a}_{3}+k\\boldsymbol{a}_{4}$．"
+    }
+   ],
+   "knowledge_points": [
+    "正交矩阵",
+    "非齐次线性方程组的通解"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     1
+    ],
+    "anchor": "第(6)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:5d2a85e897139f0a0defa554ed145835348d2dd82748566788946a239eee0c90"
+  },
+  {
+   "id": "math3-2021-7",
+   "subject": "math3",
+   "year": 2021,
+   "num": 7,
+   "type": "single",
+   "score": 5,
+   "stem": "已知矩阵 $A=\\begin{pmatrix}1&0&-1\\\\ 2&-1&1\\\\ -1&2&-5\\end{pmatrix}$，若存在下三角可逆矩阵 $P$ 和上三角可逆矩阵 $Q$，使得 $PAQ$ 为对角矩阵，则 $P$、$Q$ 分别取（ ）",
+   "options": [
+    "$\\begin{pmatrix}1&0&0\\\\ 0&1&0\\\\ 0&0&1\\end{pmatrix}$，$\\begin{pmatrix}1&0&1\\\\ 0&1&3\\\\ 0&0&1\\end{pmatrix}$",
+    "$\\begin{pmatrix}1&0&0\\\\ 2&-1&0\\\\ -3&2&1\\end{pmatrix}$，$\\begin{pmatrix}1&0&0\\\\ 0&1&0\\\\ 0&0&1\\end{pmatrix}$",
+    "$\\begin{pmatrix}1&0&0\\\\ 2&-1&0\\\\ -3&2&1\\end{pmatrix}$，$\\begin{pmatrix}1&0&1\\\\ 0&1&3\\\\ 0&0&1\\end{pmatrix}$",
+    "$\\begin{pmatrix}1&0&0\\\\ 0&1&0\\\\ 1&3&1\\end{pmatrix}$，$\\begin{pmatrix}1&2&-3\\\\ 0&-1&2\\\\ 0&0&1\\end{pmatrix}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（C）\n\n【解析】本题（A），（B）选项中均有单位矩阵 $E$，经矩阵相乘运算验证，$PAQ$ 结果并不是对角矩阵.\n\n（C）选项验算 $PAQ=\\begin{pmatrix}1&0&0\\\\ 2&-1&0\\\\ -3&2&1\\end{pmatrix}\\begin{pmatrix}1&0&-1\\\\ 2&-1&1\\\\ -1&2&-5\\end{pmatrix}\\begin{pmatrix}1&0&1\\\\ 0&1&3\\\\ 0&0&1\\end{pmatrix}=\\begin{pmatrix}1&0&0\\\\ 0&1&0\\\\ 0&0&0\\end{pmatrix}$，故选（C）.\n\n（D）选项经矩阵相乘运算验证，$PAQ$ 结果也不是对角矩阵."
+    }
+   ],
+   "knowledge_points": [
+    "矩阵的三角分解",
+    "初等变换"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     2
+    ],
+    "anchor": "第(7)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:b87fc8171730c1d92f454bd7454d7d7944093cfdb74c3305b79f9e3dbe6e03e9"
+  },
+  {
+   "id": "math3-2021-8",
+   "subject": "math3",
+   "year": 2021,
+   "num": 8,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $A,B$ 为随机事件，且 $0<P(B)<1$，下列命题中为假命题的是（ ）",
+   "options": [
+    "若 $P(A|B)=P(A)$，则 $P(A|\\overline{B})=P(A)$.",
+    "若 $P(A|B)>P(A)$，则 $P(\\overline{A}|\\overline{B})>P(\\overline{A})$",
+    "若 $P(A|B)>P(A|\\overline{B})$，则 $P(A|B)>P(A)$",
+    "若 $P(A|A\\cup B)>P(\\overline{A}|A\\cup B)$，则 $P(A)>P(B)$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（D）\n\n【解析】（A）选项正确：由 $P(A|B)=P(A)$ 知，$A$ 与 $B$ 独立，所以 $P(A|\\overline{B})=P(A)$ 成立.\n\n（B）选项正确：由 $P(A|B)>P(A)$ 知，$P(AB)>P(A)P(B)$\n\n$P(\\overline{A}|\\overline{B})=\\dfrac{P(\\overline{A}\\overline{B})}{P(\\overline{B})}=\\dfrac{1-P(A)-P(B)+P(AB)}{1-P(B)}$\n\n$>\\dfrac{1-P(A)-P(B)+P(A)P(B)}{1-P(B)}$\n\n$=\\dfrac{[1-P(A)][1-P(B)]}{1-P(B)}=1-P(A)=P(\\overline{A})$ 成立.\n\n（C）选项正确：$P(A|B)>P(A|\\overline{B})$ 知，$P(AB)>P(A)P(B)$\n\n故 $P(A|B)=\\dfrac{P(AB)}{P(B)}>P(A)$ 成立.\n\n（D）选项错误：$P(A|A\\cup B)=\\dfrac{P[A\\cap(A\\cup B)]}{P(A\\cup B)}=\\dfrac{P(A)}{P(A\\cup B)}$\n\n$P(\\overline{A}|A\\cup B)=\\dfrac{P(\\overline{A}\\cap(A\\cup B))}{P(A\\cup B)}=\\dfrac{P(\\overline{A}B)}{P(A\\cup B)}=\\dfrac{P(B)-P(AB)}{P(A\\cup B)}$\n\n由 $P(A|A\\cup B)>P(\\overline{A}|A\\cup B)$ 知，$P(A)>P(B)-P(AB)$，无法说明 $P(A)>P(B)$.\n\n选（D）．"
+    }
+   ],
+   "knowledge_points": [
+    "条件概率",
+    "事件独立性"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     2
+    ],
+    "anchor": "第(8)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:eebb87f103b7857d4eb141bc466c4da86d2822022631e0e6b99398618d6410cc"
+  },
+  {
+   "id": "math3-2021-9",
+   "subject": "math3",
+   "year": 2021,
+   "num": 9,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $(X_{1},Y_{1}),(X_{2},Y_{2}),\\cdots,(X_{n},Y_{n})$ 为来自总体 $N(\\mu_{1},\\mu_{2};\\sigma_{1}^{2},\\sigma_{2}^{2};\\rho)$ 的简单随机样本，令 $\\theta=\\mu_{1}-\\mu_{2}$，$\\overline{X}=\\dfrac{1}{n}\\sum\\limits_{i=1}^{n}X_{i}$，$\\overline{Y}=\\dfrac{1}{n}\\sum\\limits_{i=1}^{n}Y_{i}$，$\\hat{\\theta}=\\overline{X}-\\overline{Y}$，则（ ）",
+   "options": [
+    "$E(\\hat{\\theta})=\\theta,D(\\hat{\\theta})=\\dfrac{\\sigma_{1}^{2}+\\sigma_{2}^{2}}{n}$",
+    "$E(\\hat{\\theta})=\\theta,D(\\hat{\\theta})=\\dfrac{\\sigma_{1}^{2}+\\sigma_{2}^{2}-2\\rho\\sigma_{1}\\sigma_{2}}{n}$",
+    "$E(\\hat{\\theta})\\neq\\theta,D(\\hat{\\theta})=\\dfrac{\\sigma_{1}^{2}+\\sigma_{2}^{2}}{n}$",
+    "$E(\\hat{\\theta})\\neq\\theta,D(\\hat{\\theta})=\\dfrac{\\sigma_{1}^{2}+\\sigma_{2}^{2}-2\\rho\\sigma_{1}\\sigma_{2}}{n}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（B）\n\n【解析】$E(\\hat{\\theta})=E(\\overline{X}-\\overline{Y})=EX-EY=\\mu_{1}-\\mu_{2}$\n\n$D(\\hat{\\theta})=D(\\overline{X}-\\overline{Y})=D(\\overline{X})+D(\\overline{Y})-2\\mathrm{cov}(\\overline{X},\\overline{Y})=\\dfrac{\\sigma_{1}^{2}+\\sigma_{2}^{2}-2\\rho\\sigma_{1}\\sigma_{2}}{n}$. 选（B）."
+    }
+   ],
+   "knowledge_points": [
+    "估计量的期望与方差",
+    "样本均值的协方差"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     2
+    ],
+    "anchor": "第(9)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:bcf225e025c9e66f00de98960fc8e90c3def3a02e0d9e8f19092e3cd60c1e625"
+  },
+  {
+   "id": "math3-2021-10",
+   "subject": "math3",
+   "year": 2021,
+   "num": 10,
+   "type": "single",
+   "score": 5,
+   "stem": "总体 $X$ 的概率分布为 $P\\{X=1\\}=\\dfrac{1-\\theta}{2}$，$P\\{X=2\\}=P\\{X=3\\}=\\dfrac{1+\\theta}{4}$，利用来自总体 $X$ 的样本观察值 $1,3,2,2,1,3,1,2$ 可得 $\\theta$ 的最大似然估计值为（ ）",
+   "options": [
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{3}{8}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{5}{8}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】（A）\n\n【解析】$L(\\theta)=\\left(\\dfrac{1-\\theta}{2}\\right)^{3}\\left(\\dfrac{1+\\theta}{4}\\right)^{5}$\n\n$\\ln L(\\theta)=3\\ln\\left(\\dfrac{1-\\theta}{2}\\right)+5\\ln\\left(\\dfrac{1+\\theta}{4}\\right)$，\n\n令 $\\dfrac{d\\ln L(\\theta)}{d\\theta}=\\dfrac{-3}{1-\\theta}+\\dfrac{5}{1+\\theta}=0$，得 $\\hat{\\theta}=\\dfrac{1}{4}$. 选（A）"
+    }
+   ],
+   "knowledge_points": [
+    "最大似然估计"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     2
+    ],
+    "anchor": "第(10)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:fd054649a937728084d57848e0cccb8060892c41a330883af7bff0cd67c59259"
+  },
+  {
+   "id": "math3-2021-11",
+   "subject": "math3",
+   "year": 2021,
+   "num": 11,
+   "type": "blank",
+   "score": 5,
+   "stem": "若 $y=\\cos e^{-\\sqrt{x}}$，$\\dfrac{dy}{dx}\\Big|_{x=1}=$________.",
+   "options": [],
+   "answer": "\\dfrac{\\sin e^{-1}}{2e}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{\\sin e^{-1}}{2e}$\n\n【解析】$y'\\Big|_{x=1}=\\dfrac{e^{-\\sqrt{x}}\\sin e^{-\\sqrt{x}}}{2\\sqrt{x}}\\Big|_{x=1}=\\dfrac{\\sin e^{-1}}{2e}$"
+    }
+   ],
+   "knowledge_points": [
+    "复合函数求导",
+    "链式法则"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(11)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:bfa630ab8dce971a6ac79f82b3d8bf2855ae6d20c8a752fda1e38e3418c62a4b"
+  },
+  {
+   "id": "math3-2021-12",
+   "subject": "math3",
+   "year": 2021,
+   "num": 12,
+   "type": "blank",
+   "score": 5,
+   "stem": "$\\displaystyle\\int_{\\sqrt{5}}^{5}\\dfrac{x}{\\sqrt{|x^{2}-9|}}dx=$________.",
+   "options": [],
+   "answer": "6",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】6\n\n【解析】\n\n$\\displaystyle\\int_{\\sqrt{5}}^{5}\\dfrac{x}{\\sqrt{|x^{2}-9|}}dx=\\int_{\\sqrt{5}}^{3}\\dfrac{x}{\\sqrt{9-x^{2}}}dx+\\int_{3}^{5}\\dfrac{x}{\\sqrt{x^{2}-9}}dx=-\\dfrac{1}{2}\\int_{\\sqrt{5}}^{3}\\dfrac{d\\left(9-x^{2}\\right)}{\\sqrt{9-x^{2}}}+\\dfrac{1}{2}\\int_{3}^{5}\\dfrac{d\\left(x^{2}-9\\right)}{\\sqrt{x^{2}-9}}$\n\n$=-\\dfrac{1}{2}\\cdot2\\sqrt{9-x^{2}}\\Big|_{\\sqrt{5}}^{3}+\\dfrac{1}{2}\\cdot2\\sqrt{x^{2}-9}\\Big|_{3}^{5}=6.$"
+    }
+   ],
+   "knowledge_points": [
+    "含绝对值的定积分",
+    "凑微分"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(12)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:db46f743a3b97ffb2392c5ee4a2e2220b71c7c8e771a7a071cedde71000b8633"
+  },
+  {
+   "id": "math3-2021-13",
+   "subject": "math3",
+   "year": 2021,
+   "num": 13,
+   "type": "blank",
+   "score": 5,
+   "stem": "设 $D$ 由 $y=\\sqrt{x}\\sin\\pi x\\,(0\\leqslant x\\leqslant1)$ 与 $x$ 轴围成，则 $D$ 绕 $x$ 轴旋转的旋转体体积为________.",
+   "options": [],
+   "answer": "\\dfrac{\\pi}{4}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{\\pi}{4}$\n\n【解析】$V=\\displaystyle\\int_{0}^{1}\\pi y^{2}(x)dx=\\int_{0}^{1}\\pi x\\cdot\\sin^{2}\\pi xdx\\xlongequal{x=t/\\pi}\\dfrac{1}{\\pi}\\int_{0}^{\\pi}t\\sin^{2}tdt$\n\n$=\\dfrac{1}{\\pi}\\cdot\\dfrac{\\pi}{2}\\int_{0}^{\\pi}\\sin^{2}tdt=\\dfrac{\\pi}{4}$"
+    }
+   ],
+   "knowledge_points": [
+    "旋转体体积",
+    "定积分换元与对称性"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(13)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:4cf7b90d50a7bdb42e983879b00b066a965da786efbcc62aafe8cc7f282c747c"
+  },
+  {
+   "id": "math3-2021-14",
+   "subject": "math3",
+   "year": 2021,
+   "num": 14,
+   "type": "blank",
+   "score": 5,
+   "stem": "差分方程 $\\Delta y_{t}=t$ 的通解为 $y_{t}=$________.",
+   "options": [],
+   "answer": "y_{t}=C+\\dfrac{t}{2}(t-1)",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$y_{t}=C+\\dfrac{t}{2}(t-1)$（C 为任意常数）\n\n【解析】齐次差分方程 $y_{t+1}-y_{t}=0$，即齐次方程的通解为 C（C 为任意常数），\n\n设特解 $y_{t}^{*}=t\\left(A_{0}+A_{1}t\\right)$，代入原方程得 $(t+1)\\left(A_{0}+A_{1}(t+1)\\right)-t\\left(A_{0}+A_{1}t\\right)=t$，\n\n$A_{0}+2A_{1}t+A_{1}=t$，解得 $A_{0}=-\\dfrac{1}{2},A_{1}=\\dfrac{1}{2}$，故通解为 $y_{t}=C+\\dfrac{t}{2}(t-1)$（C 为任意常数）."
+    }
+   ],
+   "knowledge_points": [
+    "一阶线性差分方程"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(14)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:1c8e9977eeb40399a704d8241d37e10dfa62b0b49c5bf247d03ee412098a65a3"
+  },
+  {
+   "id": "math3-2021-15",
+   "subject": "math3",
+   "year": 2021,
+   "num": 15,
+   "type": "blank",
+   "score": 5,
+   "stem": "多项式 $f(x)=\\begin{vmatrix}x&x&1&2x\\\\ 1&x&2&-1\\\\ 2&1&x&1\\\\ 2&-1&1&x\\end{vmatrix}$的 $x^{3}$ 项的系数为________.",
+   "options": [],
+   "answer": "-5",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】-5\n\n【解析】解法一：按照第一行进行行列式展开，\n\n$f(x)=x\\begin{vmatrix}x&2&-1\\\\ 1&x&1\\\\ -1&1&x\\end{vmatrix}-x\\begin{vmatrix}1&2&-1\\\\ 2&x&1\\\\ 2&1&x\\end{vmatrix}+2\\begin{vmatrix}1&x&-1\\\\ 2&1&1\\\\ 2&-1&x\\end{vmatrix}-2x\\begin{vmatrix}1&x&2\\\\ 2&1&x\\\\ 2&-1&1\\end{vmatrix}$\n\n$x\\begin{vmatrix}x&2&-1\\\\ 1&x&1\\\\ -1&1&x\\end{vmatrix}$ 中没有 $x^{3}$ 项，$-x\\begin{vmatrix}1&2&-1\\\\ 2&x&1\\\\ 2&1&x\\end{vmatrix}$ 中 $x^{3}$ 项的系数为 $-1$，$\\begin{vmatrix}1&x&-1\\\\ 2&1&1\\\\ 2&-1&x\\end{vmatrix}$ 中没有 $x^{3}$ 项，\n\n$-2x\\begin{vmatrix}1&x&2\\\\ 2&1&x\\\\ 2&-1&1\\end{vmatrix}$ 中 $x^{3}$ 项的系数为 $-4$，故 $f(x)$ 中 $x^{3}$ 项的系数为 $-5$.\n\n解法二：根据行列式定义，行列式为不同行不同列对应元素乘积的代数和，\n\n$f(x)=\\begin{vmatrix}x&x&1&2x\\\\ 1&x&2&-1\\\\ 2&1&x&1\\\\ 2&-1&1&x\\end{vmatrix}$ 的含 $x^{3}$ 项分别为 $-a_{12}a_{21}a_{33}a_{44}$ 和 $-a_{14}a_{22}a_{33}a_{41}$，即 $-x^{3}$ 和 $-4x^{3}$，\n\n故 $f(x)$ 中 $x^{3}$ 项的系数为 -5."
+    }
+   ],
+   "knowledge_points": [
+    "行列式的定义",
+    "行列式按行展开"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(15)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:3b01bf04ad34abc36cfc8fc6a529bde228f5b0c83de7a261ceeb3fe893b24a79"
+  },
+  {
+   "id": "math3-2021-16",
+   "subject": "math3",
+   "year": 2021,
+   "num": 16,
+   "type": "blank",
+   "score": 5,
+   "stem": "甲乙两个盒子中各装 2 个红球 2 个白球，先从甲盒中任取一球，观察颜色放入乙盒，再从乙盒中任取一球，令 $X,Y$ 分别表示从甲乙两盒中取得红球的个数，则 $X,Y$ 的相关系数 $\\rho_{XY}=$________.",
+   "options": [],
+   "answer": "\\dfrac{1}{5}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【答案】$\\dfrac{1}{5}$\n\n$X$ 的取值为 0 和 1，分布律为\n\n$\\begin{array}{|c|cc|}\\hline X&0&1\\\\\\hline P&0.5&0.5\\\\\\hline\\end{array}$\n\n$EX=0.5,DX=0.25$\n\n$P\\{Y=0\\}=P\\{X=0\\}\\cdot P\\{Y=0|X=0\\}+P\\{X=1\\}\\cdot P\\{Y=0|X=1\\}=\\dfrac{1}{2}$\n\n同理 $P\\{Y=1\\}=\\dfrac{1}{2}$.\n\n故 $Y$ 的取值为 0 和 1，分布律为\n\n$\\begin{array}{|c|cc|}\\hline Y&0&1\\\\\\hline P&0.5&0.5\\\\\\hline\\end{array}$\n\n$P\\{XY=1\\}=P\\{X=1,Y=1\\}=P\\{X=1\\}\\cdot P\\{Y=1|X=1\\}=\\dfrac{1}{2}\\times\\dfrac{3}{5}=\\dfrac{3}{10}$\n\n故\n\n$\\begin{array}{|c|cc|}\\hline XY&0&1\\\\\\hline P&0.7&0.3\\\\\\hline\\end{array}$\n\n$\\rho_{XY}=\\dfrac{EXY-EXEY}{\\sqrt{DX}\\sqrt{DY}}=\\dfrac{\\dfrac{3}{10}-\\dfrac{1}{2}\\times\\dfrac{1}{2}}{\\dfrac{1}{2}\\times\\dfrac{1}{2}}=\\dfrac{1}{5}$"
+    }
+   ],
+   "knowledge_points": [
+    "条件概率",
+    "相关系数"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(16)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:4f2fcf71543f1d8c638d3e290caf6a6fb5493cc92ae61ff881dfd7c41f1b1b65"
+  },
+  {
+   "id": "math3-2021-17",
+   "subject": "math3",
+   "year": 2021,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "已知 $\\lim\\limits_{x\\to0}\\Bigl[\\alpha\\arctan\\dfrac{1}{x}+(1+|x|)^{\\frac{1}{x}}\\Bigr]$ 存在，求 $\\alpha$ 的值.",
+   "options": [],
+   "answer": "\\alpha=\\dfrac{e^{-1}-e}{\\pi}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$\\lim\\limits_{x\\to0^{+}}\\bigl[a\\arctan\\dfrac{1}{x}+(1+x)^{\\frac{1}{x}}\\bigr]=\\dfrac{\\pi}{2}a+\\mathrm{e}$；\n\n$\\lim\\limits_{x\\to0^{-}}\\bigl[a\\arctan\\dfrac{1}{x}+(1-x)^{\\frac{1}{x}}\\bigr]=-\\dfrac{\\pi}{2}a+\\mathrm{e}^{-1}$；\n\n则其左极限等于右极限：$\\dfrac{\\pi}{2}a+\\mathrm{e}=-\\dfrac{\\pi}{2}a+\\mathrm{e}^{-1}$，解得 $a=\\dfrac{\\mathrm{e}^{-1}-\\mathrm{e}}{\\pi}$."
+    }
+   ],
+   "knowledge_points": [
+    "单侧极限",
+    "极限存在的充要条件"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(17)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:8b11fa6cde005b63246f04a7e3cc066b833e60b56c77b4d218b849ddfbc29332"
+  },
+  {
+   "id": "math3-2021-18",
+   "subject": "math3",
+   "year": 2021,
+   "num": 18,
+   "type": "essay",
+   "score": 12,
+   "stem": "求函数 $f(x,y)=2\\ln|x|+\\dfrac{(x-1)^{2}+y^{2}}{2x^{2}}$ 的极值.",
+   "options": [],
+   "answer": "f(-1,0)=2 与 f(1/2,0)=1/2-2ln2 均为极小值",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】令 $\\begin{cases}f_{x}'(x,y)=\\dfrac{2x^{2}+x-1-y^{2}}{x^{3}}=0,\\\\ f_{y}'(x,y)=\\dfrac{y}{x^{2}}=0,\\end{cases}$ 得驻点 $(-1,0)$ 和 $\\left(\\dfrac{1}{2},0\\right)$.\n\n$\\begin{cases}f_{xx}''(x,y)=\\dfrac{-2x^{2}-2x+3+3y^{2}}{x^{4}},\\\\ f_{yx}''(x,y)=-\\dfrac{2y}{x^{3}},\\\\ f_{yy}''(x,y)=\\dfrac{1}{x^{2}},\\end{cases}$\n\n在 $(-1,0)$ 处，$A=3>0,B=0,C=1>0,AC-B^{2}>0$，所以有极小值 $f(-1,0)=2$；\n\n在 $\\left(\\dfrac{1}{2},0\\right)$ 处，$A=24>0,B=0,C=4>0,AC-B^{2}>0$,所以有极小值 $f\\left(\\dfrac{1}{2},0\\right)=\\dfrac{1}{2}-2\\ln2$."
+    }
+   ],
+   "knowledge_points": [
+    "二元函数极值",
+    "极值充分条件"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(18)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d184578e75fc9374a3639619acaa46f1a394332e1408efafe65633a7f81a7f30"
+  },
+  {
+   "id": "math3-2021-19",
+   "subject": "math3",
+   "year": 2021,
+   "num": 19,
+   "type": "essay",
+   "score": 12,
+   "stem": "设有界区域 $D$ 是圆 $x^{2}+y^{2}=1$ 和直线 $y=x$ 以及 $x$ 轴在第一象限围成的部分，计算二重积分 $\\displaystyle\\iint\\limits_{D}e^{(x+y)^{2}}(x^{2}-y^{2})\\mathrm{d}x\\mathrm{d}y$.",
+   "options": [],
+   "answer": "\\dfrac{1}{8}(e-1)^{2}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$\\displaystyle\\iint\\limits_{D}e^{(x+y)^{2}}(x^{2}-y^{2})\\mathrm{d}x\\mathrm{d}y=\\int_{0}^{\\frac{\\pi}{4}}d\\theta\\int_{0}^{1}e^{r^{2}+2r^{2}\\cos\\theta\\sin\\theta}(r^{2}\\cos^{2}\\theta-r^{2}\\sin^{2}\\theta)rdr$\n\n$=\\displaystyle\\int_{0}^{1}dr\\int_{0}^{\\frac{\\pi}{4}}e^{r^{2}(1+\\sin2\\theta)}r^{3}\\cos2\\theta d\\theta$$\\qquad=\\displaystyle\\int_{0}^{1}\\dfrac{r}{2}e^{r^{2}(1+\\sin2\\theta)}\\Big|_{0}^{\\frac{\\pi}{4}}dr=\\dfrac{1}{2}\\int_{0}^{1}r(e^{2r^{2}}-e^{r^{2}})dr$\n\n$=\\dfrac{1}{2}\\Bigl(\\dfrac{1}{4}e^{2r^{2}}-\\dfrac{1}{2}e^{r^{2}}\\Bigr)\\Big|_{0}^{1}=\\dfrac{1}{8}(e-1)^{2}$"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分极坐标",
+    "交换积分次序"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(19)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:22b224b317891b9662e06dd24563141c90584a70b18efa25f163c661833a8d73"
+  },
+  {
+   "id": "math3-2021-20",
+   "subject": "math3",
+   "year": 2021,
+   "num": 20,
+   "type": "essay",
+   "score": 12,
+   "stem": "设 $n$ 为正整数，$y=y_{n}(x)$ 是微分方程 $xy'-(n+1)y=0$ 满足条件 $y_{n}(1)=\\dfrac{1}{n(n+1)}$ 的解.（I）求 $y_{n}(x)$；（II）求级数 $\\displaystyle\\sum_{n=1}^{\\infty}y_{n}(x)$ 的收敛域及和函数.",
+   "options": [],
+   "answer": "(I)\\ y_{n}(x)=\\dfrac{x^{n+1}}{n(n+1)};\\ (II)\\ [-1,1],\\ S(x)=x+(1-x)\\ln(1-x)\\ (-1\\leqslant x<1),\\ S(1)=1",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】（I）$xy'-(n+1)y=0$,化简得 $\\dfrac{dy}{y}=(n+1)\\dfrac{dx}{x}$，两边积分，得\n\n$\\ln|y|=(n+1)\\ln|x|+C_{0}$，化简得 $y=Cx^{n+1}$.\n\n因为 $y_{n}(1)=\\dfrac{1}{n(n+1)}$,所以 $C=\\dfrac{1}{n(n+1)}$,所以 $y_{n}(x)=\\dfrac{1}{n(n+1)}x^{n+1}$.\n\n（II）令 $\\lim\\limits_{n\\to\\infty}\\left|\\dfrac{\\dfrac{1}{(n+1)(n+2)}x^{n+2}}{\\dfrac{1}{n(n+1)}x^{n+1}}\\right|<1$，得 $-1<x<1$.\n\n$x=1$ 时，$\\sum\\limits_{n=1}^{\\infty}\\dfrac{1}{n(n+1)}$ 收敛；$x=-1$ 时，$\\sum\\limits_{n=1}^{\\infty}\\dfrac{(-1)^{n+1}}{n(n+1)}$ 收敛；收敛域为 $[-1,1]$.\n\n$S(x)=\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{x^{n+1}}{n(n+1)}=x\\sum_{n=1}^{\\infty}\\dfrac{x^{n}}{n}-\\sum_{n=1}^{\\infty}\\dfrac{x^{n+1}}{n+1}$\n\n$=x\\displaystyle\\int_{0}^{x}\\Bigl(\\sum_{n=1}^{\\infty}\\dfrac{x^{n}}{n}\\Bigr)'dx-\\int_{0}^{x}\\Bigl(\\sum_{n=1}^{\\infty}\\dfrac{x^{n+1}}{n+1}\\Bigr)'dx$\n\n$=x\\displaystyle\\int_{0}^{x}\\dfrac{1}{1-x}dx-\\int_{0}^{x}\\dfrac{x}{1-x}dx$\n\n$=(1-x)\\ln(1-x)+x$ $\\qquad x\\in[-1,1)$. \n\n$S(1)=\\lim\\limits_{x\\to1^{-}}[(1-x)\\ln(1-x)+x]=1$，\n\n所以 $S(x)=\\begin{cases}x+(1-x)\\ln(1-x),&-1\\leqslant x<1\\\\ 1,&x=1\\end{cases}$. "
+    }
+   ],
+   "knowledge_points": [
+    "可分离变量微分方程",
+    "幂级数求和函数"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math3",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     3
+    ],
+    "anchor": "第(20)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:7b4f66fa975b90b1364428eddb7c821ebbef3da20d323a421590a25f01fcbd42"
+  },
+  {
+   "id": "math3-2021-21",
+   "subject": "math3",
+   "year": 2021,
+   "num": 21,
+   "type": "essay",
+   "score": 12,
+   "stem": "设矩阵 $A=\\begin{pmatrix}2&1&0\\\\ 1&2&0\\\\ 1&a&b\\end{pmatrix}$ 仅有两个不同的特征值，若 $A$ 相似于对角矩阵，求 $a,b$ 的值.求逆矩阵 $P$，使得 $P^{-1}AP=\\Lambda$.",
+   "options": [],
+   "answer": "(I)\\ a=b=1,\\ P_{1}=(a_{1},a_{2},a_{3});\\ (II)\\ a=-1,b=3,\\ P_{2}=(\\beta_{1},\\beta_{2},\\beta_{3})",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】（I）$|\\lambda E-A|=\\begin{vmatrix}\\lambda-2&-1&0\\\\ -1&\\lambda-2&0\\\\ -1&-a&\\lambda-b\\end{vmatrix}$\n\n$=(\\lambda-b)\\Bigl[(\\lambda-2)^{2}-1\\Bigr]=(\\lambda-b)(\\lambda-3)(\\lambda-1)=0$\n\n当 $b=1$ 时，$\\lambda_{1}=\\lambda_{2}=1,\\lambda_{3}=3$，$A$ 相似于对角矩阵，则 $r(E-A)=1$，$a=1$.\n\n$(E-A)=\\begin{pmatrix}-1&-1&0\\\\ -1&-1&0\\\\ -1&-a&0\\end{pmatrix}\\to\\begin{pmatrix}-1&-1&0\\\\ 0&0&0\\\\ 0&0&0\\end{pmatrix}$，$\\boldsymbol{a}_{1}=\\begin{pmatrix}-1\\\\ 1\\\\ 0\\end{pmatrix},\\boldsymbol{a}_{2}=\\begin{pmatrix}0\\\\ 0\\\\ 1\\end{pmatrix}$\n\n$(3E-A)=\\begin{pmatrix}1&-1&0\\\\ -1&1&0\\\\ -1&-1&2\\end{pmatrix}\\to\\begin{pmatrix}1&1&-2\\\\ 0&1&-1\\\\ 0&0&0\\end{pmatrix}$，$\\boldsymbol{a}_{3}=\\begin{pmatrix}1\\\\ 1\\\\ 1\\end{pmatrix}$\n\n令可逆矩阵 $P_{1}=(\\boldsymbol{a}_{1},\\boldsymbol{a}_{2},\\boldsymbol{a}_{3})$，使得 $P_{1}^{-1}AP_{1}=\\Lambda=\\begin{pmatrix}1& &\\\\ &1&\\\\ & &3\\end{pmatrix}$. \n\n（II）当 $b=3$ 时，$\\lambda_{1}=\\lambda_{2}=3,\\lambda_{3}=1$，$A$ 相似于对角矩阵，则 $r(3E-A)=1$，$a=-1$\n\n$(3E-A)=\\begin{pmatrix}1&-1&0\\\\ -1&1&0\\\\ -1&-a&0\\end{pmatrix}\\to\\begin{pmatrix}1&-1&0\\\\ 0&0&0\\\\ 0&0&0\\end{pmatrix}$，$\\boldsymbol{\\beta}_{1}=\\begin{pmatrix}1\\\\ 1\\\\ 0\\end{pmatrix},\\boldsymbol{\\beta}_{2}=\\begin{pmatrix}0\\\\ 0\\\\ 1\\end{pmatrix}$，\n\n$(E-A)=\\begin{pmatrix}-1&-1&0\\\\ -1&-1&0\\\\ -1&1&-2\\end{pmatrix}\\to\\begin{pmatrix}1&-1&2\\\\ 0&1&-1\\\\ 0&0&0\\end{pmatrix}$，$\\boldsymbol{\\beta}_{3}=\\begin{pmatrix}-1\\\\ 1\\\\ 1\\end{pmatrix}$，\n\n令可逆矩阵 $P_{2}=(\\boldsymbol{\\beta}_{1},\\boldsymbol{\\beta}_{2},\\boldsymbol{\\beta}_{3})$，使得 $P_{2}^{-1}AP_{2}=\\Lambda=\\begin{pmatrix}3& &\\\\ &3&\\\\ & &1\\end{pmatrix}$. "
+    }
+   ],
+   "knowledge_points": [
+    "特征值与特征向量",
+    "相似对角化"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math3",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     4
+    ],
+    "anchor": "第(21)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:4d9e122866361735a4d7b062196f9864d7be8030afdfc42ba5d7763889331c58"
+  },
+  {
+   "id": "math3-2021-22",
+   "subject": "math3",
+   "year": 2021,
+   "num": 22,
+   "type": "essay",
+   "score": 12,
+   "stem": "在区间 $(0,2)$ 上随机取一点，将该区间分成两段，较短一段的长度记为 $X$，较长一段的长度记为 $Y$，令 $Z=\\dfrac{Y}{X}$.（I）求 $X$ 的概率密度;（II）求 $Z$ 的概率密度;（III）求 $E\\Bigl(\\dfrac{X}{Y}\\Bigr)$.",
+   "options": [],
+   "answer": "(I)\\ f_{X}(x)=1\\ (0<x<1);\\ (II)\\ f_{Z}(z)=\\dfrac{2}{(z+1)^{2}}\\ (z\\geqslant1);\\ (III)\\ E(X/Y)=2\\ln 2-1",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】易知 $X+Y=2,Y>X>0$，且 $X$ 在 $(0,1)$ 上服从均匀分布;\n\n（I）$X$ 的概率密度 $f_{X}(x)=\\begin{cases}1,&0<x<1\\\\ 0,&\\text{其他}\\end{cases}$. \n\n（II）$Z$ 的分布函数 $F_{Z}(z)=P\\{Z\\leqslant z\\}=P\\left\\{\\dfrac{2-X}{X}\\leqslant z\\right\\}$；\n\n$z<1$ 时，$F_{Z}(z)=0$；$z\\geqslant1$ 时，$F_{Z}(z)=\\displaystyle\\int_{\\frac{2}{z+1}}^{1}1dx=1-\\dfrac{2}{z+1}$；\n\n$Z$ 的概率密度为 $f_{Z}(z)=\\begin{cases}\\dfrac{2}{(z+1)^{2}},&z\\geqslant1\\\\ 0,&z<1\\end{cases}$. \n\n（III）$E\\Bigl(\\dfrac{X}{Y}\\Bigr)=E\\Bigl(\\dfrac{X}{2-X}\\Bigr)=\\displaystyle\\int_{0}^{1}\\dfrac{x}{2-x}dx=\\int_{0}^{1}\\Bigl(\\dfrac{2}{2-x}-1\\Bigr)dx$\n\n$=-2\\ln|2-x|\\Big|_{0}^{1}-1=2\\ln2-1$. "
+    }
+   ],
+   "knowledge_points": [
+    "均匀分布",
+    "随机变量函数的分布",
+    "期望"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gailv",
+    "label": "概率论"
+   },
+   "tags": [
+    "math3",
+    "概率论"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+   "source_ref": {
+    "pdf": "2021数学三真题及解析.pdf",
+    "sha256": "50dd96cc6513c99aa480f1f058c858f10b6e360cf1b608fc3e1a294900ca9207",
+    "pages": [
+     4
+    ],
+    "anchor": "第(22)题"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:98c339274e98e4776d2d14aeebcea8ca1fdd81e72fc23b36a5943b9ceaba62de"
+  }
+ ]
+}
