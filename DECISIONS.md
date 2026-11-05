@@ -2,6 +2,16 @@
 
 本文件由 Orchestrator 维护：所有模糊处的默认决策记录于此（AGENT_CONTRACT.md 第 0/5/6 章要求）。新条目倒序追加。用户已明确：不提问、自行决策并记录。
 
+## D098 · 2026-11-05 · 数学二 2022 卷视觉转录 + 全站公式渲染补齐
+conv4 第一卷开工：`data/math2/pages/2022/`（11 页影像，PDF SHA-256 `513793a3…`）逐页视觉转录为 `data/math2/2022.json`，22 题（选择 10×5 + 填空 6×5 + 解答 6 题 70 分）。转录中间件按「小步落盘」拆成 `tools/work/m22022_q.py`（题干/选项，p1–p4）与 `m22022_a1..a6.py`（解析，p5–p11），由 `build_m22022.py` 装配，避免单次输出过大。① 解析逐字照录，`source_blocks[role=analysis][origin=source]` 单块存全文；② 证明题（21、22II）无单一答案，按前卷口径写「证明见解析」，22(I) 标准型与 20 的极值结果一并写入 `answer`；③ 知识点/难度/板块是派生元数据（不改原文），与 2009–2021 同表；④ 图形化 8 幅（D043 DSL）入 `data/math2/figures/2022.json`，`verify_figures.py` 全 OK。
+浏览器实测暴露 5 处**全站显示级**缺陷（不是 2022 独有），一并修掉：
+① **只有题页渲染公式** —— `renderMath(app)` 原先仅在 `viewQuestion` 调用，年份列表/科目页/搜索页把 `$...$` 当纯文本铺出来。改为路由层统一收尾：`routeViews()` 派生视图，`route()` 在视图 Promise 落定后补一次 `renderMath`。
+② **图形说明里的公式不渲染** —— 图形是异步 `loadFigures()` 注入的，早于它的 `renderMath` 已经跑完。在 `renderFigure` 之后对图形容器再渲染一次。
+③ **答案栏显示裸 LaTeX** —— 数学类 `answer` 存的是无 `$` 包裹的 LaTeX（如 `\dfrac{31}{32}`），前端 `esc()` 后原样输出。新增 `mathAns` 判定：含 LaTeX 命令且不含中日韩标点的纯公式答案才包 `$…$` 交给 KaTeX，混排中文的答案（如「证明见解析」「(Ⅰ)…；(Ⅱ)…」）保持原文，避免 KaTeX 报错。
+④ **年份列表预览截断公式** —— `slice(0,80)` 会把 `$…$` 拦腰截断，KaTeX 因不配对而跳过。新增 `prevText()`：截断后若 `$` 为奇数个，退到最后一个 `$` 之前。
+⑤ **板块列显示 `[object Object]`** —— 数学类 `category` 是对象，列表页直接 `esc()`。改取 `category.label`。
+另：`subjects.json` 新增 `analysisYears`（由 `sync_registry.py` 依磁盘 `{年}.analysis*.json` 反推），题页只在册的年份才请求精讲分片，消除 `2022.analysis.json` 404 —— 合同「console 报错 = 0」门禁此前是被 try/catch 掩盖的假通过。`sw.js` → `kaoyan-v0.3.3`。搜索索引 3206 条，门禁 9/9。
+
 ## D097 · 2026-11-05 · 199 管综接入：以用户 Markdown 题库为唯一内容源
 用户提供 `kaoyan-extra/199管综真题_Markdown题库`（2009–2026）+ `199管综答案_Markdown题库`，源包 README 声明「md 是本题库唯一内容源，逐题人工/多模态校核」。管线 `tools/extract_199.py`：按 `## 一/二/三/四、` 章节 + `### 第 N 题` 切块，题干/选项/答案/解析逐字照录；`source_hash = sha256(真题块 + 解析块)` 可逐题回溯；源包 md 的 SHA-256 与每年题量/答案数记入 `data/meta/mgt199_source.json`。
 ① **章节标题有两种写法**（`## 三、逻辑推理：…` 与 `## 三、逻辑推理（…）`），正则放宽后 2009–2021 的写作题不再被误归为逻辑题；题型映射 问题求解→single、条件充分性判断→sufficiency、逻辑推理→logic、写作→essay（并按标题后缀取 30/35 分）。

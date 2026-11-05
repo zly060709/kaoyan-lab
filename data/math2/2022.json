@@ -1,0 +1,1071 @@
+{
+ "subject": "math2",
+ "year": 2022,
+ "paper": "数学（二）",
+ "schema_version": "1.0.0",
+ "question_count": 22,
+ "source_note": "视觉转录自《2022数学二真题及解析.pdf》（data/math2/pages/2022/，11 页）：p1–p4 试题、p5–p11 答案解析，题干/选项/答案/解析逐字照录。2022 年结构：选择题 10×5 分、填空题 6×5 分、解答题 6 题共 70 分。",
+ "questions": [
+  {
+   "id": "math2-2022-1",
+   "subject": "math2",
+   "year": 2022,
+   "num": 1,
+   "type": "single",
+   "score": 5,
+   "stem": "当 $x\\to 0$ 时，$\\alpha(x)$，$\\beta(x)$ 是非零无穷小量，给出以下 4 个命题：①若 $\\alpha(x)\\sim\\beta(x)$，则 $\\alpha^{2}(x)\\sim\\beta^{2}(x)$；②若 $\\alpha^{2}(x)\\sim\\beta^{2}(x)$，则 $\\alpha(x)\\sim\\beta(x)$；③若 $\\alpha(x)\\sim\\beta(x)$，则 $\\alpha(x)-\\beta(x)=o(\\alpha(x))$；④若 $\\alpha(x)-\\beta(x)=o(\\alpha(x))$，则 $\\alpha(x)\\sim\\beta(x)$。其中真命题是（　）",
+   "options": [
+    "（A）①③",
+    "（B）①④",
+    "（C）①③④",
+    "（D）②③④"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "①若 $\\alpha(x)\\sim\\beta(x)$，则 $\\lim\\limits_{x\\to 0}\\dfrac{\\alpha(x)}{\\beta(x)}=1$。因此 $\\lim\\limits_{x\\to 0}\\dfrac{\\alpha^{2}(x)}{\\beta^{2}(x)}=\\lim\\limits_{x\\to 0}\\dfrac{\\alpha(x)}{\\beta(x)}\\cdot\\dfrac{\\alpha(x)}{\\beta(x)}=1\\cdot 1=1$，①正确。\n\n②错，反例 $\\alpha(x)=x,\\beta(x)=-x$；\n\n③若 $\\alpha(x)\\sim\\beta(x)$，则 $\\lim\\limits_{x\\to 0}\\dfrac{\\alpha(x)}{\\beta(x)}=1$，则 $\\lim\\limits_{x\\to 0}\\dfrac{\\alpha(x)-\\beta(x)}{\\alpha(x)}=\\lim\\limits_{x\\to 0}\\dfrac{\\alpha(x)}{\\alpha(x)}-\\dfrac{\\beta(x)}{\\alpha(x)}=1-1=0$，因此 $\\alpha(x)-\\beta(x)=o(\\alpha(x))$，③正确。\n\n④若 $\\alpha(x)-\\beta(x)=o(\\alpha(x))$，则 $\\lim\\limits_{x\\to 0}\\dfrac{\\alpha(x)-\\beta(x)}{\\alpha(x)}=0$，则 $\\lim\\limits_{x\\to 0}\\dfrac{\\alpha(x)}{\\alpha(x)}-\\dfrac{\\beta(x)}{\\alpha(x)}=1-\\lim\\limits_{x\\to 0}\\dfrac{\\beta(x)}{\\alpha(x)}=0$，则 $\\lim\\limits_{x\\to 0}\\dfrac{\\beta(x)}{\\alpha(x)}=1$，即 $\\alpha(x)\\sim\\beta(x)$，④正确。\n\n因此真命题有①③④，选（C）"
+    }
+   ],
+   "knowledge_points": [
+    "无穷小比较",
+    "等价无穷小定义"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     1
+    ],
+    "anchor": "选择题(1)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:54501451b460341b5c37607722546bf238360d277a173ea7b202e9b3265317f9"
+  },
+  {
+   "id": "math2-2022-2",
+   "subject": "math2",
+   "year": 2022,
+   "num": 2,
+   "type": "single",
+   "score": 5,
+   "stem": "$\\displaystyle\\int_{0}^{2}\\mathrm{d}y\\int_{y}^{2}\\dfrac{y}{\\sqrt{1+x^{3}}}\\mathrm{d}x=$（　）",
+   "options": [
+    "（A）$\\dfrac{\\sqrt{2}}{6}$",
+    "（B）$\\dfrac{1}{3}$",
+    "（C）$\\dfrac{\\sqrt{2}}{3}$",
+    "（D）$\\dfrac{2}{3}$"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$\\displaystyle\\int_{0}^{2}\\mathrm{d}y\\int_{y}^{2}\\dfrac{y}{\\sqrt{1+x^{3}}}\\mathrm{d}x=\\int_{0}^{2}\\mathrm{d}x\\int_{0}^{x}\\dfrac{y}{\\sqrt{1+x^{3}}}\\mathrm{d}y=\\int_{0}^{2}\\dfrac{x^{2}}{2\\sqrt{1+x^{3}}}\\mathrm{d}x$\n\n$=\\displaystyle\\int_{0}^{2}\\dfrac{1}{6\\sqrt{1+x^{3}}}\\mathrm{d}(1+x^{3})\\ =\\dfrac{1}{3}\\sqrt{1+x^{3}}\\Big|_{0}^{2}=\\dfrac{2}{3}$。"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分交换积分次序"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     1
+    ],
+    "anchor": "选择题(2)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:225a02f516f1ad999e8600f440644916aa62e06f55b5e8709d36eb93727715ce"
+  },
+  {
+   "id": "math2-2022-3",
+   "subject": "math2",
+   "year": 2022,
+   "num": 3,
+   "type": "single",
+   "score": 5,
+   "stem": "$f(x)$ 在 $x=x_{0}$ 处二阶可导，以下说法正确的是（　）",
+   "options": [
+    "（A）若在 $x=x_{0}$ 的某个邻域内 $f(x)$ 单调增，则 $f'(x_{0})>0$",
+    "（B）若 $f'(x_{0})>0$，则在 $x=x_{0}$ 的某个邻域内 $f(x)$ 单调增",
+    "（C）若在 $x=x_{0}$ 的某个邻域内 $f(x)$ 图像是凹的，则 $f''(x_{0})>0$",
+    "（D）若 $f''(x_{0})>0$，则在 $x=x_{0}$ 某个邻域内 $f(x)$ 图像是凹的"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$f(x)$ 在 $x=x_{0}$ 处二阶可导，则 $f(x)$ 在 $x=x_{0}$ 处一阶连续可导，若 $f'(x_{0})>0$，则在 $x=x_{0}$ 的邻域内 $f'(x)$ 均大于 0（局部保号性），因此 $f(x)$ 在此邻域内单调增。"
+    }
+   ],
+   "knowledge_points": [
+    "导数局部保号性",
+    "单调性与凹凸性判定"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     1
+    ],
+    "anchor": "选择题(3)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:079a6e68c8428a8add50f0af79d913d7e83649ce09f2e03076066034f15a0296"
+  },
+  {
+   "id": "math2-2022-4",
+   "subject": "math2",
+   "year": 2022,
+   "num": 4,
+   "type": "single",
+   "score": 5,
+   "stem": "设函数 $f(t)$ 连续，令 $\\displaystyle F(x,y)=\\int_{0}^{x-y}(x-y-t)f(t)\\mathrm{d}t$，则（　）",
+   "options": [
+    "（A）$\\dfrac{\\partial F}{\\partial x}=\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=\\dfrac{\\partial^{2}F}{\\partial y^{2}}$",
+    "（B）$\\dfrac{\\partial F}{\\partial x}=\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=-\\dfrac{\\partial^{2}F}{\\partial y^{2}}$",
+    "（C）$\\dfrac{\\partial F}{\\partial x}=-\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=\\dfrac{\\partial^{2}F}{\\partial y^{2}}$",
+    "（D）$\\dfrac{\\partial F}{\\partial x}=-\\dfrac{\\partial F}{\\partial y},\\ \\dfrac{\\partial^{2}F}{\\partial x^{2}}=-\\dfrac{\\partial^{2}F}{\\partial y^{2}}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "$F(x,y)=\\displaystyle\\int_{0}^{x-y}(x-y-t)f(t)\\mathrm{d}t=x\\int_{0}^{x-y}f(t)\\mathrm{d}t-y\\int_{0}^{x-y}f(t)\\mathrm{d}t-\\int_{0}^{x-y}tf(t)\\mathrm{d}t$\n\n所以 $\\dfrac{\\partial F}{\\partial x}=\\displaystyle\\int_{0}^{x-y}f(t)\\mathrm{d}t+xf(x-y)-yf(x-y)-(x-y)f(x-y)=\\int_{0}^{x-y}f(t)\\mathrm{d}t$\n\n$\\dfrac{\\partial F}{\\partial y}=-xf(x-y)-\\displaystyle\\int_{0}^{x-y}f(t)\\mathrm{d}t+yf(x-y)+(x-y)f(x-y)=-\\int_{0}^{x-y}f(t)\\mathrm{d}t$\n\n即 $\\dfrac{\\partial F}{\\partial x}=-\\dfrac{\\partial F}{\\partial y}$\n\n$\\dfrac{\\partial^{2}F}{\\partial x^{2}}=f(x-y),\\ \\dfrac{\\partial^{2}F}{\\partial y^{2}}=f(x-y),\\ \\therefore\\dfrac{\\partial^{2}F}{\\partial x^{2}}=\\dfrac{\\partial^{2}F}{\\partial y^{2}}$\n\n综上，正确选项为（C）"
+    }
+   ],
+   "knowledge_points": [
+    "变限积分求导",
+    "二元函数偏导数"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     1,
+     2
+    ],
+    "anchor": "选择题(4)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:bfd8dd70ade6cf5075bbfd2dbd3d26a30ea4afa758decea40ea5a7d0bbd42b74"
+  },
+  {
+   "id": "math2-2022-5",
+   "subject": "math2",
+   "year": 2022,
+   "num": 5,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $p$ 为常数，有反常积分 $\\displaystyle\\int_{0}^{1}\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}\\mathrm{d}x$ 收敛，则 $p$ 的取值范围是（　）",
+   "options": [
+    "（A）$(-1,1)$",
+    "（B）$(-1,2)$",
+    "（C）$(-\\infty,1)$",
+    "（D）$(-\\infty,2)$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】先考虑 $\\displaystyle\\int_{0}^{\\frac{1}{2}}\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}\\mathrm{d}x$，\n\n若 $p<1$，因为 $\\lim\\limits_{x\\to 0^{+}}\\dfrac{\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}}{\\dfrac{1}{x^{\\frac{1+p}{2}}}}=\\lim\\limits_{x\\to 0^{+}}\\left(x^{\\frac{1-p}{2}}\\cdot\\ln x\\right)=0$，而 $\\displaystyle\\int_{0}^{\\frac{1}{2}}\\dfrac{1}{x^{\\frac{1+p}{2}}}\\mathrm{d}x$ 收敛，故 $\\displaystyle\\int_{0}^{\\frac{1}{2}}\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}\\mathrm{d}x$ 也收敛；\n\n若 $p\\geq 1$，$\\lim\\limits_{x\\to 0^{+}}\\dfrac{\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}}{\\dfrac{1}{x}}=\\lim\\limits_{x\\to 0^{+}}\\dfrac{\\ln x}{x^{p-1}}=\\infty$，且 $\\displaystyle\\int_{0}^{\\frac{1}{2}}\\dfrac{1}{x}\\mathrm{d}x$ 发散，故 $\\displaystyle\\int_{0}^{\\frac{1}{2}}\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}\\mathrm{d}x$ 也发散。\n\n再考虑 $\\displaystyle\\int_{\\frac{1}{2}}^{1}\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}\\mathrm{d}x$，$\\lim\\limits_{x\\to 1^{-}}\\dfrac{\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}}{\\dfrac{1}{(1-x)^{-p}}}=\\lim\\limits_{x\\to 1^{-}}\\dfrac{x-1}{(1-x)^{1-p}}=-1\\neq 0$，\n\n故 $\\displaystyle\\int_{\\frac{1}{2}}^{1}\\dfrac{\\ln x}{x^{p}(1-x)^{1-p}}\\mathrm{d}x$ 与 $\\displaystyle\\int_{\\frac{1}{2}}^{1}\\dfrac{1}{(1-x)^{-p}}\\mathrm{d}x$ 同敛散，故 $-p<1$，即 $p>-1$，选（A）"
+    }
+   ],
+   "knowledge_points": [
+    "反常积分敛散性判别"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     2
+    ],
+    "anchor": "选择题(5)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a97eac7631e333689b15b4d43d882c2f4c53ee5e2a3c3dc3f14e43db146e5b01"
+  },
+  {
+   "id": "math2-2022-6",
+   "subject": "math2",
+   "year": 2022,
+   "num": 6,
+   "type": "single",
+   "score": 5,
+   "stem": "已知数列 $\\{x_{n}\\}$，且 $-\\dfrac{\\pi}{2}\\leq x_{n}\\leq\\dfrac{\\pi}{2}$，则（　）",
+   "options": [
+    "（A）若 $\\lim\\limits_{n\\to\\infty}\\cos(\\sin x_{n})$ 存在，则 $\\lim\\limits_{n\\to\\infty}x_{n}$ 存在",
+    "（B）若 $\\lim\\limits_{n\\to\\infty}\\sin(\\cos x_{n})$ 存在，则 $\\lim\\limits_{n\\to\\infty}x_{n}$ 存在",
+    "（C）若 $\\lim\\limits_{n\\to\\infty}\\cos(\\sin x_{n})$ 存在，则 $\\lim\\limits_{n\\to\\infty}\\sin x_{n}$ 存在，但 $\\lim\\limits_{n\\to\\infty}x_{n}$ 不一定存在",
+    "（D）若 $\\lim\\limits_{n\\to\\infty}\\sin(\\cos x_{n})$ 存在，则 $\\lim\\limits_{n\\to\\infty}\\cos x_{n}$ 存在，但 $\\lim\\limits_{n\\to\\infty}x_{n}$ 不一定存在"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】取 $x_{n}=(-1)^{n}\\dfrac{\\pi}{2}$，则（A）、（B）、（C）均错，且（D）的“$\\lim\\limits_{n\\to\\infty}x_{n}$ 不一定存在”是正确的；（D）的“$\\lim\\limits_{n\\to\\infty}\\cos x_{n}$ 存在”的原因：当 $-\\dfrac{\\pi}{2}\\leq x_{n}\\leq\\dfrac{\\pi}{2}$ 时，$0\\leq\\cos x_{n}\\leq 1$，而 $\\sin x$ 在 $[0,1]$ 上单调，故 $\\lim\\limits_{n\\to\\infty}\\cos x_{n}$ 存在。"
+    }
+   ],
+   "knowledge_points": [
+    "数列极限存在性",
+    "复合函数单调性"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     2
+    ],
+    "anchor": "选择题(6)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:afeb41bd2b681ab1354dc69eed1cbae080759d470652601d2314a81deae159bf"
+  },
+  {
+   "id": "math2-2022-7",
+   "subject": "math2",
+   "year": 2022,
+   "num": 7,
+   "type": "single",
+   "score": 5,
+   "stem": "已知 $I_{1}=\\displaystyle\\int_{0}^{1}\\dfrac{x}{2(1+\\cos x)}\\mathrm{d}x,\\ I_{2}=\\int_{0}^{1}\\dfrac{\\ln(1+x)}{1+\\cos x}\\mathrm{d}x,\\ I_{3}=\\int_{0}^{1}\\dfrac{2x}{1+\\sin x}\\mathrm{d}x$，则以下选项正确的是（　）",
+   "options": [
+    "（A）$I_{1}<I_{2}<I_{3}$",
+    "（B）$I_{2}<I_{1}<I_{3}$",
+    "（C）$I_{1}<I_{3}<I_{2}$",
+    "（D）$I_{3}<I_{2}<I_{1}$"
+   ],
+   "answer": "A",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】比较 $I_{1},I_{2}$，令 $f(x)=\\dfrac{x}{2}-\\ln(1+x),x\\in(0,1)$，则\n\n$f'(x)=\\dfrac{1}{2}-\\dfrac{1}{1+x}=\\dfrac{x-1}{2(1+x)}<0,x\\in(0,1)$\n\n又 $f(0)=0$，所以 $f(x)<f(0)=0$，$I_{1}<I_{2}$；再比较 $I_{2},I_{3}$，\n\n令 $g(x)=\\dfrac{\\ln(1+x)}{1+\\cos x}-\\dfrac{2x}{1+\\sin x}=\\dfrac{\\ln(1+x)(1+\\sin x)-2x(1+\\cos x)}{(1+\\cos x)(1+\\sin x)}$，\n\n$h(x)=\\ln(1+x)(1+\\sin x)-2x(1+\\cos x)=\\ln(1+x)-x+\\sin x\\cdot\\ln(1+x)-x-2x\\cos x,x\\in(0,1)$\n\n其中 $\\ln(1+x)-x<0$，$\\sin x\\cdot\\ln(1+x)-x<0$，$-2x\\cos x<0$，则 $I_{2}<I_{3}$，故选（A）"
+    }
+   ],
+   "knowledge_points": [
+    "定积分大小比较",
+    "构造函数法"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     2
+    ],
+    "anchor": "选择题(7)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a100ac5816db4e801fd67fc041dddc7f6adac83347759d7d2ac15bf5a6d3fb53"
+  },
+  {
+   "id": "math2-2022-8",
+   "subject": "math2",
+   "year": 2022,
+   "num": 8,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $\\boldsymbol{A}$ 为 3 阶矩阵，$\\boldsymbol{\\Lambda}=\\begin{pmatrix}1&0&0\\\\ 0&-1&0\\\\ 0&0&0\\end{pmatrix}$，则 $\\boldsymbol{A}$ 有特征值 $1,-1,0$ 的充分必要条件为（　）",
+   "options": [
+    "（A）存在可逆矩阵 $\\boldsymbol{P},\\ \\boldsymbol{Q}$，使得 $\\boldsymbol{A}=\\boldsymbol{P}\\boldsymbol{\\Lambda}\\boldsymbol{Q}$",
+    "（B）存在可逆矩阵 $\\boldsymbol{P}$，使得 $\\boldsymbol{A}=\\boldsymbol{P}\\boldsymbol{\\Lambda}\\boldsymbol{P}^{-1}$",
+    "（C）存在正交矩阵 $\\boldsymbol{Q}$，使得 $\\boldsymbol{A}=\\boldsymbol{Q}\\boldsymbol{\\Lambda}\\boldsymbol{Q}^{-1}$",
+    "（D）存在可逆矩阵 $\\boldsymbol{P}$，使得 $\\boldsymbol{A}=\\boldsymbol{P}\\boldsymbol{\\Lambda}\\boldsymbol{P}^{\\mathrm{T}}$"
+   ],
+   "answer": "B",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$\\boldsymbol{A}$ 有 3 个不同特征值，故 $\\boldsymbol{A}$ 一定可以对角化 $\\Leftrightarrow$ 存在可逆矩阵 $\\boldsymbol{P}$，使得 $\\boldsymbol{A}=\\boldsymbol{P}\\boldsymbol{\\Lambda}\\boldsymbol{P}^{-1}$。"
+    }
+   ],
+   "knowledge_points": [
+    "矩阵特征值",
+    "相似与对角化"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     2
+    ],
+    "anchor": "选择题(8)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:0ea20480ca42550ffe7453b71fa2bc781fe05496c9b1cffc26410c482a025b9d"
+  },
+  {
+   "id": "math2-2022-9",
+   "subject": "math2",
+   "year": 2022,
+   "num": 9,
+   "type": "single",
+   "score": 5,
+   "stem": "设矩阵 $\\boldsymbol{A}=\\begin{pmatrix}1&1&1\\\\ 1&a&a^{2}\\\\ 1&b&b^{2}\\end{pmatrix}$，$\\boldsymbol{b}=\\begin{pmatrix}1\\\\ 2\\\\ 4\\end{pmatrix}$，则线性方程组 $\\boldsymbol{A}\\boldsymbol{x}=\\boldsymbol{b}$ 解的情况为（　）",
+   "options": [
+    "（A）有解",
+    "（B）无解",
+    "（C）有无穷多解或无解",
+    "（D）有唯一解或无解"
+   ],
+   "answer": "D",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$|\\boldsymbol{A}|=(b-1)(b-a)(a-1)$。当 $b\\neq 1$ 且 $a\\neq 1$ 且 $b\\neq a$ 时，$r(\\boldsymbol{A})=r\\big(\\boldsymbol{A}\\big|\\boldsymbol{b}\\big)=3$ 有唯一解；当 $b=1\\big(b\\neq 1\\big)$ 或 $a=1\\big(b\\neq 1\\big)$ 或 $a=b=1$ 时均有 $r(\\boldsymbol{A})<r\\big(\\boldsymbol{A}\\big|\\boldsymbol{b}\\big)$ 无解。"
+    }
+   ],
+   "knowledge_points": [
+    "线性方程组解的判定",
+    "行列式计算"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     2,
+     3
+    ],
+    "anchor": "选择题(9)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ca286c044a6971c66bd15c95d95ccaf993224c8fb50e80814d9f701fcf7aed2f"
+  },
+  {
+   "id": "math2-2022-10",
+   "subject": "math2",
+   "year": 2022,
+   "num": 10,
+   "type": "single",
+   "score": 5,
+   "stem": "设 $\\boldsymbol{\\alpha}_{1}=\\begin{pmatrix}\\lambda\\\\ 1\\\\ 1\\end{pmatrix},\\boldsymbol{\\alpha}_{2}=\\begin{pmatrix}1\\\\ \\lambda\\\\ 1\\end{pmatrix},\\boldsymbol{\\alpha}_{3}=\\begin{pmatrix}1\\\\ 1\\\\ \\lambda\\end{pmatrix},\\boldsymbol{\\alpha}_{4}=\\begin{pmatrix}1\\\\ \\lambda\\\\ \\lambda^{2}\\end{pmatrix}$，若向量组 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$ 与 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{4}$ 等价，则 $\\lambda$ 的取值范围是（　）",
+   "options": [
+    "（A）$\\{0,1\\}$",
+    "（B）$\\left\\{\\lambda\\middle|\\lambda\\in R,\\lambda\\neq -2\\right\\}$",
+    "（C）$\\left\\{\\lambda\\middle|\\lambda\\in R,\\lambda\\neq -1,\\lambda\\neq -2\\right\\}$",
+    "（D）$\\left\\{\\lambda\\middle|\\lambda\\in R,\\lambda\\neq -1\\right\\}$"
+   ],
+   "answer": "C",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】\n\n$\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4}\\big)=\\begin{pmatrix}\\lambda&1&1&1\\\\ 1&\\lambda&1&\\lambda\\\\ 1&1&\\lambda&\\lambda^{2}\\end{pmatrix}\\to\\begin{pmatrix}1&1&\\lambda&\\lambda^{2}\\\\ 0&\\lambda-1&1-\\lambda&\\lambda-\\lambda^{2}\\\\ 0&1-\\lambda&1-\\lambda^{2}&1-\\lambda^{3}\\end{pmatrix}$\n\n$\\to\\begin{pmatrix}1&1&\\lambda&\\lambda^{2}\\\\ 0&\\lambda-1&1-\\lambda&\\lambda-\\lambda^{2}\\\\ 0&0&2-\\lambda-\\lambda^{2}&1+\\lambda-\\lambda^{2}-\\lambda^{3}\\end{pmatrix}$\n\n已知 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}$ 与 $\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{4}$ 等价，则 $r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}\\big)=r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{4}\\big)=r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3},\\boldsymbol{\\alpha}_{4}\\big)$\n\n当 $\\lambda=-1$ 时，$r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}\\big)=3,r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{4}\\big)=2$ 与向量组等价矛盾，故 $\\lambda\\neq-1$\n\n当 $\\lambda=-2$ 时，$r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}\\big)=2,r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{4}\\big)=3$ 与向量组等价矛盾，故 $\\lambda\\neq-2$\n\n故排除（B）（D）；当 $\\lambda=2$，$r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{3}\\big)=r\\big(\\boldsymbol{\\alpha}_{1},\\boldsymbol{\\alpha}_{2},\\boldsymbol{\\alpha}_{4}\\big)=3$，故排除（A），于是该题选（C）。"
+    }
+   ],
+   "knowledge_points": [
+    "向量组等价",
+    "矩阵的秩"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "选择题(10)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:4f0b57e835334213d4c69cf997bf2bf5b0daefd0ea974ade94f2af9c70fbdb5c"
+  },
+  {
+   "id": "math2-2022-11",
+   "subject": "math2",
+   "year": 2022,
+   "num": 11,
+   "type": "fill",
+   "score": 5,
+   "stem": "$\\displaystyle\\lim_{x\\to 0}\\left(\\dfrac{1+\\mathrm{e}^{x}}{2}\\right)^{\\cot x}=$ ________。",
+   "options": [],
+   "answer": "\\mathrm{e}^{\\frac{1}{2}}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$\\displaystyle\\lim_{x\\to 0}\\left(\\dfrac{1+\\mathrm{e}^{x}}{2}\\right)^{\\cot x}=\\lim_{x\\to 0}\\left(1+\\dfrac{\\mathrm{e}^{x}-1}{2}\\right)^{\\cot x}=\\mathrm{e}^{\\lim\\limits_{x\\to 0}\\dfrac{\\cos x(\\mathrm{e}^{x}-1)}{2\\sin x}}=\\mathrm{e}^{\\frac{1}{2}}$。"
+    }
+   ],
+   "knowledge_points": [
+    "幂指函数极限",
+    "重要极限"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "填空题(11)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d797850e171c85ea7f83232195b993bc66c789cd816a0bd045ba2f82cd21c9a2"
+  },
+  {
+   "id": "math2-2022-12",
+   "subject": "math2",
+   "year": 2022,
+   "num": 12,
+   "type": "fill",
+   "score": 5,
+   "stem": "设 $x^{2}+xy+y^{3}=3$ 确定了 $y=y(x)$，则 $y''(1)=$ ________。",
+   "options": [],
+   "answer": "-\\dfrac{31}{32}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】同时对原等式两端求导：$2x+y+xy'+3y^{2}y'=0$；\n\n再次求导：$2+2y'+xy''+6y(y')^{2}+3y^{2}y''=0$，\n\n当 $x=1$ 时 $y=1$，$y'=-\\dfrac{3}{4}$，$y''(1)=-\\dfrac{31}{32}$。"
+    }
+   ],
+   "knowledge_points": [
+    "隐函数求导"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "填空题(12)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:d65920b0db2d56424f017c8c80b968f83861cb101085bc6b4053a097b7a07546"
+  },
+  {
+   "id": "math2-2022-13",
+   "subject": "math2",
+   "year": 2022,
+   "num": 13,
+   "type": "fill",
+   "score": 5,
+   "stem": "$\\displaystyle\\int_{0}^{1}\\dfrac{2x+3}{x^{2}-x+1}\\mathrm{d}x=$ ________。",
+   "options": [],
+   "answer": "\\dfrac{8\\sqrt{3}\\pi}{9}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$\\displaystyle\\int_{0}^{1}\\dfrac{2x+3}{x^{2}-x+1}\\mathrm{d}x=\\int_{0}^{1}\\dfrac{2x-1}{x^{2}-x+1}\\mathrm{d}x+4\\int_{0}^{1}\\dfrac{1}{x^{2}-x+1}\\mathrm{d}x$\n\n$=\\ln\\left|x^{2}-x+1\\right|\\big|_{0}^{1}+4\\displaystyle\\int_{0}^{1}\\dfrac{1}{\\left(x-\\dfrac{1}{2}\\right)^{2}+\\dfrac{3}{4}}\\mathrm{d}x=\\dfrac{8}{\\sqrt{3}}\\arctan\\dfrac{2x-1}{\\sqrt{3}}\\big|_{0}^{1}=\\dfrac{8\\sqrt{3}\\pi}{9}$。"
+    }
+   ],
+   "knowledge_points": [
+    "有理函数积分",
+    "凑微分与反正切"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "填空题(13)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:30780c1f0862ce340d044ae07df09f5169f5a71096b85a57a1fa3e166eb417d4"
+  },
+  {
+   "id": "math2-2022-14",
+   "subject": "math2",
+   "year": 2022,
+   "num": 14,
+   "type": "fill",
+   "score": 5,
+   "stem": "微分方程 $y'''-2y''+5y'=0$ 的通解为 ________。",
+   "options": [],
+   "answer": "y=C_{1}+\\mathrm{e}^{x}\\left(C_{2}\\sin 2x+C_{3}\\cos 2x\\right)，C_{1},C_{2},C_{3} 为任意常数",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】微分方程对应特征方程为：$\\lambda^{3}-2\\lambda^{2}+5\\lambda=0$。可得特征值为 $\\lambda_{1}=0,\\lambda_{2,3}=1\\pm 2i$。\n\n所以原方程的通解为：$y=C_{1}+\\mathrm{e}^{x}\\left(C_{2}\\sin 2x+C_{3}\\cos 2x\\right)$，$C_{1},C_{2},C_{3}$ 为任意常数。"
+    }
+   ],
+   "knowledge_points": [
+    "高阶常系数线性微分方程",
+    "特征方程"
+   ],
+   "difficulty": 2,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "填空题(14)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:ce8c510dadcf2536dd2a2c334582cdf0342079d906cfdb8988989c90e3945bd1"
+  },
+  {
+   "id": "math2-2022-15",
+   "subject": "math2",
+   "year": 2022,
+   "num": 15,
+   "type": "fill",
+   "score": 5,
+   "stem": "曲线的极坐标方程为 $r=\\sin 3\\theta,\\ 0\\leq\\theta\\leq\\dfrac{\\pi}{3}$，则曲线与极轴所围成的面积为 ________。",
+   "options": [],
+   "answer": "\\dfrac{\\pi}{12}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$S=\\dfrac{1}{2}\\displaystyle\\int_{0}^{\\frac{\\pi}{3}}\\sin^{2}3\\theta\\mathrm{d}\\theta=\\dfrac{1}{2}\\cdot\\dfrac{1}{3}\\int_{0}^{\\pi}\\sin^{2}\\theta\\mathrm{d}\\theta=\\dfrac{\\pi}{12}$。"
+    }
+   ],
+   "knowledge_points": [
+    "极坐标下曲线面积"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "填空题(15)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:12428fc9b4b0ce5e98f7d6275d2b00cd61899ee35548243f0c1720f406a01ac3"
+  },
+  {
+   "id": "math2-2022-16",
+   "subject": "math2",
+   "year": 2022,
+   "num": 16,
+   "type": "fill",
+   "score": 5,
+   "stem": "将 $\\boldsymbol{A}$ 的第二行与第三行交换，再将第二列的 $-1$ 倍加到第一列得到矩阵 $\\begin{pmatrix}-2&1&-1\\\\ 1&-1&0\\\\ -1&0&0\\end{pmatrix}$，则 $\\mathrm{tr}(\\boldsymbol{A}^{-1})=$ ________。",
+   "options": [],
+   "answer": "-1",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$\\begin{pmatrix}1&0&0\\\\ 0&0&1\\\\ 0&1&0\\end{pmatrix}\\boldsymbol{A}\\begin{pmatrix}1&0&0\\\\ -1&1&0\\\\ 0&0&1\\end{pmatrix}=\\begin{pmatrix}-2&1&-1\\\\ 1&-1&0\\\\ -1&0&0\\end{pmatrix}$，\n\n则 $\\boldsymbol{A}^{-1}=\\begin{pmatrix}1&0&0\\\\ -1&1&0\\\\ 0&0&1\\end{pmatrix}\\begin{pmatrix}-2&1&-1\\\\ 1&-1&0\\\\ -1&0&0\\end{pmatrix}^{-1}\\begin{pmatrix}1&0&0\\\\ 0&0&1\\\\ 0&1&0\\end{pmatrix}=\\begin{pmatrix}0&-1&0\\\\ 0&0&-1\\\\ -1&1&-1\\end{pmatrix}$\n\n故 $\\mathrm{tr}(\\boldsymbol{A}^{-1})=-1$"
+    }
+   ],
+   "knowledge_points": [
+    "初等变换与矩阵乘积",
+    "逆矩阵与迹"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "填空题(16)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:9c1a8c1f8fee20b1d8109b59e9e1b4fc33c08eead5df73f7762f091f2de485c7"
+  },
+  {
+   "id": "math2-2022-17",
+   "subject": "math2",
+   "year": 2022,
+   "num": 17,
+   "type": "essay",
+   "score": 10,
+   "stem": "已知函数 $f(x)$ 在 $x=1$ 处可导，满足 $\\displaystyle\\lim_{x\\to 0}\\dfrac{f\\left(\\mathrm{e}^{x^{2}}\\right)-3f\\left(1+\\sin^{2}x\\right)}{x^{2}}=2$，求 $f'(1)$。",
+   "options": [],
+   "answer": "f'(1)=-1",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$f(x)$ 在 $x=1$ 处可导，则 $f(x)$ 在 $x=1$ 处连续，\n\n$\\lim\\limits_{x\\to 0}\\left[f\\left(\\mathrm{e}^{x^{2}}\\right)-3f\\left(1+\\sin^{2}x\\right)\\right]=-2f(1)$\n\n又因为 $\\lim\\limits_{x\\to 0}\\dfrac{f\\left(\\mathrm{e}^{x^{2}}\\right)-3f\\left(1+\\sin^{2}x\\right)}{x^{2}}\\cdot x^{2}=\\lim\\limits_{x\\to 0}\\dfrac{f\\left(\\mathrm{e}^{x^{2}}\\right)-3f\\left(1+\\sin^{2}x\\right)}{x^{2}}\\cdot\\lim\\limits_{x\\to 0}x^{2}=0$，所以 $f(1)=0$。\n\n原式 $=\\lim\\limits_{x\\to 0}\\dfrac{f\\left(\\mathrm{e}^{x^{2}}\\right)-f(1)}{x^{2}}-3\\lim\\limits_{x\\to 0}\\dfrac{f\\left(1+\\sin^{2}x\\right)-f(1)}{x^{2}}=-2f'(1)=2$\n\n所以 $f'(1)=-1$。"
+    }
+   ],
+   "knowledge_points": [
+    "导数定义",
+    "未定式极限"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "解答题(17)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:9d266df51b5a8a4dfa919434a9ca2e472d93d93a38189ac1217dfcbf0a2e7e64"
+  },
+  {
+   "id": "math2-2022-18",
+   "subject": "math2",
+   "year": 2022,
+   "num": 18,
+   "type": "essay",
+   "score": 12,
+   "stem": "已知微分方程 $2xy'-4y=2\\ln x-1$，且满足条件 $y(1)=\\dfrac{1}{4}$，求 $y=y(x)$（$1\\leq x\\leq \\mathrm{e}$）的弧长。",
+   "options": [],
+   "answer": "L=\\dfrac{1}{4}\\mathrm{e}^{2}+\\dfrac{1}{4}",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】由 $y'-\\dfrac{2}{x}y=\\dfrac{\\ln x}{x}-\\dfrac{1}{2x}$，\n\n$y(x)=\\mathrm{e}^{\\int\\frac{2}{x}\\mathrm{d}x}\\left[\\int\\left(\\dfrac{\\ln x}{x}-\\dfrac{1}{2x}\\right)\\mathrm{e}^{-\\int\\frac{2}{x}\\mathrm{d}x}\\mathrm{d}x+C\\right]=-\\dfrac{1}{2}\\ln x+Cx^{2}$\n\n又因为 $y(1)=\\dfrac{1}{4}$，$\\therefore C=\\dfrac{1}{4}$；即 $y(x)=-\\dfrac{1}{2}\\ln x+\\dfrac{1}{4}x^{2}$，\n\n所以 $y'(x)=-\\dfrac{1}{2x}+\\dfrac{1}{2}x$ 从而弧长 $L=\\displaystyle\\int_{1}^{\\mathrm{e}}\\left(\\dfrac{1}{2}x+\\dfrac{1}{2x}\\right)\\mathrm{d}x=\\left.\\left(\\dfrac{1}{4}x^{2}+\\dfrac{1}{2}\\ln|x|\\right)\\right|_{1}^{\\mathrm{e}}=\\dfrac{1}{4}\\mathrm{e}^{2}+\\dfrac{1}{4}$。"
+    }
+   ],
+   "knowledge_points": [
+    "一阶线性微分方程",
+    "平面曲线弧长"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3
+    ],
+    "anchor": "解答题(18)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:72e8c459b3e94f1411dddb977104978cb8e7bc23b7c366a40e9dd3f3facaea72"
+  },
+  {
+   "id": "math2-2022-19",
+   "subject": "math2",
+   "year": 2022,
+   "num": 19,
+   "type": "essay",
+   "score": 12,
+   "stem": "设 $D=\\{(x,y)\\mid y-2\\leq x\\leq\\sqrt{4-y^{2}},\\ 0\\leq y\\leq 2\\}$，计算 $\\displaystyle\\iint_{D}\\dfrac{(x-y)^{2}}{x^{2}+y^{2}}\\mathrm{d}x\\mathrm{d}y$。",
+   "options": [],
+   "answer": "2\\pi-2",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】令 $D_{1}=\\left\\{(r,\\theta)\\middle|0\\leq r\\leq 2,0\\leq\\theta\\leq\\dfrac{\\pi}{2}\\right\\}$，\n\n$D_{2}=\\left\\{(r,\\theta)\\middle|0\\leq r\\leq\\dfrac{2}{\\sin\\theta-\\cos\\theta},\\dfrac{\\pi}{2}\\leq\\theta\\leq\\pi\\right\\}$，\n\n$I=\\displaystyle\\iint_{D_{1}}\\dfrac{(x-y)^{2}}{x^{2}+y^{2}}dxdy+\\iint_{D_{2}}\\dfrac{(x-y)^{2}}{x^{2}+y^{2}}dxdy$\n\n$=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}d\\theta\\int_{0}^{2}\\left(\\cos\\theta-\\sin\\theta\\right)^{2}rdr+\\int_{\\frac{\\pi}{2}}^{\\pi}d\\theta\\int_{0}^{\\frac{2}{\\sin\\theta-\\cos\\theta}}\\left(\\cos\\theta-\\sin\\theta\\right)^{2}rdr$\n\n$=2\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\left(1-2\\sin\\theta\\cos\\theta\\right)d\\theta+\\int_{\\frac{\\pi}{2}}^{\\pi}2d\\theta=2\\pi-2$"
+    }
+   ],
+   "knowledge_points": [
+    "二重积分极坐标计算",
+    "区域分块"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     3,
+     4
+    ],
+    "anchor": "解答题(19)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a8c087646aaca0c72b677cdc6c4c2d57d4b28f9ecb2a508bb4892ed3f79f2017"
+  },
+  {
+   "id": "math2-2022-20",
+   "subject": "math2",
+   "year": 2022,
+   "num": 20,
+   "type": "essay",
+   "score": 12,
+   "stem": "已知可微函数 $f(u,v)$ 满足 $\\dfrac{\\partial f(u,v)}{\\partial u}-\\dfrac{\\partial f(u,v)}{\\partial v}=2(u-v)\\cdot\\mathrm{e}^{-(u+v)}$，且 $f(u,0)=u^{2}\\mathrm{e}^{-u}$。（I）记 $g(x,y)=f(x,y-x)$，求 $\\dfrac{\\partial g(x,y)}{\\partial x}$；（II）求 $f(u,v)$ 的表达式和极值。",
+   "options": [],
+   "answer": "(Ⅰ) \\dfrac{\\partial g}{\\partial x}=2(2x-y)\\mathrm{e}^{-y}；(Ⅱ) f(u,v)=(u^{2}+v^{2})\\mathrm{e}^{-(u+v)}，极小值 f(0,0)=0，(1,1) 处不是极值",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】(I) $\\dfrac{\\partial g(x,y)}{\\partial x}=\\dfrac{\\partial f(x,y-x)}{\\partial x}$，令 $u=x,v=y-x$，\n\n$\\dfrac{\\partial f(x,y-x)}{\\partial x}=\\dfrac{\\partial f(u,v)}{\\partial u}\\cdot\\dfrac{\\partial u}{\\partial x}+\\dfrac{\\partial f(u,v)}{\\partial v}\\cdot\\dfrac{\\partial v}{\\partial x}=\\dfrac{\\partial f(u,v)}{\\partial u}-\\dfrac{\\partial f(u,v)}{\\partial v}=2(u-v)\\cdot\\mathrm{e}^{-(u+v)}=2(2x-y)\\cdot\\mathrm{e}^{-y}$\n\n(II) $g(x,y)=2(x^{2}-xy)\\mathrm{e}^{-y}+C(y)$，又 $f(x,0)=g(x,x)=C(x)=x^{2}\\mathrm{e}^{-x}$，\n\n所以 $C(x)=x^{2}\\mathrm{e}^{-x},g(x,y)=2(x^{2}-xy)\\mathrm{e}^{-y}+y^{2}\\mathrm{e}^{-y}=[2x^{2}-2xy+y^{2}]\\mathrm{e}^{-y}$，\n\n令 $\\begin{cases}x=u\\\\ y-x=v\\end{cases}\\Rightarrow\\begin{cases}x=u\\\\ y=u+v\\end{cases}$ 得\n\n$f(u,v)=-2uv\\mathrm{e}^{-(u+v)}+(u+v)^{2}\\mathrm{e}^{-(u+v)}=(u^{2}+v^{2})\\mathrm{e}^{-(u+v)}$\n\n令 $\\begin{cases}f'_{u}=[2u-(u^{2}+v^{2})]\\mathrm{e}^{-(u+v)}=0\\\\ f'_{v}=[2v-(u^{2}+v^{2})]\\mathrm{e}^{-(u+v)}=0\\end{cases}$ 得 $\\begin{cases}u=0\\\\ v=0\\end{cases}$ 或 $\\begin{cases}u=1\\\\ v=1\\end{cases}$\n\n$A=\\dfrac{\\partial^{2}f}{\\partial u^{2}}\\big|_{(0,0)}=2,B=\\dfrac{\\partial^{2}f}{\\partial u\\partial v}\\big|_{(0,0)}=0,C=\\dfrac{\\partial^{2}f}{\\partial v^{2}}\\big|_{(0,0)}=2,\\ AC-B^{2}>0,A>0$，得 $f(u,v)\\big|_{(0,0)}=0$ 为极小值；\n\n$A=\\dfrac{\\partial^{2}f}{\\partial u^{2}}\\big|_{(1,1)}=0,B=\\dfrac{\\partial^{2}f}{\\partial u\\partial v}\\big|_{(1,1)}=-2\\mathrm{e}^{-2},C=\\dfrac{\\partial^{2}f}{\\partial v^{2}}\\big|_{(1,1)}=0,\\ AC-B^{2}<0$，得在 $(1,1)$ 处不是极值。"
+    }
+   ],
+   "knowledge_points": [
+    "多元复合函数求偏导",
+    "二元函数极值"
+   ],
+   "difficulty": 4,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     4
+    ],
+    "anchor": "解答题(20)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:a1bc5a308226167a081b129a62ef735451733e573e5e5c63f829ed80b246c945"
+  },
+  {
+   "id": "math2-2022-21",
+   "subject": "math2",
+   "year": 2022,
+   "num": 21,
+   "type": "essay",
+   "score": 12,
+   "stem": "设 $f(x)$ 在 $(-\\infty,+\\infty)$ 有二阶连续导数，证明：$f''(x)\\geq 0$ 的充要条件为对不同实数 $a,b$，$f\\left(\\dfrac{a+b}{2}\\right)\\leq\\dfrac{1}{b-a}\\displaystyle\\int_{a}^{b}f(x)\\mathrm{d}x$。",
+   "options": [],
+   "answer": "证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】$f(x)=f\\big(\\dfrac{a+b}{2}\\big)+f'\\big(\\dfrac{a+b}{2}\\big)\\big(x-\\dfrac{a+b}{2}\\big)+\\dfrac{1}{2}f''(\\xi)\\big(x-\\dfrac{a+b}{2}\\big)^{2}$，$\\xi$ 介于 $x$ 与 $\\dfrac{a+b}{2}$ 之间。\n\n$\\displaystyle\\int_{a}^{b}f(x)\\mathrm{d}x=\\int_{a}^{b}\\left[f\\big(\\dfrac{a+b}{2}\\big)+f'\\big(\\dfrac{a+b}{2}\\big)\\big(x-\\dfrac{a+b}{2}\\big)+\\dfrac{1}{2}f''(\\xi)\\big(x-\\dfrac{a+b}{2}\\big)^{2}\\right]\\mathrm{d}x$\n\n$=f\\big(\\dfrac{a+b}{2}\\big)(b-a)+\\displaystyle\\int_{a}^{b}\\left[\\dfrac{1}{2}f''(\\xi)\\big(x-\\dfrac{a+b}{2}\\big)^{2}\\right]\\mathrm{d}x$\n\n必要性：若 $f''(x)\\geq 0$，则 $f''(\\xi)\\geq 0$，有 $\\dfrac{\\displaystyle\\int_{a}^{b}f(x)\\mathrm{d}x}{(b-a)}\\geq f\\big(\\dfrac{a+b}{2}\\big)$。\n\n充分性：若存在 $x_{0}$ 使得 $f''(x_{0})<0$，因为 $f(x)$ 有二阶连续导数，故存在 $\\delta>0$ 使得 $f''(x)$ 在 $\\big[x_{0}-\\delta,x_{0}+\\delta\\big]$ 内恒小于零，记 $a=x_{0}-\\delta,b=x_{0}+\\delta$，\n\n此时 $\\displaystyle\\int_{a}^{b}f(x)\\mathrm{d}x=f\\big(\\dfrac{a+b}{2}\\big)(b-a)+\\int_{a}^{b}\\left[\\dfrac{1}{2}f''(\\xi)\\big(x-\\dfrac{a+b}{2}\\big)^{2}\\right]\\mathrm{d}x<f\\big(\\dfrac{a+b}{2}\\big)(b-a)$，矛盾！\n\n故 $f''(x)\\geq 0$。综上，充分性必要性均得证。"
+    }
+   ],
+   "knowledge_points": [
+    "泰勒公式",
+    "积分不等式证明"
+   ],
+   "difficulty": 5,
+   "category": {
+    "key": "gaoshu",
+    "label": "高等数学"
+   },
+   "tags": [
+    "math2",
+    "高等数学"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     4
+    ],
+    "anchor": "解答题(21)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:f29199347b5bd480b70c2d33ddef1fe6c13647390c2b1859a218235190bf0e3a"
+  },
+  {
+   "id": "math2-2022-22",
+   "subject": "math2",
+   "year": 2022,
+   "num": 22,
+   "type": "essay",
+   "score": 12,
+   "stem": "已知二次型 $f(x_{1},x_{2},x_{3})=3x_{1}^{2}+4x_{2}^{2}+3x_{3}^{2}+2x_{1}x_{3}$。（I）求正交变换 $\\boldsymbol{x}=\\boldsymbol{Q}\\boldsymbol{y}$ 化二次型为标准型；（II）证明 $\\displaystyle\\min_{x\\neq 0}\\dfrac{f(\\boldsymbol{x})}{\\boldsymbol{x}^{\\mathrm{T}}\\boldsymbol{x}}=2$。",
+   "options": [],
+   "answer": "证明见解析",
+   "source_blocks": [
+    {
+     "role": "analysis",
+     "origin": "source",
+     "text": "【解析】(I) $f\\left(x_{1},x_{2},x_{3}\\right)=3x_{1}^{2}+4x_{2}^{2}+3x_{3}^{2}+2x_{1}x_{3}$，\n\n二次型矩阵为 $\\boldsymbol{A}=\\begin{pmatrix}3&0&1\\\\ 0&4&0\\\\ 1&0&3\\end{pmatrix}$，则特征方程为\n\n$|\\lambda\\boldsymbol{E}-\\boldsymbol{A}|=\\begin{vmatrix}\\lambda-3&0&-1\\\\ 0&\\lambda-4&0\\\\ -1&0&\\lambda-3\\end{vmatrix}=(\\lambda-4)^{2}(\\lambda-2)$\n\n得特征值 $\\lambda_{1}=\\lambda_{2}=4,\\lambda_{3}=2$。\n\n当 $\\lambda_{1}=\\lambda_{2}=4$ 时，$(4\\boldsymbol{E}-\\boldsymbol{A})x=0$ 得 $\\boldsymbol{\\xi}_{1}=(0,1,0)^{\\mathrm{T}},\\boldsymbol{\\xi}_{2}=(1,0,1)^{\\mathrm{T}}$\n\n当 $\\lambda_{3}=2$ 时，$(2\\boldsymbol{E}-\\boldsymbol{A})x=0$ 得 $\\boldsymbol{\\xi}_{3}=(1,0,-1)^{\\mathrm{T}}$。\n\n将 $\\boldsymbol{\\xi}_{1}=(0,1,0)^{\\mathrm{T}},\\boldsymbol{\\xi}_{2}=(1,0,1)^{\\mathrm{T}},\\boldsymbol{\\xi}_{3}=(1,0,-1)^{\\mathrm{T}}$ 正交单位化得\n\n$\\boldsymbol{\\eta}_{1}=(0,1,0)^{\\mathrm{T}},\\boldsymbol{\\eta}_{2}=\\dfrac{1}{\\sqrt{2}}(1,0,1)^{\\mathrm{T}},\\boldsymbol{\\eta}_{3}=\\dfrac{1}{\\sqrt{2}}(1,0,-1)^{\\mathrm{T}}$ 可得 $\\boldsymbol{Q}=\\begin{pmatrix}0&\\dfrac{1}{\\sqrt{2}}&\\dfrac{1}{\\sqrt{2}}\\\\ 1&0&0\\\\ 0&\\dfrac{1}{\\sqrt{2}}&-\\dfrac{1}{\\sqrt{2}}\\end{pmatrix}$，即\n\n$\\begin{cases}x_{1}=\\dfrac{1}{\\sqrt{2}}y_{2}+\\dfrac{1}{\\sqrt{2}}y_{3}\\\\ x_{2}=y_{2}\\\\ x_{3}=\\dfrac{1}{\\sqrt{2}}y_{2}-\\dfrac{1}{\\sqrt{2}}y_{3}\\end{cases}$\n\n$f(\\boldsymbol{x})=4y_{1}^{2}+4y_{2}^{2}+2y_{3}^{2}$\n\n(II) 由（1）知 $f\\left(\\boldsymbol{x}\\right)=4y_{1}^{2}+4y_{2}^{2}+2y_{3}^{2}$，$\\boldsymbol{x}=\\boldsymbol{Q}\\boldsymbol{y}$，故 $\\boldsymbol{x}^{\\mathrm{T}}\\boldsymbol{x}=\\boldsymbol{y}^{\\mathrm{T}}\\boldsymbol{Q}^{\\mathrm{T}}\\boldsymbol{Q}\\boldsymbol{y}=\\boldsymbol{y}^{\\mathrm{T}}\\boldsymbol{y}$\n\n故 $\\dfrac{f(\\boldsymbol{x})}{\\boldsymbol{x}^{\\mathrm{T}}\\boldsymbol{x}}=\\dfrac{g(\\boldsymbol{y})}{\\boldsymbol{y}^{\\mathrm{T}}\\boldsymbol{y}}=\\dfrac{4y_{1}^{2}+4y_{2}^{2}+2y_{3}^{2}}{y_{1}^{2}+y_{2}^{2}+y_{3}^{2}}=2+\\dfrac{2y_{1}^{2}+2y_{2}^{2}}{y_{1}^{2}+y_{2}^{2}+y_{3}^{2}}\\geq 2$\n\n当 $y_{1}=y_{2}=0,y_{3}\\neq 0$ 时，可取到最小值 2。\n\n所以存在非零向量 $\\boldsymbol{y}$，即存在非零向量 $\\boldsymbol{x}$，使得 $\\dfrac{f(\\boldsymbol{x})}{\\boldsymbol{x}^{\\mathrm{T}}\\boldsymbol{x}}$ 取到最小值 2。得证。"
+    }
+   ],
+   "knowledge_points": [
+    "二次型正交变换",
+    "特征值与瑞利商"
+   ],
+   "difficulty": 3,
+   "category": {
+    "key": "xiandai",
+    "label": "线性代数"
+   },
+   "tags": [
+    "math2",
+    "线性代数"
+   ],
+   "media": [],
+   "related_ids": [],
+   "variants": [],
+   "origin": "source",
+   "source_hash": "sha256pdf:513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+   "source_ref": {
+    "pdf": "2022数学二真题及解析.pdf",
+    "sha256": "513793a3053aeacecf6159e76414d6888a8e60b2b54e44ea60ddb7a69971847a",
+    "pages": [
+     4
+    ],
+    "anchor": "解答题(22)"
+   },
+   "schema_version": "1.0.0",
+   "content_hash": "sha256:fd5d3725ff02c84c79de95e7ef5a5921c25a10448827ca5f3ca50bbfd58d275d"
+  }
+ ]
+}

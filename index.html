@@ -199,6 +199,11 @@ async function fetchShard(url){
 function subjById(id){return (REG&&REG.subjects||[]).find(s=>s.id===id)}
 function dirOf(id){const s=subjById(id);return (s&&s.dataDir)||id}
 let _kt=0;
+function prevText(t,n){
+  const s=String(t||"").replace(/\s+/g," ").slice(0,n);
+  if(((s.match(/\$/g)||[]).length)%2){const i=s.lastIndexOf("$");if(i>0)return s.slice(0,i)}
+  return s;
+}
 function renderMath(el){
   try{
     if(!window.renderMathInElement){if(_kt++<20)setTimeout(()=>renderMath(el),300);return}
@@ -294,7 +299,7 @@ async function loadFigures(sid,year,qid){
 }
 
 /* ============ 路由 ============ */
-function route(){
+function routeViews(){
   const p=location.hash.replace(/^#\/?/,"").split("/").filter(Boolean);
   window.scrollTo(0,0);keyHandler=null;
   if(!REG){app.innerHTML="<div class='qcard'>加载科目注册表…</div>";return}
@@ -309,6 +314,7 @@ function route(){
   if(p[2]==="paper")return viewPaper(s,year);
   return viewYear(s,year);
 }
+function route(){const r=routeViews();Promise.resolve(r).then(()=>renderMath(app));return r}
 addEventListener("hashchange",route);
 
 /* ============ 首页 ============ */
@@ -403,8 +409,8 @@ async function viewYear(s,y){
     <h2 class="sec">${y} 年数据未就绪</h2><div class="qcard">该年份数据仍在迁移中（不编造，等真实资料完成提取）。（${esc(e.message)}）</div>`;return}
   const qs=d.questions||[];
   const rows=qs.map(q=>`<a class="qrow" style="--acc:${s.color}" href="#/${s.id}/${y}/q/${q.num}">
-    <span class="n">${q.num}</span><span class="s">${esc(String(q.stem||q.title||"").replace(/\s+/g," ").slice(0,80))}</span>
-    <span class="tag">${esc(q.category||TYPE_LABEL[q.type]||q.type||"")}</span></a>`).join("");
+    <span class="n">${q.num}</span><span class="s">${esc(prevText(q.stem||q.title,80))}</span>
+    <span class="tag">${esc((q.category&&q.category.label)||TYPE_LABEL[q.type]||q.category||q.type||"")}</span></a>`).join("");
   let passages="";
   if(Array.isArray(d.passages)&&d.passages.length){
     passages=`<h2 class="sec">原文双语精读</h2>`+d.passages.map((p,i)=>`<details class="passage"><summary>${esc(p.title||("篇章 "+(i+1)))}</summary>
@@ -464,6 +470,7 @@ async function viewQuestion(s,y,num){
   const raw=JSON.stringify(q);
   if(raw.includes("@@M:")){try{mediaMap=(await fetchShard(`data/${dirOf(s.id)}/${y}.media.json`)).items||{}}catch(e){}}
   let ana=null;
+  if((s.analysisYears||[]).includes(y))
   try{const ad=await fetchShard(`data/${dirOf(s.id)}/${y}.analysis.json`);
     ana=(ad.analysis||[]).find(a=>a.id===q.id)||null}catch(e){}
   const fill=t=>String(t??"").replace(/@@M:([-\w]+):(\d+)@@/g,(m0,id,i)=>{
@@ -476,6 +483,8 @@ async function viewQuestion(s,y,num){
     return uri?`<img src="${uri}" alt="题目图片" loading="lazy" class="mimg">`:esc(seg);
   }).join("");
   const ansStr=q.answer==null?"":(typeof q.answer==="object"?JSON.stringify(q.answer):String(q.answer));
+  // 纯 LaTeX 答案（不含中日韩文字）交给 KaTeX 渲染；混排中文的答案保持原文，避免公式报错
+  const mathAns=/\\[a-zA-Z]+/.test(ansStr)&&!/[\u3000-\u303f\u3400-\u9fff\uff00-\uffef]/.test(ansStr)&&ansStr.indexOf("$")<0;
   const correct=new Set((ansStr.match(/[A-H]/g)||[]));
   const optArr=q.options||[];
   // 408 原卷选项是纯值（无 [A] 标签）：整列都无标签时按位置推断字母，与数据层 D037 口径一致
@@ -508,7 +517,7 @@ async function viewQuestion(s,y,num){
       <div class="tt">${esc(q.title||(s.short+" "+y+" 第 "+q.num+" 题"))}</div>
       ${(q.tags||[]).map(t=>`<span style="font-size:11px;color:var(--muted);border:1px solid var(--line);padding:1px 8px;border-radius:10px">${esc(t)}</span>`).join("")}
       ${q.difficulty?`<span style="font-size:11px;color:var(--amber)">难度 ${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span>`:""}
-      ${ansStr?`<div class="ans">答案 <b>${esc(ansStr)}</b></div>`:""}
+      ${ansStr?`<div class="ans">答案 <b>${mathAns?"$"+esc(ansStr)+"$":esc(ansStr)}</b></div>`:""}
       <button class="reveal-btn" id="rv" style="margin:0 0 0 8px;padding:4px 14px;font-size:12.5px">👁 揭示</button>
       <button class="reveal-btn" id="bm" style="margin:0;padding:4px 14px;font-size:12.5px">${mark?"★ 已收藏":"☆ 收藏"}</button>
     </div>
@@ -560,6 +569,7 @@ async function viewQuestion(s,y,num){
     box.innerHTML=figs.map((f,i)=>`<div class="figbox" id="fig${i}"><h4>📐 ${esc(f.title||"题目图形")}<span class="derv">扩展图形 · 非原卷</span></h4></div>`).join("");
     $("#figs").appendChild(box);
     figs.forEach((f,i)=>renderFigure($("#fig"+i),f));
+    renderMath(box);
   });
 }
 const ROLE_L={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",kaodian:"考点定位",silu:"思路引导",jiefa:"解法构建",biaozhun:"标准解答",yicuo:"易错深挖",guina:"方法归纳",qita:"其他解法",stem_nodes:"题干结构化原文",options:"选项原文",paper_slice:"原卷切片",note:"源包校注",other:"原文区块"};

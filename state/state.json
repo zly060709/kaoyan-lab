@@ -3,7 +3,7 @@
  "phase": "M3-converge",
  "status": "RUNNING",
  "started_at": "2026-11-04T15:08:05Z",
- "updated_at": "2026-11-05T00:00:00Z",
+ "updated_at": "2026-11-05T04:30:41Z",
  "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
  "done_set": [
   "m0:auth_initiated",
@@ -27,10 +27,12 @@
   "conv2:option-letter-and-highlight",
   "conv2:sw-v0.3.1",
   "conv2:gates-9-of-9",
-  "conv3:mgt199-1024-imported"
+  "conv3:mgt199-1024-imported",
+  "conv4:math2-2022-transcribed",
+  "conv4:site-math-render-fixes"
  ],
  "failed_set": [],
- "current_task": "conv4:数学二 2022-2023 与数学三 15 卷视觉转录",
+ "current_task": "conv4:数学二 2023 卷视觉转录",
  "in_flight": {},
  "auth": "authorized (zly060709)",
  "gates": {
@@ -39,13 +41,13 @@
   "checked_at": "2026-11-05"
  },
  "metrics": {
-  "questions_total": 3184,
+  "questions_total": 3206,
   "questions": {
    "politics": 456,
    "math": 250,
    "english": 780,
    "english_objective": 675,
-   "math2": 298,
+   "math2": 320,
    "cs408": 376,
    "mgt199": 1024
   },
@@ -62,7 +64,7 @@
   },
   "figure_files": {
    "math1": 11,
-   "math2": 13
+   "math2": 14
   },
   "step_analysis_questions": {
    "cs408": 376
@@ -117,7 +119,7 @@
   }
  },
  "queue_sequential": [
-  "conv4:数学二 2022-2023 / 数学三 15 卷视觉转录",
+  "conv4:数学二 2023 / 数学三 15 卷视觉转录（2022 已完成）",
   "conv5:英语二 16 卷、数一 2009-2012、英一 2005-2009+2025 转录",
   "conv6:396 经综 22 份 PDF 转录",
   "conv7:eol 7 科 116 张扫描件接入",

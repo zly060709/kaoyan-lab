@@ -81,6 +81,28 @@ def paper_years():
     return out
 
 
+def analysis_years(data_dir):
+    """列出真正有精讲文件的年份（{年}.analysis.json 或 {年}.analysis.p1.json 且 analysis 非空）。"""
+    base = os.path.join(ROOT, "data", data_dir)
+    out = []
+    if not os.path.isdir(base):
+        return out
+    for fn in sorted(os.listdir(base)):
+        m = re.match(r"^(\d{4})\.analysis(\.p\d+)?\.json$", fn)
+        if not m:
+            continue
+        y = int(m.group(1))
+        if y in out:
+            continue
+        try:
+            d = load(os.path.join(base, fn))
+        except Exception:
+            continue
+        if isinstance(d, dict) and (d.get("analysis") or []):
+            out.append(y)
+    return sorted(out)
+
+
 def main():
     spath = os.path.join(ROOT, "data", "meta", "subjects.json")
     reg = load(spath)
@@ -94,6 +116,7 @@ def main():
         s["yearCounts"] = {str(y): n for y, n in sorted(per_year.items())}
         s["paperYears"] = sorted(py.keys())
         s["paperPages"] = {str(y): n for y, n in sorted(py.items())}
+        s["analysisYears"] = analysis_years(data_dir)
         total = sum(per_year.values())
         s["questionTotal"] = total
         if total > 0:
