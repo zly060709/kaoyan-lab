@@ -404,7 +404,7 @@ async function viewYear(s,y){
   const qs=d.questions||[];
   const rows=qs.map(q=>`<a class="qrow" style="--acc:${s.color}" href="#/${s.id}/${y}/q/${q.num}">
     <span class="n">${q.num}</span><span class="s">${esc(String(q.stem||q.title||"").replace(/\s+/g," ").slice(0,80))}</span>
-    <span class="tag">${esc(TYPE_LABEL[q.type]||q.type||"")}</span></a>`).join("");
+    <span class="tag">${esc(q.category||TYPE_LABEL[q.type]||q.type||"")}</span></a>`).join("");
   let passages="";
   if(Array.isArray(d.passages)&&d.passages.length){
     passages=`<h2 class="sec">原文双语精读</h2>`+d.passages.map((p,i)=>`<details class="passage"><summary>${esc(p.title||("篇章 "+(i+1)))}</summary>
@@ -412,11 +412,17 @@ async function viewYear(s,y){
   }
   let paperLink="";
   const mp=(CACHE["data/meta/source_pdfs.json"]||null);
+  let sections="";
+  if(Array.isArray(d.sections)&&d.sections.length){
+    sections=`<div class="card" style="margin:0 0 12px"><b style="font-size:13px">试卷结构（源包原文）</b>`+
+      d.sections.map(x=>`<div style="font-size:13px;color:var(--muted);margin-top:6px"><b style="color:var(--ink)">${esc(x.title)}</b> ${esc(x.header||"")}</div>`).join("")+
+      `<div style="font-size:12px;color:var(--muted);margin-top:8px">条件充分性判断的 A–E 判断结果选项在源 Markdown 包中未给出，平台按合同不编造，逐题附原卷切片供核对。</div></div>`;
+  }
   app.innerHTML=`<div class="crumb"><a href="#/">首页</a> › <a href="#/${s.id}">${esc(s.short||s.name)}</a> › ${y}</div>
-  <h2 class="sec">${y} 年 ${esc(s.short||s.name)}（${d.question_count||qs.length} 题）</h2>
+  <h2 class="sec">${y} 年 ${esc(s.short||s.name)}（${d.question_count||qs.length} 题）</h2>${sections}
   <div class="qlist">${rows||"<div class='qcard'>暂无题目数据</div>"}</div>${passages}`;
 }
-const TYPE_LABEL={single:"单选",multi:"多选",fill:"填空",essay:"解答",reading:"阅读",cloze:"完形",partb:"新题型",translation:"翻译",writing:"写作",code:"代码",big:"大题",other:"题"};
+const TYPE_LABEL={single:"单选",multi:"多选",fill:"填空",essay:"解答",reading:"阅读",cloze:"完形",partb:"新题型",translation:"翻译",writing:"写作",code:"代码",big:"大题",sufficiency:"条件充分性判断",logic:"逻辑推理",other:"题"};
 
 /* ============ 九段式分步揭示（合同第 3 章 B，扩展精讲 origin=extended） ============ */
 const STEPS=[["考点定位","kaodian"],["先补基础","basis"],["审题抓条件","read"],["思路引导","silu"],
@@ -556,7 +562,7 @@ async function viewQuestion(s,y,num){
     figs.forEach((f,i)=>renderFigure($("#fig"+i),f));
   });
 }
-const ROLE_L={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",kaodian:"考点定位",silu:"思路引导",jiefa:"解法构建",biaozhun:"标准解答",yicuo:"易错深挖",guina:"方法归纳",qita:"其他解法",stem_nodes:"题干结构化原文",other:"原文区块"};
+const ROLE_L={stem:"题目原文",material:"材料",answer:"正确答案",approach:"解题思路",think:"考场思路",analysis:"详细解析",detail:"逐项解析",background:"背景知识",qa:"师生问答",frame:"背诵框架",vocab:"词汇释义",warn:"易错提醒",nodes:"七步法解析",desc:"解析",solution:"解答",kaodian:"考点定位",silu:"思路引导",jiefa:"解法构建",biaozhun:"标准解答",yicuo:"易错深挖",guina:"方法归纳",qita:"其他解法",stem_nodes:"题干结构化原文",options:"选项原文",paper_slice:"原卷切片",note:"源包校注",other:"原文区块"};
 
 /* ============ 搜索 ============ */
 async function viewSearch(q){

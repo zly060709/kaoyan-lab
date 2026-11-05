@@ -26,10 +26,11 @@
   "conv2:blk-json-structured-render",
   "conv2:option-letter-and-highlight",
   "conv2:sw-v0.3.1",
-  "conv2:gates-9-of-9"
+  "conv2:gates-9-of-9",
+  "conv3:mgt199-1024-imported"
  ],
  "failed_set": [],
- "current_task": "conv3:199管综 Markdown 迁移入库",
+ "current_task": "conv4:数学二 2022-2023 与数学三 15 卷视觉转录",
  "in_flight": {},
  "auth": "authorized (zly060709)",
  "gates": {
@@ -38,14 +39,15 @@
   "checked_at": "2026-11-05"
  },
  "metrics": {
-  "questions_total": 2160,
+  "questions_total": 3184,
   "questions": {
    "politics": 456,
    "math": 250,
    "english": 780,
    "english_objective": 675,
    "math2": 298,
-   "cs408": 376
+   "cs408": 376,
+   "mgt199": 1024
   },
   "expected": {
    "politics": 456,
@@ -84,10 +86,18 @@
    "用户资料 kaoyan-extra（199 管综 Markdown 2009-2026 + 396 经综 22 PDF）",
    "用户资料 kaoyan-eol-images（7 科 116 张扫描件）"
   ],
-  "migrated": ["politics", "math1", "math2", "english1", "cs408"],
-  "imaging_only": ["math3"],
+  "migrated": [
+   "politics",
+   "math1",
+   "math2",
+   "english1",
+   "cs408",
+   "mgt199"
+  ],
+  "imaging_only": [
+   "math3"
+  ],
   "not_yet_migrated": [
-   "mgt199",
    "econ396",
    "law397",
    "law398",
@@ -100,10 +110,13 @@
    "chem315",
    "plant414",
    "animal415"
-  ]
+  ],
+  "known_source_gaps": {
+   "mgt199-2025": "源包只有 55 题（缺写作第 56、57 题）",
+   "mgt199-sufficiency": "源包未给 A-E 判断结果选项文本，options 留空并逐题附原卷切片"
+  }
  },
  "queue_sequential": [
-  "conv3:199管综 Markdown 迁移（18 年 × 57 题 + 1073 切片图）",
   "conv4:数学二 2022-2023 / 数学三 15 卷视觉转录",
   "conv5:英语二 16 卷、数一 2009-2012、英一 2005-2009+2025 转录",
   "conv6:396 经综 22 份 PDF 转录",

@@ -1,0 +1,152 @@
+{
+  "package": "C:/Users/jld03/Documents/deepseek-harness/default-workspace/kaoyan-extra-13subjects/kaoyan-extra",
+  "subject": "mgt199",
+  "files": {
+    "199管综真题_Markdown题库/2009年/2009年199管综真题试卷.md": "f90603fcfdf693b89bd33b12f72014255f82014c29808edb1e54b36102a644f3",
+    "199管综答案_Markdown题库/2009年/2009年199管综真题解析.md": "7047ef0f533a5dcccc553d3a7c8020d123296e383e95866e742c10bc738abc62",
+    "199管综真题_Markdown题库/2010年/2010年199管综真题试卷.md": "1c9a797b6063fca669522e0bae9d6b6025c1473104a9495dc2f09f3c4ac7bdff",
+    "199管综答案_Markdown题库/2010年/2010年199管综真题解析.md": "bb4655e8de7093aaa5773233ad6ea7806736e8e63538949f73373aee92d6abbf",
+    "199管综真题_Markdown题库/2011年/2011年199管综真题试卷.md": "cfaff278a2d1f2302dde6d411c9e0022b6b1b0f78b3f37cc6dda56b062872ab4",
+    "199管综答案_Markdown题库/2011年/2011年199管综真题解析.md": "7e8c3dfcafb70c30b2f018fec75b49d07bdb17079278155ae63e7cc1e790aa0a",
+    "199管综真题_Markdown题库/2012年/2012年199管综真题试卷.md": "ca30527f86c6b29d5d227021fec31e5b9f0fef2f12ecf99b9a7c01284b7c7c63",
+    "199管综答案_Markdown题库/2012年/2012年199管综真题解析.md": "aa9c10e90e8918a8e590d51d7f5e833e8e6914144dfa5b8e5d12b3765e7dcef9",
+    "199管综真题_Markdown题库/2013年/2013年199管综真题试卷.md": "1893660ced3ddddd6974b9e347c0b5cfcab0a667c73197ae5f656e9cc57be3b0",
+    "199管综答案_Markdown题库/2013年/2013年199管综真题解析.md": "8cd27a7bf70adbfa9ef34ecdbdcdb928b1c58d52502dd9774cdfdea223f85382",
+    "199管综真题_Markdown题库/2014年/2014年199管综真题试卷.md": "f520e3b2ef081cd9aa633f4838eb1d02d19a736ecb9da2281824f94df95fd91e",
+    "199管综答案_Markdown题库/2014年/2014年199管综真题解析.md": "2d323c571a2174ffcb0acf46c86c702f2717a2f0593cfc053a76ef80e85786bc",
+    "199管综真题_Markdown题库/2015年/2015年199管综真题试卷.md": "2773720f6ff1f6e8b97d66188ad511398ad67a46cefbdc65f894d9c41598d193",
+    "199管综答案_Markdown题库/2015年/2015年199管综真题解析.md": "1816198a9a3fa31b169224b8ff1ca0b612e78cba68ed905e31368ef0953c01a7",
+    "199管综真题_Markdown题库/2016年/2016年199管综真题试卷.md": "806510a9e427b2b70289baaff4859d9ec5e2849d7457191906772f6709f0fa37",
+    "199管综答案_Markdown题库/2016年/2016年199管综真题解析.md": "d6660b082834e980191d13d66bc23daf89f3189eb40a6799968c2f7742815d5b",
+    "199管综真题_Markdown题库/2017年/2017年199管综真题试卷.md": "999126edb3c75cf2aad6938e26c47bc3c4b9257522a7b7b4ef344de65e1fb58d",
+    "199管综答案_Markdown题库/2017年/2017年199管综真题解析.md": "7db2aa3e04c62c4602c07aaefd5af4f3dd8e44af2cc7ea70d29195979dbfd7d0",
+    "199管综真题_Markdown题库/2018年/2018年199管综真题试卷.md": "a3e0d21634b9b2769bb8a58bf4c5f20df6a1f59cfcd1c9aea47f0992eaefd22e",
+    "199管综答案_Markdown题库/2018年/2018年199管综真题解析.md": "681a640c69ff2e19e07ec40ae017442839114a575d2bc7a81b5eb30567284e6f",
+    "199管综真题_Markdown题库/2019年/2019年199管综真题试卷.md": "4084a96d6cd4bf6bd117a51688abfb604b9d9705a5dc59fba85215c21631f453",
+    "199管综答案_Markdown题库/2019年/2019年199管综真题解析.md": "1d0a08e0c8d06ad4ed18060946c0db7a529eeef499006908b3f23e07d2031b2e",
+    "199管综真题_Markdown题库/2020年/2020年199管综真题试卷.md": "657e271e95b866f3b1f9ee99c6284635e510924010a16b5093c057e1ee8c4b1b",
+    "199管综答案_Markdown题库/2020年/2020年199管综真题解析.md": "d6daf2335d7379854b6a180f88797ad317ff7f23a8c1306c4cafe88c296b5bfd",
+    "199管综真题_Markdown题库/2021年/2021年199管综真题试卷.md": "b3e354f58b55794179ef7aed9cb22e0f89fdc995ca697fb057cd593e7c55714b",
+    "199管综答案_Markdown题库/2021年/2021年199管综真题解析.md": "089a92e3fa1223dee8d1fa4f6a57b8a4743faa12174b67c5bde72a593d43d0ad",
+    "199管综真题_Markdown题库/2022年/2022年199管综真题试卷.md": "493225d7b8f7144f4c377f27360a3c3524d01844abed9eb46c14ac1f22c4f3db",
+    "199管综答案_Markdown题库/2022年/2022年199管综真题解析.md": "79a23dbdbe2ace62074070dafff15ed0f1f7bb2f2e445f255f6f45998a6d5539",
+    "199管综真题_Markdown题库/2023年/2023年199管综真题试卷.md": "88bf64737213b5e55845f6043702497978c5d2f0a76efff614041e59281a22a2",
+    "199管综答案_Markdown题库/2023年/2023年199管综真题解析.md": "715f0b67d27ae3a7be7c200d8619cd7592019fb49b63a6c86f20d69b2ad45363",
+    "199管综真题_Markdown题库/2024年/2024年199管综真题试卷.md": "e5ef3bad16c31c9cf09c86fca79784ad7b5431f1ba410fbdf91217ae55798fdd",
+    "199管综答案_Markdown题库/2024年/2024年199管综真题解析.md": "098e3f8ad1489fe4280572e96c812aa614ea48c4158a75f73069a2681ac29183",
+    "199管综真题_Markdown题库/2025年/2025年199管综真题试卷.md": "54cfaefb6531d7eb83c06d140c513624417cf421b61d98eb055565e71175e72a",
+    "199管综答案_Markdown题库/2025年/2025年199管综真题解析.md": "0a52409229e0bb1764285dd71f8c86b7a10143309a5727f014894380f951cc2c",
+    "199管综真题_Markdown题库/2026年/2026年199管综真题试卷.md": "770fedddc98d9c709c55eb64f389a08d84a80ff51de35fc94711d2dc3e0674fb",
+    "199管综答案_Markdown题库/2026年/2026年199管综真题解析.md": "b026d29dfef356492ebb7adac641df33d621e74c0fdace33df41c60a713a8f2b"
+  },
+  "years": {
+    "2009": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2010": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2011": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2012": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2013": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2014": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2015": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2016": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2017": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2018": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2019": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2020": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2021": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2022": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2023": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2024": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    },
+    "2025": {
+      "questions": 55,
+      "with_answer": 55,
+      "analysis": 55,
+      "images": 55
+    },
+    "2026": {
+      "questions": 57,
+      "with_answer": 57,
+      "analysis": 57,
+      "images": 57
+    }
+  }
+}

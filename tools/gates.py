@@ -135,6 +135,35 @@ def main():
     gate("G4 JSON 可解析", not broken, "全部可加载" if not broken else "; ".join(broken[:5]))
 
     # G5/G6 字段完整
+    ana_cache = {}
+
+    def analysis_has(q, rel):
+        """主观题的答案材料可能在同年的精讲分片里（desc 或 nodes 非空即算有原文答案）。"""
+        ddir = os.path.dirname(rel)
+        key = os.path.join(ROOT, ddir, "%s.analysis.json" % q.get("year"))
+        if key not in ana_cache:
+            items = []
+            try:
+                head = load(key)
+                paths = [key] + [os.path.join(ROOT, ddir, p) for p in (head.get("parts") or [])]
+            except Exception:
+                paths = [key]
+            for p in paths:
+                try:
+                    items += load(p).get("analysis") or []
+                except Exception:
+                    pass
+            ana_cache[key] = items
+        for a in ana_cache[key]:
+            if a.get("id") != q.get("id"):
+                continue
+            if (a.get("desc") or "").strip():
+                return True
+            for n in a.get("nodes") or []:
+                if any((l or "").strip() for l in (n.get("lines") or [])):
+                    return True
+        return False
+
     miss_fields, miss_hash, total, subj_ok = [], [], 0, 0
     for subj, items in allqs.items():
         for rel, q in items:
@@ -143,7 +172,7 @@ def main():
             if "answer" in lack and q.get("type") in SUBJECTIVE_TYPES:
                 roles = {b.get("role") for b in q.get("source_blocks", [])
                          if isinstance(b, dict)}
-                if roles & ANSWER_ROLES:
+                if roles & ANSWER_ROLES or analysis_has(q, rel):
                     lack.remove("answer")
                     subj_ok += 1
             if lack:
