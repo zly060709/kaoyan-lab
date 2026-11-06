@@ -1,0 +1,2076 @@
+{
+  "subject": "econ396",
+  "year": 2013,
+  "paper": "2013年全国硕士研究生招生考试经济类专业学位联考综合能力试题",
+  "schema_version": "1.0.0",
+  "question_count": 42,
+  "source_note": "视觉转录（2026-11-06）：①题干/选项逐题转录自《2013年396经济联考综合能力真题.pdf》7 页（逐页渲染为图后人工读题，卷面清晰处照录，糊字标 illegible）；②答案与解析逐题取自《2013年396经济联考真题解析.pdf》16 页（答案与解析正文交叉核对）；③卷面数值：逻辑推理20题×2分=40分、数学单项选择题10题×2分=20分、数学计算题10题×5分=50分、写作2题×20分=40分，合计 42 题 150 分，与卷面标注一致。",
+  "questions": [
+    {
+      "id": "econ396-2013-1",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 1,
+      "type": "logic",
+      "score": 2,
+      "stem": "如果小张来开会，则小李来开会或小赵不来开会。小李没来开会。\n如果上述信息正确，下列哪项一定不正确？",
+      "options": [
+        "A.小张来开会了。",
+        "B.小张没来开会。",
+        "C.小赵没来开会。",
+        "D.小张和小赵都没来开会。",
+        "E.小张和小赵都来开会了。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "翻译题干信息如下。\n①小张来开会→小李来开会∨小赵不来开会；\n②小李不来开会。\n假设小张来开会，根据①可得，小李来开会∨小赵不来开会。\n根据②可知，小赵不来开会。于是若小张来开会，则小赵一定不来开会。\n因此，正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          1
+        ],
+        "anchor": "第1题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:f2902db2bb5c5b760f454d5a0c3297c16fe7a8034828f204c4e00d8d094e8abe"
+    },
+    {
+      "id": "econ396-2013-2",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 2,
+      "type": "logic",
+      "score": 2,
+      "stem": "李娟在教室，除非她接到张凯的短信了。\n下列哪项如果正确，表明上述论断为假？\nⅠ.李娟接到了张凯的短信并且在教室。\nⅡ.李娟没有接到张凯的短信并且不在教室。\nⅢ.李娟接到了张凯的短信并且不在教室。",
+      "options": [
+        "A.只有Ⅰ。",
+        "B.只有Ⅱ。",
+        "C.只有Ⅲ。",
+        "D.Ⅱ和Ⅲ。",
+        "E.Ⅰ和Ⅱ。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "翻译题干信息：李娟没有接到张凯的短信→李娟在教室。\n要使题干论断为假，则需保证前提为真且结论为假，即李娟没有接到张凯的短信且李娟不在教室，即命题Ⅱ所述。\n因此，正确答案为B。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          1
+        ],
+        "anchor": "第2题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:d0c0fa763461c4f37b6fcbf7e6651e739407add7edc3fab44628b6415dbce00f"
+    },
+    {
+      "id": "econ396-2013-3",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 3,
+      "type": "logic",
+      "score": 2,
+      "stem": "所有喜欢数学的学生都喜欢哲学。\n如果上述信息正确，则下列哪项一定不正确？",
+      "options": [
+        "A.有些学生喜欢哲学但不喜欢数学。",
+        "B.有些学生喜欢数学但不喜欢哲学。",
+        "C.有些学生既喜欢哲学又喜欢数学。",
+        "D.所有的学生都喜欢数学。",
+        "E.多数学生都喜欢哲学。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：所有喜欢数学的学生都喜欢哲学。故一定不存在喜欢数学但不喜欢哲学的学生。\n因此，正确答案为B。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          1
+        ],
+        "anchor": "第3题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1c9f530c57561fcaca2d306c5103a631493242ef8d4443b80839b21d325ec663"
+    },
+    {
+      "id": "econ396-2013-4",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 4,
+      "type": "logic",
+      "score": 2,
+      "stem": "和政治学导论、世界史导论相比，杨林更喜欢物理学和数学。和政治学导论相比，杨林更不喜欢体育。\n除了下列哪项，其余各项都能从上述论述中推出？",
+      "options": [
+        "A.和体育相比，杨林更喜欢政治学导论。",
+        "B.和体育相比，杨林更喜欢数学。",
+        "C.和世界史导论相比，杨林更不喜欢体育。",
+        "D.和体育相比，杨林更喜欢物理学。",
+        "E.和数学相比，杨林更不喜欢世界史导论。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据题干信息可知杨林的课程喜好程度：\n物理学和数学＞世界史导论；物理学和数学＞政治学导论＞体育。\n据此无法推出世界史导论与体育之间的相对关系，即选项C不一定为真。\n选项A、B、D、E均可由题干信息推出。\n因此，正确答案为C。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          1
+        ],
+        "anchor": "第4题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:b7a20aa0881d708e30b42f1db19ca5f95e236de000fe345c823089bc54e61b0d"
+    },
+    {
+      "id": "econ396-2013-5",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 5,
+      "type": "logic",
+      "score": 2,
+      "stem": "学校学习成绩排名前百分之五的同学要参加竞赛培训，后百分之五的同学要参加社会实践。小李的学习成绩高于小王的学习成绩，小王的学习成绩低于学校的平均成绩。\n下列哪项最不可能发生？",
+      "options": [
+        "A.小李和小王都要参加社会实践。",
+        "B.小王和小李都没有参加社会实践。",
+        "C.小李和小王都没有参加竞赛培训。",
+        "D.小李参加竞赛培训。",
+        "E.小王参加竞赛培训，小李没有参加竞赛培训。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据题干可知，小李的学习成绩高于小王的学习成绩。因此，若小王要参加竞赛培训，则小李也要参加竞赛培训。选项E最不可能发生。\n因此，正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          1
+        ],
+        "anchor": "第5题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:d59ea5a8e66d163a99281328d9817a655f43a3e1e7871d0ae1f777351b2187bc"
+    },
+    {
+      "id": "econ396-2013-6",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 6,
+      "type": "logic",
+      "score": 2,
+      "stem": "如果李凯拿到钥匙，他就会把门打开并且保留钥匙。如果杨林拿到钥匙，他就会把钥匙交到失物招领处。要么李凯拿到钥匙，要么杨林拿到钥匙。\n如果上述信息正确，那么下列哪项一定正确？",
+      "options": [
+        "A.失物招领处没有钥匙。",
+        "B.失物招领处有钥匙。",
+        "C.门打开了。",
+        "D.李凯拿到了钥匙。",
+        "E.如果李凯没有拿到钥匙，那么钥匙会在失物招领处。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "翻译题干信息如下。\n①李凯拿到钥匙→他会把门打开∧保留钥匙；\n②杨林拿到钥匙→他会把钥匙交到失物招领处；\n③李凯拿到钥匙∨杨林拿到钥匙。\n依据题干信息无法得出确定信息。若李凯没有拿到钥匙，由条件③知，杨林一定拿到了钥匙。又根据条件②，杨林会把钥匙交到失物招领处。由此可知，若李凯没有拿到钥匙，则钥匙会在失物招领处。\n因此，正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          2
+        ],
+        "anchor": "第6题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:25036713320244dc42a642821158cb14e8b1e4c01c88790105c6affd056e91a2"
+    },
+    {
+      "id": "econ396-2013-7",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 7,
+      "type": "logic",
+      "score": 2,
+      "stem": "宇宙中，除了地球，不一定有居住着智能生物的星球。\n下列哪项与上述论述的含义最为接近？",
+      "options": [
+        "A.宇宙中，除了地球，一定没有居住着智能生物的星球。",
+        "B.宇宙中，除了地球，一定有居住着智能生物的星球。",
+        "C.宇宙中，除了地球，可能有居住着智能生物的星球。",
+        "D.宇宙中，除了地球，可能没有居住着智能生物的星球。",
+        "E.宇宙中，除了地球，一定没有居住着非智能生物的星球。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于“不一定”等价于“可能不”，所以根据题干，与题干含义最接近的是宇宙中，除了地球，可能没有居住着智能生物的星球。\n因此，正确答案为D。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          2
+        ],
+        "anchor": "第7题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:8aa03204b85b2e3fe14f29578facc6e11084ed4508b356f0f261a941cc0f2e9a"
+    },
+    {
+      "id": "econ396-2013-8",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 8,
+      "type": "logic",
+      "score": 2,
+      "stem": "某家媒体公布了某市二十所高中的高考升学率，并按升学率的高低进行排序。专家指出，升学率并不能作为评价这些高中的教学水平的标准。\n以下哪项不能作为支持专家论断的论据？",
+      "options": [
+        "A.学生在进入这些高中前，需要参加本市的高中入学考试。而这些高中的录取分数线有明显的差距。",
+        "B.本市升学率高的中学配备了优秀的教师。",
+        "C.有些高考升学率较高的中学的平均高考成绩却低于升学率较低的中学。",
+        "D.有些升学率较低的中学出现了很多高考成绩优异的毕业生。",
+        "E.有些中学之所以升学率较低，很大程度上是因为很多考生虽然高考成绩很好，但是由于选择专业和大学的倾向性，而决定复读。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "专家论断：升学率不能作为评价高中教学水平的标准。\n选项A说明生源好带来了高升学率，支持了专家论断。\n选项B说明升学率高的学校教学水平高，不能支持专家论断。\n选项C指出有些升学率高的中学平均高考成绩低于升学率低的中学，说明升学率并不能代表教学水平，支持了专家论断。\n选项D指出，即便升学率低的中学也有很多成绩优异的毕业生，说明升学率低的中学教学水平并不差，支持了专家论断。\n选项E说明升学率高低与高考报考志愿有关，支持了专家论断。\n因此，正确答案为B。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          2
+        ],
+        "anchor": "第8题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:b7f0044d67ddd1b5959ddeb8cd76706c027c7968db17d49bfd3bdb693b80f131"
+    },
+    {
+      "id": "econ396-2013-9",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 9,
+      "type": "logic",
+      "score": 2,
+      "stem": "最近十年地球上的自然灾害，比如地震、火山爆发、极端天气等给人类造成的伤亡比过去几十年更严重。所以，地球环境变得更恶化了，我们应该为地球科学家、气象学家投入更多的科研基金使他们研究地球环境变化的原因。\n下列哪项最能削弱上述结论？",
+      "options": [
+        "A.自然灾害国际援助组织配备了更先进的救援设备。",
+        "B.气象学家和地球科学家近十年研制出了更好的预报系统。",
+        "C.过去十年，人类在土地使用的方式上并不会引起气候的变化。",
+        "D.过去几十年也记录了地球上重要的自然灾害，比如地震、旱涝、火山爆发、山体滑坡等等。",
+        "E.近十年来，人类数量的剧增以及贫穷的加剧使得更多的人居住在更易遭到自然灾害侵袭的区域。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干论证形式为：地球自然灾害给人类带来的伤亡比过去更严重，说明地球环境更加恶劣，因此应加大对地球科学家和气象学家的科研基金投入。\n选项A、C、D为无关选项。\n选项B指出气象学家和地球科学家研制出了更好的预报系统，说明投入研究资金是有必要的，支持了题干论证。\n选项E说明自然灾害造成更大伤亡的可能原因是更多人类搬到灾害高发地居住，而非地球环境变得恶劣，削弱了题干论证。\n因此，正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          2
+        ],
+        "anchor": "第9题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:54a6b4cb1d6c75f760aac9dbdfa4aa281c5029a9cc3b8da931b19f6b28cf32c1"
+    },
+    {
+      "id": "econ396-2013-10",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 10,
+      "type": "logic",
+      "score": 2,
+      "stem": "统计局报告指出，2011年中产家庭的收入较之2010年提高了1.6%。一般来说，家庭收入的提高会使贫困率下降，但是2011年国家的贫困率较之2010年却没有下降。\n以下哪项如果正确，最能解释上述矛盾？",
+      "options": [
+        "A.中产家庭的模式在2010年—2011年发生了有利于家庭收入增长的改变。",
+        "B.中产家庭的消费在2010年—2011年有所增长。",
+        "C.家庭的收入变化不会影响国家的贫困率。",
+        "D.贫困人口的比例下降。",
+        "E.2009年—2010年国家发生了经济萧条现象，而经济萧条的影响将会持续，并且会在5年之内使国家贫困率维持在较高的水平上。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干的矛盾现象为，家庭收入的提高会使贫困率降低，但2011年中产家庭收入提高了而贫困率没有下降。要注意，中产家庭收入提升并不等同于所有家庭收入提高。换句话说，除了中产家庭，2011年还存在部分收入没有提升的家庭使得整体家庭收入没有提升。五个选项中，只有选项E所提到的经济萧条能产生这种情况。\n因此，正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          2
+        ],
+        "anchor": "第10题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:6d82a2cf1366e9a330e3f2b3f0fe99977ad22109684ae6aa0feb23866bcf4cd1"
+    },
+    {
+      "id": "econ396-2013-11",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 11,
+      "type": "logic",
+      "score": 2,
+      "stem": "自1945年以来，局部战争几乎不断，但是却未发生像第二次世界大战那样严重的世界战争。这是因为人们恐惧于世界大战的破坏力。\n以下哪项如果正确，最能削弱上述结论？",
+      "options": [
+        "A.1945年以后发生的局部战争的破坏力没有第二次世界大战的破坏力强。",
+        "B.人们对两次世界大战的破坏力的恐惧感一直没有减弱。",
+        "C.人们对局部战争的破坏力没有恐惧感。",
+        "D.第一次世界大战后，人们对世界大战有同样的恐惧感，但是仍然发生了第二次世界大战。",
+        "E.参与第二次世界大战的国家之间仍然有国际争端。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干论证形式：人们恐惧世界大战的破坏力→二战后再没有世界大战，只有局部战争。\n选项A、B、C均支持题干论证。\n选项D通过说明虽然人们在一战后感到恐惧，但还是爆发了二战，以有因无果的事实案例削弱了题干论证。\n选项E与题干论证无关。\n因此，正确答案为D。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          3
+        ],
+        "anchor": "第11题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:dd7c06300c85d61bd4d5c91ba35f1db59ca0443fad003d719adf855296fd880c"
+    },
+    {
+      "id": "econ396-2013-12",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 12,
+      "type": "logic",
+      "score": 2,
+      "stem": "有一项调查报告指出，服用某种药品会提高人的注意力。\n如果上述的信息正确，那么以下哪项可由上述信息推出？",
+      "options": [
+        "A.长期服用这种药品，会产生药物依赖，并且伤害身体。",
+        "B.考生服用这种药品将被视为考试作弊。",
+        "C.很多考生服用了这种药品。",
+        "D.有些考生不愿服用这种药品。",
+        "E.小李服用了这种药品，提高了注意力。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "翻译题干信息：服用某药物→注意力提高。\n选项A、B、C、D都是无关选项。\n选项E显然可直接由题干推出。\n因此，正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          3
+        ],
+        "anchor": "第12题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:a2a74dc02629bef13a22d8274ae34091afaf261fdffaef5c3e8326c66bcce7f5"
+    },
+    {
+      "id": "econ396-2013-13",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 13,
+      "type": "logic",
+      "score": 2,
+      "stem": "有一项调查报告指出，服用某种药品会提高人的注意力。\n以下哪项如果正确，最能质疑题干信息？",
+      "options": [
+        "A.有些没有服用该药品的学生考试成绩不理想。",
+        "B.学校周围的许多药店出售这种药品。",
+        "C.有学生反映，服用该药品后与服用该药品前相比，注意力没有改善。",
+        "D.药品在学生中很受欢迎。",
+        "E.教师劝告学生不要服用这种药品，因为这种药物会对身体造成伤害。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：服用某药物→注意力提高。若要最大程度质疑题干论证，则需要满足其前提而反对其结论，即“服用药物但不能提高注意力”。\n因此，正确答案为C。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          3
+        ],
+        "anchor": "第13题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:8d90ce31d43098e580a1ac6196739e32337a528060dd670e8502f0c783042e1e"
+    },
+    {
+      "id": "econ396-2013-14",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 14,
+      "type": "logic",
+      "score": 2,
+      "stem": "小李：“人类没有外星人来访地球的文字记录，所以外星人没有来访过地球。”\n小李的推理基于以下哪项假设？",
+      "options": [
+        "A.如果外星人来访过地球，则人类会有外星人来访地球的文字记录。",
+        "B.如果外星人没有来访过地球，则人类没有外星人来访地球的文字记录。",
+        "C.如果人类有外星人来访地球的文字记录，则外星人来访过地球。",
+        "D.如果人类没有外星人来访地球的文字记录，则外星人来访过地球。",
+        "E.即使人类没有外星人来访地球的文字记录，外星人也可能来访过地球。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干论证形式：没有外星人来访记录→外星人没有来访过地球。\n选项A的表达：外星人来访过地球→有外星人来访记录。这是题干论证的逆否命题。\n因此，正确答案为A。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          3
+        ],
+        "anchor": "第14题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9b1679a26465899b230f9c1ac58bfe7da5df349f4aafd80176347196f0aa5473"
+    },
+    {
+      "id": "econ396-2013-15",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 15,
+      "type": "logic",
+      "score": 2,
+      "stem": "所有步行回家的学生都回家吃午饭，所有回家吃午饭的学生都有午睡的习惯。因此，小李不是步行回家的。\n以下哪项最有可能是上述论证所假设的？",
+      "options": [
+        "A.小李有午睡习惯。",
+        "B.小李回家吃午饭。",
+        "C.小李没有午睡的习惯。",
+        "D.小李的午睡时间很短。",
+        "E.小李的午睡保证了他的身体健康。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "整理题干信息如下。\n①步行回家的学生→回家吃午饭；\n②回家吃午饭的学生→有午睡的习惯；\n③小李不是步行回家的。\n串联条件①和②可得，④步行回家的学生→有午睡的习惯。\n若要由条件④推出③，需假设“小李没有午睡的习惯”。\n因此，正确答案为C。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          3
+        ],
+        "anchor": "第15题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:49996d5d8812bc64966e0e3107224d68aa15f822858d74b73dbb7f40d7a19467"
+    },
+    {
+      "id": "econ396-2013-16",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 16,
+      "type": "logic",
+      "score": 2,
+      "stem": "有A、B、C三组评委投票决定是否通过一个提案。A组评委共两人，B组评委共两人，C组评委共三人。每个评委都不能弃权，并且同意、反对必选其一。关于他们投票的真实信息如下：\n（1）如果A组两个评委的投票结果相同，并且至少有一个C组评委的投票结果也与A组所有评委的投票结果相同，那么B组两个评委的投票结果也都与A组的所有评委的投票结果相同；\n（2）如果C组三个评委的投票结果相同，则A组没有评委的投票结果与C组投票结果相同；\n（3）至少有两个评委投同意票；\n（4）至少有两个评委投反对票；\n（5）至少有一个A组评委投反对票。\n如果B组两个评委的投票结果不同，则下列哪项可能是真的？",
+      "options": [
+        "A.A组评委都投反对票并且恰有两个C组评委投同意票。",
+        "B.恰有一个A组评委投同意票并且恰有一个C组评委投同意票。",
+        "C.恰有一个A组评委投同意票并且C组所有评委都投同意票。",
+        "D.A组所有评委都投同意票并且恰有一个C组评委投同意票。",
+        "E.A组所有评委都投同意票并且恰有两个C组评委投同意票。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "翻译题干信息如下。\n①A组评委两人，B组评委两人，C组评委三人；\n②每个评委不能弃权，并且同意、反对必选其一；\n③A组两个评委投票相同∧至少有一个C组评委的投票结果与A组所有评委的投票结果相同→B组两个评委的投票结果与A组所有评委投票结果相同；\n④C组三个评委的投票结果相同→A组没有评委的投票结果与C组结果相同；\n⑤至少有两个评委投同意票；\n⑥至少有两个评委投反对票；\n⑦至少有一个A组评委投反对票。\n根据条件⑦可知选项D、E不可能为真。\n已知B组两个评委投票结果不同，根据条件③可知，A组两个评委投票结果不同∨没有一个C组评委的投票结果与A组所有评委的投票结果相同。\n代入选项可得选项A不可能为真。\n结合选项B、C，若A组两个评委投票结果不同，则C组必然有评委与A组评委投票结果相同，根据条件④可得，C组三个评委的投票结果不相同，于是选项C为假。\n因此，正确答案为B。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          3,
+          4
+        ],
+        "anchor": "第16题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:93d2959431e506cc9f8b8874bb51904a57611ff080e0dfb269b73fe0c5caf9f8"
+    },
+    {
+      "id": "econ396-2013-17",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 17,
+      "type": "logic",
+      "score": 2,
+      "stem": "有A、B、C三组评委投票决定是否通过一个提案。A组评委共两人，B组评委共两人，C组评委共三人。每个评委都不能弃权，并且同意、反对必选其一。关于他们投票的真实信息如下：\n（1）如果A组两个评委的投票结果相同，并且至少有一个C组评委的投票结果也与A组所有评委的投票结果相同，那么B组两个评委的投票结果也都与A组的所有评委的投票结果相同；\n（2）如果C组三个评委的投票结果相同，则A组没有评委的投票结果与C组投票结果相同；\n（3）至少有两个评委投同意票；\n（4）至少有两个评委投反对票；\n（5）至少有一个A组评委投反对票。\n下列哪项一定真？",
+      "options": [
+        "A.至少有一个A组评委投同意票。",
+        "B.至少有一个C组评委投同意票。",
+        "C.至少有一个C组评委投反对票。",
+        "D.至少有一个B组评委投反对票。",
+        "E.至少有一个B组评委投同意票。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据条件④，若C组三个评委的投票结果相同，则A组没有评委的投票结果与C组结果相同。结合条件⑦，至少有一个A组评委投反对票，故A组两名评委不可能都投同意票。因此C组三名评委不可能都投反对票，否则将违背条件⑦，即至少有一个C组评委投同意票。\n因此，正确答案为B。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          3,
+          4
+        ],
+        "anchor": "第17题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:d95d3b6a807d73dda2807288b3f0e018659d518f74c8d7d0269e419e4b1f509e"
+    },
+    {
+      "id": "econ396-2013-18",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 18,
+      "type": "logic",
+      "score": 2,
+      "stem": "某班为了准备茶话会，分别派了甲、乙、丙、丁四个同学去采买糖果、点心和小纪念品等。甲买回来的东西，乙全都买了，丙买回来的东西包括了乙买的全部，丁买回来的东西里也有丙买的东西。\n由此可以推断：",
+      "options": [
+        "A.丁所买的东西里面一定有甲买的东西。",
+        "B.丁所买的东西里面一定有乙所买的东西。",
+        "C.甲所买的东西里面一定没有丙所买的东西。",
+        "D.丁所买的东西里面一定没有乙所买的东西。",
+        "E.丙所买的东西里面可能有丁所买的东西。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息可知：甲所买的东西一定包含于丙所买的东西，所以选项C不正确。由于丁所买的东西可能与甲、乙所买的东西有交集，也可能没有，所以选项A、B、D不正确。类似的，丙所买的东西可能都包含于丁所买的东西，也可能不是，因此丙所买的东西里可能有丁所没有买的东西。\n因此，正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          4
+        ],
+        "anchor": "第18题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:0abbcc962ec2b667979b76e0eb178b2c0d9293fcf5eb66c0cfdfd96282095878"
+    },
+    {
+      "id": "econ396-2013-19",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 19,
+      "type": "logic",
+      "score": 2,
+      "stem": "陈红、黄燕燕、余明明三人都买了新的手提电脑，手提电脑的牌子分别是苹果、戴尔和惠普。她们一起来到朋友张霞家，让张霞猜猜她们三人分别买的是什么牌子的手提电脑。张霞猜道：“陈红买的是苹果，黄燕燕买的肯定不是戴尔，余明明买的不会是苹果。”很可惜，张霞只猜对了一个。\n由此，可推知真实的情况是：",
+      "options": [
+        "A.陈红买的是戴尔，黄燕燕买的是惠普，余明明买的是苹果。",
+        "B.陈红买的是苹果，黄燕燕买的是惠普，余明明买的是戴尔。",
+        "C.陈红买的是苹果，黄燕燕买的是戴尔，余明明买的是惠普。",
+        "D.陈红买的是惠普，黄燕燕买的是苹果，余明明买的是戴尔。",
+        "E.陈红买的是惠普，黄燕燕买的是戴尔，余明明买的是苹果。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "整理题干信息如下。\n①陈红、黄燕燕、余明明三人分别买了苹果、戴尔和惠普的手提电脑；\n②陈红买的是苹果；\n③黄燕燕买的肯定不是戴尔；\n④余明明买的不会是苹果；\n⑤条件②、③、④只有一个为真。\n若条件②为真，根据条件⑤，则条件④为假，此时陈红和余明明买的都是苹果，与条件①矛盾，因此条件②一定为假。\n若条件③为真，根据条件①可得结论：陈红买的是戴尔，黄燕燕买的是惠普，余明明买的是苹果。\n若条件④为真，根据条件⑤，则条件②和③为假，此时三人买的都不是苹果，与条件①矛盾，因此条件④一定为假。\n因此，正确答案为A。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          4
+        ],
+        "anchor": "第19题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:ab18a30502712e915b98e594b9a50b97bbf2a0759c153183e71ba25bba382045"
+    },
+    {
+      "id": "econ396-2013-20",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 20,
+      "type": "logic",
+      "score": 2,
+      "stem": "从表面上看，美国目前所面临的公众吸毒问题和20世纪20年代所面临的公众酗酒问题很相似。当时许多人不顾禁止酗酒的法令而狂喝滥饮。但是，二者之间应该说还是有实质性区别的：在大多数中产阶级分子和其他一些守法的美国人当中，吸毒（吸食海洛因和可卡因等）从来就没有成为一种被广泛接受的社会性行为。\n从上述材料中，我们可以得出以下哪项结论？",
+      "options": [
+        "A.20世纪20年代，大多数美国中产阶级分子普遍认为酗酒并不是不可接受的违法行为。",
+        "B.美国中产阶级的价值观是衡量美国社会公众行为的一种尺度。",
+        "C.大多数美国人把海洛因和可卡因视为与酒精类似的东西。",
+        "D.在议会制国家，法律的制定以大多数公民的意志和价值观为基础。",
+        "E.法律越禁止吸毒，吸毒行为就越肆无忌惮。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据题干信息可知，酗酒与吸毒实质性的区别在于后者从来不是被广泛接受的社会性行为。由此可知，20世纪20年代，在大多数中产阶级分子和其他一些守法的美国人的意识中，酗酒并不是不可接受的社会性行为。\n因此，正确答案为A。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          4,
+          5
+        ],
+        "anchor": "第20题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:a8a247325160af72225534e46edadf500852ae2342ce052415f8fc5e17ca7f11"
+    },
+    {
+      "id": "econ396-2013-21",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 21,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数$f(x)$在点$x=x_0$处可导，则$f'(x_0)=$（　）",
+      "options": [
+        "A.$\\lim_{\\Delta x\\to 0}\\frac{f(x_0)-f(x_0+\\Delta x)}{\\Delta x}$",
+        "B.$\\lim_{\\Delta x\\to 0}\\frac{f(x_0-\\Delta x)-f(x_0)}{\\Delta x}$",
+        "C.$\\lim_{\\Delta x\\to 0}\\frac{f(x_0+2\\Delta x)-f(x_0)}{\\Delta x}$",
+        "D.$\\lim_{\\Delta x\\to 0}\\frac{f(x_0+2\\Delta x)-f(x_0+\\Delta x)}{\\Delta x}$"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查导数的定义。\n注意到$f(x)$在$x=x_0$处可导，即$f'(x_0)$存在。\n$\\lim_{\\Delta x\\to 0}\\frac{f(x_0+2\\Delta x)-f(x_0+\\Delta x)}{\\Delta x}=\\lim_{\\Delta x\\to 0}\\frac{f(x_0+2\\Delta x)-f(x_0)+f(x_0)-f(x_0+\\Delta x)}{\\Delta x}=\\lim_{\\Delta x\\to 0}\\frac{f(x_0+2\\Delta x)-f(x_0)}{\\Delta x}+\\lim_{\\Delta x\\to 0}\\frac{f(x_0)-f(x_0+\\Delta x)}{\\Delta x}=2\\lim_{\\Delta x\\to 0}\\frac{f(x_0+2\\Delta x)-f(x_0)}{2\\Delta x}-\\lim_{\\Delta x\\to 0}\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}=2f'(x_0)-f'(x_0)=f'(x_0)$。\n因此，应选D。\n下面分别说明选项A、B、C不正确。\n选项A：$\\lim_{\\Delta x\\to 0}\\frac{f(x_0)-f(x_0+\\Delta x)}{\\Delta x}=-\\lim_{\\Delta x\\to 0}\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}=-f'(x_0)$。\n选项B：$\\lim_{\\Delta x\\to 0}\\frac{f(x_0-\\Delta x)-f(x_0)}{\\Delta x}=-\\lim_{\\Delta x\\to 0}\\frac{f(x_0)-f(x_0-\\Delta x)}{\\Delta x}=-f'(x_0)$。\n选项C：$\\lim_{\\Delta x\\to 0}\\frac{f(x_0+2\\Delta x)-f(x_0)}{\\Delta x}=2\\lim_{\\Delta x\\to 0}\\frac{f(x_0+2\\Delta x)-f(x_0)}{2\\Delta x}=2f'(x_0)$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第21题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:c6412ff2b8c3cddf451174447e342fe134d9647542854f153150a57001af3697"
+    },
+    {
+      "id": "econ396-2013-22",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 22,
+      "type": "single",
+      "score": 2,
+      "stem": "已知$x=1$是函数$y=x^3+ax^2$的驻点，则常数$a=$（　）",
+      "options": [
+        "A.0.",
+        "B.1.",
+        "C.$-\\frac{3}{2}$.",
+        "D.$\\frac{3}{2}$."
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查驻点的定义。\n计算$y'(x)$得，$y'(x)=3x^2+2ax$。由于$x=1$是$y(x)$的驻点，故$y'(1)=0$，即$3+2a=0$，解得$a=-\\frac{3}{2}$。\n因此，应选C。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第22题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:ed20c06ff57704bc90ed13c154887951ae6f5c834de5981ab19482ef28323ef2"
+    },
+    {
+      "id": "econ396-2013-23",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 23,
+      "type": "single",
+      "score": 2,
+      "stem": "函数$y=\\ln(1+2x^2)$，则$dy|_{x=0}=$（　）",
+      "options": [
+        "A.0.",
+        "B.1.",
+        "C.$dx$.",
+        "D.$2dx$."
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查微分的概念。\n由微分的定义可知，$dy|_{x=0}=y'(0)dx$。\n由链式法则可得$y'(x)=\\frac{4x}{1+2x^2}$，于是，$y'(0)=0$，$dy|_{x=0}=y'(0)dx=0$。应选A。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第23题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:483807c6ce2e5b0534c07f8a0dec8596d6088a41112c0fed48ad1933827b0514"
+    },
+    {
+      "id": "econ396-2013-24",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 24,
+      "type": "single",
+      "score": 2,
+      "stem": "设$\\sin x$是函数$f(x)$的一个原函数，则$\\int xf'(x)dx=$（　）",
+      "options": [
+        "A.$x\\cos x-\\sin x$.",
+        "B.$x\\cos x-\\sin x+C$.",
+        "C.$x\\sin x-\\cos x$.",
+        "D.$x\\sin x-\\cos x+C$."
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查原函数的概念以及分部积分法。\n由于$\\sin x$是函数$f(x)$的一个原函数，故$\\int f(x)dx=\\sin x+C$。于是，$f(x)=(\\sin x+C)'=\\cos x$。\n根据分部积分法，$\\int xf'(x)dx=\\int xd[f(x)]=xf(x)-\\int f(x)dx=x\\cos x-\\sin x+C$。应选B。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第24题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:3414239c423170982693f6762bc64fa4e05e33a29d0b9af8f53c05938fc0cd4d"
+    },
+    {
+      "id": "econ396-2013-25",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 25,
+      "type": "single",
+      "score": 2,
+      "stem": "设$F(x)=\\int_0^x\\frac{\\sin t}{t}dt$，则$F'(0)=$（　）",
+      "options": [
+        "A.0.",
+        "B.1.",
+        "C.2.",
+        "D.3."
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查导数的定义以及极限计算。\n注意到$F(0)=\\int_0^0\\frac{\\sin t}{t}dt=0$。根据导数的定义，\n$F'(0)=\\lim_{x\\to 0}\\frac{F(x)-F(0)}{x-0}=\\lim_{x\\to 0}\\frac{\\int_0^x\\frac{\\sin t}{t}dt}{x}$（洛必达法则）$=\\lim_{x\\to 0}\\frac{\\sin x}{x}=1$。\n应选B。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第25题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:5cd0011a40f99aa3a67ae512e082029048adb6fabf8fe5522a040612d7f1745a"
+    },
+    {
+      "id": "econ396-2013-26",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 26,
+      "type": "single",
+      "score": 2,
+      "stem": "设$f(x)=e^x+x^3\\int_0^1 f(x)dx$，则$\\int_0^1 f(x)dx=$（　）",
+      "options": [
+        "A.0.",
+        "B.$\\frac{4}{3}(e-1)$.",
+        "C.$\\frac{4}{3}$.",
+        "D.$e$."
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查定积分的概念与计算。\n记$A=\\int_0^1 f(x)dx$。\n对已知等式两端同时从0到1积分，可得$A=\\int_0^1 f(x)dx=\\int_0^1 e^x dx+A\\int_0^1 x^3 dx=e-1+\\frac{1}{4}A$。整理可得，$\\frac{3}{4}A=e-1$。解得$A=\\frac{4}{3}(e-1)$。\n因此，应选B。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第26题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:caf6c1e3c177b7b3365f59f55dfa2a41e78cce776d5316a18e8ca54f53a69e23"
+    },
+    {
+      "id": "econ396-2013-27",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 27,
+      "type": "single",
+      "score": 2,
+      "stem": "$n$阶矩阵$A$可逆的充要条件是（　）",
+      "options": [
+        "A.$A$的任意行向量都是非零向量。",
+        "B.线性方程组$Ax=\\beta$有解。",
+        "C.$A$的任意列向量都是非零向量。",
+        "D.线性方程组$Ax=0$仅有零解。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查可逆矩阵的判定。\n由克拉默法则知，线性方程组$Ax=0$仅有零解等价于$|A|\\neq 0$，而$|A|\\neq 0$是矩阵可逆的充分必要条件。因此，应选D。\n下面说明选项A、B、C不正确。\n选项A、C：$A$的任意行（列）向量都是非零向量只是矩阵可逆的必要条件，但不是充分条件。例如：$A=\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$，该矩阵的任意行（列）向量都是非零向量，但$A$不可逆。\n选项B：线性方程组$Ax=\\beta$有解的充分必要条件为$r(A)=r(A,\\beta)$。但这并不能保证$A$可逆。例如：$A=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}$，$\\beta=\\begin{pmatrix}1\\\\0\\end{pmatrix}$，则$\\begin{pmatrix}1\\\\0\\end{pmatrix}$为$Ax=\\beta$的一个解。但$A$不可逆。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第27题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9b413231db60d90b080509507ee9aba904c8414a9b49b6fdd53ac6341246c763"
+    },
+    {
+      "id": "econ396-2013-28",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 28,
+      "type": "single",
+      "score": 2,
+      "stem": "设$\\gamma_1,\\gamma_2$是线性方程组$Ax=\\beta$的两个不同的解，$\\eta_1,\\eta_2$是导出组$Ax=0$的一个基础解系，$C_1$，$C_2$是两个任意常数，则$Ax=\\beta$的通解是（　）",
+      "options": [
+        "A.$C_1\\eta_1+C_2(\\eta_1-\\eta_2)+\\frac{\\gamma_1-\\gamma_2}{2}$",
+        "B.$C_1\\eta_1+C_2(\\eta_1-\\eta_2)+\\frac{\\gamma_1+\\gamma_2}{2}$",
+        "C.$C_1\\eta_1+C_2(\\gamma_1-\\gamma_2)+\\frac{\\gamma_1-\\gamma_2}{2}$",
+        "D.$C_1\\eta_1+C_2(\\gamma_1-\\gamma_2)+\\frac{\\gamma_1+\\gamma_2}{2}$"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查线性方程组的解的结构。\n由于$\\eta_1,\\eta_2$是导出组$Ax=0$的一个基础解系，故$\\eta_1,\\eta_2$线性无关。又因为$(\\eta_1,\\eta_1-\\eta_2)=(\\eta_1,\\eta_2)\\begin{pmatrix}1&1\\\\0&-1\\end{pmatrix}$，而$\\begin{pmatrix}1&1\\\\0&-1\\end{pmatrix}$可逆，所以$\\eta_1,\\eta_1-\\eta_2$线性无关，可以作为$Ax=0$的一个基础解系。\n另一方面，$A\\frac{\\gamma_1+\\gamma_2}{2}=\\frac{A\\gamma_1}{2}+\\frac{A\\gamma_2}{2}=\\frac{\\beta}{2}+\\frac{\\beta}{2}=\\beta$，故$\\frac{\\gamma_1+\\gamma_2}{2}$为$Ax=\\beta$的一个特解。\n综上所述，应选B。\n下面说明选项A、C、D不正确。\n选项A、C：注意到$\\frac{\\gamma_1-\\gamma_2}{2}$为$Ax=0$的解，而不是$Ax=\\beta$的解，故选项A和选项C不正确。\n选项D：虽然$\\gamma_1-\\gamma_2$也是$Ax=0$的解，但是无法确定$\\eta_1$是否与其线性无关。因此，选项D不正确。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第28题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:b750ddbff389273732e15b42e4b8d39c85a6c3e3dd5ce3a8188182f1f1f67d85"
+    },
+    {
+      "id": "econ396-2013-29",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 29,
+      "type": "single",
+      "score": 2,
+      "stem": "设$X$为连续型随机变量，$F(x)$为$X$的分布函数，则$F(x)$在其定义域内一定为（　）",
+      "options": [
+        "A.非阶梯间断函数。",
+        "B.阶梯函数。",
+        "C.可导函数。",
+        "D.连续但不一定可导函数。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查分布函数的概念。\n连续型随机变量的分布函数必为连续函数，但并不一定可导。因此，应选D。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第29题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:8c14107cec2cc0f821f2161458aa194dbe3e839b7d42dcb5c5bf864d6e9be75c"
+    },
+    {
+      "id": "econ396-2013-30",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 30,
+      "type": "single",
+      "score": 2,
+      "stem": "设随机变量$X$服从参数为2的泊松分布，$Z=3X-2$，则随机变量$Z$的期望$E(Z)$和方差$D(Z)$分别为（　）",
+      "options": [
+        "A.$-\\frac{1}{2},\\frac{9}{4}$.",
+        "B.$-\\frac{1}{2},\\frac{3}{4}$.",
+        "C.4,18.",
+        "D.4,6."
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查泊松分布的数字特征。\n由于随机变量$X$服从参数为2的泊松分布，故$E(X)=2$，$D(X)=2$。根据期望与方差的性质，\n$E(Z)=E(3X-2)=3E(X)-2=6-2=4$，\n$D(Z)=D(3X-2)=9D(X)=18$。\n因此，应选C。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          5
+        ],
+        "anchor": "第30题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:b866b06fc2be1c17f94275a5d823ed4727d187841e5c479ee5418ca11cd1bad9"
+    },
+    {
+      "id": "econ396-2013-31",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 31,
+      "type": "big",
+      "score": 5,
+      "stem": "求极限$\\lim_{x\\to 0}\\left[\\frac{1}{x}-\\frac{1}{\\ln(1+x)}\\right]$。",
+      "options": [],
+      "answer": "$-\\frac{1}{2}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查极限计算。\n原极限为$\\infty-\\infty$型未定式，通分将其化为$\\frac{0}{0}$型未定式。\n$\\lim_{x\\to 0}\\left[\\frac{1}{x}-\\frac{1}{\\ln(1+x)}\\right]=\\lim_{x\\to 0}\\frac{\\ln(1+x)-x}{x\\ln(1+x)}$（$\\ln(1+x)\\sim x$）$=\\lim_{x\\to 0}\\frac{\\ln(1+x)-x}{x^2}$。\n下面用两种方法计算$\\lim_{x\\to 0}\\frac{\\ln(1+x)-x}{x^2}$。\n（法一）利用泰勒公式。\n$\\lim_{x\\to 0}\\frac{\\ln(1+x)-x}{x^2}$（$\\ln(1+x)=x-\\frac{x^2}{2}+o(x^2)$）$=\\lim_{x\\to 0}\\frac{-\\frac{x^2}{2}+o(x^2)}{x^2}=-\\frac{1}{2}$。\n（法二）利用洛必达法则。\n$\\lim_{x\\to 0}\\frac{\\ln(1+x)-x}{x^2}$（洛必达）$=\\lim_{x\\to 0}\\frac{\\frac{1}{1+x}-1}{2x}=\\lim_{x\\to 0}\\frac{-x}{2x(1+x)}=\\lim_{x\\to 0}\\frac{-x}{2x}=-\\frac{1}{2}$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第31题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:be4f14c49d4f3b07b80c0e91fb901f5b39e70883bdd21bb198587a2d040e8ec8"
+    },
+    {
+      "id": "econ396-2013-32",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 32,
+      "type": "big",
+      "score": 5,
+      "stem": "求函数$y=\\ln\\frac{1+\\sqrt{x}}{1-\\sqrt{x}}$的导数。",
+      "options": [],
+      "answer": "$y'=\\frac{1}{\\sqrt{x}(1-x)}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查导数计算。\n将$y=\\ln\\frac{1+\\sqrt{x}}{1-\\sqrt{x}}$写成$y=\\ln(1+\\sqrt{x})-\\ln(1-\\sqrt{x})$。\n$y'=[\\ln(1+\\sqrt{x})-\\ln(1-\\sqrt{x})]'=\\frac{\\frac{1}{2\\sqrt{x}}}{1+\\sqrt{x}}-\\frac{-\\frac{1}{2\\sqrt{x}}}{1-\\sqrt{x}}=\\frac{1}{2\\sqrt{x}}\\left(\\frac{1}{1+\\sqrt{x}}+\\frac{1}{1-\\sqrt{x}}\\right)=\\frac{1}{2\\sqrt{x}}\\cdot\\frac{2}{1-x}=\\frac{1}{\\sqrt{x}(1-x)}$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第32题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:bd9301be502b88fcfdd9ee027211edcd5dd81fc8533545ee53ee88ebb7846fdb"
+    },
+    {
+      "id": "econ396-2013-33",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 33,
+      "type": "big",
+      "score": 5,
+      "stem": "求定积分$\\int_0^8\\frac{dx}{1+\\sqrt[3]{x}}$。",
+      "options": [],
+      "answer": "$3\\ln 3$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查定积分的计算。\n被积函数中含有根式，故考虑利用根式代换计算积分。\n令$u=\\sqrt[3]{x}$，则$x=u^3$，$dx=3u^2du$。\n$\\int_0^8\\frac{dx}{1+\\sqrt[3]{x}}=\\int_0^2\\frac{3u^2du}{1+u}=3\\int_0^2\\frac{u^2-1+1}{u+1}du=3\\int_0^2\\left[(u-1)+\\frac{1}{u+1}\\right]du=3\\left[\\frac{(u-1)^2}{2}+\\ln(u+1)\\right]\\Big|_0^2=3\\ln 3$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第33题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:acb55c05b650c44248538eaab424de46d2fc6348156f45331330f086dd9e23de"
+    },
+    {
+      "id": "econ396-2013-34",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 34,
+      "type": "big",
+      "score": 5,
+      "stem": "求函数$y=x^4-2x^3+1$的单调区间和极值点。",
+      "options": [],
+      "answer": "单调减少区间$\\left(-\\infty,\\frac{3}{2}\\right)$，单调增加区间$\\left(\\frac{3}{2},+\\infty\\right)$，极小值点$x=\\frac{3}{2}$，极小值$-\\frac{11}{16}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查函数的单调区间与极值点。\n计算$y'(x)$得，$y'(x)=4x^3-6x^2=2x^2(2x-3)$。于是，$x=0$与$x=\\frac{3}{2}$为$y(x)$的驻点。\n当$x<\\frac{3}{2}$时，$y'(x)\\le 0$（仅在$x=0$时，$y'(x)=0$），$y(x)$单调减少，$\\left(-\\infty,\\frac{3}{2}\\right)$为$y(x)$的单调减少区间；当$x>\\frac{3}{2}$时，$y'(x)>0$，$y(x)$单调增加，$\\left(\\frac{3}{2},+\\infty\\right)$为$y(x)$的单调增加区间。\n$x=\\frac{3}{2}$为$y(x)$的极小值点，极小值为$y\\left(\\frac{3}{2}\\right)=\\left(\\frac{3}{2}\\right)^4-2\\times\\left(\\frac{3}{2}\\right)^3+1=-\\frac{11}{16}$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第34题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:047e2cab28cc9b4bdee13c7dc2990b375e160d00923c372201565ad789765ae9"
+    },
+    {
+      "id": "econ396-2013-35",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 35,
+      "type": "big",
+      "score": 5,
+      "stem": "设二元函数$z=e^{xy}f(x^2+y)$，其中$f(u)$是一个可导函数，求偏导数$\\frac{\\partial z}{\\partial x},\\frac{\\partial z}{\\partial y}$。",
+      "options": [],
+      "answer": "$\\frac{\\partial z}{\\partial x}=e^{xy}[yf(x^2+y)+2xf'(x^2+y)]$，$\\frac{\\partial z}{\\partial y}=e^{xy}[xf(x^2+y)+f'(x^2+y)]$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查偏导数的计算。\n分别计算$\\frac{\\partial z}{\\partial x}$，$\\frac{\\partial z}{\\partial y}$。\n$\\frac{\\partial z}{\\partial x}=e^{xy}\\cdot y\\cdot f(x^2+y)+e^{xy}\\cdot f'(x^2+y)\\cdot 2x=e^{xy}[yf(x^2+y)+2xf'(x^2+y)]$，\n$\\frac{\\partial z}{\\partial y}=e^{xy}\\cdot x\\cdot f(x^2+y)+e^{xy}\\cdot f'(x^2+y)=e^{xy}[xf(x^2+y)+f'(x^2+y)]$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第35题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:31a2aa467c0ad49fafef12c9b9849d6970714069815f45317ecf9512699e4ad0"
+    },
+    {
+      "id": "econ396-2013-36",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 36,
+      "type": "big",
+      "score": 5,
+      "stem": "设$f(x)=\\int_1^x e^{-t^2}dt$，求$\\int_0^1 f(x)dx$。",
+      "options": [],
+      "answer": "$\\frac{1}{2}(e^{-1}-1)$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查定积分的计算以及变限积分求导。\n由变限积分的求导公式可得，$f'(x)=e^{-x^2}$。注意到$f(1)=\\int_1^1 e^{-t^2}dt=0$。\n利用分部积分法计算$\\int_0^1 f(x)dx$。\n$\\int_0^1 f(x)dx=xf(x)\\Big|_0^1-\\int_0^1 xf'(x)dx=-\\int_0^1 xe^{-x^2}dx=\\frac{1}{2}\\int_0^1 e^{-x^2}d(-x^2)=\\frac{1}{2}e^{-x^2}\\Big|_0^1=\\frac{1}{2}(e^{-1}-1)$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第36题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:3ec37b82c0b83dbcd25f379c71bd5f47305357739a93291e695e8fdf1189bc61"
+    },
+    {
+      "id": "econ396-2013-37",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 37,
+      "type": "big",
+      "score": 5,
+      "stem": "求$t$为何值时，向量组$\\alpha_1=(t,2,1)$，$\\alpha_2=(2,t,0)$，$\\alpha_3=(1,-1,1)$线性相关，并在线性相关时，将其中一个向量用其余向量线性表示。",
+      "options": [],
+      "answer": "$t=-2$或$t=3$；$t=-2$时$\\alpha_1=-\\frac{3}{2}\\alpha_2+\\alpha_3$，$t=3$时$\\alpha_1=\\alpha_2+\\alpha_3$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查向量组之间的线性表示。\n记$A=(\\alpha_1^T,\\alpha_2^T,\\alpha_3^T)$。$A$为3阶矩阵。\n$|A|=\\begin{vmatrix}t&2&1\\\\2&t&-1\\\\1&0&1\\end{vmatrix}=\\begin{vmatrix}0&2&1-t\\\\0&t&-3\\\\1&0&1\\end{vmatrix}=t^2-t-6=(t-3)(t+2)$。\n当$t=-2$或$t=3$时，$|A|=0$，$\\alpha_1,\\alpha_2,\\alpha_3$线性相关。\n当$t=-2$时，\n$A=\\begin{pmatrix}-2&2&1\\\\2&-2&-1\\\\1&0&1\\end{pmatrix}\\to\\begin{pmatrix}1&0&1\\\\2&-2&-1\\\\0&0&0\\end{pmatrix}\\to\\begin{pmatrix}1&0&1\\\\0&-2&-3\\\\0&0&0\\end{pmatrix}\\to\\begin{pmatrix}1&0&1\\\\0&1&\\frac{3}{2}\\\\0&0&0\\end{pmatrix}$。\n$\\left(-1,-\\frac{3}{2},1\\right)^T$为$Ax=0$的一个基础解系。因此，$-\\alpha_1^T-\\frac{3}{2}\\alpha_2^T+\\alpha_3^T=0$，即$\\alpha_1=-\\frac{3}{2}\\alpha_2+\\alpha_3$。\n当$t=3$时，\n$A=\\begin{pmatrix}3&2&1\\\\2&3&-1\\\\1&0&1\\end{pmatrix}\\to\\begin{pmatrix}0&2&-2\\\\0&3&-3\\\\1&0&1\\end{pmatrix}\\to\\begin{pmatrix}1&0&1\\\\0&1&-1\\\\0&0&0\\end{pmatrix}$。\n$(-1,1,1)^T$为$Ax=0$的一个基础解系。因此，$-\\alpha_1^T+\\alpha_2^T+\\alpha_3^T=0$，即$\\alpha_1=\\alpha_2+\\alpha_3$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第37题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:3c23692195ab53d6ef460c9904ff21d504981faa3fa635ba5b0c488e1b45878d"
+    },
+    {
+      "id": "econ396-2013-38",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 38,
+      "type": "big",
+      "score": 5,
+      "stem": "设$A=\\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}$，求\n（1）$A^n$（$n$为正整数）；\n（2）$E-A$的逆矩阵（$E$是3阶单位矩阵）。",
+      "options": [],
+      "answer": "（1）$A^n=O$（$n\\ge 3$）；（2）$(E-A)^{-1}=\\begin{pmatrix}1&1&1\\\\0&1&1\\\\0&0&1\\end{pmatrix}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查矩阵运算。\n（1）$A^2=\\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}\\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}=\\begin{pmatrix}0&0&1\\\\0&0&0\\\\0&0&0\\end{pmatrix}$。\n$A^3=A^2A=\\begin{pmatrix}0&0&1\\\\0&0&0\\\\0&0&0\\end{pmatrix}\\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}=\\begin{pmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}$。\n因此，当$n\\ge 3$时，$A^n=O$。\n（2）由于$A^3=O$，故\n$E=E-A^3=(E-A)(E+A+A^2)$。\n因此，$(E-A)^{-1}=E+A+A^2=\\begin{pmatrix}1&1&1\\\\0&1&1\\\\0&0&1\\end{pmatrix}$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第38题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:828dfcb5bd44fef799963300f0b220dabdb3d3646ca9b24a411ab160fc8af529"
+    },
+    {
+      "id": "econ396-2013-39",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 39,
+      "type": "big",
+      "score": 5,
+      "stem": "设随机变量$X$的概率密度为$\\varphi(x)=\\begin{cases}\\frac{c}{\\sqrt{1-x^2}},&|x|<1,\\\\0,&|x|\\ge 1.\\end{cases}$求\n（1）常量$C$；\n（2）$P\\left\\{-\\frac{1}{2}<X<\\frac{1}{2}\\right\\}$。",
+      "options": [],
+      "answer": "（1）$C=\\frac{1}{\\pi}$；（2）$P\\left\\{-\\frac{1}{2}<X<\\frac{1}{2}\\right\\}=\\frac{1}{3}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查概率密度的性质。\n（1）由概率密度的性质可知，$\\int_{-\\infty}^{+\\infty}\\varphi(x)dx=1$。于是，\n$\\int_{-\\infty}^{+\\infty}\\varphi(x)dx=\\int_{-1}^{1}\\frac{C}{\\sqrt{1-x^2}}dx=C\\arcsin x\\Big|_{-1}^{1}=C\\left[\\frac{\\pi}{2}-\\left(-\\frac{\\pi}{2}\\right)\\right]=C\\pi=1$。\n因此，$C=\\frac{1}{\\pi}$。\n（2）由概率密度的性质可知，\n$P\\left\\{-\\frac{1}{2}<X<\\frac{1}{2}\\right\\}=\\int_{-\\frac{1}{2}}^{\\frac{1}{2}}\\frac{1}{\\pi}\\cdot\\frac{1}{\\sqrt{1-x^2}}dx=\\frac{1}{\\pi}\\arcsin x\\Big|_{-\\frac{1}{2}}^{\\frac{1}{2}}=\\frac{1}{\\pi}\\left[\\frac{\\pi}{6}-\\left(-\\frac{\\pi}{6}\\right)\\right]=\\frac{1}{3}$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第39题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:8914008d5c4bc19ae3a2d7dd817b51fa0d90a1caa16bcf2814324542e0ffa9b8"
+    },
+    {
+      "id": "econ396-2013-40",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 40,
+      "type": "big",
+      "score": 5,
+      "stem": "设随机变量$X$服从正态分布$N(2,\\sigma^2)$，且$P\\{2<X<4\\}=0.3$，求$P\\{X<0\\}$。",
+      "options": [],
+      "answer": "0.2",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查正态分布。\n将$X$标准化，$\\frac{X-2}{\\sigma}\\sim N(0,1)$。\n$P\\{2<X<4\\}=P\\left\\{0<\\frac{X-2}{\\sigma}<\\frac{2}{\\sigma}\\right\\}=\\Phi\\left(\\frac{2}{\\sigma}\\right)-\\Phi(0)=0.3$。\n由于$\\Phi(0)=0$，故$\\Phi\\left(\\frac{2}{\\sigma}\\right)=0.3+0.5=0.8$。\n另一方面，\n$P\\{X<0\\}=P\\left\\{\\frac{X-2}{\\sigma}<-\\frac{2}{\\sigma}\\right\\}=\\Phi\\left(-\\frac{2}{\\sigma}\\right)=1-\\Phi\\left(\\frac{2}{\\sigma}\\right)=1-0.8=0.2$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6
+        ],
+        "anchor": "第40题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e6ac5330955bae1dc63071911bdd636716bee43dcf293a791a42419bfa338e83"
+    },
+    {
+      "id": "econ396-2013-41",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 41,
+      "type": "analysis",
+      "score": 20,
+      "stem": "论证有效性分析：分析下述论证中存在的缺陷和漏洞，选择若干要点，写一篇600字左右的文章，对该论证的有效性进行分析和评论。（论证有效性分析的一般要点：概念特别是核心概念的界定和使用是否准确并前后一致，有无各种明显的逻辑错误，论证的论据是否成立并支持结论，结论成立的条件是否充分，等等。）\n\n是否应该彻底取消“黄金周”？\n\n1999年10月开始的“黄金周”休假制度，在拉动经济、为国人带来休闲度假新观念的同时，也暴露出很多问题。因此，自2006年起，陆续有人提出取消“黄金周”的建议。2008年，“五一黄金周”取消，代之以清明、端午、中秋等传统节日“小长假”。2012年“国庆黄金周”后，彻底取消“黄金周”的声音再次引起公众的注意。\n\n支持取消者认为：第一，“黄金周”造成了景区混乱和资源调配不合理，浪费了社会资源，打乱了正常生活秩序，不利于经济的长期可持续发展。第二，“黄金周”人为地将双休日挪在一起，使大家不得不连续休假七天，同时要连续工作七天。这在很大程度上是一种“被放假”的安排，体现了一种群众运动式的思维，是计划经济的产物，不符合自主消费的原则。第三，当初实行“黄金周”是一种阶段性的考虑，随着带薪休假制度的落实，应该彻底取消“黄金周”。\n\n反对取消者则认为：第一，“黄金周”对旅游业的成熟和发展起了极大的促进作用，对经济的拉动功不可没。任何事物都有利弊，不能看到弊端就彻底取消。第二，随着消费者出游经验的不断丰富，旅游消费必将更加理性。错峰出游、路线选择避热趋冷等新的消费习惯会使一些现有问题得到解决。第三，目前我国可享受带薪休假的职工仅有三成，年假制度不能落实，“被放假”毕竟比“被全勤”好，实在的“黄金周”毕竟要比虚无缥缈的带薪休假更加现实。\n\n（改编自《旅游界反对取消十一黄金周，新假期改革效果尚不明确》《南方日报》，2008年9月9日，《黄金周假期惹争议，最终取消是必然》《凤凰网》，2012年10月8日，《彻底取消黄金周高估了带薪休假环境》《东方网》，2012年10月5日等）",
+      "options": [],
+      "answer": "",
+      "source_blocks": [
+        {
+          "role": "answer",
+          "origin": "source",
+          "text": "【参考范文】\n如此论证，有待斟酌\n关于是否应该彻底取消黄金周，支持者和反对者发表了各自的看法，展开了一系列论证，看似合理，实则漏洞百出。\n首先，支持者论述“黄金周”造成了景区混乱和资源调配不合理，社会资源浪费，正常生活秩序被打乱的现象，这一说法缺乏足够的论据支持。景区游览乱象有可能是由于景区管理不当、超负荷接待游客等多方面因素造成的，不一定是由“黄金周”导致的。\n其次，支持者论述“随着带薪休假制度的落实，应该彻底取消‘黄金周’”，这一说法过于片面。该论述不当假设了“黄金周”与带薪休假制度是互斥的。“黄金周”与带薪休假并不冲突，两者并不是此消彼长的关系，不该人为地将两者对立，且并不是所有劳动者都能够享受带薪休假。\n再者，反对者论述“‘黄金周’对旅游业的成熟和发展起了极大的促进作用，对经济的拉动也功不可没”，这一说法值得商榷。“黄金周”旅游收入的增加仅仅是因为旅游消费比较集中，是一种时间上的转移，对全年旅游收入增加可能并无实质性贡献。“黄金周”到底有没有拉动经济增长，又是如何拉动经济增长的，需要更多的论据来加以断定。\n最后，反对者论述“随着消费者出游经验的不断丰富，旅游消费必将更加理性”，这一说法过于绝对。消费者的出行行为是内外因共同作用的结果，而非由消费者一方决定。旅游经营企业的营销刺激以及消费者的参照群体等外部因素也会给消费者的决策带来影响，甚至直接改变消费者的旅游出行计划。\n综上所述，仅仅抓住“黄金周”某一方面的利或弊，就其取消与否而争论不休的行为是欠妥的，上述论证的有效性有待商榷。"
+        }
+      ],
+      "knowledge_points": [
+        "写作",
+        "论证有效性分析"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "writing",
+        "label": "写作"
+      },
+      "tags": [
+        "econ396",
+        "论证有效性分析"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          6,
+          7
+        ],
+        "anchor": "第41题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:82e5f97c6f8f37e9ec3571796034c433521c61bfe6e79b096fba21c22365ddf9"
+    },
+    {
+      "id": "econ396-2013-42",
+      "subject": "econ396",
+      "year": 2013,
+      "num": 42,
+      "type": "essay",
+      "score": 20,
+      "stem": "根据下述材料，写一篇600字左右的论说文，题目自拟。\n\n被誉为清代“中兴名臣”的曾国藩，其人生哲学很独特，就是“尚拙”。他曾说：“天下之至拙，能胜天下之至巧。”拙者自知不如他人，自便会更虚心；不懂取巧，自便会更用功。结果，“拙”看起来虽慢，其实却最快。正是与众不同的“尚拙”，成就了曾国藩非同一般的人生智慧。",
+      "options": [],
+      "answer": "",
+      "source_blocks": [
+        {
+          "role": "answer",
+          "origin": "source",
+          "text": "【参考范文】\n尚拙胜巧\n尚拙是虚心用功不取巧，一步一个脚印，扎扎实实地实现目标。尚拙是认识自我的起点，也是行动遵循的原则。曾国藩学习知识孜孜不倦，处事宠辱不惊，待人虚怀若谷，因此无书不读，无学不窥，事业广阔。尚拙至谦是人生的大智慧。\n谦卑低调和内察自省是尚拙的智慧所在。自我感觉良好的人往往缺乏对自身能力的正确判断。但尚拙者不同，他们沉稳内敛且为人真诚，对自己有着良好的觉察。尚拙者深知自己的短板和弱点，虚心向人求教，谦卑以求精明。“智者善屈尊，愚人强出头”，尚拙者收获了更多的历练也积攒了更多的经验。“纵人以巧诈来，我仍以浑含应之，以诚愚应之”，曾国藩为人处世守拙真诚，历经世事浮沉而宠辱不惊，身处官位多年而屹立不倒。在他看来，人性的弱点根植于本性，无数的失败、挫折和倒退都应当经历，唯有反思自己，人格才能臻于完善。\n尚拙的另一要点在于踏实用功和笃定前行。“拙法”区别于“巧法”，取巧者易贪功而冒进，尚拙者则踏实而勤勉。“天下之大，必作于细”，涓滴积累，水滴石穿。取巧者偶尔也能幸运地获得机会，但长期来看，坚实的基础是成就一切大事业的前提。“不积小流，无以成江海”，面对重大挑战时，惯于取巧而基础不牢的人通常难以应付，但尚拙者则可以从容应对。曾国藩恒心补拙，善于结硬寨和打呆仗，这种方法正如“重剑无锋”，看似简单笨拙，实际上大气厚重，所向披靡。“涤生”如曾国藩，用超人的努力，来弥补雄心与头脑之间的差距。\n尚拙者虚怀若谷并自省觉察，踏实向上且孜孜不倦，选择了一条垒高自己的正确道路，从而获得可持续发展。曾国藩尚拙，达到立功、立德、立言三不朽的境界，成为后世学习的典范。尚拙至谦，是人生的大智慧。"
+        }
+      ],
+      "knowledge_points": [
+        "写作",
+        "论说文"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "writing",
+        "label": "写作"
+      },
+      "tags": [
+        "econ396",
+        "论说文"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+      "source_ref": {
+        "pdf": "2013年396经济联考综合能力真题.pdf（7 页）+ 2013年396经济联考真题解析.pdf（16 页）",
+        "sha256": "f4da7c70d5e4dc99e4f65900a49d0c4f354cc67f727f0198bbef4bd5477ec30c",
+        "pages": [
+          7
+        ],
+        "anchor": "第42题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1bf36d305af71b25291eff4ebc473519232cf9b709bfd85f0fda1ca7aa4417a0"
+    }
+  ]
+}

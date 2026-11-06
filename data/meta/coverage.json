@@ -192,9 +192,12 @@
   "econ396": {
     "status": "active",
     "dataYears": [
-      2012
+      2011,
+      2012,
+      2013,
+      2014
     ],
-    "questions": 41,
+    "questions": 167,
     "paperYears": []
   },
   "law397": {
