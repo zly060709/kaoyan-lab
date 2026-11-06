@@ -1,0 +1,2075 @@
+{
+  "subject": "econ396",
+  "year": 2016,
+  "paper": "2016年全国硕士研究生招生考试经济类专业学位联考综合能力试题",
+  "schema_version": "1.0.0",
+  "question_count": 42,
+  "source_note": "视觉转录（2026-11-06）：①题干/选项逐题转录自《2016年396经济联考综合能力真题.pdf》7 页（逐页渲染为图后人工读题，卷面清晰处照录，糊字标 illegible）；②答案与解析逐题取自《2016年396经济联考真题解析.pdf》16 页（答案与解析正文交叉核对）；③卷面数值：逻辑推理20题×2分=40分、数学单项选择题10题×2分=20分、数学计算题10题×5分=50分、写作2题×20分=40分，合计 42 题 150 分，与卷面标注一致。",
+  "questions": [
+    {
+      "id": "econ396-2016-1",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 1,
+      "type": "logic",
+      "score": 2,
+      "stem": "19世纪有一位英国改革家说，每一个勤劳的农夫都至少拥有两头牛。那些没有牛的农夫，通常是好吃懒做的人。因此他的改革方式便是国家给每一个没有牛的农夫两头牛，这样整个国家就没有好吃懒做的人了。\n这位改革家明显犯了一个逻辑错误，下列选项中哪项与该错误相类似？",
+      "options": [
+        "A.天下雨，地上湿。现在天不下雨，所以地也不湿。",
+        "B.这是一本好书，因为它的作者曾获诺贝尔奖。",
+        "C.所有得了病的人都要卧床休息。因为他躺在床上，所以他病了。",
+        "D.你说谎，所以我不相信你的话。因为我不相信你的话，所以你说谎。",
+        "E.即使他发烧，也不一定是得了肺炎。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干中改革家认为农夫没有牛才导致好吃懒做，事实上，好吃懒做是没有牛的原因，改革家犯了因果倒置的逻辑错误。选项A错将充分条件当作必要条件，与题干逻辑错误不同。选项B犯了诉诸权威的逻辑错误，与题干逻辑错误不同。选项C犯了因果倒置的逻辑错误，是因为生病了要卧床休息而非因躺在床上，所以病了，与题干逻辑错误相同。选项D犯了循环论证的逻辑错误，与题干逻辑错误不同。选项E错将充分条件当作必要条件，与题干逻辑错误不同。因此正确答案为C。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          1
+        ],
+        "anchor": "第1题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:0174df38e7a85d0fb92f2a6d628a2686bf46578f3b74102db867e3d72ccfebf6"
+    },
+    {
+      "id": "econ396-2016-2",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 2,
+      "type": "logic",
+      "score": 2,
+      "stem": "某实验室一共有A、B、C三种类型的机器人，A型能识别颜色，B型能识别形状，C型既不能识别颜色也不能识别形状。实验室用红球、蓝球、红方块和蓝方块对1号和2号机器人进行试验，命令它们拿起红球，但1号拿起了红方块，2号拿起了蓝球。\n如果上述断定都是真的，那么以下哪项一定是真的？",
+      "options": [
+        "A.1号和2号都是C型。",
+        "B.1号和2号中有且只有一个是C型。",
+        "C.1号是A型且2号是B型。",
+        "D.1号不是B型且2号不是A型。",
+        "E.1号可能不是A、B、C三种类型的任何一种。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据题干信息可知，A型机器人能识别颜色，B型机器人能识别形状，C型机器人既不能识别颜色也不能识别形状。由此可知，不能识别颜色的一定不是A型机器人，不能识别形状的一定不是B型机器人。机器人1号在红球指令下拿起了红方块，说明其无法识别形状，不是B型机器人；机器人2号在红球指令下拿起了蓝球，说明其无法识别颜色，不是A型机器人。考生应注意，能拿对颜色不代表可以识别颜色，能拿对形状不代表可以识别形状。因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          1
+        ],
+        "anchor": "第2题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:fbf923fb1a8df03de4ce01215d59b000a641a7ce7e3417d9cf1db2cec90be534"
+    },
+    {
+      "id": "econ396-2016-3",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 3,
+      "type": "logic",
+      "score": 2,
+      "stem": "研究发现，市面上的金顶啤酒中的Y成分可以抑制alpha病毒。实证发现，alpha病毒可以导致胃癌，因此经常喝金顶啤酒将减少患胃癌的风险。\n以下哪项如果为真，最能削弱上述论证？",
+      "options": [
+        "A.已经患有胃癌的患者喝金顶啤酒后并未发现病情好转。",
+        "B.Y成分既可以抑制alpha病毒，也可以对人的免疫系统产生负面作用。",
+        "C.不同条件下的实验，可以得出类似结论。",
+        "D.经常喝金顶啤酒会加强Y成分对alpha病毒的抑制作用。",
+        "E.Y成分的作用可以被金顶啤酒中的Z成分中和。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干结论为，经常喝金顶啤酒将减少患胃癌的风险，其论据为，金顶啤酒中的Y成分可抑制导致胃癌的alpha病毒。选项A提及的病情好转与题干结论减少患胃癌的风险核心概念不一致，削弱力度弱。选项B提及Y成分对人体免疫系统产生的负面作用，与题干结论无关，削弱力度弱。选项C与题干论证无关。选项D支持题干论证。选项E指出金顶啤酒中Y成分的作用会被Z成分中和，因而无法抑制alpha病毒，故饮用金顶啤酒无法减少患胃癌的风险，有力地削弱了题干论证。因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          1
+        ],
+        "anchor": "第3题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:686466cf63c0be98664f429eab85f1d8b3ba76d85d5faa88aec9fb323d810f14"
+    },
+    {
+      "id": "econ396-2016-4",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 4,
+      "type": "logic",
+      "score": 2,
+      "stem": "只有具备足够的资金投入和技术人才，一个企业的产品才能拥有高科技含量。而这种高科技含量，对于一个产品长期稳定地占领市场是必不可少的。\n以下哪项情况如果存在，最能削弱以上断定？",
+      "options": [
+        "A.清河空调长期稳定地占领着市场，但该产品的厂家缺乏足够的资金投入。",
+        "B.西子洗衣机没能长期稳定地占领市场，但该产品并不缺乏高科技含量。",
+        "C.长江电视机没能长期稳定地占领市场，因为该产品缺乏高科技含量。",
+        "D.苹果牌电脑拥有高科技含量，并长期稳定地占领着市场。",
+        "E.开开电冰箱没能长期稳定地占领市场，但该产品的厂家有足够的资金投入和技术人才。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干推理结构：产品长期稳定地占领市场→产品拥有高科技含量→企业具备足够的资金投入和技术人才。选项A指出清河空调长期稳定地占领市场，但该产品的厂家缺乏足够的资金投入。依题干推理，若清河空调长期稳定地占领市场，则其厂家一定具备足够的资金投入和技术人才，两者矛盾，因此选项A最能削弱题干论证。因此正确答案为A。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          1
+        ],
+        "anchor": "第4题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e16f4aed86982e46cff41f168952cd40e14d90ba1bbf1cb7888477a5d4f6e379"
+    },
+    {
+      "id": "econ396-2016-5",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 5,
+      "type": "logic",
+      "score": 2,
+      "stem": "“小王穿着得体、举止斯文，因此，小王受过高等教育。”\n只有下述命题中的哪项才能支持上述论证？",
+      "options": [
+        "A.凡是受过高等教育的人都穿着得体、举止斯文。",
+        "B.凡是受过高等教育的人不一定穿着得体、举止斯文。",
+        "C.有的穿着得体、举止斯文的人没有受过高等教育。",
+        "D.有的受过高等教育的人不是穿着得体、举止斯文的人。",
+        "E.凡是穿着得体、举止斯文的人都受过高等教育。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干论据为，小王穿着得体、举止斯文，结论为，小王受过高等教育。若要使题干论证成立，需补全题干三段论，补充条件为，所有穿着得体、举止斯文的人都受过高等教育。因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          2
+        ],
+        "anchor": "第5题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1c84af3e1266e8fdbb287b540da410c0ee53dfb4510eb5a539456f90e2d2b9dd"
+    },
+    {
+      "id": "econ396-2016-6",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 6,
+      "type": "logic",
+      "score": 2,
+      "stem": "一个村子里一共有50户人家，每家每户都养了一条狗。村长说村里面有病狗，并准许每户人家都可以查看其他人家的狗是不是病狗，但是不准检查自己家里的狗是不是病狗。这些人如果推断出自己家的狗是病狗的话，就必须自己把自己的狗枪毙，但是每个人在看到别人家的狗是病狗时不准告诉别人，也没有权利枪毙别人家的狗，只有权利枪毙自家的狗。然后，第一天没有枪声，第二天也没有，第三天却传来一阵枪声。\n请问这个村子里一共有几条病狗？",
+      "options": [
+        "A.两条。",
+        "B.三条。",
+        "C.四条。",
+        "D.二十五条。",
+        "E.五十条。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "因为村长说村里面有病狗，所以村子应至少有一条病狗。\n我们可做如下假设：若仅有一条病狗，则病狗的主人会发现其他人家的狗都是正常的，从而推断出自家的狗为病狗，会在第一天打死自己的狗。反之则说明每个人都能看到其他人家有病狗，村子里不止一条病狗。第一天没有枪声，说明村子里不止一条病狗。\n若村子中有两条病狗，则病狗的主人会发现其他人家有一条病狗，故第一天不会开枪打死自己的狗。当其发现另一条病狗的主人第一天没有打死自己的狗，则推知对方也看到了一条病狗，两人会在第二天打死自己的狗。第二天没有枪声，说明村子里不止两条病狗。\n若村子中有三条病狗，则病狗的主人会发现其他人家有两条病狗，故前两天都不会开枪打死自己的狗。当其发现另两条病狗的主人前两天都没有打死自己的狗，则推知对方也看到了两条病狗，进而三人会在第三天打死自己的狗。\n依次类推，若村子中有N条病狗，则病狗的主人将会看到N-1条病狗，当其发现前N-1天都没有人打死自己的狗，则其可以推断出自己的狗是病狗，从而在第N天打死自己的狗。反之同理，若第N天传出枪响，则村子里有N条病狗。\n因此正确答案为B。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          2
+        ],
+        "anchor": "第6题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:35196c355c7aa8f1df5bace16de139bfecba268f8f50cca11eb984f012853114"
+    },
+    {
+      "id": "econ396-2016-7",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 7,
+      "type": "logic",
+      "score": 2,
+      "stem": "某国有黄种人、白种人、黑种人，人口统计显示男女比例相当，但黄种人比黑种人多很多。在白种人中，男性比例大于女性。\n根据以上表述，下面说法正确的是哪一项？",
+      "options": [
+        "A.黑种女性少于黄种男性。",
+        "B.黄种女性少于黑种男性。",
+        "C.黑种男性少于黄种男性。",
+        "D.黑种女性少于黄种女性。",
+        "E.黄种女性少于黄种男性。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息可用如下表格表示：\n\n|  | 黄种人 | 白种人 | 黑种人 |\n| 男 | A | B | C |\n| 女 | D | E | F |\n\n整理题干已知信息：①A+B+C=D+E+F；②A+D>C+F；③B>E。①-③得④A+C<D+F；②+④得A+2D+F>A+2C+F，即D>C，黄种女性多于黑种男性。因此正确答案为B。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          2
+        ],
+        "anchor": "第7题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:91d977134d1879b4c74a4cbd0d29171fa69098a1cbe1237dbe15b894a4222639"
+    },
+    {
+      "id": "econ396-2016-8",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 8,
+      "type": "logic",
+      "score": 2,
+      "stem": "巴西赤道雨林的面积每年以惊人的比例减少，引起了全球的关注。但是，卫星照片的数据显示，去年巴西赤道雨林面积的缩小比例明显低于往年。去年，巴西政府支出数百万美元用以制止滥砍滥伐和防止森林火灾。巴西政府宣称，上述卫星照片的数据说明巴西政府保护赤道雨林的努力取得了显著成效。\n以下哪项如果为真，最能削弱巴西政府的结论？",
+      "options": [
+        "A.去年巴西用以保护赤道雨林的财政投入明显低于往年。",
+        "B.与巴西毗邻的阿根廷的赤道雨林的面积并未缩小。",
+        "C.去年巴西的旱季出现了异乎寻常的大面积持续降雨。",
+        "D.巴西用于赤道雨林保护的费用只占年度财政支出的很小比例。",
+        "E.森林面积的萎缩是全球性的环保问题。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干中由去年巴西赤道雨林面积的缩小比例明显低于往年，且去年巴西政府支出数百万美元用以制止滥砍滥伐和防止森林火灾，得出了“巴西政府保护赤道雨林的努力取得了显著成效”这一结论。若要削弱巴西政府的结论，需指出其努力并未起到保护赤道雨林的作用。选项C指出去年巴西的旱季出现了异乎寻常的大面积持续降雨，说明旱季降雨是赤道雨林面积的缩小比例低的原因，用他因的方法削弱了题干论证。因此正确答案为C。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          2
+        ],
+        "anchor": "第8题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:62074fcac588531529dca68d1c66d1cf18bc3f92b5aec8789bf9d9c9eb37aecb"
+    },
+    {
+      "id": "econ396-2016-9",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 9,
+      "type": "logic",
+      "score": 2,
+      "stem": "科学家研究发现，超过1000个小行星经常穿越地球轨道。即使小行星撞击地球的概率几乎可以忽略不计，但是由于撞击将带来灾难性的后果，应尽可能降低撞击的概率。避免撞击的办法是使用核武器摧毁小行星，因此将核武器储存在空间站以备不时之需是有必要的。\n科学家的推断会导致如下哪个推论？",
+      "options": [
+        "A.核武器是目前人类可知的唯一阻止小行星撞击地球的方法。",
+        "B.空间站应当部署核武器。",
+        "C.小行星撞击地球的事件尚未发生。",
+        "D.小行星撞击地球的概率极低。",
+        "E.除了防止小行星撞击地球，没有理由拒绝使用核武器。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干中科学家的推断为，避免小行星撞击地球的办法是使用核武器摧毁小行星，因此将核武器储存在空间站以备不时之需是有必要的。选项A过于绝对，核武器是阻止小行星撞击地球的办法，但是否“唯一”无法断定。选项B符合题干推论，空间站应当部署核武器以摧毁小行星。选项C、D、E均与题干推论无关。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          2
+        ],
+        "anchor": "第9题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:41a14efd1b20f3dfefee01a12beb36760b7c7a7fc6e8fcbc0383a03fd1aa4d6d"
+    },
+    {
+      "id": "econ396-2016-10",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 10,
+      "type": "logic",
+      "score": 2,
+      "stem": "要使中国足球队真正能跻身世界强队之列，至少需解决两个关键问题：一是提高队员基本体能；二是讲究科学训练。不切实解决这两点，即使临战时拼搏精神发挥得再好，也不可能取得突破性进展。\n下列各项都表达了上述议论的原意，除了哪一项？",
+      "options": [
+        "A.只有提高队员的基本体能和讲究科学训练，才能取得突破性进展。",
+        "B.除非提高队员的基本体能和讲究科学训练，否则不能取得突破性进展。",
+        "C.如果不能提高队员的基本体能，即使讲究了科学训练，也不可能取得突破性进展。",
+        "D.如果取得了突破性进展，说明一定提高了队员的基本体能并且讲究了科学训练。",
+        "E.只要提高了队员的基本体能和讲究了科学训练，再加上临战时拼搏精神发挥得好，就一定能取得突破性进展。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干推理结构：¬（提高队员基本体能∧讲究科学训练）→¬取得突破性的进展。其逆否命题：取得突破性的进展→提高队员基本体能∧讲究科学训练。选项A、B、C、D均与题干推理一致。选项E：提高队员基本体能∧讲究科学训练→取得突破性的进展。错将必要条件当作充分条件，与题干推理不符。因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          2,
+          3
+        ],
+        "anchor": "第10题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:7d34ea30809d8ff1656f749c03f798538c3a85d5a636b5630ad3f97db5ab570d"
+    },
+    {
+      "id": "econ396-2016-11",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 11,
+      "type": "logic",
+      "score": 2,
+      "stem": "在一个新的检查项目中，当汽车所有者的车不在1~5米之间的正常距离驾驶的时候，就会在车窗上显示一种特殊的记号，授权警察拦截汽车，以检查驾驶员的执照。采用这种特殊记号的汽车的被盗率要比普通汽车在这样的居民区内的被盗率低很多。\n如果要从上述陈述得到汽车盗窃被这一项目降低的结论，以下哪项将是评价这一结论的最主要的回答？",
+      "options": [
+        "A.这一检查项目是在多少居民区内得以展开的。",
+        "B.参与了这一项目的居民区内的汽车是不是在白天有时候也被盗。",
+        "C.他们车窗上装了这种标记，而且觉得在1~5米之间驾驶的车主会被警察拦截。",
+        "D.参与这一项目的车主是不是很小心，并且采取了其他特别措施以防止他们的车被盗。",
+        "E.采取这一项目产生了效果的居民区是不是在居民所拥有的汽车类型方面具有代表性的检查对象。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干论据为，采用特殊记号的汽车的被盗率要比普通汽车在这样的居民区内的被盗率低很多。要得出“汽车盗窃被这一项目降低”这一结论，需要排除其他造成汽车被盗率不同的原因。选项D判断是否存在他因，为正确选项。评价题中选项若涉及问题，可通过回答“是”和“否”来判断题干论证有效性，如选项D，若回答“是”则说明有其他原因导致汽车被盗率低，削弱题干论证；若回答“否”则排除他因，支持题干论证。因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          3
+        ],
+        "anchor": "第11题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:0db965e5fe7b9750fd98d4ed3be2706ef2ca3bedb0ef3f1aeeffe451a795850c"
+    },
+    {
+      "id": "econ396-2016-12",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 12,
+      "type": "logic",
+      "score": 2,
+      "stem": "某大学的一个本科专业按如下原则选拔特别奖学金的候选人：将本专业的同学按德育情况排列名次，均分为上、中、下三个等级（三个等级的人数相等，下同），候选人在德育方面的表现必须为上等；将本专业的同学按学习成绩排列名次，均分为优、良、中、差四个等级，候选人的学习成绩必须为优；将本专业的同学按身体状况排列名次，均分为好与差两个等级，候选人的身体状况必须为好。\n假设该专业共有36名本科学生，则除了以下哪项外，其余都可能是这次选拔的结果？",
+      "options": [
+        "A.恰好有四个学生被选为候选人。",
+        "B.只有两个学生被选为候选人。",
+        "C.没有学生被选为候选人。",
+        "D.候选人数多于本专业学生的1/4。",
+        "E.候选人数少于本专业学生的1/3。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据题意可知，每个分类评级中，各等级的人数相等。候选人在德育、学习成绩及身体状况三方面都必须是最好的。由于学习成绩分为四个等级，故成绩为“优”的学生至多只能有9人，因此候选人数一定小于或等于本专业学生的1/4。因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          3
+        ],
+        "anchor": "第12题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:6edb2f5da7ac2937cfde39b48c4fa8f9d1db478c94b5a12a0d84240e11ed6497"
+    },
+    {
+      "id": "econ396-2016-13",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 13,
+      "type": "logic",
+      "score": 2,
+      "stem": "小张是某公司营销部员工，公司经理对他说：“如果你争取到这个项目，我就奖励你一台笔记本电脑或者给你项目提成。”\n以下哪项如果为真，说明该经理没有兑现承诺？",
+      "options": [
+        "A.小张没争取到这个项目，该经理没有给他项目提成，但送了他一台笔记本电脑。",
+        "B.小张没争取到这个项目，该经理没有奖励他笔记本电脑，也没有给他项目提成。",
+        "C.小张争取到这个项目，该经理给他项目提成，但是并未奖励他笔记本电脑。",
+        "D.小张争取到这个项目，该经理奖励他一台笔记本电脑并给他三天假期。",
+        "E.小张争取到这个项目，该经理未给他项目提成，但是奖励他一台台式电脑。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "公司经理的承诺为，小张争取到这个项目→奖励一台笔记本电脑∨给小张项目提成。若其承诺未兑现，则该条件句前真后假，即小张争取到这个项目，但经理并未奖励笔记本电脑，也并未给项目提成，选项E符合。注意：给了台式电脑即未给笔记本电脑。因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          3
+        ],
+        "anchor": "第13题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:a6b93e07ae6cfdf6a6091bb5f3e0105f52f6098fc3e77ded77f094e769303292"
+    },
+    {
+      "id": "econ396-2016-14",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 14,
+      "type": "logic",
+      "score": 2,
+      "stem": "《文化新报》记者小白周四去某市采访陈教授与王研究员。次日，某同事小李问小白：“昨天你采访到那两位学者了吗？”小白说：“不，没那么顺利。”小李又问：“那么，你一个都没采访到吗？”小白说：“也不是。”\n以下哪项最能是小白周四采访所发生的情况？",
+      "options": [
+        "A.小白采访到了两位学者。",
+        "B.小白采访到了其中一位，但没有采访到另一位。",
+        "C.小白根本没有去采访两位学者。",
+        "D.两位采访对象都没有接受采访。",
+        "E.小白采访到了李教授，但没有采访到王研究员。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "小白否定了采访到两位学者，说明其至多采访到一位学者，又否定了“一位学者都没采访到”，说明其至少采访到一位学者。综合两次回答可知小白只采访到了一位学者，但根据题干信息无法推断出采访到了哪一位学者。因此正确答案为B。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          3,
+          4
+        ],
+        "anchor": "第14题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:08980a473db97bfeadfcffd32928b12e57de9fff985e64f385c64170e31b1aff"
+    },
+    {
+      "id": "econ396-2016-15",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 15,
+      "type": "logic",
+      "score": 2,
+      "stem": "恐龙专家：一些古生物学家声称鸟类是一群叫做多罗米奥索斯的恐龙的后裔。他们求助于化石记录，结果发现，与鸟类和大多数恐龙相比，多罗米奥索斯具有的特征与鸟类更为相似。但是，他们的论述存在致命的缺点，已经发现的最早的鸟类的化石比最古老的已知的多罗米奥索斯的化石早几千万年。因此，古生物学家的声称是错误的。\n恐龙专家的论述依赖于下面哪条假设？",
+      "options": [
+        "A.具有相似的特征并不是不同种类的生物在进化上相联系的标志。",
+        "B.多罗米奥索斯和鸟类可能会有共同的祖先。",
+        "C.已知的化石揭示了鸟类和多罗米奥索斯起源的相对日期。",
+        "D.多罗米奥索斯化石和早期鸟类化石的知识是完整的。",
+        "E.多罗米奥索斯和鸟类在许多重要方面都不一样。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "恐龙专家依据已经发现的最早的鸟类的化石比最古老的已知的多罗米奥索斯的化石早几万年，判断鸟类不可能是多罗米奥索斯的后裔，说明恐龙专家认为发现化石的时间与其物种起源的时间是对应的。若非如此，可能存在更早的多罗米奥索斯的化石未被发现，则恐龙专家的论证不成立，因此选项C是论证成立的必要假设。选项A、B、E从不同方面削弱了古生物学家的论证，但与恐龙专家的论证无关。选项D过度假设，无需假设所有的化石知识是完整的，只需保证化石年代是准确的即可。因此正确答案为C。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          4
+        ],
+        "anchor": "第15题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:3bce73857d762a1148effa158575550a53b68a98024f05d6e55bc17a96a4e3c5"
+    },
+    {
+      "id": "econ396-2016-16",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 16,
+      "type": "logic",
+      "score": 2,
+      "stem": "如果他勇于承担责任，那他就一定会直面媒体，而不是选择逃避。如果他没有责任，那么他就一定会聘请律师，捍卫自己的尊严。可事实上，他不仅没有聘请律师，而且现在逃得连人影都没有。\n根据以上陈述，可以得出哪项结论？",
+      "options": [
+        "A.即使他没有责任，也不该选择逃避。",
+        "B.虽然选择了逃避，但是他可能没有责任。",
+        "C.如果他有责任，他应该勇于承担责任。",
+        "D.他不仅有责任，而且他没有勇气承担责任。",
+        "E.如果他不敢承担责任，那么说明他责任很大。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "整理题干已知信息如下。\n①他勇于承担责任→直面媒体∧不会逃避；\n②他没有责任→聘请律师捍卫尊严；\n③未聘请律师∧逃避。\n由①③可推出，他没有勇于承担责任；由②③可推出，他有责任。可见他既有责任，又没有勇于承担责任。因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          4
+        ],
+        "anchor": "第16题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:829dab047106e3b3c2574f04b761db2d4b54a1d4021536ce78aabd2d46669a3d"
+    },
+    {
+      "id": "econ396-2016-17",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 17,
+      "type": "logic",
+      "score": 2,
+      "stem": "骨质疏松会降低骨骼密度，导致骨骼脆弱，从而容易骨折。目前治疗骨质疏松的方法，如使用雌激素和降钙素，会阻止骨质的进一步流失，但并不会增加骨骼密度。氟化物可以增加骨骼密度，因此，骨质疏松症患者使用氟化物能够帮助他们强化骨质，降低骨折风险。\n以下哪项如果正确，最能削弱以上论述？",
+      "options": [
+        "A.大多数患有骨质疏松症的人都没有意识到氟化物可以增加骨骼密度。",
+        "B.在很多地方，氟化物都被添加在水中以促进牙齿健康。",
+        "C.患骨质疏松和其他骨骼受损疾病的风险会因为运动以及充足的钙摄入而降低。",
+        "D.雌激素和降钙素会对很多人产生严重的副作用，而使用氟化物则不会有这种问题。",
+        "E.通过使用氟化物增加密度之后的骨骼比起正常的骨骼组织更脆、更易受损。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干论据为氟化物可以增加骨骼密度，结论为骨质疏松患者使用氟化物能够帮助他们强化骨质，降低骨折风险。选项E指出使用氟化物后，骨骼比正常的骨骼组织更脆、更易受损，不能达到降低骨折风险的目的，削弱题干论证。因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          4
+        ],
+        "anchor": "第17题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:fc89cfa5e74da36a3bb77c4451f35945d10676acdf14f08d15b74f7e7b1cf46c"
+    },
+    {
+      "id": "econ396-2016-18",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 18,
+      "type": "logic",
+      "score": 2,
+      "stem": "近期为了提高劳动生产率，一些制造业企业优化了生产流程，以达到雇佣更少的装配线工人生产更多产品的目的。这些企业因此裁掉了很多员工。被裁掉的员工都是那些资历最浅的，一般都是年轻员工。\n以上论述如果正确，则最能支持以下哪个结论？",
+      "options": [
+        "A.企业生产的产品在优化生产流程期间没有进行产品设计的更新。",
+        "B.对于装配线工人提出的生产流程改进建议，一些会被采纳实施，但大部分都未能实现。",
+        "C.优化生产流程虽然会提高装配线上劳动力的平均年龄，但可能提高劳动生产率。",
+        "D.一些为了提高生产率而采取的创新性措施有时反而会适得其反。",
+        "E.现在的装配线工人需要数学技能来完成他们的工作。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "企业裁掉了很多资历浅的年轻员工，雇用更少的装配线工人生产更多产品，以达到提高劳动生产率的目的，因此优化生产流程会提高装配线上劳动力的平均年龄，同时可能提高劳动生产率。因此正确答案为C。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          4
+        ],
+        "anchor": "第18题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:5197e4731883233c70109381d9ea07f943a0f8923165c836a7c766b049d6e3ea"
+    },
+    {
+      "id": "econ396-2016-19",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 19,
+      "type": "logic",
+      "score": 2,
+      "stem": "近年来，全球的青蛙数量有所下降，而同时地球接受的紫外线辐射有所增加。因为青蛙的遗传物质在受到紫外线辐射时会受到影响，且青蛙的卵通常为凝胶状而没有外壳或皮毛的保护。所以可以认为，青蛙数量的下降至少部分是由于紫外线辐射的上升导致的。\n下列哪一项如果正确，最能支持以上论述？",
+      "options": [
+        "A.即使在紫外线没有显著上升的地方，青蛙的产卵数量仍然显著下降。",
+        "B.在青蛙数量下降最少的地方，作为青蛙猎物的昆虫的数量显著下降。",
+        "C.数量显著下降的青蛙种群中杀虫剂的浓度要高于数量没有下降的青蛙种群。",
+        "D.在很多地方，海龟会和青蛙共享栖息地，虽然海龟的卵有外壳保护，海龟的数量仍然有所下降。",
+        "E.有些青蛙种群会选择将它们的卵藏在石头或沙下，而这样种群的数量下降要明显少于不这样做的青蛙种群。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干观点为，紫外线辐射的上升至少部分导致了青蛙数量的下降。若要支持题干论述需保证题干因果关系成立。选项E指出有些青蛙种群选择将它们的卵藏在石头或沙子下，即避免紫外线辐射，这些种群的数量下降明显更少，说明没有紫外线辐射会大幅度减少青蛙数量下降的可能性，以无因无果的方式加强了题干论证。选项A、C、D分别以不同方式削弱了题干论证。选项B与题干无关。因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          4,
+          5
+        ],
+        "anchor": "第19题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9de49ca5e1220bcbcae77162d8d7aede4e66515acc23f284374cce38258362ed"
+    },
+    {
+      "id": "econ396-2016-20",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 20,
+      "type": "logic",
+      "score": 2,
+      "stem": "小刘和小红都是张老师的学生，张老师的生日是M月N日，两人都知道张老师的生日是下列10天中的一天，这十天分别为3月4日、3月5日、3月8日、6月4日、6月7日、9月1日、9月5日、12月1日、12月2日、12月8日。张老师把M值告诉了小刘，把N值告诉了小红，然后有如下对话。\n小刘说：“如果我不知道的话，小红肯定也不知道。”\n小红说：“刚才我不知道，听小刘一说我就知道了。”\n小刘说：“哦，那我知道了。”\n根据以上对话推断出张老师的生日是哪一天？",
+      "options": [
+        "A.3月4日。",
+        "B.3月5日。",
+        "C.3月8日。",
+        "D.9月1日。",
+        "E.9月5日。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "张老师把M值（月份）告诉了小刘，而十个月份中有重复的月份，所以小刘肯定不知道。根据小刘的话，小红肯定不知道。又因为小红知道N值（日期），所以必然不是单独的日期（7日、2日），即排除6月7日、12月2日。同时，若是有单独日期的月份，则小红可能知情，此时小刘不能确定小红是否知情。既然小刘断定小红不知情，则可判断必然不是有单独日期的月份（6月、12月），即排除6月4日、12月1日、12月8日。再根据小红所说，此时小红可以确定，说明必然不是重复的日期（5日），因为若小红得知某重复日期，如5日，则她无法判断是哪个月份，即排除3月5日、9月5日。此时小刘也知道了，说明必然是有唯一日期的月份，若非如此，小刘无法确定日期，即排除3月4日、3月8日，仅剩9月1日。因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [
+        "逻辑推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5
+        ],
+        "anchor": "第20题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9c1b3254382f76c334d8c1d065ada3372545a90447cf9e1ddae9912ca2754b13"
+    },
+    {
+      "id": "econ396-2016-21",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 21,
+      "type": "single",
+      "score": 2,
+      "stem": "设$f(x)$的一个原函数为$10^x$，则$f'(x)=$（ ）",
+      "options": [
+        "A.$10^x$.",
+        "B.$10^x\\cdot\\ln10$.",
+        "C.$10^x\\cdot(\\ln10)^2$.",
+        "D.$10^x\\cdot(\\ln10)^3$."
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于$f(x)$的一个原函数为$10^x$，故$f(x)=(10^x)'=10^x\\ln10$，$f'(x)=(10^x\\ln10)'=10^x(\\ln10)^2$。因此，应选C。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5
+        ],
+        "anchor": "第21题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e886951edf2f3279a61992d6deec770f70d20401688fbc0cf4b720ccde5a32bf"
+    },
+    {
+      "id": "econ396-2016-22",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 22,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数$f(u)$可导且$f'(1)=0.5$，则$y=f(x^2)$在$x=-1$处的微分$dy|_{x=-1}=$（ ）",
+      "options": [
+        "A.$-dx$.",
+        "B.0.",
+        "C.$dx$.",
+        "D.$2dx$."
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "对复合函数$y=f(x^2)$微分，得$dy=d[f(x^2)]=f'(x^2)d(x^2)=2xf'(x^2)dx$。代入$f'(1)=0.5$，可得$dy|_{x=-1}=-2\\cdot0.5\\cdot dx=-dx$。因此，应选A。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5
+        ],
+        "anchor": "第22题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:90f1048a7f50b0d6e438469fa0b340630d93684b85afec966e5c5770b84be76a"
+    },
+    {
+      "id": "econ396-2016-23",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 23,
+      "type": "single",
+      "score": 2,
+      "stem": "已知函数$f(x)$在$(-\\infty,+\\infty)$内可导，且$\\lim_{x\\to0}\\frac{f(1)-f(1-x)}{2x}=-1$，则$f'(1)=$（ ）",
+      "options": [
+        "A.-2.",
+        "B.-1.",
+        "C.0.",
+        "D.1."
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由已知条件，$-1=\\lim_{x\\to0}\\frac{f(1)-f(1-x)}{2x}=\\frac{1}{2}\\lim_{x\\to0}\\frac{f(1)-f(1-x)}{x}=\\frac{1}{2}f'(1)$。解得$f'(1)=-2$。因此，应选A。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5
+        ],
+        "anchor": "第23题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:eee4432a850e296038d8b5b80f2f0c5cb9d689767554cd9e8e1fabb12a8a29fd"
+    },
+    {
+      "id": "econ396-2016-24",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 24,
+      "type": "single",
+      "score": 2,
+      "stem": "已知$F(x)$是$f(x)$的一个原函数，则$\\int_a^x f(t+a)dt=$（ ）",
+      "options": [
+        "A.$F(x)-F(a)$.",
+        "B.$F(t)-F(a)$.",
+        "C.$F(x+a)-F(x-a)$.",
+        "D.$F(x+a)-F(2a)$."
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由原函数的概念可知，$\\int_a^x f(t+a)dt=\\int_a^x f(t+a)d(t+a)=F(t+a)\\big|_a^x=F(x+a)-F(2a)$。因此，应选D。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5
+        ],
+        "anchor": "第24题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:5491057abe36c300df344b0fb85630dd3fcc34a941ef009f6b68d4117208f100"
+    },
+    {
+      "id": "econ396-2016-25",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 25,
+      "type": "single",
+      "score": 2,
+      "stem": "设$F(x)=\\int_0^{\\sin x}\\ln(1+t)dt$，则$F'(x)=$（ ）",
+      "options": [
+        "A.$\\ln(1+x)$.",
+        "B.$\\ln(1+\\sin x)$.",
+        "C.$\\sin x\\cdot\\ln(1+\\sin x)$.",
+        "D.$\\cos x\\cdot\\ln(1+\\sin x)$."
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由变限积分的求导公式可得，$F'(x)=[\\int_0^{\\sin x}\\ln(1+t)dt]'=\\ln(1+\\sin x)\\cdot(\\sin x)'=\\cos x\\cdot\\ln(1+\\sin x)$。因此，应选D。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5
+        ],
+        "anchor": "第25题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e480e4539a6d34b73eb412d8c7e56ed50613ba0c59cd00fd1317399c8cbb1a8e"
+    },
+    {
+      "id": "econ396-2016-26",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 26,
+      "type": "single",
+      "score": 2,
+      "stem": "设$y=x^2+ax+b$，已知当$x=2$时，$y$取得极小值-3，则（ ）",
+      "options": [
+        "A.$a=1,b=0$.",
+        "B.$a=-4,b=1$.",
+        "C.$a=1,b=1$.",
+        "D.$a=-4,b=0$."
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "（法一）由于当$x=2$时，$y$取得极小值，故$x=2$为$y(x)$的驻点，$y'(2)=0$。由$y=x^2+ax+b$得，$y'(x)=2x+a$。代入$x=2$可得$y'(2)=4+a=0$，解得$a=-4$。又因为$y(2)=-3$，所以$y(2)=4+(-4)\\times2+b=-3$，解得$b=1$。因此，$a=-4$，$b=1$。应选B。\n（法二）配方法。$y=x^2+ax+b=(x+\\frac{a}{2})^2+b-\\frac{a^2}{4}$。当$x=-\\frac{a}{2}$时，$y$取得极小值$-3$，于是，$\\begin{cases}-\\frac{a}{2}=2,\\\\b-\\frac{a^2}{4}=-3,\\end{cases}$解得$a=-4$，$b=1$。应选B。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5
+        ],
+        "anchor": "第26题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:d7563b9a39de69d3f5d93e64a3a955ae22badaf51b4c217afca43c3a582d5eaf"
+    },
+    {
+      "id": "econ396-2016-27",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 27,
+      "type": "single",
+      "score": 2,
+      "stem": "若$\\begin{vmatrix}a_{11}&a_{12}&a_{13}\\\\a_{21}&a_{22}&a_{23}\\\\a_{31}&a_{32}&a_{33}\\end{vmatrix}=1$，则$\\begin{vmatrix}a_{11}&a_{13}-3a_{12}&a_{13}\\\\a_{21}&a_{23}-3a_{22}&a_{23}\\\\a_{31}&a_{33}-3a_{32}&a_{33}\\end{vmatrix}=$（ ）",
+      "options": [
+        "A.-3.",
+        "B.-2.",
+        "C.-1.",
+        "D.1."
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据行列式的性质，\n$\\begin{vmatrix}a_{11}&a_{13}-3a_{12}&a_{13}\\\\a_{21}&a_{23}-3a_{22}&a_{23}\\\\a_{31}&a_{33}-3a_{32}&a_{33}\\end{vmatrix}\\xrightarrow{c_2-c_3}\\begin{vmatrix}a_{11}&-3a_{12}&a_{13}\\\\a_{21}&-3a_{22}&a_{23}\\\\a_{31}&-3a_{32}&a_{33}\\end{vmatrix}=-3\\begin{vmatrix}a_{11}&a_{12}&a_{13}\\\\a_{21}&a_{22}&a_{23}\\\\a_{31}&a_{32}&a_{33}\\end{vmatrix}=(-3)\\times1=-3$。因此，应选A。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5
+        ],
+        "anchor": "第27题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1c08f0f1758aed04e0a60b13234cbfdeb1f20d500bcd28e1e15e02608d199e89"
+    },
+    {
+      "id": "econ396-2016-28",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 28,
+      "type": "single",
+      "score": 2,
+      "stem": "设$A=\\begin{pmatrix}1&1&1\\\\2&2&t\\\\3&4&5\\end{pmatrix}$且$A$的秩$r(A)=2$，则$t=$（ ）",
+      "options": [
+        "A.2.",
+        "B.1.",
+        "C.0.",
+        "D.-1."
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于$A$为3阶矩阵，而$r(A)=2$，故$|A|=0$。\n$|A|=\\begin{vmatrix}1&1&1\\\\2&2&t\\\\3&4&5\\end{vmatrix}=\\begin{vmatrix}1&1&1\\\\0&0&t-2\\\\0&1&2\\end{vmatrix}=\\begin{vmatrix}1&0&0\\\\0&0&t-2\\\\0&1&2\\end{vmatrix}=2-t=0$。解得$t=2$。因此，应选A。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          5,
+          6
+        ],
+        "anchor": "第28题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:eb5f2aef0827e9701f965bde16aaf27890a8c9a5e615e67bd7081d18617c1172"
+    },
+    {
+      "id": "econ396-2016-29",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 29,
+      "type": "single",
+      "score": 2,
+      "stem": "一袋中有4只球，编号为1,2,3,4，从袋中一次取出2只球，用$X$表示取出的2只球的最大号码数，则$P\\{X=4\\}=$（ ）",
+      "options": [
+        "A.0.4.",
+        "B.0.5.",
+        "C.0.6.",
+        "D.0.7."
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "$X=4$当且仅当取出的2只球中有编号为4的球。从袋中一次取出2只球共有$C_4^2=6$种取法，一次取出2只球，且其中有一只编号为4的球共有$C_3^1=3$种取法。因此，$P\\{X=4\\}=\\frac{3}{6}=0.5$。应选B。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第29题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:5e8e19786672d2bc968f9ada54c4c5498245cb96021bb1c4848bc80be04c94fa"
+    },
+    {
+      "id": "econ396-2016-30",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 30,
+      "type": "single",
+      "score": 2,
+      "stem": "设随机变量$X\\sim N(1,4)$，$Y\\sim U(0,4)$，且$X,Y$相互独立，则$D(2X-3Y)=$（ ）",
+      "options": [
+        "A.8.",
+        "B.18.",
+        "C.24.",
+        "D.28."
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于$X,Y$相互独立，故$D(2X-3Y)=4D(X)+9D(Y)$。因为$X\\sim N(1,4)$，$Y\\sim U(0,4)$，所以$D(X)=4$，$D(Y)=\\frac{(4-0)^2}{12}=\\frac{4}{3}$。因此，$D(2X-3Y)=4D(X)+9D(Y)=4\\times4+9\\times\\frac{4}{3}=28$。应选D。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学单项选择题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第30题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:58d6beff0aabe4ca3fd5b135e95e5999614be8ff18b37828eeb27926df73ccc2"
+    },
+    {
+      "id": "econ396-2016-31",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 31,
+      "type": "big",
+      "score": 5,
+      "stem": "已知函数$f(x)=\\begin{cases}\\dfrac{e^{\\sin x}-1}{\\tan\\frac{x}{2}},&x>0\\\\ae^{2x},&x\\le0\\end{cases}$在$x=0$处连续，求未知参数$a$的值。",
+      "options": [],
+      "answer": "$a=2$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于$f(x)$在$x=0$处连续，故$\\lim_{x\\to0^-}f(x)=\\lim_{x\\to0^+}f(x)=f(0)$。$\\lim_{x\\to0^-}f(x)=\\lim_{x\\to0^-}ae^{2x}=a$，$\\lim_{x\\to0^+}f(x)=\\lim_{x\\to0^+}\\frac{e^{\\sin x}-1}{x}=\\lim_{x\\to0^+}\\frac{\\sin x}{x}=\\lim_{x\\to0^+}\\frac{x}{x}=2$。因此，$a=2$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第31题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9837f99e32aa2003d55b9544fc5e0b10b5542718e80b9ab49f26dec86d75338a"
+    },
+    {
+      "id": "econ396-2016-32",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 32,
+      "type": "big",
+      "score": 5,
+      "stem": "已知函数$f(x)$在$x=0$的某个邻域内为连续函数，且$\\lim_{x\\to0}\\left[\\frac{\\sin x}{x}+\\frac{f(x)}{x}\\right]=2$，试求$f(0)$及$f'(0)$。",
+      "options": [],
+      "answer": "$f(0)=0$，$f'(0)=1$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于$\\lim_{x\\to0}\\frac{\\sin x}{x}=1$，故$\\lim_{x\\to0}\\frac{f(x)}{x}=\\lim_{x\\to0}\\left[\\left(\\frac{\\sin x}{x}+\\frac{f(x)}{x}\\right)-\\frac{\\sin x}{x}\\right]=\\lim_{x\\to0}\\left[\\frac{\\sin x}{x}+\\frac{f(x)}{x}\\right]-\\lim_{x\\to0}\\frac{\\sin x}{x}=2-1=1$。从而，$\\lim_{x\\to0}f(x)=\\lim_{x\\to0}\\frac{f(x)}{x}\\cdot x=\\lim_{x\\to0}\\frac{f(x)}{x}\\cdot\\lim_{x\\to0}x=1\\times0=0$。又因为$f(x)$在$x=0$处连续，所以$f(0)=\\lim_{x\\to0}f(x)=0$。根据导数的定义，$f'(0)=\\lim_{x\\to0}\\frac{f(x)-f(0)}{x-0}\\overset{f(0)=0}{=}\\lim_{x\\to0}\\frac{f(x)}{x}=1$。综上所述，$f(0)=0$，$f'(0)=1$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第32题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:981c7b4b7b29267d2ab8e623bb64b09babdbc0598968fd36bdfa8bc13e4bc58e"
+    },
+    {
+      "id": "econ396-2016-33",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 33,
+      "type": "big",
+      "score": 5,
+      "stem": "设生产$x$单位产品的总成本$C$是$x$的函数$C(x)$，固定成本$C(0)$为20元，边际成本函数为$C'(x)=2x+10$（元/单位），求总成本函数$C(x)$。",
+      "options": [],
+      "answer": "$C(x)=x^2+10x+20$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于$C'(x)=2x+10$，故$C(x)=\\int C'(x)dx=\\int(2x+10)dx=x^2+10x+k$，其中$k$为待定常数。由$C(0)=20$可得，$k=20$。因此，$C(x)=x^2+10x+20$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第33题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:b1af648948845187ba97e5745ee99d002d77f434d1b028932d4a8c750e2918a5"
+    },
+    {
+      "id": "econ396-2016-34",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 34,
+      "type": "big",
+      "score": 5,
+      "stem": "求$y=x^3-3x^2+5$的单调区间及极值。",
+      "options": [],
+      "answer": "单调增区间$(-\\infty,0)$、$(2,+\\infty)$，单调减区间$(0,2)$；极大值$y(0)=5$，极小值$y(2)=1$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "计算$y'(x)$。$y'(x)=3x^2-6x=3x(x-2)$。当$x=0$或$x=2$时，$y'(x)=0$。当$x<0$或$x>2$时，$y'(x)>0$，$y(x)$单调增加，$(-\\infty,0)$和$(2,+\\infty)$为$y(x)$的单调增加区间。当$0<x<2$时，$y'(x)<0$，$y(x)$单调减少，$(0,2)$为$y(x)$的单调减少区间。$x=0$为$y(x)$的极大值点，极大值为$y(0)=5$。$x=2$为$y(x)$的极小值点，极小值为$y(2)=2^3-3\\times2^2+5=1$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第34题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:7f7ea3e9d5176933c6c28ea22e13e53e850f1967933a59e45e842a7bfb43098d"
+    },
+    {
+      "id": "econ396-2016-35",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 35,
+      "type": "big",
+      "score": 5,
+      "stem": "已知$f(2)=2$，$\\int_0^2 f(x)dx=4$，求$\\int_0^1 xf'(2x)dx$。",
+      "options": [],
+      "answer": "$0$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "利用分部积分法。$\\int_0^2 xf'(x)dx=\\int_0^2 xd[f(x)]=xf(x)\\big|_0^2-\\int_0^2 f(x)dx=2f(2)-4=2\\times2-4=0$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第35题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e7966be65ea707bbba66c18269c27065d2a57bd76bcbe05838631aa6204903f2"
+    },
+    {
+      "id": "econ396-2016-36",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 36,
+      "type": "big",
+      "score": 5,
+      "stem": "设$z=f(xy,x+y^2)$，且$f(u,v)$具有偏导数，求$\\frac{\\partial z}{\\partial x}$、$\\frac{\\partial z}{\\partial y}$。",
+      "options": [],
+      "answer": "$\\dfrac{\\partial z}{\\partial x}=yf_1'(xy,x+y^2)+f_2'(xy,x+y^2)$，$\\dfrac{\\partial z}{\\partial y}=xf_1'(xy,x+y^2)+2yf_2'(xy,x+y^2)$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据链式法则，$\\frac{\\partial z}{\\partial x}=f_1'(xy,x+y^2)\\cdot\\frac{\\partial(xy)}{\\partial x}+f_2'(xy,x+y^2)\\cdot\\frac{\\partial(x+y^2)}{\\partial x}=yf_1'(xy,x+y^2)+f_2'(xy,x+y^2)$，$\\frac{\\partial z}{\\partial y}=f_1'(xy,x+y^2)\\cdot\\frac{\\partial(xy)}{\\partial y}+f_2'(xy,x+y^2)\\cdot\\frac{\\partial(x+y^2)}{\\partial y}=xf_1'(xy,x+y^2)+2yf_2'(xy,x+y^2)$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第36题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:0d80a9c20bb1d801d7d82d3d6603c2fd34d617467680600a3f59bd013a3b98d9"
+    },
+    {
+      "id": "econ396-2016-37",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 37,
+      "type": "big",
+      "score": 5,
+      "stem": "设$\\alpha_1=(1,k,5)^T,\\alpha_2=(1,-3,2)^T,\\alpha_3=(2,-1,1)^T$，问：\n（1）当$k$为何值时，向量组$\\alpha_1,\\alpha_2,\\alpha_3$线性无关？\n（2）当$k$为何值时，向量组$\\alpha_1,\\alpha_2,\\alpha_3$线性相关？",
+      "options": [],
+      "answer": "（1）$k\\ne-8$；（2）$k=-8$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "计算$|\\alpha_1,\\alpha_2,\\alpha_3|$。$|\\alpha_1,\\alpha_2,\\alpha_3|=\\begin{vmatrix}1&1&2\\\\k&-3&-1\\\\5&2&1\\end{vmatrix}=\\begin{vmatrix}1&0&0\\\\k&-3-k&-1-2k\\\\5&-3&-9\\end{vmatrix}=9k+27-6k-3=3k+24$。\n（1）当$k\\ne-8$时，$|\\alpha_1,\\alpha_2,\\alpha_3|\\ne0$，向量组$\\alpha_1,\\alpha_2,\\alpha_3$线性无关。\n（2）当$k=-8$时，$|\\alpha_1,\\alpha_2,\\alpha_3|=0$，向量组$\\alpha_1,\\alpha_2,\\alpha_3$线性相关。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第37题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:4689fb8c6f76da9db9cbbce224367030c07bfc3f91a361be8ed50c6a3d5eb787"
+    },
+    {
+      "id": "econ396-2016-38",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 38,
+      "type": "big",
+      "score": 5,
+      "stem": "设$A=\\begin{pmatrix}1&2&1&2\\\\0&1&1&1\\\\1&1&0&1\\end{pmatrix}$，求齐次线性方程组$Ax=0$的基础解系。",
+      "options": [],
+      "answer": "$\\xi_1=\\begin{pmatrix}0\\\\-1\\\\0\\\\1\\end{pmatrix}$，$\\xi_2=\\begin{pmatrix}1\\\\-1\\\\1\\\\0\\end{pmatrix}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "对系数矩阵$A$作初等行变换。\n$A=\\begin{pmatrix}1&2&1&2\\\\0&1&1&1\\\\1&1&0&1\\end{pmatrix}\\to\\begin{pmatrix}1&1&0&1\\\\0&1&1&1\\\\1&2&1&2\\end{pmatrix}\\to\\begin{pmatrix}1&1&0&1\\\\0&1&1&1\\\\0&1&1&1\\end{pmatrix}\\to\\begin{pmatrix}1&0&-1&0\\\\0&1&1&1\\\\0&0&0&0\\end{pmatrix}$。\n由上可见，$r(A)=2$，$Ax=0$的基础解系中包含两个解向量。取$x_3,x_4$为自由变元。令$\\begin{cases}x_3=0,\\\\x_4=1,\\end{cases}$，可得$\\xi_1=\\begin{pmatrix}0\\\\-1\\\\0\\\\1\\end{pmatrix}$为$Ax=0$的一个解；令$\\begin{cases}x_3=1,\\\\x_4=0,\\end{cases}$，可得$\\xi_2=\\begin{pmatrix}1\\\\-1\\\\1\\\\0\\end{pmatrix}$为$Ax=0$的一个解，$\\xi_1,\\xi_2$线性无关。因此，$\\xi_1,\\xi_2$构成$Ax=0$的一个基础解系。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第38题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:62d2bf58402178cdd6782b9ca2e778bdf44425ed5f0cd7ed4ae9c357c741cdc9"
+    },
+    {
+      "id": "econ396-2016-39",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 39,
+      "type": "big",
+      "score": 5,
+      "stem": "设随机变量$X$服从参数为$\\lambda$的泊松分布，且$P\\{X=1\\}=P\\{X=2\\}$，求$X$的数学期望$E(X)$和方差$D(X)$。",
+      "options": [],
+      "answer": "$E(X)=2$，$D(X)=2$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据泊松分布的分布律，$P\\{X=1\\}=\\frac{\\lambda^1e^{-\\lambda}}{1!}$，$P\\{X=2\\}=\\frac{\\lambda^2e^{-\\lambda}}{2!}$。由$P\\{X=1\\}=P\\{X=2\\}$可得，$\\lambda=\\frac{\\lambda^2}{2}$，解得$\\lambda=2$（舍去$\\lambda=0$）。由泊松分布的数字特征可知，$E(X)=\\lambda=2$，$D(X)=\\lambda=2$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第39题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:606fe4dc1005e975284f18bfa124e5fcc0b64bbc166b3ea6e8ce99ead28cb0b1"
+    },
+    {
+      "id": "econ396-2016-40",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 40,
+      "type": "big",
+      "score": 5,
+      "stem": "设随机变量$X$的分布函数为$F(x)=\\begin{cases}a+\\frac{b}{1+x^2},&x>0\\\\c,&x\\le0\\end{cases}$，求参数$a,b,c$的值。",
+      "options": [],
+      "answer": "$a=1$，$b=-1$，$c=0$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于$F(x)$为$X$的分布函数，故$F(x)$右连续，且$\\lim_{x\\to-\\infty}F(x)=0$，$\\lim_{x\\to+\\infty}F(x)=1$。由$\\lim_{x\\to-\\infty}F(x)=0$以及$F(x)$的定义可得，$\\lim_{x\\to-\\infty}F(x)=c=0$。因此，$c=0$。由$\\lim_{x\\to+\\infty}F(x)=1$以及$F(x)$的定义可得，$\\lim_{x\\to+\\infty}F(x)=\\lim_{x\\to+\\infty}(a+\\frac{b}{1+x^2})=a=1$。因此，$a=1$。由$F(x)$在$x=0$处右连续可得，$\\lim_{x\\to0^+}F(x)=\\lim_{x\\to0^+}(1+\\frac{b}{1+x^2})=1+b=F(0)=0$。因此，$b=-1$。综上所述，$a=1$，$b=-1$，$c=0$。"
+        }
+      ],
+      "knowledge_points": [
+        "数学"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学计算题"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6
+        ],
+        "anchor": "第40题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1bd7fc2281509abecd168dba011f58f1fc51c57fb05be7a4274dcc3bdf5f76da"
+    },
+    {
+      "id": "econ396-2016-41",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 41,
+      "type": "analysis",
+      "score": 20,
+      "stem": "论证有效性分析：分析下述论证中存在的缺陷和漏洞，选择若干要点，写一篇600字左右的文章，对该论证的有效性进行分析和评论。（论证有效性分析的一般要点是：概念特别是核心概念的界定和使用是否准确并前后一致，有无各种明显的逻辑错误，论证的论据是否成立并支持结论，结论成立的条件是否充分等等。）\n在我们国家，大多数证书都是有有效期的。不要说驾照、营业执照等年年要年审的证书了，连身份证也有十年或二十年期更换的规定。然而我们的结婚证书，都是不需要年审、不需要换证的。\n我认为结婚证书也应有有效期。新领的，有效期7年；到期后，需重新到民政部门去办理存续手续，存续十年；十年过后，就可不用办存续手续了。为什么呢？\n首先，让男女双方能定期审视自己的婚姻生活。通过办理证书存续手续，男女双方能够有机会好好审视双方结合以来的得与失，从而问一下自己：我还爱他吗？他还爱我吗？自己的婚姻有没有必要再继续呢？通过审视，就能很好地发现自己在上个婚期内有没有亏待过对方，这对今后的婚姻无疑大有益处。\n其次，让双方再说一遍“我愿意”，提高夫妻各自的责任感。从热恋的激情甜蜜到婚姻中的熟悉平淡，这似乎是大多数情感的必经过程。然而疲惫的情感却容易使婚姻进入“瓶颈”。经过一段时期的婚期考验后，在办理婚姻二次手续时再向对方说一声“我愿意”，无疑更显真诚、更显实在、更多理性、更能感动对方。即使以前在共同生活中有很多磕磕绊绊，但一句“我愿意”可以消除许多误会和猜疑。新婚时说的“我愿意”，有太多的感性冲动；而一段婚姻后再说的“我愿意”，不光更具真情实意，更重要的还具有更强的责任感：你不对我负责，我到期就跟你说“再见”。\n最后，让一些垂死的婚姻自然死亡，减少许多名存实亡的婚姻的存在，降低离婚成本。现在很多家庭，即使双方婚姻已经彻底破裂，却因多种原因而维系着，维系的最主要的原因就是不愿去法院打官司。而通过这种婚姻到期存续，就没必要通过办理离婚手续才可离婚，只要有一方说“我不愿意”，双方就没有婚姻关系了，这样将会使更多对婚姻抱着“好死不如赖活着”想法的人，能够轻松获得解脱。\n（选自《发展外语》，北京语言大学出版社，2011年）",
+      "options": [],
+      "answer": "",
+      "source_blocks": [
+        {
+          "role": "answer",
+          "origin": "source",
+          "text": "【参考范文】\n结婚证应设立有效期吗？\n上述材料通过一系列分析，得到了结婚证应设立有效期这一结论。然而，该论证过程存在不妥之处。\n首先，驾照、营业执照、身份证有期限并不能推出“结婚证书也应有有效期”这一结论。因为，身份证、驾照涉及由于主体面部特征变化而产生的可识别性问题，期限的变更并不会否认主体的身份，而结婚证是证明婚姻关系有效的法律文书，提倡结婚证自动失效相当于否定了婚姻存在的合法性。材料存在类比不当之嫌。\n其次，通过办理结婚证书存续手续未必能让男女双方定期审视自己的婚姻生活，审视婚姻生活也未必能有益于今后的婚姻关系。且不说男女双方是否会审视婚姻生活，即使真的审视，这一行为本身带有极大的主观性，双方在反思婚姻关系的时候很有可能只站在自己的立场而将过错推卸给对方。因而，这一建议未必能维持婚姻关系，还可能会加速婚姻关系破裂。\n再者，让对方再说一遍“我愿意”并不一定能提高夫妻双方的责任感。一句“我愿意”只不过是简单语言表达，说话者未必真诚，很有可能是形式大于实质，未必能消除误会，提高责任感。材料显然夸大了语言的现实功能与效用。\n最后，维系名存实亡的婚姻的最主要原因是不愿意去法院打官司这一观点有主观臆断之嫌。婚姻关系破裂的家庭选择继续保持婚姻关系的原因有许多，如财产分配、房屋分割、社会舆论压力、子女抚养问题等，不愿意去法院打官司并不一定是主要原因。\n综上所述，上述论证过程存在诸多逻辑错误，若想论证结婚证书应设立有效期这一结论，还需更严谨的论证。"
+        }
+      ],
+      "knowledge_points": [
+        "论证有效性分析"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "writing",
+        "label": "写作"
+      },
+      "tags": [
+        "econ396",
+        "论证有效性分析"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          6,
+          7
+        ],
+        "anchor": "第41题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:6c72a61378d720a6448788c51f83d6e1de244d3cbff974077df09188d705aaf5"
+    },
+    {
+      "id": "econ396-2016-42",
+      "subject": "econ396",
+      "year": 2016,
+      "num": 42,
+      "type": "essay",
+      "score": 20,
+      "stem": "论说文：阅读下面的材料，以“延长退休年龄之我见”为题，写一篇不少于600字的论说文。\n自从国家拟推出延迟退休政策以来，延迟退休就受到了社会各界的广泛关注，同时也引起了激烈的争论。为什么要延长退休年龄？赞成者说，如果不延长退休年龄，养老金就会出现巨大缺口；另外，中国已经步入了老年社会，如果不延长退休年龄，就会出现劳动力紧缺的现象。反对者说，延长退休年龄就是剥夺劳动者应该享受的退休福利，退休年龄的延长意味着领取养老金时间的缩短；另外，退休年龄的延长也会给年轻人就业造成巨大压力。",
+      "options": [],
+      "answer": "",
+      "source_blocks": [
+        {
+          "role": "answer",
+          "origin": "source",
+          "text": "【参考范文】\n延长退休年龄之我见\n近来有些人对拟出台的延迟退休年龄政策颇有微词，担心这种做法会剥夺劳动者的退休福利，减少年轻人的就业机会。以上担忧并不合理，综合考虑，我认为政府应当实施延迟退休政策。\n对劳动者本身来说，延迟退休有助于劳动者积累财富。近年来，我国居民受教育程度不断提高，如今受教育年限普遍为十六年甚至更长。这意味着如果不改变退休年龄，相比于过去，大多数人的劳动时间实际上是缩短了。如果按既定年龄退休，个体在受教育期间投入的资本难以得到回报，劳力资本的价值也没有被充分利用。另外，国家目前存在养老金缺口，退休补贴也难以覆盖养老费用。如果未老先退，能干先休，这不利于劳动者储备足够的资金用于养老。\n延迟退休并不会减少年轻人的就业机会，年轻人的就业主要还是取决于经济形势以及岗位与自身能力的匹配程度。反对者认为老年劳动力和青年劳动力之间是“相互替代”关系，这种观念未免把各类劳动力之间的关系简单化。劳动力市场的新陈代谢，远不是“老的没退休，年轻的就别想进”，即使不实施延迟退休政策，不少人也是退而不休。何况有一些旧有的工作，年轻人“看不上”也“做不了”。因此，在劳动力市场中，老年劳动者和青年劳动者并非是“非此即彼”的互斥关系。\n延迟退休还有利于劳动力市场的平稳运行和合理更新。按既定的年龄退休，可能引发劳动力市场结构短缺，降低生产效率，不利于经济发展和产业结构转型升级，这反而使青年人的就业机会因宏观环境的变化而锐减。而延迟退休年龄，有利于保证劳动力市场的顺畅运行，保持经济增长的动能，创造更多适合年轻人的就业机会。\n当今的经济社会发展状况对劳动者的劳动年限提出了新的要求，延长退休年龄是应对时代变化的明智之举。针对可能产生的问题，可以加大对劳动者的权益保障，使实施延长退休年龄的积极效应更好地释放出来。"
+        }
+      ],
+      "knowledge_points": [
+        "论说文"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "writing",
+        "label": "写作"
+      },
+      "tags": [
+        "econ396",
+        "论说文"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+      "source_ref": {
+        "pdf": "2016年396经济联考综合能力真题.pdf（7 页）+ 2016年396经济联考真题解析.pdf（16 页）",
+        "sha256": "ecb3f9f15c0b767a0955c761eb5f197d9d6e221ab182f46c31db8a83beba2cfa",
+        "pages": [
+          7
+        ],
+        "anchor": "第42题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e03931e2ed755fc45894488d3dd767da1cd8c59151f2f0bf70cf327b7b856c77"
+    }
+  ]
+}
