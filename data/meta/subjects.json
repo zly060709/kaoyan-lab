@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-05T19:07:49Z",
+  "updated_at": "2026-11-06T02:00:56Z",
   "subjects": [
     {
       "id": "politics",
@@ -42,7 +42,20 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 456,
-      "analysisYears": [],
+      "analysisYears": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
       "figureYears": []
     },
     {
@@ -91,7 +104,23 @@
       "paperYears": [],
       "paperPages": {},
       "questionTotal": 780,
-      "analysisYears": [],
+      "analysisYears": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
       "figureYears": [],
       "objectiveTotal": 675
     },
@@ -151,7 +180,23 @@
         "2012": 13
       },
       "questionTotal": 342,
-      "analysisYears": [],
+      "analysisYears": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
       "figureYears": [
         2013,
         2014,
@@ -245,7 +290,23 @@
         "2023": 13
       },
       "questionTotal": 342,
-      "analysisYears": [],
+      "analysisYears": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
       "figureYears": [
         2009,
         2010,
@@ -343,7 +404,23 @@
         "2023": 13
       },
       "questionTotal": 342,
-      "analysisYears": [],
+      "analysisYears": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
       "figureYears": [
         2021,
         2022,
@@ -562,7 +639,10 @@
         "2022": 19
       },
       "questionTotal": 116,
-      "analysisYears": [],
+      "analysisYears": [
+        2022,
+        2023
+      ],
       "figureYears": [],
       "paperDir": "law498"
     },

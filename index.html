@@ -996,7 +996,7 @@ function buildSteps(ana){
   const row=present.map(x=>`<button class="stp" data-k="${x[1]}" aria-expanded="false" aria-controls="step-${x[1]}">${STEP_MARK[idx(x[1])]} ${esc(x[0])}</button>`).join("");
   const body=present.map(x=>`<div class="step" id="step-${x[1]}" data-k="${x[1]}"><span class="lab">${STEP_MARK[idx(x[1])]} ${esc(x[0])}</span>`+
     bucket[x[1]].map(l=>`<p>${esc(l)}</p>`).join("")+`</div>`).join("");
-  return `<div class="steps" id="steps"><div class="sthd"><b>扩展精讲 · ${present.length===9?"九段式":"分步"}揭示（本题 ${present.length} 段）</b><span class="org">非原文 · 平台扩展</span>`+
+  return `<div class="steps" id="steps"><div class="sthd"><b>扩展精讲 · ${present.length===9?"九段式":"分步"}揭示（本题 ${present.length} 段）</b><span class="org">${ana&&ana.origin==="source"?"原文照录 · 分步揭示":"非原文 · 平台扩展"}</span>`+
     `<span class="stct">已揭示 <b id="stn">0</b>/${present.length}</span>`+
     `<button class="stp all" id="stall">全部揭示</button></div><div class="strow">${row}</div>${body}`+
     (ana.desc?`<div class="stnote">一句话要点：${esc(ana.desc)}</div>`:"")+`</div>`;
@@ -1059,9 +1059,11 @@ async function viewQuestion(seq,s,y,num){
   };
   /* F07：区块按「原文 / 解析 / 扩展」分组呈现 */
   const sb=q.source_blocks||[];
+  /* 已纳入九段揭示的原文区块不再重复平铺（coveredRoles 由 analysis.json 数据驱动） */
+  const covered=new Set((ana&&ana.coveredRoles)||[]);
   const grpOriginal=sb.filter(b=>GRP_ORIGINAL.has(b.role));
-  const grpExtended=sb.filter(b=>b.origin&&b.origin!=="source");
-  const grpAnalysis=sb.filter(b=>!GRP_ORIGINAL.has(b.role)&&!(b.origin&&b.origin!=="source"));
+  const grpExtended=sb.filter(b=>b.origin&&b.origin!=="source"&&!covered.has(b.role));
+  const grpAnalysis=sb.filter(b=>!GRP_ORIGINAL.has(b.role)&&!(b.origin&&b.origin!=="source")&&!covered.has(b.role));
   const renderBlk=b=>{
     const role=ROLE_L[b.role]?b.role:"other";
     const body=b.html?fill(sanitizeHTML(b.html)):(nodeBlock(b.text)||fillText(b.text||""));
