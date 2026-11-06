@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-11-06T05:07:01Z",
+  "updated_at": "2026-11-06T05:58:01Z",
   "subjects": [
     {
       "id": "politics",
@@ -579,7 +579,10 @@
         2014,
         2015,
         2016,
-        2017
+        2017,
+        2018,
+        2019,
+        2020
       ],
       "yearCounts": {
         "2011": 42,
@@ -588,11 +591,14 @@
         "2014": 42,
         "2015": 42,
         "2016": 42,
-        "2017": 42
+        "2017": 42,
+        "2018": 42,
+        "2019": 42,
+        "2020": 42
       },
       "paperYears": [],
       "paperPages": {},
-      "questionTotal": 293,
+      "questionTotal": 419,
       "analysisYears": [],
       "figureYears": []
     },
