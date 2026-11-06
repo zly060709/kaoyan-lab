@@ -1,0 +1,2963 @@
+{
+  "subject": "econ396",
+  "year": 2021,
+  "paper": "2021年全国硕士研究生招生考试经济类专业学位联考综合能力试题",
+  "schema_version": "1.0.0",
+  "question_count": 57,
+  "source_note": "视觉转录（2026-11-06）：①题干/选项逐题转录自《2021年396经济联考综合能力真题.pdf》8 页（逐页渲染为图后人工读题，卷面清晰处照录，糊字标 illegible）；②答案与解析逐题取自《2021年396经济联考真题解析.pdf》20 页（答案与解析正文交叉核对）；③卷面数值：按卷面实际标注：一、数学基础：第1~35小题，每小题2分，共70分（每题给出五个选项，只有一个选项最符合试题要求）；二、逻辑推理：第36~55小题，每小题2分，共40分（每题给出五个选项，只有一个选项最符合试题要求）；三、写作：第56~57小题，共40分，其中论证有效性分析20分，论说文20分。合计70+40+40=150分，共57题。与2020卷（42题：逻辑20题×2分、数学单选10题×2分、计算10题×5分、写作40分）相比：本卷数学基础35题全部为五选一单选（2020数学单选为四选一），且不再设计算题，写作两篇合计40分。，合计 57 题 150 分，与卷面标注一致。",
+  "questions": [
+    {
+      "id": "econ396-2021-1",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 1,
+      "type": "single",
+      "score": 2,
+      "stem": "$\\lim_{x\\to 0}\\frac{e^{6x}-1}{\\ln(1+3x)}=(\\quad)$.",
+      "options": [
+        "A. 3",
+        "B. $\\frac{1}{2}$",
+        "C. 2",
+        "D. 0",
+        "E. 6"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据等价无穷小，依题得 $\\lim_{x\\to 0}\\frac{e^{6x}-1}{\\ln(1+3x)}=\\lim_{x\\to 0}\\frac{6x}{3x}=2$。"
+        }
+      ],
+      "knowledge_points": [
+        "极限",
+        "等价无穷小"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第1题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:d999b00257116ac0590ee0500b767eada3c57c3a08547450b6f534e5a39a17aa"
+    },
+    {
+      "id": "econ396-2021-2",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 2,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数 $f(x)$ 满足 $\\lim_{x\\to x_0}f(x)=1$，则下列结论中不可能成立的是（　）。",
+      "options": [
+        "A. 在 $x_0$ 附近恒有 $f(x)<\\frac{3}{2}$",
+        "B. $f(x_0)=2$",
+        "C. 在 $x_0$ 附近恒有 $f(x)>\\frac{1}{2}$",
+        "D. $f(x_0)=1$",
+        "E. 在 $x_0$ 附近恒有 $f(x)<\\frac{2}{3}$"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由 $\\lim_{x\\to x_0}f(x)=1$，根据极限的定义得：存在 $\\delta>0$，当 $x\\in(x_0-\\delta,x_0)\\cup(x_0,x_0+\\delta)$ 时，有 $|f(x)-1|<\\varepsilon$，$1-\\varepsilon<f(x)<1+\\varepsilon$，当 $\\varepsilon=\\frac{1}{2}$ 时，显然 A、C 有可能成立，当 $\\varepsilon=\\frac{1}{3}$ 时，即 $\\frac{2}{3}=1-\\frac{1}{3}<f(x)<1+\\frac{1}{3}=\\frac{4}{3}$，故 E 不可能成立。又由于极限 $\\lim_{x\\to x_0}f(x)=1$ 与 $f(x_0)$ 的数值没有任何关系，故 B、D 有可能成立。"
+        }
+      ],
+      "knowledge_points": [
+        "极限定义",
+        "局部保号性"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第2题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:103eb0d925a6b3c5aa48cbd8daa5672d77db0883de9d076c18274de2325db782"
+    },
+    {
+      "id": "econ396-2021-3",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 3,
+      "type": "single",
+      "score": 2,
+      "stem": "$\\lim_{x\\to 0}(x^2+x+e^x)^{\\frac{1}{x}}=(\\quad)$",
+      "options": [
+        "A. $e$",
+        "B. 1",
+        "C. $\\sqrt{e}$",
+        "D. 0",
+        "E. $e^2$"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据幂指转化公式 $u^v=e^{v\\ln u}$，得到 $\\lim_{x\\to 0}(x^2+x+e^x)^{\\frac{1}{x}}=\\lim_{x\\to 0}e^{\\frac{1}{x}\\ln(x^2+x+e^x)}=e^{\\lim_{x\\to 0}\\frac{\\ln(x^2+x+e^x)}{x}}=e^{\\lim_{x\\to 0}\\frac{2x+1+e^x}{1}}=e^2$。"
+        }
+      ],
+      "knowledge_points": [
+        "幂指函数极限",
+        "洛必达法则"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第3题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:8a1a9b64ea71637b4b20edc0099eb69fdbdd76c55af790e3e103759b52b99565"
+    },
+    {
+      "id": "econ396-2021-4",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 4,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数 $f(x)=e^{x-1}+ax$，$g(x)=\\ln x^b$，$h(x)=\\sin\\pi x$，当 $x\\to 1$ 时，$f(x)$ 是 $g(x)$ 的高阶无穷小，$g(x)$ 与 $h(x)$ 是等价无穷小，则（　）。",
+      "options": [
+        "A. $a=\\pi-1$，$b=-\\pi$",
+        "B. $a=-1$，$b=-\\pi$",
+        "C. $a=\\pi-1$，$b=\\pi$",
+        "D. $a=-1$，$b=\\pi$",
+        "E. $a=1$，$b=\\pi$"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "利用无穷小阶的定义和极限计算方法求解。当 $x\\to 1$ 时，由 $f(x)$ 是 $g(x)$ 的高阶无穷小，得到当 $x\\to 1$ 时，$f(x)$ 为无穷小量，故 $\\lim_{x\\to 1}f(x)=\\lim_{x\\to 1}(e^{x-1}+ax)=1+a=0\\Rightarrow a=-1$。又由 $x\\to 1$ 时，$g(x)$ 与 $h(x)$ 是等价无穷小，得到 $\\lim_{x\\to 1}\\frac{g(x)}{h(x)}=\\lim_{x\\to 1}\\frac{\\ln x^b}{\\sin\\pi x}=\\lim_{x\\to 1}\\frac{\\frac{b}{x}}{\\pi\\cos\\pi x}=\\lim_{x\\to 1}\\frac{b}{\\pi x\\cos\\pi x}=-\\frac{b}{\\pi}=1\\Rightarrow b=-\\pi$。"
+        }
+      ],
+      "knowledge_points": [
+        "无穷小的阶",
+        "等价无穷小"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第4题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1dc7cc5f2b1c81968e80c1aee7c2779a3361d1a5bba3c6493f4d505902a2c6bb"
+    },
+    {
+      "id": "econ396-2021-5",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 5,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数 $f(x)$ 可导且 $f(0)=0$。若 $\\lim_{x\\to\\infty}xf\\left(\\frac{1}{2x+3}\\right)=1$，则 $f'(0)=(\\quad)$。",
+      "options": [
+        "A. 4",
+        "B. 2",
+        "C. 3",
+        "D. 1",
+        "E. 6"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由 $\\lim_{x\\to\\infty}f\\left(\\frac{1}{2x+3}\\right)=\\lim_{x\\to\\infty}\\frac{f\\left(\\frac{1}{2x+3}\\right)-f(0)}{\\frac{1}{2x+3}}\\cdot\\frac{x}{2x+3}=f'(0)\\cdot\\frac{1}{2}$，且 $\\lim_{x\\to\\infty}xf\\left(\\frac{1}{2x+3}\\right)=1$，故 $f'(0)\\cdot\\frac{1}{2}=1$，即 $f'(0)=2$。"
+        }
+      ],
+      "knowledge_points": [
+        "导数定义"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第5题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1cc9b20e85aebb08fe0fb3a82d63955c139d9adc6e09d8dc93d3fdd6df83d6c6"
+    },
+    {
+      "id": "econ396-2021-6",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 6,
+      "type": "single",
+      "score": 2,
+      "stem": "已知直线 $y=kx$ 是曲线 $y=e^x$ 的切线，则对应切点的坐标为（　）。",
+      "options": [
+        "A. $(ke,e^{ke})$",
+        "B. $(e,1)$",
+        "C. $(e,e^e)$",
+        "D. $(1,e)$",
+        "E. $(k,e^k)$"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "设切点坐标为 $(x_0,e^{x_0})$，则由在切点处函数值和导数值均相同得 $\\begin{cases}kx_0=e^{x_0}\\\\ k=e^{x_0}\\end{cases}$，解得 $x_0=1$，故切点坐标为 $(1,e)$。"
+        }
+      ],
+      "knowledge_points": [
+        "导数的几何意义",
+        "切线方程"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第6题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:54368b241857277151f37084d532a97e179360dcdd899fb36e0d4b632e63ebb8"
+    },
+    {
+      "id": "econ396-2021-7",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 7,
+      "type": "single",
+      "score": 2,
+      "stem": "方程 $x^5-5x+1=0$ 的不同实根的个数为（　）。",
+      "options": [
+        "A. 4",
+        "B. 2",
+        "C. 3",
+        "D. 1",
+        "E. 5"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "令 $f(x)=x^5-5x+1$，则 $f'(x)=5x^4-5=5(x^2+1)(x+1)(x-1)$，令 $f'(x)=0$ 得 $x=\\pm 1$，列表讨论：$x\\in(-\\infty,-1)$ 时 $f'(x)>0$；$x=-1$ 时 $f'(x)=0$、$f(x)=5$；$x\\in(-1,1)$ 时 $f'(x)<0$；$x=1$ 时 $f'(x)=0$、$f(x)=-3$；$x\\in(1,+\\infty)$ 时 $f'(x)>0$（$x=-1$ 处为极大值 5，$x=1$ 处为极小值 $-3$）。又 $f(-\\infty)=-\\infty$，$f(+\\infty)=+\\infty$，且函数在区间内连续，根据零点存在原理得 $f(x)=x^5-5x+1$ 在 $(-\\infty,-1)$，$(-1,1)$ 和 $(1,+\\infty)$ 均存在零点，由函数单调性可知每个单调区间的零点唯一，故方程 $x^5-5x+1=0$ 的不同实根的个数为 3。"
+        }
+      ],
+      "knowledge_points": [
+        "单调性",
+        "零点存在定理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第7题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:06e81d5b7fe62091ef1ab25fa5023628afc89e35d6ba62b75068abb5f771563b"
+    },
+    {
+      "id": "econ396-2021-8",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 8,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数 $y=y(x)$ 由方程 $x\\cos y+y-2=0$ 确定，则 $y'=(\\quad)$.",
+      "options": [
+        "A. $\\frac{\\cos y}{x\\sin y+1}$",
+        "B. $\\frac{\\cos y}{x\\sin y-1}$",
+        "C. $\\frac{\\sin y}{x\\cos y+1}$",
+        "D. $\\frac{\\sin y}{x\\cos y-1}$",
+        "E. $\\frac{\\sin y}{x\\sin y-1}$"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "方法一：方程两边对 $x$ 求导得：$\\cos y+x(-\\sin y)y'+y'=0$，解得 $y'=\\frac{\\cos y}{x\\sin y-1}$。方法二：令 $F(x,y)=x\\cos y+y-2=0$，则 $\\frac{dy}{dx}=-\\frac{F'_x(x,y)}{F'_y(x,y)}=\\frac{\\cos y}{x\\sin y-1}$。"
+        }
+      ],
+      "knowledge_points": [
+        "隐函数求导"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第8题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:03ad386d0061dfb96050358dfe69843b901e45fff05afbea7b921e137b5889ad"
+    },
+    {
+      "id": "econ396-2021-9",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 9,
+      "type": "single",
+      "score": 2,
+      "stem": "已知函数 $f(x)=\\begin{cases}1+x^2 & x\\leq 0\\\\ 1-\\cos x & x>0\\end{cases}$，则以下结论中不正确的是（　）。",
+      "options": [
+        "A. $f'_+(0)=0$",
+        "B. $\\lim_{x\\to 0^+}f'(x)=0$",
+        "C. $\\lim_{x\\to 0^-}f'(x)=0$",
+        "D. $\\lim_{x\\to 0^+}f(x)=0$",
+        "E. $f'_-(0)=0$"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "对于 A，由 $f'_+(0)=\\lim_{x\\to 0^+}\\frac{f(x)-f(0)}{x-0}=\\lim_{x\\to 0^+}\\frac{1-\\cos x-1}{x-0}=\\infty$，故 $f'_+(0)$ 不存在，故错误；对于 B，$\\lim_{x\\to 0^+}f'(x)=\\lim_{x\\to 0^+}\\sin x=0$，正确；对于 C，$\\lim_{x\\to 0^-}f'(x)=\\lim_{x\\to 0^-}2x=0$，正确；对于 D，$\\lim_{x\\to 0^+}f(x)=\\lim_{x\\to 0^+}(1-\\cos x)=0$，正确；对于 E，$f'_-(0)=\\lim_{x\\to 0^-}\\frac{f(x)-f(0)}{x-0}=\\lim_{x\\to 0^-}\\frac{1+x^2-1}{x-0}=0$，正确。"
+        }
+      ],
+      "knowledge_points": [
+        "分段函数",
+        "左右导数"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第9题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:83f5b1ae447d0c6bf858cb55955424cb4300c2dc3d98d4a09421548b45edfbd2"
+    },
+    {
+      "id": "econ396-2021-10",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 10,
+      "type": "single",
+      "score": 2,
+      "stem": "已知函数 $f(x)$ 可导，且 $f(1)=1$，$f'(1)=2$。设 $g(x)=f(f(1+3x))$，则 $g'(0)=(\\quad)$。",
+      "options": [
+        "A. 6",
+        "B. 3",
+        "C. 4",
+        "D. 2",
+        "E. 12"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "根据复合函数求导公式：$g'(0)=[f(f(1+3x))]'|_{x=0}=3f'(f(1))\\cdot f'(1)=3\\times 2\\times 2=12$。"
+        }
+      ],
+      "knowledge_points": [
+        "复合函数求导"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          1
+        ],
+        "anchor": "第10题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:a60c6b0afb189276f2ba40cab53ed5f0afa9681d32b967bf16624905644d15f4"
+    },
+    {
+      "id": "econ396-2021-11",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 11,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数 $f(x)$ 满足 $f(x+\\Delta x)-f(x)=2x\\Delta x+o(\\Delta x)$（$\\Delta x\\to 0$），则 $f(3)-f(1)=(\\quad)$。",
+      "options": [
+        "A. 9",
+        "B. 6",
+        "C. 8",
+        "D. 4",
+        "E. 12"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "方法一：将 $f(x+\\Delta x)-f(x)=2x\\Delta x+o(\\Delta x)$，$\\Delta x\\to 0$ 与以下可微定义对比：若 $f(x+\\Delta x)-f(x)=2x\\Delta x+o(\\Delta x)$，$\\Delta x\\to 0$，其中 $A$ 与 $\\Delta x$ 无关与 $x$ 有关，则 $f(x)$ 在 $x$ 处可微，且 $df(x)=A\\Delta x=f'(x)\\Delta x$，可得 $f(x)$ 在 $x$ 处可微，且 $f'(x)=2x$，故 $f(x)=\\int 2xdx=x^2+C$，故 $f(3)-f(1)=3^2+C-(1^2+C)=8$。方法二：因为 $f(x+\\Delta x)-f(x)=2x\\Delta x+o(\\Delta x)$，所以根据微分的定义，$f'(x)=2x$，故 $f(x)=\\int 2xdx=x^2+C$，$f(3)-f(1)=9-1=8$，故选 C。"
+        }
+      ],
+      "knowledge_points": [
+        "微分定义",
+        "原函数"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第11题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:814847ba0b228613ee20282272b89515a618f157874e92b7dd9f6257d24db55b"
+    },
+    {
+      "id": "econ396-2021-12",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 12,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数 $f(x)$ 满足 $\\int e^{-x}f(x)dx=xe^{-x}+C$，则 $\\int f(x)dx=(\\quad)$。",
+      "options": [
+        "A. $x-\\frac{x^2}{2}+C$",
+        "B. $e^{-x}+xe^{-x}+C$",
+        "C. $x-\\frac{x^2}{2}$",
+        "D. $e^{-x}+xe^{-x}$",
+        "E. $x+\\ln x+C$"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "$\\int e^{-x}f(x)dx=xe^{-x}+C$，两边求导得 $e^{-x}f(x)=e^{-x}-xe^{-x}=(1-x)e^{-x}$，解得 $f(x)=1-x$，故 $\\int f(x)dx=\\int(1-x)dx=-\\frac{x^2}{2}+x+C$。"
+        }
+      ],
+      "knowledge_points": [
+        "不定积分",
+        "求导与积分互逆"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第12题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:a61ef895eabbfda9f09b0244765e33064ff828ef7f20197f11aef38b0e754369"
+    },
+    {
+      "id": "econ396-2021-13",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 13,
+      "type": "single",
+      "score": 2,
+      "stem": "$\\int_{-1}^{1}(x^3\\cos x+x^2e^{x^3})dx=(\\quad)$.",
+      "options": [
+        "A. $\\frac{e-e^{-1}}{2}$",
+        "B. $\\frac{e-e^{-1}}{3}$",
+        "C. $\\frac{e^{-1}-e}{3}$",
+        "D. 0",
+        "E. $\\frac{e^{-1}-e}{2}$"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "$\\int_{-1}^{1}(x^3\\cos x+x^2e^{x^3})dx=\\int_{-1}^{1}x^3\\cos xdx+\\int_{-1}^{1}x^2e^{x^3}dx$，观察到积分区间为对称区间，其中 $x^3\\cos x$ 为奇函数，则 $\\int_{-1}^{1}x^3\\cos xdx=0$，$\\int_{-1}^{1}(x^3\\cos x+x^2e^{x^3})dx=\\int_{-1}^{1}x^2e^{x^3}dx=\\frac{1}{3}\\int_{-1}^{1}e^{x^3}dx^3=\\frac{1}{3}e^{x^3}|_{-1}^{1}=\\frac{e-e^{-1}}{3}$，故选 B。"
+        }
+      ],
+      "knowledge_points": [
+        "对称区间积分",
+        "奇偶性",
+        "凑微分"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第13题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:6aa83350d705e424be60658863394fce35a3c70e23792fb1546091daa08f9e46"
+    },
+    {
+      "id": "econ396-2021-14",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 14,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数 $F(x)$ 和 $G(x)$ 都是 $f(x)$ 的原函数，则以下结论中不正确的是（　）。",
+      "options": [
+        "A. $\\int f(x)dx=\\frac{F(x)+2G(x)}{3}+C$",
+        "B. $\\int f(x)dx=G(x)+C$",
+        "C. $\\int f(x)dx=\\frac{F(x)+G(x)}{2}+C$",
+        "D. $\\int f(x)dx=F(x)+C$",
+        "E. $\\int f(x)dx=F(x)+G(x)+C$"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由题知 $F(x)$ 和 $G(x)$ 都是 $f(x)$ 的原函数，故排除 B、D。由于任何两个原函数只相差一个常数，故可令 $F(x)=G(x)+C$，此外 $\\frac{F(x)+G(x)}{2}=G(x)+\\frac{C}{2}$ 和 $\\frac{F(x)+2G(x)}{3}=G(x)+\\frac{C}{3}$ 也是 $f(x)$ 的原函数，排除 A、C，故选 E。"
+        }
+      ],
+      "knowledge_points": [
+        "原函数",
+        "不定积分性质"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第14题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:072dcf77367c2d5fe0b99d9a13d12dd04631b7817280ea04913a100096bd6fe7"
+    },
+    {
+      "id": "econ396-2021-15",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 15,
+      "type": "single",
+      "score": 2,
+      "stem": "$\\int_{-1}^{1}\\frac{x+1}{x^2+2x+2}dx=(\\quad)$.",
+      "options": [
+        "A. $\\frac{1}{2}\\ln 5$",
+        "B. $\\ln 4$",
+        "C. $\\ln 5$",
+        "D. $\\ln 2$",
+        "E. $\\frac{1}{2}\\ln\\frac{5}{2}$"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "$\\int_{-1}^{1}\\frac{x+1}{x^2+2x+2}dx=\\frac{1}{2}\\int_{-1}^{1}\\frac{d(x^2+2x+2)}{x^2+2x+2}=\\frac{1}{2}\\ln(x^2+2x+2)|_{-1}^{1}=\\frac{1}{2}\\ln 5$，故选 A。"
+        }
+      ],
+      "knowledge_points": [
+        "定积分",
+        "凑微分"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第15题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1dc635ace669385df960841afe4cd5f599ccb5eb9810c232eb8a9205780631ee"
+    },
+    {
+      "id": "econ396-2021-16",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 16,
+      "type": "single",
+      "score": 2,
+      "stem": "$\\lim_{x\\to 0}\\frac{\\int_0^{x^2}(e^{t^2}-1)dt}{x^6}=(\\quad)$",
+      "options": [
+        "A. $\\frac{1}{3}$",
+        "B. $\\infty$",
+        "C. $\\frac{1}{6}$",
+        "D. 0",
+        "E. $\\frac{1}{2}$"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由洛必达法则，$\\lim_{x\\to 0}\\frac{\\int_0^{x^2}(e^{t^2}-1)dt}{x^6}=\\lim_{x\\to 0}\\frac{(e^{x^4}-1)\\cdot 2x}{6x^5}=\\lim_{x\\to 0}\\frac{2x^5}{6x^5}=\\frac{1}{3}$，故选 A。"
+        }
+      ],
+      "knowledge_points": [
+        "变上限积分",
+        "洛必达法则"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第16题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:508d8e8a5ec17eca9dc0d6d0afe36be5130cf8231bf7742408cbc620c0def4dd"
+    },
+    {
+      "id": "econ396-2021-17",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 17,
+      "type": "single",
+      "score": 2,
+      "stem": "设平面有界区域 $D$ 由曲线 $y=x\\sqrt{|x|}$ 与 $x$ 轴和直线 $x=a$ 围成。若 $D$ 绕 $x$ 轴旋转所成旋转体的体积等于 $4\\pi$，则 $a=(\\quad)$。",
+      "options": [
+        "A. 4",
+        "B. $-2$",
+        "C. 2或$-2$",
+        "D. 2",
+        "E. 4或$-4$"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由题知 $y=x\\sqrt{|x|}=\\begin{cases}x\\sqrt{x} & x\\geq 0\\\\ x\\sqrt{-x} & x<0\\end{cases}$，所以 $a>0$ 时，由 $V_x=\\int_0^a\\pi(x\\sqrt{x})^2dx=\\pi\\int_0^a x^3dx=\\frac{\\pi}{4}a^4=4\\pi$，得 $a^4=16$，即 $a=2$。$a<0$ 时，由 $V_x=\\int_a^0\\pi(x\\sqrt{-x})^2dx=\\pi\\int_a^0 x^2(-x)dx=\\frac{\\pi}{4}a^4=4\\pi$，得 $a^4=16$，即 $a=-2$。所以 $a=2$ 或 $a=-2$，故选 C。评注：显然函数 $y=x\\sqrt{|x|}$ 为奇函数，图像关于原点对称，故所求的 $a$ 有两个值，且互为相反数。"
+        }
+      ],
+      "knowledge_points": [
+        "旋转体体积",
+        "定积分应用"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第17题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:70e64d3710da170e014bde21607ba6175498be92eb026fb24691de94ef7fa6b8"
+    },
+    {
+      "id": "econ396-2021-18",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 18,
+      "type": "single",
+      "score": 2,
+      "stem": "设 $I=\\int_0^1 x\\ln 2dx$，$J=\\int_0^1(e^x-1)dx$，$K=\\int_0^1\\ln(1+x)dx$，则 $I$，$J$，$K$ 的大小关系为（　）。",
+      "options": [
+        "A. $K<J<I$",
+        "B. $I<K<J$",
+        "C. $K<I<J$",
+        "D. $I<J<K$",
+        "E. $J<I<K$"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "只需比较三个被积函数的大小，由 $x>0$ 时，$\\ln(1+x)<x<e^x-1$，又 $0<\\ln 2<1$，则 $x\\ln 2<e^x-1$ 一定成立，所以 $I<J$。$I=\\int_0^1 x\\ln 2dx=\\ln 2\\cdot\\frac{x^2}{2}|_0^1=\\frac{1}{2}\\ln 2$；$J=\\int_0^1(e^x-1)dx=(e^x-x)|_0^1=e-2$；$K=\\int_0^1\\ln(1+x)dx=x\\ln(1+x)|_0^1-\\int_0^1\\frac{x}{1+x}dx=\\ln 2-\\int_0^1\\frac{(x+1)-1}{1+x}dx=\\ln 2-[x-\\ln(1+x)]|_0^1=2\\ln 2-1$，$2\\ln 2-1-\\frac{1}{2}\\ln 2=\\frac{3}{2}\\ln 2-1=\\ln 2^{\\frac{3}{2}}-\\ln e>0$，$2\\ln 2-1-(e-2)=2\\ln 2-e+1<0$，所以 $I<K<J$，故选 B。评注：也可以画图，根据面积大小比较定积分。"
+        }
+      ],
+      "knowledge_points": [
+        "定积分比较",
+        "被积函数大小"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第18题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9ac02fa46eb9ce466058782e650253d9b823d250e996ec80d1044c4bffbb5bcc"
+    },
+    {
+      "id": "econ396-2021-19",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 19,
+      "type": "single",
+      "score": 2,
+      "stem": "已知函数 $f(x,y)=\\ln(1+x^2+3y^2)$，则在点 $(1,1)$ 处（　）。",
+      "options": [
+        "A. $\\frac{\\partial f}{\\partial x}=\\sqrt{3}\\frac{\\partial f}{\\partial y}$",
+        "B. $\\frac{\\partial f}{\\partial x}=3\\frac{\\partial f}{\\partial y}$",
+        "C. $3\\frac{\\partial f}{\\partial x}=\\frac{\\partial f}{\\partial y}$",
+        "D. $\\frac{\\partial f}{\\partial x}=\\frac{\\partial f}{\\partial y}$",
+        "E. $\\sqrt{3}\\frac{\\partial f}{\\partial x}=\\frac{\\partial f}{\\partial y}$"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于 $\\frac{\\partial f}{\\partial x}=\\frac{2x}{1+x^2+3y^2}$，$\\frac{\\partial f}{\\partial y}=\\frac{6y}{1+x^2+3y^2}$，所以 $\\frac{\\partial f}{\\partial x}|_{(1,1)}=\\frac{2}{5}$，$\\frac{\\partial f}{\\partial y}|_{(1,1)}=\\frac{6}{5}$，于是 $3\\frac{\\partial f}{\\partial x}=\\frac{\\partial f}{\\partial y}$，故选 C。"
+        }
+      ],
+      "knowledge_points": [
+        "偏导数"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第19题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:4d21f54c5d7dd8ec0bd80ce75bf66635caf4f33061a57702df250f35589fbf35"
+    },
+    {
+      "id": "econ396-2021-20",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 20,
+      "type": "single",
+      "score": 2,
+      "stem": "已知函数 $f(x,y)=xye^{x^2}$，则 $x\\frac{\\partial f}{\\partial x}-y\\frac{\\partial f}{\\partial y}=$（　）。",
+      "options": [
+        "A. 0",
+        "B. $f(x,y)$",
+        "C. $2xf(x,y)$",
+        "D. $2x^2f(x,y)$",
+        "E. $2yf(x,y)$"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由于 $\\frac{\\partial f}{\\partial x}=ye^{x^2}+2x^2ye^{x^2}$，$\\frac{\\partial f}{\\partial y}=xe^{x^2}$，所以 $x\\frac{\\partial f}{\\partial x}-y\\frac{\\partial f}{\\partial y}=x(ye^{x^2}+2x^2ye^{x^2})-xye^{x^2}=2x^3ye^{x^2}=2x^2f(x,y)$，故选 D。"
+        }
+      ],
+      "knowledge_points": [
+        "偏导数",
+        "齐次式构造"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第20题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:4abf0057f06a25be02c25228d6f62d78c9e5efa6c5ae17c404ffb5fe730388ad"
+    },
+    {
+      "id": "econ396-2021-21",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 21,
+      "type": "single",
+      "score": 2,
+      "stem": "设函数 $z=z(x,y)$ 由方程 $xyz+e^{x+y+3z}=1$ 确定，则 $dz|_{(0,0)}=(\\quad)$。",
+      "options": [
+        "A. $-\\frac{1}{2}dx-dy$",
+        "B. $-dx-dy$",
+        "C. $\\frac{1}{2}dx+dy$",
+        "D. $dx+dy$",
+        "E. $-\\frac{1}{3}dx-\\frac{2}{3}dy$"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "将 $x=y=0$ 代入题设方程得，$z=0$。令 $F(x,y,z)=xyz+e^{x+y+3z}-1$，则 $F'_x=yz+e^{x+y+3z}$，$F'_y=xz+e^{x+y+3z}$，$F'_z=xy+3e^{x+y+3z}$，则 $\\frac{\\partial z}{\\partial x}|_{(0,0)}=-\\frac{F'_x}{F'_z}|_{(0,0)}=-\\frac{1}{3}$，$\\frac{\\partial z}{\\partial y}|_{(0,0)}=-\\frac{F'_y}{F'_z}|_{(0,0)}=-\\frac{2}{3}$，故 $dz|_{(0,0)}=-\\frac{1}{3}dx-\\frac{2}{3}dy$，故选 E。"
+        }
+      ],
+      "knowledge_points": [
+        "隐函数求偏导",
+        "全微分"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2
+        ],
+        "anchor": "第21题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e070a28d2dcd6e1a9a015b8680a6096c9cb31c9f2cc7dcd4876bc65fb0652c9b"
+    },
+    {
+      "id": "econ396-2021-22",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 22,
+      "type": "single",
+      "score": 2,
+      "stem": "已知函数 $f(x,y)=x^2+2xy+2y^2-6y$，则（　）。",
+      "options": [
+        "A. $(-3,3)$ 是 $f(x,y)$ 的极小值点",
+        "B. $(3,-3)$ 是 $f(x,y)$ 的极小值点",
+        "C. $(-3,3)$ 是 $f(x,y)$ 的极大值点",
+        "D. $(3,-3)$ 是 $f(x,y)$ 的极大值点",
+        "E. $f(x,y)$ 没有极值点"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由 $\\begin{cases}f'_x=2x+2y=0\\\\ f'_y=2x+4y-6=0\\end{cases}$，得驻点 $(-3,3)$，$f''_{xx}=2$，$f''_{xy}=2$，$f''_{yy}=4$，在驻点 $(-3,3)$ 处，$A=2$，$B=2$，$C=4$，此时 $AC-B^2>0$，且 $A>0$，故 $(-3,3)$ 是 $f(x,y)$ 的极小值点，故选 A。"
+        }
+      ],
+      "knowledge_points": [
+        "二元函数极值",
+        "驻点"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          2,
+          3
+        ],
+        "anchor": "第22题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:3aa244fa34c1c21d69ed961f9a150f5d13d05723050a5ab6e4d8792ade2ad06e"
+    },
+    {
+      "id": "econ396-2021-23",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 23,
+      "type": "single",
+      "score": 2,
+      "stem": "设 3 阶矩阵 $A$，$B$ 均可逆，则 $(A^{-1}B^{-1}A)^{-1}=$（　）。",
+      "options": [
+        "A. $A^{-1}BA$",
+        "B. $A^{-1}B^{-1}A^{-1}$",
+        "C. $AB^{-1}A^{-1}$",
+        "D. $A^{-1}BA^{-1}$",
+        "E. $ABA^{-1}$"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "$(A^{-1}B^{-1}A)^{-1}=A^{-1}(B^{-1})^{-1}(A^{-1})^{-1}=A^{-1}BA$，故选 A。"
+        }
+      ],
+      "knowledge_points": [
+        "逆矩阵性质"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第23题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:a1fed8758122eb184585230dedc870428ead1dd19c6f436d5838cd06588f5abe"
+    },
+    {
+      "id": "econ396-2021-24",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 24,
+      "type": "single",
+      "score": 2,
+      "stem": "设行列式 $D=\\begin{vmatrix}a_{11}&a_{12}&a_{13}\\\\ a_{21}&a_{22}&a_{23}\\\\ a_{31}&a_{32}&a_{33}\\end{vmatrix}$，$M_{ij}$ 是 $D$ 中元素 $a_{ij}$ 的余子式，$A_{ij}$ 是 $D$ 中元素 $a_{ij}$ 的代数余子式，则满足 $M_{ij}=A_{ij}$ 的数组 $(M_{ij},A_{ij})$ 至少有（　）。",
+      "options": [
+        "A. 4组",
+        "B. 2组",
+        "C. 3组",
+        "D. 1组",
+        "E. 5组"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "已知 $A_{ij}=(-1)^{i+j}M_{ij}$（$i,j=1,2,3$），则满足 $M_{ij}=A_{ij}$ 时，$i+j$ 为偶数，所以满足 $M_{ij}=A_{ij}$ 的数组 $(M_{ij},A_{ij})$ 至少有 5 组，故选 E。"
+        }
+      ],
+      "knowledge_points": [
+        "余子式",
+        "代数余子式"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第24题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:49a51e94b25e16658bab58d68cbfcc1bc56a01a313dcb15d78cc94eed8da77ca"
+    },
+    {
+      "id": "econ396-2021-25",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 25,
+      "type": "single",
+      "score": 2,
+      "stem": "$\\begin{vmatrix}j&m&w\\\\ m&w&j\\\\ w&j&m\\end{vmatrix}=$（　）。",
+      "options": [
+        "A. $j^3+m^3+w^3-3jmw$",
+        "B. $j^3+m^3+w^3-jmw$",
+        "C. $3jmw-j^3-m^3-w^3$",
+        "D. $jmw-j^3-m^3-w^3$",
+        "E. $jmw-3j^3-3m^3-3w^3$"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "方法一：利用三阶行列式的对角线法则，$\\begin{vmatrix}j&m&w\\\\ m&w&j\\\\ w&j&m\\end{vmatrix}=jmw+jmw+jmw-w^3-m^3-j^3=3jmw-w^3-m^3-j^3$，故选 C。方法二：将第 2、3 行加到第 1 行，提出公因子 $w+m+j$ 后再按第一行展开，同样可得 $3jmw-j^3-m^3-w^3$。"
+        }
+      ],
+      "knowledge_points": [
+        "行列式计算"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第25题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:763377eef02f73adb10d76a162097b44dc312403222b1d53166c621c9d06858a"
+    },
+    {
+      "id": "econ396-2021-26",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 26,
+      "type": "single",
+      "score": 2,
+      "stem": "已知矩阵 $A=\\begin{pmatrix}1&-1\\\\ 2&3\\end{pmatrix}$，$E$ 为 2 阶单位矩阵，则 $A^2-4A+3E=$（　）。",
+      "options": [
+        "A. $\\begin{pmatrix}-2&0\\\\ 0&-2\\end{pmatrix}$",
+        "B. $\\begin{pmatrix}0&-2\\\\ -2&0\\end{pmatrix}$",
+        "C. $\\begin{pmatrix}2&0\\\\ 0&2\\end{pmatrix}$",
+        "D. $\\begin{pmatrix}0&2\\\\ 2&0\\end{pmatrix}$",
+        "E. $\\begin{pmatrix}-2&0\\\\ 0&2\\end{pmatrix}$"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "$A^2-4A+3E=(A-E)(A-3E)=\\begin{pmatrix}0&-1\\\\ 2&2\\end{pmatrix}\\begin{pmatrix}-2&-1\\\\ 2&0\\end{pmatrix}=\\begin{pmatrix}-2&0\\\\ 0&-2\\end{pmatrix}$，故选 A。"
+        }
+      ],
+      "knowledge_points": [
+        "矩阵运算",
+        "矩阵多项式"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第26题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:f8915be34eb0cd1d2ab3e4ce40800a603bde50563f2fb05e7dde9847339da965"
+    },
+    {
+      "id": "econ396-2021-27",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 27,
+      "type": "single",
+      "score": 2,
+      "stem": "设向量组 $\\alpha_1$，$\\alpha_2$，$\\alpha_3$ 线性无关，则以下向量组中线性相关的是（　）。",
+      "options": [
+        "A. $\\alpha_1-2\\alpha_2$，$\\alpha_2-2\\alpha_3$，$\\alpha_3-2\\alpha_1$",
+        "B. $\\alpha_1-\\alpha_2$，$\\alpha_2-\\alpha_3$，$\\alpha_3-\\alpha_1$",
+        "C. $\\alpha_1+2\\alpha_2$，$\\alpha_2+2\\alpha_3$，$\\alpha_3+2\\alpha_1$",
+        "D. $\\alpha_1+\\alpha_2$，$\\alpha_2+\\alpha_3$，$\\alpha_3+\\alpha_1$",
+        "E. $2\\alpha_1+\\alpha_2$，$2\\alpha_2+\\alpha_3$，$2\\alpha_3+\\alpha_1$"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "方法一：定义法。讨论系数是否只能为 0。对于 D 选项：设 $k_1(\\alpha_1+\\alpha_2)+k_2(\\alpha_2+\\alpha_3)+k_3(\\alpha_3+\\alpha_1)=0$，$(k_1+k_3)\\alpha_1+(k_1+k_2)\\alpha_2+(k_2+k_3)\\alpha_3=0$，由向量组 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性无关，则 $k_1+k_3=0$ 且 $k_1+k_2=0$ 且 $k_2+k_3=0$，解得 $k_1=k_2=k_3=0$，说明 $\\alpha_1+\\alpha_2,\\alpha_2+\\alpha_3,\\alpha_3+\\alpha_1$ 线性无关。其他选项类似分析，此处省略。方法二：矩阵乘法分析。对于 D 选项，$(\\alpha_1+\\alpha_2,\\alpha_2+\\alpha_3,\\alpha_3+\\alpha_1)=(\\alpha_1,\\alpha_2,\\alpha_3)\\begin{pmatrix}1&0&1\\\\ 1&1&0\\\\ 0&1&1\\end{pmatrix}$，由于矩阵 $\\begin{pmatrix}1&0&1\\\\ 1&1&0\\\\ 0&1&1\\end{pmatrix}$ 可逆，故 $r(\\alpha_1+\\alpha_2,\\alpha_2+\\alpha_3,\\alpha_3+\\alpha_1)=r(\\alpha_1,\\alpha_2,\\alpha_3)=3$，说明 $\\alpha_1+\\alpha_2,\\alpha_2+\\alpha_3,\\alpha_3+\\alpha_1$ 线性无关。其他选项类似分析，此处省略。评注：有时也可以直接观察分析，比如 $(\\alpha_1-\\alpha_2)+(\\alpha_2-\\alpha_3)+(\\alpha_3-\\alpha_1)=0$，故 $\\alpha_1-\\alpha_2$，$\\alpha_2-\\alpha_3$，$\\alpha_3-\\alpha_1$ 线性相关，故选 B。"
+        }
+      ],
+      "knowledge_points": [
+        "线性相关性",
+        "向量组"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第27题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1d5838538f935f9396ad1a38e7cc3d689e42aaeac4014155eabd6fefd5e23bbd"
+    },
+    {
+      "id": "econ396-2021-28",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 28,
+      "type": "single",
+      "score": 2,
+      "stem": "设 $A=\\begin{pmatrix}a_{11}&a_{12}&a_{13}\\\\ a_{21}&a_{22}&a_{23}\\end{pmatrix}$，$B=\\begin{pmatrix}b_{11}&b_{12}\\\\ b_{21}&b_{22}\\\\ b_{31}&b_{32}\\end{pmatrix}$，若 $AB=\\begin{pmatrix}1&0\\\\ 2&1\\end{pmatrix}$，则齐次线性方程组 $Ax=0$ 和 $By=0$ 的线性无关解向量的个数分别为（　）。",
+      "options": [
+        "A. 2和0",
+        "B. 1和0",
+        "C. 0和1",
+        "D. 0和0",
+        "E. 1和2"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由题意 $A_{2\\times3}B_{3\\times2}=\\begin{pmatrix}1&0\\\\ 2&1\\end{pmatrix}$，故 $r(A_{2\\times3}B_{3\\times2})=r\\begin{pmatrix}1&0\\\\ 2&1\\end{pmatrix}=2$。$2=r(A_{2\\times3}B_{3\\times2})\\leq r(A_{2\\times3})\\leq 2\\Rightarrow r(A_{2\\times3})=2$。同理：$2=r(A_{2\\times3}B_{3\\times2})\\leq r(B_{3\\times2})\\leq 2\\Rightarrow r(B_{3\\times2})=2$。因此齐次线性方程组 $Ax=0$ 的线性无关解向量的个数为 $3-r(A_{2\\times3})=3-2=1$，齐次线性方程组 $By=0$ 的线性无关解向量的个数为 0，故选 B。"
+        }
+      ],
+      "knowledge_points": [
+        "矩阵的秩",
+        "齐次方程组解"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第28题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:427d0f2426bd444dd2be0452f8766364e930eef4ac7881985a50cb5cc793e45f"
+    },
+    {
+      "id": "econ396-2021-29",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 29,
+      "type": "single",
+      "score": 2,
+      "stem": "若齐次线性方程组 $\\begin{cases}2x_1+x_2+3x_3=0\\\\ ax_1+3x_2+4x_3=0\\end{cases}$ 和 $\\begin{cases}x_1+2x_2+x_3=0\\\\ x_1+bx_2+2x_3=0\\end{cases}$ 有公共的非零解，则（　）。",
+      "options": [
+        "A. $a=3$，$b=-1$",
+        "B. $a=-3$，$b=-1$",
+        "C. $a=3$，$b=1$",
+        "D. $a=2$，$b=-1$",
+        "E. $a=-1$，$b=3$"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "两方程组有公共的非零解，即 $\\begin{cases}2x_1+x_2+3x_3=0\\\\ ax_1+3x_2+4x_3=0\\\\ x_1+x_2+x_3=0\\\\ x_1+bx_2+2x_3=0\\end{cases}$ 有非零解，则系数矩阵的秩小于 3。对系数矩阵作初等行变换：$\\begin{pmatrix}2&1&3\\\\ a&3&4\\\\ 1&2&1\\\\ 1&b&2\\end{pmatrix}\\to\\begin{pmatrix}1&2&1\\\\ a&3&4\\\\ 2&1&3\\\\ 1&b&2\\end{pmatrix}\\to\\begin{pmatrix}1&2&1\\\\ 0&1&-\\frac{1}{3}\\\\ 0&3-2a&4-a\\\\ 0&b-2&1\\end{pmatrix}$，由秩小于 3 可得 $\\begin{cases}\\frac{4-a}{3-2a}+\\frac{1}{3}=0\\\\ \\frac{1}{b-2}+\\frac{1}{3}=0\\end{cases}$，解得 $\\begin{cases}a=3\\\\ b=-1\\end{cases}$，故选 A。"
+        }
+      ],
+      "knowledge_points": [
+        "线性方程组",
+        "矩阵的秩",
+        "初等行变换"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第29题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:0771a3d51ed34cb69cd8befdb67630a6e9d63eff69935a07900f04b06a34bee9"
+    },
+    {
+      "id": "econ396-2021-30",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 30,
+      "type": "single",
+      "score": 2,
+      "stem": "设随机变量 $X$ 的密度函数为 $f(x)=\\begin{cases}Ax^2 & 0<x<1\\\\ 0 & \\text{其他}\\end{cases}$（其中 $A$ 为常数），则 $P\\{X\\leq\\frac{1}{2}\\}=$（　）。",
+      "options": [
+        "A. $\\frac{1}{4}$",
+        "B. $\\frac{1}{8}$",
+        "C. $\\frac{3}{16}$",
+        "D. $\\frac{1}{16}$",
+        "E. $\\frac{1}{2}$"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由密度函数的归一性知：$\\int_{-\\infty}^{+\\infty}f(x)dx=1$。即 $\\int_{-\\infty}^{+\\infty}f(x)dx=\\int_0^1Ax^2dx=\\frac{A}{3}x^3|_0^1=\\frac{A}{3}=1$，$A=3$。$P\\{X\\leq\\frac{1}{2}\\}=\\int_0^{\\frac{1}{2}}3x^2dx=x^3|_0^{\\frac{1}{2}}=\\frac{1}{8}$，故选 B。"
+        }
+      ],
+      "knowledge_points": [
+        "概率密度",
+        "归一性"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第30题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:24088dd5020919ab5c566cbd2340a86bbdb79c210dc81f22856240f8705b33d3"
+    },
+    {
+      "id": "econ396-2021-31",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 31,
+      "type": "single",
+      "score": 2,
+      "stem": "设随机变量 $X$ 和 $Y$ 分别服从正态分布，$X\\sim N(\\mu,4)$，$Y\\sim N(\\mu,9)$，记 $p=P\\{X\\leq\\mu-2\\}$，$q=P\\{Y\\geq\\mu+3\\}$，则（　）。",
+      "options": [
+        "A. 仅对某些实数 $\\mu$，有 $p>q$",
+        "B. 对任何实数 $\\mu$，均有 $p>q$",
+        "C. 对任何实数 $\\mu$，均有 $p<q$",
+        "D. 对任何实数 $\\mu$，均有 $p=q$",
+        "E. 仅对某些实数 $\\mu$，有 $p<q$"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由已知 $X\\sim N(\\mu,4)$，$Y\\sim N(\\mu,9)$，则 $\\frac{X-\\mu}{2}\\sim N(0,1)$，$\\frac{Y-\\mu}{3}\\sim N(0,1)$。$p=P(X\\leq\\mu-2)=P\\left(\\frac{X-\\mu}{2}\\leq\\frac{\\mu-2-\\mu}{2}\\right)=P\\left(\\frac{X-\\mu}{2}\\leq-1\\right)=\\Phi(-1)$，$q=P(Y\\geq\\mu+3)=P\\left(\\frac{Y-\\mu}{3}\\geq\\frac{\\mu+3-\\mu}{3}\\right)=P\\left(\\frac{Y-\\mu}{3}\\geq 1\\right)=1-\\Phi(1)=\\Phi(-1)$。从而 $p=q$，故选 D。"
+        }
+      ],
+      "knowledge_points": [
+        "正态分布",
+        "标准化",
+        "分布函数"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第31题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:6fa04ed3eab2c68acf4f893a54107ab83db587aaa50cb948260f221c774585e9"
+    },
+    {
+      "id": "econ396-2021-32",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 32,
+      "type": "single",
+      "score": 2,
+      "stem": "设相互独立的随机变量 $X$，$Y$ 具有相同的分布律，且 $P\\{X=0\\}=\\frac{1}{2}$，$P\\{X=1\\}=\\frac{1}{2}$，则 $P\\{X+Y=1\\}=$（　）。",
+      "options": [
+        "A. $\\frac{3}{4}$",
+        "B. $\\frac{1}{4}$",
+        "C. $\\frac{1}{2}$",
+        "D. $\\frac{1}{8}$",
+        "E. $\\frac{4}{5}$"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "$P(X+Y=1)=P(X=1,Y=0)+P(X=0,Y=1)=P(X=1)\\cdot P(Y=0)+P(X=0)\\cdot P(Y=1)=\\frac{1}{2}\\times\\frac{1}{2}+\\frac{1}{2}\\times\\frac{1}{2}=\\frac{1}{2}$，故选 C。"
+        }
+      ],
+      "knowledge_points": [
+        "独立性",
+        "离散型随机变量"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          3
+        ],
+        "anchor": "第32题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:01e6aa7a341bc64a53dfab6b315b5b7dd39fb611902555c30f9a735dac2f5821"
+    },
+    {
+      "id": "econ396-2021-33",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 33,
+      "type": "single",
+      "score": 2,
+      "stem": "$A$，$B$ 是随机事件，$P(A)=0.5$，$P(B)=0.3$，$P(A\\cup B)=0.6$，$\\bar{B}$ 表示 $B$ 的对立事件，则 $P(A\\bar{B})=$（　）。",
+      "options": [
+        "A. 0.5",
+        "B. 0.3",
+        "C. 0.4",
+        "D. 0.2",
+        "E. 0.6"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由 $P(A\\cup B)=P(A)+P(B)-P(AB)$，即 $0.6=0.5+0.3-P(AB)$，得 $P(AB)=0.2$，故 $P(A\\bar{B})=P(A)-P(AB)=0.5-0.2=0.3$，故选 B。"
+        }
+      ],
+      "knowledge_points": [
+        "概率加法公式",
+        "对立事件"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          4
+        ],
+        "anchor": "第33题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:dce43c23315b6ac50cf1a2af4d90538aff342840e6abeb408f90376f16bbe8cc"
+    },
+    {
+      "id": "econ396-2021-34",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 34,
+      "type": "single",
+      "score": 2,
+      "stem": "设随机变量 $X$ 服从区间 $[-3,2]$ 上的均匀分布，随机变量 $Y=\\begin{cases}1 & X\\geq 0\\\\ -1 & X<0\\end{cases}$，则 $D(Y)=$（　）。",
+      "options": [
+        "A. 1",
+        "B. $\\frac{1}{25}$",
+        "C. $\\frac{24}{25}$",
+        "D. $\\frac{1}{5}$",
+        "E. $\\frac{26}{25}$"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "$P(Y=1)=P(X\\geq 0)=\\frac{2-0}{2-(-3)}=\\frac{2}{5}$，则 $Y$ 的概率分布为 $\\begin{array}{c|cc}Y&-1&1\\\\ P&\\frac{3}{5}&\\frac{2}{5}\\end{array}$。于是 $E(Y)=(-1)\\times\\frac{3}{5}+1\\times\\frac{2}{5}=-\\frac{1}{5}$，$E(Y^2)=(-1)^2\\times\\frac{3}{5}+1^2\\times\\frac{2}{5}=1$，则 $D(Y)=E(Y^2)-[E(Y)]^2=1-\\left(-\\frac{1}{5}\\right)^2=\\frac{24}{25}$，故选 C。"
+        }
+      ],
+      "knowledge_points": [
+        "均匀分布",
+        "随机变量函数的分布",
+        "方差"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          4
+        ],
+        "anchor": "第34题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:52206044dbce2bbc8a66283aae52916388066061b11907bbcbfce294b3438991"
+    },
+    {
+      "id": "econ396-2021-35",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 35,
+      "type": "single",
+      "score": 2,
+      "stem": "设随机变量 $X$ 的概率分布为 $\\begin{array}{c|cccc}X&-1&1&2&3\\\\ P&0.7&a&b&0.1\\end{array}$，若 $E(X)=0$，则 $D(X)=$（　）。",
+      "options": [
+        "A. 2.6",
+        "B. 1.8",
+        "C. 2.4",
+        "D. 1.4",
+        "E. 3"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由题可得：$0.7+a+b+0.1=1$，$-0.7+a+2b+0.3=0$，从而解得 $a=0$，$b=0.2$，所以 $D(X)=E(X^2)-[E(X)]^2=E(X^2)=0.7+a+4b+0.9=2.4$，故选 C。"
+        }
+      ],
+      "knowledge_points": [
+        "分布律",
+        "期望与方差"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学基础"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          4
+        ],
+        "anchor": "第35题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:48fae04af13e932d2b6ab01e83a1b1ca71b3fd0c98ccdcb8d61b55f17ee35339"
+    },
+    {
+      "id": "econ396-2021-36",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 36,
+      "type": "logic",
+      "score": 2,
+      "stem": "“理念是实践的先导”，理念科学，发展才能蹄疾步稳；“思想是行动的指南”，思想破冰，行动才能突破重围；“战略是发展的规划”，战略得当，未来才能行稳致远。执政环境不会一成不变，治国理政需要与时俱进。根据以上陈述，可以得出以下哪项？",
+      "options": [
+        "A. 若战略不得当，未来就不能行稳致远。",
+        "B. 只要思想破冰，行动就能突破重围。",
+        "C. 治国理政只有与时俱进，才能不断改善执政环境。",
+        "D. 只有以正确思想为指导，才能进行科学的战略规划。",
+        "E. 要正确处理好理念、思想、战略和发展的辩证关系。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①发展能蹄疾步稳（P1）→理念科学（Q1）；②行动能突破重围（P2）→思想破冰（Q2）；③未来能行稳致远（P3）→战略得当（Q3）。A 选项 $=\\neg Q3\\to\\neg P3=P3\\to Q3$，与条件③一致（正确）；B 选项 $=Q2\\to P2$，与条件②不一致（淘汰）；C “治国理政”与“执政环境”之间没有推理关系（淘汰）；D 选项核心词与题干核心词不一致，不能推出（淘汰）；E 与题干信息无关，不能推出（淘汰）。"
+        }
+      ],
+      "knowledge_points": [
+        "假言推理",
+        "必要条件"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          4
+        ],
+        "anchor": "第36题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:b06ff52717b7807df12f186330d3a6e2f5d7b1d2e40fb616d5aa09bcfc003706"
+    },
+    {
+      "id": "econ396-2021-37",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 37,
+      "type": "logic",
+      "score": 2,
+      "stem": "某会议海报在黑体、宋体、楷体、隶书、篆书和幼圆6种字体中选择3种进行编排设计。已知：（1）若黑体、楷体至少选择一种，则选择篆书而不选择幼圆；（2）若宋体、隶书至少选择一种，则选择黑体而不选择篆书。根据上述信息，该会议海报选择的字体是：",
+      "options": [
+        "A. 黑体、宋体、隶书。",
+        "B. 隶书、篆书、幼圆。",
+        "C. 黑体、楷体、篆书。",
+        "D. 宋体、楷体、黑体。",
+        "E. 楷体、隶书、幼圆。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①黑体∨楷体→篆书∧不幼圆；②宋体∨隶书→黑体∧不篆书；③6 种字体中选择 3 种字体。题中没有确定信息，根据条件③可知，需要选 3 种字体，而选项刚好列出 3 种字体，因此属于选项充分，可优先考虑“代入选项”排除的方法。A 选项，若选择黑体，根据条件①，则必须选择“篆书”，因此排除 A 选项。B 选项，若选择篆书，根据条件②，则必须选择“黑体”，因此排除 B 选项。D 选项，若选择黑体，根据条件①，则必须选择“篆书”，因此排除 D 选项。E 选项，若选择篆书，根据条件②，则必须选择“黑体”，因此排除 E 选项。因此选择 C 选项。"
+        }
+      ],
+      "knowledge_points": [
+        "假言推理",
+        "代入排除"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          4
+        ],
+        "anchor": "第37题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:83d94b2a855d5e108fb228ae83915d762263f69bf9c206f1a80afbafb76ccb8a"
+    },
+    {
+      "id": "econ396-2021-38",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 38,
+      "type": "logic",
+      "score": 2,
+      "stem": "文物复制件是依照文物体量、形制、质地、纹饰、文字、图案等历史信息，基本采取原技艺方法和工艺流程，制作与文物相同的制品。为了避免珍贵文物在陈列展示中受到损害，一些博物馆会用文物复制件替代文物原件进行展出。根据上述信息，以下哪项与文物复制件的描述最为吻合？",
+      "options": [
+        "A. 黄师傅采用制作秦兵马俑所用的质料、彩色颜料以及技艺方法和工艺流程制成一批秦兵马俑仿制品，几可乱真。",
+        "B. 为了修补乾隆年间的一幅罗汉拓片画作上的裂纹，修复师李师傅特地找厂家定制了一种纸，以保证与原画作在色泽和质地上一致。",
+        "C. 金属器物修复研究所对一件待修复的青铜文物进行激光三维扫描，建立了与原青铜文物一模一样的实物模型。",
+        "D. 王师傅不断学习和临摹古人作品，他复制临摹的古人笔迹类作品已达到形神兼备的境界。",
+        "E. 按照工作流程，修复师林师傅对某件青铜文物进行了信息采集、取样、清洗、焊接、调色和补配等操作。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：文物复制件：①依照文物体量、形制、质地、纹饰、文字、图案等历史信息；②基本采取原技艺方法和工艺流程；③制作与文物相同的制品。A 项符合条件①、②和③（考生注意，“几可乱真”虽然不是完全相同，但力度是五个选项中最强的一项）；B 项不符合条件②和③；C 项不符合条件②；D 项不符合条件②；E 项不符合条件②和③。"
+        }
+      ],
+      "knowledge_points": [
+        "概念匹配"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          4
+        ],
+        "anchor": "第38题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:72a5dd4373c2cb6f7d6c7d8e280a522c07e4b27f42ffabe1115e7863c1ab327e"
+    },
+    {
+      "id": "econ396-2021-39",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 39,
+      "type": "logic",
+      "score": 2,
+      "stem": "一天中午，快递公司张经理将12个快递包裹安排给张平、李安、赵明、王亮4位快递员投递。未到傍晚，张经理就发现自己交代的任务完成了，于是问4人实际投递的快递数量，4人的回答如下：张平：我和李安共送了5个；李安：张平和赵明共送了7个；赵明：我和王亮共送了6个；王亮：我和张平共送了6个。事实上，4人的回答中只有1人说错了，而这位说错的快递员送了4个快递。根据以上信息，可以得出张平、李安、赵明、王亮4人送出的快递数依次为：",
+      "options": [
+        "A. 3、4、2、3。",
+        "B. 4、1、5、2。",
+        "C. 3、2、4、3。",
+        "D. 4、3、2、3。",
+        "E. 2、3、4、3。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①张平：张平+李安=5；②李安：张平+赵明=7；③赵明：赵明+王亮=6；④王亮：王亮+张平=6；⑤4 人回答中只有 1 人说错了：说错的快递员送了 4 个快递。题干的确定信息正向推理困难，而选项充分，因此优先采用“代入选项”的方法。A 选项，若李安送了 4 个快递，根据条件⑤可知，李安说的话为假，其余 3 人的话均为真；此时根据选项可得，张平+李安=7，与条件①矛盾（张平说真话），因此排除 A 选项。B 选项，若张平送了 4 个快递，根据条件⑤可知，张平说的话为假，其余 3 人的话均为真；此时根据选项可得，张平+赵明=9，与条件②矛盾（李安说真话），因此排除 B 选项。D 选项，若张平送了 4 个快递，根据条件⑤可知，张平说的话为假，其余 3 人的话均为真；此时根据选项可得，张平+赵明=6，与条件②矛盾（李安说真话），因此排除 D 选项。E 选项，若赵明送了 4 个快递，根据条件⑤可知，赵明说的话为假，其余 3 人的话均为真；此时根据选项可得，张平+赵明=6，与条件②矛盾（李安说真话），因此排除 E 选项。答案选 C 选项。"
+        }
+      ],
+      "knowledge_points": [
+        "真假话",
+        "代入排除"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理",
+        "解析存疑"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          5
+        ],
+        "anchor": "第39题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:eefed565602845091d8afa23c6cab252edf2091b888aedb2a6354cdc05884b05"
+    },
+    {
+      "id": "econ396-2021-40",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 40,
+      "type": "logic",
+      "score": 2,
+      "stem": "老式荧光灯因成本低、寿命长而在学校广泛使用。但是，老式荧光灯老化后因放电产生的紫外辐射会导致灯光颜色和亮度的不断闪烁。对此，有研究人员建议，由于使用老式荧光灯易引发头痛和视觉疲劳，学校应该尽快将其淘汰。以下哪项如果为真，最能支持上述研究人员的建议？",
+      "options": [
+        "A. 老式荧光灯蒙上彩色滤光纸后，可以有效减弱荧光造成的颜色变化。",
+        "B. 有些学校改换了新式荧光灯后，很多学生的头痛和视觉疲劳开始消失。",
+        "C. 新式荧光灯设计新颖、外形美观、节能环保，很受年轻人喜爱。",
+        "D. 灯光闪烁会激发眼部的神经细胞对刺激做出快速反应，加重视觉负担。",
+        "E. 全部淘汰老式荧光灯，学校要支出一大笔经费，但很多家长认为这笔钱值得花。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：方法：尽快淘汰老式荧光灯。→目的：避免使用产生的头痛和视觉疲劳。A 选项与题干论证无关（考生一定要注意题目核心词的变化，题干目的是“减缓头痛和视觉疲劳”，而选项却强调的是“减弱颜色变化”，与目的无关）（淘汰）；B 选项指出了新式荧光灯的好处，但是老式荧光灯是否非得要淘汰呢，选项并没有直接指出老式荧光灯的危害，故力度弱于 D（淘汰）；C 选项与题干论证无关（淘汰）；D 选项指出老式荧光灯“闪烁”会加重视觉负担，直接指出老式荧光灯危害，故应该淘汰，直接支持的力度强于 B 选项的间接支持（正确）；E 选项与题干论证无关（淘汰）。"
+        }
+      ],
+      "knowledge_points": [
+        "加强论证"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          5
+        ],
+        "anchor": "第40题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:39add5095419a21ef9bfc04bc7015c61bfcd3019cd6ca02b9ae7a935f5895616"
+    },
+    {
+      "id": "econ396-2021-41",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 41,
+      "type": "logic",
+      "score": 2,
+      "stem": "某市发改委召开该市高速公路收费标准调整价格听证会，旨在征求消费者、经营者和专家的意见。实际参加听证会的共有15人，其中消费者9人、经营者5人、专家3人，此外无其他人员列席。根据上述信息，可以得出以下哪项？",
+      "options": [
+        "A. 有专家是消费者但不是经营者。",
+        "B. 有专家是经营者。",
+        "C. 有专家不是经营者。",
+        "D. 有专家是消费者。",
+        "E. 有专家是经营者但不是消费者。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：实际参加听证会的共有 15 人，其中消费者 9 人、经营者 5 人、专家 3 人，此外无其他人员列席。本题属于数据分析题目，题干正向推理困难，故可采用“反证法”进行解题。假设 A 选项为假，即“所有专家都不是消费者或者所有专家都是经营者”为真。此时消费者与经营者中有两人身份重合，即满足参会者共有 15 人，因此 A 选项淘汰（考生注意，“相容选言判断”一假真即真，这里假设“所有专家都不是消费者”为真）。假设 B 选项为假，即“所有专家都不是经营者”为真。此时消费者与专家中有两人身份重合，即满足参会者共有 15 人，因此 B 选项淘汰。假设 C 选项为假，即“所有专家都是经营者”为真。此时消费者和经营者的人数相加只有 14 人，与题干信息矛盾，因此 C 选项一定为真。假设 D 选项为假，即“所有专家都不是消费者”为真，由 A 选项可知，满足参会者共有 15 人，因此 D 选项淘汰。假设 E 选项为假，即“所有专家都不是经营者或者所有专家都是消费者”，由 B 选项可知，满足参会者共有 15 人，因此 E 选项淘汰（考生注意，“相容选言判断”一假真为真，这里假设“所有专家都不是经营者”为真）。答案选 C 选项。"
+        }
+      ],
+      "knowledge_points": [
+        "数据分析",
+        "反证法",
+        "概念关系"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理",
+        "解析存疑"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          5
+        ],
+        "anchor": "第41题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:ab1fedfe0e74a42e1f4a1fc67b4295aad3929295adc808f1a6dff965fab47f88"
+    },
+    {
+      "id": "econ396-2021-42",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 42,
+      "type": "logic",
+      "score": 2,
+      "stem": "政府只有不超发货币并控制物价，才能控制通货膨胀。若控制物价，则政府税收减少；若政府不超发货币并且税收减少，则政府预算将减少。如果政府预算未减少，则可以得出以下哪项？",
+      "options": [
+        "A. 政府既未超发货币，也未控制物价。",
+        "B. 政府未能控制通货膨胀。",
+        "C. 政府超发了货币。",
+        "D. 政府控制了物价。",
+        "E. 政府既超发了货币，又控制了物价。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①控制通货膨胀→不超发货币∧控制物价；②控制物价→税收减少；③不超发货币∧税收减少→预算减少；④政府预算没有减少。本题属于假言判断综合推理题，优先从确定信息④出发进行解题。将条件④代入条件③可知，“超发货币∨税收没有减少”为真；由于相容选言判断的定义为：两个选言支中至少有一选言支为真，此时假设“超发货币”为真，将其代入到条件①中可知，“没有控制住通货膨胀”；假设“税收没有减少”为真，将其代入到条件②中可得，⑤“没有控制住物价”，将信息⑤代入到条件①中可得，“没有控制住通货膨胀”。因此答案选 B 选项。"
+        }
+      ],
+      "knowledge_points": [
+        "假言推理",
+        "选言推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          5
+        ],
+        "anchor": "第42题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:cd221c4c76fa0f6cb9a765dc83540673b810d4797585a1cd10d98848806721c4"
+    },
+    {
+      "id": "econ396-2021-43",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 43,
+      "type": "logic",
+      "score": 2,
+      "stem": "目前科学家已经揭示，与抽传统卷烟相比，抽电子烟同样会产生严重危害。为进一步保护未成年人免受电子烟侵害，我国政府有关部门发布“禁电子烟令”，要求电子烟生产、销售企业或个人及时关闭电子烟销售网站、店铺及客户端，将电子烟产品及时下架，禁止销售电子烟。可是，“禁电子烟令”发布后的两周内，有些电商依然在国内网站上销售电子烟。以下各项如果为真，则除了哪项均能解释上述电商的行为？",
+      "options": [
+        "A. 政策执行存在一定的滞后性，有些电商并未收到来自上级主管部门的具体通知。",
+        "B. 近年来有些投资人对电子烟生产、销售已有大量投入，不甘心先前投入打水漂。",
+        "C. 禁令是为了保护未成年人，禁止向他们出售电子烟，对成年人似乎并没有禁止。",
+        "D. 目前有些电商认为，只卖烟棒而不卖烟弹，不算销售电子烟。",
+        "E. 电子烟危害已得到多国政府关注，但他们并未出台类似中国的“禁电子烟令”"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：电商的行为：“禁电子烟令”发布后的两周内，仍有电商在国内网站上销售电子烟。A 项：有些电商未收到“禁售电子烟”的通知，可以解释上述电商的行为（淘汰）；B 项：投资人不甘心“投入打水漂”，可以解释上述电商的行为（淘汰）；C 项：对成年人没有禁止销售电子烟，可以解释上述电商的行为（淘汰）；D 项：有些电商认为“卖烟弹不算销售电子烟”，可以解释上述电商的行为（淘汰）；E 项：其他政府未出台“禁电子烟令”，无法说明我国的情况，因此无法解释上述电商的行为（正确）。"
+        }
+      ],
+      "knowledge_points": [
+        "解释现象"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理",
+        "解析存疑"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          5
+        ],
+        "anchor": "第43题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:0ffde52c54a126dae7b62fb6c9d967772b7ac980dd1f5abbeef0cdefb06122e1"
+    },
+    {
+      "id": "econ396-2021-44",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 44,
+      "type": "logic",
+      "score": 2,
+      "stem": "负责人赵某：我单位今年招聘的8名新员工都是博士，但这些新员工有些不适合担任管理工作，因为博士未必都适合担任管理工作。以下哪项与赵某的论证方式最为类似？",
+      "options": [
+        "A. 6的倍数都是偶数，但6的倍数有些不是3的倍数，因为偶数未必都是3的倍数。",
+        "B. 院子里的花都是名贵品种，但是这些花都不好养，因为名贵品种都不好养。",
+        "C. 正直的人都受人尊敬，但是他们不都富有，因为富有的人未必都受人尊敬。",
+        "D. 创新产品都受欢迎，但是它们未必都能盈利，因为价格高就难以受欢迎。",
+        "E. 最近上市的公司都是医药类的，但是这些公司的股票未必都热销，因为最近热销的股票都不是医药类的。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：题干结构为：A→B，但有的 A≠C，因为有的 B≠C。A 选项 $=A\\to B$，但有的 A≠C，因为有的 B≠C，与题干推理结构一致（正确）；B 选项 $=A\\to B$，但 A≠C，因为 B≠C，与题干推理结构不一致（淘汰）；C 选项 $=A\\to B$，但有的 A≠C，因为有的 C≠B，与题干推理结构不一致（淘汰）；D 选项 $=A\\to B$，但是有的 A≠C，因为 D≠B，与题干推理结构不一致（淘汰）；E 选项 $=A\\to B$，但有的 A≠C，因为 C≠B，与题干推理结构不一致（淘汰）。"
+        }
+      ],
+      "knowledge_points": [
+        "论证结构比较"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          5,
+          6
+        ],
+        "anchor": "第44题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:939f638d72a618a7f1b813f45486e52010131d13ecf71c5db29f23593e8c17fa"
+    },
+    {
+      "id": "econ396-2021-45",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 45,
+      "type": "logic",
+      "score": 2,
+      "stem": "如今近视的年轻人越来越多了。60年前，中国的年轻人中近视患者只有10%~20%，现在这一数字则接近90%。近视不只是不方便，它还意味着近视患者的眼球会稍稍伸长而发生病变。以往人们常常将近视的原因归之于遗传、长时间或不正确姿势阅读等，但近来有专家对这些观点表示怀疑，他们认为近视率的剧增主要是因为人们在白天的户外活动时间过短。以下哪项如果为真，最能支持上述专家的观点？",
+      "options": [
+        "A. 与在一般室内光照环境下生长的鸡相比，处于与户外光照相当的室内高光照水平下的鸡，其近视发生率减少了大约60%。",
+        "B. 如今许多国家的少儿每天花10多个小时来读书、做作业，或者看电脑、电视、智能手机等。",
+        "C. 科学家对某地近5000名小学生长达3年的跟踪研究发现，那些在户外活动更久的孩子虽不一定减少看书、看屏幕的时间，却很少成为近视。",
+        "D. 1969年，科学家对住在阿拉斯加的139名因纽特人调查发现，其中只有2人近视，如今他们的儿孙中超过一半的人成了近视。",
+        "E. 室外光照刺激视网膜释放出比在其他环境下更多的多巴胺，正是这些多巴胺阻止了眼球的伸长。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：因：年轻人白天户外活动时间过短，而不是遗传、长时间或不正确姿势阅读。→果：年轻人近视率激增。A 项：题干论证强调的是“在户外活动时间的长短”和“近视”之间的关系，而不是“光照”和“近视”之间的关系，选项与题干论证无关（淘汰）；B 项：选项支持了题干背景信息中的“长时间阅读”，但是否导致近视不得而知（淘汰）；C 项：选项虽然属于无因无果的支持，但选项缩小了题干的论证对象，题干论证的对象是“年轻人”，而非“小学生”，小学生与年轻人在近视方面是否有可比性呢？也不得而知，故力度较弱（淘汰）；D 项：选项支持了题干论证中“不是遗传导致近视”，支持力度较弱（考生注意，是 A 而不是 B 导致 C，优先考虑“A”和“C”之间的关系）（淘汰）；E 项：选项构建了“室外光照→释放更多的多巴胺→阻止了眼球的伸长→不近视”，也属于无因无果的支持，也就是“户外活动时间长（无因）→不近视（无果）”，支持力度最强（正确）。"
+        }
+      ],
+      "knowledge_points": [
+        "加强论证",
+        "因果关系"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          6
+        ],
+        "anchor": "第45题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:6eb6fd3d1ab133ba7c8577ae457e56c4f973a89dd8ad42f9c5f09a5105c3ff3a"
+    },
+    {
+      "id": "econ396-2021-46",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 46,
+      "type": "logic",
+      "score": 2,
+      "stem": "某单位汤、宋、李、陈、罗、刘、方7人乘坐高铁出差，他们的座位如图所示。已知：（1）罗与方的座位左右紧挨着；（2）汤和宋隔着一个座位；（3）陈与方的座位均为F位或者均为D位。如果李与刘的座位左右紧挨着，则可以得出以下哪项：",
+      "options": [
+        "A. 陈坐在5D。",
+        "B. 宋坐在5C。",
+        "C. 李坐在5A。",
+        "D. 汤坐在5F。",
+        "E. 刘坐在5B。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①罗与方的座位左右紧挨着；②汤和宋隔着一个座位；③陈与方的座位均为 F 或 D；④李与刘的座位左右紧挨着（座位图示为 4F、4D 一排，5F、5D、5C、5B、5A 一排）。第一步：根据条件③可得，陈与方的座位为“4F、5F”或“4D、5D”。再结合条件④可推知，若李与刘的座位是 4F 和 4D，此时陈与方的座位就不能“均为 F 或 D”，与条件③矛盾，因此李与刘的座位不是 4F 和 4D。同理可知，李与刘的座位不是 5F 和 5D，因此李与刘的位置只能是“5C 和 5B”或者“5B 和 5A”。第二步：结合条件②可推知，由于汤和宋隔着一个座位，因此李与刘的座位只能为“5B 和 5A”，汤和宋的座位为“5F 和 5C”。再结合条件①和条件③可知，罗与方的座位为“4F 和 4D”，陈的座位为 5D，列表如下：4F 罗、4D 方；5F 汤或宋、5D 陈、5C 汤或宋、5B 与 5A 依次为李与刘。答案选 A。"
+        }
+      ],
+      "knowledge_points": [
+        "分析推理",
+        "位置排列"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [
+        "data/econ396/media/img-6df0d38490e5.png"
+      ],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          6
+        ],
+        "anchor": "第46题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:f2c10d8fc39ece9defff576c7caf0e199ddc4982b63831708cf50ce527cfe9dc"
+    },
+    {
+      "id": "econ396-2021-47",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 47,
+      "type": "logic",
+      "score": 2,
+      "stem": "某单位汤、宋、李、陈、罗、刘、方7人乘坐高铁出差，他们的座位如图所示。已知：（1）罗与方的座位左右紧挨着；（2）汤和宋隔着一个座位；（3）陈与方的座位均为F位或者均为D位。如果李和汤隔两个座位，则以下哪项是不可能的？",
+      "options": [
+        "A. 宋坐在5C。",
+        "B. 刘坐在5B。",
+        "C. 罗坐在4F。",
+        "D. 方坐在4D。",
+        "E. 李坐在5F。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①罗与方的座位左右紧挨着；②汤和宋隔着一个座位；③陈与方的座位均为 F 或 D；④李和汤隔两个座位。第一步：结合条件②和条件④可知，李、汤和宋的位置关系共有 4 种可能：Ⅰ. 李 $—$ 汤 $—$ 宋；Ⅱ. 宋 $—$ 李 $—$ 汤；Ⅲ. 李宋 $—$ 汤；Ⅳ. 汤 $—$ 宋李，其中Ⅰ和Ⅱ的座位跨度为 6，与题干矛盾，因此李、汤和宋的位置关系只能是“李宋 $—$ 汤”或“汤 $—$ 宋李”。第二步：结合条件①可推知，由于罗与方的座位紧挨着，所以罗与方的座位只能是“4F 和 4D”，根据条件③可知，由于陈与方的座位只能是“4F、5F”或“4D、5D”，此时再联合李、汤和宋的位置关系可推知，李的座位只能是 5D、5B 或 5A。当李的座位为 5D 时，列表如下：4F 罗、4D 方；5F 陈、5D 李；右侧 5C 宋、5B 刘、5A 汤。当李的座位为 5A 时，列表如下：4F 罗、4D 方；5F 陈、5D 汤；5C 刘、5B 宋、5A 李。当李的座位为 5B 时，列表如下：4F 罗、4D 方；5F 汤、5D 陈；5C 宋、5B 李、5A 刘。故李的位置不可能是 5F，答案选 E。"
+        }
+      ],
+      "knowledge_points": [
+        "分析推理",
+        "位置排列"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [
+        "data/econ396/media/img-6df0d38490e5.png"
+      ],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          6
+        ],
+        "anchor": "第47题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:52d444354d3c718f02718382f40cfffe924fcde6542235a953acfd6891272650"
+    },
+    {
+      "id": "econ396-2021-48",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 48,
+      "type": "logic",
+      "score": 2,
+      "stem": "改革开放以来，省际人口大规模流动已成为一个突出的社会现象。2018年，中国流动人口为2.41亿，相当于每6个中国人中就有1个流动人口。庞大的流动人口被视为中国城市化的重要推动力量。但有专家指出，大规模的人口流动也给流入地政府的基本公共服务和社会保障带来巨大压力，同时进一步加剧了省际财政矛盾。以下哪项如果为真，最能质疑上述专家的观点？",
+      "options": [
+        "A. 针对农民工子女的义务教育问题，国家早就发文指出，以流入地为主，以公办学校为主，流入地政府承担流动儿童的主要教育责任。",
+        "B. 受户籍制度制约，流动人口应享有的教育、医疗、住房、养老等诸多公共服务在“流入地”与“流出地”之间衔接不畅。",
+        "C. 进入2010年后，我国流动人口增速开始逐步变缓；从2015年开始，流动人口在增速下降的同时，规模也开始减小。",
+        "D. 目前公共财政支出的人口统计口径依然是以户籍作为主要单位，流动家庭基本公共服务的提供仍然需要流入地政府额外的财政投入。",
+        "E. 近年来，国家出台一系列财政转移支付政策，将外来人口纳入测算标准，并将财政资金向人口流入地倾斜，适当弥补人口流入省份的财政缺口。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：专家观点：大规模的人口流动也给流入地政府的基本公共服务和社会保障带来压力，同时进一步加剧了省际的财政矛盾。本题属于态度题，找到与专家的观点相反的选项即可。A 项：“流入地”承担流动儿童的主要教育责任，说明增加了“流入地”政府的基本公共服务和社会保障的压力，选项支持了专家的观点（淘汰）；B 项：流动人口应享有的公共服务在“流入地”和“流出地”之间衔接不畅，说明加剧了省际的财政矛盾，选项支持了专家的观点（淘汰）；C 项：流动人口增速下降并不代表流动人口的总人数下降，选项不能质疑专家的观点（淘汰）；D 项：流动家庭的基本公共服务需要“流入地”政府提供，说明增加了“流入地”政府的基本公共服务压力，选项支持了专家的观点（淘汰）；E 项：国家出台政策，弥补“人口流入”带来的财政缺口，说明没有增加“流入地”政府的基本公共服务的压力，选项与专家的观点相反，最能质疑（正确）。"
+        }
+      ],
+      "knowledge_points": [
+        "削弱论证"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          6
+        ],
+        "anchor": "第48题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:34e78557f22cf44aae0716e14eebb2fde3902045e942f8538db0355a3d25b030"
+    },
+    {
+      "id": "econ396-2021-49",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 49,
+      "type": "logic",
+      "score": 2,
+      "stem": "动物肉一直是餐桌上不可或缺的食物。前不久某专家宣布，他的研究团队已首次利用动物干细胞在实验室培育出了人造肉，这种人造肉在口感和成分上与动物肉非常接近。该专家认为，这种人造肉在不远的将来会有很好的市场前景。以下哪项如果为真，最能质疑上述专家的观点？",
+      "options": [
+        "A. 目前宇航员在太空中自主栽培蔬菜已成为可能，但肉类的获取只能依靠饲养黄粉虫，其口感大大逊于动物肉。",
+        "B. 以植物蛋白为原料，模拟动物肉外观和口感的人造肉已在素斋中广泛使用。",
+        "C. 上述实验中人造肉制造需要加入大量的动物血清，而要获得动物血清仍需要饲养大量动物。",
+        "D. 目前人造肉的生产成本远高于动物肉，且产量极低，近期还很难有技术突破的可能。",
+        "E. 目前关于人造肉研发的风险投资正在不断加大，而相关上市公司的股票价格却持续走低。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：专家观点：以动物干细胞培育出的人造肉在不远的将来会有很好的市场前景。本题属于态度题，找到与专家的观点相反的选项即可。A 项：选项与专家的观点无关（淘汰）；B 项：选项与专家的观点无关，不能质疑专家的观点（考生注意，题干中论证的对象是“以动物干细胞”培育出的人造肉，而非“以植物蛋白为原料”模拟出的人造肉）（淘汰）；C 项：选项不能质疑专家的观点，饲养大量动物与市场前景无关（淘汰）；D 项：人造肉成本远高于动物肉并且产量极低，说明人造肉不会在将来有很好的市场前景，选项与专家的观点相反（考生注意，“远高于”和“极低”这样的量度词也增加了削弱的强度，故该项最能削弱）（正确）；E 项：股票价格持续走低只能代表一段时间内市场对于人造肉研发的态度，而不能代表未来股票价格会一直走低，因此不能质疑专家的观点（淘汰）。"
+        }
+      ],
+      "knowledge_points": [
+        "削弱论证"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          7
+        ],
+        "anchor": "第49题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:58fdf3a769a317b4f880cc1ebaa13a472702e771b44008989357ff40a38e7b7c"
+    },
+    {
+      "id": "econ396-2021-50",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 50,
+      "type": "logic",
+      "score": 2,
+      "stem": "甲、乙、丙、丁、戊、己6人被同期安排至山溪乡扶贫，其中一人到该乡最僻远、最贫困的石坝村扶贫。一天，乡里召开扶贫工作会，到访记者询问参会的甲、乙、丁、戊，他们同期6人中谁去了石坝村扶贫，4人的回答如下：甲：不是丁去了，就是戊去了；乙：我没有去，丙也没有去；丁：甲如果没有去，己就去了；戊：甲和丙中肯定有人去了。事实上，因为山区的交通通讯不便，他们相互了解不够，上述4人的回答只有一个人说的符合实际。根据以上信息，可以得出上述6人中去了石坝村扶贫的是：",
+      "options": [
+        "A. 丁。",
+        "B. 乙。",
+        "C. 丙。",
+        "D. 甲。",
+        "E. 己。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "第一步：①丁去∨戊去；②乙不去∧丙不去=甲去∨丁去∨戊去∨己去；③甲不去→己去=甲去∨己去；④甲去∨丙去；⑤6 人中只有 1 人去石坝村；⑥4 人的回答只有 1 人说的符合事实。第二步：题干没有确定信息，可以考虑“重复项”。由于成对判断一真即真，因此，要想满足条件⑥应当考虑到重复的不能为真（考生试想，若让重复项为真，就会不止一个真）。因此，若“甲”去，则②③④为真，与条件⑥矛盾；若“己”去，则②③为真，与条件⑥矛盾；若“丁”去，则①②为真，与条件⑥矛盾；若“戊”去，则①②为真，与条件⑥矛盾。则只有“丙”去才能满足题干，只有一个人说的符合事实，符合条件⑥的要求。因此答案选 C。"
+        }
+      ],
+      "knowledge_points": [
+        "真假话",
+        "选言推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          7
+        ],
+        "anchor": "第50题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:6b796b0969cc1e5a8b39ec3563cdbbf73a87531618d1b2d9337ca4a478276f7d"
+    },
+    {
+      "id": "econ396-2021-51",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 51,
+      "type": "logic",
+      "score": 2,
+      "stem": "贾研究员：4万年前，尼安德特人的灭绝不是因为智人的闯入，而是近亲繁殖导致的恶果。尹研究员：事情并非如此，因为尼安德特人当时已经“濒危”。种群个体数量的减少，不仅会给个体健康带来负面影响，而且一旦种群的出生率、死亡率或性别比发生偶然变动，就会直接导致种群的灭绝。以下哪项如果为真，最能支持尹研究员的观点？",
+      "options": [
+        "A. 父母的本能是照顾后代，确保生命的延续，但是尼安德特人没能通过这种方式将他们的种群延续下去。",
+        "B. 非洲某部落虽也近亲繁殖，但促使该部落消失的根本原因是大多数幼儿患麻疹而死亡。",
+        "C. 800万年前濒临灭绝的猿类是人类祖先，他们因为吃成熟发酵的水果进化出一种特定的蛋白质，反而活了下来。",
+        "D. 一个仅有1000人左右的种群，若一年中只有不到四分之一的育龄妇女生孩子，就会直接导致这个种群的灭绝。",
+        "E. 近亲繁殖的新生儿容易患多种疾病，可能会给种群繁衍带来不利影响。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：尹研究员：①种群个体数量减少（P1）∧种群的出生率、死亡率或性别比发生偶然变动（P2）→直接导致种群的灭绝（Q）；②尼安德特人当时已经“濒危”（P1）→尼安德特人灭绝（Q）。A 项：选项采取他因削弱的方式，提出了新的论据，是因为没有父母照顾后代才导致尼安德特人灭绝，削弱了尹研究员的观点，因此应排除（淘汰）；B 项：选项构建“非洲某部落”进行类比，指出导致部落灭绝的不是人口濒危，而是幼儿患麻疹导致死亡，削弱题干论证关系（淘汰）；C 项：选项强调的是“蛋白质”与存活的关系，无法支持题干强调的“出生率、死亡率与性别比”与灭绝的关系，与题干论证无关（淘汰）；D 项：尹研究员的前提为 P1∧P2→Q，结论为 P1→Q，要想保证尹研究员的结论成立，就必须保证 P2 成立，即种群的出生率、死亡率或性别比发生偶然变动，选项说明了种群的出生率发生了变动，最能支持尹研究员的观点（正确）；E 项：选项采取他因削弱的方式，提出了新的论据，是因为近亲繁殖导致尼安德特人灭绝，削弱了尹研究员的观点，因此应排除（淘汰）。"
+        }
+      ],
+      "knowledge_points": [
+        "加强论证",
+        "假言推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          7
+        ],
+        "anchor": "第51题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:44fe2e2cf900263cdf4891193d9c89f4e79bd93a87d6742b1ce961d9e5e3d3d8"
+    },
+    {
+      "id": "econ396-2021-52",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 52,
+      "type": "logic",
+      "score": 2,
+      "stem": "某医院针灸科专家林医生提供给甲、乙、丙3人下周一至下周五的门诊预约信息如下：\n门诊时间／星期：星期一、星期二、星期三、星期四、星期五\n上午：约满、余1个、余1个、约满、余2个\n下午：休息、余2个、休息、余2个、余1个\n据此，她们3人每人预约了3次针灸，且一人一天只安排1次。还已知：（1）甲和乙没有预约同一天下午的门诊；（2）如果乙预约了星期二上午的门诊，则乙还预约了星期五下午的门诊；（3）如果丙预约了星期五上午的门诊，则丙还预约了星期三上午的门诊。根据上述信息，可以得出以下哪项？",
+      "options": [
+        "A. 甲预约了星期四下午的门诊。",
+        "B. 乙预约了星期二上午的门诊。",
+        "C. 丙预约了星期五上午的门诊。",
+        "D. 甲预约了星期三上午的门诊。",
+        "E. 乙预约了星期二下午的门诊。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①甲、乙、丙 3 人每人预约了 3 次针灸且一人一天只安排 1 次；②甲和乙没有预约同一天下午的门诊；③乙预约星期二上午的门诊→乙预约星期五下午的门诊；④丙预约星期五上午的门诊→丙预约星期三上午的门诊。第一步：由题干中表格可得，可预约的名额一共有 9 个，联合条件①，因为甲、乙、丙 3 人每人预约了 3 次针灸，所以每个预约名额都有人预约。第二步：根据条件②，并结合表格可以推知，由于甲和乙不能预约同一天下午的门诊，因此丙预约星期二下午和星期四下午的门诊。再联合条件④可知，如果丙预约了星期五上午的门诊，丙就要预约星期三上午的门诊，与条件①相矛盾，所以丙不预约星期五上午的门诊。由于星期五上午有两个预约名额，根据条件①可得，甲和乙同时预约星期五上午的门诊，丙预约星期五下午的门诊。第三步：将“丙预约星期五下午的门诊”代入到条件③中可推知，丙预约星期五下午的门诊→乙不预约星期五下午的门诊→乙不预约星期二上午的门诊，可知甲预约星期二上午的门诊，再结合条件①，可得乙和丙预约了星期二下午的门诊，答案选 E。"
+        }
+      ],
+      "knowledge_points": [
+        "分析推理",
+        "假言推理"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          7
+        ],
+        "anchor": "第52题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:4aca79ab6d7f877355d85a1193e5eda7a81bacb471c5ee9a74feb9121c4f76fc"
+    },
+    {
+      "id": "econ396-2021-53",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 53,
+      "type": "logic",
+      "score": 2,
+      "stem": "有专家指出，人们可以通过健身长跑增进健康。因为健身长跑过程中，有节奏的深呼吸能使人体吸入大量氧气，这可以改善心肌供氧状态，加快心肌代谢，提高心脏的工作能力。以下哪项最可能是上述专家论断的假设？",
+      "options": [
+        "A. 人体的健康与呼吸系统机能的提高和心脏循环系统机能的改善密切相关。",
+        "B. 健身长跑不仅可以改善心肌供氧状态，还可以抑制人体癌细胞的生长和繁殖。",
+        "C. 心脏是循环系统的中心，而健身长跑在提高人的呼吸系统机能的同时，可以改善心脏循环系统的机能。",
+        "D. 健身长跑可以使心肌纤维变粗，心脏收缩力增强。",
+        "E. 体育以身体活动为基本手段，不仅能强身健体，还能培养人的各种心理素质。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：前提：健身长跑中有节奏的深呼吸使人体吸入大量氧气，改善心肌供氧状态，加快心肌代谢，提高心脏工作能力。→结论：健身长跑可以增进健康。A 项：选项采用“搭桥法”，建立了“健康”和“心脏循环系统机能”之间的关系，保证了题干论证的成立，是题干论证的假设（正确）；B 项：选项支持了题干论证的前提，但不是题干论证的假设（淘汰）；C 项：选项支持了题干论证的前提，但不是题干论证的假设（淘汰）；D 项：选项支持了题干论证的前提，但不是题干论证的假设（淘汰）；E 项：选项支持了题干论证的结论，但不是题干论证的假设（淘汰）。"
+        }
+      ],
+      "knowledge_points": [
+        "假设",
+        "搭桥法"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          8
+        ],
+        "anchor": "第53题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:65b36174efed5eb7ded30183d0cde37ca800abfe2ee340c4ba7e0135bbb415a0"
+    },
+    {
+      "id": "econ396-2021-54",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 54,
+      "type": "logic",
+      "score": 2,
+      "stem": "54~55题基于以下题干：美佳、新月、海奇三家商店在美食一条街毗邻而立。已知，三家店中两家销售茶叶，两家销售水果，两家销售糕点，两家销售调味品；每家都销售上述4类商品中的2~3种。另外，还知道：（1）如果美佳销售水果，则海奇也销售水果；（2）如果海奇销售水果，则它也销售糕点；（3）如果美佳销售糕点，则新月也销售糕点。根据以上信息，可以得出以下哪项？",
+      "options": [
+        "A. 美佳不销售糕点。",
+        "B. 新月销售水果。",
+        "C. 海奇销售调味品。",
+        "D. 美佳销售茶叶。",
+        "E. 新月不销售糕点。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①美佳销售水果→海奇销售水果；②海奇销售水果→海奇销售糕点；③美佳销售糕点→新月销售糕点；④三家店中两家销售茶叶，两家销售水果，两家销售糕点，两家销售调味品；每家都销售上述 4 类商品中的 2~3 种。第一步：本题属于“分组+对应”题型，因此优先考虑分组情况；由条件④可推知，上述分组情况为“3，3，2”。第二步：根据条件①，结合数字“1”的思想，如果海奇不销售水果，那么美佳不销售水果，此时只能新月销售水果，与条件④中两家商店销售水果相矛盾，因此海奇一定销售水果。将其代入到条件②中可得，海奇销售糕点。结合条件③可推知，若美佳销售糕点，则新月也销售糕点，此时共有三家商店销售糕点，与条件④中两家商店销售糕点相矛盾，因此美佳不销售糕点，答案选 A。"
+        }
+      ],
+      "knowledge_points": [
+        "分析推理",
+        "分组对应"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          8
+        ],
+        "anchor": "第54题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:bfb06fd2204d7f19a93e56daee2276ae504c78281b6282a9787da7e106609ca3"
+    },
+    {
+      "id": "econ396-2021-55",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 55,
+      "type": "logic",
+      "score": 2,
+      "stem": "美佳、新月、海奇三家商店在美食一条街毗邻而立。已知，三家店中两家销售茶叶，两家销售水果，两家销售糕点，两家销售调味品；每家都销售上述4类商品中的2~3种。另外，还知道：（1）如果美佳销售水果，则海奇也销售水果；（2）如果海奇销售水果，则它也销售糕点；（3）如果美佳销售糕点，则新月也销售糕点。如果美佳不销售调味品，则可以得出以下哪项？",
+      "options": [
+        "A. 海奇不销售水果。",
+        "B. 新月销售水果。",
+        "C. 美佳不销售水果。",
+        "D. 海奇销售茶叶。",
+        "E. 新月销售茶叶。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：①美佳销售水果→海奇销售水果；②海奇销售水果→海奇销售糕点；③美佳销售糕点→新月销售糕点；④三家店中两家销售茶叶，两家销售水果，两家销售糕点，两家销售调味品；每家都销售上述 4 类商品中的 2~3 种；⑤美佳不销售调味品。第一步：由上题可知，海奇销售水果和糕点，美佳不销售糕点，又由⑤可知美佳不销售调味品，结合条件④中两家销售糕点和调味品，因此新月和海奇销售糕点和调味品。由于每家商店最多销售 3 中商品，因此海奇不销售茶叶。第二步：根据条件④可知，两家销售茶叶，因为海奇不销售茶叶，所以美佳和新月销售茶叶，答案选 E。"
+        }
+      ],
+      "knowledge_points": [
+        "分析推理",
+        "分组对应"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          8
+        ],
+        "anchor": "第55题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:baa4e94bf1333140f5edab971edf63ec160f51b05e9ff673c3aa74ea2e84a239"
+    },
+    {
+      "id": "econ396-2021-56",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 56,
+      "type": "analysis",
+      "score": 20,
+      "stem": "论证有效性分析：分析下述论证中存在的缺陷和漏洞，选择若干要点，写一篇600字左右的文章，对该论证的有效性进行分析和评论。（论证有效性分析的一般要点是：概念特别是核心概念的界定和使用是否准确并前后一致，有无各种明显的逻辑错误，论证的论据是否成立并支持结论，结论成立的条件是否充分，等等。）\n人们受骗上当的事时有发生，乃至有人认为如今的骗术太高明而无法根治。其实，如今要根治诈骗并不难。\n首先，从道理上讲，正义终将战胜邪恶，这是历史已证明的规律。诈骗是一种邪恶的行为，最终必将被正义的力量彻底消灭。既然如此，诈骗怎么不能根治呢？\n其次，很多诈骗犯虽然骗术高明，但都被绳之以法，这说明在法治社会中，诈骗犯根本无处藏身。这样，谁还敢继续行骗呢？没有人敢继续行骗，诈骗不是被根治了吗？\n最后，还可以通过全社会的防范来防止诈骗的发生。诈骗的目的，无非是想骗取钱财。凡是耍你花钱的事情，你都要慎重考虑。例如，有些投资公司建议你向他们投资，有些机构推荐你参加高收费的培训，有些婚恋对象向你借巨款。诸如此类，其实都不靠谱。所有的人如果都不相信这些话，诈骗就无法得逞。诈骗无法得逞，不就是被根治了吗？如果建立更加有效的防范机制，根治诈骗就更容易了。\n总之，无论从道理上讲，还是从行骗者或被骗者的角度来看，如今要根治诈骗根本不是难事。",
+      "options": [],
+      "answer": "",
+      "source_blocks": [
+        {
+          "role": "answer",
+          "origin": "source",
+          "text": "【精点解析】（一）论证结构分析：①诈骗是一种邪恶的行为→必将被正义的力量彻底消灭→诈骗能根治；②很多诈骗犯骗术高明，但都被绳之以法→在法制社会中，诈骗犯根本无处藏身→没有人敢继续行骗→诈骗被根治了；③凡是耍你花钱的事情→你都要慎重考虑；④有些投资公司建议你向他们投资等事例→诸如此类都不靠谱；⑤诈骗无法得逞→被根治了；⑥建立更加有效的防范机制→根治诈骗就更容易了。\n（二）论证缺陷分析\n论证关系（1）诈骗是一种邪恶的行为→必将被正义的力量彻底消灭→诈骗能根治。定位分析点：根据结构标志词“必将、既然如此”可以确定此处是连续论证 A→B→C，可考虑使用“滑坡谬误”思路来分析。切入思路：依次分析每一个论证关系的有效性。分析：诈骗是一种邪恶行为，虽然能被正义的力量战胜，但是未必会彻底消灭。“道高一尺，魔高一丈”，诈骗的手段层出不穷，周而复始地再生、升级，难以被彻底消灭，何来根治一说？比如随着网络科技的发展，传统的诈骗几乎销声匿迹，但新型的网络诈骗越来越多，手段越来越高明，难以被彻底消灭，更不可能根治。\n论证关系（2）很多诈骗犯骗术高明，但都被绳之以法→在法制社会中，诈骗犯根本无处藏身→没有人敢继续行骗→诈骗被根治了。定位分析点：根据结构标志词“说明、这样、根治”可以发现该论证过程存在连续的不合理的推理关系，误把“可能性”当成“必然性”。可考虑使用“滑坡谬误”思路来分析。切入思路：依次分析每一个论证关系的有效性。分析：很多骗术高明的诈骗犯都被绳之以法，但不排除有漏网之鱼。即使是在法制社会中，也不是人人都有法制意识，如果有漏网之鱼存在，没有法制意识的人很可能被骗，那么诈骗依然存在，而非无处藏身。此外，若犯罪成本低，惩罚力度弱，起不到警醒作用，那么依然有人敢继续诈骗。所以，诈骗被根治了就无从谈起。\n论证关系（3）凡是耍你花钱的事情→你都要慎重考虑。定位分析点：根据结构标志词“凡是……都……”可以确定论证关系。切入思路：可采用“让步攻击”的思路，即前提逻辑推理可能得到相反结果，即 X∧非Y。分析：即使诈骗是为了骗取钱财，但是耍你花钱的事情，如果涉及的金额数目非常少，也就不需要慎重考虑了。\n论证关系（4）有些投资公司建议你向他们投资等事例→诸如此类都不靠谱。定位分析点：由“其实都”确定论证关系，在论证关系中可发现由“个例”推理“整体”，可从“以偏概全”分析思路入手。切入思路：以偏概全，分析个体的特殊性以及与整体的差异。分析：论证的依据仅仅是个例。有的正规公司处在发展期，合法、合理地筹资，投资者后期获得合法的收益，这是靠谱的；有的正规机构推荐高收费的培训，但是“物有所值”，确实达到了很好的培训效果，这是靠谱的；有的婚恋对象借巨款，正规地写好借条，用来应急，日后按时还款，这并非不靠谱。\n论证关系（5）诈骗无法得逞→被根治了。定位分析点：根据结构标志词“就是”可以确定此处可用“条件关系”分析思路。切入思路：利用矛盾关系 P∧非Q 质疑论证关系。分析：诈骗无法得逞，说明诈骗未遂，但不代表没有进行诈骗。更何况，诈骗者无法得逞后，可能会选择改进他的诈骗方式，升级他的诈骗工具，或者换一批诈骗对象再进行尝试，所以诈骗未必被根治了。\n论证关系（6）建立更加有效的防范机制→根治诈骗就更容易了。定位分析点：根据结构标志词“如果……就……”可以确定此处可用“条件关系”分析思路。切入思路：利用矛盾关系 P∧非Q 质疑论证关系。分析：建立有效的防范机制，诈骗的行为可能会减少，但未必会根治。这种防范机制可能会促使诈骗的手段升级，让诈骗更难被发现、被追溯，惩治诈骗更不易。比如，随着全民网络诈骗防范机制的提高，诈骗犯的手段越来越高明，甚至运用先进的科技成果，拉拢高科技人才参与其中，想要根治并不容易。\n（三）参考范文\n根治诈骗并不难吗\n“根治诈骗并不难？”，论证者针对此论题展开了一系列论证，其论证过程存在以下缺陷：\n诈骗是一种邪恶行为，虽然能被正义的力量战胜，但是未必会彻底消灭。“道高一尺，魔高一丈”，诈骗的手段层出不穷，周而复始地再生、升级，难以被彻底消灭，何来根治一说？比如随着网络科技的发展，传统的诈骗几乎销声匿迹，但新型的网络诈骗越来越多，手段越来越高明，难以被彻底消灭，更不可能根治。\n很多骗术高明的诈骗犯都被绳之以法，但不排除有漏网之鱼。即使是在法制社会中，也不是人人都有法制意识，如果有漏网之鱼存在，没有法制意识的人很可能被骗，那么诈骗依然存在，而非无处藏身。此外，若犯罪成本低，惩罚力度弱，起不到警醒作用，那么依然有人敢继续诈骗。所以，诈骗被根治了就从无从谈起。\n单靠个例不足以说明同类的事情都是不靠谱的。有的正规公司处在发展期，合法、合理地筹资，投资者后期获得合法的收益，这是靠谱的；有的正规机构推荐高收费的培训，但是“物有所值”，确实达到了很好的培训效果，这是靠谱的；有的婚恋对象借巨款，正规地写好借条，用来应急，日后按时还款，这并非不靠谱。\n建立有效的防范机制，诈骗的行为可能会减少，但未必会根治。这种防范机制可能会促使诈骗的手段升级，让诈骗更难被发现、被追溯，惩治诈骗更不易。比如，随着全民网络诈骗防范机制的提高，诈骗犯的手段越来越高明，甚至运用先进的科技成果，拉拢高科技人才参与其中，想要根治并不容易。\n总之，要想得出“根治诈骗并不难”的结论，论证者还需完善论证。"
+        }
+      ],
+      "knowledge_points": [
+        "论证有效性分析"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "writing",
+        "label": "写作"
+      },
+      "tags": [
+        "econ396",
+        "写作"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          8
+        ],
+        "anchor": "第56题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:ae3cf6f25044b52e6ca92a4471018ae1ff6698c2a6ce320b0d6d24c848032daa"
+    },
+    {
+      "id": "econ396-2021-57",
+      "subject": "econ396",
+      "year": 2021,
+      "num": 57,
+      "type": "essay",
+      "score": 20,
+      "stem": "论说文：根据下述材料，写一篇700字左右的论说文，题目自拟。\n巴西热带雨林中的食蚁兽在捕食时，使用灵活的带黏液的长舌伸进蚁穴捕获白蚁，但不管捕获多少，每次捕食都不超过3分钟，然后就去寻找下一个目标，从来不摧毁整个蚁穴。而那些未被食蚁兽捕获的工蚁就会马上修复蚁穴，蚁后也会开始新一轮繁殖，很快产下更多的幼蚁，从而使蚁群继续生存下去。",
+      "options": [],
+      "answer": "",
+      "source_blocks": [
+        {
+          "role": "answer",
+          "origin": "source",
+          "text": "【审题立意】1. 考点：故事型材料。该类材料型审题的思路：①找出故事结果→②找出导致结果的原因或方法→③从原因或方法中找出关键词（围绕关键词拟题）。具体内容如下：①故事结果——蚁群继续生存下去。②故事原因——不管捕获多少，每次捕食都不超过 3 分钟，然后就去寻找下一个目标，从来不摧毁整个蚁穴。从原因中可以看出，这是一种“可持续发展”的理念。③考生可以从人类在社会的发展过程中要“走可持续发展”之路这一角度进行立意。2. 易错点：①如果从白蚁的角度切入，立意要懂团结、要持之以恒，要直面挫折，等等，都是不妥的。因为材料的主角明显是食蚁兽，白蚁在文中，只不过是作为食蚁兽的配合来体现食蚁兽适度捕猎的好处。例如，后续工蚁和蚁后的行为，都是蚁群得以继续生存的表现。②如果所写内容为企业要注意风险，这个就有点偏了。此题中确实有风险这一方面，就是竭泽而渔和不持续性发展有很大风险，但是只能作为具体的分析内容，不可以作为主题。也就是说，风险是材料所提内容的结果，并不是材料本身要表达的内容。再者，企业作为论证主体不够准确，可持续发展更应该上升到社会发展层面。\n【主题定位】1. 本例文主题：走可持续之路，奏新时代之歌。2. 本文母题分类：【母题六】个人与社会。因为材料中明确提到食蚁兽不管捕获多少，每次捕食都不超过 3 分钟，然后就去寻找下一个目标，由此可以延申为人类在社会在发展过程中也要“走可持续发展之路”，属于个人与社会类。3. 本文结构分类：题目只涉及一个要素，故为“单要素”结构。\n【论证与结构】段落 1 破：谁+做了什么+有什么结果，点题；段落 2、3、4 立-理证、立-例证：重要性——可持续发展能提高资源利用效率、可持续发展有利于维护生态环境，用食蚁兽捕食的例子证明可持续发展的重要性；段落 5 实施难点：①经济人思想；②政府的监管措施不到位；段落 6 怎么办：①政府应该倡导可持续发展；②政府应该加强监督体系；段落 7 结：概括与总结总论点。\n【分析与论证】第二段：可持续发展理念（X）→提高资源利用效率（Y）。企业管理者树立可持续发展理念（X）→在追求经济效益时，不是一味地利用短缺资源→以丰裕的资源替代短缺资源→提高资源利用率→达到资源永续利用（Y）。第三段：可持续发展（X）→维护生态环境（Y）。可持续发展理念（X）→在实现自己的经济发展目标时，就不会肆意破坏环境→不会使环境向不稳定和无序的方向发展→维护了生态环境（Y）。第四段：食蚁兽的可持续做法（X）→在一定程度上保护了生态环境（Y）。食蚁兽在捕食时→每次捕食都不超过 3 分钟→寻找下一个目标→不摧毁整个蚁穴→工蚁会修复蚁穴、蚁后开始新一轮繁殖→使蚁群继续生存下去→为自己以后的捕食奠定了基础→保护了生态环境（Y）。第五段：无法做到走可持续发展之路（X）的原因：①经济人思想（Y1）。经济人思想（Y1）→以追求物质利益为目的→希望以尽可能少的付出，获得最大限度的收获→并为此不择手段→忽视可持续发展；②政府的监管措施不到位（Y2）。政府的监管措施不到位（Y2）→使得部分企业管理者钻制度的漏洞→不承担社会责任→将可持续发展理念抛诸脑后。第六段：针对 X 采取的方法措施：①政府应该倡导可持续发展（Y1）。政府应该倡导可持续发展→让国民有可持续发展的意识、明白可持续发展的重要性→内化于心，外化于行→有助于实现可持续发展（X）；②政府应该加强监督体系（Y2）。政府应该加强监督体系→让企业管理者在企业运营中能够做到可持续发展→合理使用资源→有利于实现可持续发展（X）。\n【参考范文】\n走可持续之路，奏新时代之歌\n食蚁兽为了生存，从不摧毁整个蚁穴，人类亦应如此，唯有走可持续之路，才能奏响新时代之歌。\n可持续发展能提高资源利用效率。拥有可持续发展理念的企业管理者，在追求经济效益时，不是一味地利用短缺资源，而是不断地以丰裕的资源替代短缺资源这种方式实现经济增长，而这种替代最终使得资源的利用率有所提高，达到资源的永续利用。因此，可持续的发展观将提高资源利用率，为社会谋福利。\n可持续发展也有利于维护生态环境。人们具有了可持续发展理念，在实现自己的发展目标时，就不会肆意破坏环境，或者使环境向不稳定和无序的方向发展，生态环境就可以得到一定程度的保护。\n正如食蚁兽在捕食时，不管捕获多少，每次捕食都不超过3分钟，然后就去寻找下一个目标，从来不摧毁整个蚁穴，而那些未被食蚁兽捕获的工蚁就会马上修复蚁穴，蚁后也会开始新一轮繁殖，很快产下更多的幼蚁，从而使蚁群继续生存下去，为自己以后的捕食奠定了基础，也在一定程度上保护了生态环境。\n然而，走“可持续发展”之路并非易事，究其根源，一方面，对于人类来说，大多数人作为经济人，是以追求物质利益为目的而进行经济活动的主体，都希望以尽可能少的付出，获得最大限度的收获，并为此不择手段，忽视可持续发展；另一方面，对于政府来说，监管措施不到位，使得部分企业管理者钻制度的漏洞，只想提高资源利用率，将可持续发展理念抛诸脑后。\n那么，又该如何做到“可持续发展”呢？其一，政府应该倡导可持续发展，让国民有可持续发展的意识，明白可持续发展的重要性，内化于心，外化于行。其二，政府应该加强监督体系，让企业管理者在企业运营中能够做到可持续发展，合理使用资源，这样有利于实现今后的可持续发展。\n由此可见，人类唯有走可持续发展之路，才能更好地维护生态环境，提高资源利用率。"
+        }
+      ],
+      "knowledge_points": [
+        "论说文",
+        "可持续发展"
+      ],
+      "difficulty": null,
+      "category": {
+        "key": "writing",
+        "label": "写作"
+      },
+      "tags": [
+        "econ396",
+        "写作"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+      "source_ref": {
+        "pdf": "2021年396经济联考综合能力真题.pdf（8 页）+ 2021年396经济联考真题解析.pdf（20 页）",
+        "sha256": "458539de4875693607601382aa4fa304675a12d28707bb31c6c9708384880c45",
+        "pages": [
+          8
+        ],
+        "anchor": "第57题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:358c8b3ef2e26960558a62462d6e868b6d5df62666680b16dd05b1dd8ab7ee21"
+    }
+  ]
+}
