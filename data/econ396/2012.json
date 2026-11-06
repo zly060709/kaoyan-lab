@@ -1,0 +1,1978 @@
+{
+  "subject": "econ396",
+  "year": 2012,
+  "paper": "2012年全国硕士研究生招生考试经济类专业学位联考综合能力试题",
+  "schema_version": "1.0.0",
+  "question_count": 41,
+  "source_note": "视觉转录（2026-11-06）：①题干/选项逐题转录自《2012年396经济联考综合能力真题.pdf》7 页（该 PDF 文本层字体编码损坏，逐页渲染为图后人工读题；卷面清晰，无 illegible）；②答案与解析逐题取自《2012年396经济联考真题解析.pdf》16 页（答案字母与解析正文交叉核对，数学计算题解析按卷面可见步骤整理）；③卷面数值：逻辑推理20题×2分=40分、数学单项选择10题×2.5分=25分、数学计算9题×5分=45分、写作2题×20分=40分，合计41题150分，与卷面标注一致。",
+  "questions": [
+    {
+      "id": "econ396-2012-1",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 1,
+      "type": "logic",
+      "score": 2,
+      "stem": "某高校2011年秋季入学的学生中有些是免费的师范生。所有的免费师范生都是家境贫寒的。凡家境贫寒的学生都参加了勤工助学活动。\n如果以上陈述为真，则以下各项必然为真，除了",
+      "options": [
+        "A.2011年秋季入学的学生中有人家境贫寒。",
+        "B.凡没有参加勤工助学活动的学生都不是免费师范生。",
+        "C.有些参加勤工助学活动的学生是2011年秋季入学的。",
+        "D.有些参加勤工助学活动的学生不是免费师范生。",
+        "E.凡家境富裕的学生都不是免费师范生。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "翻译题干信息如下。①有些2011年秋季入学的学生→免费师范生；②免费师范生→家境贫寒；③家境贫寒→参加勤工助学活动。\n串联上述信息：有些2011年秋季入学的学生→免费师范生→家境贫寒→参加勤工助学活动。\n选项D为，有些参加勤工助学活动的学生→非免费师范生，不一定为真。\n因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          1
+        ],
+        "anchor": "第1题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9ea3a46928b77e09b07d936c54d25315909bd9d7889be65dbdb174bbce97bba8"
+    },
+    {
+      "id": "econ396-2012-2",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 2,
+      "type": "logic",
+      "score": 2,
+      "stem": "捐助希望工程的动机，大都是社会责任，但也有的是个人功利。当然，出于社会责任的行为，并不一定都不考虑个人功利。对希望工程的每一项捐款，都是利国利民的善举。\n如果以上陈述为真，则以下哪项不可能为真？",
+      "options": [
+        "A.有的行为出于社会责任，但不是利国利民的善举。",
+        "B.所有考虑个人功利的行为，都不是利国利民的善举。",
+        "C.有的出于社会责任的行为是善举。",
+        "D.有的行为虽然不是出于社会责任，但却是善举。",
+        "E.对希望工程的有些捐助，既不是出于社会责任，也不是出于个人功利，而是有其他原因，如服从某种摊派。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "翻译题干信息：有的捐助希望工程的行为→出于社会责任；有的捐助希望工程的行为→出于个人功利；有的出于社会责任的行为→考虑个人功利；对希望工程捐款→利国利民的善举。\n串联题干信息可得：有的出于社会责任的行为→捐助希望工程→利国利民的善举；有的考虑个人功利的行为→捐助希望工程→利国利民的善举。\n可见，有的考虑个人功利的行为是捐助希望工程，而但凡捐助希望工程就是利国利民的善举，故这种考虑个人功利的行为是利国利民的善举，选项B为假。\n因此正确答案为B。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          1
+        ],
+        "anchor": "第2题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:aa8cfd47d4fe2491377dba64f48a85b481dd4219d30567934ce27b73814d946e"
+    },
+    {
+      "id": "econ396-2012-3",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 3,
+      "type": "logic",
+      "score": 2,
+      "stem": "并非所有出于良好愿望的行为必然会导致良好的结果。\n如果以上断定为真，则以下哪项断定必真？",
+      "options": [
+        "A.所有出于良好愿望的行为必然不会导致良好的结果。",
+        "B.所有出于良好愿望的行为可能不会导致良好的结果。",
+        "C.有的出于良好愿望的行为不会导致良好的结果。",
+        "D.有的出于良好愿望的行为可能不会导致良好的结果。",
+        "E.有的出于良好愿望的行为一定不会导致良好的结果。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干命题可转化为等价命题：有的出于良好愿望的行为可能不会导致良好的结果。\n选项D符合，一定为真。\n因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          1
+        ],
+        "anchor": "第3题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:39ba5fed240e990eaa247d08b4c7011bad7068b8f466c74e97b49f796eadc730"
+    },
+    {
+      "id": "econ396-2012-4",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 4,
+      "type": "logic",
+      "score": 2,
+      "stem": "尽管世界市场上部分可以获得的象牙来自非法捕杀的野象，但是有些象牙的来源是合法的，比如大象的自然死亡。所以当那些在批发市场上购买象牙的人只买合法象牙的时候，世界上所剩很少的野象群就不会受到危害了。\n上面的论述所依赖的假设是：",
+      "options": [
+        "A.目前世界上，合法象牙的批发源较之非法象牙少。",
+        "B.目前世界上，合法象牙的批发源较之非法象牙多。",
+        "C.试图只买合法象牙的批发商确实能够区分合法象牙和非法象牙。",
+        "D.通常象牙产品批发商没有意识到象牙供应减少的原因。",
+        "E.今后对合法象牙制品的需要将持续增加。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干观点为，在批发市场购买象牙的人只买合法象牙（即不购买非法象牙），野象群就可以受到保护。该论述前提是该方法可行，即试图在批发市场只购买合法象牙的人可以准确区分合法象牙和非法象牙，即选项C为必要假设。\n因此正确答案为C。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          1
+        ],
+        "anchor": "第4题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:f371d107e6be39b2c530a347c191d5ea62bc1dcf9ce9327a969ace2d74d3852c"
+    },
+    {
+      "id": "econ396-2012-5",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 5,
+      "type": "logic",
+      "score": 2,
+      "stem": "5～6题基于以下题干：\n运动会将准时开始，除非天下雨。\n以下断定中与上述断定含义相同的是：\nⅠ.如果天下雨，则运动会不会准时开始。\nⅡ.如果运动会准时开始，则天没下雨。\nⅢ.如果天不下雨，则运动会将准时开始。",
+      "options": [
+        "A.只有Ⅰ。",
+        "B.Ⅱ和Ⅲ。",
+        "C.Ⅰ和Ⅲ。",
+        "D.只有Ⅲ。",
+        "E.Ⅰ、Ⅱ和Ⅲ。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "翻译题干信息：天不下雨→运动会将准时开始。\n命题Ⅰ：天下雨→运动会不会准时开始。\n命题Ⅱ：运动会准时开始→天没下雨。\n命题Ⅲ：天不下雨→运动会将准时开始。\n仅命题Ⅲ的推理结构与题干推理一致。\n因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          2
+        ],
+        "anchor": "第5题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:ea6ecb2cfcc23ca6a82555b71b0e8ad69e8c2be7915ad19d9eddcbe24074cdf3"
+    },
+    {
+      "id": "econ396-2012-6",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 6,
+      "type": "logic",
+      "score": 2,
+      "stem": "在以下所列情况中，表明题干断定为假的是：\nⅠ.没下雨，并且运动会准时开始。\nⅡ.没下雨，并且运动会没有准时开始。\nⅢ.下雨，并且运动会准时开始。",
+      "options": [
+        "A.只有Ⅰ。",
+        "B.只有Ⅱ。",
+        "C.只有Ⅲ。",
+        "D.Ⅱ和Ⅲ。",
+        "E.Ⅰ、Ⅱ和Ⅲ。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：天不下雨→运动会将准时开始。\n其矛盾命题：天不下雨且运动会没有准时开始。\n仅命题Ⅱ与题干矛盾命题一致。\n因此正确答案为B。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          2
+        ],
+        "anchor": "第6题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:f63715e2177aa0dc9688cf7b0b9b97b785d7e440b9ae0dc495bb1fb2fa9381f8"
+    },
+    {
+      "id": "econ396-2012-7",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 7,
+      "type": "logic",
+      "score": 2,
+      "stem": "北方人不都爱吃面食，但南方人都不爱吃面食。\n如果已知上述第一个断定为真，第二个断定为假，则以下哪项据此不能断定真假？\nⅠ.有的北方人爱吃面食，有的南方人不爱吃面食。\nⅡ.北方人都爱吃面食，有的南方人也爱吃面食。\nⅢ.北方人都不爱吃面食，南方人都爱吃面食。\nⅣ.如果有的北方人不爱吃面食，则有的南方人也不爱吃面食。",
+      "options": [
+        "A.只有Ⅰ。",
+        "B.Ⅰ和Ⅱ。",
+        "C.Ⅱ和Ⅲ。",
+        "D.Ⅲ和Ⅳ。",
+        "E.Ⅰ、Ⅲ和Ⅳ。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "整理题干信息：①北方人不都爱吃面食；②南方人都不爱吃面食。\n已知①为真、②为假，可知：有的北方人不爱吃面食；有的南方人爱吃面食。\n由前者可知，有的北方人不爱吃面食为真，所有的北方人都爱吃面食为假，所有的北方人都不爱吃面食及有的北方人爱吃面食的真假无法判断。\n由后者可知，有的南方人爱吃面食为真，所有的南方人都不爱吃面食为假，所有的南方人都爱吃面食及有的南方人不爱吃面食的真假无法判断。\n可见，Ⅰ、Ⅲ、Ⅳ的真假无法判断。\n因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          2
+        ],
+        "anchor": "第7题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:0aa58e78c558e048de1cc23dd4988c71eaaf7a3bbf81a1816a79e4f90598d825"
+    },
+    {
+      "id": "econ396-2012-8",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 8,
+      "type": "logic",
+      "score": 2,
+      "stem": "有四张卡片（第1张至第4张），一面为阿拉伯数字，一面为英文字母；现在朝上的一面依次为 2、5、a、b。主持人断定：如果一面为奇数，则另一面为元音字母。\n为验证主持人的断定，必须翻动的卡片是？",
+      "options": [
+        "A.第1张和第3张。",
+        "B.第1张和第4张。",
+        "C.第2张和第3张。",
+        "D.第2张和第4张。",
+        "E.全部四张卡片。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "主持人的断定：一面为奇数→另一面为元音字母。\n其矛盾命题：一面为奇数且另一面非元音字母。\n若要验证主持人的断定，即需查看卡片另一面的图案是否与之矛盾，故需验证已知的一面为奇数的卡片（第2张的5）和已知的一面为非元音字母的卡片（第4张的b）。\n因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          2
+        ],
+        "anchor": "第8题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:71cc3e9ba3103ad5a33c939ef86ef322ff5a776da623a0bf8032601d31d11e7e"
+    },
+    {
+      "id": "econ396-2012-9",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 9,
+      "type": "logic",
+      "score": 2,
+      "stem": "在美国，实行死刑的州，其犯罪率要比不实行死刑的州低，因此死刑能够减少犯罪。\n以下哪项如果为真，最可能质疑上述推断？",
+      "options": [
+        "A.较之守法的青少年，犯罪的青少年更多出自单亲家庭。",
+        "B.美国的法律规定了在犯罪地起诉并按其法律裁决，许多罪犯因此经常流窜犯罪。",
+        "C.在最近几年，美国民间呼吁废除死刑的力量在不断减弱，一些政治人物也不再像过去那样在竞选中承诺废除死刑了。",
+        "D.经过长期的跟踪研究发现，监禁在某种程度上成为酝酿进一步犯罪的温室。",
+        "E.调查结果表明：犯罪分子在犯罪时多数都曾经想过自己的行为可能会判死刑或受到监禁的惩罚。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干依据实行死刑的州犯罪率比不实行死刑的州低，得出死刑能减少犯罪的结论。\n选项A对青少年成长环境进行对比，与题干论述无关。\n选项B指出实行死刑的罪犯不在本地犯罪，可以去其他地方犯罪，说明实行死刑不能减少犯罪，只是将犯罪行为转移到了其他的州，削弱了题干论证。\n选项C指出美国社会呼吁废除死刑的声音减弱，与题干论述无关。\n选项D提及的对监禁的研究与题干论述无关。\n选项E指出犯罪分子在犯罪时会想到死刑，说明死刑对犯罪分子起到了一定警示作用，但存在一些人仍然选择犯罪，可能有很多人出于这种警示不再进行犯罪，不能削弱题干论证。\n因此正确答案为B。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          2
+        ],
+        "anchor": "第9题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:4824cea24070d7d8a43076fa43e2dda7512e33dbce126c36d9bbbeeff69029c1"
+    },
+    {
+      "id": "econ396-2012-10",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 10,
+      "type": "logic",
+      "score": 2,
+      "stem": "某个公司拟在总部及全国各地分公司安装一种电脑话务员系统。该系统使消费者通过电脑话务员拨打接线员协助电话，即便如此，在可预见的将来，人工接线员的数量仍不会减少。\n以下各项都有助于解释人工接线员不会减少，除了",
+      "options": [
+        "A.人们对接线员协助电话的需求正在剧增。",
+        "B.新的电子接线员系统尽管已通过检验，但在正式开通之前仍需要极大调整。",
+        "C.若在目前合同期内解雇工人，接线员将很快对有关公司罢工。",
+        "D.新的电子接线员完成接线员协助电话的速度是人工接线员的3倍。",
+        "E.该公司的产品销量逐年递增。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干所述现象为，公司计划增加电脑话务员，但人工接线员的数量不会减少。\n选项D指出新的电子接线员速度是人工接线员的3倍，理论上将会很大程度上取代人工接线员，加深了题干矛盾，无法解释为何人工接线员数量不会减少。\n因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          2,
+          3
+        ],
+        "anchor": "第10题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:2a2e3fac001159fd3e26ba875aec706dc3374d88b5bea3c1ee3361554bb781f1"
+    },
+    {
+      "id": "econ396-2012-11",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 11,
+      "type": "logic",
+      "score": 2,
+      "stem": "学者们已经证明：效率与公平是一对矛盾统一体。实现共同富裕需要经历若干阶段性过程，不可能一蹴而就，但我们又不能不在每一个阶段为实现共同富裕做具体的准备。\n以下哪项，从上述题干中推出最为恰当？",
+      "options": [
+        "A.我们要在重视效率的前提下，兼顾公平。",
+        "B.我们首先要重视公平。",
+        "C.我们要坚持效率优先。",
+        "D.效率与公平之间的矛盾永远不可能得到正确解决。",
+        "E.效率与公平的关系在过去没有得到正确的认识。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由题干信息可知，实现共同富裕需要经历若干阶段性过程，不能一蹴而就，说明在实现共同富裕的过程中应重视效率，但同时又不能不在每一个阶段为实现共同富裕做具体的准备，说明必须同时兼顾公平。\n因此正确答案为A。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          3
+        ],
+        "anchor": "第11题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e905e3789858a0eeff1362c364512bb39c3f045a118897244be29a272896ec70"
+    },
+    {
+      "id": "econ396-2012-12",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 12,
+      "type": "logic",
+      "score": 2,
+      "stem": "用甘蔗提炼乙醇比用玉米需要更多的能量，但奇怪的是，多数酿酒者却偏爱用甘蔗做原料。\n以下哪项如果为真，最能解释上述矛盾现象？",
+      "options": [
+        "A.任何提炼乙醇的原料的价格都随季节波动，而提炼的费用则相对稳定。",
+        "B.燃烧甘蔗废料可提供向乙醇转化所需要的能量，而用玉米提炼乙醇则完全需要额外提供能源。",
+        "C.玉米质量对乙醇产出品的影响较甘蔗小。",
+        "D.用甘蔗制糖或其他食品的生产时间比提炼乙醇的时间长。",
+        "E.用甘蔗制糖或其他食品的生产时间与提炼乙醇的时间大体相当。"
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干的矛盾之处在于，用甘蔗提炼乙醇比用玉米需要更多的能量，但是多数酿酒者却偏爱用甘蔗做原料。\n若要解释题干的矛盾现象，需说明对酿酒者而言，用甘蔗提炼乙醇比用玉米有更大的优势，或者用玉米提炼乙醇有很难克服的弊端。\n选项A不涉及甘蔗和玉米的比较，不能解释题干现象。\n选项B指出燃烧甘蔗废料可以提供乙醇转化所需的能量，这是用玉米提炼所不及的优势，可以解释为何酿酒者偏爱用甘蔗做原料。\n选项C指出用玉米提炼乙醇的优势，加深了题干矛盾。\n选项D、E谈及用甘蔗制糖或其他食品与提炼乙醇的生产时间的比较，与题干论证无关。\n因此正确答案为B。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          3
+        ],
+        "anchor": "第12题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:5c5046837b64c68671d9897834547c647678fec89f424be9368dcf64735fcb46"
+    },
+    {
+      "id": "econ396-2012-13",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 13,
+      "type": "logic",
+      "score": 2,
+      "stem": "几乎所有的极地冰都是由降雪形成的。极冷的空气无法维持太多湿气，结果就无法产生许多雪。近年来，两极的气团都毫无例外地变得极冷。\n以上所述支持下面哪一个结论？",
+      "options": [
+        "A.如果极地冰正处于增厚与膨胀中，那么这种速度也是极慢的。",
+        "B.如果极地地区的气温相当高，那么许多极地冰就会融化。",
+        "C.在过去几年里，极地地区降雪不断。",
+        "D.极地冰越厚，与之接触的气团越冷。",
+        "E.由于气候变暖，极地冰不再增厚了。"
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干论据为，近年两极的气团变得极冷，极冷的空气无法维持太多湿气，结果就无法产生许多雪，而几乎所有的极地冰都是由降雪形成的。由此得出结论，近年无法形成许多极地冰。\n选项A指出，极地冰若处于增厚与膨胀中，其速度是极慢的，可以合理得出该推论。\n因此正确答案为A。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          3,
+          4
+        ],
+        "anchor": "第13题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:d72bb15d9a7c12d45001849affd86509ac18e0a1846af8399b4ccafee849d3de"
+    },
+    {
+      "id": "econ396-2012-14",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 14,
+      "type": "logic",
+      "score": 2,
+      "stem": "公司规定，将全体职工按工资数额从大到小排序。排在最后5%的人提高工资，排在最前5%的人降低工资。小王的工资数额高于全体职工的平均工资，小李的工资数额低于全体职工的平均工资。\n如果严格执行公司规定，以下哪种情况是不可能的？\nⅠ.小王和小李都提高了工资。\nⅡ.小王和小李都降低了工资。\nⅢ.小王提高了工资，小李降低了工资。\nⅣ.小王降低了工资，小李提高了工资。",
+      "options": [
+        "A.Ⅰ、Ⅱ、Ⅲ和Ⅳ。",
+        "B.Ⅰ、Ⅱ和Ⅲ。",
+        "C.Ⅰ、Ⅱ和Ⅳ。",
+        "D.只有Ⅲ。",
+        "E.只有Ⅳ。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：排在最后5%的人提高工资，排在最前5%的人降低工资。小王的工资高于平均工资，小李的工资低于平均工资。\n平均工资的数额受极值影响大，所以拿到平均工资不一定处于50%的位置。若95%以上的人工资仅略高于平均工资，而低于5%的人工资远低于平均工资，则工资高于平均水平依然可能排在最后5%。\n故小王和小李的工资水平排位无法确定，两人都可能排到前5%或后5%，也可能都不在，所以无法判断小李和小王的工资是否会提高或降低。\nⅠ：若小王和小李的工资数额都在后5%，则两人都提高了工资，Ⅰ可能为真。\nⅡ：若小王和小李的工资数额都在前5%，则两人都降低了工资，Ⅱ可能为真。\nⅢ：已知小王的工资高于平均工资，而小李的工资低于平均工资，故小王的工资一定比小李高。所以不可能存在小王的工资水平排在后5%、小李的排在前5%的情况，因此不可能小王的工资提高而小李的工资降低，Ⅲ一定为假。\nⅣ：小王的工资一定高于小李，若小王的工资在前5%，小李的工资在后5%，则小王降低了工资，小李提高了工资，Ⅳ可能为真。\n因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          3
+        ],
+        "anchor": "第14题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:1754a6b3911c3ffa9b67468102deee18ade5835bfbcdbda20e9bd42e7a5af01a"
+    },
+    {
+      "id": "econ396-2012-15",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 15,
+      "type": "logic",
+      "score": 2,
+      "stem": "麦角碱是一种可以在谷物种子的表层大量滋生的菌类，特别多见于黑麦。它含有一种危害人体的有毒化学物质。黑麦是中世纪引进欧洲的，由于黑麦可以在小麦难以生长的贫瘠和潮湿的土地上有较好的收成，因此，就成了那个时代贫穷农民的主要食物来源。\n上述信息最能支持以下哪项断定？",
+      "options": [
+        "A.在中世纪以前，麦角碱从未在欧洲出现。",
+        "B.在中世纪以前，欧洲贫瘠而潮湿的土地基本没有得到耕作。",
+        "C.在中世纪的欧洲，如果不食用黑麦，就可以免受麦角碱所含有毒物质的危害。",
+        "D.在中世纪的欧洲，富裕农民比贫穷农民较多地意识到麦角碱所含有毒物质的危害。",
+        "E.在中世纪的欧洲，富裕农民比贫穷农民较少受到麦角碱所含有毒物质的危害。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干信息：麦角碱含有一种危害人体的有毒化学物质，多见于黑麦，而黑麦是中世纪引进欧洲后贫穷农民的主要食物来源。\n由此可以得出，相比于可能不以黑麦作为主要食物来源的富裕农民，贫穷农民更容易受到麦角碱所含的有毒物质的危害，即选项E。\n选项A过于绝对，黑麦初次引入不代表麦角碱初次出现。\n选项B过度引申，黑麦有较好收成不代表之前没有种植其他的农作物。\n选项C过于绝对，麦角碱不一定仅存在于黑麦上。\n选项D中贫富农民的意识在题干中未涉及。\n因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          4
+        ],
+        "anchor": "第15题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:4ff29e5db87bc4dafeb90512742a49d9c64f2d80fca99e1081aced6ed6ef37b4"
+    },
+    {
+      "id": "econ396-2012-16",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 16,
+      "type": "logic",
+      "score": 2,
+      "stem": "甲校学生的数学考试成绩比乙校学生的数学考试成绩好，因此，甲校的数学教学方法比乙校好。\n除以下哪项外，其余各项若为真都会削弱上述结论？",
+      "options": [
+        "A.甲校的数学考试题总比乙校学生的容易。",
+        "B.甲校学生的数学基础比乙校学生好。",
+        "C.乙校选用的数学教材比甲校难。",
+        "D.乙校的数学老师比甲校的数学老师工作更勤奋。",
+        "E.乙校学生数学课的课时比甲校少。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干由甲校学生的数学考试成绩比乙校学生的好，得出了甲校的数学教学方法比乙校好的结论。若要削弱题干结论，只需指出甲校有除教学方法之外的原因导致学生数学考试成绩好。\n选项A、C指出甲校的教材和题目更简单；选项B指出甲校学生的基础更好；选项E指出甲校的数学课课时更多，均可削弱题干论证。\n选项D指出乙校的数学老师更勤奋，但乙校的学生成绩不如甲校的学生，由此可说明甲校的数学教学方法可能确实比乙校好，支持题干论证，当选。\n因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          4
+        ],
+        "anchor": "第16题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:e529ee0365f17d7eb33803b3d2312a105eddf9427796f8fe7439d172641b3668"
+    },
+    {
+      "id": "econ396-2012-17",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 17,
+      "type": "logic",
+      "score": 2,
+      "stem": "某市警察局的统计数字显示，汽车防盗装置降低了汽车被盗的危险性。但是汽车保险业却不以为然，他们声称，装了汽车防盗装置的汽车反而比那些没有装此类装置的汽车更有可能被偷。\n以下哪项如果正确，最能解释这个明显的矛盾？",
+      "options": [
+        "A.被盗汽车的失主总是在案发后向警察局报告失窃事件，却延缓向保险公司发出通知。",
+        "B.大多数被盗汽车都没有安装防盗装置，大多数安装防盗装置的汽车都没被偷。",
+        "C.最常见的汽车防盗装置是发声报警器，这些报警器对每一起试图偷车的事件通常都会发出过多的警报。",
+        "D.那些最有可能给他们的汽车安装防盗系统的人，都是汽车特别容易被盗的人，而且都居住在汽车被盗事件高发地区。",
+        "E.大多数汽车被盗事件都是职业窃贼所为，对他们的手段和能力来说，汽车防盗装置所提供的保护是不够的。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干所述现象的矛盾之处在于，某市警察局的统计数字显示汽车防盗装置降低了汽车被盗的危险性，但汽车保险业认为装了汽车防盗装置的汽车更有可能被偷。\n选项A指出是被盗汽车的车主“延缓”向保险公司通知，并非不通知，因此不能解释矛盾现象。\n选项B削弱了汽车保险业的声称，无法解释题干。\n选项C与题干论述无关。\n选项D指出安装汽车防盗装置的人都是汽车特别容易被盗的人，且多居住在汽车被盗事件高发地区，说明案发汽车本身就更容易被盗，汽车保险行业由此得出安装了防盗装置的汽车更容易被盗是片面的，警察局的数据是全市的整体情况，因此可以解释题干现象。\n选项E与题干论述无关。\n因此正确答案为D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          4
+        ],
+        "anchor": "第17题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:7add0645877b67cb10cd08620492e74703be8b9642028303834d64eb664abbe0"
+    },
+    {
+      "id": "econ396-2012-18",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 18,
+      "type": "logic",
+      "score": 2,
+      "stem": "如果这项改革措施不受干部们欢迎，我们就应该进行修改。如果它不受工人们欢迎，我们就应该采用一项新的改革措施。并且这项措施必定是，要么不受干部们的欢迎，要么不受工人们的欢迎。\n如果以上陈述为真，以下哪项也一定正确？",
+      "options": [
+        "A.我们应当修改这项改革措施，当且仅当这样做不会降低该措施在工人中的声望时。",
+        "B.我们应该在干部或工人中努力推广这项改革措施。",
+        "C.如果修改这项改革措施不会影响它在干部中受欢迎的程度，我们就应该立即进行修改。",
+        "D.如果这项改革措施受到了工人们的欢迎，我们就应该采取一项新的改革措施。",
+        "E.如果这项改革措施受到了干部们的欢迎，我们就应该采取一项新的改革措施。"
+      ],
+      "answer": "E",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干推理结构如下：\n这项改革措施不受干部们欢迎→应该进行修改；\n这项改革措施不受工人们欢迎→应该采用一项新的改革措施；\n这项改革措施（不受干部们欢迎∨不受工人们欢迎）。\n由此可以推出：\n这项改革措施受干部们欢迎→不受工人们欢迎→应该采用一项新的改革措施。\n因此正确答案为E。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          4
+        ],
+        "anchor": "第18题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:2bcdb9ed375d01bd240434eb633a27235be0485aabcf37d71e457c0365fdcf3c"
+    },
+    {
+      "id": "econ396-2012-19",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 19,
+      "type": "logic",
+      "score": 2,
+      "stem": "根据最近一次调查，婚姻使人变胖。作为证据的是一项调查结果：在13年的婚姻生活中，女性平均胖了23斤，男性胖了18斤。\n下列哪一个问题的回答可能对评价上面的调查中所展示的推理最有帮助？",
+      "options": [
+        "A.为什么调查研究时间是13年，而不是12年或14年？",
+        "B.在结婚的时间里，有一些男性的体重增加少于18斤吗？",
+        "C.在调查中有可比较相同年龄的单身人群在13年中的体重增加或减少了多少的数据吗？",
+        "D.调查中的女性和调查中的男性在调查中一样积极吗？",
+        "E.报道中的体重获得将维持一生吗？"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干由13年的婚姻生活中男性和女性体重均有一定上涨得出结论：婚姻使人变胖。\n若要评价此结论是否成立，需采用求异法，即对比在同年龄变化过程中，未婚者体重是否会有同样的变化。\n选项C指出应比较相同年龄的单身人群在13年中的体重增加或减少了多少的数据。若未婚人群的体重增长与已婚人群相近，则可说明婚姻并非会使人变胖；若未婚人群体重增长量远低于已婚人群的增长量，则可说明婚姻使人变胖。\n因此正确答案为C。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          4,
+          5
+        ],
+        "anchor": "第19题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:04919299d772bd964eb8131ff9670fdfd3cc5153368d2c2df6a643a3b97fac3a"
+    },
+    {
+      "id": "econ396-2012-20",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 20,
+      "type": "logic",
+      "score": 2,
+      "stem": "有一种生产毒素的微生物会使海水变成红色，这种现象被称为赤潮。当海獭的主要食物来源蛤蜊被赤潮毒素污染时，海獭就不会在那些区域觅食。对于海獭的这种行为，一种解释认为，海獭在某个地方正式觅食之前会先尝几个蛤蜊，并且能够觉察出其中的任何毒素。\n以下哪项为真，将最有力地表明上述解释是不正确的？",
+      "options": [
+        "A.在赤潮出现的某些海域，既没有蛤蜊也没有海獭。",
+        "B.少量的赤潮毒素不会产生危害，但是大量的这种毒素会使海獭死亡。",
+        "C.当没有受到赤潮影响的一片海水被人为地染成棕红色时，海獭也不吃那些地方的蛤蜊。",
+        "D.海獭在某个海域出现是一种显著的标志，表明那里可以找到其他海洋生物。",
+        "E.海獭的味觉系统具有比起视觉系统高得多的辨别能力。"
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "题干现象为，当赤潮出现、蛤蜊被赤潮毒素污染时，海獭就不会在这些区域觅食。对这种现象的一种解释为，海獭会在觅食前先尝几个蛤蜊并觉察出毒素。\n选项C指出在没有出现赤潮的水域被人为染红时，海獭也不再在此觅食，说明海獭是因为海水变色而不在此觅食，并非因为觉察了毒素，即无因亦有果，构成对题干论证的削弱。\n因此正确答案为C。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "logic",
+        "label": "逻辑推理"
+      },
+      "tags": [
+        "econ396",
+        "逻辑推理"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第20题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:244fb9d51ffeb2d845250e6d40d256b94cff172fc2e7728a1bad5faa0b27c20b"
+    },
+    {
+      "id": "econ396-2012-21",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 21,
+      "type": "single",
+      "score": 2.5,
+      "stem": "函数 $f(x)=\\ln x-\\ln(1-x)$ 的定义域是（　）",
+      "options": [
+        "A.$(-1,+\\infty)$.",
+        "B.$(0,+\\infty)$.",
+        "C.$(1,+\\infty)$.",
+        "D.$(0,1)$."
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查函数的定义域。$\\ln x$ 的自然定义域为 $x>0$，$\\ln(1-x)$ 的自然定义域为 $1-x>0$，即 $x<1$。因此，函数 $f(x)=\\ln x-\\ln(1-x)$ 的定义域是这两个函数的定义域的交集：$0<x<1$。应选 D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "函数"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第21题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:569e1b5e1ba1e8bde96b6b5127fc0cb9c195da9cc8d66900dc515ff45f3bd9e0"
+    },
+    {
+      "id": "econ396-2012-22",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 22,
+      "type": "single",
+      "score": 2.5,
+      "stem": "极限 $\\lim\\limits_{x\\to0}\\left(x\\sin\\dfrac{1}{x}+\\dfrac{1}{x}\\sin x\\right)=$（　）",
+      "options": [
+        "A.1.",
+        "B.0.",
+        "C.-1.",
+        "D.不存在."
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查极限计算。$x\\to0$ 时，$x$ 是无穷小量，$\\sin\\dfrac{1}{x}$ 是有界变量，由于无穷小量与有界变量的乘积为无穷小量，故 $\\lim\\limits_{x\\to0}x\\sin\\dfrac{1}{x}=0$。另一方面，$\\lim\\limits_{x\\to0}\\dfrac{1}{x}\\sin x=\\lim\\limits_{x\\to0}\\dfrac{\\sin x}{x}=1$。因此，$\\lim\\limits_{x\\to0}\\left(x\\sin\\dfrac{1}{x}+\\dfrac{1}{x}\\sin x\\right)=0+1=1$。应选 A。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "极限"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第22题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:3c696f85581bd2db10a880f2136519b344e7c64068b5ada6928e971a516e6f07"
+    },
+    {
+      "id": "econ396-2012-23",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 23,
+      "type": "single",
+      "score": 2.5,
+      "stem": "设 $f(x)=\\arcsin(x^2)$，则 $f'(x)=$（　）",
+      "options": [
+        "A.$\\dfrac{1}{\\sqrt{1-x^2}}$.",
+        "B.$\\dfrac{2x}{\\sqrt{1-x^2}}$.",
+        "C.$\\dfrac{1}{\\sqrt{1-x^4}}$.",
+        "D.$\\dfrac{2x}{\\sqrt{1-x^4}}$."
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查导数计算。由链式法则可知，$f'(x)=\\dfrac{1}{\\sqrt{1-(x^2)^2}}\\cdot 2x=\\dfrac{2x}{\\sqrt{1-x^4}}$。因此应选 D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "导数"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第23题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:fea84fe8e417100a32a83b8cd96906d05ca327ad6683a2736aaec80df980b3b7"
+    },
+    {
+      "id": "econ396-2012-24",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 24,
+      "type": "single",
+      "score": 2.5,
+      "stem": "$x=0$ 是函数 $f(x)=e^{x^2+x}$ 的（　）",
+      "options": [
+        "A.零点.",
+        "B.驻点.",
+        "C.极值点.",
+        "D.非极值点."
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查利用导数分析函数性态。由于 $f(x)=e^{x^2+x}$ 恒大于零，$f(0)=1>0$，故选项 A 不正确。计算 $f'(x)$ 得 $f'(x)=e^{x^2+x}(2x+1)$，于是 $x=-\\dfrac{1}{2}$ 是 $f(x)$ 的唯一驻点，$x=0$ 不是驻点，选项 B 不正确。当 $x<-\\dfrac{1}{2}$ 时，$f'(x)<0$，$f(x)$ 单调减少；当 $x>-\\dfrac{1}{2}$ 时，$f'(x)>0$，$f(x)$ 单调增加。因此 $x=-\\dfrac{1}{2}$ 是 $f(x)$ 的极小值点，且为唯一极值点，$x=0$ 不是 $f(x)$ 的极值点，选项 C 不正确。应选 D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "导数",
+        "极值"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第24题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:3eb1415cadaeddb5b5e7ab565b7387e81b9675777fcf919f17c9fdb213385ee5"
+    },
+    {
+      "id": "econ396-2012-25",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 25,
+      "type": "single",
+      "score": 2.5,
+      "stem": "不定积分 $\\int\\sin x\\cos x\\,dx$ 不等于（　）",
+      "options": [
+        "A.$\\dfrac{1}{2}\\sin^2x+C$.",
+        "B.$\\dfrac{1}{2}\\sin^2 2x+C$.",
+        "C.$-\\dfrac{1}{4}\\cos 2x+C$.",
+        "D.$-\\dfrac{1}{2}\\cos^2x+C$."
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查不定积分的计算。利用第一类换元法，可得 $\\int\\sin x\\cos x\\,dx=\\int\\sin x\\,d(\\sin x)=\\dfrac{1}{2}\\sin^2x+C$，其中 $C$ 为任意常数，选项 A 为不定积分的正确结果。由三角函数恒等式可得 $\\cos 2x=1-2\\sin^2x$，$\\dfrac{1}{2}\\sin^2x=\\dfrac{1}{4}(1-\\cos 2x)=-\\dfrac{1}{4}\\cos 2x+\\dfrac{1}{4}$，故选项 C 也是不定积分的正确结果；$\\sin^2x+\\cos^2x=1$，$-\\dfrac{1}{2}\\cos^2x=\\dfrac{1}{2}(1-\\cos^2x)-\\dfrac{1}{2}=-\\dfrac{1}{2}\\cos^2x$ 与 $\\dfrac{1}{2}\\sin^2x$ 仅差常数，故选项 D 也是不定积分的正确结果。由排除法可知，应选 B。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "不定积分"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第25题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:ca806787c8e7fe127a3104fd6004d59aaebb947e50bcccb1c7a6d394609b3eb0"
+    },
+    {
+      "id": "econ396-2012-26",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 26,
+      "type": "single",
+      "score": 2.5,
+      "stem": "设 $I=\\int_0^{\\frac{\\pi}{4}}\\ln\\sin x\\,dx$，$J=\\int_0^{\\frac{\\pi}{4}}\\ln\\cos x\\,dx$，则 $I,J$ 的大小关系是（　）",
+      "options": [
+        "A.$I<J$.",
+        "B.$I>J$.",
+        "C.$I\\le J$.",
+        "D.$I\\ge J$."
+      ],
+      "answer": "A",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查定积分的性质。在 $\\left(0,\\dfrac{\\pi}{4}\\right)$ 上，$\\cos x>\\sin x$，而 $\\ln u$ 是单调增加函数，故 $\\ln\\cos x>\\ln\\sin x$。因此，由定积分的性质可知，$I=\\int_0^{\\frac{\\pi}{4}}\\ln\\sin x\\,dx<\\int_0^{\\frac{\\pi}{4}}\\ln\\cos x\\,dx=J$。应选 A。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "定积分"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第26题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:809b8922e8c685aaa8701243be16310434245feacccb66517da129e6a5fc3a2a"
+    },
+    {
+      "id": "econ396-2012-27",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 27,
+      "type": "single",
+      "score": 2.5,
+      "stem": "设矩阵 $A=\\begin{pmatrix}2&1\\\\-1&2\\end{pmatrix}$，$E$ 为单位矩阵，$BA=B+2E$，则 $B=$（　）",
+      "options": [
+        "A.$\\begin{pmatrix}-1&1\\\\1&1\\end{pmatrix}$.",
+        "B.$\\begin{pmatrix}1&-1\\\\1&1\\end{pmatrix}$.",
+        "C.$\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$.",
+        "D.$\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$."
+      ],
+      "answer": "B",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "由 $BA=B+2E$ 可得，$B(A-E)=2E$。代入 $A-E=\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$ 可得，$B\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}=2E$。由于 $\\begin{vmatrix}1&1\\\\-1&1\\end{vmatrix}=2$，故 $\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$ 可逆。因此，$B=2\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}^{-1}=2\\times\\dfrac{1}{2}\\begin{pmatrix}1&-1\\\\1&1\\end{pmatrix}=\\begin{pmatrix}1&-1\\\\1&1\\end{pmatrix}$。应选 B。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "矩阵"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第27题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:f75d14d07584e5303989613cf603febcd2bd9adff6951af8e26bd0c9a2d26719"
+    },
+    {
+      "id": "econ396-2012-28",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 28,
+      "type": "single",
+      "score": 2.5,
+      "stem": "设向量组 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性无关，$\\alpha_1,\\alpha_2,\\alpha_4$ 线性相关，则（　）",
+      "options": [
+        "A.$\\alpha_1$ 可以由 $\\alpha_2,\\alpha_3,\\alpha_4$ 线性表出。",
+        "B.$\\alpha_2$ 可以由 $\\alpha_1,\\alpha_3,\\alpha_4$ 线性表出。",
+        "C.$\\alpha_3$ 可以由 $\\alpha_1,\\alpha_2,\\alpha_4$ 线性表出。",
+        "D.$\\alpha_4$ 可以由 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性表出。"
+      ],
+      "answer": "D",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查向量组之间的线性表示。由于 $\\alpha_1,\\alpha_2,\\alpha_4$ 线性相关，故 $\\alpha_1,\\alpha_2,\\alpha_3,\\alpha_4$ 线性相关；结合 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性无关可得，$\\alpha_4$ 可由 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性表示。因此应选 D。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "线性代数",
+        "向量组"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第28题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:36a1885ca9e54699e8980f575c2bbf82a02436acc2005a716fa284f9b1abe327"
+    },
+    {
+      "id": "econ396-2012-29",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 29,
+      "type": "single",
+      "score": 2.5,
+      "stem": "设随机变量 $X,Y$ 服从正态分布，$X\\sim N(\\mu,16)$，$Y\\sim N(\\mu,25)$，记 $P_1=P\\{X\\le\\mu-4\\}$，$P_2=P\\{Y\\ge\\mu+5\\}$，则（　）",
+      "options": [
+        "A.只有 $\\mu$ 的个别值，才有 $P_1=P_2$.",
+        "B.对任意实数 $\\mu$，都有 $P_1<P_2$.",
+        "C.对任意实数 $\\mu$，都有 $P_1=P_2$.",
+        "D.对任意实数 $\\mu$，都有 $P_1>P_2$."
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查正态分布的性质。分别将 $X,Y$ 标准化，$\\dfrac{X-\\mu}{4}\\sim N(0,1)$，$\\dfrac{Y-\\mu}{5}\\sim N(0,1)$。于是，$P_1=P\\left\\{\\dfrac{X-\\mu}{4}\\le-1\\right\\}=\\Phi(-1)$，$P_2=P\\left\\{\\dfrac{Y-\\mu}{5}\\ge1\\right\\}=1-\\Phi(1)=\\Phi(-1)$。因此，对任意实数 $\\mu$，都有 $P_1=P_2$。应选 C。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "概率论",
+        "正态分布"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第29题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:988342f80e573b42b3ddc5a08af2f049963eb0f3eee1e1c184cf2d41a22e7d66"
+    },
+    {
+      "id": "econ396-2012-30",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 30,
+      "type": "single",
+      "score": 2.5,
+      "stem": "设随机变量 $X$ 服从参数为 $\\lambda$ 的泊松分布，若 $E[(X-1)(X-2)]=1$，则参数 $\\lambda=$（　）",
+      "options": [
+        "A.3.",
+        "B.-1.",
+        "C.1.",
+        "D.2."
+      ],
+      "answer": "C",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查泊松分布的数字特征。由于 $X$ 服从参数为 $\\lambda$ 的泊松分布，故 $E(X)=\\lambda$，$D(X)=\\lambda$。由数学期望的性质可得，$E[(X-1)(X-2)]=E(X^2-3X+2)=E(X^2)-3E(X)+2=D(X)+[E(X)]^2-3E(X)+2=\\lambda+\\lambda^2-3\\lambda+2=\\lambda^2-2\\lambda+2=1$。于是 $\\lambda^2-2\\lambda+1=0$，即 $(\\lambda-1)^2=0$，解得 $\\lambda=1$。因此应选 C。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "概率论",
+        "泊松分布"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          5
+        ],
+        "anchor": "第30题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9f46cdfd84bef53f52f8b64d67b5b55f95f35712ae2418c5bbc3035ffb4e7642"
+    },
+    {
+      "id": "econ396-2012-31",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 31,
+      "type": "big",
+      "score": 5,
+      "stem": "求极限 $\\lim\\limits_{x\\to0}\\dfrac{e^x+e^{-x}-2}{1-\\cos x}$.",
+      "options": [],
+      "answer": "2",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查极限计算。利用等价无穷小替换和洛必达法则计算该极限。$1-\\cos x\\sim\\dfrac{x^2}{2}$；$\\lim\\limits_{x\\to0}\\dfrac{e^x+e^{-x}-2}{1-\\cos x}=\\lim\\limits_{x\\to0}\\dfrac{e^x-e^{-x}}{\\sin x}=\\lim\\limits_{x\\to0}\\dfrac{e^x+e^{-x}}{\\cos x}=2$。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "极限"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第31题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:7ca509215150afcdc138265764063ccde30f77080f3082a1921f441565ba0581"
+    },
+    {
+      "id": "econ396-2012-32",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 32,
+      "type": "big",
+      "score": 5,
+      "stem": "求定积分 $\\int_1^e\\dfrac{\\sqrt{1+\\ln x}}{x}\\,dx$.",
+      "options": [],
+      "answer": "$\\dfrac{2}{3}(2\\sqrt{2}-1)$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查定积分的计算。利用第一类换元法，注意到 $\\dfrac{1}{x}dx=d(\\ln x+1)$，故 $\\int_1^e\\dfrac{\\sqrt{1+\\ln x}}{x}\\,dx=\\int_1^e\\sqrt{1+\\ln x}\\,d(1+\\ln x)=\\left.\\dfrac{2}{3}(1+\\ln x)^{\\frac{3}{2}}\\right|_1^e=\\dfrac{2}{3}(2\\sqrt{2}-1)$。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "定积分"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第32题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:9e5156fbb06ef138d368bd091dcee83d724599e1caed795ffe0623b29e26e5bd"
+    },
+    {
+      "id": "econ396-2012-33",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 33,
+      "type": "big",
+      "score": 5,
+      "stem": "已知函数 $f(x)=x^x+\\sqrt{1+x^2}$，求 $f''(x)$.",
+      "options": [],
+      "answer": "$f''(x)=x^x\\left[(\\ln x+1)^2+\\dfrac{1}{x}\\right]+\\dfrac{1}{(1+x^2)^{\\frac{3}{2}}}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查导数计算。$x^x$ 是幂指函数，在处理幂指函数时，一般将其写成指数形式：$x^x=e^{x\\ln x}$。将 $f(x)$ 写成 $e^{x\\ln x}+\\sqrt{1+x^2}$ 后依次计算 $f'(x)$、$f''(x)$。$f'(x)=e^{x\\ln x}(\\ln x+1)+\\dfrac{x}{\\sqrt{1+x^2}}=x^x(\\ln x+1)+\\dfrac{x}{\\sqrt{1+x^2}}$；$f''(x)=x^x\\left[(\\ln x+1)^2+\\dfrac{1}{x}\\right]+\\dfrac{1}{(1+x^2)^{\\frac{3}{2}}}$。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "导数"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第33题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:fc96a5a75cc1bc49774ddf704d5d0ebe3861787635aadbaaaa4ac28d1e93ad8f"
+    },
+    {
+      "id": "econ396-2012-34",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 34,
+      "type": "big",
+      "score": 5,
+      "stem": "求函数 $f(x)=2x^3+3x^2-12x+1$ 的极值.",
+      "options": [],
+      "answer": "极大值 $f(-2)=21$；极小值 $f(1)=-6$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查函数极值的计算。计算 $f'(x)$：$f'(x)=6x^2+6x-12=6(x+2)(x-1)$。$x=-2$ 与 $x=1$ 是 $f(x)$ 的驻点。当 $x<-2$ 或 $x>1$ 时，$f'(x)>0$，$f(x)$ 单调增加；当 $-2<x<1$ 时，$f'(x)<0$，$f(x)$ 单调减少。因此，$x=-2$ 是 $f(x)$ 的极大值点，$f(-2)=2\\times(-2)^3+3\\times(-2)^2-12\\times(-2)+1=21$ 是 $f(x)$ 的极大值；$x=1$ 是 $f(x)$ 的极小值点，$f(1)=2\\times1^3+3\\times1^2-12\\times1+1=-6$ 是 $f(x)$ 的极小值。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "导数",
+        "极值"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第34题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:fd894a81f960750816a249aebb35ee7d100db63e3ed6b1a0fc3fbea29ba52c02"
+    },
+    {
+      "id": "econ396-2012-35",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 35,
+      "type": "big",
+      "score": 5,
+      "stem": "求由方程 $xyz=\\arctan(x+y+z)$ 确定的隐函数 $z=z(x,y)$ 的 $\\dfrac{\\partial z}{\\partial x}$、$\\dfrac{\\partial z}{\\partial y}$.",
+      "options": [],
+      "answer": "$\\dfrac{\\partial z}{\\partial x}=\\dfrac{yz+yz(x+y+z)^2-1}{1-xy-xy(x+y+z)^2}$，$\\dfrac{\\partial z}{\\partial y}=\\dfrac{xz+xz(x+y+z)^2-1}{1-xy-xy(x+y+z)^2}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查隐函数的偏导数的计算。对方程两端同时关于 $x$ 求偏导，可得 $yz+xy\\dfrac{\\partial z}{\\partial x}=\\dfrac{1+\\dfrac{\\partial z}{\\partial x}}{1+(x+y+z)^2}$。整理得 $\\left[xy-\\dfrac{1}{1+(x+y+z)^2}\\right]\\dfrac{\\partial z}{\\partial x}=\\dfrac{1}{1+(x+y+z)^2}-yz$，解得 $\\dfrac{\\partial z}{\\partial x}=\\dfrac{yz+yz(x+y+z)^2-1}{1-xy-xy(x+y+z)^2}$。由于方程中 $x,y$ 的地位相同，故隐函数 $z=z(x,y)$ 关于变量 $x,y$ 对称。将 $\\dfrac{\\partial z}{\\partial x}$ 中的 $x,y$ 互换，可得 $\\dfrac{\\partial z}{\\partial y}=\\dfrac{xz+xz(x+y+z)^2-1}{1-xy-xy(x+y+z)^2}$。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "多元函数",
+        "隐函数"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第35题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:6a612169d45d027bf2f72ecf49a3e938564217fba17642e8c012ae211683827f"
+    },
+    {
+      "id": "econ396-2012-36",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 36,
+      "type": "big",
+      "score": 5,
+      "stem": "求矩阵 $A=\\begin{pmatrix}1&2&0\\\\3&4&0\\\\0&0&5\\end{pmatrix}$ 的伴随矩阵 $A^*$.",
+      "options": [],
+      "answer": "$A^*=\\begin{pmatrix}20&-10&0\\\\-15&5&0\\\\0&0&-2\\end{pmatrix}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查伴随矩阵。利用伴随矩阵的定义，$A^*=\\begin{pmatrix}A_{11}&A_{21}&A_{31}\\\\A_{12}&A_{22}&A_{32}\\\\A_{13}&A_{23}&A_{33}\\end{pmatrix}$。计算各代数余子式：$A_{11}=20$，$A_{12}=-15$，$A_{13}=0$；$A_{21}=-10$，$A_{22}=5$，$A_{23}=0$；$A_{31}=0$，$A_{32}=0$，$A_{33}=-2$。故 $A^*=\\begin{pmatrix}20&-10&0\\\\-15&5&0\\\\0&0&-2\\end{pmatrix}$。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "线性代数",
+        "伴随矩阵"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第36题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:23be93272153eaca7208af03dc3e120a91031f8d25e2c153e410ef46fbe36ba2"
+    },
+    {
+      "id": "econ396-2012-37",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 37,
+      "type": "big",
+      "score": 5,
+      "stem": "求线性方程组 $\\begin{cases}x_1+x_2+4x_3=4,\\\\x_1-x_2+2x_3=-4,\\\\-x_1+4x_2+x_3=16\\end{cases}$ 的通解.",
+      "options": [],
+      "answer": "$(x_1,x_2,x_3)^T=(0,4,0)^T+k(-3,-1,1)^T$（$k$ 为任意常数）",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查线性方程组求解。记方程组的增广矩阵为 $(A,b)$，并对其作初等行变换。由行变换可见 $r(A)=2$，于是 $Ax=0$ 的基础解系中包含 $3-2=1$ 个解向量。取 $x_3=1$ 为自由变元，可得 $Ax=0$ 的一个基础解系 $(-3,-1,1)^T$。由行最简形可得原方程的一个特解为 $(0,4,0)^T$。因此，原方程组的通解为 $(x_1,x_2,x_3)^T=(0,4,0)^T+k(-3,-1,1)^T$，其中 $k$ 为任意常数。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "线性代数",
+        "线性方程组"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第37题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:dcceabc96abf59779bf3246d78d04ccd01826f76470ef9ffab8309a0a3f63670"
+    },
+    {
+      "id": "econ396-2012-38",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 38,
+      "type": "big",
+      "score": 5,
+      "stem": "设三次独立试验中事件 $A$ 在每次试验中发生的概率均为 $p$，已知 $A$ 至少发生一次的概率为 $\\dfrac{19}{27}$，求 $p$.",
+      "options": [],
+      "answer": "$p=\\dfrac{1}{3}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查二项分布。记三次独立试验中事件 $A$ 发生的次数为 $X$，则 $X$ 服从参数为 $3,p$ 的二项分布 $B(3,p)$。“$A$ 至少发生一次（$X\\ge1$）”为“$A$ 一次也不发生（$X=0$）”的对立事件，故其概率为 $1-P\\{X=0\\}=1-(1-p)^3=\\dfrac{19}{27}$。解得 $(1-p)^3=\\dfrac{8}{27}$，$1-p=\\dfrac{2}{3}$，$p=\\dfrac{1}{3}$。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "概率论",
+        "二项分布"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第38题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:4f44ebd4b09bbd10c791ac022161cd20a0b051c38b95dffb8db5428a39679957"
+    },
+    {
+      "id": "econ396-2012-39",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 39,
+      "type": "big",
+      "score": 5,
+      "stem": "设连续型随机变量 $X$ 的分布函数为 $F(x)=\\begin{cases}0,&x<0,\\\\Ax^2,&0\\le x<1,\\\\1,&x\\ge1.\\end{cases}$ 求：\n（1）常数 $A$；\n（2）$X$ 的概率密度函数 $f(x)$；\n（3）$P\\left\\{\\dfrac{1}{5}<X<\\dfrac{1}{3}\\right\\}$.",
+      "options": [],
+      "answer": "（1）$A=1$；（2）$f(x)=\\begin{cases}2x,&0<x<1,\\\\0,&\\text{其他};\\end{cases}$（3）$P\\left\\{\\dfrac{1}{5}<X<\\dfrac{1}{3}\\right\\}=\\dfrac{16}{225}$",
+      "source_blocks": [
+        {
+          "role": "analysis",
+          "origin": "source",
+          "text": "本题主要考查分布函数与概率密度。（1）由于 $X$ 为连续型随机变量，故 $F(x)$ 连续，于是 $\\lim\\limits_{x\\to1^-}F(x)=\\lim\\limits_{x\\to1^-}Ax^2=A=F(1)=1$。因此 $A=1$。\n（2）由第（1）问可知，$F(x)=\\begin{cases}0,&x<0,\\\\x^2,&0\\le x<1,\\\\1,&x\\ge1.\\end{cases}$ 由于 $f(x)=F'(x)$，故 $f(x)=\\begin{cases}2x,&0<x<1,\\\\0,&\\text{其他}.\\end{cases}$\n（3）由分布函数的定义可知，$P\\left\\{\\dfrac{1}{5}<X<\\dfrac{1}{3}\\right\\}=F\\left(\\dfrac{1}{3}\\right)-F\\left(\\dfrac{1}{5}\\right)=\\dfrac{1}{9}-\\dfrac{1}{25}=\\dfrac{16}{225}$。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "math",
+        "label": "数学"
+      },
+      "tags": [
+        "econ396",
+        "数学",
+        "概率论",
+        "分布函数"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6
+        ],
+        "anchor": "第39题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:df75e5a41054d135c3750f453ed85e3aa460b93f9240f8242c9244da8f95925e"
+    },
+    {
+      "id": "econ396-2012-40",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 40,
+      "type": "analysis",
+      "score": 20,
+      "stem": "论证有效性分析：分析下述论证中存在的缺陷和漏洞，选择若干要点，写一篇600字左右的文章，对该论证的有效性进行分析和评论。（论证有效性分析的一般要点：概念特别是核心概念的界定和使用是否准确并前后一致，有无各种明显的逻辑错误，论证的论据是否成立并支持结论，结论成立的条件是否充分，等等。）\n\n汉语能力测试怎么看？\n\n从今年开始，教育部、国家语委将在某些城市试点推出一项针对国人的汉语水平考试——“汉语能力测试（HNC）”。该测试主要考以汉语为母语的人的听、说、读、写四方面的综合能力，并将按照难度分为各个等级，其中最低等级相当于小学四年级水平（扫盲水平），最高等级相当于大学中文专业毕业水平。考生不受职业、学历、年龄限制，可直接报考。公众对于这项新事物，支持和反对的意见都有。\n\n支持者认为，在世界各地掀起学习汉语热潮的今天，孔子学院遍地开花，俨然一个“全世界都在说中国话”的时代就要来临。但是国人的汉语能力，如提笔忘字、中英文混杂、网络用语不规范等现象普遍存在。目前大家都感到母语水平下降，但是对差到何种程度、差在哪里、怎么入手解决，无人能言。而汉语能力测试有一个科学的评测标准，可以帮助应试者了解其汉语水平在特定人群、地域中的位置。这样的测试一定会唤起大家对母语文化的重视。\n\n以下几种是反对观点。观点一，汉语学习更多的是培养一种读书氛围，养成良好的阅读习惯，不能太功利；汉语要保存、要维系，需要培养的是修养而不是一种应试能力；在当前汉语衰退的环境下，要让汉语重新“热”起来，应从维系汉语文化的长远发展着手，营造一种大众的、自由的、向上的母语学习环境。观点二，中国的孩子在中国的土地上学习母语有完整的教育体系，在这种情况下，这项测试的诞生不仅是一种浪费，还严重干扰了当前的汉语教学；汉语的综合水平量化，就是使得原来丰富生动的语言扭曲化、简陋化。观点三，对于把汉语作为母语的中国人来说，汉语会用会说就可以了，不是人人都要成为作家，汉语类的能力测试更适合外国人。\n\n（摘编自《汉语考试族群成员汉语能力测试怎么看？》《人民日报（海外版）》，2011年8月8日，《国家汉语能力测试10月份在江苏等地试点》《中国日报》，2011年8月14日）",
+      "options": [],
+      "answer": "",
+      "source_blocks": [
+        {
+          "role": "answer",
+          "origin": "source",
+          "text": "【参考范文】\n\n如此论证，有待斟酌\n\n关于是否应该推出汉语能力测试，支持者和反对者发表了各自的看法，展开了一系列论证，看似合理，实则漏洞百出。\n\n首先，支持者论述“在世界各地掀起学习汉语热潮的今天，孔子学院遍地开花，俨然一个‘全世界都在说中国话’的时代就要来临”，这一说法是欠妥的。孔子学院数量增多说明不了去孔子学院学习汉语的人数增加了，去孔子学院的人可能只是单纯对中国文化感兴趣。由孔子学院数量增多推出一个“全世界都在说中国话”的时代就要来临显然缺乏足够的依据。\n\n其次，支持者论述汉语能力测试一定会唤起大家对母语文化的重视，这一说法过于绝对。考级式的汉语能力测试有可能反而成了某些培训机构的盈利工具。提高对母语文化的重视的途径有许多，如设立相应的汉语文化的游戏或举办相应的汉语文化比拼活动、知识竞答比赛等。将汉语能力测试视为唤起对母语文化的重视的充分条件有失偏颇。\n\n再者，反对者论述因为学习母语有着完整的教育体系，所以汉语能力测试的诞生不仅是一种浪费，还严重干扰了当前的汉语教学水平，这一说法是欠妥的。汉语测试与当前的母语教学教育体系并非互斥关系，只是各自的侧重点不同。即使有完整的母语教育体系也并不能说明中国孩子的汉语水平良好，汉语能力测试可以帮助孩子更好地了解汉语，对汉语教学还可以起到辅助的作用。\n\n最后，反对者论述“对于把汉语作为母语的中国人来说，汉语会用会说就可以了，不是人人都要成为作家，汉语类的能力测试更适合外国人”，这一说法过于片面。语言学习并不局限于日常的语言交流，还包含文字记录、传承等，记录和写作也不仅仅是作家的专属技能。此外，中国人可以通过汉语能力测试掌握更多的技能，发现自身的不足之处，提高自身文化素养，因而该测试并不一定更适合外国人。\n\n综上所述，仅仅抓住汉语能力测试某一方面的利或弊，就其应该推行与否而争论不休的行为是片面的，上述论证的有效性存疑，尚需更严谨的论证。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "writing",
+        "label": "写作"
+      },
+      "tags": [
+        "econ396",
+        "写作",
+        "论证有效性分析"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          6,
+          7
+        ],
+        "anchor": "第40题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:52095b362c2395fe670fa5fa7d6a993d5b1741d68b42e920d133f820e91bdae6"
+    },
+    {
+      "id": "econ396-2012-41",
+      "subject": "econ396",
+      "year": 2012,
+      "num": 41,
+      "type": "essay",
+      "score": 20,
+      "stem": "论说文：根据下述材料，写一篇不少于600字的论说文，题目自拟。\n\n中国大陆500毫升茅台价格升至1200元，纽约华人聚居区华盛顿，1000毫升装的同度数茅台价格为220至230美元，500毫升约合670元人民币。因海外茅台价格便宜，质量有保证，华人竞相购买，回国送人。\n\n这些年，中国游客在海外抢购“MADE IN CHINA”商品的消息已不是什么新鲜事了。服装、百货、日用品等中国造的东西，去了美国反而更便宜。有媒体报道，Levi's505牛仔裤，广东东莞生产，在中国商场的价格是899元人民币，在美国的亚马逊网站上的价格是24.42美元，合人民币166元，价格相差5.4倍。\n\n（摘自《茅台酒为何在美国更便宜？》《新京报》，2011年1月7日）",
+      "options": [],
+      "answer": "",
+      "source_blocks": [
+        {
+          "role": "answer",
+          "origin": "source",
+          "text": "【参考范文】\n\n国内商品缘何贵于国外？\n\n同一商品国内的价格高于国外价格是一种价格乱象，可以从厂商行为、价格决定机制以及政府税收角度来理解这一现象。\n\n国内外价格之所以出现差异，是因为生产者根据国内外市场的需求特性，对商品区别定价。国内消费者对茅台等商品十分认同，加之酒桌文化盛行，茅台有很高的品牌溢价。即使生产商定高价，国内消费者照样趋之若鹜。但国外的情况则有所不同，国外消费者不愿意用高价购买不熟悉的品牌，具有较高的需求价格弹性，厂商进入国外市场时，只能以低价策略进行市场收割。\n\n国内外的价格决定机制的有效性有差别。我国国内要素市场和产品市场存在扭曲配置的情况，价格未必能反映商品的真实价值。国内茅台等商品的市场是卖方市场，商品长期供不应求，卖方拥有商品价格的决定权，消费者则是价格的被动接受者。而且我国的交易成本高，商品在流通过程中程序繁杂，代理商层层加价，也推高了商品的价格。但发达国家市场机制发展得较为完善，买方有更多的选择权，价格贴近商品的真实价值，因此比国内商品更便宜。\n\n政府对国内外商品不同的税收政策进一步拉大了国内外商品的价差。我国对酒类产品的税率较高，企业需要缴纳很大比例的税收，消费者也需要缴纳消费税，种种税额累加抬高了商品价格，使得最终销售价很高。而国外市场为了鼓励出口，国家往往不征收关税，还实施出口退税，使得运往国外的商品价格相比于国内价格更低。\n\n相比国外消费者而言，国内消费者要以更高的价格购买商品，享有更少的消费者剩余。作为国内消费者，我们应当抵制商家的价格歧视，同时树立正确的消费理念。生产者应当扩大有效供给，满足市场需求。国家则需要出台正确的政策去引导厂商制定价格，保障消费者权益。"
+        }
+      ],
+      "knowledge_points": [],
+      "difficulty": null,
+      "category": {
+        "key": "writing",
+        "label": "写作"
+      },
+      "tags": [
+        "econ396",
+        "写作",
+        "论说文"
+      ],
+      "media": [],
+      "related_ids": [],
+      "variants": [],
+      "origin": "source",
+      "source_hash": "sha256pdf:9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+      "source_ref": {
+        "pdf": "2012年396经济联考综合能力真题.pdf（7 页）+ 2012年396经济联考真题解析.pdf（16 页）",
+        "sha256": "9e7776f3e5be20a6c1b7451b23a6a071ebe3f59849d395082d1dffca74059ce5",
+        "pages": [
+          7
+        ],
+        "anchor": "第41题"
+      },
+      "schema_version": "1.0.0",
+      "content_hash": "sha256:5f8254bb8c159e6bf35dddd3bbc2a5065204e0ff087f0696530a1c6280b05a08"
+    }
+  ]
+}

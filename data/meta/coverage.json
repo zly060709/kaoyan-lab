@@ -190,9 +190,11 @@
     "paperYears": []
   },
   "econ396": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
+    "status": "active",
+    "dataYears": [
+      2012
+    ],
+    "questions": 41,
     "paperYears": []
   },
   "law397": {

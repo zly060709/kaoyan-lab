@@ -3,7 +3,7 @@
  "phase": "M3-converge",
  "status": "DONE",
  "started_at": "2026-11-04T15:08:05Z",
- "updated_at": "2026-11-06T02:03:23Z",
+ "updated_at": "2026-11-06T12:00:00Z",
  "mode": "single-agent-sequential (D090, 用户指令：不开子程序，按顺序自己做完)",
  "done_set": [
   "conv10:math3-2009-2019",
@@ -51,10 +51,11 @@
   "conv16:数学一 2011/2012/2009 三卷视觉转录入库（2009–2023 十五年全齐 342 题）",
   "conv16b:Pages 服务端波动恢复后部署成功 + 线上端到端验收（全站 3778 题）",
   "conv17:全网补缺核验（12 科资料登录墙，不编造仍 pending）",
-  "conv17b:6 科 74 年份逐题精讲接入 + 前端 coveredRoles 去重（9 科精讲全覆盖）"
+  "conv17b:6 科 74 年份逐题精讲接入 + 前端 coveredRoles 去重（9 科精讲全覆盖）",
+  "conv18:396 经综 2012 单卷探路（7 页真题视觉转录 41 题 150 分，无 illegible；注册表/索引/门禁/单测全绿）"
  ],
  "failed_set": [],
- "current_task": "收敛⑰ 已交付：9 科 active 逐题精讲全覆盖（新增 74 个 analysis.json / 2348 题 / 5981 原文区块，零编造）；12 科 pending 因网上资料需网盘登录转存，按合同不编造，待用户提供本地文件",
+ "current_task": "收敛⑱ 396 经综 2012 单卷探路：视觉转录 41 题（20 逻辑+10 数学单选+9 数学计算+2 写作，150 分），接入注册表与索引，门禁 11/11、单测 14/14；其余 21 份按指令留待后续",
  "in_flight": {},
  "auth": "authorized (zly060709)",
  "gates": {
@@ -63,7 +64,7 @@
   "checked_at": "2026-11-06"
  },
  "metrics": {
-  "questions_total": 3778,
+  "questions_total": 3819,
   "questions": {
    "politics": 456,
    "math": 342,
@@ -73,7 +74,8 @@
    "cs408": 376,
    "mgt199": 1024,
    "math3": 342,
-   "law498": 116
+   "law498": 116,
+   "econ396": 41
   },
   "expected": {
    "politics": 456,
@@ -133,11 +135,11 @@
    "english1",
    "cs408",
    "mgt199",
-   "law498"
+   "law498",
+   "econ396"
   ],
   "imaging_only": [],
   "not_yet_migrated": [
-   "econ396",
    "law397",
    "law398",
    "med306",
