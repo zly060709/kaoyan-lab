@@ -139,19 +139,7 @@
    "econ396"
   ],
   "imaging_only": [],
-  "not_yet_migrated": [
-   "law397",
-   "law398",
-   "med306",
-   "med307",
-   "edu311",
-   "psy312",
-   "his313",
-   "agri314",
-   "chem315",
-   "plant414",
-   "animal415"
-  ],
+  "not_yet_migrated": [],
   "known_source_gaps": {
    "mgt199-2025": "源包只有 55 题（缺写作第 56、57 题）",
    "mgt199-sufficiency": "源包未给 A-E 判断结果选项文本，options 留空并逐题附原卷切片"

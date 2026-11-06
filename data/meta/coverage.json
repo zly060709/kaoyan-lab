@@ -143,12 +143,6 @@
       2023
     ]
   },
-  "english2": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
   "cs408": {
     "status": "active",
     "dataYears": [
@@ -207,18 +201,6 @@
     "questions": 476,
     "paperYears": []
   },
-  "law397": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "law398": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
   "law498": {
     "status": "active",
     "dataYears": [
@@ -229,59 +211,5 @@
     "paperYears": [
       2022
     ]
-  },
-  "med306": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "med307": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "edu311": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "psy312": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "his313": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "agri314": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "chem315": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "plant414": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
-  },
-  "animal415": {
-    "status": "pending",
-    "dataYears": [],
-    "questions": 0,
-    "paperYears": []
   }
 }

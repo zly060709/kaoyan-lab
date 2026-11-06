@@ -83,12 +83,9 @@ html.dark .card h3{color:var(--gold-l)}
 .card .cnt b{color:var(--acc);font-size:15px}
 .bar2{height:5px;border-radius:3px;background:var(--surface-3);overflow:hidden;margin-top:7px}
 .bar2 i{display:block;height:100%;background:var(--acc);border-radius:3px}
-.card.dim{border-top-color:var(--border)}
-.card .need{font-size:12px;color:var(--muted);margin-top:6px}
 .badge-st{font-size:12px;padding:1px 8px;border-radius:9px;vertical-align:middle;margin-left:6px}
 .st-active{background:color-mix(in srgb,var(--ok) 14%,var(--surface));color:var(--ok)}
 .st-migrating{background:color-mix(in srgb,var(--warn) 16%,var(--surface));color:var(--warn)}
-.st-pending{background:var(--surface-2);color:var(--muted)}
 h1.sec,h2.sec{font-size:19px;color:var(--navy);margin:30px 0 14px;display:flex;align-items:center;gap:10px;line-height:1.4}
 html.dark h1.sec,html.dark h2.sec{color:var(--gold-l)}
 h1.sec::before,h2.sec::before{content:"✦";color:var(--gold)}
@@ -763,14 +760,9 @@ async function viewHome(seq){
   const subs=REG.subjects;
   const live=subs.filter(s=>s.status==="active");
   const half=subs.filter(s=>s.status==="imaging"||s.status==="migrating");
-  const pend=subs.filter(s=>s.status==="pending");
   const totalQ=subs.reduce((a,s)=>a+(s.questionTotal||0),0);
-  const stMap={active:["st-active","✅ 可刷题"],imaging:["st-migrating","🖼 仅原卷影像"],migrating:["st-migrating","⏳ 整理中"],pending:["st-pending","· 尚未收录"]};
+  const stMap={active:["st-active","✅ 可刷题"],imaging:["st-migrating","🖼 仅原卷影像"],migrating:["st-migrating","⏳ 整理中"]};
   const cardOf=s=>{
-    if(s.status==="pending"){
-      return `<div class="card dim"><span class="icode">${s.icon||"·"}</span><h3>${esc(s.name)}<span class="badge-st st-pending">尚未收录</span></h3>
-        <div class="code">课程代码 ${esc(s.code)}</div><div class="need">提供真题资料后按同一保真管线开工，绝不编造</div></div>`;
-    }
     const n=s.questionTotal||0,dy=s.dataYears||[],py=s.paperYears||[];
     const rng=dy.length?(dy.length===1?dy[0]:dy[0]+"–"+dy[dy.length-1]):"";
     const tail=n?`已收录 <b>${n}</b> 题 · ${rng}${py.length?` · 原卷影像 ${py.length} 卷`:""}`
@@ -778,7 +770,7 @@ async function viewHome(seq){
     const stt=statsOf(s.id);
     const acc=stt.a>0?`<div class="cnt" style="margin-top:4px;font-size:12px;color:var(--muted)">自测 ${stt.a} 题 · 正确率 <b style="color:var(--navy)">${Math.round(100*stt.c/stt.a)}%</b></div>
       <div class="bar2"><i style="width:${Math.round(100*stt.c/stt.a)}%"></i></div>`:"";
-    const[cls,txt]=stMap[s.status]||stMap.pending;
+    const[cls,txt]=stMap[s.status]||stMap.active;
     return `<a class="card" style="--acc:${safeColor(s.color)}" href="#/${s.id}"><span class="icode">${s.icon||"·"}</span>
       <h3>${esc(s.short||s.name)}<span class="badge-st ${cls}">${txt}</span></h3>
       <div class="code">${esc(s.name)} · ${esc(s.code)}</div>
@@ -815,7 +807,7 @@ async function viewHome(seq){
   ${selfSec}
   <h2 class="sec">使用说明</h2>
   <div class="card" style="--acc:var(--ok);margin:0;font-size:14.5px">
-    · 已收录 <b>${totalQ}</b> 题（${live.length+half.length} 科有内容；其余统考科目待资料后按同一管线开工，绝不编造真题）<br>
+    · 已收录 <b>${totalQ}</b> 题（${live.length+half.length} 科有内容）<br>
     · <b>自测模式（顶栏开关）</b>：完整题面像一张卷子——所有选项都在、不做任何颜色标记；点选答案后「判分」即出对错并计入统计，答错自动进错题本；随时「揭示」对答案<br>
     · ${n408?`408 全部 <b>${n408}</b> 题挂<b>九段式分步精讲</b>（题卡下方逐段自主揭示）`:""}${n199?`；199 管综 <b>${n199}</b> 题带源包完整解析`:""}<br>
     · ${law.questionTotal?`法硕（非法学）综合课 498：<b>${law.questionTotal}</b> 题已入库（含答案详解与点评，原卷影像对照）`:""}<br>
@@ -823,9 +815,7 @@ async function viewHome(seq){
     · 数学题的函数图像、积分区域等抽象概念已图形化（题卡下方图形面板，标注为扩展图形）· <a href="lab3d.html">🧊 3D 实验室</a><br>
     · 快捷键：<b>j/k</b> 翻题、<b>空格</b> 揭示、<b>A–H</b> 点选、<b>回车</b> 判分、<b>/</b> 搜索、<b>?</b> 全部快捷键<br>
     · 数据按科按年懒加载，离线可用；学习进度、自测成绩、错题本仅存本地浏览器（<a href="about.html">隐私说明</a>）
-  </div>
-  ${pend.length?`<details style="margin-top:18px"><summary style="cursor:pointer;color:var(--muted);font-size:13.5px">规划中科目（${pend.length}，暂未收录 · 点击展开）</summary>
-    <div class="grid" style="margin-top:12px">${pend.map(cardOf).join("")}</div></details>`:""}`;
+  </div>`;
   $("#go").onclick=()=>{const v=$("#q").value.trim();if(v)location.hash="#/search/"+encodeURIComponent(v)};
   $("#q").onkeydown=e=>{if(e.key==="Enter")$("#go").click()};
   $("#cd").onclick=()=>openDateDialog(d);
@@ -1420,15 +1410,14 @@ function view404(){app.innerHTML=`<h1 class="sec">404</h1><div class="qcard">页
 function buildSubNav(){
   const sel=$("#subsel");
   if(!sel||!REG)return;
-  const groups={"可刷题":[],"影像在库":[],"规划中":[]};
+  const groups={"可刷题":[],"影像在库":[]};
   (REG.subjects||[]).forEach(s=>{
     if(s.status==="active")groups["可刷题"].push(s);
-    else if(s.status==="pending")groups["规划中"].push(s);
     else groups["影像在库"].push(s);
   });
   sel.innerHTML=`<option value="" disabled selected>切换科目…</option>`+
     Object.entries(groups).filter(([,a])=>a.length).map(([g,arr])=>
-      `<optgroup label="${g}">`+arr.map(s=>`<option value="${s.id}">${esc(s.short||s.name)}${s.status==="pending"?"（未收录）":""}</option>`).join("")+`</optgroup>`).join("");
+      `<optgroup label="${g}">`+arr.map(s=>`<option value="${s.id}">${esc(s.short||s.name)}</option>`).join("")+`</optgroup>`).join("");
   sel.onchange=()=>{if(sel.value)location.hash="#/"+sel.value};
 }
 </script>

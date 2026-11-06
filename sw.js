@@ -3,7 +3,7 @@
    - kyl-core-<VER>  核心壳（版本化，升级即清）：页面 + KaTeX
    - kyl-content     内容层（跨版本保留）：data/ enc/ vendor/ —— 升级不清，离线可用不缩水
    策略：内容 SWR；核心页 network-first（1.5s 竞速回缓存）；enc/manifest.json 始终走网络。 */
-const VER = "kyl-0.5.5";
+const VER = "kyl-0.5.6";
 const CORE = "kyl-core-" + VER;
 const CONTENT = "kyl-content";
 const CORE_FILES = [
