@@ -533,7 +533,7 @@ function compileExpr(src){
 }
 /* 双模式渲染：full=数学/管综（$ 是公式）；safe=其余（$ 按字面，如 $268 billion） */
 let RENDER_MODE="safe";
-const MATH_DIRS=new Set(["math","math2","math3","mgt199"]);
+const MATH_DIRS=new Set(["math","math2","math3","mgt199","econ396"]);
 function isMathSid(sid){return MATH_DIRS.has(dirOf(sid))||MATH_DIRS.has(sid)}
 async function renderMath(el,mode){
   mode=mode||RENDER_MODE;
